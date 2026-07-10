@@ -1,6 +1,6 @@
 # The Cellular Universe (v3.17)
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21286129.svg)](https://doi.org/10.5281/zenodo.21286129)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21297228.svg)](https://doi.org/10.5281/zenodo.21297228)
 
 **An emergent, non-equilibrium causal network model of spacetime.** This repository hosts the complete theoretical derivation, methodology registers, and numerical verification pipelines for the Cellular Universe theory (v3.17).
 
