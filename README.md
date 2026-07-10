@@ -91,7 +91,7 @@ Calculations and adversarial review were performed in collaboration with an AI s
   month     = jul,
   year      = 2026,
   publisher = {Zenodo},
-  doi       = {10.5281/zenodo.21286129},
-  url       = {https://doi.org/10.5281/zenodo.21286129}
+  doi       = {10.5281/zenodo.21297228},
+  url       = {https://doi.org/10.5281/zenodo.21297228}
 }
 ```
