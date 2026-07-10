@@ -62,7 +62,7 @@ If you analyze, test, or build upon this model, please cite the registered Zenod
   month        = jul,
   year         = 2026,
   publisher    = {Zenodo},
-  doi          = {10.5281/zenodo.XXXXXXX},
-  url          = {https://doi.org/10.5281/zenodo.XXXXXXX}
+  doi          = {10.5281/zenodo.21286129},
+  url          = {https://doi.org/10.5281/zenodo.21286129}
 }
 
