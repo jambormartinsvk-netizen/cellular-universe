@@ -1,106 +1,48 @@
-The Cellular Universe (v3.17)
+# README — The Cellular Universe (Cellular Space Theory), record v2
 
-An emergent, non-equilibrium causal network model of spacetime. This repository hosts the complete theoretical derivation, ontological rules, and numerical validation pipelines for the Cellular Universe theory (v3.17).
+**Author:** Martin Jambor (Independent Researcher) | ORCID on record
+**Adversarial review & computations:** Claude (Anthropic AI), under the author's direction; consistency cross-check by a second AI system (Gemini). This constitutes consistency checking, **not peer review**. Independent human replication is explicitly invited.
+**Language note:** the record is fully bilingual. Files tagged `_SK` are the authoritative Slovak originals; files tagged `_EN` (01b, 04b, 05b and the predictions tables) are faithful English translations, verifiable against the originals.
+**Living mirror:** https://github.com/jambormartinsvk-netizen/cellular-universe (issues and replication PRs welcome; this Zenodo record is the citable timestamp).
 
-🌌 Central Hypothesis: Is observed physics the surface trace of the energy dissipation and cell-division dynamics of a discrete Planckian space network?
+## What this record is
+A pre-registration of exact, falsifiable cosmological predictions of a model in which space is a random causal network of Planck-scale cells whose "metabolism" (digestion of vacuum fuel + cell division) generates expansion, matter and dark-sector phenomenology. **One fitted parameter** (lambda = 0.10–0.15); delta = 1/(<k> + g_B) = 0.02297, DeltaN_eff = 0.0535 and n_s = 0.9656 are derived, not fitted.
 
-🚀 Key Predictions & Cosmological Bounds
+## File guide (read in this order)
+| # | file | content |
+|---|------|---------|
+| 01 / 01b | Introduction_and_Philosophy (SK / EN) | the story, core metaphors introduced step by step, philosophical principles F1–F5, why to trust the method |
+| 02 / 02b | Predictions_Table_v3.17 (EN / SK pdf) | one page: every prediction vs. standard value, deciding experiment, kill condition |
+| 03 / 03b | Predictions_Table_v3.17 (EN / SK csv) | machine-readable versions (compare to future data by script) |
+| 04 / 04b | Main_Document_Theory_Equations_Values_v3.17 (SK / EN) | all equations with their logic, computation of every value, terminology mapping, field-theoretic framework note, phenomenon-by-phenomenon comparison, data state at registration |
+| 05 / 05b | Methodology_Rules_and_Question_Register (SK / EN) | anchor, falsification protocol, verification rules P1–P5, 9 methodological pitfalls (M1–M9), 20 dead branches with reasons, 16 resolved questions with verdicts |
+| 06–10 | script_*.py | reproducible pipelines (see below) |
 
-Without adding unconstrained free parameters, the model derives cosmological parameters from the topology of a random 3D Poisson-Voronoi Delaunay network ($\langle k \rangle = 15.54$) and the Standard Model gauge boson degrees of freedom ($C = g_B = 28$):
+## Headline predictions (details in 02/03)
+N_eff = 3.09–3.10 | n_s = 0.9656 ± 0.0016 (derived) | primordial r < 1e-10 (any detection r >= 1e-3 falsifies the model) | H_0 = 66.4 km/s/Mpc | S_8 = 0.86–0.87 | w_0 ≈ −0.92, w_a ≈ −0.4…−0.6 | permanently null direct dark-matter detection | consistency relation: the same delta sets n_s − 1 = −(3/2)delta and the shape of w(z).
 
-Scalar Spectral Index:
+## Scripts: requirements & validation
+**Requirements:** Python 3.10+, numpy, scipy. No network access needed. Each run should take seconds–minutes on a laptop (largest: 300k-node Delaunay).
 
-$n_s = 0.9656 \pm 0.0016$ (Derived analytically via $n_s - 1 = -1.5\delta$).
+**Before trusting any output, check the validation values:**
+- `06_..Q14..` (front sharpening): Poisson network must give mean degree **<k> ≈ 15.54–15.58**; verdict output chi ≈ 0.26–0.32.
+- `07_..Q12..` (dispersion): periodic stitching must validate **<k> = 15.535** (if you get ~16.1, ghost-edge filtering failed — pitfall M7); linear dispersion term must vanish; isotropy of c at the 0.1 % level; cubic-lattice contrast ~21x worse.
+- `08_..Q7..` (sound horizon): LCDM validation must return **r_s = 144.32 Mpc, h = 0.6730**; late matter creation must LOWER H_0 (−1.5 to −4.5) — that sign is the point.
+- `09_..K3..` (full cosmology): LCDM validation **h = 0.673, Omega_m = 0.316**; the no-steam model point must reproduce **H_0 = 65.6, Omega_m = 0.359, w_0 = −0.91, w_a = −0.60, S_8 = 0.888** before you trust the steam runs.
+- `10_..Q10..` (V-links): dowry rule must converge to saturation (std/mean ≈ 0.13) and cross-boundary weight exponent **p ≈ 1.97** (area law).
 
-Dark Energy Dynamics:
+If a validation value fails on your machine, do not use the run — consult pitfalls M1–M9 in file 05.
 
-Predicts a distinct evolutionary track for dark energy ($w_0 \approx -0.92$, $w_a \approx -0.61$), serving as an accounting shadow of localized matter nucleations.
+## Kill conditions (any single one falsifies the model)
+1. Detection of primordial B-modes, r >= 1e-3 (LiteBIRD / CMB-S4)
+2. Confirmed non-gravitational dark-matter interaction (LZ / XENONnT / DARWIN)
+3. S_8 <= 0.78 AND w_a <= −0.6 confirmed simultaneously (Euclid/LSST + DESI)
+4. Local H_0 >= 72 km/s/Mpc confirmed with systematics fully accounted for
+5. Discovery of a new fundamental carrier boson (changes g_B = 28, hence n_s)
+6. CMB-S4: n_s outside 0.9656 ± 0.004
 
-Matter Clustering:
+## Data state at registration (7 July 2026)
+DESI DR2: w_0 = −0.75 ± 0.06, w_a = −0.86 ± 0.25 (survey mapping completed April 2026; final analysis pending). KiDS-Legacy (DR5, 2025): S_8 = 0.815 (+0.016/−0.021). Planck 2018: n_s = 0.9649 ± 0.0042, N_eff = 2.99 ± 0.17.
 
-$S_8 \approx 0.859 - 0.874$ (Our tension compared to the final KiDS-Legacy 2025 measurement of $S_8 = 0.815$ stands at a manageable $2.4\sigma - 3.3\sigma$, a significant softening from the earlier KiDS-1000 mismatch).
-
-Early Universe Relic:
-
-Predicts a hot "steam" graviton background contributing $\Delta N_{\text{eff}} = 0.0535$ ($N_{\text{eff}} = 3.10$).
-
-Tensor-to-Scalar Ratio:
-
-$r < 10^{-10}$ (primordial B-modes are strongly suppressed).
-
-📂 Repository Structure
-
-cellular-universe/
-│
-├── LICENSE.md               <-- Combined license file (MIT for scripts, CC-BY-4.0 for text)
-├── README.md                <-- This file
-│
-├── theory/                  <-- Core theoretical frameworks, tables, and registers
-│   ├── SK/                  <-- Slovak Original Records (Authoritative)
-│   │   ├── 00_uvod_a_filozofia.md
-│   │   ├── bunkovy_vesmir_v3_17_REGISTRACIA.md
-│   │   └── 03_Predictions_Table_v3.17_SK.csv               <-- NEW: Translated Slovak predictions
-│   └── EN/                  <-- English Translations for Peer-Review
-│       ├── 01b_Introduction_and_Philosophy_EN.md
-│       ├── 03_Predictions_Table_v3.17_EN.csv               <-- Original English predictions
-│       ├── 04b_Main_Document_Theory_Equations_Values_v3.17_EN.md
-│       └── 05b_Methodology_Rules_and_Question_Register_EN.md
-│
-└── scripts/                 <-- Executable verification Python pipelines
-    ├── 06_script_Q14_light_cone_front_sharpening.py
-    ├── 07_script_Q12_dispersion_Lorentz_test.py
-    ├── 08_script_Q7_sound_horizon_H0.py
-    ├── 09_script_K3_cosmology_pipeline.py
-    └── 10_script_Q10_Vlinks_dowry_rule.py
-
-
-🛠️ Verification & Run Guide
-
-To run the cosmological and network simulations, ensure you have numpy, scipy, and matplotlib installed.
-
-1. Execute the Cosmology & Growth Pipeline
-
-Reproduces the back-integration of background equations, CPL parameters, and growth equations:
-
-python scripts/09_script_K3_cosmology_pipeline.py
-
-
-2. Verify Spacetime Dispersion Relations and Lorentz Test
-
-Fits the discrete graph Laplacian dispersion and checks for Lorentz invariance suppression:
-
-python scripts/07_script_Q12_dispersion_Lorentz_test.py
-
-
-3. Run the Spatial Connection (Dowry Rule) Simulation
-
-Validates the convergence of network capacity to the $n_V = C$ attractor and measures the area law exponent ($p \approx 1.97$):
-
-python scripts/10_script_Q10_Vlinks_dowry_rule.py
-
-
-⚰️ Kill Conditions (Falsifiability)
-
-In accordance with strict Popperian methodology, the model is designed to be fully falsifiable. Any of the following measurements will immediately falsify the current formulation:
-
-LiteBIRD/CMB-S4 detection of primordial B-modes ($r \ge 10^{-3}$).
-
-Confirmed non-gravitational dark matter interaction (e.g., direct detection of WIMPs by LZ or XENONnT).
-
-Local Hubble parameter confirmed at $H_0 \ge 72$ km/s/Mpc without any remaining cosmic distance ladder systematics.
-
-CMB-S4 scalar spectral index verified outside the $0.9656 \pm 0.004$ margin.
-
-📄 Citation & Open Access
-
-If you analyze, test, or build upon this model, please cite the registered Zenodo record:
-
-@misc{jambor2026cellular,
-  author       = {Jambor, Martin},
-  title        = {The Cellular Universe: Theory and Numerical Verification Pipelines (v3.17)},
-  month        = jul,
-  year         = 2026,
-  publisher    = {Zenodo},
-  doi          = {10.5281/zenodo.21286129},
-  url          = {https://doi.org/10.5281/zenodo.21286129}
-}
+## License
+Text and documents: CC-BY 4.0. Scripts: MIT.

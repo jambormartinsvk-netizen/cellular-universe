@@ -5,12 +5,25 @@
 **Určené na registráciu predikcií (Zenodo/OSF) — časová pečiatka pred CMB-S4, LiteBIRD, Euclid/LSST a finálnym DESI.**
 
 ## AKTUÁLNY DÁTOVÝ STAV (stráž dát k 7.7.2026)
-- **Lensing:** finálny KiDS-Legacy (DR5, 2025): S₈ = 0.815 (+0.016/−0.021), len ~0.7σ od Plancku — lensingová strana sa pohla NAHOR (z KiDS-1000 0.759), smerom k našej stávke S1. Skóre prepočítané s týmto bodom: **model χ² ≈ 19.6–19.9 vs ΛCDM ≈ 30.0** (3 fronty: DESI w₀, wₐ + S₈; bez RSD a korelácií — indikátor). Naše napätie v S₈: 2.4–3.3σ.
+- **Lensing:** finálny KiDS-Legacy (DR5, 2025): S₈ = 0.815 (+0.016/−0.021), len ~0.7σ od Plancku — lensingová strana sa pohla NAHOR (z KiDS-1000 0.759), smerom k našej stávke S1. Skóre prepočítané s týmto bodom: **model χ² ≈ 19.6–19.9 vs ΛCDM ≈ 30.0** (χ² nad 3 dátovými väzbami: DESI DR2 w₀ = −0.75±0.06, wₐ = −0.86±0.25 a KiDS-Legacy S₈ = 0.815±0.018; model má 1 voľný parameter λ → 2 d.o.f., ΛCDM 0 voľných → 3 d.o.f.; bez RSD bodov a korelácií w₀–wₐ — indikátor, nie posterior). Naše napätie v S₈: 2.4–3.3σ.
 - **DESI:** platné DR2 (2025, posilnené náznaky vyvíjajúcej sa tmavej energie; w₀ = −0.75±0.06, wₐ = −0.86±0.25); mapovanie dokončené apríl 2026, finálna analýza príde — stávky S1/S3 živé.
 - Externý nezávislý audit (júl 2026) potvrdil konzistenciu odvodenia δ a predikcie n_s.
-**Skripty na overenie (outputs):** q14_front.py | q12_disperzia.py | q7_zvukovy_horizont.py | k3_pipeline_s_parou.py | q10_v_spoje.py
+**Skripty na overenie (priložené):** 06_script_Q14_light_cone_front_sharpening.py | 07_script_Q12_dispersion_Lorentz_test.py | 08_script_Q7_sound_horizon_H0.py | 09_script_K3_cosmology_pipeline.py | 10_script_Q10_Vlinks_dowry_rule.py
 
 ---
+
+
+## POZNÁMKA K TERMINOLÓGII (pre fyzikálneho čitateľa)
+Interné metafory teórie slúžia ako pedagogické lešenie; ich prísne fyzikálne ekvivalenty sú:
+| metafora | prísny ekvivalent |
+|---|---|
+| metabolizmus siete | nerovnovážna dynamika kauzálnej siete |
+| palivo (Ω_f) | metastabilná vákuová hustota energie (prekurzor „tmavej energie") |
+| trávenie | prenosová rýchlosť vákuovej energie na časticové excitácie |
+| réžia δ | disipačný faktor prestavby siete pri delení |
+| odpad / popol | nukleované zvyšky hmoty / gravitačne interagujúce sterilné relikty |
+| para | odviazané tenzorové fluktuácie siete (tepelný gravitónový relikt) |
+| polovičné veno | symetrická alokácia entanglementovej kapacity pri delení stavu |
 
 # ČASŤ A — VZORCE, ICH LOGIKA A VÝPOČET HODNÔT
 
@@ -26,6 +39,7 @@
 ## A3. Kapacita vnútra: C = g_B = 28
 **Logika:** V-spoj = zdieľaná doména dvoch buniek; zdieľanie nesú NOSIČE domén — a nosiče sú bozóny. Kapacita spoja = počet nezávislých nosičových stavov.
 **Výpočet:** gluóny 8×2 = 16 | fotón 2 | W⁺W⁻Z 3×3 = 9 | Higgs 1 → **28** (ekvivalentne pred narušením symetrie: 8 kalibračných + 4 Higgs + 16 gluónov = 28; pasca M8: pozor na dvojité počítanie Goldstonov).
+**Upresnenie (fáza symetrie):** C = 28 je nasýtená dimenzia vnútorného stavového priestoru počas Planckovej genézy, kde sú kalibračné symetrie SM plne OBNOVENÉ: 16 gluónov + 8 elektroslabých kalibračných (4 bozóny × 2 polarizácie) + 4 Higgsov dublet = 28. Po narušení symetrie dáva Goldstonovo účtovníctvo (pasca M8) to isté číslo: 16 + 9 (W±, Z hmotné) + 2 (fotón) + 1 (Higgs) = 28. Uväznenie/odviazanie týchto stavov pri nízkych energiách nemení topologickú štruktúru zamknutú pri genéze (globálny atraktor pravidla vena).
 **Súd alternatív (dáta popravili):** fermióny 90 → n_s = 0.986 (5σ †) | všetky dof 106.75 → 0.988 (5.4σ †) | 17 častíc → 0.954 (2.6σ †) | 8 domén → 0.936 (6.8σ †). Prežil len bozónový nosičový počet (0.15σ). Look-elsewhere priznaný: váhu nesie mechanizmus + to, že 28 existovalo v teórii deň pred položením otázky.
 
 ## A4. Emergentný svetelný kužeľ: σ(R) ∝ R^χ
@@ -46,6 +60,7 @@
 ## A7. Rovnice pozadia (V1) — odvodené člen po člene
  dΩ_f/dx = −3δ·Ω_f − λ·(H₀/H)·Ω_f
  dΩ_m/dx = −3·Ω_m + λ·(H₀/H)·Ω_f ; dΩ_r/dx = −4Ω_r ; E² = ΣΩ (x = ln a)
+**Poznámka k teoreticko-poľovému rámcu:** rovnice V1 sú formulované ako fenomenologické transportné rovnice prenosu energie-hybnosti v efektívnej kauzálnej sieti. Lagranžovská formulácia cez fundamentálne spojité polia sa obchádza; rovnice sú však striktne viazané Bianchiho identitou (∇_μT^μν = 0), ktorá zaručuje lokálne zachovanie celkovej hustoty energie. Prístup je analogický hydrodynamickým/termodynamickým formuláciám emergentnej gravitácie (Jacobson), kde makroskopické stavové rovnice nahrádzajú explicitnú mikroskopickú akciu.
 **Logika členov:**
 - **−3δΩ_f:** expanzia = delenie (N ∝ a³ → 3 delenia/bunku/e-fold), každé stojí réžiu δ (A2) → strata paliva 3δ za e-fold. TOTO JE mikropôvod w = −1+δ.
 - **λ(H₀/H)Ω_f:** trávenie beží podľa VNÚTORNÝCH hodín bunky (vnútro = vlastná dimenzia, o H nevie) → premena konštantnou rýchlosťou λH₀ na jednotku paliva. Faktor H₀/H je len prevod na e-foldy. Preto zomreli Γ∝H (#4) a Γ=konšt. celkovo (#5).
@@ -81,6 +96,7 @@ Hmota „čakajúca" v palive sa pri pohľade do minulosti NEZHUSŤUJE (w ≈ �
 **Krok 3 (exponent m):** nasýtený V-kanál (energia tvorí spoje, nehreje — Hagedornovský režim): δE ∝ √(T·E_P)·√N ⇒ amplitúda ∝ √T ∝ √H ⇒ m = ½.
 **Výsledok:** n_s − 1 = 2·(½)·d ln H/d ln k = −ε = −(3/2)δ = **−0.0345** (Planck: −0.0351 ± 0.0042; 0.15σ).
 **Amplitúda:** A_s = 2.1×10⁻⁹ ⇒ T_zamrznutia ~ 2–7×10⁹ GeV. **E-foldy:** N = ln(ρ_i/ρ_f)/(3δ) ≈ 1280 (treba ~60) — horizont krytý érou paliva.
+**Upresnenie (fáza symetrie):** C = 28 je nasýtená dimenzia vnútorného stavového priestoru počas Planckovej genézy, kde sú kalibračné symetrie SM plne OBNOVENÉ: 16 gluónov + 8 elektroslabých kalibračných (4 bozóny × 2 polarizácie) + 4 Higgsov dublet = 28. Po narušení symetrie dáva Goldstonovo účtovníctvo (pasca M8) to isté číslo: 16 + 9 (W±, Z hmotné) + 2 (fotón) + 1 (Higgs) = 28. Uväznenie/odviazanie týchto stavov pri nízkych energiách nemení topologickú štruktúru zamknutú pri genéze (globálny atraktor pravidla vena).
 **Súd alternatív:** nekorelovaný šum → n_s = 4 († #19); kritický bod → ~2 (†); rovnodelenie kanálov → −3δ (δ = 0.0117, pod oknom fitu).
 
 ## A14. Tenzory: r ≈ 0

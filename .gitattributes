@@ -1,0 +1,17 @@
+# Preserve the exact published Zenodo v3.17/v2.0 bytes on every checkout.
+/theory/EN/00_README_EN.md -text
+/theory/SK/01_Introduction_and_Philosophy_SK.md -text
+/theory/EN/01b_Introduction_and_Philosophy_EN.md -text
+/theory/SK/02b_Predictions_Table_v3.17_SK.pdf -text
+/theory/EN/02_Predictions_Table_v3.17_EN.pdf -text
+/theory/SK/03b_Predictions_Table_v3.17_SK.csv -text
+/theory/EN/03_Predictions_Table_v3.17_EN.csv -text
+/theory/SK/04_Main_Document_Theory_Equations_Values_v3.17_SK.md -text
+/theory/EN/04b_Main_Document_Theory_Equations_Values_v3.17_EN.md -text
+/theory/SK/05_Methodology_Rules_and_Question_Register_SK.md -text
+/theory/EN/05b_Methodology_Rules_and_Question_Register_EN.md -text
+/scripts/06_script_Q14_light_cone_front_sharpening.py -text
+/scripts/07_script_Q12_dispersion_Lorentz_test.py -text
+/scripts/08_script_Q7_sound_horizon_H0.py -text
+/scripts/09_script_K3_cosmology_pipeline.py -text
+/scripts/10_script_Q10_Vlinks_dowry_rule.py -text
