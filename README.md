@@ -1,316 +1,271 @@
-# 00 — Quantum Cellular Theory of Space: guide to version 3.18
+# Quantum Cellular Theory of Space: A Testable Cosmological Model of a Dividing Causal Network
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21915608.svg)](https://doi.org/10.5281/zenodo.21915608)
+
+**Also known as:** The Cellular Universe<br>
 **Author:** Martin Jámbor<br>
-**Official name of the theory:** Quantum Cellular Theory of Space (`QCTS`)<br>
-**Language authority:** Slovak files<br>
-**Content cutoff:** 9 August 2026<br>
-**Planned publication window:** 11–13 August 2026<br>
-**Release DOI:** [`10.5281/zenodo.21915608`](https://doi.org/10.5281/zenodo.21915608)<br>
-**Theory status:** a working physical hypothesis with audited partial
-results; it has not yet been experimentally confirmed
+**Slovak name:** Kvantová bunková teória priestoru<br>
+**Scientific status:** open research programme with audited partial results;
+not experimentally confirmed and not peer-reviewed
 
-## Self-contained scope of the release
+Quantum Cellular Theory of Space (`QCTS`) investigates whether observed
+spacetime can emerge from a discrete, evolving causal network whose cells
+process energy and divide. The programme asks whether one local microscopic
+process could connect cosmic expansion and its acceleration, propagating
+waves and the invariant limiting speed, the formation of matter-like
+products, a nonrelativistic residue (“ash”), a thermal wave relic (“steam”),
+persistent network scars, and the arrow of time.
 
-This document set is a self-contained account of version 3.18. Version 3.17
-is not required in order to understand it. Here, “complete” means a complete
-documentation snapshot: the set contains the working ontology, physical
-mechanism, equations, results, prediction groups, open questions, and claim
-boundaries. It does not mean that the theory is finished or experimentally
-confirmed.
+> **Central question:** Can observed physics be the macroscopic trace of
+> energy processing, transport, and cell division in an underlying causal
+> network—without violating established relativity, conservation laws,
+> cosmological observations, or their measured tolerances?
 
-## Reading order
+The current homogeneous ledger contains a fuel-to-ash energy transfer. Which
+additional channels physically exist, whether they arise in parallel or in a
+sequence, and how they share energy and momentum remain open questions. The
+main unresolved bridge is therefore a complete local covariant
+production-and-transport law, not merely another numerical fit.
 
-1. [`01_The_Cellular_Universe_EN.md`](theory/EN/01_The_Cellular_Universe_EN.md)
-   — the complete coherent account of the theory: problem, physical picture,
-   equations, results, predictions, falsification, and open questions.
-2. [`02_Prediction_Status_Table_EN.csv`](theory/EN/02_Prediction_Status_Table_EN.csv)
-   — the machine-readable P01–P11 register containing the version 3.18
-   statement, survival target, exclusion reach, meaning of agreement,
-   evidence, and mandatory nonclaim.
-3. [`03_Methodology_and_Question_Register_EN.md`](theory/EN/03_Methodology_and_Question_Register_EN.md)
-   — audit rules, the logic of live and dead tracks, unknown functions, and
-   the complete Q1–Q34 question register.
-4. [`04_Theory_Existence_Conditions_Register_EN.csv`](theory/EN/04_Theory_Existence_Conditions_Register_EN.csv)
-   — the machine-readable EC01–EC43 register: exact laws, open constraints,
-   mechanism and calibration values, links to P01–P11, death reach, and
-   numbers that must not be used as a physical STOP.
+The [Zenodo record](https://doi.org/10.5281/zenodo.21915608) is the fixed,
+citable snapshot. This repository adds selected reproduction scripts, sealed
+external-audit packages, audit responses, and immutable history needed to
+check how the current claims were obtained.
 
-## Content map of documents 01–04
+## 🚀 Registered predictions
 
-### Document 01 — coherent physical account
+The numerical entries below are registered **survival targets**. Agreement
+keeps only the stated formulation alive; it does not confirm the cellular
+mechanism or prove QCTS. Exclusion requires the complete model-to-observable
+map and the uncertainties, covariance, nuisance parameters, and systematics
+specified for that row.
 
-[`01_The_Cellular_Universe_EN.md`](theory/EN/01_The_Cellular_Universe_EN.md)
-is the main reader document. Its sections serve these purposes:
-
-1. **Question posed by the theory — can one local process connect several
-   phenomena?** — the theory asks whether energy processing and division of
-   spatial cells could provide a common physical origin for accelerated
-   expansion, matter, the dark ash component, relic steam waves, scars, and
-   the arrow of time. It also compares its account of light waves and a
-   shared limiting $c$ with mainstream physics and introduces the central
-   bridge equation containing $\delta$.
-2. **Proposed mechanism — what may happen when a cell divides?** — vacuum
-   energy acts as fuel for a local event that changes the network and may
-   create matter, ash, steam, and a scar either in parallel or in a causal
-   chain. The chapter separates derived and tested milestones from product
-   ordering that must still be decided by mathematics and observations.
-3. **Claim classes** — the exact distinction between `DERIVED`,
-   `CONDITIONAL`, `HYPOTHESIS`, `OPEN`, `WITHDRAWN`, and `STOP_SCOPE`.
-4. **From network to physics** — Poisson–Delaunay geometry, division
-   overhead, capacity `C=28`, signal front, dispersion, limiting $c$,
-   internal capacity, and the graph Newton comparator.
-5. **Homogeneous cosmological background** — energy ledger, the $\lambda$
-   family, a universal background independent of Fourier mode, accounting
-   shadow, and steam.
-6. **Linear perturbations and observables** — requirements for a complete
-   A2 system, scoped targets and conditional $S_8/H_0$ diagnostic points,
-   the CMB anchor, scalar spectrum, and tensor sector.
-7. **Plain-language answers** — space, expansion, fuel, matter, ash, steam,
-   $H_0$, $S_8$, the light cone, gravity, measurement, and the arrow of time.
-8. **Predictions** — reader summary of P01–P11 and their current commitments.
-9. **Stations and tracks** — A/K identifiers, accepted milestones, live and
-   dead tracks, STOP reasons, depth `60/100`, the A2-K4 blocker, and work
-   required before A3.
-10. **Open fundamental questions** — physics not closed by v3.18.
-11. **Admissions and nonclaims** — conclusions that must not be inferred.
-12. **Falsification and next steps** — tests that constrain or kill a scope
-    and the gates that follow.
-13. **Citation boundary** — what may be cited as a current result.
-14. **Abbreviation register** — physical symbols, observables, units,
-    stations, tracks, gates, and audit codes.
-
-### Document 02 — exact register of every prediction
-
-[`02_Prediction_Status_Table_EN.csv`](theory/EN/02_Prediction_Status_Table_EN.csv)
-is the machine-readable register of the prediction wording adopted by v3.18.
-Each row contains
-the v3.18 statement and survival target, reach of exclusion, meaning of
-agreement, evidence trail, and mandatory nonclaim. No earlier release is
-needed to interpret any row:
-
-- `P01` — $N_{\rm eff}$ and $\Delta N_{\rm eff}$;
-- `P02` — scalar spectral index $n_s$;
-- `P03` — tensor-to-scalar ratio $r$;
-- `P04` — Hubble constant $H_0$;
-- `P05` — clustering parameter $S_8$;
-- `P06` — dark-energy parameters $w_0,w_a$;
-- `P07` — direct dark-matter/ash detection;
-- `P08` — withdrawn exact $n_s-w$ relation with no v3.18 survival target;
-- `P09` — possible time drift of $\delta$;
-- `P10` — Lorentz invariance and dispersion;
-- `P11` — thermal steam/wave background; identification of the relic with
-  gravitons has not been derived.
-
-Use the CSV to answer “what may currently be claimed about this specific
-prediction?”. Its physical derivation belongs in document 01, while the
-evaluation rules belong in document 03.
-
-### Document 03 — audit rules and question register
-
-[`03_Methodology_and_Question_Register_EN.md`](theory/EN/03_Methodology_and_Question_Register_EN.md)
-specifies how results may be produced and interpreted:
-
-0. purpose, authority, and self-containment of the register;
-1. theory anchor and working protocol;
-2. birth, identity, branching, and archiving of tracks;
-3. mandatory P1–P5 verification rules, known M1–M9 traps, and lineage audit;
-4. evidence classes, physical constraints, unknown functions, and the
-   non-emptiness test for their admissible sets;
-5. compute, audit, and release workflow;
-6. historical graveyard and current dead scopes with death reasons;
-7. complete question register Q1–Q34;
-8. ledger of older formulations restricted by later audit;
-9. live unresolved functions and exact return points;
-10. mandatory release nonclaims.
-
-### Document 04 — every existence condition and its reach
-
-[`04_Theory_Existence_Conditions_Register_EN.csv`](theory/EN/04_Theory_Existence_Conditions_Register_EN.csv)
-is the common machine-readable EC01–EC43 index. It answers the question:
-“what value, range, or exact property must the formulation have, and what
-precisely dies if it fails?”. It separates:
-
-- fundamental exact conditions with no free tolerance;
-- measurable targets whose tolerance belongs to the dataset and likelihood;
-- open conditions without an allowed numerical kill window;
-- mechanism and calibration values without automatic theory-level reach;
-- process and numerical values that never create a physical STOP by
-  themselves.
-
-Document `04` does not rewrite the authoritative prediction rows in `02`;
-an EC row linked to P01–P11 requires both records to be read.
-
-## Fast reading routes
-
-| Reader or AI goal | Recommended route |
-|---|---|
-| first understanding of the theory | document 01: §§1–2, then §§7, 9, and 11 |
-| checking equations and symbols | document 01: §§4–6 and register §14 |
-| checking one prediction | document 01: §8, then the relevant P01–P11 row in document 02 including its mandatory row-specific nonclaim, and finally the global release nonclaims in document 03 §10 |
-| checking every necessary value or constraint | the relevant EC01–EC43 row in document 04; its source in document 01 or 03; and document 02 where it links to P01–P11 |
-| checking A1–A3 progress | document 01: §9; track rules in document 03 §§2–3 |
-| learning why a track died | document 01: §9.3; document 03: §§6 and 8 |
-| locating an unknown function or its constraints | document 03: §§4 and 9; physical context in document 01 §§5–6 and 10 |
-| auditing a calculation or claim | document 03: §§1–5, then the evidence path stated beside the result in document 01 or 02 |
-| preparing a prediction citation | document 01: §13, the relevant permitted statement and mandatory row-specific nonclaim in document 02, and applicable global nonclaims in document 03 §10 |
-| citing a track status | document 01: §§9 and 9.3; methodology and historical restrictions in document 03 §§2–3, 6, and 8; document 02 does not contain track rows |
-
-> #### Technical reading guide for AI systems and auditors
->
-> *This note supports correct machine reading of the release identifiers and
-> claim boundaries.*
->
-> - **Prediction `P01–P11`:** read its meaning in document 01 §8, its exact
->   permitted statement and row-specific nonclaim in document 02, the global
->   restrictions in document 03 §10, and the related `EC` conditions in
->   document 04.
-> - **Track `A…-K…`:** read its status in document 01 §§9 and 9.3 and the
->   track rules in document 03. Document 02 contains no track rows.
-> - **Language authority:** if the translations differ in meaning, the
->   Slovak release controls.
-> - **Release boundary:** the working `tracks/` directory is an audit and
->   development trail. It must not replace the v3.18 release or broaden its
->   claims.
-
-## How to read claims
-
-A **precisely delimited scope** is the stated combination of equations,
-assumptions, inputs, physical regime, and tested phenomenon to which a result
-actually applies. A scoped result must not be transferred automatically to a
-different formulation or to the entire theory.
-
-- `DERIVED` means derived only in the precisely stated mathematical scope.
-- `CONDITIONAL` means dependent on declared inputs, a model, or an anchor.
-- `HYPOTHESIS` and `OPEN` are not confirmation or prediction.
-- `WITHDRAWN` preserves the historical statement but prohibits its use as a
-  current claim.
-- `STOP_SCOPE` kills the precisely tested mechanism, not automatically the
-  entire theory.
-
-A **survival target** is a preregistered numerical or exact condition that a
-specified formulation must satisfy. Agreement keeps only that scope alive;
-it does not confirm the cellular cause. Robust exclusion kills the scope
-stated in that row. It kills the whole theory only for an explicit
-`THEORY_LEVEL` target or after all declared top-level alternatives have been
-proved exhaustive and excluded. Data used to construct or normalise a target
-are calibration data and must not be counted again as independent
-confirmation.
-No P01–P11 row in v3.18 currently has certified `THEORY_LEVEL` reach; an
-active target is nevertheless not optional. For every row carrying an
-active survival target, a robust incompatible result after the required
-complete observable test, including uncertainties, covariance, and
-systematics, must produce a recorded scoped STOP or, by Martin Jámbor's
-decision, a physically distinct new track; the target may not move silently
-after the result.
-
-## How to read the verification map
-
-The theory is tested as a route through **verification stations**. At each
-station, several **tracks** may be tested — physically distinct ways of
-satisfying that station's requirements.
-
-- **A1 — homogeneous background:** tests cosmic expansion and the basic
-  energy ledger between components without spatial perturbations.
-- **A2 — linear perturbations:** tests whether the background can be
-  extended into a complete, conservative, causal, and stable dynamics of
-  small perturbations.
-- **A3 — observable universe:** requires implementation of the complete
-  system in an Einstein–Boltzmann calculation, such as CLASS or CAMB, and
-  comparison with the CMB, structure growth, and other measurements.
-- **K — track:** denotes one specific mechanism tested at a station.
-
-### What gates G1–G10 mean
-
-The gates define the same sequence of checks for every track. The number
-beside a gate is the canonical depth reached only after that gate and every
-preceding gate, or an explicitly proved equivalent, have passed.
-
-At every gate, the words **complete** and **PASS** apply only to the frozen
-formulation, state space, and physical regime declared in its gate passport.
-Expanding the degrees of freedom or physical regime reopens every affected
-downstream gate unless a separate equivalence proof transfers the result.
-
-| Gate | Depth | What the track must demonstrate |
-|---|---:|---|
-| `G1` | `10/100` | A physically distinct hypothesis, its mechanism, degrees of freedom, parameters, and difference from other tracks are recorded. |
-| `G2` | `20/100` | The homogeneous background and complete energy–momentum ledger are closed, positive, and have the correct null limit. |
-| `G3` | `30/100` | A local action or an equivalent complete covariant closure exists without a missing operator, source, or transfer frame. |
-| `G4` | `40/100` | Complete linear equations for all species, perturbed transfer $\delta Q_A$, Einstein constraints, Bianchi identities, the gauge map, signs, and the null limit are derived. |
-| `G5` | `50/100` | A complete regular superhorizon basis of all physical modes exists, including constraints and initial-mode classification. |
-| `G6` | `60/100` | Within the frozen scope, the complete regular basis passes the applicable effective kinetic-sign, gradient, characteristic-causality, physical-denominator, high-$k$/subhorizon stability, stiffness, and convergence tests. An effective-fluid PASS is not by itself a microscopic UV no-ghost theorem or proof of global hyperbolicity. |
-| `G7` | `70/100` | A full Einstein–Boltzmann implementation includes photons, neutrinos, anisotropic stress, tight coupling, recombination, physical transfers, conservation/constraint/null tests, and an independent implementation or gauge cross-check. |
-| `G8` | `80/100` | The complete system produces CMB-normalised spectra and the growth quantities $\sigma_8$ and $S_8$, rather than an arbitrarily normalised effective mode. |
-| `G9` | `90/100` | A joint analysis of preregistered CMB, BAO, lensing, and other data includes likelihoods and covariances, priors, nuisance parameters, degrees of freedom, systematics, holdout, robustness, and preregistered exclusion thresholds. |
-| `G10` | `100/100` | Every gate required by the version and the mandatory further predictions have passed; the manifest, hashes, changelog, disclosure of open gates, and complete reproduction trail enabled independent reproduction. |
-
-Station A3 is not a second copy of gate G7. G7 must first close the full
-Einstein–Boltzmann bridge and physical transfers. A3 then proceeds through
-G8 to CMB-normalised spectra and growth and through G9 to joint comparison
-with data. The same work must not be counted in two gates.
-
-A later necessary no-go test may physically stop a track even when some
-intermediate gates were not run. That test is preserved as the **death
-gate**, but it does not increase the track's canonical depth across skipped
-gates.
-
-### Where the theory currently stands
-
-The active route is
+One central mean-field construction starts from the known stereological
+ensemble mean degree of ideal three-dimensional Poisson–Delaunay geometry,
 
 ```text
-A1-K1 -> A2-K4 -> A3
+<k> = 15.53545746435112,
+delta_mean = 1 / (<k> + C).
 ```
 
-Track `A1-K1` has passed only the homogeneous-background check. At station
-A2, track `A2-K4` has progressed furthest:
+For the investigated capacity identification `C = 28`, this gives
 
-1. gate `G5` accepted a regular superhorizon basis and set the depth to
-   `50/100`;
-2. gate `G6` passed in the frozen nine-variable perfect-radiation
-   effective-fluid system: it checked all three regular modes, effective
-   kinetic and gradient signs, causal characteristic speeds, the null limit,
-   the constraint, subhorizon points $q=30,300,1000$, and numerical
-   convergence. This raised the depth to `60/100`, but did not establish a
-   microscopic no-ghost theorem or global stability.
+```text
+delta_mean = 0.022969782752802058.
+```
 
-The number `60/100` is therefore the **cumulative weight of passed physical
-gates**. It is not a 60% probability that the theory is true, 60% of all
-work completed, or a statistical result. Station A2 is not complete. The
-remaining work includes a complete common local production-and-transport
-law, dynamic preservation of the constraints, the full photon and neutrino
-hierarchies, and the subsequent A3 gate.
+The arithmetic is reproducible, but the physical identification `C = 28`
+remains a hypothesis with acknowledged look-elsewhere exposure. It still
+requires a microscopic explanation of the bosonic selection and fermionic
+exclusion. If the physical overhead is instead the local average
+`<1/(k+C)>`, Jensen's inequality makes it larger for a non-degenerate degree
+distribution; that correction cannot be evaluated without the appropriate
+degree distribution or controlled moments.
 
-### What a track status means
+| Observable or property | Current scoped survival target | Essential limitation |
+|---|---|---|
+| `Delta N_eff`, `N_eff` | `Delta N_eff = 0.0535`, `N_eff ≈ 3.10` | Conditional early-decoupled two-polarization thermal relic; branching, exit, reheating, and survival remain open. |
+| scalar tilt `n_s` | `0.9656 ± 0.0016` | Exact `delta/m = 1/2` scalar mechanism; the width is a frozen target, not a derived posterior uncertainty. |
+| tensor ratio `r` | sharp target `r < 1e-10`; broader practical exclusion marker `r >= 1e-3` | A tensor operator, normalization, pivot convention, and B-mode likelihood are still required. |
+| Hubble constant `H0` | approximately `66.4 ± 0.4 km/s/Mpc` | Frozen-background survival boundary, not a completed posterior or a claimed solution of the Hubble tension. |
+| clustering `S8` | approximately `0.86–0.87` | Simplified-growth survival boundary, not a completed Einstein–Boltzmann fit or proof that the tension is solved. |
+| effective `w0`, `wa` | `w0 = -0.919`, `wa = -0.612` | Joint accounting-shadow target, not independent Gaussian measurements or a fundamental fuel equation of state. |
+| sterile ash | null nongravitational signal | Conditional on a future ash particle model and detector response; there is no numerical detector kill window yet. |
+| scalar dispersion | exactly zero odd linear term in the audited trial variable `q` | Proven only for the scalar cosine–Laplacian operator, not for full Lorentz invariance, photons, boosts, or the equivalence principle. |
+| thermal steam/wave relic | `T ≈ 0.905 K`, peak `≈ 53 GHz`, jointly with `Delta N_eff = 0.0535` | The same thermal commitment as the first row; identification with gravitons is not derived. |
 
-- **`LIVE_ACTIVE`:** the track is undergoing further checks.
-- **`LIVE_BACKUP / WAITING`:** the named alternative has not yet been fully
-  formulated or tested. It becomes positive evidence only after complete
-  equations, test conditions, and an explicit admissible solution or an
-  existence proof have been supplied.
-- **`STOP_SCOPE`:** the exact tested formulation encountered a physical
-  contradiction. The reason remains recorded, but the result does not
-  automatically kill another track or the entire theory.
+Two former or provisional quantities are deliberately not active targets:
 
-Until there is either one complete live track or a proof that every
-admissible track is impossible, the overall result remains **unresolved**
-(`GLOBAL_FEASIBILITY_INCOMPLETE`). A waiting backup track is not evidence
-that a solution exists; it means only that the alternative has not yet been
-decided.
+- the former exact `n_s-w` consistency relation is **withdrawn** and has no
+  current evidential or exclusion weight;
+- constant `delta = 0.02297` is a calibration benchmark only. No
+  `delta(a)` law, measurable drift interval, or drift-based kill window has
+  been derived.
 
-### Where to verify the details
+The authoritative row-by-row statements, evidence, exclusions, and mandatory
+nonclaims are in
+[`theory/EN/02_Prediction_Status_Table_EN.csv`](theory/EN/02_Prediction_Status_Table_EN.csv).
 
-- document `01` §9 explains the accepted milestones, equations, live and
-  dead tracks, STOP reasons, the current A2-K4 obstacle, and the work needed
-  before A3;
-- document `02` gives the exact current statements and boundaries of the
-  predictions;
-- document `03` contains the verification rules, history of restricted
-  formulations, and the register of open questions;
-- document `04` lists every existence condition and states exactly which
-  part of the model its failure can exclude.
+## ⚰️ Kill conditions (falsifiability)
 
-These four documents form the standalone v3.18 release state. No working
-files are needed to understand or cite it. GitHub links are only optional
-audit trails for checking calculations and result provenance. Document `01`
-§9.1 and its final abbreviation register explain the identifiers in more
-detail.
+QCTS uses scope-aware falsification. A failed necessary condition kills the
+exact operator, mechanism, or formulation that requires it. It kills the
+whole theory only if the contradiction reaches a shared fundamental
+principle, or if the declared top-level alternatives are proven exhaustive
+and every admissible set is empty.
+
+The current registered exclusion tests include:
+
+1. robust exclusion of `Delta N_eff = 0.0535` after a complete BBN/CMB map
+   excludes the exact two-polarization early-thermal steam formulation;
+2. robust exclusion of `n_s = 0.9656 ± 0.0016` after a complete primordial
+   source map excludes the exact `delta/m = 1/2` scalar mechanism;
+3. after a complete tensor-to-B-mode map, `r >= 1e-10` excludes the sharp
+   tensor estimate, while a robust `r >= 1e-3` detection excludes the broader
+   registered thermal tensor realization;
+4. robust incompatibility with `H0 ≈ 66.4 ± 0.4 km/s/Mpc` under one joint
+   likelihood excludes the frozen background formulation;
+5. robust incompatibility with `S8 ≈ 0.86–0.87` after a full
+   Einstein–Boltzmann and lensing/growth analysis excludes the corresponding
+   simplified-growth formulation;
+6. joint exclusion of `(w0, wa) = (-0.919, -0.612)` under the same CPL
+   projection excludes the exact effective-accounting formulation;
+7. a reproducible nongravitational signal attributable to the same derived
+   ash species would exclude the sterile-ash formulation;
+8. a nonzero odd linear term in the exact audited scalar operator would
+   exclude that operator;
+9. failure to derive `C = 28` excludes the exact capacity identification and
+   results that necessarily depend on it, not automatically every cellular
+   model;
+10. a proof that no admissible common local production-and-transport law
+    exists within `A2-K4` would end that track. The track is currently
+    waiting for such a law or an existence witness; absence of a found
+    witness is not itself a no-go theorem.
+
+Calibration data cannot be reused as independent confirmation. Dead tracks,
+failed scripts, inputs, and reasons are preserved so the same failed route is
+not silently retried. The exact decision reach of every condition is recorded
+in
+[`theory/EN/04_Theory_Existence_Conditions_Register_EN.csv`](theory/EN/04_Theory_Existence_Conditions_Register_EN.csv).
+
+## 📂 Repository structure
+
+```text
+cellular-universe/
+├── README.md
+├── LICENSE
+├── CHANGELOG.md
+├── MANIFEST.sha256
+├── RELEASE_STAGING_MANIFEST.tsv
+├── theory/
+│   ├── SK/                         # Slovak semantic authority
+│   │   ├── 00_README_SK.md
+│   │   ├── 01_Bunkovy_Vesmir_SK.md
+│   │   ├── 02_Prediction_Status_Table_SK.csv
+│   │   ├── 03_Methodology_and_Question_Register_SK.md
+│   │   └── 04_Theory_Existence_Conditions_Register_SK.csv
+│   └── EN/                         # Audited English translations
+│       ├── 00_README_EN.md
+│       ├── 01_The_Cellular_Universe_EN.md
+│       ├── 02_Prediction_Status_Table_EN.csv
+│       ├── 03_Methodology_and_Question_Register_EN.md
+│       └── 04_Theory_Existence_Conditions_Register_EN.csv
+├── External_Audits/               # Selected sealed packages and responses
+└── HISTORY/v3.17/                 # Immutable earlier public snapshot
+```
+
+Recommended reading order:
+
+1. [`theory/EN/00_README_EN.md`](theory/EN/00_README_EN.md) — document map;
+2. [`theory/EN/01_The_Cellular_Universe_EN.md`](theory/EN/01_The_Cellular_Universe_EN.md)
+   — physical account, equations, milestones, limits, and open questions;
+3. [`theory/EN/02_Prediction_Status_Table_EN.csv`](theory/EN/02_Prediction_Status_Table_EN.csv)
+   — exact survival targets and exclusion reach;
+4. [`theory/EN/03_Methodology_and_Question_Register_EN.md`](theory/EN/03_Methodology_and_Question_Register_EN.md)
+   — verification rules, track logic, and Q1–Q34;
+5. [`theory/EN/04_Theory_Existence_Conditions_Register_EN.csv`](theory/EN/04_Theory_Existence_Conditions_Register_EN.csv)
+   — EC01–EC43 existence conditions.
+
+If an English translation and the Slovak original differ in meaning, the
+Slovak document controls. Executable code is MIT-licensed; theory and
+documentation are CC BY 4.0. See [`LICENSE`](LICENSE).
+
+## 🛠️ Verification & run guide
+
+Verify the hierarchical Git snapshot from the repository root:
+
+```bash
+sha256sum -c MANIFEST.sha256
+```
+
+Zenodo stores 13 attachments in one flat directory. The GitHub-root
+`README.md` and the HTML used for the Zenodo Description field are not file
+attachments. In a flat download, map each release path to its uploaded name
+and verify the 11 non-control attachments plus the staging manifest:
+
+```bash
+awk -F '\t' 'NR>1 && $8=="yes" && $6!="SELF_EXCLUDED" {print $6 "  " $2}' RELEASE_STAGING_MANIFEST.tsv | sha256sum -c -
+grep 'RELEASE_STAGING_MANIFEST.tsv$' MANIFEST.sha256 | sha256sum -c -
+```
+
+The manifest cannot hash itself; its checksum is bound by the repository
+commit and Zenodo record.
+
+The active verification route is
+
+```text
+A1-K1  ->  A2-K4  ->  A3
+```
+
+`A2-K4` is the most advanced live linear-perturbation track. Its regular
+superhorizon basis passed the registered `G5` gate. In the frozen
+nine-variable perfect-radiation effective-fluid scope, all three regular
+modes also passed the scoped `G6` kinetic-sign, gradient,
+characteristic-causality, null-limit, constraint, high-`q`, and numerical
+convergence checks. This gives a registered depth of `60/100`—a cumulative
+gate weight, not a probability, posterior, or percentage of all work
+completed. It is not a microscopic UV no-ghost theorem or a proof of global
+stability.
+
+Before `A3`, the programme still needs a common local
+production-and-transport law, full covariant perturbations with dynamic
+Bianchi/constraint preservation, separate photon and neutrino Boltzmann
+hierarchies, CMB-normalised spectra and growth, and joint likelihoods.
+
+Selected reproducible milestones are sealed under
+[`External_Audits/PACKAGES`](External_Audits/PACKAGES). Start each package
+with its `00_SCOPE_AND_READ_ORDER.md`, verify its manifest, and use only the
+commands and expected outputs declared there. Auditor responses are kept
+separately under [`External_Audits/RESPONSES`](External_Audits/RESPONSES).
+Useful entry points include:
+
+- [`EA-20260717-004-KMPC-BACKGROUND-PRIMARY-REPRO`](External_Audits/PACKAGES/EA-20260717-004-KMPC-BACKGROUND-PRIMARY-REPRO/00_SCOPE_AND_READ_ORDER.md);
+- [`EA-20260719-029-KMPC127-C2-AUTHORITATIVE-AGGREGATE`](External_Audits/PACKAGES/EA-20260719-029-KMPC127-C2-AUTHORITATIVE-AGGREGATE/00_SCOPE_AND_READ_ORDER.md);
+- [`EA-20260722-039-KMPC148-C3-AUTHORITATIVE-AGGREGATE`](External_Audits/PACKAGES/EA-20260722-039-KMPC148-C3-AUTHORITATIVE-AGGREGATE/00_SCOPE_AND_READ_ORDER.md);
+- [`EA-20260801-047-V318-PT1-H0-S8-C2C3-THREE-POINT-LEGACY-SENSITIVITY`](External_Audits/PACKAGES/EA-20260801-047-V318-PT1-H0-S8-C2C3-THREE-POINT-LEGACY-SENSITIVITY/00_SCOPE_AND_READ_ORDER.md).
+
+A successful script run is not automatically scientific evidence. Use only
+the result, scope, and verdict bound by the corresponding sealed package or
+accepted checkpoint.
+
+## 🧭 Methods note
+
+The project separates mathematical identities, direct measurements,
+reference-model comparisons, and provisional guidance. It also separates
+technical failures from physical exclusions: a syntax error, timeout, solver
+failure, or unavailable runtime never becomes a physical STOP.
+
+Unknown functions are first constrained by domains, units, symmetries,
+limits, conservation, causality, stability, and observables. A track remains
+alive while its complete admissible set has not been shown empty. Alternative
+tracks are not positive evidence, but they prevent an unjustified
+theory-level death verdict until their taxonomy is frozen and exhaustive.
+
+The work was developed by Martin Jámbor with extensive AI-assisted
+calculation, adversarial checking, documentation, and independent-agent
+audits. AI agreement is not peer review. The repository preserves equations,
+scripts, raw outputs, hashes, scoped verdicts, dead ends, and external-audit
+responses so human and machine auditors can reproduce or challenge each
+result directly.
+
+Independent calculations, issues, and carefully scoped pull requests are
+welcome.
+
+## 📄 Citation
+
+```bibtex
+@misc{jambor2026quantumcellular,
+  author    = {Jámbor, Martin},
+  title     = {Quantum Cellular Theory of Space: A Testable Cosmological Model
+               of a Dividing Causal Network},
+  year      = {2026},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.21915608},
+  url       = {https://doi.org/10.5281/zenodo.21915608}
+}
+```
+
+The citation reproduces the exact title of the deposited Zenodo work. The
+informal alias **The Cellular Universe** refers to the same theory and is not
+a separate framework. When citing a numerical target, also cite its
+row-specific scope and mandatory nonclaim from the prediction register.
