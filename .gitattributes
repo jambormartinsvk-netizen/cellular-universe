@@ -1,17 +1,38 @@
-# Preserve the exact published Zenodo v3.17/v2.0 bytes on every checkout.
+# Preserve the exact reviewed Cellular Universe v3.18 payload bytes.
+/.gitattributes -text
+/README.md -text
+/theory/SK/00_README_SK.md -text
+/theory/SK/01_Bunkovy_Vesmir_SK.md -text
+/theory/SK/02_Prediction_Status_Table_SK.csv -text
+/theory/SK/03_Methodology_and_Question_Register_SK.md -text
+/theory/SK/04_Theory_Existence_Conditions_Register_SK.csv -text
 /theory/EN/00_README_EN.md -text
-/theory/SK/01_Introduction_and_Philosophy_SK.md -text
-/theory/EN/01b_Introduction_and_Philosophy_EN.md -text
-/theory/SK/02b_Predictions_Table_v3.17_SK.pdf -text
-/theory/EN/02_Predictions_Table_v3.17_EN.pdf -text
-/theory/SK/03b_Predictions_Table_v3.17_SK.csv -text
-/theory/EN/03_Predictions_Table_v3.17_EN.csv -text
-/theory/SK/04_Main_Document_Theory_Equations_Values_v3.17_SK.md -text
-/theory/EN/04b_Main_Document_Theory_Equations_Values_v3.17_EN.md -text
-/theory/SK/05_Methodology_Rules_and_Question_Register_SK.md -text
-/theory/EN/05b_Methodology_Rules_and_Question_Register_EN.md -text
-/scripts/06_script_Q14_light_cone_front_sharpening.py -text
-/scripts/07_script_Q12_dispersion_Lorentz_test.py -text
-/scripts/08_script_Q7_sound_horizon_H0.py -text
-/scripts/09_script_K3_cosmology_pipeline.py -text
-/scripts/10_script_Q10_Vlinks_dowry_rule.py -text
+/theory/EN/01_The_Cellular_Universe_EN.md -text
+/theory/EN/02_Prediction_Status_Table_EN.csv -text
+/theory/EN/03_Methodology_and_Question_Register_EN.md -text
+/theory/EN/04_Theory_Existence_Conditions_Register_EN.csv -text
+/CHANGELOG.md -text
+/zenodo_description.html -text
+/RELEASE_STAGING_MANIFEST.tsv -text
+/MANIFEST.sha256 -text
+
+# Preserve selected sealed external-audit packages and immutable responses.
+/External_Audits/** -text
+
+# Preserve the exact archived v3.17 bytes used for citation and audit lineage.
+/HISTORY/v3.17/scripts/06_script_Q14_light_cone_front_sharpening.py -text
+/HISTORY/v3.17/scripts/07_script_Q12_dispersion_Lorentz_test.py -text
+/HISTORY/v3.17/scripts/08_script_Q7_sound_horizon_H0.py -text
+/HISTORY/v3.17/scripts/09_script_K3_cosmology_pipeline.py -text
+/HISTORY/v3.17/scripts/10_script_Q10_Vlinks_dowry_rule.py -text
+/HISTORY/v3.17/theory/EN/00_README_EN.md -text
+/HISTORY/v3.17/theory/EN/01b_Introduction_and_Philosophy_EN.md -text
+/HISTORY/v3.17/theory/EN/02_Predictions_Table_v3.17_EN.pdf -text
+/HISTORY/v3.17/theory/EN/03_Predictions_Table_v3.17_EN.csv -text
+/HISTORY/v3.17/theory/EN/04b_Main_Document_Theory_Equations_Values_v3.17_EN.md -text
+/HISTORY/v3.17/theory/EN/05b_Methodology_Rules_and_Question_Register_EN.md -text
+/HISTORY/v3.17/theory/SK/01_Introduction_and_Philosophy_SK.md -text
+/HISTORY/v3.17/theory/SK/02b_Predictions_Table_v3.17_SK.pdf -text
+/HISTORY/v3.17/theory/SK/03b_Predictions_Table_v3.17_SK.csv -text
+/HISTORY/v3.17/theory/SK/04_Main_Document_Theory_Equations_Values_v3.17_SK.md -text
+/HISTORY/v3.17/theory/SK/05_Methodology_Rules_and_Question_Register_SK.md -text

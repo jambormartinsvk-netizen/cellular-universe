@@ -1,0 +1,2 @@
+"checkpoint_id"	"parent_checkpoint_id"	"parent_package_id"	"parent_manifest_sha256"	"relation"	"trusted_claim_scope"
+"CP-RELEASE-V318-PT1-H0-S8-C2C3-20260801-001"	"NONE_FIRST_RELEASE_DIAGNOSTIC_CHECKPOINT"	"NONE"	"NONE"	"FIRST_RELEASE_DIAGNOSTIC_CHECKPOINT"	"three discrete conditional legacy-anchor H0/S8 sensitivity points only"
