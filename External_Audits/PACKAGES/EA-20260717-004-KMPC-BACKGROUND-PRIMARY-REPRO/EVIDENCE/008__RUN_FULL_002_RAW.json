@@ -1,0 +1,28 @@
+{
+  "checks": {
+    "fuel_derivative_nonzero_for_p_3_93109": true,
+    "fuel_homogeneous_degree_p": true,
+    "g2_z2_k_independent": true,
+    "mu_z_k_independent": true
+  },
+  "definitions": {
+    "fuel_factor": "z^p*(1+g2*(1/(p+1)-1/2)*z^2)",
+    "p": "3.93109"
+  },
+  "denominator": "Om*a/Or + 1 + (a*k/(H0*sqrt(Or)))**p*(40*sqrt(Or)*(p + 1) - 3*a**2*(p - 1))/(40*sqrt(Or)*(p + 1))",
+  "fuel_over_k_to_p": "(a/(H0*sqrt(Or)))**p*(40*sqrt(Or)*(p + 1) + 3*a**2*(1 - p))/(40*sqrt(Or)*(p + 1))",
+  "physics_executed": false,
+  "residuals": {
+    "dfuel_dk_at_p_3_93109": "393109*a**(393109/100000)*k**(293109/100000)*(19724360*sqrt(Or) - 879327*a**2)/(1972436000000*H0**(393109/100000)*Or**(493109/200000))",
+    "g2_z2_minus_3a2_over_20sqrtOr": "0",
+    "k_dfuel_dk_minus_pfuel": "0",
+    "mu_z_minus_Om_a_over_Or": "0"
+  },
+  "runtime_limit_seconds": 10.0,
+  "runtime_seconds": 0.48500000000012733,
+  "score_effect": 0,
+  "script_sha256": "2B98BD06A60DB0D1026618E854CC39A35FFB16B88235A57B4C0CF9F20519BCE9",
+  "shared_module_sha256": "EB3B1F3A5FB39982723E9DD2B9DD12F9A9106977DA31A1557A8FB25BF34ADBC3",
+  "test": "A2-K4 K7 frozen background exact Fourier-k universality audit",
+  "verdict": "STOP_BACKGROUND_K_DEPENDENCE_UNRESOLVED"
+}

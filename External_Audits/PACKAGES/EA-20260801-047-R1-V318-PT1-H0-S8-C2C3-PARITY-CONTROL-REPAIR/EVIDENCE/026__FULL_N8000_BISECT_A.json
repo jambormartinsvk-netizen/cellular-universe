@@ -1,0 +1,79 @@
+{
+  "Delta_N_eff": 0.0535,
+  "bisection_state": {
+    "completed_midpoint_iterations": 10,
+    "high": 0.66376953125,
+    "high_residual": -0.11057380678903428,
+    "low": 0.663525390625,
+    "low_residual": 0.9195634853604133
+  },
+  "checks": {
+    "completed_iteration_count_exact": true,
+    "finite_state": true,
+    "positive_bracket_width": true,
+    "strict_bracket_sign_change": true
+  },
+  "claim": "TECHNICAL_BISECTION_CONTINUATION_FOR_GRID_CELL_N8000",
+  "distance_target_Mpc": 13847.005459260246,
+  "execution_verdict": "PASS_N8000_BISECTION_SEGMENT_INTRINSIC",
+  "frozen_input_ledger": {
+    "Delta_N_eff_points": [
+      0.0,
+      0.02675,
+      0.0535
+    ],
+    "N_eff_standard": 3.046,
+    "background_grids": [
+      2000,
+      4000,
+      8000
+    ],
+    "c_km_s": 299792.458,
+    "delta": 0.02297,
+    "h_bracket": [
+      0.55,
+      0.8
+    ],
+    "h_ref": 0.673,
+    "lambda": 0.15,
+    "omega_b": 0.02237,
+    "omega_gamma": 2.469e-05,
+    "omega_m": 0.143,
+    "sigma8_LCDM": 0.811,
+    "stage_parameters": {
+      "Delta_N_eff": 0.0535,
+      "delta": 0.02297,
+      "grid_n": 8000,
+      "lambda": 0.15
+    },
+    "x_min": -7.8,
+    "z_star": 1089.9
+  },
+  "grid_n": 8000,
+  "last_evaluation": {
+    "distance_Mpc": 13847.925022745607,
+    "distance_residual_Mpc": 0.9195634853604133,
+    "h": 0.663525390625
+  },
+  "nonclaims": [
+    "segment is not an H0 or S8 result",
+    "not a convergence result or sampled range",
+    "does not close P5.4, G8 or G9"
+  ],
+  "predecessor_segment_sha256": null,
+  "reference_growth_D": 0.7092330148907083,
+  "reference_stage_sha256": "0BFC88D8FFC5196B137570B149CBBC7ED3B93DC3EF81D14D9E7F4F130E050234",
+  "root_initial_residual_high": -532.5778033823917,
+  "root_initial_residual_low": 514.9003231292991,
+  "runtime_seconds": 24.609000000025844,
+  "schema": "v318_pt1_h0_s8_n8000_bisection_segment_v5",
+  "scope": "legacy_execution_segment_not_final_model_cell_or_range",
+  "segment": "A",
+  "shard_id": "full",
+  "sound_horizon_Mpc": 144.05854955759685,
+  "sound_horizon_quadrature_relative_error": 5.473691918389123e-12,
+  "theta_reference": 0.010403588702368644,
+  "v3_addendum_sha256": "DC6E8CC12172BD9AF4805870722AA9516A5A48F3824A05FD7A0D5956513E54F7",
+  "v4_addendum_sha256": "5E2A35D1E1A6EB64D200D4F18488A31849CB16079249DFB8407559A6D3925D42",
+  "v5_addendum_sha256": "6706912598C536099A1E230D20650D8A792943AF87FB36C283DF4F1449CCB3A1"
+}

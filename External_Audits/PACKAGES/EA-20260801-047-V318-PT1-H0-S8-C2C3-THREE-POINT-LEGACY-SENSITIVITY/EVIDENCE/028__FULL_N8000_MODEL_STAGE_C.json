@@ -1,0 +1,106 @@
+{
+  "Delta_N_eff": 0.0535,
+  "checks": {
+    "completed_midpoint_iterations_exact": true,
+    "dneff_0.0535_n_8000_matter": true,
+    "dneff_0.0535_n_8000_no_floor": true,
+    "dneff_0.0535_n_8000_positive": true,
+    "dneff_0.0535_n_8000_projection_rehash": true,
+    "dneff_0.0535_n_8000_quadrature": true,
+    "dneff_0.0535_n_8000_root_sign_change": true,
+    "dneff_0.0535_n_8000_theta": true
+  },
+  "claim": "TECHNICAL_MODEL_STAGE_FOR_GRID_CELL_N8000",
+  "completed_midpoint_iterations": 29,
+  "execution_verdict": "PASS_N8000_MODEL_STAGE_INTRINSIC",
+  "frozen_input_ledger": {
+    "Delta_N_eff_points": [
+      0.0,
+      0.02675,
+      0.0535
+    ],
+    "N_eff_standard": 3.046,
+    "background_grids": [
+      2000,
+      4000,
+      8000
+    ],
+    "c_km_s": 299792.458,
+    "delta": 0.02297,
+    "h_bracket": [
+      0.55,
+      0.8
+    ],
+    "h_ref": 0.673,
+    "lambda": 0.15,
+    "omega_b": 0.02237,
+    "omega_gamma": 2.469e-05,
+    "omega_m": 0.143,
+    "sigma8_LCDM": 0.811,
+    "stage_parameters": {
+      "Delta_N_eff": 0.0535,
+      "delta": 0.02297,
+      "grid_n": 8000,
+      "lambda": 0.15
+    },
+    "x_min": -7.8,
+    "z_star": 1089.9
+  },
+  "grid_n": 8000,
+  "nonclaims": [
+    "stage raw is not the final V3 grid cell",
+    "not a convergence result or sampled range",
+    "does not close P5.4, G8 or G9"
+  ],
+  "point": {
+    "Delta_N_eff": 0.0535,
+    "H0_km_s_Mpc": 66.37433224357665,
+    "Omega_m0": 0.3516704667666217,
+    "S8_conditional": 0.874499891729803,
+    "bisection_width": 4.656612873077393e-10,
+    "distance_Mpc": 13847.005457800211,
+    "floor_or_clip_activations": 0,
+    "grid_n": 8000,
+    "growth_D": 0.7063509411017298,
+    "inner_iterations": 12,
+    "lcdm_growth_D": 0.7092330148907083,
+    "matter_relative_residual": 8.633316284090142e-11,
+    "minimum_component": 9.549133351286664e-05,
+    "non_delta_input_fingerprint_sha256": "8C2038E5AE38543B242332EF125E1113B0949BCCCCD0B4C00052848893225B89",
+    "non_delta_input_projection": {
+      "N_eff_standard": 3.046,
+      "c_km_s": 299792.458,
+      "delta": 0.02297,
+      "grid_n": 8000,
+      "h_bracket": [
+        0.55,
+        0.8
+      ],
+      "h_ref": 0.673,
+      "lambda": 0.15,
+      "omega_b": 0.02237,
+      "omega_gamma": 2.469e-05,
+      "omega_m": 0.143,
+      "sigma8_LCDM": 0.811,
+      "x_min": -7.8,
+      "z_star": 1089.9
+    },
+    "outer_iterations": 29,
+    "quadrature_relative_error": 5.473691918389123e-12,
+    "root_initial_sign_change": true,
+    "sigma8_conditional": 0.807704380938581,
+    "sound_horizon_Mpc": 144.05854955759685,
+    "theta_relative_residual": 1.0544054518391022e-10
+  },
+  "predecessor_segment_sha256": "90958741ED222CBC61FF32981D61CB9A17D9B4FCA30D27ADA4B13C8836FF4C45",
+  "reference_growth_D": 0.7092330148907083,
+  "reference_stage_sha256": "0BFC88D8FFC5196B137570B149CBBC7ED3B93DC3EF81D14D9E7F4F130E050234",
+  "runtime_seconds": 18.187999999994645,
+  "schema": "v318_pt1_h0_s8_n8000_model_stage_v4",
+  "scope": "legacy_execution_stage_not_final_cell_or_range",
+  "shard_id": "full",
+  "theta_reference": 0.010403588702368644,
+  "v3_addendum_sha256": "DC6E8CC12172BD9AF4805870722AA9516A5A48F3824A05FD7A0D5956513E54F7",
+  "v4_addendum_sha256": "5E2A35D1E1A6EB64D200D4F18488A31849CB16079249DFB8407559A6D3925D42",
+  "v5_addendum_sha256": "6706912598C536099A1E230D20650D8A792943AF87FB36C283DF4F1449CCB3A1"
+}

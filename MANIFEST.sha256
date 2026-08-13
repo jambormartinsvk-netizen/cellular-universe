@@ -1,0 +1,21 @@
+# Quantum Cellular Theory of Space v3.18 complete standalone payload SHA-256 manifest
+# This file intentionally excludes its own hash.
+# Payload count: 13 file attachments; rows below: 12 non-self files.
+# Content cutoff: 9 August 2026.
+# Reserved release DOI: 10.5281/zenodo.21915608
+# Planned publication window: 11-13 August 2026.
+# Intended immutable tag: v3.18
+# Tag binding: v3.18 must resolve the exact reviewed commit containing this exact manifest.
+# Commit/tag/publish remain pending Martin Jámbor's explicit approval.
+d8182b4b0977518e2cba87952e5801d95eec9de98aaf288ad89624e4ee3671a0  theory/SK/00_README_SK.md
+34b0bbf3a41728a17e930dcab1e79832d04b6f812910d67fc4aa7d8cb32ba436  theory/SK/01_Bunkovy_Vesmir_SK.md
+6fb1f13e4c63f20016fca59ea1ca0bed7331e1f630a1eab6dd43fd0b27523e6f  theory/SK/02_Prediction_Status_Table_SK.csv
+357a0d24a2a18f783a8cac16bd162d3121b86ef40ffdd9eef195b8e25b07547c  theory/SK/03_Methodology_and_Question_Register_SK.md
+6b8df86dd3d3b0dd5280ab326179d7bbd30634aa80e9c2e4807565cf605ac7c4  theory/SK/04_Theory_Existence_Conditions_Register_SK.csv
+a8f9f4f2e11cf98ae2d59995d62c935bb236723cf2d72b4002508bb9378f8b06  theory/EN/00_README_EN.md
+1ece4fa947b813e25280132797e7262e5c9e86d5107bdb22573dee9a78041939  theory/EN/01_The_Cellular_Universe_EN.md
+a2e6af11c2362296c56c68c8473efb41522ad4ce10c049c9041c3195ad7f0dc4  theory/EN/02_Prediction_Status_Table_EN.csv
+03158cc7e9d3a2480109e71400f72a802b9dbf5b4d8febd9ab7f32a928091e20  theory/EN/03_Methodology_and_Question_Register_EN.md
+146e5129ce87ce698bfb8cf27458580cc3f4eb59b710fd901a47350624f8eb2e  theory/EN/04_Theory_Existence_Conditions_Register_EN.csv
+4e5d31a6f7ce507f9687272593c27c21ce7780e4d49c6fcd226fec672e9d844c  CHANGELOG.md
+b3988953481fefe274f58532e3cc348844d53b71e7948d0610973967efc1f11a  RELEASE_STAGING_MANIFEST.tsv

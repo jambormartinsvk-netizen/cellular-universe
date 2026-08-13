@@ -1,0 +1,31 @@
+release_path	zenodo_filename	role	language	bytes	sha256	status	zenodo_payload	notes
+README.md	NA	repository_navigation	EN	14359	c9c74bec2c3f75ac128e426cabf2bc04e5b06453870791d1a6ebbb67c3bd2207	RC_MAIN_STRUCTURE_PRESERVED_CURRENT_TEXT_DOI_BOUND	no	GitHub-only landing page retaining the main-branch section structure with current scoped content; citation title aligned with Zenodo metadata; Zenodo uses 00_README_SK.md and 00_README_EN.md
+theory/SK/00_README_SK.md	00_README_SK.md	slovak_navigation	SK	18488	d8182b4b0977518e2cba87952e5801d95eec9de98aaf288ad89624e4ee3671a0	AUTHOR_APPROVED_DOI_BOUND	yes	Slovak reading order and verification map; DOI bound
+theory/SK/01_Bunkovy_Vesmir_SK.md	01_Bunkovy_Vesmir_SK.md	main_document	SK	111694	34b0bbf3a41728a17e930dcab1e79832d04b6f812910d67fc4aa7d8cb32ba436	AUTHOR_APPROVED_DOI_BOUND	yes	Semantic authority; complete self-contained theory account and citation boundary
+theory/SK/02_Prediction_Status_Table_SK.csv	02_Prediction_Status_Table_SK.csv	prediction_register	SK	13021	6fb1f13e4c63f20016fca59ea1ca0bed7331e1f630a1eab6dd43fd0b27523e6f	AUTHOR_APPROVED	yes	P01-P11 current formulation-scoped survival commitments, death reach, evidence and nonclaims
+theory/SK/03_Methodology_and_Question_Register_SK.md	03_Methodology_and_Question_Register_SK.md	methodology_question_register	SK	44642	357a0d24a2a18f783a8cac16bd162d3121b86ef40ffdd9eef195b8e25b07547c	AUTHOR_APPROVED	yes	Methodology, workflow, finite-alternative logic, historical restrictions and Q1-Q34
+theory/SK/04_Theory_Existence_Conditions_Register_SK.csv	04_Theory_Existence_Conditions_Register_SK.csv	existence_conditions	SK	32438	6b8df86dd3d3b0dd5280ab326179d7bbd30634aa80e9c2e4807565cf605ac7c4	AUTHOR_APPROVED	yes	EC01-EC43 existence conditions with exact scope and death reach
+theory/EN/00_README_EN.md	00_README_EN.md	english_navigation	EN	18194	a8f9f4f2e11cf98ae2d59995d62c935bb236723cf2d72b4002508bb9378f8b06	FINAL_AUDITED_TRANSLATION_DOI_BOUND	yes	English reading order translated from approved Slovak source; DOI bound
+theory/EN/01_The_Cellular_Universe_EN.md	01_The_Cellular_Universe_EN.md	main_document	EN	112005	1ece4fa947b813e25280132797e7262e5c9e86d5107bdb22573dee9a78041939	FINAL_AUDITED_TRANSLATION_DOI_BOUND	yes	English semantic parity with the Slovak authority; complete citation boundary
+theory/EN/02_Prediction_Status_Table_EN.csv	02_Prediction_Status_Table_EN.csv	prediction_register	EN	13327	a2e6af11c2362296c56c68c8473efb41522ad4ce10c049c9041c3195ad7f0dc4	FINAL_AUDITED_TRANSLATION	yes	P01-P11 English semantic parity including death reach and nonclaims
+theory/EN/03_Methodology_and_Question_Register_EN.md	03_Methodology_and_Question_Register_EN.md	methodology_question_register	EN	44464	03158cc7e9d3a2480109e71400f72a802b9dbf5b4d8febd9ab7f32a928091e20	FINAL_AUDITED_TRANSLATION	yes	English methodology and Q1-Q34 semantic parity
+theory/EN/04_Theory_Existence_Conditions_Register_EN.csv	04_Theory_Existence_Conditions_Register_EN.csv	existence_conditions	EN	31902	146e5129ce87ce698bfb8cf27458580cc3f4eb59b710fd901a47350624f8eb2e	FINAL_AUDITED_TRANSLATION	yes	EC01-EC43 English semantic parity including exact death reach
+CHANGELOG.md	CHANGELOG.md	changelog	EN	21173	4e5d31a6f7ce507f9687272593c27c21ce7780e4d49c6fcd226fec672e9d844c	AUTHOR_APPROVED_DOI_BOUND	yes	Optional English comparison for readers of v3.17; current release remains self-contained
+zenodo_description.html	NA	zenodo_metadata_description_source	EN	15240	2fae322232ce6875c420d1c9cacd95cc12841d56a6206ce7fdd8c67c3ded8c79	RC_TITLE_ALIGNED_AUDITED_CONTENT_INHERITED	no	Paste its HTML into the Zenodo Description field; do not upload it as a file
+RELEASE_STAGING_MANIFEST.tsv	RELEASE_STAGING_MANIFEST.tsv	staging_manifest	CONTROL	SELF	SELF_EXCLUDED	HASH_BOUND_RELEASE_CONTROL	yes	Own hash is recorded by MANIFEST.sha256; this column maps hierarchical release paths to flat Zenodo names
+MANIFEST.sha256	MANIFEST.sha256	sha256_manifest	CONTROL	SELF	SELF_EXCLUDED	HASH_BOUND_RELEASE_CONTROL	yes	Lists the other 12 file attachments by release path; verify flat downloads through zenodo_filename mapping
+#META	release_version	NA	CONTROL	NA	v3.18	INTERNAL_RELEASE_IDENTIFIER	no	Internal snapshot identifier; not the public theory name
+#META	release_doi	NA	CONTROL	NA	10.5281/zenodo.21915608	RESERVED_DOI_BOUND	no	Reserved Zenodo version DOI supplied by the author on 13 August 2026
+#META	previous_zenodo_record	NA	CONTROL	NA	21297228	IMMUTABLE_PROVENANCE	no	Optional historical release; not required to read the current release
+#META	release_class	NA	CONTROL	NA	R3.18-READER_COMPLETE_SELF_CONTAINED_SNAPSHOT	HASH_BOUND	no	Previous releases are optional history
+#META	content_cutoff	NA	CONTROL	NA	2026-08-09	HASH_BOUND	no	Scientific content cutoff of this release
+#META	planned_publication_window	NA	CONTROL	NA	2026-08-11..2026-08-13	PLAN_ONLY	no	Publication still requires final author authorization
+#META	payload_count	NA	CONTROL	NA	14	HASH_BOUND	no	Exactly 14 Zenodo file attachments; the HTML description is metadata, not an attachment
+#META	zenodo_upload_layout	NA	CONTROL	NA	FLAT_UNIQUE_BASENAMES	HASH_BOUND	no	Upload the 14 yes-row zenodo_filename values without directories; all names are unique
+#META	post_download_verification	NA	CONTROL	NA	MAP_ZENODO_FILENAME_TO_RELEASE_PATH_THEN_SHA256	HASH_BOUND	no	Use each row's zenodo_filename to locate the flat download and compare it with the release_path hash
+#META	git_tree_file_count	NA	CONTROL	NA	266	HASH_BOUND	no	Physical release-candidate files excluding the worktree .git control file
+#META	history_exact_file_count	NA	CONTROL	NA	16	HASH_BOUND	no	Git-only exact v3.17 snapshot excluded from the current Zenodo payload
+#META	archival_parent_commit	NA	CONTROL	NA	e9e3579afdffc3c719f0beabb4ec33929cfb4d62	HASH_BOUND	no	Immutable v3.17 Zenodo archival-sync parent
+#META	working_branch	NA	CONTROL	NA	codex/v3.18-release	PRECOMMIT_DRAFT	no	No staging, commit, tag, push or publication authorization yet
+#META	intended_immutable_tag	NA	CONTROL	NA	v3.18	PENDING_AUTHOR_APPROVAL	no	Tag will resolve the exact reviewed commit containing this manifest
+#META	commit_binding_method	NA	CONTROL	NA	TAG_V3_18_RESOLVES_EXACT_COMMIT_CONTAINING_THIS_MANIFEST	PENDING_AUTHOR_APPROVAL	no	Avoids an impossible self-referential commit hash inside the committed manifest
