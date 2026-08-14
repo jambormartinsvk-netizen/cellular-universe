@@ -1,0 +1,16 @@
+# A2-K4 / C7.7c / K7a — SHA-256 manifest skriptov
+
+**Dátum výpočtu:** 2026-07-14  
+**Algoritmus:** SHA-256
+
+```text
+4051DA86FB855E071D94F6E1A274828123DCF2D3DCE66D974AAEB2DDFBD7146E  159_script_A2_K4_C7_7c_K7a_projected_jacobian_audit.py
+A8F6C0B7686FD9C4681FC4A2DCC55426174032C4BEEF32D3C082D1E711E90A08  160_script_A2_K4_C7_7c_K7a_J2_high_precision_Tprime_audit.py
+4995CA995CAC6960F46A639FE962CF9F532E6804DE1BA79D2A55C05BD78DDD6C  161_script_A2_K4_C7_7c_K7a_J3_cancellation_safe_Tprime_audit.py
+FAE3636F1A55F17F1A915500602E8D1B06C96DA9186C4395293FFBDB37676E18  162_script_A2_K4_C7_7c_K7a_J4_safe_projected_jacobian_audit.py
+1B4FB79CA2D5BB77D1AEADF986CD9C12178317D886778B36716A48DCBCD9B329  163_script_A2_K4_C7_7c_K7a_J4_composite_projected_jacobian_gate.py
+8B755CA5E8331F168018F54FA308F26B9DA88617421D8AA822F586E5BD7A8FE2  164_script_A2_K4_C7_7c_K7a_J4b_composite_parser_corrected_gate.py
+```
+
+Skript 163 zostáva v manifeste napriek mŕtvemu agregátorovému verdiktu, pretože je súčasťou reprodukovateľnej postupnosti opravy. Zmena ktoréhokoľvek súboru zneplatní príslušný hash a vyžaduje nový manifest alebo novú verziu skriptu.
+

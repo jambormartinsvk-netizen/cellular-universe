@@ -1,0 +1,70 @@
+{
+  "harness_version": "1.0",
+  "name": "A0K5_nullchecks",
+  "question": "Q-A0-LORENTZ-RADIATIVE-STABILITY",
+  "script": "A0K5_demo_nullchecks.py",
+  "script_sha256": "8a6c979b1c88942f295fbb24f9ab23ec94c3e92c11598e7616c1bce5bb3ed16e",
+  "contract_sha256": null,
+  "environment": {
+    "python": "3.11.15",
+    "platform": "Linux-6.18.5-fc-v20-x86_64-with-glibc2.39",
+    "packages": {
+      "numpy": "2.4.4",
+      "scipy": "1.17.1"
+    }
+  },
+  "status": "PASS",
+  "checks": [
+    {
+      "label": "LI disperzia, cutoff=inf, m=0.2",
+      "kind": "IDENTITY",
+      "ok": true,
+      "value": 2.98799200992805e-18,
+      "expected": 0.0,
+      "diff": 2.98799200992805e-18,
+      "tol": 1e-12,
+      "why": "LI disperzia nesmie generovat LV; nenulovy vysledok = chyba implementacie"
+    },
+    {
+      "label": "LI disperzia, cutoff=inf, m=1.0",
+      "kind": "IDENTITY",
+      "ok": true,
+      "value": -1.8235539472355013e-18,
+      "expected": 0.0,
+      "diff": 1.8235539472355013e-18,
+      "tol": 1e-12,
+      "why": "LI disperzia nesmie generovat LV; nenulovy vysledok = chyba implementacie"
+    },
+    {
+      "label": "LI + priestorovy cutoff vs -1/(96 pi^2 kmax^2)",
+      "kind": "ANCHOR",
+      "ok": true,
+      "value": -6.946962463580094e-05,
+      "expected": -6.946963617324379e-05,
+      "diff": 1.6607893008389821e-07,
+      "tol": 0.002,
+      "why": "uzavrety tvar; overuje normalizaciu, prefaktor aj integracnu mez"
+    },
+    {
+      "label": "integracny limit (rad [-6.946962463580094e-05, -6.946962463580094e-05, -6.946962463580094e-05])",
+      "kind": "CONVERGENCE",
+      "ok": true,
+      "value": -6.946962463580094e-05,
+      "expected": -6.946962463580094e-05,
+      "diff": 0.0,
+      "tol": 1e-09,
+      "why": ""
+    }
+  ],
+  "results": [
+    {
+      "label": "16 pi^2 (B-A) pri LI disperzii a cutoffe",
+      "value": -0.010970203408760426,
+      "unit": "1",
+      "withheld": false
+    }
+  ],
+  "notes": [
+    "cislo nizsie meria NEKOVARIANCIU REGULATORA, nie fyziku siete: disperzia je exaktne LI, jediny zdroj LV je priestorovy cutoff v jednom rame"
+  ]
+}

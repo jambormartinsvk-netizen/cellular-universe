@@ -6,12 +6,25 @@
 *(Faithful English translation of file 04; the Slovak original is authoritative.)*
 
 ## CURRENT DATA STATE (data watch as of 7 July 2026)
-- **Lensing:** the final KiDS-Legacy (DR5, 2025): S₈ = 0.815 (+0.016/−0.021), only ~0.7σ from Planck — the lensing side has moved UP (from KiDS-1000's 0.759), toward our stake S1. The score recomputed with this data point: **model χ² ≈ 19.6–19.9 vs ΛCDM ≈ 30.0** (3 fronts: DESI w₀, wₐ + S₈; without RSD and correlations — an indicator). Our tension in S₈: 2.4–3.3σ.
+- **Lensing:** the final KiDS-Legacy (DR5, 2025): S₈ = 0.815 (+0.016/−0.021), only ~0.7σ from Planck — the lensing side has moved UP (from KiDS-1000's 0.759), toward our stake S1. The score recomputed with this data point: **model χ² ≈ 19.6–19.9 vs ΛCDM ≈ 30.0** (χ² over 3 data constraints: DESI DR2 w₀ = −0.75±0.06, wₐ = −0.86±0.25 and KiDS-Legacy S₈ = 0.815±0.018; the model has 1 free parameter λ → 2 d.o.f., ΛCDM 0 free → 3 d.o.f.; without RSD points and w₀–wₐ correlations — an indicator, not a posterior). Our tension in S₈: 2.4–3.3σ.
 - **DESI:** DR2 in force (2025, strengthened hints of evolving dark energy; w₀ = −0.75±0.06, wₐ = −0.86±0.25); sky mapping completed April 2026, final analysis to come — stakes S1/S3 live.
 - An external independent audit (July 2026) confirmed the consistency of the δ derivation and the n_s prediction.
-**Verification scripts (attached):** q14 (front) | q12 (dispersion) | q7 (sound horizon) | k3 (cosmology pipeline) | q10 (V-links)
+**Verification scripts (attached):** 06_script_Q14_light_cone_front_sharpening.py | 07_script_Q12_dispersion_Lorentz_test.py | 08_script_Q7_sound_horizon_H0.py | 09_script_K3_cosmology_pipeline.py | 10_script_Q10_Vlinks_dowry_rule.py
 
 ---
+
+
+## TERMINOLOGY NOTE (for the physicist reader)
+The theory's internal metaphors serve as pedagogical scaffolding; their strict physical equivalents are:
+| metaphor | strict equivalent |
+|---|---|
+| network metabolism | non-equilibrium dynamics of a causal network |
+| fuel (Ω_f) | metastable vacuum energy density (a "dark energy" precursor) |
+| digestion | the transfer rate of vacuum energy into particle excitations |
+| overhead δ | the network-restructuring dissipation factor at division |
+| waste / ash | nucleated matter remnants / gravitationally interacting sterile relics |
+| steam | decoupled tensor fluctuations of the network (a thermal graviton relic) |
+| half-dowry rule | symmetric allocation of entanglement capacity at state splitting |
 
 # PART A — FORMULAS, THEIR LOGIC, AND THE COMPUTATION OF VALUES
 
@@ -27,6 +40,7 @@
 ## A3. Interior capacity: C = g_B = 28
 **Logic:** a V-link = a shared domain of two cells; the sharing is carried by the CARRIERS of the domains — and the carriers are bosons. Link capacity = the number of independent carrier states.
 **Count:** gluons 8×2 = 16 | photon 2 | W⁺W⁻Z 3×3 = 9 | Higgs 1 → **28** (equivalently before symmetry breaking: 8 gauge + 4 Higgs + 16 gluons = 28; pitfall M8: beware double-counting the Goldstones).
+**Clarification (symmetry phase):** C = 28 is the saturated dimension of the internal state space during the Planckian genesis era, where the SM gauge symmetries are fully RESTORED: 16 gluons + 8 electroweak gauge states (4 bosons × 2 polarizations) + 4 Higgs-doublet states = 28. After symmetry breaking, Goldstone bookkeeping (pitfall M8) yields the same number: 16 + 9 (massive W±, Z) + 2 (photon) + 1 (Higgs) = 28. Confinement or decoupling of these states at low energies does not alter the topological structure locked in at genesis (a global attractor of the dowry rule).
 **Court of alternatives (executed by the data):** fermions 90 → n_s = 0.986 (5σ †) | all d.o.f. 106.75 → 0.988 (5.4σ †) | 17 particles → 0.954 (2.6σ †) | 8 domains → 0.936 (6.8σ †). Only the bosonic carrier count survived (0.15σ). Look-elsewhere effect acknowledged: the weight is carried by the mechanism plus the fact that 28 existed in the theory a day before the question was posed.
 
 ## A4. The emergent light cone: σ(R) ∝ R^χ
@@ -47,6 +61,7 @@
 ## A7. Background equations (V1) — derived term by term
  dΩ_f/dx = −3δ·Ω_f − λ·(H₀/H)·Ω_f
  dΩ_m/dx = −3·Ω_m + λ·(H₀/H)·Ω_f ; dΩ_r/dx = −4Ω_r ; E² = ΣΩ (x = ln a)
+**Note on the field-theoretic framework:** the V1 equations are formulated as phenomenological transport equations governing energy–momentum transfer within an effective causal network. A Lagrangian formulation in terms of fundamental continuous fields is bypassed; the equations are, however, strictly constrained by the Bianchi identity (∇_μT^μν = 0), which guarantees local conservation of the total energy density. The approach is analogous to hydrodynamic/thermodynamic formulations of emergent gravity (Jacobson), where macroscopic equations of state replace an explicit microscopic action.
 **Logic of the terms:**
 - **−3δΩ_f:** expansion = division (N ∝ a³ → 3 divisions/cell/e-fold), each costing the overhead δ (A2) → fuel loss of 3δ per e-fold. THIS IS the micro-origin of w = −1+δ.
 - **λ(H₀/H)Ω_f:** digestion runs on the cell's INTERNAL clock (the interior is its own dimension and knows nothing of H) → conversion at the constant rate λH₀ per unit of fuel. The factor H₀/H is merely the conversion to e-folds. This is why Γ∝H (#4) and globally constant Γ (#5) died.
@@ -82,6 +97,7 @@ Matter "waiting" inside the fuel does NOT blueshift when looking into the past (
 **Step 3 (the exponent m):** a saturated V-channel (energy creates links rather than heat — a Hagedorn-like regime): δE ∝ √(T·E_P)·√N ⇒ amplitude ∝ √T ∝ √H ⇒ m = ½.
 **Result:** n_s − 1 = 2·(½)·d ln H/d ln k = −ε = −(3/2)δ = **−0.0345** (Planck: −0.0351 ± 0.0042; 0.15σ).
 **Amplitude:** A_s = 2.1×10⁻⁹ ⇒ freeze-out temperature ~ 2–7×10⁹ GeV. **E-folds:** N = ln(ρ_i/ρ_f)/(3δ) ≈ 1280 (about 60 are needed) — the horizon is covered by the fuel era.
+**Clarification (symmetry phase):** C = 28 is the saturated dimension of the internal state space during the Planckian genesis era, where the SM gauge symmetries are fully RESTORED: 16 gluons + 8 electroweak gauge states (4 bosons × 2 polarizations) + 4 Higgs-doublet states = 28. After symmetry breaking, Goldstone bookkeeping (pitfall M8) yields the same number: 16 + 9 (massive W±, Z) + 2 (photon) + 1 (Higgs) = 28. Confinement or decoupling of these states at low energies does not alter the topological structure locked in at genesis (a global attractor of the dowry rule).
 **Court of alternatives:** uncorrelated noise → n_s = 4 († #19); a critical point → ~2 (†); equipartition of channels → −3δ (δ = 0.0117, below the fit window).
 
 ## A14. Tensors: r ≈ 0

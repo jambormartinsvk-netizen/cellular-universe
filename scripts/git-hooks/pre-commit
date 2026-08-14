@@ -1,0 +1,101 @@
+#!/bin/sh
+# Git pre-commit hook pre projekt Teoria/QCTS.
+#
+# Vynucuje pravidla NEZAVISLE od toho, ci pracujes v Claude Code (local),
+# v cloude, v editore alebo rucne. Git ho spusti vzdy.
+#
+# INSTALACIA (raz):
+#     git config core.hooksPath scripts/git-hooks
+#
+# OBIDENIE (ked naozaj treba, napr. commit rozpracovanej opravy):
+#     git commit --no-verify
+#
+# Precedens ku kazdej kontrole je v scripts/check_state.py.
+
+set -e
+PY=$(command -v python3 || command -v python || command -v py)
+if [ -z "$PY" ]; then
+    echo "pre-commit: python nenajdeny, kontroly preskocene" >&2
+    exit 0
+fi
+
+FAIL=0
+
+# --- 1. linter stavu ---------------------------------------------------
+if [ -f scripts/check_state.py ] && [ -f tracks/00_STATE.json ]; then
+    echo "pre-commit: kontrolujem stav projektu..."
+    if ! "$PY" scripts/check_state.py tracks/00_STATE.json; then
+        echo "" >&2
+        echo "  >>> Stav je poruseny (BLOCK). Commit zastaveny." >&2
+        echo "  >>> Oprav porusenia, alebo commituj s --no-verify a zapis preco." >&2
+        FAIL=1
+    fi
+fi
+
+# --- 2. ziadna nova vnorena podkolaj v A2, kym je A0 nerozhodnuta -------
+# Precedens: D2SW0..D2SW16, 222 taskov, pohyb fyzikalnej hlbky nula.
+NOVE=$(git diff --cached --name-only --diff-filter=A \
+       | grep -E '/A2/.*/(SUBTRACKS|D2SW|B6b)' || true)
+if [ -n "$NOVE" ]; then
+    echo "" >&2
+    echo "  >>> BLOKOVANE: nove vnorene podkolaje v A2:" >&2
+    echo "$NOVE" | sed 's/^/        /' >&2
+    echo "  >>> Stanica A0 nie je rozhodnuta (AGENTS.md §3.3)." >&2
+    echo "  >>> Zjemnenie specifikacie nie je povoleny krok (§4.1)." >&2
+    FAIL=1
+fi
+
+# --- 3. ziadne 16-ciferne cisla v novych/zmenenych .md ------------------
+# Precedens: A_f = 7809.270101963506 pri vstupoch s 3-4 ciframi (audit 2, C2).
+MD=$(git diff --cached --name-only --diff-filter=ACM | grep -E '\.md$' || true)
+for f in $MD; do
+    [ -f "$f" ] || continue
+    HIT=$(git diff --cached -U0 -- "$f" \
+          | grep -E '^\+' | grep -vE '^\+\+\+' \
+          | grep -oE '(^|[^0-9A-Za-z.])[0-9]+\.[0-9]{8,}' || true)
+    if [ -n "$HIT" ]; then
+        echo "" >&2
+        echo "  >>> Falosna precizia v $f :" >&2
+        echo "$HIT" | sed 's/^/        /' >&2
+        echo "  >>> Zaokruhli na 4 platne cislice (audit 2, C2)." >&2
+        FAIL=1
+    fi
+done
+
+# --- 4. ziadne "external audit" pre LLM auditora ------------------------
+# Precedens: cela vrstva su jazykove modely (audit 2, VI.3).
+HIT=$(git diff --cached -U0 -- '*.md' 2>/dev/null \
+      | grep -E '^\+' | grep -vE '^\+\+\+' \
+      | grep -iE 'external (audit|auditor)' || true)
+if [ -n "$HIT" ]; then
+    echo "" >&2
+    echo "  >>> 'external audit' pre audit vykonany jazykovym modelom:" >&2
+    echo "$HIT" | head -5 | sed 's/^/        /' >&2
+    echo "  >>> Spravny tvar: 'independent LLM agent audit (model, revizia, mode)'." >&2
+    FAIL=1
+fi
+
+# --- 5. kazdy novy vypocet ma povinnu null-kontrolu ---------------------
+# Precedens: preklep 5/96 -> 5/95; konvergencna kontrola prejde, povinne nie.
+PYF=$(git diff --cached --name-only --diff-filter=A | grep -E '^scripts/.*\.py$' || true)
+for f in $PYF; do
+    [ -f "$f" ] || continue
+    case "$f" in
+        */qcts_check.py|*/check_state.py|*/release_gate.py|*/git-hooks/*) continue ;;
+    esac
+    if ! grep -q 'qcts_check' "$f"; then
+        echo "" >&2
+        echo "  >>> $f nepouziva qcts_check -> vysledok nema povinne kontroly." >&2
+        echo "  >>> Ak je to prieskum bez naroku, patri do tmp/ (AGENTS.md §10)." >&2
+        FAIL=1
+    fi
+done
+
+if [ "$FAIL" -ne 0 ]; then
+    echo "" >&2
+    echo "commit zastaveny. Obidenie: git commit --no-verify" >&2
+    exit 1
+fi
+
+echo "pre-commit: vsetky kontroly presli"
+exit 0

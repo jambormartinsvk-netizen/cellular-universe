@@ -1,0 +1,21 @@
+{
+  "exception_type": "AttributeError",
+  "execution_status": "TECHNICAL_FAILURE_NO_PHYSICS_VERDICT",
+  "immutable_prerequisite_expected": "39BB388669E74C9368BD823C5FF5C68A487B7FC1CD4F74EACBF64D9A08B7B497",
+  "message": "module 'mpmath' has no attribute 'householder'",
+  "mpmath_linalg_expected": "D380B78A3CCC1689BBA1BE5F5C10837F23CF768DC121BA08784F31D80EAFA85D",
+  "pf072_lineage_expected": "7F1B5B4AE0A80287B29F929C76541F0F1899A404C2D800EF138A5563E44315E1",
+  "phase": "base_smoke",
+  "prediction_table_effect": "NONE",
+  "release_trigger": "NONE",
+  "run_id": "KMPC-038",
+  "score_effect": "NONE",
+  "source_hashes_expected": {
+    "m1_order7_numerical_refinement.py": "CE29222FCE45DAA99A7B8E1FFCC06E9471D648A2B61C14DA05F653DBA9E7A80C",
+    "m1_order7_numerical_refinement_v2_householder.py": "81D7EA664677158E98340E39F395DE2EE0DAB6EEFCFFA785089F51E62434193A",
+    "m1_order7_provenance.py": "0B1EB4C76A7388D6A8F6D1E5DD933549043337381DEF6DE77539D3F84CA7BAC7",
+    "mode_resolved_puiseux.py": "5A89CF82006CB5ECC1D8B4BE1FD56A463453EE3D6261968CB64DE8CCF2C8B7AE",
+    "mode_resolved_puiseux_v2_m1_anchored.py": "5DE2C280B0E9DAF528A9E3011368361B37AE53DE38827FB6F6CE4AB2019A4455"
+  },
+  "zenodo_trigger": "NONE"
+}

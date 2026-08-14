@@ -1,0 +1,4 @@
+"runtime_path"	"role"	"sha256"	"required_by"
+"REPRO/scripts/389_script_KMPC_145_P5_3g7_C3_NID_k0p15_read_only_parity_scope_correction.py"	"executable-primary"	"871B24D48239A6E860722AAC701F048F3E7717FD45B03EB3A572F9939F55AEDA"	"compile/help/smoke/official KMPC-145"
+"REPRO/scripts/results/k_mpc_005/RUN_KMPC_131_P5_3G7_C3_NID_K0p15_ZERO_VARIANT_PAIR.json"	"runtime-prerequisite"	"3850A3D951E5A8A3E21C93A6DAE7F1A08CBE6430E7100BD01B75F573F21AF71B"	"KMPC-145 predecessor parity projections"
+"REPRO/scripts/results/k_mpc_005/RUN_KMPC_144_P5_3G7_C3_NID_K0p15_AF0_AUDIT_SAME_MATRIX_REFINEMENT.json"	"runtime-prerequisite"	"7288ADE2BBC876D5F26677186ACF37BD3FE6B6DC439458C90A640B1C8FD103EB"	"KMPC-145 source and protected correction"

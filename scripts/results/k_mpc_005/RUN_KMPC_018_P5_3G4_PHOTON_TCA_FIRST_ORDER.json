@@ -1,0 +1,68 @@
+{
+  "basis": [
+    "F_gamma2",
+    "G_gamma0",
+    "G_gamma2"
+  ],
+  "checks": {
+    "all_first_order_components_are_proportional_to_epsilon": true,
+    "collision_matrix_full_rank": true,
+    "collision_matrix_has_no_equilibrium_nullspace": true,
+    "collision_matrix_matches_shared_module": true,
+    "first_order_collision_residual_is_exact_zero": true,
+    "solution_contains_photon_velocity_or_metric_drive": true,
+    "source73_declares_audited_first_row": true,
+    "source73_declares_collision_block": true,
+    "source76_declares_J2_metric_and_polarization_source": true,
+    "source76_declares_polarization_equation": true,
+    "source84_returns_photon_velocity_qg": true,
+    "source84_returns_qg_in_seed_vector": true,
+    "zeroth_tca_limit_is_exact_zero": true
+  },
+  "collision_determinant": "-3/10",
+  "collision_matrix": [
+    [
+      "-9/10",
+      "1/10",
+      "1/10"
+    ],
+    [
+      "1/2",
+      "-1/2",
+      "1/2"
+    ],
+    [
+      "1/10",
+      "1/10",
+      "-9/10"
+    ]
+  ],
+  "collision_residual": [
+    "0",
+    "0",
+    "0"
+  ],
+  "drive": [
+    "2*k*q_gamma/5 + 8*k*shear/15",
+    "0",
+    "0"
+  ],
+  "first_order_truncation": "D retains the audited l=2 q_gamma/metric drive. l=3 and higher hierarchy terms are deliberately deferred to the full-hierarchy gate.",
+  "next_step": "P5.3g5: bind a K4 opacity/time-power seed and an independent Einstein ledger; then test full photon+neutrino seed at two starts",
+  "runtime_limit_seconds": 5.0,
+  "runtime_seconds": 0.2029999999977008,
+  "scope": "exact collision-block algebra only; no K4 opacity history, time-power assignment, two-start test, ODE, P5.4, G8, or score",
+  "solution": {
+    "F_gamma2": "8*epsilon*k*(3*q_gamma + 4*shear)/45",
+    "G_gamma0": "2*epsilon*k*(3*q_gamma + 4*shear)/9",
+    "G_gamma2": "2*epsilon*k*(3*q_gamma + 4*shear)/45"
+  },
+  "source_sha256": {
+    "73_script_A2_K4_3b_hierarchy_and_regular_mode_taxonomy_audit.py": "efe2795778be9b0511a982330ce40117cf945063bb598ac229491bbcded5b070",
+    "76_script_A2_K4_3b_exact_CAMB_hierarchy_coefficients_alias_fixed.py": "e65aca51fad0c37f5688ad83610df65dedc46b4729091927207569a5527f382f",
+    "84_script_A2_K4_3b_RG_CLASS_analytic_collective_seed_CAMB_crosscheck.py": "0f7e294b5385b2d7b29987bb952f9f46eba4981a206b94f4ef1aab334307538e"
+  },
+  "tca_definition": "epsilon = 1/opacity; first nonzero multipoles solve C X + epsilon D = 0",
+  "test": "KMPC-018 P5.3g4 first-order photon l=2/polarization TCA algebra",
+  "verdict": "DERIVATION_PASS_P5_3G4_PHOTON_TCA_FIRST_ORDER_OPACITY_UNCLOSED"
+}

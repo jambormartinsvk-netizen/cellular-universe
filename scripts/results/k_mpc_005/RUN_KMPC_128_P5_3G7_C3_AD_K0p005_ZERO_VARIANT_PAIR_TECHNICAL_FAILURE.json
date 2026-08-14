@@ -1,0 +1,25 @@
+{
+  "authorship": {
+    "script_creator": "Codex (OpenAI)",
+    "theory_author": "Martin Jambor"
+  },
+  "current_phase": "SOLVE_AF0",
+  "error_message": "KMPC-128 pair internal deadline exceeded",
+  "error_type": "TimeoutError",
+  "execution_status": "TECHNICAL_FAILURE_NO_PHYSICS_VERDICT",
+  "identity": {
+    "k_Mpc_inverse": 0.005,
+    "mode": "AD",
+    "physical_receipt": "gamma0_af0_pair"
+  },
+  "last_completed_phase": "SOLVE_GAMMA0",
+  "orchestrator_verdict": "NOT_ASSIGNED_BY_SCRIPT",
+  "physics_verdict": "NONE_TECHNICAL_FAILURE",
+  "run_id": "KMPC-128",
+  "score_effect": "NONE",
+  "source_hashes": {
+    "base": "45AE0B848819A56F690953A15D1722C266FD55D02E07D67F4115103CFA5AE9C0",
+    "runner": "32A4B3D6504DCD9A0B7C40F2947721CBF3DA07733F2A1DA4A28483120A7B6C0C"
+  },
+  "traceback": "Traceback (most recent call last):\n  File \"D:\\Teoria\\scripts\\372_script_KMPC_128_P5_3g7_C3_zero_variant_pair.py\", line 107, in main\n    payload = c3.run_pair(\n              ^^^^^^^^^^^^\n  File \"D:\\Teoria\\scripts\\baseScripts\\p5_general_synchronous\\c3_zero_variant_pair.py\", line 655, in run_pair\n    variants[variant] = _solve_variant(\n                        ^^^^^^^^^^^^^^^\n  File \"D:\\Teoria\\scripts\\baseScripts\\p5_general_synchronous\\c3_zero_variant_pair.py\", line 553, in _solve_variant\n    accepted = c2._solve_support(mode, k_mpc, support.accepted, inputs, standard, deadline)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Teoria\\scripts\\baseScripts\\p5_general_synchronous\\c2_fourier_coverage.py\", line 212, in _solve_support\n    fractional, m3_meta = physics._solve_m3(mode, k_mpc, inputs, combined, support, deadline)\n                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Teoria\\scripts\\baseScripts\\p5_general_synchronous\\full_ra_m3_seed.py\", line 708, in _solve_m3\n    matrix, constant = _affine_system(driver_ledger, count, deadline)\n                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Teoria\\scripts\\baseScripts\\p5_general_synchronous\\full_ra_m3_seed.py\", line 152, in _affine_system\n    deadline()\n  File \"D:\\Teoria\\scripts\\baseScripts\\p5_general_synchronous\\c3_zero_variant_pair.py\", line 213, in deadline\n    raise TimeoutError(\"KMPC-128 pair internal deadline exceeded\")\nTimeoutError: KMPC-128 pair internal deadline exceeded\n"
+}

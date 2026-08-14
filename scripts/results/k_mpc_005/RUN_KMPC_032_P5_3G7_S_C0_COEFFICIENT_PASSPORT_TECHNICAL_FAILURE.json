@@ -1,0 +1,10 @@
+{
+  "current_phase": "AUDIT",
+  "error_message": "invalid input: np.float64(6.529702562663338e-17)",
+  "error_type": "TypeError",
+  "last_completed_phase": "SOURCE_HASH_VALIDATION",
+  "physics_verdict": "NONE_TECHNICAL_FAILURE",
+  "run_id": "KMPC-032",
+  "test": "KMPC-032 S-C0 coefficient passport technical failure",
+  "traceback": "Traceback (most recent call last):\n  File \"D:\\Teoria\\scripts\\276_script_KMPC_032_P5_3g7_s_c0_coefficient_passport.py\", line 103, in main\n    payload = audit.run_audit(args.max_runtime_seconds)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Teoria\\scripts\\baseScripts\\p5_general_synchronous\\s_c0_coefficient_passport.py\", line 265, in run_audit\n    \"h\": _exact_series(standard[\"h\"]),\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Teoria\\scripts\\baseScripts\\p5_general_synchronous\\s_c0_coefficient_passport.py\", line 133, in _exact_series\n    return {int(power): _q(value) for power, value in item.items() if value != 0.0}\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Teoria\\scripts\\baseScripts\\p5_general_synchronous\\s_c0_coefficient_passport.py\", line 133, in <dictcomp>\n    return {int(power): _q(value) for power, value in item.items() if value != 0.0}\n                        ^^^^^^^^^\n  File \"D:\\Teoria\\scripts\\baseScripts\\p5_general_synchronous\\s_c0_coefficient_passport.py\", line 77, in _q\n    return sp.Rational(repr(value))\n           ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Python311\\Lib\\site-packages\\sympy\\core\\cache.py\", line 72, in wrapper\n    retval = cfunc(*args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Python311\\Lib\\site-packages\\sympy\\core\\numbers.py\", line 1341, in __new__\n    raise TypeError('invalid input: %s' % p)\nTypeError: invalid input: np.float64(6.529702562663338e-17)\n"
+}

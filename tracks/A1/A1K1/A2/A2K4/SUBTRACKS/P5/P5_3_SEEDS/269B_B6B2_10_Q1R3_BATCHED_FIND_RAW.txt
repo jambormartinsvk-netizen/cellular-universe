@@ -1,0 +1,357 @@
+BATCH_EVIDENCE_ID: B5_FROZEN_14_PATTERN_FIND
+CALL_TYPE: BATCHED_FIND
+EXACT_TARGET: turn45view0
+INTERNAL_OPERATION_COUNT: 14
+PROVIDER_PAYLOAD: {"find":[{"ref_id":"turn45view0","pattern":"energy-momentum"},{"ref_id":"turn45view0","pattern":"friction term"},{"ref_id":"turn45view0","pattern":"energy conservation"},{"ref_id":"turn45view0","pattern":"critical bubble"},{"ref_id":"turn45view0","pattern":"nucleation"},{"ref_id":"turn45view0","pattern":"initial condition"},{"ref_id":"turn45view0","pattern":"source"},{"ref_id":"turn45view0","pattern":"reservoir"},{"ref_id":"turn45view0","pattern":"reset"},{"ref_id":"turn45view0","pattern":"daughter"},{"ref_id":"turn45view0","pattern":"worldtube"},{"ref_id":"turn45view0","pattern":"congruence"},{"ref_id":"turn45view0","pattern":"proper measure"},{"ref_id":"turn45view0","pattern":"residual"}]}
+DELIMITER_COLLISION: NO
+BEGIN_EXACT_BATCH_RETURN
+ (https://arxiv.org/pdf/2301.12328)
+citeturn46view0 [wordlim: 200] Content type: application/pdf; Number of pages: 30; Source: find({"ref_id":"turn45view0","pattern":"energy-momentum"}); Total lines: 2135
+L90@P2: profiles in both phases and derive the energy budget. Since the contribution of the scalar
+L91@P2: field to the energy-momentum tensor is taken into account, and the EoS is directly obtained
+L92@P2: from the effective potential, our model-dependent method can provide more consistent and
+L93@P2: accurate results in principle.
+L94@P2: This work is organized as follow. In section 2, we introduce the general hydrodynamical
+L95@P2: treatment of the FOPT system. Then we propose our model-dependent method for the
+L102@P2: parameter of the phase transition, and the thermal plasma. The energy-momentum tensor of
+L103@P2: N scalar fields is
+L104@P2: T
+L105@P2: µν
+L106@P2: ϕ = ∂
+L107@P2: µϕi∂νϕi − gµν 
+L108@P2: 1
+L109@P2: 2
+L110@P2: ∂αϕi∂
+L111@P2: αϕi − V0(Φ)
+L112@P2: , (2.1)
+L113@P2-3: – 2 –where V0(Φ) is the one-loop zero temperature potential, the repeated indices are summed
+L114@P3: over and Φ ≡ {ϕ1, ϕ2, ..., ϕN }. The energy-momentum tensor of the plasma can be derived
+L115@P3: by
+L116@P3: T
+L117@P3: µν
+L118@P3: pl =
+L119@P3: X
+L120@P3: i
+L121@P3: Z
+L122@P3: d
+L123@P3: 3k
+L124@P3: (2π)
+L125@P3: 3Ei
+L126@P3: k
+L127@P3: µ
+L128@P3: k
+L129@P3: ν
+L130@P3: fi(k, x), (2.2)
+L131@P3: where fi(k, x) is the distribution function for different particle species and the sum is over
+L132@P3: all particle species in the plasma. If we assume the plasma is perfect fluid, the corresponding
+L133@P3: energy-momentum tensor can be given by
+L134@P3: T
+L135@P3: µν
+L136@P3: pl = (e + p)u
+L137@P3: µuν − gµνp, (2.3)
+L138@P3: where e and p are the energy and pressure of the plasma, respectively, and the four-velocity
+L139@P3: u
+L140@P3: µ
+L141@P3: is
+L142@P3: u
+L143@P3: µ =
+L144@P3: 1
+L145@P3: √
+L146@P3: 1 − v2
+L147@P3: (1, v) = (γ, γv), (2.4)
+L148@P3: where v is the three-velocity and γ is the Lorentz factor. Note that the pressure p also
+L149@P3: contains the contribution of the scalar fields. And the relations of these thermodynamical
+L150@P3: quantities are
+L151@P3: w ≡ T
+L152@P3: ∂p
+L153@P3: ∂T , e ≡ T
+L154@P3: ∂p
+L155@P3: ∂T − p, s ≡
+L156@P3: ∂p
+L157@P3: ∂T , (2.5)
+L158@P3: where T denotes the temperature of the plasma, s is the entropy, and we have w = e+p. For
+L159@P3: a FOPT system, the energy e and pressure p (the EoS) are
+L160@P3: e(Φ, T) = aT4 + Veff(Φ, T) − T
+L161@P3: ∂Veff
+L162@P3: ∂T , (2.6)
+L163@P3: p(Φ, T) = 1
+L164@P3: 3
+L165@P3: aT4 − Veff(Φ, T), (2.7)
+L166@P3: where a = g∗π
+L167@P3: 2/30 and g∗ is the number of degree of freedom, and Veff(Φ, T) is the finite
+L168@P3: temperature effective potential of the scaler fields, which can be calculated with a standard
+L169@P3: method [33] for a given particle physics model.
+L170@P3: Now, the energy-momentum tensor of the whole phase transition system is
+L171@P3: T
+L172@P3: µν = ∂µϕi∂νϕi − gµν 
+L173@P3: 1
+L174@P3: 2
+L175@P3: ∂αϕi∂
+L176@P3: αϕi
+L177@P3: 
+L178@P3: + wuµu
+L179@P3: ν − gµνp, (2.8)
+L180@P3: where the metric g
+L181@P3: µν = diag{+ − −−}. The energy-momentum conservation gives
+L182@P3: ∂µT
+L183@P3: µν = ∂µT
+L184@P3: µν
+L185@P3: ϕ + ∂µT
+L186@P3: µν
+L187@P3: pl = 0. (2.9)
+L188@P3: At the bubble wall, we have to fully consider the contribution of the scalar fields and the
+L189@P3: plasma to the energy-momentum tensor. When particles penetrate the bubble wall, they
+L190@P3: should experience an out-of-equilibrium phenomenon, and this should give an effective friction
+L191@P3: force to the bubble wall. Here we introduce a phenomenological dissipative (or friction) term,
+L192@P3: which parameterizes the out-of-equilibrium phenomenon and also acts as an effective friction.
+L193@P3: This friction term is also responsible for the entropy production at the bubble wall. And
+L194@P3: eq. (2.9) can be further expressed by
+L195@P3: ∂µT
+L196@P3: µν = ∂µT
+L197@P3: µν
+L198@P3: ϕ + ∂µT
+L199@P3: µν
+L200@P3: pl = χ
+L201@P3: ν − χν = 0, (2.10)
+L202@P3-4: – 3 –where we choose χ
+L203@P4: ν = ηuµ∂µϕi∂νϕi as in refs. [34, 35]. Note that there are also other choices
+L204@P4: for this friction term as suggested in refs. [36–38]. Substituting χ
+L205@P4: ν
+L206@P4: into eq. (2.1) and eq. (2.3),
+L207@P4: we have
+L208@P4: ∂µT
+L209@P4: µν
+L210@P4: ϕ = ∂µ∂
+L211@P4: µϕi∂νϕi +
+L212@P4: ∂Veff
+L213@P4: ∂ϕi
+L214@P4: ∂
+L215@P4: νϕi = −ηuµ
+L216@P4: ∂µϕi∂
+L217@P4: νϕi
+L218@P4: , (2.11)
+L219@P4: ∂µT
+L220@P4: µν
+L221@P4: pl = ∂µ(wuµu
+L222@P4: ν
+L223@P4: ) − ∂
+L224@P4: ν
+L225@P4: p +
+L226@P4: ∂Veff
+L227@P4: ∂ϕi
+L228@P4: ∂
+L229@P4: νϕi = ηuµ
+L230@P4: ∂µϕi∂
+L231@P4: νϕi
+L232@P4: . (2.12)
+L233@P4: The FOPT proceeds with bubble nucleation, expansion, and collision. To gain a complete
+L234@P4: understanding of the dynamics of an FOPT system, numerical hydrodynamical simulations
+L235@P4: mush be performed, although they could be rather computationally difficult and expensive.
+L236@P4: Fortunately, after bubble nucleation, the bubble will quickly reach a steady-state stage and
+L237@P4: expand with a terminal bubble wall velocity vw. As a result, for simplicity, we can focus
+L238@P4: on dynamics of the system during the steady-state stage, where the time-dependence can be
+L239@P4: neglected in the wall frame. Then, the system can be divided into three regions: the symmetric
+L240@P4: phase (the plasma outside the bubble), the broken phase (the plasma in the bubble), and
+L241@P4: the bubble wall. In the symmetric and broken phases, the plasma can be treated as being
+L242@P4: in thermal equilibrium, with the contribution of the scalar fields to the energy momentum
+L243@P4: tensor T
+L244@P4: µν
+L245@P4: ϕ
+L246@P4: being constant. Hence, we can just analyze the dynamics of the perfect fluid based
+L247@P4: on energy-momentum conservation, ∂µT
+L248@P4: µν
+L249@P4: pl = 0. While in the region of the bubble wall, the
+L250@P4: plasma encounters an out-of-equilibrium phenomenon, which is parameterized by the friction
+L251@P4: term χ
+L252@P4: ν
+L253@P4: , and the scalar fields vary violently; and the energy-momentum conservation law
+L254@P4: of the plasma ∂µT
+L255@P4: µν
+L256@P4: pl = 0 fails in this region. Therefore, both scalars and plasma must be
+L257@P4: considered in this region with ∂µT
+L258@P4: µν = ∂µT
+L259@P4: µν
+L260@P4: ϕ + ∂µT
+L261@P4: µν
+L262@P4: pl = 0. The dynamics of these three
+L263@P4: regions should be discussed independently, as detailed in the following subsections.
+L264@P4: 2.1 Across the bubble wall
+L265@P4: At the bubble wall, we have to fully consider the contribution of the scalar fields and the
+L266@P4: plasma to the energy-momentum tensor. From eq. (2.11) and eq. (2.12), without assuming
+L267@P4: any symmetries, we have
+L268@P4: ϕ¨ − ∇2ϕ +
+L269@P4: ∂Veff
+L340@P5: represents quantities in the broken phase. These are the key quantities for conducting the
+L341@P5: model-dependent analysis of the kinetic energy fraction.
+L342@P5: 2.2 Away from the bubble wall
+L343@P5: The dynamics of the plasma in the broken and symmetric phases can be descried by the
+L344@P5: energy-momentum conservation law of the perfect fluid. Inserting some specific symmetries,
+L345@P5: we have [23, 39]
+L346@P5: ∂t[(e + pv2)γ
+L347@P5: 2
+L348@P5: ] + ∂r[(e + p)γ
+L349@P5: 2
+L350@P5: v] = −
+L351@P5: j
+L352@P5: r
+L353@P5: [(e + p)γ
+L354@P5: 2
+L355@P5: v], (2.21)
+L356@P5: ∂t[(e + p)γ
+L357@P5: 2
+L358@P5: v] + ∂r[(ev2 + p)γ
+L359@P5: 2
+L360@P5: ] = −
+L361@P5: j
+L362@P5: r
+--------------------------------------------------------------------------------
+ (https://arxiv.org/pdf/2301.12328)
+citeturn46view1 [wordlim: 200] Content type: application/pdf; Number of pages: 30; Source: find({"ref_id":"turn45view0","pattern":"friction term"}); Total lines: 2135
+L85@P2: by solving the local equations of motion (EoM) of the scalar field and the fluid across the
+L86@P2: bubble wall. To simplify the calculation, a phenomenological friction term characterizing the
+L87@P2: out-of-equilibrium phenomena is introduced. With the planar approximation, we solve the
+L88@P2: scalar field and fluid profiles, thereby obtaining the bubble wall velocity and the boundary
+L89@P2: conditions for the fluid equations of both phases. This allows us to finally solve the fluid
+L188@P3: At the bubble wall, we have to fully consider the contribution of the scalar fields and the
+L189@P3: plasma to the energy-momentum tensor. When particles penetrate the bubble wall, they
+L190@P3: should experience an out-of-equilibrium phenomenon, and this should give an effective friction
+L191@P3: force to the bubble wall. Here we introduce a phenomenological dissipative (or friction) term,
+L192@P3: which parameterizes the out-of-equilibrium phenomenon and also acts as an effective friction.
+L193@P3: This friction term is also responsible for the entropy production at the bubble wall. And
+L194@P3: eq. (2.9) can be further expressed by
+L195@P3: ∂µT
+L196@P3: µν = ∂µT
+L197@P3: µν
+L198@P3: ϕ + ∂µT
+L199@P3: µν
+L200@P3: pl = χ
+L201@P3: ν − χν = 0, (2.10)
+L202@P3-4: – 3 –where we choose χ
+L203@P4: ν = ηuµ∂µϕi∂νϕi as in refs. [34, 35]. Note that there are also other choices
+L204@P4: for this friction term as suggested in refs. [36–38]. Substituting χ
+L205@P4: ν
+L206@P4: into eq. (2.1) and eq. (2.3),
+L207@P4: we have
+L208@P4: ∂µT
+L209@P4: µν
+L210@P4: ϕ = ∂µ∂
+L211@P4: µϕi∂νϕi +
+L212@P4: ∂Veff
+L213@P4: ∂ϕi
+L214@P4: ∂
+L215@P4: νϕi = −ηuµ
+L216@P4: ∂µϕi∂
+L217@P4: νϕi
+L218@P4: , (2.11)
+L219@P4: ∂µT
+L220@P4: µν
+L221@P4: pl = ∂µ(wuµu
+L222@P4: ν
+L223@P4: ) − ∂
+L224@P4: ν
+L225@P4: p +
+L226@P4: ∂Veff
+L227@P4: ∂ϕi
+L228@P4: ∂
+L229@P4: νϕi = ηuµ
+L230@P4: ∂µϕi∂
+L231@P4: νϕi
+L232@P4: . (2.12)
+L233@P4: The FOPT proceeds with bubble nucleation, expansion, and collision. To gain a complete
+L242@P4: in thermal equilibrium, with the contribution of the scalar fields to the energy momentum
+L243@P4: tensor T
+L244@P4: µν
+L245@P4: ϕ
+L246@P4: being constant. Hence, we can just analyze the dynamics of the perfect fluid based
+L247@P4: on energy-momentum conservation, ∂µT
+L248@P4: µν
+L249@P4: pl = 0. While in the region of the bubble wall, the
+L250@P4: plasma encounters an out-of-equilibrium phenomenon, which is parameterized by the friction
+L251@P4: term χ
+L252@P4: ν
+L253@P4: , and the scalar fields vary violently; and the energy-momentum conservation law
+L254@P4: of the plasma ∂µT
+L255@P4: µν
+--------------------------------------------------------------------------------
+ (https://arxiv.org/pdf/2301.12328)
+citeturn46view2 [wordlim: 200] Content type: application/pdf; Number of pages: 30; Source: find({"ref_id":"turn45view0","pattern":"energy conservation"}); Total lines: 2135
+No matching text found for "energy conservation"--------------------------------------------------------------------------------
+ (https://arxiv.org/pdf/2301.12328)
+citeturn46view3 [wordlim: 200] Content type: application/pdf; Number of pages: 30; Source: find({"ref_id":"turn45view0","pattern":"critical bubble"}); Total lines: 2135
+No matching text found for "critical bubble"--------------------------------------------------------------------------------
+ (https://arxiv.org/pdf/2301.12328)
+citeturn46view4 [wordlim: 200] Content type: application/pdf; Number of pages: 30; Source: find({"ref_id":"turn45view0","pattern":"nucleation"}); Total lines: 2135
+L223@P4: ) − ∂
+L224@P4: ν
+L225@P4: p +
+L226@P4: ∂Veff
+L227@P4: ∂ϕi
+L228@P4: ∂
+L229@P4: νϕi = ηuµ
+L230@P4: ∂µϕi∂
+L231@P4: νϕi
+L232@P4: . (2.12)
+L233@P4: The FOPT proceeds with bubble nucleation, expansion, and collision. To gain a complete
+L234@P4: understanding of the dynamics of an FOPT system, numerical hydrodynamical simulations
+L235@P4: mush be performed, although they could be rather computationally difficult and expensive.
+L236@P4: Fortunately, after bubble nucleation, the bubble will quickly reach a steady-state stage and
+L1308@P15: ′′ , (4.7)
+L1309@P15: where prime represents the total derivative with respect to temperature T. We assume that
+L1310@P15: the bubble achieves steady-sate stage immediately after nucleation. Then the temperature
+L1311@P15: far in front of the bubble wall can be approximated as nucleation temperature3 Tn, and the
+L1312@P15: nucleation temperature can be calculated using the standard method. Here, we give the model
+L1313@P15: parameters and the corresponding phase transition parameters of the representative model
+--------------------------------------------------------------------------------
+ (https://arxiv.org/pdf/2301.12328)
+citeturn46view5 [wordlim: 200] Content type: application/pdf; Number of pages: 30; Source: find({"ref_id":"turn45view0","pattern":"initial condition"}); Total lines: 2135
+No matching text found for "initial condition"--------------------------------------------------------------------------------
+ (https://arxiv.org/pdf/2301.12328)
+citeturn46view6 [wordlim: 200] Content type: application/pdf; Number of pages: 30; Source: find({"ref_id":"turn45view0","pattern":"source"}); Total lines: 2135
+L47@P1: an FOPT, GW signals can be generated by bubble collisions [8–10], sound waves [11–13], and
+L48@P1: turbulence [14–16]. Future GW experiments, such as TianQin [17, 18], LISA [19], Taiji [20],
+L49@P1: and Big Bang Observatory (BBO) [21], among others, may be able to detect phase transition
+L50@P1: GW signals and reveal various puzzles about our Universe. Recent studies [11–13] have shown
+L51@P1: that the sound wave is the dominant source of phase transition GWs in a thermal FOPT. To
+L441@P6: will generate GW signals. According to recent studies [40, 41], during the phase transition,
+L442@P6: GW signals can be produced by three mechanisms, which are bubble collisions, sound waves,
+L443@P6: and turbulence; and the dominant source of the phase transition GWs is the sound waves in a
+L444@P6: thermal FOPT. As a result, the kinetic energy fraction K, which denotes the fraction of the
+L445@P6: total energy of the bubble that is converted to the kinetic energy of the ambient plasma, is a
+L1788@P22: bubble radius, the bubble wall thickness is negligible, its contribution should be strongly
+L1789@P22: suppressed. While our model-dependent method need to solve the EoM of the scalar
+L1790@P22: field to derive the corresponding boundary conditions. To find the main source of the
+L1791@P22: discrepancies between our method and the conventional model independent methods,
+L1792@P22: we compare the results from those different methods.
+L1793@P22: For the deflagration mode of BP1, the boundary conditions of the fluid velocity and
+L1855@P23: of the thermal function. And the µν incorporated the higher order effect in a constant
+L1856@P23: sound speed that deviates from 1
+L1857@P23: √
+L1858@P23: 3. However, the EoS derived directly from the
+L1859@P23: effective potential preserves the high order corrections and is also capable of capturing
+L1860@P23: the temperature dependency of the sound speed. To confirm the dominant source of
+L1861@P23: discrepancies, we also perform the following comparison.
+L1862@P23: From our tests, the corresponding fluid profiles and kinetic energy fractions derived by
+--------------------------------------------------------------------------------
+ (https://arxiv.org/pdf/2301.12328)
+citeturn46view7 [wordlim: 200] Content type: application/pdf; Number of pages: 30; Source: find({"ref_id":"turn45view0","pattern":"reservoir"}); Total lines: 2135
+No matching text found for "reservoir"--------------------------------------------------------------------------------
+ (https://arxiv.org/pdf/2301.12328)
+citeturn46view8 [wordlim: 200] Content type: application/pdf; Number of pages: 30; Source: find({"ref_id":"turn45view0","pattern":"reset"}); Total lines: 2135
+No matching text found for "reset"--------------------------------------------------------------------------------
+ (https://arxiv.org/pdf/2301.12328)
+citeturn46view9 [wordlim: 200] Content type: application/pdf; Number of pages: 30; Source: find({"ref_id":"turn45view0","pattern":"daughter"}); Total lines: 2135
+No matching text found for "daughter"--------------------------------------------------------------------------------
+ (https://arxiv.org/pdf/2301.12328)
+citeturn46view10 [wordlim: 200] Content type: application/pdf; Number of pages: 30; Source: find({"ref_id":"turn45view0","pattern":"worldtube"}); Total lines: 2135
+No matching text found for "worldtube"--------------------------------------------------------------------------------
+ (https://arxiv.org/pdf/2301.12328)
+citeturn46view11 [wordlim: 200] Content type: application/pdf; Number of pages: 30; Source: find({"ref_id":"turn45view0","pattern":"congruence"}); Total lines: 2135
+No matching text found for "congruence"--------------------------------------------------------------------------------
+ (https://arxiv.org/pdf/2301.12328)
+citeturn46view12 [wordlim: 200] Content type: application/pdf; Number of pages: 30; Source: find({"ref_id":"turn45view0","pattern":"proper measure"}); Total lines: 2135
+No matching text found for "proper measure"--------------------------------------------------------------------------------
+ (https://arxiv.org/pdf/2301.12328)
+citeturn46view13 [wordlim: 200] Content type: application/pdf; Number of pages: 30; Source: find({"ref_id":"turn45view0","pattern":"residual"}); Total lines: 2135
+No matching text found for "residual"
+END_EXACT_BATCH_RETURN
+

@@ -1,0 +1,33 @@
+{
+  "checks": {
+    "all_homogeneous_dark_roots_diverge_to_past": true,
+    "all_roots_finite": true,
+    "gamma_zero_has_no_forced_Uc": true
+  },
+  "delta": 0.02297,
+  "matrix": [
+    [
+      -5.93109,
+      -0.4087114119
+    ],
+    [
+      43.535045711798,
+      1.0
+    ]
+  ],
+  "roots": [
+    {
+      "imag": 2.404842583824355,
+      "real": -2.465545000000001
+    },
+    {
+      "imag": -2.404842583824355,
+      "real": -2.465545000000001
+    }
+  ],
+  "runtime_limit_seconds": 5.0,
+  "runtime_seconds": 0.0,
+  "scope": "homogeneous radiation-era dark 2x2 block at frozen delta; no higher orders, full constraints, ODE, score, or G8",
+  "test": "KMPC-009 P5.3e internal compensated-mode regularity",
+  "verdict": "PASS_P5_3E_INTERNAL_ZERO_SEED_REGULAR"
+}

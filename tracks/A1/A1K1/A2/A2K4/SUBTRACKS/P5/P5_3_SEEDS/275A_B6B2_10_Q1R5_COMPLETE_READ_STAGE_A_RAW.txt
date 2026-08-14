@@ -1,0 +1,491 @@
+BATCH_EVIDENCE_ID: Q1R5_COMPLETE_READ_STAGE_A
+CALL_TYPE: BATCHED_OPEN
+SOURCE_REF: turn49view1
+INTERNAL_OPERATION_COUNT: 7
+CANDIDATE_LOCAL_SCREEN_BUDGET_AFTER: 7/15_MAX
+PROVIDER_PAYLOAD: {"open":[{"ref_id":"turn49view1","lineno":425},{"ref_id":"turn49view1","lineno":545},{"ref_id":"turn49view1","lineno":665},{"ref_id":"turn49view1","lineno":785},{"ref_id":"turn49view1","lineno":905},{"ref_id":"turn49view1","lineno":1025},{"ref_id":"turn49view1","lineno":1145}],"response_length":"long"}
+DELIMITER_COLLISION: NO
+BEGIN_EXACT_BATCH_RETURN
+ (https://arxiv.org/pdf/1405.4005)
+citeturn50view0 [wordlim: 200] Content type: application/pdf; Number of pages: 11; Source: open({"ref_id":"turn49view1","lineno":425}); Total lines: 1203
+L400@P2: note that, as in that work, the inter-bubble spacing l∗
+L401@P2: will be related to the nucleation rate, so that given a
+L402@P2: number of bubbles per hubble volume n, we have
+L403@P2: l∗ ∼ 0.55n
+L404@P2: −1/3H−1
+L405@P2: ∗
+L406@P2: . (21)
+L407@P2: Typically l∗ is taken to be small enough so that there
+L408@P2: will not be large inhomogeneities in the present Universe,
+L409@P2: l∗ ≪ H−1
+L410@P2: ∗
+L411@P2: . The expected value of l∗ is generically of order
+L412@P2: 10−2[53], although studied values have ranged up to l∗ ∼
+L413@P2: 10−1H−1
+L414@P2: ∗
+L415@P2: [56]. In the thin-wall, α → 1, vacuum bubble,
+L416@P2: ξ = 0, limit, the bubble walls accelerate to a speed of
+L417@P2: light very quickly, and so the inter bubble spacing is also a
+L418@P2: time scale that determines how long the phase transition
+L419@P2: lasts. When the coupling is non-negligible, ξ > 0, we
+L420@P2: have to be more careful to define a time-scale. Since we
+L421@P2: understand the terminal wall velocity, it’s attractive to
+L422@P2: take this time-scale to be l∗/vf , where vf is the terminal
+L423@P2-3: wall velocity given a set of α, β and ξ.4
+L424@P3: 0 5 10 15 20 25
+L425@P3: 1
+L426@P3: 2
+L427@P3: 3
+L428@P3: 4
+L429@P3: 5
+L430@P3: Time Hunits of R0L
+L431@P3: Bubble Size HRR0
+L432@P3: L
+L433@P3: FIG. 1: Here we plot the size of bubbles in the fully nonlinear simulations (dashed line) as in [47] compared to the
+L434@P3: hyperbolic approximation (thin solid lines). The consistency
+L435@P3: of the hyperbolic approximation justifies the use of Eq. 22.
+L436@P3: This is a sample for α = 0.45, β = 0.028 and varying couplings
+L437@P3: ξ. From top to bottom the couplings are 0.1, 0.2, 0.4, 0.8, 1.6,
+L438@P3: 3.2, 6.4.
+L439@P3: The actual story is more complicated, in the case of
+L440@P3: small l∗ or large ξ, it is not always true that the bubbles
+L441@P3: reach their terminal velocities before colliding. Empirically we see that the bubble growth is approximately
+L442@P3: hyperbolic, described by the terminal wall velocity and
+L443@P3: an additional scale rs that determines how quickly the
+L444@P3: wall reaches this velocity,
+L445@P3: R(t)/R0 ≈
+L446@P3: q
+L447@P3: r
+L448@P3: 2
+L449@P3: s + (vf t)
+L450@P3: 2 + 1 − rs. (22)
+L451@P3: Eq. 22 is an exact relationship in the case of vacuum
+L452@P3: bubbles where rs = 1 and vf = 1. Fig. 1 shows that
+--------------------------------------------------------------------------------
+ (https://arxiv.org/pdf/1405.4005)
+citeturn50view1 [wordlim: 200] Content type: application/pdf; Number of pages: 11; Source: open({"ref_id":"turn49view1","lineno":545}); Total lines: 1203
+L485@P3: where ρGW is the energy in gravitational waves. The
+L486@P3: energy density of gravitational waves stored in the metric
+L487@P3: perturbations is
+L488@P3: dρGW,∗
+L489@P3: d ln k
+L490@P3: =
+L491@P3: m2
+L492@P3: plk
+L493@P3: 3
+L494@P3: 32π
+L495@P3: 1
+L496@P3: V
+L497@P3: X
+L498@P3: i,j
+L499@P3: Z
+L500@P3: dΩ
+L501@P3: 
+L502@P3: 
+L503@P3: 
+L504@P3: 
+L505@P3: 
+L506@P3: 
+L507@P3: h˙ T T
+L508@P3: ij (
+L509@P3: ~k, t)
+L510@P3: 
+L511@P3: 
+L512@P3: 
+L513@P3: 
+L514@P3: 
+L515@P3: 
+L516@P3: 2
+L517@P3: . (26)
+L518@P3: The process of calculating Eq. 25 is straightforward; the stress-energy tensor Tµν for a process that
+L519@P3: might source gravitational waves is projected onto the
+L520@P3: transverse-traceless anisotropic stress tensor,
+L521@P3: S
+L522@P3: TT
+L523@P3: ij = Pik 
+L524@P3: Tkl −
+L525@P3: δkl
+L526@P3: 3
+L527@P3: T
+L528@P3: i
+L529@P3: i
+L530@P3: 
+L531@P3: Pkj (27)
+L532@P3: where the projection operator is Pij = δij − kikj/k2.
+L533@P3: There are two contributions to the stress-energy: (1)
+L534@P3: from the field, Eq. 10, and (2) from the fluid, Eq. 12.
+L535@P3: As the simulation progresses we can calculate these two
+L536@P3: sources, and use them to evolve the metric perturbations,
+L537@P3: which obey the sourced Klein-Gordon equation,
+L538@P3: 
+L539@P3: d
+L540@P3: 2
+L541@P3: dt¯2
+L542@P3: + ¯k
+L543@P3: 2
+L544@P3: 
+L545@P3: h¯TT
+L546@P3: ij (
+L547@P3: ¯k,t¯) = 2¯κS¯TT
+L548@P3: ij (
+L549@P3: ~k, t). (28)
+L550@P3: In practice, we perform a more (numerically) efficient
+L551@P3: calculation. We first absorb the overall constant into
+L552@P3: ¯b ≡ ¯h/2¯κ. Also, rather than projecting the source at every step, we only project the metric perturbations into
+L553@P3: transverse-traceless space, ¯b
+L554@P3: T T
+L555@P3: ij , when we calculate observable quantities. We lastly do not calculate pure-trace
+L556@P3: terms in the source, using the expression
+L557@P3: T
+L558@P3: T
+L559@P3: ij = ¯∂iψ¯∂jψ + (¯ǫ + ¯p)UiUj. (29)
+L560@P3: as a source instead. This is an equivalent process algebraically, but we also justify its numerical use in Sec. IV.
+L561@P3: This approach allows us to track all of the (possible)
+L562@P3: modes on our finite lattice so that at any time we can
+L563@P3: calculate the power spectrum of gravitational radiation.
+L564@P3: At that point we calculate
+L565@P3: ΩGW,∗(
+L566@P3: ~k) = 3n
+L567@P3: 2
+L568@P3: 
+L569@P3: β
+L570@P3: ∆V¯
+L571@P3: 2 ¯k
+L572@P3: 3
+L573@P3: L¯5
+L574@P3: Z
+L575@P3: dΩ
+L576@P3: 
+L577@P3: 
+L578@P3: 
+L579@P3: 
+L580@P3: 
+L581@P3: 
+L582@P3: ¯˙
+L583@P3: b
+L584@P3: T T
+L585@P3: ij (
+L586@P3: ~k,t¯)
+L587@P3: 
+L588@P3: 
+L589@P3: 
+L590@P3: 
+L591@P3: 
+L592@P3: 
+L593@P3: 2
+L594@P3: . (30)
+L595@P3: We can then use the known transfer functions to calculate
+L596@P3: the gravitational wave power today [1, 16]
+L597@P3: ΩGW,0h
+L598@P3: 2 = Ωr,0h2
+L599@P3: 
+L600@P3: g0
+L601@P3: ge
+L602@P3: 1/3
+L603@P3: ΩGW,∗(
+L604@P3: ~k). (31)
+L605@P3: Here we have Ωr,0h
+L606@P3: 2 = 4 × 10−5
+--------------------------------------------------------------------------------
+ (https://arxiv.org/pdf/1405.4005)
+citeturn50view2 [wordlim: 200] Content type: application/pdf; Number of pages: 11; Source: open({"ref_id":"turn49view1","lineno":665}); Total lines: 1203
+L652@P4: resolutions where the wall is not resolved as well.
+L653@P4: We also briefly examine the effect of projecting the
+L654@P4: metric perturbations using different schemes. Because
+L655@P4: only the transverse-traceless part of the metric perturbations will contribute to the gravitational wave spectrum,
+L656@P4: it is always necessary to project onto this space. In Fig. 4
+L657@P4: we show that the algebraic equivalent choices of projection are robustly equivalent in the numerical method. For
+L658@P4: this reason we do the most computationally efficient process and source Eq. 28 with T
+L659@P4: T
+L660@P4: ij and project only when
+L661@P4: calculating the gravitational wave power spectrum – note
+L662@P4: that it is easier to calcite T
+L663@P4: T
+L664@P4: ij than it is to calculate Tij .
+L665@P4: V. RESULTS
+L666@P4: We will examine the two α cases in turn, beginning
+L667@P4: with the α = 0.45 case in Sec. V A and the α = 0.96
+L668@P4: case in Sec. V B. We give our simulations a volume
+L669@P4: L
+L670@P4: 3 = (H−1
+L671@P4: ∗
+L672@P4: /2)−3, where H∗ is the Hubble rate during
+L673@P4: the process. We chose this box size to optimally balance
+L674@P4: the desire for resolution on scales smaller than H−1
+L675@P4: ∗ while
+L676@P4: also minimizing any effects from periodic boundary conditions (which set in when the simulation runs for much
+L677@P4: longer than the light-crossing time of the box t > L). We
+L678@P4: also acknowledge the fact that neglecting Hubble friction limits our final time to less than the Hubble time
+L679@P4: t < H−1
+L680@P4: ∗
+L681@P4: , at which point expansion effects become extremely important.
+L682@P4: We express the gravitational wave spectrum frequency
+L683@P4: in terms of the physical Hubble scale at the time of the
+L684@P4: transition, H∗, and the mass scale m in the potential of
+L685@P4: the problem. Given that H¯
+L686@P4: ∗ = H∗/m, and our Fourier
+L687@P4: transform returns units of angular frequency, dk = 4πH,
+L688@P4: we plot the frequency in units of [k] = H∗/m. We do
+L689@P4: not scale the amplitudes of the gravitational wave spectra, as the energy scale H¯
+L690@P4: ∗ does not appear in our final
+L691@P4: expression for the amplitude.
+L692@P4: In order to compare spectra at equal points in their
+L693@P4: evolution, we plot the spectra as a function of the bubble
+L694@P4: radius, R(t), given by Eq. 22 rather than as a function of
+L695@P4: time. This helps to preserve the intuition that the timescale of the phase transition is what helps determine the
+L696@P4: observational consequence.
+L697@P4: A. The thick-wall, α = 0.45 case
+L698@P4: Unless otherwise stated, all simulations for the α =
+L699@P4: 0.45 case are in a volume L = 36R0 with Nb = 32 bubbles. Therefore the mean bubble spacing is
+--------------------------------------------------------------------------------
+ (https://arxiv.org/pdf/1405.4005)
+citeturn50view3 [wordlim: 200] Content type: application/pdf; Number of pages: 11; Source: open({"ref_id":"turn49view1","lineno":785}); Total lines: 1203
+L771@P5: fluid contribution to the gravitational wave spectrum was
+L772@P5: unimportant – the peak height was largely unaffected by
+L773@P5: the fluid source. This is not to say that the fluid played
+L774@P5: no role, as the overall height of the spectrum in these
+L775@P5: cases was affected by the presence of the fluid, but this
+L776@P5: effect came from the way the fluid acted as a friction
+L777@P5: term in the field equations of motion and slowed the field
+L778@P5: down.
+L779@P5: However, for large enough values of β and ξ we did see
+L780@P5: that the fluid source was important and even dominant.
+L781@P5: Another important result here is the fact that, although
+L782@P5: the relative contributions to the gravitational wave spectrum differs for large values of the coupling, the overall
+L783@P5: height of the spectrum is not changed significantly relative to the uncoupled case.
+L784@P5: Lastly we would like to point out how the spectrum
+L785@P5: contains characteristic peaks from both the fluid source
+L786@P5: and the field source. Fig. 7 shows the spectra for a variety
+L787@P5: of couplings for a particularly interesting case, β = 0.1.
+L788@P5: Here we show that there are actually three different scales
+L789@P5: that contribute to the final spectrum. First, there’s a
+L790@P5: scale associated with the collisions of the bubbles, estimated to be at k ≈ R(t)
+L791@P5: −1 where R(t) = l∗ ≈ [53]. This
+L792@P5-6: is the bubble collision peak and can be found at the low-7
+L793@P6: 20 50 100 200 500 1000
+L794@P6: 10-21
+L795@P6: 10-18
+L796@P6: 10-15
+L797@P6: 10-12
+L798@P6: 10-9
+L799@P6: k HH*mL
+L800@P6: WGW h
+L801@P6: 2
+L802@P6: FIG. 4: Equivalence of gravitational wave spectra with the
+L803@P6: transverse-traceless projection taken at different points in the
+L804@P6: code. The dashed line (green) is a result of making no projections at all, and using the full Tij as the source in Eq. 28.
+L805@P6: The dot-dashed (blue) line is a result of sourcing using T
+L806@P6: T
+L807@P6: ij
+L808@P6: (Eq. 29) and performing no further projections. There are
+L809@P6: three solid lines, indicating different projected versions of the
+L810@P6: spectra: using the projected anisotropic stress tensor S
+L811@P6: TT
+L812@P6: ij as
+L813@P6: a source and not projecting the metric perturbations (dark
+L814@P6: red), using the full Tij as the source and projecting the metric perturbations ¯bij , (light red), and finally using T
+L815@P6: T
+L816@P6: ij and
+L817@P6: projecting the metric perturbations ¯bij (light purple). The
+L818@P6: projected lines are virtually indistinguishable. This was for a
+--------------------------------------------------------------------------------
+ (https://arxiv.org/pdf/1405.4005)
+citeturn50view4 [wordlim: 200] Content type: application/pdf; Number of pages: 11; Source: open({"ref_id":"turn49view1","lineno":905}); Total lines: 1203
+L890@P6: that we see the effects for a wide range of possible phenomenology. Fig. 9 shows the relative contributions to
+L891@P6: the gravitational wave spectrum from the fluid and field
+L892@P6: for a particular choice of parameters. Here we never see
+L893@P6: the fluid having a significant contribution to the energy
+L894@P6: density, although we still see that the height of the spectrum when sourced only by the field has a dependence
+L895@P6: on the coupling, even though the fluid does not dominate
+L896@P6: the spectrum.
+L897@P6: To be clear, we are not saying that the contribution
+L898@P6: from the fluid is always sub-dominant; but we did not
+L899@P6: find it to be dominant for the specific coupling and range
+L900@P6: of parameters that we can probe. Thin-wall simulations
+L901@P6: are much more difficult to keep stable, as the large field
+L902@P6-7: gradients tend to create numerical instabilities in the simulation. Larger values of β (β > 0.01) were also more8
+L903@P7: R(t) = l∗ R(t) = 2.5l∗
+L904@P7: β = 0.01
+L905@P7: 0.2 0.5 1.0 2.0 5.0
+L906@P7: 10-16
+L907@P7: 10-14
+L908@P7: 10-12
+L909@P7: 10-10
+L910@P7: Ξ
+L911@P7: WGW, max
+L912@P7: h
+L913@P7: 2
+L914@P7: 0.2 0.5 1.0 2.0 5.0
+L915@P7: 10-16
+L916@P7: 10-14
+L917@P7: 10-12
+L918@P7: 10-10
+L919@P7: Ξ
+L920@P7: WGW, max
+L921@P7: h
+L922@P7: 2
+L923@P7: β = 0.028
+L924@P7: 0.2 0.5 1.0 2.0 5.0
+L925@P7: 10-16
+L926@P7: 10-14
+L927@P7: 10-12
+L928@P7: 10-10
+L929@P7: Ξ
+L930@P7: WGW, max
+L931@P7: h
+L932@P7: 2
+L933@P7: 0.2 0.5 1.0 2.0 5.0
+L934@P7: 10-16
+L935@P7: 10-14
+L936@P7: 10-12
+L937@P7: 10-10
+L938@P7: Ξ
+L939@P7: WGW, max
+L940@P7: h
+L941@P7: 2
+L942@P7: β = 0.1
+L943@P7: 0.2 0.5 1.0 2.0 5.0
+L944@P7: 10-16
+L945@P7: 10-14
+L946@P7: 10-12
+L947@P7: 10-10
+L948@P7: Ξ
+L949@P7: WGW, max
+L950@P7: h
+L951@P7: 2
+L952@P7: 0.2 0.5 1.0 2.0 5.0
+L953@P7: 10-16
+L954@P7: 10-14
+L955@P7: 10-12
+L956@P7: 10-10
+L957@P7: Ξ
+L958@P7: WGW, max
+L959@P7: h
+L960@P7: 2
+L961@P7: FIG. 6: Plots of amplitudes vs coupling for varying β values and α = 0.45. All couplings plotted are of the form ξ = 0.1 × 2
+L962@P7: n
+L963@P7: .
+L964@P7: The solid black line indicates the total power spectrum, red dot-dashed the field contribution, and blue dashed the fluid. The
+L965@P7: time required to evolve the simulations to R = 2.5l∗ exceeded a Hubble time for the highest couplings, 1.6, 3.2, and 6.4, likely
+L966@P7-8: making the presented amplitudes upper bounds for these couplings.9
+L967@P8: 20 50 100 200 500 1000 2000
+L968@P8: 10-19
+L969@P8: 10-17
+L970@P8: 10-15
+L971@P8: 10-13
+L972@P8: 10-11
+L973@P8: 10-9
+L974@P8: k HH*mL
+L975@P8: WGW h
+L976@P8: 2
+L977@P8: 20 50 100 200 500 1000 2000
+L978@P8: 10-19
+L979@P8: 10-17
+L980@P8: 10-15
+L981@P8: 10-13
+L982@P8: 10-11
+L983@P8: 10-9
+L984@P8: k HH*mL
+L985@P8: WGW h
+L986@P8: 2
+--------------------------------------------------------------------------------
+ (https://arxiv.org/pdf/1405.4005)
+citeturn50view5 [wordlim: 200] Content type: application/pdf; Number of pages: 11; Source: open({"ref_id":"turn49view1","lineno":1025}); Total lines: 1203
+L1012@P8: k HH*mL
+L1013@P8: WGW h
+L1014@P8: 2
+L1015@P8: FIG. 8: Comparison between our work with α = 0.96, η = 0
+L1016@P8: (solid, blue) and a similar simulation in [56] (dashed, black).
+L1017@P8: These plots are evaluated at t = 3l∗. The overall amplitude
+L1018@P8: is similar, but the shapes and peak frequencies disagree primarily due to the different values of α used (wall thicknesses
+L1019@P8: differ by a factor of 2), and as the work in [56] includes Hubble
+L1020@P8: friction. The amplitude from [56] is scaled to match β = 0.01.
+L1021@P8: tion from the fluid sector. Persistent perturbations in
+L1022@P8: the fluid sector may continue to generate gravitational
+L1023@P8: waves after coalescence (a result first noticed in [45] and
+L1024@P8: can be seen explicitly in Figs. 6 and 9), a contribution
+L1025@P8: which can even end up dominating the spectrum in some
+L1026@P8: regions of parameter space.
+L1027@P8: At the same time, in all cases that we probed, the
+L1028@P8: most important impact on the gravitational waves produced was a modification of the spectrum sourced by the
+L1029@P8: field. This is somewhat surprising, since expectations often claim that the contribution from turbulence should
+L1030@P8: often out-shine the contribution from the field; in our
+L1031@P8: simulations we did not find this to be generically true,
+L1032@P8: even in the presence of strong couplings.
+L1033@P8: We are mindful of our approximations, too: neglecting the expansion of the Universe, and by extension
+L1034@P8: temperature-dependent effects, makes our simulations
+L1035@P8: better approximations for fast phase transitions. In the
+L1036@P8: cases where the inter-bubble spacing is large and/or the
+L1037@P8: couplings cause the bubbles to expand slowly, it is more
+L1038@P8: important that these effects be taken into account, especially for larger couplings where the system may evolve
+L1039@P8: slowly.
+L1040@P8: One can consider allowing the perturbations to persist
+L1041@P8: for longer by decreasing the simulation box size L relative
+L1042@P8: to H∗, however this would scale the amplitude down as
+L1043@P8: (L/H∗)
+L1044@P8: 2
+L1045@P8: , while we see the spectrum due to fluid perturbations grow only linearly, similar to [45]. We therefore
+L1046@P8: expect our amplitudes to correspond to near the maximum possible amplitude.
+L1047@P8: Many numerical estimates of current-day gravitational
+L1048@P8: wave spectra see signals near, or around, ΩGW,0h
+L1049@P8: 2 .
+L1050@P8-9: 10−11, and we find ourselves solidly in that realm here.10
+L1051@P9: 0.02 0.05 0.10 0.20 0.50
+L1052@P9: 10-18
+L1053@P9: 10-16
+L1054@P9: 10-14
+L1055@P9: 10-12
+L1056@P9: Coupling Strength Ξ
+L1057@P9: Peak WGWh
+L1058@P9: 2
+L1059@P9: 50 100 500 1000 5000
+L1060@P9: 10-24
+L1061@P9: 10-21
+L1062@P9: 10-18
+L1063@P9: 10-15
+L1064@P9: 10-12
+L1065@P9: k HH*mL
+--------------------------------------------------------------------------------
+ (https://arxiv.org/pdf/1405.4005)
+citeturn50view6 [wordlim: 200] Content type: application/pdf; Number of pages: 11; Source: open({"ref_id":"turn49view1","lineno":1145}); Total lines: 1203
+L1133@P10: [24] K. Kajantie, M. Laine, K. Rummukainen and M. E. Shaposhnikov, Phys. Rev. Lett. 77, 2887 (1996) [arXiv:hepph/9605288].
+L1134@P10: [25] M. Laine and K. Rummukainen, Phys. Rev. Lett. 80,
+L1135@P10: 5259 (1998) [arXiv:hep-ph/9804255].
+L1136@P10: [26] M. S. Carena, M. Quiros and C. E. M. Wagner, Phys.
+L1137@P10: Lett. B 380, 81 (1996) [arXiv:hep-ph/9603420].
+L1138@P10: [27] G. Aad et al. [ATLAS Collaboration], Phys. Lett. B 716,
+L1139@P10: 1 (2012) [arXiv:1207.7214 [hep-ex]].
+L1140@P10: [28] S. Chatrchyan et al. [CMS Collaboration], Phys. Lett. B
+L1141@P10: 716, 30 (2012) [arXiv:1207.7235 [hep-ex]].
+L1142@P10: [29] M. Frigo and S. G. Johnson, Proceedings of the IEEE
+L1143@P10: 93, 2 (2005)
+L1144@P10: [30] D. Delepine, J. M. Gerard, R. Gonzalez Felipe and
+L1145@P10: J. Weyers, Phys. Lett. B 386, 183 (1996) [arXiv:hepph/9604440].
+L1146@P10: [31] M. Laine and K. Rummukainen, Nucl. Phys. B 535, 423
+L1147@P10: (1998) [arXiv:hep-lat/9804019].
+L1148@P10: [32] C. Grojean, G. Servant and J. D. Wells, Phys. Rev. D
+L1149@P10: 71, 036001 (2005) [arXiv:hep-ph/0407019].
+L1150@P10: [33] S. J. Huber and M. G. Schmidt, Nucl. Phys. B 606, 183
+L1151@P10: (2001) [arXiv:hep-ph/0003122].
+L1152@P10: [34] S. J. Huber, T. Konstandin, T. Prokopec and
+L1153@P10: M. G. Schmidt, Nucl. Phys. B 757, 172 (2006)
+L1154@P10: [arXiv:hep-ph/0606298].
+L1155@P10: [35] M. Laine, G. Nardini and K. Rummukainen, JCAP 1301,
+L1156@P10: 011 (2013) [arXiv:1211.7344 [hep-ph]].
+L1157@P10: [36] M. Carena, G. Nardini, M. Quiros and C. E. M. Wagner,
+L1158@P10: Nucl. Phys. B 812, 243 (2009) [arXiv:0809.3760 [hepph]].
+L1159@P10: [37] M. Carena, G. Nardini, M. Quiros and C. E. M. Wagner,
+L1160@P10: arXiv:1207.6330 [hep-ph].
+L1161@P10: [38] C. Caprini and R. Durrer, Phys. Rev. D 74, 063521
+L1162@P10: (2006) [arXiv:astro-ph/0603476].
+L1163@P10: [39] G. Gogoberidze, T. Kahniashvili and A. Kosowsky, Phys.
+L1164@P10: Rev. D 76, 083002 (2007) [arXiv:0705.1733 [astro-ph]].
+L1165@P10: [40] C. Caprini, R. Durrer and G. Servant, Phys. Rev. D 77,
+L1166@P10: 124015 (2008) [arXiv:0711.2593 [astro-ph]].
+L1167@P10: [41] T. Kahniashvili, A. Kosowsky, G. Gogoberidze and
+L1168@P10: Y. Maravin, Phys. Rev. D 78, 043003 (2008)
+L1169@P10: [arXiv:0806.0293 [astro-ph]].
+L1170@P10: [42] C. Caprini, R. Durrer, T. Konstandin and G. Servant,
+
+END_EXACT_BATCH_RETURN
+

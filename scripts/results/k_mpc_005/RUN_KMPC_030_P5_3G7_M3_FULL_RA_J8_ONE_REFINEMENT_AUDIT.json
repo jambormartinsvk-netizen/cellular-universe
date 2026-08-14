@@ -1,0 +1,4490 @@
+{
+  "F0": {
+    "diagnostics": {
+      "absolute_fallback_row_count": 4,
+      "column_scale_span": 21.767522855899,
+      "equilibrated_rank_rcond": 18,
+      "equilibrated_singular_ratio": 0.22477620162924106,
+      "expected_rank": 18,
+      "leading_expected": {
+        "U_f": -0.01943682952656548,
+        "delta_f": -0.0004464639742252091
+      },
+      "leading_max_absolute_difference": 1.0408340855860843e-17,
+      "leading_observed": {
+        "U_f": -0.019436829526565492,
+        "delta_f": -0.0004464639742252106
+      },
+      "leading_power": 2,
+      "max_absolute_fallback_residual": 4.680800269973865e-18,
+      "max_relative_residual": 1.7154764408499048e-12,
+      "pass_driver": true,
+      "pass_leading_postcheck": true,
+      "pass_rank": true,
+      "raw_rank_rcond": 18,
+      "raw_singular_ratio": 0.005833536293002726,
+      "rcond": 1e-12,
+      "relative_row_count": 14,
+      "row_scale_span": 7.340142488446137,
+      "rows": 18,
+      "support": [
+        0,
+        8
+      ],
+      "unknowns": 18,
+      "worst_absolute_fallback_row": "fuel_continuity[1]",
+      "worst_relative_row": "fuel_Euler[8]"
+    },
+    "state": {
+      "U_f": {
+        "0": 5.743798699859116e-19,
+        "1": 1.1938223360363967e-16,
+        "2": -0.019436829526565492,
+        "3": 0.0019568512949633445,
+        "4": 0.00044587144193037183,
+        "5": -0.00010479501470135109,
+        "6": 6.788225831385414e-06,
+        "7": 3.887361570885355e-07,
+        "8": -1.1973569798538876e-07
+      },
+      "delta_f": {
+        "0": -3.2191566899140116e-20,
+        "1": 1.1563335197006947e-20,
+        "2": -0.0004464639742252106,
+        "3": 0.00012544154960658416,
+        "4": 2.1488246211149835e-05,
+        "5": -8.973237680489748e-06,
+        "6": 8.66882726864676e-07,
+        "7": 2.7273674587039e-08,
+        "8": -1.5775173829324304e-08
+      }
+    }
+  },
+  "M1": {
+    "all_coefficients_finite": true,
+    "condition_resolved": 4614.151583825759,
+    "driver_scaled_residual": 3.581171304063209e-15,
+    "expected_full_unknowns": 110,
+    "expected_reduced_unknowns": 109,
+    "expected_rows": 132,
+    "exponents": [
+      -1,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "full_order_driver_scaled_residual": 7.45523434653172e-14,
+    "full_order_holdout_scaled_residual": 6.8649404838101396e-15,
+    "full_vector_unknowns": 110,
+    "hard_anchor_absolute_difference": 0.0,
+    "hard_anchor_method": "exact_column_elimination",
+    "hard_anchor_variable": "h[2]",
+    "holdout_scaled_residual": 6.8649404838101396e-15,
+    "inverse_resolved_condition": 0.00021672456611641355,
+    "m1_expected_h_coefficient": 0.5,
+    "m1_h_power": 2,
+    "m1_h_relative_difference": 0.0,
+    "m1_observed_h_coefficient": 0.5,
+    "order": 8,
+    "pass": true,
+    "rank": 109,
+    "residual_normalization": "legacy_global_max_state_coefficient",
+    "rows": 132,
+    "unknowns": 109
+  },
+  "attempt8_ladder_wrapper_sha256": "934AE0E9663A6D8CFD92DE2843E59D7A94065D277227EECC73F9B6646B6EE475",
+  "attempt9_wrapper_sha256": "A8E2EA26B6960F23298259EFBECFFC9806ECF10F0207AE4D2B2AD0C2713DA0AB",
+  "candidate_interpretation_not_verdict": "REVIEW_LADDER_STILL_UNCLOSED",
+  "canonical_depth": "60/100",
+  "evidence": {
+    "J4": {
+      "path": "RUN_KMPC_028_P5_3G7_M3_FULL_RA_ATOM_AD_K0p05_NOMINAL.json",
+      "sha256": "2294E8623675B49F2D5A814005306D4E98E3CBDF4A1A66BD3AE1A9C0331EFC83"
+    },
+    "J6": {
+      "path": "RUN_KMPC_029_P5_3G7_M3_FULL_RA_SUPPORT_J6.json",
+      "sha256": "658495A11A3C72262CDCBEC9B9515794E506A6C7F14F40865704AA26E6C4636A"
+    },
+    "J8": {
+      "path": "RUN_KMPC_029_P5_3G7_M3_FULL_RA_SUPPORT_J8.json",
+      "sha256": "1EE3FCDF3B77C6C7E4C26317A3F39AA45D4CFA5BA6B559E312E598BC3ED51AB8"
+    }
+  },
+  "execution_status": "TECHNICAL_COMPLETE_PENDING_ORCHESTRATOR_AUDIT",
+  "ladder_closure": {
+    "checks": {
+      "all_F0_M3_common_coefficient_bridges": true,
+      "dominant_new_power_membership": true,
+      "exact_added_powers": true,
+      "tail_details_finite": true,
+      "tail_monotone_on_both_surfaces": true
+    },
+    "coefficient_bridges": {
+      "J4_J6_F0": {
+        "absolute_fallback_count": 4,
+        "max_absolute_fallback_difference": 2.8483886208905594e-16,
+        "max_relative_difference": 6.070438350128071e-14,
+        "pass": true,
+        "relative_count": 6,
+        "worst_absolute_fallback_coefficient": "U_f[1]",
+        "worst_relative_coefficient": "delta_f[4]"
+      },
+      "J4_J6_M3": {
+        "absolute_fallback_count": 29,
+        "max_absolute_fallback_difference": 1.4163610605535948e-15,
+        "max_relative_difference": 4.838274690488998e-12,
+        "pass": true,
+        "relative_count": 36,
+        "worst_absolute_fallback_coefficient": "h[1]",
+        "worst_relative_coefficient": "delta_f[4]"
+      },
+      "J6_J8_F0": {
+        "absolute_fallback_count": 4,
+        "max_absolute_fallback_difference": 2.9146587999631206e-17,
+        "max_relative_difference": 1.171179024495646e-12,
+        "pass": true,
+        "relative_count": 10,
+        "worst_absolute_fallback_coefficient": "U_f[1]",
+        "worst_relative_coefficient": "delta_f[6]"
+      },
+      "J6_J8_refined_M3": {
+        "absolute_fallback_count": 31,
+        "max_absolute_fallback_difference": 3.069134867765481e-16,
+        "max_relative_difference": 1.791550324723179e-11,
+        "pass": true,
+        "relative_count": 60,
+        "worst_absolute_fallback_coefficient": "U_b[1]",
+        "worst_relative_coefficient": "h[6]"
+      }
+    },
+    "normalized_tail_scalar_by_z": {
+      "0.0001": {
+        "J4_J6": 12.308231758460447,
+        "J6_J8_refined": 3.3632353573882634
+      },
+      "0.01": {
+        "J4_J6": 0.046332559171287785,
+        "J6_J8_refined": 0.00034338719610147616
+      }
+    },
+    "per_state_tail_and_new_terms": {
+      "J4_J6": {
+        "added_powers": [
+          5,
+          6
+        ],
+        "dominant_new_term_by_z": {
+          "0.0001": {
+            "absolute_cj_zj": 1.688693076062549e-23,
+            "coefficient": 0.0016886930760625484,
+            "power": 5,
+            "state": "delta_fs",
+            "status": "DIAGNOSTIC_ONLY"
+          },
+          "0.01": {
+            "absolute_cj_zj": 1.6886930760625487e-13,
+            "coefficient": 0.0016886930760625484,
+            "power": 5,
+            "state": "delta_fs",
+            "status": "DIAGNOSTIC_ONLY"
+          }
+        },
+        "finite": true,
+        "per_state_by_z": {
+          "0.0001": {
+            "U_b": {
+              "difference": 5.958757772935631e-16,
+              "extended": -4.841278495458694e-11,
+              "metric_kind": "relative",
+              "metric_value": 1.2308231758460447e-05,
+              "pass": false,
+              "primary": -4.8412189078809647e-11
+            },
+            "U_c": {
+              "difference": 2.515107914643266e-16,
+              "extended": -1.908100414476973e-16,
+              "metric_kind": "absolute",
+              "metric_value": 2.515107914643266e-16,
+              "pass": true,
+              "primary": 6.070075001662928e-17
+            },
+            "U_f": {
+              "difference": 3.5436964668598936e-17,
+              "extended": -1.0324955952896934e-11,
+              "metric_kind": "relative",
+              "metric_value": 3.4321661835909505e-06,
+              "pass": false,
+              "primary": -1.0324920515932266e-11
+            },
+            "U_fs": {
+              "difference": 4.3328874217658933e-16,
+              "extended": -7.252263250114388e-11,
+              "metric_kind": "relative",
+              "metric_value": 5.974495665033166e-06,
+              "pass": false,
+              "primary": -7.252306578988605e-11
+            },
+            "U_gamma": {
+              "difference": 5.34275052111412e-16,
+              "extended": -4.8412780606329075e-11,
+              "metric_kind": "relative",
+              "metric_value": 1.1035826602398571e-05,
+              "pass": false,
+              "primary": -4.8412246331276964e-11
+            },
+            "delta_b": {
+              "difference": 1.0455339086916998e-17,
+              "extended": 6.312569910963851e-10,
+              "metric_kind": "relative",
+              "metric_value": 1.656272969838942e-08,
+              "pass": true,
+              "primary": 6.312570015517242e-10
+            },
+            "delta_c": {
+              "difference": 1.0349185034354113e-17,
+              "extended": 6.312570156758303e-10,
+              "metric_kind": "relative",
+              "metric_value": 1.6394566361015676e-08,
+              "pass": true,
+              "primary": 6.312570053266453e-10
+            },
+            "delta_f": {
+              "difference": 1.2576572095517216e-17,
+              "extended": 7.605705025325618e-12,
+              "metric_kind": "relative",
+              "metric_value": 1.6535681120186763e-06,
+              "pass": false,
+              "primary": 7.605717601897714e-12
+            },
+            "delta_fs": {
+              "difference": 7.898176397658317e-18,
+              "extended": 8.416759659714281e-10,
+              "metric_kind": "relative",
+              "metric_value": 9.383868190209182e-09,
+              "pass": true,
+              "primary": 8.416759738696045e-10
+            },
+            "delta_gamma": {
+              "difference": 5.717077249787911e-17,
+              "extended": 8.4167600606376e-10,
+              "metric_kind": "relative",
+              "metric_value": 6.792491657834929e-08,
+              "pass": true,
+              "primary": 8.416759488929875e-10
+            },
+            "eta": {
+              "difference": 1.3890277588829154e-17,
+              "extended": 9.144182467824715e-11,
+              "metric_kind": "relative",
+              "metric_value": 1.519028686023198e-07,
+              "pass": true,
+              "primary": 9.144183856852474e-11
+            },
+            "h": {
+              "difference": 4.450569536776971e-17,
+              "extended": -1.2625140245576239e-09,
+              "metric_kind": "relative",
+              "metric_value": 3.525164433984343e-08,
+              "pass": true,
+              "primary": -1.2625139800519285e-09
+            },
+            "sigma_fs": {
+              "difference": 9.194383978864185e-17,
+              "extended": -9.518180908933105e-11,
+              "metric_kind": "relative",
+              "metric_value": 9.659812170868671e-07,
+              "pass": true,
+              "primary": -9.518171714549126e-11
+            }
+          },
+          "0.01": {
+            "U_b": {
+              "difference": 3.977404245971664e-15,
+              "extended": -4.82978176122179e-07,
+              "metric_kind": "relative",
+              "metric_value": 8.235163429436046e-09,
+              "pass": true,
+              "primary": -4.829781800995832e-07
+            },
+            "U_c": {
+              "difference": 2.49124601341608e-16,
+              "extended": -1.8986615582436188e-16,
+              "metric_kind": "absolute",
+              "metric_value": 2.49124601341608e-16,
+              "pass": true,
+              "primary": 5.925844551724611e-17
+            },
+            "U_f": {
+              "difference": 4.772389639125368e-15,
+              "extended": -1.0300293148852838e-07,
+              "metric_kind": "relative",
+              "metric_value": 4.633255917128778e-08,
+              "pass": true,
+              "primary": -1.0300293626091802e-07
+            },
+            "U_fs": {
+              "difference": 6.1899121141985466e-15,
+              "extended": -7.237321620869521e-07,
+              "metric_kind": "relative",
+              "metric_value": 8.552766320911401e-09,
+              "pass": true,
+              "primary": -7.237321682768642e-07
+            },
+            "U_gamma": {
+              "difference": 4.040797462293597e-15,
+              "extended": -4.829781761166974e-07,
+              "metric_kind": "relative",
+              "metric_value": 8.366418253048053e-09,
+              "pass": true,
+              "primary": -4.829781801574949e-07
+            },
+            "delta_b": {
+              "difference": 8.934644728030667e-14,
+              "extended": 6.294998739723566e-06,
+              "metric_kind": "relative",
+              "metric_value": 1.4193243076682518e-08,
+              "pass": true,
+              "primary": 6.294998650377118e-06
+            },
+            "delta_c": {
+              "difference": 1.679562572869239e-14,
+              "extended": 6.295027560788804e-06,
+              "metric_kind": "relative",
+              "metric_value": 2.6680781810232066e-09,
+              "pass": true,
+              "primary": 6.29502757758443e-06
+            },
+            "delta_f": {
+              "difference": 8.161393395622209e-16,
+              "extended": 7.58319126726521e-08,
+              "metric_kind": "relative",
+              "metric_value": 1.0762478629350885e-08,
+              "pass": true,
+              "primary": 7.583191185651276e-08
+            },
+            "delta_fs": {
+              "difference": 1.6860391900718526e-13,
+              "extended": 8.393313321303541e-06,
+              "metric_kind": "relative",
+              "metric_value": 2.0087885743433665e-08,
+              "pass": true,
+              "primary": 8.393313152699622e-06
+            },
+            "delta_gamma": {
+              "difference": 1.1919841842896167e-13,
+              "extended": 8.39333165298364e-06,
+              "metric_kind": "relative",
+              "metric_value": 1.4201561829930708e-08,
+              "pass": true,
+              "primary": 8.393331533785221e-06
+            },
+            "eta": {
+              "difference": 3.186503325098959e-15,
+              "extended": 9.114556752279187e-07,
+              "metric_kind": "relative",
+              "metric_value": 3.496059545805051e-09,
+              "pass": true,
+              "primary": 9.11455678414422e-07
+            },
+            "h": {
+              "difference": 3.356975545524936e-14,
+              "extended": -1.2590055106393998e-05,
+              "metric_kind": "relative",
+              "metric_value": 2.6663708047386683e-09,
+              "pass": true,
+              "primary": -1.2590055139963753e-05
+            },
+            "sigma_fs": {
+              "difference": 3.635358101128952e-14,
+              "extended": -9.494981241543802e-07,
+              "metric_kind": "relative",
+              "metric_value": 3.828715411488137e-08,
+              "pass": true,
+              "primary": -9.494980878007992e-07
+            }
+          }
+        }
+      },
+      "J6_J8_refined": {
+        "added_powers": [
+          7,
+          8
+        ],
+        "dominant_new_term_by_z": {
+          "0.0001": {
+            "absolute_cj_zj": 3.5550500570369026e-33,
+            "coefficient": 3.555050057036901e-05,
+            "power": 7,
+            "state": "delta_gamma",
+            "status": "DIAGNOSTIC_ONLY"
+          },
+          "0.01": {
+            "absolute_cj_zj": 3.555050057036902e-19,
+            "coefficient": 3.555050057036901e-05,
+            "power": 7,
+            "state": "delta_gamma",
+            "status": "DIAGNOSTIC_ONLY"
+          }
+        },
+        "finite": true,
+        "per_state_by_z": {
+          "0.0001": {
+            "U_b": {
+              "difference": 1.6282359010890136e-16,
+              "extended": -4.841262213099683e-11,
+              "metric_kind": "relative",
+              "metric_value": 3.3632353573882635e-06,
+              "pass": false,
+              "primary": -4.841278495458694e-11
+            },
+            "U_c": {
+              "difference": 3.0178748206973463e-16,
+              "extended": 1.1097744062203736e-16,
+              "metric_kind": "absolute",
+              "metric_value": 3.0178748206973463e-16,
+              "pass": true,
+              "primary": -1.908100414476973e-16
+            },
+            "U_f": {
+              "difference": 1.2343943670180686e-17,
+              "extended": -1.0324943608953264e-11,
+              "metric_kind": "relative",
+              "metric_value": 1.1955444387844843e-06,
+              "pass": false,
+              "primary": -1.0324955952896934e-11
+            },
+            "U_fs": {
+              "difference": 1.506174251570651e-16,
+              "extended": -7.252278311856903e-11,
+              "metric_kind": "relative",
+              "metric_value": 2.0768290829492503e-06,
+              "pass": false,
+              "primary": -7.252263250114388e-11
+            },
+            "U_gamma": {
+              "difference": 1.5847533224407993e-16,
+              "extended": -4.841262213099683e-11,
+              "metric_kind": "relative",
+              "metric_value": 3.273419338020056e-06,
+              "pass": false,
+              "primary": -4.8412780606329075e-11
+            },
+            "delta_b": {
+              "difference": 1.866006158855226e-17,
+              "extended": 6.312570097564467e-10,
+              "metric_kind": "relative",
+              "metric_value": 2.9560165352859587e-08,
+              "pass": true,
+              "primary": 6.312569910963851e-10
+            },
+            "delta_c": {
+              "difference": 5.635436653319004e-18,
+              "extended": 6.312570100403937e-10,
+              "metric_kind": "relative",
+              "metric_value": 8.927325183523936e-09,
+              "pass": true,
+              "primary": 6.312570156758303e-10
+            },
+            "delta_f": {
+              "difference": 1.2516199617345217e-17,
+              "extended": 7.605717541525236e-12,
+              "metric_kind": "relative",
+              "metric_value": 1.6456303496691836e-06,
+              "pass": false,
+              "primary": 7.605705025325618e-12
+            },
+            "delta_fs": {
+              "difference": 4.684735693134059e-17,
+              "extended": 8.416760128187851e-10,
+              "metric_kind": "relative",
+              "metric_value": 5.565960799387417e-08,
+              "pass": true,
+              "primary": 8.416759659714281e-10
+            },
+            "delta_gamma": {
+              "difference": 6.9387371531811496e-18,
+              "extended": 8.416760130024971e-10,
+              "metric_kind": "relative",
+              "metric_value": 8.243952596948445e-09,
+              "pass": true,
+              "primary": 8.4167600606376e-10
+            },
+            "eta": {
+              "difference": 3.7612269346161927e-17,
+              "extended": 9.14417870659778e-11,
+              "metric_kind": "relative",
+              "metric_value": 4.1132457142567727e-07,
+              "pass": true,
+              "primary": 9.144182467824715e-11
+            },
+            "h": {
+              "difference": 4.4998503313744354e-18,
+              "extended": -1.2625140200577735e-09,
+              "metric_kind": "relative",
+              "metric_value": 3.5641982931248243e-09,
+              "pass": true,
+              "primary": -1.2625140245576239e-09
+            },
+            "sigma_fs": {
+              "difference": 3.617835630379462e-17,
+              "extended": -9.518177291097475e-11,
+              "metric_kind": "relative",
+              "metric_value": 3.8009738047571805e-07,
+              "pass": true,
+              "primary": -9.518180908933105e-11
+            }
+          },
+          "0.01": {
+            "U_b": {
+              "difference": 1.6584852167679997e-16,
+              "extended": -4.829781759563305e-07,
+              "metric_kind": "relative",
+              "metric_value": 3.4338719610147614e-10,
+              "pass": true,
+              "primary": -4.82978176122179e-07
+            },
+            "U_c": {
+              "difference": 3.0163770795402645e-16,
+              "extended": 1.1177155212966455e-16,
+              "metric_kind": "absolute",
+              "metric_value": 3.0163770795402645e-16,
+              "pass": true,
+              "primary": -1.8986615582436188e-16
+            },
+            "U_f": {
+              "difference": 1.1386955077515178e-17,
+              "extended": -1.0300293147714143e-07,
+              "metric_kind": "relative",
+              "metric_value": 1.1054981555338901e-10,
+              "pass": true,
+              "primary": -1.0300293148852838e-07
+            },
+            "U_fs": {
+              "difference": 1.5092877746474432e-16,
+              "extended": -7.237321622378809e-07,
+              "metric_kind": "relative",
+              "metric_value": 2.085423107328151e-10,
+              "pass": true,
+              "primary": -7.237321620869521e-07
+            },
+            "U_gamma": {
+              "difference": 1.6036694795864377e-16,
+              "extended": -4.829781759563305e-07,
+              "metric_kind": "relative",
+              "metric_value": 3.3203766937886613e-10,
+              "pass": true,
+              "primary": -4.829781761166974e-07
+            },
+            "delta_b": {
+              "difference": 2.118005884609378e-17,
+              "extended": 6.294998739744746e-06,
+              "metric_kind": "relative",
+              "metric_value": 3.364585081227928e-12,
+              "pass": true,
+              "primary": 6.294998739723566e-06
+            },
+            "delta_c": {
+              "difference": 4.2766693506869624e-18,
+              "extended": 6.295027560784528e-06,
+              "metric_kind": "relative",
+              "metric_value": 6.793726174172732e-13,
+              "pass": true,
+              "primary": 6.295027560788804e-06
+            },
+            "delta_f": {
+              "difference": 1.2622286456636571e-17,
+              "extended": 7.583191268527439e-08,
+              "metric_kind": "relative",
+              "metric_value": 1.6645085175449704e-10,
+              "pass": true,
+              "primary": 7.58319126726521e-08
+            },
+            "delta_fs": {
+              "difference": 4.93599979682971e-17,
+              "extended": 8.393313321352901e-06,
+              "metric_kind": "relative",
+              "metric_value": 5.880871603199112e-12,
+              "pass": true,
+              "primary": 8.393313321303541e-06
+            },
+            "delta_gamma": {
+              "difference": 8.737991883875362e-18,
+              "extended": 8.393331652992378e-06,
+              "metric_kind": "relative",
+              "metric_value": 1.041063578222851e-12,
+              "pass": true,
+              "primary": 8.39333165298364e-06
+            },
+            "eta": {
+              "difference": 3.795491109175476e-17,
+              "extended": 9.114556751899638e-07,
+              "metric_kind": "relative",
+              "metric_value": 4.164208103950173e-11,
+              "pass": true,
+              "primary": 9.114556752279187e-07
+            },
+            "h": {
+              "difference": 2.7460808149984417e-18,
+              "extended": -1.2590055106391252e-05,
+              "metric_kind": "relative",
+              "metric_value": 2.1811507509636032e-13,
+              "pass": true,
+              "primary": -1.2590055106393998e-05
+            },
+            "sigma_fs": {
+              "difference": 3.577094251637795e-17,
+              "extended": -9.494981241186092e-07,
+              "metric_kind": "relative",
+              "metric_value": 3.767352626234563e-11,
+              "pass": true,
+              "primary": -9.494981241543802e-07
+            }
+          }
+        }
+      }
+    },
+    "status_if_numerical_gates_failed": "ELIGIBLE_FOR_CANDIDATE_INTERPRETATION",
+    "tail_monotone_by_z": {
+      "0.0001": true,
+      "0.01": true
+    },
+    "tails": {
+      "J4_J6": {
+        "common_low_coefficients": {
+          "absolute_fallback_count": 29,
+          "max_absolute_fallback_difference": 1.4163610605535948e-15,
+          "max_relative_difference": 4.838274690488998e-12,
+          "pass": true,
+          "relative_count": 36,
+          "worst_absolute_fallback_coefficient": "h[1]",
+          "worst_relative_coefficient": "delta_f[4]"
+        },
+        "finite": true,
+        "pass": false,
+        "physical_tail_absolute_fallback_max": 2.515107914643266e-16,
+        "physical_tail_by_z": {
+          "0.0001": {
+            "max_absolute_fallback": 2.515107914643266e-16,
+            "max_relative": 1.2308231758460447e-05,
+            "pass": false,
+            "worst_absolute_fallback_state": "U_c",
+            "worst_relative_state": "U_b"
+          },
+          "0.01": {
+            "max_absolute_fallback": 2.49124601341608e-16,
+            "max_relative": 4.633255917128778e-08,
+            "pass": true,
+            "worst_absolute_fallback_state": "U_c",
+            "worst_relative_state": "U_f"
+          }
+        },
+        "physical_tail_relative_max": 1.2308231758460447e-05,
+        "surface_power": {
+          "deep_norm_unit_Af": 2.5961761221297463e-42,
+          "expected_ratio": 728081506542.218,
+          "leading_j": 2,
+          "observed_ratio": 726057261120.9436,
+          "relative_difference": 0.0027802456223451344,
+          "shallow_norm_unit_Af": 1.884972524621116e-30,
+          "status": "DIAGNOSTIC_ONLY_SUBLEADING_TERMS_ALLOWED",
+          "within_reference_1e-6": false
+        },
+        "z_cap": 0.05
+      },
+      "J6_J8_refined": {
+        "common_low_coefficients": {
+          "absolute_fallback_count": 31,
+          "max_absolute_fallback_difference": 3.069134867765481e-16,
+          "max_relative_difference": 1.791550324723179e-11,
+          "pass": true,
+          "relative_count": 60,
+          "worst_absolute_fallback_coefficient": "U_b[1]",
+          "worst_relative_coefficient": "h[6]"
+        },
+        "finite": true,
+        "pass": false,
+        "physical_tail_absolute_fallback_max": 3.0178748206973463e-16,
+        "physical_tail_by_z": {
+          "0.0001": {
+            "max_absolute_fallback": 3.0178748206973463e-16,
+            "max_relative": 3.3632353573882635e-06,
+            "pass": false,
+            "worst_absolute_fallback_state": "U_c",
+            "worst_relative_state": "U_b"
+          },
+          "0.01": {
+            "max_absolute_fallback": 3.0163770795402645e-16,
+            "max_relative": 3.4338719610147614e-10,
+            "pass": true,
+            "worst_absolute_fallback_state": "U_c",
+            "worst_relative_state": "U_b"
+          }
+        },
+        "physical_tail_relative_max": 3.3632353573882635e-06,
+        "surface_power": {
+          "deep_norm_unit_Af": 2.5961761466777722e-42,
+          "expected_ratio": 728081506542.218,
+          "leading_j": 2,
+          "observed_ratio": 726057254256.5841,
+          "relative_difference": 0.0027802550503547296,
+          "shallow_norm_unit_Af": 1.884972524623302e-30,
+          "status": "DIAGNOSTIC_ONLY_SUBLEADING_TERMS_ALLOWED",
+          "within_reference_1e-6": false
+        },
+        "z_cap": 0.05
+      }
+    }
+  },
+  "numerical_checks": {
+    "F0": true,
+    "M1": true,
+    "TCA0_bridge": true,
+    "all_arrays_and_refined_series_finite": true,
+    "capture_role_order_and_solver_identity": true,
+    "direct_affine_extraction": true,
+    "exactly_one_correction": true,
+    "frozen_B1": true,
+    "frozen_contract": true,
+    "hooks_and_shape_guards_restored": true,
+    "original_holdout": true,
+    "original_incident_reproduced": true,
+    "original_rank": true,
+    "original_reproduction": true,
+    "original_structural_guards": true,
+    "refined_Uc_lower_regular": true,
+    "refined_coefficient_drift": true,
+    "refined_direct_driver": true,
+    "refined_direct_holdout": true,
+    "refined_driver": true,
+    "refined_forbidden_layers": true,
+    "refined_holdout": true
+  },
+  "one_refinement": {
+    "coefficient_drift": {
+      "absolute_fallback_count": 33,
+      "max_absolute_fallback_difference": 3.870129856922176e-16,
+      "max_relative_difference": 7.373317425779242e-10,
+      "pass": true,
+      "relative_count": 84,
+      "worst_absolute_fallback_coefficient": "U_f[0]",
+      "worst_relative_coefficient": "eta[8]"
+    },
+    "correction_count": 1,
+    "correction_rhs_max_abs": 8.866695540654722e-17,
+    "delta_y_max_abs": 9.505369001312438e-17,
+    "direct_driver_metrics": {
+      "absolute_fallback_row_count": 33,
+      "absolute_tolerance": 1e-12,
+      "max_absolute_fallback_residual": 2.465190328815662e-30,
+      "max_relative_residual": 1.8113695195165164e-16,
+      "pass": true,
+      "relative_row_count": 84,
+      "relative_tolerance": 1e-10,
+      "worst_absolute_fallback_row": "Einstein_trace[1]",
+      "worst_relative_row": "fuel_Euler[5]"
+    },
+    "direct_holdout_metrics": {
+      "absolute_fallback_row_count": 4,
+      "absolute_tolerance": 1e-12,
+      "max_absolute_fallback_residual": 6.328611515815343e-15,
+      "max_relative_residual": 3.36937254396665e-11,
+      "pass": true,
+      "relative_row_count": 14,
+      "relative_tolerance": 1e-09,
+      "worst_absolute_fallback_row": "Einstein_00[1]",
+      "worst_relative_row": "Einstein_0i[8]"
+    },
+    "driver_metrics": {
+      "absolute_fallback_row_count": 33,
+      "max_absolute_fallback_residual": 4.733165431326071e-30,
+      "max_relative_residual": 1.7100361128473937e-16,
+      "pass_driver": true,
+      "relative_row_count": 84,
+      "worst_absolute_fallback_row": "Einstein_traceless[1]",
+      "worst_relative_row": "gamma_continuity[2]"
+    },
+    "fractional_state": {
+      "U_b": {
+        "0": -7.052740663285918e-17,
+        "1": 2.791579111609192e-16,
+        "2": -0.004841371288526194,
+        "3": 0.001161277042003739,
+        "4": -0.0002328651079654114,
+        "5": 4.5801101648590184e-05,
+        "6": -7.017248497285032e-06,
+        "7": 7.852595790871629e-07,
+        "8": -5.990722835465704e-08
+      },
+      "U_c": {
+        "0": 1.1096947764572641e-16,
+        "1": 7.962394444163566e-17,
+        "2": 5.818505031145262e-17,
+        "3": 1.6286384544318978e-17,
+        "4": 2.496477980313098e-17,
+        "5": -1.5530565848612355e-17,
+        "6": 1.1285606348189557e-17,
+        "7": 3.2838833911727858e-18,
+        "8": 2.0867434794103608e-18
+      },
+      "U_f": {
+        "0": -5.291222285604216e-19,
+        "1": 1.797114367257089e-17,
+        "2": -0.0010325193621525165,
+        "3": 0.00025055545175309003,
+        "4": -0.00015555220657898763,
+        "5": 4.816126691222277e-05,
+        "6": -7.359687143603803e-06,
+        "7": 5.332967392172151e-07,
+        "8": 1.721933083099719e-08
+      },
+      "U_fs": {
+        "0": -2.2678545474366258e-17,
+        "1": 9.218248261955326e-17,
+        "2": -0.007252427397800994,
+        "3": 0.0015135586357879333,
+        "4": -0.00029868243591658845,
+        "5": 5.7576241084390636e-05,
+        "6": -5.074621085095195e-06,
+        "7": -3.066362918364844e-07,
+        "8": 1.5673385124207587e-07
+      },
+      "U_gamma": {
+        "0": -7.052740663285918e-17,
+        "1": 2.791579111609192e-16,
+        "2": -0.004841371288526194,
+        "3": 0.001161277042003739,
+        "4": -0.0002328651079654114,
+        "5": 4.5801101648590184e-05,
+        "6": -7.017248497285032e-06,
+        "7": 7.852595790871629e-07,
+        "8": -5.990722835465704e-08
+      },
+      "delta_b": {
+        "0": -9.118238257818598e-18,
+        "1": -1.2837993111423434e-16,
+        "2": 0.06312747629409558,
+        "3": -0.01774400368861625,
+        "4": -0.0004975327579328729,
+        "5": 0.0008955964691732245,
+        "6": -0.0001981293949339846,
+        "7": 2.6662875427753695e-05,
+        "8": -2.614145671897685e-06
+      },
+      "delta_c": {
+        "0": -9.118202483869801e-18,
+        "1": -2.571362114376452e-16,
+        "2": 0.06312747629409561,
+        "3": -0.01774399608744394,
+        "4": 0.0023944274189037756,
+        "5": -0.0001679801143871515,
+        "6": -2.1051918367284545e-06,
+        "7": 2.7692545316363807e-06,
+        "8": -5.891227880097132e-07
+      },
+      "delta_f": {
+        "0": -6.155763926410952e-20,
+        "1": -3.7610516076618e-18,
+        "2": 0.0007605945198606526,
+        "3": -0.00022759570336836234,
+        "4": 5.557397129686189e-06,
+        "5": 8.306204117757159e-06,
+        "6": -1.91715454665388e-06,
+        "7": 2.087219292128984e-07,
+        "8": -8.586366379873582e-09
+      },
+      "delta_fs": {
+        "0": -1.21576510104248e-17,
+        "1": -2.3121259855140105e-16,
+        "2": 0.08416996839212741,
+        "3": -0.023658671584821652,
+        "4": -0.0025014881538524413,
+        "5": 0.00168869307606261,
+        "6": -0.00024841787662258866,
+        "7": 9.912473473316642e-06,
+        "8": 2.2936337802689784e-06
+      },
+      "delta_gamma": {
+        "0": -1.2157651010424805e-17,
+        "1": -2.3215071350555346e-16,
+        "2": 0.08416996839212738,
+        "3": -0.023658671584821576,
+        "4": -0.0006633770105772057,
+        "5": 0.0011941286255643298,
+        "6": -0.0002641725265786696,
+        "7": 3.555050057036901e-05,
+        "8": -3.485527562627242e-06
+      },
+      "eta": {
+        "0": -9.85317788343315e-18,
+        "1": -9.067024467852148e-17,
+        "2": 0.009144479349953001,
+        "3": -0.002996614889630773,
+        "4": 0.0004358266431599007,
+        "5": -3.171088398914522e-05,
+        "6": -2.937335738555497e-07,
+        "7": 4.757447027282213e-07,
+        "8": -9.672860940715712e-08
+      },
+      "h": {
+        "0": 1.8236476515637198e-17,
+        "1": 5.916669008608847e-16,
+        "2": -0.12625495258819117,
+        "3": 0.03548800737723254,
+        "4": -0.004788857372224477,
+        "5": 0.0003359604725114988,
+        "6": 4.2103659612319854e-06,
+        "7": -5.538507780283626e-06,
+        "8": 1.1782454523051694e-06
+      },
+      "sigma_fs": {
+        "0": -5.451012104661554e-18,
+        "1": -2.6293676032536953e-17,
+        "2": -0.00951841019846308,
+        "3": 0.0023344424052597116,
+        "4": 0.0008489589452984088,
+        "5": -0.00036310732240383826,
+        "6": 4.944858846543329e-05,
+        "7": -1.6018989324807516e-06,
+        "8": -5.361096435795215e-07
+      }
+    },
+    "holdout_metrics": {
+      "absolute_fallback_row_count": 4,
+      "max_absolute_fallback_residual": 6.328611515815343e-15,
+      "max_relative_residual": 3.3693733075631345e-11,
+      "pass_holdout": true,
+      "relative_row_count": 14,
+      "rows": 18,
+      "worst_absolute_fallback_row": "Einstein_00[1]",
+      "worst_relative_row": "Einstein_0i[8]"
+    },
+    "refined_Uc_lower_regular_max_abs": 1.1096947764572641e-16,
+    "refined_forbidden_max_abs": 5.916669008608847e-16
+  },
+  "original_J8": {
+    "diagnostics": {
+      "Uc_lower_regular_max_abs": 9.606031248221569e-17,
+      "absolute_fallback_row_count": 33,
+      "column_scale_span": 14.852851912359563,
+      "equilibrated_rank_rcond": 117,
+      "equilibrated_singular_ratio": 0.2759142902854704,
+      "expected_rank": 117,
+      "forbidden_Omega_f1_times_fuel1_max_abs": 0.0,
+      "forbidden_Phi1_Einstein_source_sensitivities": {
+        "density_from_delta_f1": 0.0,
+        "momentum_from_U_f1": 0.0,
+        "trace_from_U_f1": 0.0,
+        "trace_from_delta_f1": 0.0
+      },
+      "forbidden_earlier_layer_max_abs": 5.79289220759005e-16,
+      "fuel1_driver_column_min_max_abs": 2.93109,
+      "holdout": {
+        "absolute_fallback_row_count": 4,
+        "max_absolute_fallback_residual": 6.2265230096230084e-15,
+        "max_relative_residual": 2.7776827801438324e-10,
+        "pass_holdout": true,
+        "relative_row_count": 14,
+        "rows": 18,
+        "worst_absolute_fallback_row": "Einstein_00[1]",
+        "worst_relative_row": "Einstein_0i[8]"
+      },
+      "max_absolute_fallback_residual": 8.936508993831979e-15,
+      "max_relative_residual": 1.5577307299046142e-10,
+      "pass_driver": false,
+      "pass_forbidden_layers": true,
+      "pass_forbidden_stress_guard": true,
+      "pass_production_contract": true,
+      "pass_rank": true,
+      "production_contract": {
+        "errors": [],
+        "implemented_driver": [
+          "gamma_continuity",
+          "gamma_Euler",
+          "fs_continuity",
+          "fs_shear",
+          "fs_Euler",
+          "baryon_continuity",
+          "cdm_continuity",
+          "cdm_Euler",
+          "tight_coupling",
+          "fuel_continuity",
+          "fuel_Euler",
+          "Einstein_trace",
+          "Einstein_traceless"
+        ],
+        "implemented_holdout": [
+          "Einstein_00",
+          "Einstein_0i"
+        ],
+        "implemented_state": [
+          "h",
+          "eta",
+          "delta_gamma",
+          "delta_fs",
+          "delta_b",
+          "delta_c",
+          "U_gamma",
+          "U_fs",
+          "sigma_fs",
+          "U_b",
+          "U_c",
+          "delta_f",
+          "U_f"
+        ],
+        "valid": true
+      },
+      "raw_rank_rcond": 117,
+      "raw_singular_ratio": 0.0010272139197512243,
+      "rcond": 1e-12,
+      "relative_row_count": 84,
+      "row_scale_span": 925.6919915286003,
+      "rows": 117,
+      "support": [
+        0,
+        8
+      ],
+      "unknowns": 117,
+      "worst_absolute_fallback_row": "Einstein_traceless[0]",
+      "worst_relative_row": "fuel_Euler[8]"
+    },
+    "driver_metrics_recomputed": {
+      "absolute_fallback_row_count": 33,
+      "max_absolute_fallback_residual": 8.936508993831979e-15,
+      "max_relative_residual": 1.5577307299046142e-10,
+      "pass_driver": false,
+      "relative_row_count": 84,
+      "worst_absolute_fallback_row": "Einstein_traceless[0]",
+      "worst_relative_row": "fuel_Euler[8]"
+    },
+    "reproduction_vs_immutable": {
+      "absolute_fallback_count": 33,
+      "max_absolute_fallback_difference": 0.0,
+      "max_relative_difference": 0.0,
+      "pass": true,
+      "relative_count": 84,
+      "worst_absolute_fallback_coefficient": "sigma_fs[1]",
+      "worst_relative_coefficient": "sigma_fs[8]"
+    }
+  },
+  "physics_verdict": "NONE_NOT_YET_AWARDED",
+  "release_trigger": "NONE",
+  "residual_provenance": {
+    "direct_holdout_refined_metrics": {
+      "absolute_fallback_row_count": 4,
+      "absolute_tolerance": 1e-12,
+      "max_absolute_fallback_residual": 6.328611515815343e-15,
+      "max_relative_residual": 3.36937254396665e-11,
+      "pass": true,
+      "relative_row_count": 14,
+      "relative_tolerance": 1e-09,
+      "worst_absolute_fallback_row": "Einstein_00[1]",
+      "worst_relative_row": "Einstein_0i[8]"
+    },
+    "direct_original_metrics": {
+      "absolute_fallback_row_count": 33,
+      "absolute_tolerance": 1e-12,
+      "max_absolute_fallback_residual": 8.936508993831977e-15,
+      "max_relative_residual": 1.5577306524071028e-10,
+      "pass": false,
+      "relative_row_count": 84,
+      "relative_tolerance": 1e-10,
+      "worst_absolute_fallback_row": "Einstein_traceless[0]",
+      "worst_relative_row": "fuel_Euler[8]"
+    },
+    "direct_refined_metrics": {
+      "absolute_fallback_row_count": 33,
+      "absolute_tolerance": 1e-12,
+      "max_absolute_fallback_residual": 2.465190328815662e-30,
+      "max_relative_residual": 1.8113695195165164e-16,
+      "pass": true,
+      "relative_row_count": 84,
+      "relative_tolerance": 1e-10,
+      "worst_absolute_fallback_row": "Einstein_trace[1]",
+      "worst_relative_row": "fuel_Euler[5]"
+    },
+    "direct_vs_affine_branch_metrics": {
+      "original_driver": {
+        "absolute_fallback_row_count": 33,
+        "absolute_tolerance": 1e-12,
+        "max_absolute_fallback_residual": 2.9582283945787943e-30,
+        "max_relative_residual": 1.5651784852732783e-16,
+        "pass": true,
+        "relative_row_count": 84,
+        "relative_tolerance": 1e-10,
+        "worst_absolute_fallback_row": "Einstein_trace[1]",
+        "worst_relative_row": "fuel_Euler[7]"
+      },
+      "refined_driver": {
+        "absolute_fallback_row_count": 33,
+        "absolute_tolerance": 1e-12,
+        "max_absolute_fallback_residual": 4.733165431326071e-30,
+        "max_relative_residual": 1.62399837899731e-16,
+        "pass": true,
+        "relative_row_count": 84,
+        "relative_tolerance": 1e-10,
+        "worst_absolute_fallback_row": "Einstein_traceless[1]",
+        "worst_relative_row": "Einstein_trace[6]"
+      },
+      "refined_holdout": {
+        "absolute_fallback_row_count": 4,
+        "absolute_tolerance": 1e-12,
+        "max_absolute_fallback_residual": 3.944304526105059e-31,
+        "max_relative_residual": 2.3247579264577385e-16,
+        "pass": true,
+        "relative_row_count": 14,
+        "relative_tolerance": 1e-09,
+        "worst_absolute_fallback_row": "Einstein_0i[1]",
+        "worst_relative_row": "Einstein_00[7]"
+      }
+    },
+    "direct_vs_affine_max_abs": {
+      "original_max_abs": 1.349614864309956e-15,
+      "refined_holdout_max_abs": 2.220446049250313e-16,
+      "refined_max_abs": 1.4606371667724716e-15
+    },
+    "original_rows": [
+      {
+        "absolute_residual": 2.1673265616610416e-16,
+        "metric_branch": "absolute",
+        "metric_value": 2.1673265616610416e-16,
+        "row": "gamma_continuity[0]",
+        "row_scale": 3.93109,
+        "signed_residual": -2.1673265616610416e-16,
+        "term_norm": 2.1673265616610416e-16,
+        "term_norm_over_branch_boundary": 0.00021673265616610417
+      },
+      {
+        "absolute_residual": 1.5456314685890084e-16,
+        "metric_branch": "absolute",
+        "metric_value": 1.5456314685890084e-16,
+        "row": "gamma_continuity[1]",
+        "row_scale": 4.93109,
+        "signed_residual": 1.5456314685890084e-16,
+        "term_norm": 3.6541398979311285e-15,
+        "term_norm_over_branch_boundary": 0.0036541398979311286
+      },
+      {
+        "absolute_residual": 3.9278133355185037e-16,
+        "metric_branch": "relative",
+        "metric_value": 3.933952994344282e-16,
+        "row": "gamma_continuity[2]",
+        "row_scale": 5.93109,
+        "signed_residual": -3.9278133355185037e-16,
+        "term_norm": 0.9984393156617263,
+        "term_norm_over_branch_boundary": 998439315661.7263
+      },
+      {
+        "absolute_residual": 6.518953684606731e-18,
+        "metric_branch": "relative",
+        "metric_value": 1.9877236544130012e-17,
+        "row": "gamma_continuity[3]",
+        "row_scale": 6.93109,
+        "signed_residual": 6.518953684606731e-18,
+        "term_norm": 0.32796076406968433,
+        "term_norm_over_branch_boundary": 327960764069.6843
+      },
+      {
+        "absolute_residual": 9.020562075079397e-17,
+        "metric_branch": "relative",
+        "metric_value": 1.2177758801357006e-15,
+        "row": "gamma_continuity[4]",
+        "row_scale": 7.93109,
+        "signed_residual": 9.020562075079397e-17,
+        "term_norm": 0.07407407407407517,
+        "term_norm_over_branch_boundary": 74074074074.07516
+      },
+      {
+        "absolute_residual": 1.3530843112619095e-16,
+        "metric_branch": "relative",
+        "metric_value": 4.438850310145728e-15,
+        "row": "gamma_continuity[5]",
+        "row_scale": 8.931090000000001,
+        "signed_residual": 1.3530843112619095e-16,
+        "term_norm": 0.030482765056735774,
+        "term_norm_over_branch_boundary": 30482765056.735775
+      },
+      {
+        "absolute_residual": 6.982261990806649e-17,
+        "metric_branch": "relative",
+        "metric_value": 1.0439369526590489e-14,
+        "row": "gamma_continuity[6]",
+        "row_scale": 9.931090000000001,
+        "signed_residual": 6.982261990806649e-17,
+        "term_norm": 0.006688394325942655,
+        "term_norm_over_branch_boundary": 6688394325.942656
+      },
+      {
+        "absolute_residual": 2.3787395664331967e-16,
+        "metric_branch": "relative",
+        "metric_value": 2.1072331541242645e-13,
+        "row": "gamma_continuity[7]",
+        "row_scale": 10.931090000000001,
+        "signed_residual": 2.3787395664331967e-16,
+        "term_norm": 0.0011288449793880385,
+        "term_norm_over_branch_boundary": 1128844979.3880384
+      },
+      {
+        "absolute_residual": 4.954397352444073e-16,
+        "metric_branch": "relative",
+        "metric_value": 3.1382109123360465e-12,
+        "row": "gamma_continuity[8]",
+        "row_scale": 11.931090000000001,
+        "signed_residual": 4.954397352444073e-16,
+        "term_norm": 0.00015787330714353036,
+        "term_norm_over_branch_boundary": 157873307.14353037
+      },
+      {
+        "absolute_residual": 3.5305885157666155e-17,
+        "metric_branch": "absolute",
+        "metric_value": 3.5305885157666155e-17,
+        "row": "gamma_Euler[0]",
+        "row_scale": 4.931090000000001,
+        "signed_residual": -3.5305885157666155e-17,
+        "term_norm": 7.516692526765457e-16,
+        "term_norm_over_branch_boundary": 0.0007516692526765457
+      },
+      {
+        "absolute_residual": 5.792431959170016e-17,
+        "metric_branch": "absolute",
+        "metric_value": 5.792431959170016e-17,
+        "row": "gamma_Euler[1]",
+        "row_scale": 5.93109,
+        "signed_residual": 5.792431959170016e-17,
+        "term_norm": 3.493117801990551e-15,
+        "term_norm_over_branch_boundary": 0.0034931178019905512
+      },
+      {
+        "absolute_residual": 8.326672684688674e-17,
+        "metric_branch": "relative",
+        "metric_value": 7.62537150380146e-16,
+        "row": "gamma_Euler[2]",
+        "row_scale": 6.93109,
+        "signed_residual": 8.326672684688674e-17,
+        "term_norm": 0.10919694444444569,
+        "term_norm_over_branch_boundary": 109196944444.4457
+      },
+      {
+        "absolute_residual": 2.0816681711721685e-17,
+        "metric_branch": "relative",
+        "metric_value": 6.510791597697981e-16,
+        "row": "gamma_Euler[3]",
+        "row_scale": 7.93109,
+        "signed_residual": 2.0816681711721685e-17,
+        "term_norm": 0.03197258182719569,
+        "term_norm_over_branch_boundary": 31972581827.195686
+      },
+      {
+        "absolute_residual": 3.8163916471489756e-17,
+        "metric_branch": "relative",
+        "metric_value": 7.993436711295474e-15,
+        "row": "gamma_Euler[4]",
+        "row_scale": 8.931090000000001,
+        "signed_residual": -3.8163916471489756e-17,
+        "term_norm": 0.004774406534996464,
+        "term_norm_over_branch_boundary": 4774406534.996464
+      },
+      {
+        "absolute_residual": 5.3369851940598956e-17,
+        "metric_branch": "relative",
+        "metric_value": 5.384823943513843e-14,
+        "row": "gamma_Euler[5]",
+        "row_scale": 9.931090000000001,
+        "signed_residual": -5.3369851940598956e-17,
+        "term_norm": 0.0009911160049138523,
+        "term_norm_over_branch_boundary": 991116004.9138523
+      },
+      {
+        "absolute_residual": 7.38443323416299e-17,
+        "metric_branch": "relative",
+        "metric_value": 4.3037874861506506e-13,
+        "row": "gamma_Euler[6]",
+        "row_scale": 10.931090000000001,
+        "signed_residual": 7.38443323416299e-17,
+        "term_norm": 0.00017157987604930975,
+        "term_norm_over_branch_boundary": 171579876.04930976
+      },
+      {
+        "absolute_residual": 7.229743842170674e-17,
+        "metric_branch": "relative",
+        "metric_value": 3.1845047787499154e-12,
+        "row": "gamma_Euler[7]",
+        "row_scale": 11.931090000000001,
+        "signed_residual": 7.229743842170674e-17,
+        "term_norm": 2.2702882691257025e-05,
+        "term_norm_over_branch_boundary": 22702882.691257026
+      },
+      {
+        "absolute_residual": 1.1903987958986143e-16,
+        "metric_branch": "relative",
+        "metric_value": 4.971547912288493e-11,
+        "row": "gamma_Euler[8]",
+        "row_scale": 12.931090000000001,
+        "signed_residual": 1.1903987958986143e-16,
+        "term_norm": 2.3944228576299737e-06,
+        "term_norm_over_branch_boundary": 2394422.857629974
+      },
+      {
+        "absolute_residual": 5.3326787815964825e-18,
+        "metric_branch": "absolute",
+        "metric_value": 5.3326787815964825e-18,
+        "row": "fs_continuity[0]",
+        "row_scale": 3.93109,
+        "signed_residual": -5.3326787815964825e-18,
+        "term_norm": 5.3326787815964825e-18,
+        "term_norm_over_branch_boundary": 5.332678781596483e-06
+      },
+      {
+        "absolute_residual": 1.7559945034509276e-16,
+        "metric_branch": "absolute",
+        "metric_value": 1.7559945034509276e-16,
+        "row": "fs_continuity[1]",
+        "row_scale": 4.93109,
+        "signed_residual": 1.7559945034509276e-16,
+        "term_norm": 3.633103594444936e-15,
+        "term_norm_over_branch_boundary": 0.0036331035944449364
+      },
+      {
+        "absolute_residual": 2.285663027741481e-16,
+        "metric_branch": "relative",
+        "metric_value": 2.289235802204596e-16,
+        "row": "fs_continuity[2]",
+        "row_scale": 5.93109,
+        "signed_residual": 2.285663027741481e-16,
+        "term_norm": 0.9984393156617268,
+        "term_norm_over_branch_boundary": 998439315661.7268
+      },
+      {
+        "absolute_residual": 3.076160899888332e-16,
+        "metric_branch": "relative",
+        "metric_value": 9.379661340326446e-16,
+        "row": "fs_continuity[3]",
+        "row_scale": 6.93109,
+        "signed_residual": 3.076160899888332e-16,
+        "term_norm": 0.32796076406968344,
+        "term_norm_over_branch_boundary": 327960764069.6835
+      },
+      {
+        "absolute_residual": 1.3877787807814457e-16,
+        "metric_branch": "relative",
+        "metric_value": 1.265528628609791e-15,
+        "row": "fs_continuity[4]",
+        "row_scale": 7.93109,
+        "signed_residual": -1.3877787807814457e-16,
+        "term_norm": 0.10966000684677904,
+        "term_norm_over_branch_boundary": 109660006846.77904
+      },
+      {
+        "absolute_residual": 1.0408340855860843e-17,
+        "metric_branch": "relative",
+        "metric_value": 2.5214060624751315e-16,
+        "row": "fs_continuity[5]",
+        "row_scale": 8.931090000000001,
+        "signed_residual": 1.0408340855860843e-17,
+        "term_norm": 0.04127990731347542,
+        "term_norm_over_branch_boundary": 41279907313.47542
+      },
+      {
+        "absolute_residual": 4.423544863740858e-17,
+        "metric_branch": "relative",
+        "metric_value": 6.444967553351243e-15,
+        "row": "fs_continuity[6]",
+        "row_scale": 9.931090000000001,
+        "signed_residual": -4.423544863740858e-17,
+        "term_norm": 0.006863564210561016,
+        "term_norm_over_branch_boundary": 6863564210.561016
+      },
+      {
+        "absolute_residual": 1.5872719805187785e-16,
+        "metric_branch": "relative",
+        "metric_value": 2.342982509285965e-13,
+        "row": "fs_continuity[7]",
+        "row_scale": 10.931090000000001,
+        "signed_residual": -1.5872719805187785e-16,
+        "term_norm": 0.0006774578872133822,
+        "term_norm_over_branch_boundary": 677457887.2133822
+      },
+      {
+        "absolute_residual": 3.8782081116395944e-16,
+        "metric_branch": "relative",
+        "metric_value": 4.463120843754966e-12,
+        "row": "fs_continuity[8]",
+        "row_scale": 11.931090000000001,
+        "signed_residual": 3.8782081116395944e-16,
+        "term_norm": 8.689453517858894e-05,
+        "term_norm_over_branch_boundary": 86894535.17858894
+      },
+      {
+        "absolute_residual": 2.979185092911788e-16,
+        "metric_branch": "absolute",
+        "metric_value": 2.979185092911788e-16,
+        "row": "fs_shear[0]",
+        "row_scale": 7.86218,
+        "signed_residual": -2.979185092911788e-16,
+        "term_norm": 5.749588166835627e-16,
+        "term_norm_over_branch_boundary": 0.0005749588166835627
+      },
+      {
+        "absolute_residual": 1.6433463357473626e-16,
+        "metric_branch": "absolute",
+        "metric_value": 1.6433463357473626e-16,
+        "row": "fs_shear[1]",
+        "row_scale": 9.86218,
+        "signed_residual": -1.6433463357473626e-16,
+        "term_norm": 2.779123463476918e-15,
+        "term_norm_over_branch_boundary": 0.002779123463476918
+      },
+      {
+        "absolute_residual": 6.955581746098845e-17,
+        "metric_branch": "relative",
+        "metric_value": 1.7416135455085118e-16,
+        "row": "fs_shear[2]",
+        "row_scale": 11.86218,
+        "signed_residual": 6.955581746098845e-17,
+        "term_norm": 0.39937572626469053,
+        "term_norm_over_branch_boundary": 399375726264.69055
+      },
+      {
+        "absolute_residual": 1.2360450181822528e-15,
+        "metric_branch": "relative",
+        "metric_value": 9.422201933884645e-15,
+        "row": "fs_shear[3]",
+        "row_scale": 13.86218,
+        "signed_residual": -1.2360450181822528e-15,
+        "term_norm": 0.1311843056278723,
+        "term_norm_over_branch_boundary": 131184305627.87231
+      },
+      {
+        "absolute_residual": 7.91033905045424e-16,
+        "metric_branch": "relative",
+        "metric_value": 1.4402058148724053e-14,
+        "row": "fs_shear[4]",
+        "row_scale": 15.86218,
+        "signed_residual": -7.91033905045424e-16,
+        "term_norm": 0.0549250597988667,
+        "term_norm_over_branch_boundary": 54925059798.8667
+      },
+      {
+        "absolute_residual": 4.961309141293668e-16,
+        "metric_branch": "relative",
+        "metric_value": 2.8483406314736443e-14,
+        "row": "fs_shear[5]",
+        "row_scale": 17.862180000000002,
+        "signed_residual": 4.961309141293668e-16,
+        "term_norm": 0.017418243753826727,
+        "term_norm_over_branch_boundary": 17418243753.82673
+      },
+      {
+        "absolute_residual": 2.2768245622195593e-16,
+        "metric_branch": "relative",
+        "metric_value": 8.293156778208684e-14,
+        "row": "fs_shear[6]",
+        "row_scale": 19.862180000000002,
+        "signed_residual": 2.2768245622195593e-16,
+        "term_norm": 0.0027454256842246163,
+        "term_norm_over_branch_boundary": 2745425684.2246165
+      },
+      {
+        "absolute_residual": 2.222614453595284e-16,
+        "metric_branch": "relative",
+        "metric_value": 8.202039180394543e-13,
+        "row": "fs_shear[7]",
+        "row_scale": 21.862180000000002,
+        "signed_residual": 2.222614453595284e-16,
+        "term_norm": 0.000270983154885194,
+        "term_norm_over_branch_boundary": 270983154.885194
+      },
+      {
+        "absolute_residual": 1.275360568021855e-15,
+        "metric_branch": "relative",
+        "metric_value": 3.316858123398848e-11,
+        "row": "fs_shear[8]",
+        "row_scale": 23.862180000000002,
+        "signed_residual": -1.275360568021855e-15,
+        "term_norm": 3.8450862851950045e-05,
+        "term_norm_over_branch_boundary": 38450862.85195005
+      },
+      {
+        "absolute_residual": 3.5215729995496085e-17,
+        "metric_branch": "absolute",
+        "metric_value": 3.5215729995496085e-17,
+        "row": "fs_Euler[0]",
+        "row_scale": 4.93109,
+        "signed_residual": -3.5215729995496085e-17,
+        "term_norm": 2.983932958255284e-16,
+        "term_norm_over_branch_boundary": 0.0002983932958255284
+      },
+      {
+        "absolute_residual": 3.795985833343012e-17,
+        "metric_branch": "absolute",
+        "metric_value": 3.795985833343012e-17,
+        "row": "fs_Euler[1]",
+        "row_scale": 5.93109,
+        "signed_residual": 3.795985833343012e-17,
+        "term_norm": 1.3420570154333954e-15,
+        "term_norm_over_branch_boundary": 0.0013420570154333955
+      },
+      {
+        "absolute_residual": 1.249000902703301e-16,
+        "metric_branch": "relative",
+        "metric_value": 7.726276194804757e-16,
+        "row": "fs_Euler[2]",
+        "row_scale": 6.93109,
+        "signed_residual": -1.249000902703301e-16,
+        "term_norm": 0.16165625861823898,
+        "term_norm_over_branch_boundary": 161656258618.23898
+      },
+      {
+        "absolute_residual": 2.42861286636753e-17,
+        "metric_branch": "relative",
+        "metric_value": 5.82941922663197e-16,
+        "row": "fs_Euler[3]",
+        "row_scale": 7.93109,
+        "signed_residual": 2.42861286636753e-17,
+        "term_norm": 0.04166131773937788,
+        "term_norm_over_branch_boundary": 41661317739.377884
+      },
+      {
+        "absolute_residual": 1.3444106938820255e-17,
+        "metric_branch": "relative",
+        "metric_value": 2.3340551130833307e-15,
+        "row": "fs_Euler[4]",
+        "row_scale": 8.931090000000001,
+        "signed_residual": 1.3444106938820255e-17,
+        "term_norm": 0.005759978358463154,
+        "term_norm_over_branch_boundary": 5759978358.463154
+      },
+      {
+        "absolute_residual": 1.4097338747742771e-16,
+        "metric_branch": "relative",
+        "metric_value": 8.975988265711582e-14,
+        "row": "fs_Euler[5]",
+        "row_scale": 9.931090000000001,
+        "signed_residual": -1.4097338747742771e-16,
+        "term_norm": 0.0015705611828387555,
+        "term_norm_over_branch_boundary": 1570561182.8387556
+      },
+      {
+        "absolute_residual": 5.7123901962830015e-18,
+        "metric_branch": "relative",
+        "metric_value": 2.5603915832080693e-14,
+        "row": "fs_Euler[6]",
+        "row_scale": 10.931090000000001,
+        "signed_residual": -5.7123901962830015e-18,
+        "term_norm": 0.00022310611524216942,
+        "term_norm_over_branch_boundary": 223106115.2421694
+      },
+      {
+        "absolute_residual": 1.1339060658303868e-16,
+        "metric_branch": "relative",
+        "metric_value": 7.32637313148706e-12,
+        "row": "fs_Euler[7]",
+        "row_scale": 11.931090000000001,
+        "signed_residual": 1.1339060658303868e-16,
+        "term_norm": 1.5477044991840783e-05,
+        "term_norm_over_branch_boundary": 15477044.991840784
+      },
+      {
+        "absolute_residual": 1.0795445500667899e-16,
+        "metric_branch": "relative",
+        "metric_value": 2.631557446264298e-11,
+        "row": "fs_Euler[8]",
+        "row_scale": 12.931090000000001,
+        "signed_residual": -1.0795445500667899e-16,
+        "term_norm": 4.102302807788931e-06,
+        "term_norm_over_branch_boundary": 4102302.807788931
+      },
+      {
+        "absolute_residual": 2.3277907350513305e-17,
+        "metric_branch": "absolute",
+        "metric_value": 2.3277907350513305e-17,
+        "row": "baryon_continuity[0]",
+        "row_scale": 3.93109,
+        "signed_residual": 2.3277907350513305e-17,
+        "term_norm": 3.127692552290803e-17,
+        "term_norm_over_branch_boundary": 3.127692552290803e-05
+      },
+      {
+        "absolute_residual": 2.6037216382512198e-16,
+        "metric_branch": "absolute",
+        "metric_value": 2.6037216382512198e-16,
+        "row": "baryon_continuity[1]",
+        "row_scale": 4.93109,
+        "signed_residual": 2.6037216382512198e-16,
+        "term_norm": 2.5961551197674005e-15,
+        "term_norm_over_branch_boundary": 0.0025961551197674006
+      },
+      {
+        "absolute_residual": 1.3695965051608755e-16,
+        "metric_branch": "relative",
+        "metric_value": 1.8289831388876624e-16,
+        "row": "baryon_continuity[2]",
+        "row_scale": 5.93109,
+        "signed_residual": -1.3695965051608755e-16,
+        "term_norm": 0.7488294867462948,
+        "term_norm_over_branch_boundary": 748829486746.2948
+      },
+      {
+        "absolute_residual": 7.831996810568392e-17,
+        "metric_branch": "relative",
+        "metric_value": 3.1841194307842144e-16,
+        "row": "baryon_continuity[3]",
+        "row_scale": 6.93109,
+        "signed_residual": 7.831996810568392e-17,
+        "term_norm": 0.24597057305226314,
+        "term_norm_over_branch_boundary": 245970573052.26315
+      },
+      {
+        "absolute_residual": 7.28583859910259e-17,
+        "metric_branch": "relative",
+        "metric_value": 1.3114509478384547e-15,
+        "row": "baryon_continuity[4]",
+        "row_scale": 7.93109,
+        "signed_residual": -7.28583859910259e-17,
+        "term_norm": 0.05555555555555604,
+        "term_norm_over_branch_boundary": 55555555555.55604
+      },
+      {
+        "absolute_residual": 2.1684043449710089e-16,
+        "metric_branch": "relative",
+        "metric_value": 9.48472288492707e-15,
+        "row": "baryon_continuity[5]",
+        "row_scale": 8.931090000000001,
+        "signed_residual": -2.1684043449710089e-16,
+        "term_norm": 0.022862073792551105,
+        "term_norm_over_branch_boundary": 22862073792.551105
+      },
+      {
+        "absolute_residual": 2.0166160408230382e-16,
+        "metric_branch": "relative",
+        "metric_value": 4.02012987980511e-14,
+        "row": "baryon_continuity[6]",
+        "row_scale": 9.931090000000001,
+        "signed_residual": -2.0166160408230382e-16,
+        "term_norm": 0.005016295744456895,
+        "term_norm_over_branch_boundary": 5016295744.456895
+      },
+      {
+        "absolute_residual": 5.816744655384731e-17,
+        "metric_branch": "relative",
+        "metric_value": 6.8704380868338e-14,
+        "row": "baryon_continuity[7]",
+        "row_scale": 10.931090000000001,
+        "signed_residual": 5.816744655384731e-17,
+        "term_norm": 0.0008466337345404044,
+        "term_norm_over_branch_boundary": 846633734.5404044
+      },
+      {
+        "absolute_residual": 3.218318623751659e-16,
+        "metric_branch": "relative",
+        "metric_value": 2.7180601813022664e-12,
+        "row": "baryon_continuity[8]",
+        "row_scale": 11.931090000000001,
+        "signed_residual": -3.218318623751659e-16,
+        "term_norm": 0.0001184049803566053,
+        "term_norm_over_branch_boundary": 118404980.3566053
+      },
+      {
+        "absolute_residual": 4.3735829047433936e-17,
+        "metric_branch": "absolute",
+        "metric_value": 4.3735829047433936e-17,
+        "row": "cdm_continuity[0]",
+        "row_scale": 3.93109,
+        "signed_residual": 4.3735829047433936e-17,
+        "term_norm": 5.17351284810534e-17,
+        "term_norm_over_branch_boundary": 5.17351284810534e-05
+      },
+      {
+        "absolute_residual": 1.5107622025665109e-16,
+        "metric_branch": "absolute",
+        "metric_value": 1.5107622025665109e-16,
+        "row": "cdm_continuity[1]",
+        "row_scale": 4.93109,
+        "signed_residual": 1.5107622025665109e-16,
+        "term_norm": 2.705451063335871e-15,
+        "term_norm_over_branch_boundary": 0.002705451063335871
+      },
+      {
+        "absolute_residual": 3.1219922599297937e-16,
+        "metric_branch": "relative",
+        "metric_value": 4.169163094117754e-16,
+        "row": "cdm_continuity[2]",
+        "row_scale": 5.93109,
+        "signed_residual": -3.1219922599297937e-16,
+        "term_norm": 0.7488294867462951,
+        "term_norm_over_branch_boundary": 748829486746.2952
+      },
+      {
+        "absolute_residual": 1.036259578275319e-16,
+        "metric_branch": "relative",
+        "metric_value": 4.2129412694222553e-16,
+        "row": "cdm_continuity[3]",
+        "row_scale": 6.93109,
+        "signed_residual": 1.036259578275319e-16,
+        "term_norm": 0.24597057305226266,
+        "term_norm_over_branch_boundary": 245970573052.26266
+      },
+      {
+        "absolute_residual": 1.0657330657481552e-16,
+        "metric_branch": "relative",
+        "metric_value": 2.8059741116002787e-15,
+        "row": "cdm_continuity[4]",
+        "row_scale": 7.93109,
+        "signed_residual": -1.0657330657481552e-16,
+        "term_norm": 0.03798085881627595,
+        "term_norm_over_branch_boundary": 37980858816.27595
+      },
+      {
+        "absolute_residual": 4.045404271834463e-17,
+        "metric_branch": "relative",
+        "metric_value": 1.3482464315084006e-14,
+        "row": "cdm_continuity[5]",
+        "row_scale": 8.931090000000001,
+        "signed_residual": 4.045404271834463e-17,
+        "term_norm": 0.0030004932164430184,
+        "term_norm_over_branch_boundary": 3000493216.4430184
+      },
+      {
+        "absolute_residual": 1.291463450946223e-17,
+        "metric_branch": "relative",
+        "metric_value": 3.088613243465682e-13,
+        "row": "cdm_continuity[6]",
+        "row_scale": 9.931090000000001,
+        "signed_residual": 1.291463450946223e-17,
+        "term_norm": 4.1813699195859604e-05,
+        "term_norm_over_branch_boundary": 41813699.1958596
+      },
+      {
+        "absolute_residual": 2.724506996014917e-16,
+        "metric_branch": "relative",
+        "metric_value": 4.500197630580813e-12,
+        "row": "cdm_continuity[7]",
+        "row_scale": 10.931090000000001,
+        "signed_residual": -2.724506996014917e-16,
+        "term_norm": 6.054194103611582e-05,
+        "term_norm_over_branch_boundary": 60541941.036115825
+      },
+      {
+        "absolute_residual": 3.2196120680283904e-16,
+        "metric_branch": "relative",
+        "metric_value": 2.2902748659899602e-11,
+        "row": "cdm_continuity[8]",
+        "row_scale": 11.931090000000003,
+        "signed_residual": -3.2196120680283904e-16,
+        "term_norm": 1.4057754009524654e-05,
+        "term_norm_over_branch_boundary": 14057754.009524655
+      },
+      {
+        "absolute_residual": 8.842760040964677e-17,
+        "metric_branch": "absolute",
+        "metric_value": 8.842760040964677e-17,
+        "row": "cdm_Euler[0]",
+        "row_scale": 5.93109,
+        "signed_residual": -8.842760040964677e-17,
+        "term_norm": 1.2279123179299361e-15,
+        "term_norm_over_branch_boundary": 0.0012279123179299361
+      },
+      {
+        "absolute_residual": 6.975279810403394e-17,
+        "metric_branch": "absolute",
+        "metric_value": 6.975279810403394e-17,
+        "row": "cdm_Euler[1]",
+        "row_scale": 6.93109,
+        "signed_residual": -6.975279810403394e-17,
+        "term_norm": 1.031634761072681e-15,
+        "term_norm_over_branch_boundary": 0.001031634761072681
+      },
+      {
+        "absolute_residual": 4.821014328708688e-17,
+        "metric_branch": "absolute",
+        "metric_value": 4.821014328708688e-17,
+        "row": "cdm_Euler[2]",
+        "row_scale": 7.93109,
+        "signed_residual": 4.821014328708688e-17,
+        "term_norm": 9.723355456606114e-16,
+        "term_norm_over_branch_boundary": 0.0009723355456606114
+      },
+      {
+        "absolute_residual": 2.5961933577226967e-17,
+        "metric_branch": "absolute",
+        "metric_value": 2.5961933577226967e-17,
+        "row": "cdm_Euler[3]",
+        "row_scale": 8.93109,
+        "signed_residual": -2.5961933577226967e-17,
+        "term_norm": 2.6786215083017334e-16,
+        "term_norm_over_branch_boundary": 0.00026786215083017333
+      },
+      {
+        "absolute_residual": 1.5608714748920413e-16,
+        "metric_branch": "absolute",
+        "metric_value": 1.5608714748920413e-16,
+        "row": "cdm_Euler[4]",
+        "row_scale": 9.93109,
+        "signed_residual": -1.5608714748920413e-16,
+        "term_norm": 3.4082036974373614e-16,
+        "term_norm_over_branch_boundary": 0.00034082036974373615
+      },
+      {
+        "absolute_residual": 1.653174800010243e-16,
+        "metric_branch": "absolute",
+        "metric_value": 1.653174800010243e-16,
+        "row": "cdm_Euler[5]",
+        "row_scale": 10.931090000000001,
+        "signed_residual": -1.653174800010243e-16,
+        "term_norm": 5.089920817826628e-16,
+        "term_norm_over_branch_boundary": 0.0005089920817826628
+      },
+      {
+        "absolute_residual": 1.1907569648416827e-16,
+        "metric_branch": "absolute",
+        "metric_value": 1.1907569648416827e-16,
+        "row": "cdm_Euler[6]",
+        "row_scale": 11.931090000000001,
+        "signed_residual": -1.1907569648416827e-16,
+        "term_norm": 1.533559020691679e-16,
+        "term_norm_over_branch_boundary": 0.0001533559020691679
+      },
+      {
+        "absolute_residual": 2.6784533521917692e-17,
+        "metric_branch": "absolute",
+        "metric_value": 2.6784533521917692e-17,
+        "row": "cdm_Euler[7]",
+        "row_scale": 12.931090000000001,
+        "signed_residual": 2.6784533521917692e-17,
+        "term_norm": 1.1044516468405306e-16,
+        "term_norm_over_branch_boundary": 0.00011044516468405306
+      },
+      {
+        "absolute_residual": 1.5695865157124452e-17,
+        "metric_branch": "absolute",
+        "metric_value": 1.5695865157124452e-17,
+        "row": "cdm_Euler[8]",
+        "row_scale": 13.931090000000001,
+        "signed_residual": 1.5695865157124452e-17,
+        "term_norm": 7.452455499054633e-17,
+        "term_norm_over_branch_boundary": 7.452455499054634e-05
+      },
+      {
+        "absolute_residual": 2.42861286636753e-17,
+        "metric_branch": "absolute",
+        "metric_value": 2.42861286636753e-17,
+        "row": "tight_coupling[0]",
+        "row_scale": 1.0,
+        "signed_residual": 2.42861286636753e-17,
+        "term_norm": 1.3530843112619095e-16,
+        "term_norm_over_branch_boundary": 0.00013530843112619095
+      },
+      {
+        "absolute_residual": 1.3010426069826053e-17,
+        "metric_branch": "absolute",
+        "metric_value": 1.3010426069826053e-17,
+        "row": "tight_coupling[1]",
+        "row_scale": 1.0,
+        "signed_residual": -1.3010426069826053e-17,
+        "term_norm": 5.681219383824043e-16,
+        "term_norm_over_branch_boundary": 0.0005681219383824043
+      },
+      {
+        "absolute_residual": 2.5153490401663703e-17,
+        "metric_branch": "relative",
+        "metric_value": 2.5977650651661634e-15,
+        "row": "tight_coupling[2]",
+        "row_scale": 1.0,
+        "signed_residual": -2.5153490401663703e-17,
+        "term_norm": 0.009682742577052397,
+        "term_norm_over_branch_boundary": 9682742577.052397
+      },
+      {
+        "absolute_residual": 1.431146867680866e-17,
+        "metric_branch": "relative",
+        "metric_value": 6.161952815374194e-15,
+        "row": "tight_coupling[3]",
+        "row_scale": 1.0,
+        "signed_residual": -1.431146867680866e-17,
+        "term_norm": 0.0023225540840074695,
+        "term_norm_over_branch_boundary": 2322554084.0074697
+      },
+      {
+        "absolute_residual": 1.3877787807814457e-17,
+        "metric_branch": "relative",
+        "metric_value": 2.9797911608715544e-14,
+        "row": "tight_coupling[4]",
+        "row_scale": 1.0,
+        "signed_residual": 1.3877787807814457e-17,
+        "term_norm": 0.0004657302159308159,
+        "term_norm_over_branch_boundary": 465730215.93081594
+      },
+      {
+        "absolute_residual": 2.145365048805692e-17,
+        "metric_branch": "relative",
+        "metric_value": 2.342045247368515e-13,
+        "row": "tight_coupling[5]",
+        "row_scale": 1.0,
+        "signed_residual": -2.145365048805692e-17,
+        "term_norm": 9.160220329714767e-05,
+        "term_norm_over_branch_boundary": 91602203.29714766
+      },
+      {
+        "absolute_residual": 6.5052130349130266e-18,
+        "metric_branch": "relative",
+        "metric_value": 4.63515937723518e-13,
+        "row": "tight_coupling[6]",
+        "row_scale": 1.0,
+        "signed_residual": -6.5052130349130266e-18,
+        "term_norm": 1.4034496994563567e-05,
+        "term_norm_over_branch_boundary": 14034496.994563568
+      },
+      {
+        "absolute_residual": 7.00178610024086e-19,
+        "metric_branch": "relative",
+        "metric_value": 4.458262138183354e-13,
+        "row": "tight_coupling[7]",
+        "row_scale": 1.0,
+        "signed_residual": 7.00178610024086e-19,
+        "term_norm": 1.570519158187934e-06,
+        "term_norm_over_branch_boundary": 1570519.158187934
+      },
+      {
+        "absolute_residual": 7.982438494924526e-18,
+        "metric_branch": "relative",
+        "metric_value": 6.662333341133324e-11,
+        "row": "tight_coupling[8]",
+        "row_scale": 1.0,
+        "signed_residual": 7.982438494924526e-18,
+        "term_norm": 1.1981445668052748e-07,
+        "term_norm_over_branch_boundary": 119814.45668052748
+      },
+      {
+        "absolute_residual": 2.869435376389444e-16,
+        "metric_branch": "absolute",
+        "metric_value": 2.869435376389444e-16,
+        "row": "fuel_continuity[0]",
+        "row_scale": 9.86218,
+        "signed_residual": -2.869435376389444e-16,
+        "term_norm": 6.028642686645407e-16,
+        "term_norm_over_branch_boundary": 0.0006028642686645407
+      },
+      {
+        "absolute_residual": 3.9814537995805054e-17,
+        "metric_branch": "absolute",
+        "metric_value": 3.9814537995805054e-17,
+        "row": "fuel_continuity[1]",
+        "row_scale": 10.86218,
+        "signed_residual": -3.9814537995805054e-17,
+        "term_norm": 1.4861424846705252e-16,
+        "term_norm_over_branch_boundary": 0.00014861424846705253
+      },
+      {
+        "absolute_residual": 3.712440174136398e-16,
+        "metric_branch": "relative",
+        "metric_value": 2.057366984621362e-14,
+        "row": "fuel_continuity[2]",
+        "row_scale": 11.86218,
+        "signed_residual": -3.712440174136398e-16,
+        "term_norm": 0.01804461820320129,
+        "term_norm_over_branch_boundary": 18044618203.20129
+      },
+      {
+        "absolute_residual": 1.2874492642345721e-17,
+        "metric_branch": "relative",
+        "metric_value": 2.1989810442535103e-15,
+        "row": "fuel_continuity[3]",
+        "row_scale": 12.86218,
+        "signed_residual": 1.2874492642345721e-17,
+        "term_norm": 0.005854753807901166,
+        "term_norm_over_branch_boundary": 5854753807.901166
+      },
+      {
+        "absolute_residual": 3.434752482434078e-16,
+        "metric_branch": "relative",
+        "metric_value": 3.280545385631902e-13,
+        "row": "fuel_continuity[4]",
+        "row_scale": 13.86218,
+        "signed_residual": -3.434752482434078e-16,
+        "term_norm": 0.0010470065427162112,
+        "term_norm_over_branch_boundary": 1047006542.7162112
+      },
+      {
+        "absolute_residual": 1.8547988665795767e-16,
+        "metric_branch": "relative",
+        "metric_value": 4.956051889299541e-13,
+        "row": "fuel_continuity[5]",
+        "row_scale": 14.862180000000004,
+        "signed_residual": 1.8547988665795767e-16,
+        "term_norm": 0.00037424928310056957,
+        "term_norm_over_branch_boundary": 374249283.1005696
+      },
+      {
+        "absolute_residual": 4.6010829694853594e-17,
+        "metric_branch": "relative",
+        "metric_value": 5.974043073679284e-13,
+        "row": "fuel_continuity[6]",
+        "row_scale": 15.862180000000002,
+        "signed_residual": 4.6010829694853594e-17,
+        "term_norm": 7.701790751655314e-05,
+        "term_norm_over_branch_boundary": 77017907.51655315
+      },
+      {
+        "absolute_residual": 1.388549580763447e-16,
+        "metric_branch": "relative",
+        "metric_value": 1.227869708790584e-11,
+        "row": "fuel_continuity[7]",
+        "row_scale": 16.862180000000002,
+        "signed_residual": 1.388549580763447e-16,
+        "term_norm": 1.130860685643209e-05,
+        "term_norm_over_branch_boundary": 11308606.85643209
+      },
+      {
+        "absolute_residual": 4.3782074252390717e-17,
+        "metric_branch": "relative",
+        "metric_value": 3.4878962992837937e-11,
+        "row": "fuel_continuity[8]",
+        "row_scale": 17.862180000000002,
+        "signed_residual": 4.3782074252390717e-17,
+        "term_norm": 1.255257338395667e-06,
+        "term_norm_over_branch_boundary": 1255257.338395667
+      },
+      {
+        "absolute_residual": 3.0952428890167938e-15,
+        "metric_branch": "absolute",
+        "metric_value": 3.0952428890167938e-15,
+        "row": "fuel_Euler[0]",
+        "row_scale": 43.535045711798,
+        "signed_residual": 3.0952428890167938e-15,
+        "term_norm": 3.097500908549518e-15,
+        "term_norm_over_branch_boundary": 0.003097500908549518
+      },
+      {
+        "absolute_residual": 3.200952724505826e-16,
+        "metric_branch": "absolute",
+        "metric_value": 3.200952724505826e-16,
+        "row": "fuel_Euler[1]",
+        "row_scale": 43.535045711798,
+        "signed_residual": 3.200952724505826e-16,
+        "term_norm": 8.504843478210984e-16,
+        "term_norm_over_branch_boundary": 0.0008504843478210984
+      },
+      {
+        "absolute_residual": 1.6375789613221059e-15,
+        "metric_branch": "relative",
+        "metric_value": 2.1432056111396553e-14,
+        "row": "fuel_Euler[2]",
+        "row_scale": 43.535045711798,
+        "signed_residual": -1.6375789613221059e-15,
+        "term_norm": 0.07640792618358809,
+        "term_norm_over_branch_boundary": 76407926183.58809
+      },
+      {
+        "absolute_residual": 1.8492152253912764e-15,
+        "metric_branch": "relative",
+        "metric_value": 8.056419320181644e-14,
+        "row": "fuel_Euler[3]",
+        "row_scale": 43.535045711798,
+        "signed_residual": 1.8492152253912764e-15,
+        "term_norm": 0.02295331402077,
+        "term_norm_over_branch_boundary": 22953314020.77
+      },
+      {
+        "absolute_residual": 6.290541004760897e-16,
+        "metric_branch": "relative",
+        "metric_value": 2.324456611462024e-13,
+        "row": "fuel_Euler[4]",
+        "row_scale": 43.53504571179799,
+        "signed_residual": -6.290541004760897e-16,
+        "term_norm": 0.002706241524897428,
+        "term_norm_over_branch_boundary": 2706241524.897428
+      },
+      {
+        "absolute_residual": 3.650373189487133e-17,
+        "metric_branch": "relative",
+        "metric_value": 4.56737027200434e-14,
+        "row": "fuel_Euler[5]",
+        "row_scale": 43.535045711798,
+        "signed_residual": -3.650373189487133e-17,
+        "term_norm": 0.0007992286528337907,
+        "term_norm_over_branch_boundary": 799228652.8337908
+      },
+      {
+        "absolute_residual": 6.718648396962165e-16,
+        "metric_branch": "relative",
+        "metric_value": 4.024906441353751e-12,
+        "row": "fuel_Euler[6]",
+        "row_scale": 43.535045711798,
+        "signed_residual": -6.718648396962165e-16,
+        "term_norm": 0.00016692682165060193,
+        "term_norm_over_branch_boundary": 166926821.65060192
+      },
+      {
+        "absolute_residual": 4.793037575992129e-16,
+        "metric_branch": "relative",
+        "metric_value": 2.6373863430214955e-11,
+        "row": "fuel_Euler[7]",
+        "row_scale": 43.535045711798,
+        "signed_residual": -4.793037575992129e-16,
+        "term_norm": 1.8173437458923947e-05,
+        "term_norm_over_branch_boundary": 18173437.458923947
+      },
+      {
+        "absolute_residual": 1.7509949788935622e-16,
+        "metric_branch": "relative",
+        "metric_value": 1.5577307299046142e-10,
+        "row": "fuel_Euler[8]",
+        "row_scale": 43.535045711798,
+        "signed_residual": -1.7509949788935622e-16,
+        "term_norm": 1.1240678156235528e-06,
+        "term_norm_over_branch_boundary": 1124067.8156235528
+      },
+      {
+        "absolute_residual": 4.511595361184192e-16,
+        "metric_branch": "absolute",
+        "metric_value": 4.511595361184192e-16,
+        "row": "Einstein_trace[0]",
+        "row_scale": 19.384558588100003,
+        "signed_residual": -4.511595361184192e-16,
+        "term_norm": 4.511595361184192e-16,
+        "term_norm_over_branch_boundary": 0.0004511595361184192
+      },
+      {
+        "absolute_residual": 2.350062835070868e-16,
+        "metric_branch": "absolute",
+        "metric_value": 2.350062835070868e-16,
+        "row": "Einstein_trace[1]",
+        "row_scale": 29.2467385881,
+        "signed_residual": -2.350062835070868e-16,
+        "term_norm": 3.4149798493941605e-14,
+        "term_norm_over_branch_boundary": 0.034149798493941605
+      },
+      {
+        "absolute_residual": 0.0,
+        "metric_branch": "relative",
+        "metric_value": 0.0,
+        "row": "Einstein_trace[2]",
+        "row_scale": 41.108918588099996,
+        "signed_residual": 0.0,
+        "term_norm": 10.38040913458475,
+        "term_norm_over_branch_boundary": 10380409134584.75
+      },
+      {
+        "absolute_residual": 4.440892098500626e-16,
+        "metric_branch": "relative",
+        "metric_value": 1.1382147109115063e-16,
+        "row": "Einstein_trace[3]",
+        "row_scale": 54.971098588100006,
+        "signed_residual": -4.440892098500626e-16,
+        "term_norm": 3.9016295044581404,
+        "term_norm_over_branch_boundary": 3901629504458.1406
+      },
+      {
+        "absolute_residual": 1.942890293094024e-15,
+        "metric_branch": "relative",
+        "metric_value": 2.68527416589152e-15,
+        "row": "Einstein_trace[4]",
+        "row_scale": 70.8332785881,
+        "signed_residual": -1.942890293094024e-15,
+        "term_norm": 0.7235351673854047,
+        "term_norm_over_branch_boundary": 723535167385.4047
+      },
+      {
+        "absolute_residual": 3.011479954295737e-15,
+        "metric_branch": "relative",
+        "metric_value": 3.455248795975868e-14,
+        "row": "Einstein_trace[5]",
+        "row_scale": 88.69545858810001,
+        "signed_residual": 3.011479954295737e-15,
+        "term_norm": 0.08715667473216507,
+        "term_norm_over_branch_boundary": 87156674732.16507
+      },
+      {
+        "absolute_residual": 2.98133913390064e-15,
+        "metric_branch": "relative",
+        "metric_value": 3.883191950056622e-13,
+        "row": "Einstein_trace[6]",
+        "row_scale": 108.5576385881,
+        "signed_residual": 2.98133913390064e-15,
+        "term_norm": 0.007677547677902372,
+        "term_norm_over_branch_boundary": 7677547677.902372
+      },
+      {
+        "absolute_residual": 1.0660417860963722e-15,
+        "metric_branch": "relative",
+        "metric_value": 5.195910471723681e-13,
+        "row": "Einstein_trace[7]",
+        "row_scale": 130.41981858810004,
+        "signed_residual": 1.0660417860963722e-15,
+        "term_norm": 0.0020516939079258723,
+        "term_norm_over_branch_boundary": 2051693907.9258723
+      },
+      {
+        "absolute_residual": 4.569153215505661e-15,
+        "metric_branch": "relative",
+        "metric_value": 9.782421209526335e-12,
+        "row": "Einstein_trace[8]",
+        "row_scale": 154.2819985881,
+        "signed_residual": -4.569153215505661e-15,
+        "term_norm": 0.00046707794702768683,
+        "term_norm_over_branch_boundary": 467077947.02768683
+      },
+      {
+        "absolute_residual": 8.936508993831979e-15,
+        "metric_branch": "absolute",
+        "metric_value": 8.936508993831979e-15,
+        "row": "Einstein_traceless[0]",
+        "row_scale": 116.30735152860001,
+        "signed_residual": 8.936508993831979e-15,
+        "term_norm": 9.015396750871405e-15,
+        "term_norm_over_branch_boundary": 0.009015396750871405
+      },
+      {
+        "absolute_residual": 6.470752218370991e-15,
+        "metric_branch": "absolute",
+        "metric_value": 6.470752218370991e-15,
+        "row": "Einstein_traceless[1]",
+        "row_scale": 175.4804315286,
+        "signed_residual": -6.470752218370991e-15,
+        "term_norm": 4.0615985541494274e-14,
+        "term_norm_over_branch_boundary": 0.04061598554149427
+      },
+      {
+        "absolute_residual": 1.509903313490213e-14,
+        "metric_branch": "relative",
+        "metric_value": 1.4414653197453293e-15,
+        "row": "Einstein_traceless[2]",
+        "row_scale": 246.6535115286,
+        "signed_residual": 1.509903313490213e-14,
+        "term_norm": 10.474780716590358,
+        "term_norm_over_branch_boundary": 10474780716590.357
+      },
+      {
+        "absolute_residual": 3.1086244689504383e-15,
+        "metric_branch": "relative",
+        "metric_value": 7.787885667308894e-16,
+        "row": "Einstein_traceless[3]",
+        "row_scale": 329.82659152860003,
+        "signed_residual": -3.1086244689504383e-15,
+        "term_norm": 3.991615441915732,
+        "term_norm_over_branch_boundary": 3991615441915.732
+      },
+      {
+        "absolute_residual": 2.0122792321330962e-14,
+        "metric_branch": "relative",
+        "metric_value": 2.686015078592132e-14,
+        "row": "Einstein_traceless[4]",
+        "row_scale": 424.99967152860006,
+        "signed_residual": -2.0122792321330962e-14,
+        "term_norm": 0.749169000640096,
+        "term_norm_over_branch_boundary": 749169000640.096
+      },
+      {
+        "absolute_residual": 5.224987109642143e-15,
+        "metric_branch": "relative",
+        "metric_value": 6.065003953431832e-14,
+        "row": "Einstein_traceless[5]",
+        "row_scale": 532.1727515286002,
+        "signed_residual": 5.224987109642143e-15,
+        "term_norm": 0.08614977252711645,
+        "term_norm_over_branch_boundary": 86149772527.11646
+      },
+      {
+        "absolute_residual": 1.3051300491728757e-14,
+        "metric_branch": "relative",
+        "metric_value": 1.9701713187052236e-12,
+        "row": "Einstein_traceless[6]",
+        "row_scale": 651.3458315286001,
+        "signed_residual": -1.3051300491728757e-14,
+        "term_norm": 0.00662444954294936,
+        "term_norm_over_branch_boundary": 6624449542.94936
+      },
+      {
+        "absolute_residual": 2.0945891505627645e-14,
+        "metric_branch": "relative",
+        "metric_value": 9.830282886270653e-12,
+        "row": "Einstein_traceless[7]",
+        "row_scale": 782.5189115286001,
+        "signed_residual": -2.0945891505627645e-14,
+        "term_norm": 0.002130751652618408,
+        "term_norm_over_branch_boundary": 2130751652.618408
+      },
+      {
+        "absolute_residual": 6.11598445499073e-14,
+        "metric_branch": "relative",
+        "metric_value": 1.2769598755664618e-10,
+        "row": "Einstein_traceless[8]",
+        "row_scale": 925.6919915286003,
+        "signed_residual": 6.11598445499073e-14,
+        "term_norm": 0.0004789488355910688,
+        "term_norm_over_branch_boundary": 478948835.5910688
+      }
+    ],
+    "refined_rows": [
+      {
+        "absolute_residual": 2.465190328815662e-32,
+        "metric_branch": "absolute",
+        "metric_value": 2.465190328815662e-32,
+        "row": "gamma_continuity[0]",
+        "row_scale": 3.93109,
+        "signed_residual": -2.465190328815662e-32,
+        "term_norm": 9.558564062114167e-17,
+        "term_norm_over_branch_boundary": 9.558564062114167e-05
+      },
+      {
+        "absolute_residual": 9.860761315262648e-32,
+        "metric_branch": "absolute",
+        "metric_value": 9.860761315262648e-32,
+        "row": "gamma_continuity[1]",
+        "row_scale": 4.93109,
+        "signed_residual": -9.860761315262648e-32,
+        "term_norm": 3.890083650888133e-15,
+        "term_norm_over_branch_boundary": 0.0038900836508881332
+      },
+      {
+        "absolute_residual": 1.7073672862681906e-16,
+        "metric_branch": "relative",
+        "metric_value": 1.7100361128473937e-16,
+        "row": "gamma_continuity[2]",
+        "row_scale": 5.93109,
+        "signed_residual": -1.7073672862681906e-16,
+        "term_norm": 0.9984393156617265,
+        "term_norm_over_branch_boundary": 998439315661.7266
+      },
+      {
+        "absolute_residual": 2.3204598748079146e-17,
+        "metric_branch": "relative",
+        "metric_value": 7.075419162991305e-17,
+        "row": "gamma_continuity[3]",
+        "row_scale": 6.93109,
+        "signed_residual": -2.3204598748079146e-17,
+        "term_norm": 0.32796076406968433,
+        "term_norm_over_branch_boundary": 327960764069.6843
+      },
+      {
+        "absolute_residual": 6.938893903907228e-18,
+        "metric_branch": "relative",
+        "metric_value": 9.367506770274608e-17,
+        "row": "gamma_continuity[4]",
+        "row_scale": 7.93109,
+        "signed_residual": -6.938893903907228e-18,
+        "term_norm": 0.07407407407407526,
+        "term_norm_over_branch_boundary": 74074074074.07527
+      },
+      {
+        "absolute_residual": 1.734723475976807e-18,
+        "metric_branch": "relative",
+        "metric_value": 5.690833730956088e-17,
+        "row": "gamma_continuity[5]",
+        "row_scale": 8.931090000000001,
+        "signed_residual": -1.734723475976807e-18,
+        "term_norm": 0.030482765056735635,
+        "term_norm_over_branch_boundary": 30482765056.735638
+      },
+      {
+        "absolute_residual": 0.0,
+        "metric_branch": "relative",
+        "metric_value": 0.0,
+        "row": "gamma_continuity[6]",
+        "row_scale": 9.931090000000001,
+        "signed_residual": 0.0,
+        "term_norm": 0.006688394325942368,
+        "term_norm_over_branch_boundary": 6688394325.9423685
+      },
+      {
+        "absolute_residual": 0.0,
+        "metric_branch": "relative",
+        "metric_value": 0.0,
+        "row": "gamma_continuity[7]",
+        "row_scale": 10.931090000000001,
+        "signed_residual": 0.0,
+        "term_norm": 0.0011288449793879184,
+        "term_norm_over_branch_boundary": 1128844979.3879185
+      },
+      {
+        "absolute_residual": 0.0,
+        "metric_branch": "relative",
+        "metric_value": 0.0,
+        "row": "gamma_continuity[8]",
+        "row_scale": 11.931090000000001,
+        "signed_residual": 0.0,
+        "term_norm": 0.00015787330714452048,
+        "term_norm_over_branch_boundary": 157873307.1445205
+      },
+      {
+        "absolute_residual": 4.930380657631324e-32,
+        "metric_branch": "absolute",
+        "metric_value": 4.930380657631324e-32,
+        "row": "gamma_Euler[0]",
+        "row_scale": 4.931090000000001,
+        "signed_residual": 4.930380657631324e-32,
+        "term_norm": 6.955539791464513e-16,
+        "term_norm_over_branch_boundary": 0.0006955539791464513
+      },
+      {
+        "absolute_residual": 1.9721522630525295e-31,
+        "metric_branch": "absolute",
+        "metric_value": 1.9721522630525295e-31,
+        "row": "gamma_Euler[1]",
+        "row_scale": 5.93109,
+        "signed_residual": -1.9721522630525295e-31,
+        "term_norm": 3.4345820883563155e-15,
+        "term_norm_over_branch_boundary": 0.0034345820883563156
+      },
+      {
+        "absolute_residual": 6.938893903907228e-18,
+        "metric_branch": "relative",
+        "metric_value": 6.35447625316788e-17,
+        "row": "gamma_Euler[2]",
+        "row_scale": 6.93109,
+        "signed_residual": 6.938893903907228e-18,
+        "term_norm": 0.10919694444444576,
+        "term_norm_over_branch_boundary": 109196944444.44577
+      },
+      {
+        "absolute_residual": 3.469446951953614e-18,
+        "metric_branch": "relative",
+        "metric_value": 1.0851319329496642e-16,
+        "row": "gamma_Euler[3]",
+        "row_scale": 7.93109,
+        "signed_residual": 3.469446951953614e-18,
+        "term_norm": 0.031972581827195666,
+        "term_norm_over_branch_boundary": 31972581827.195667
+      },
+      {
+        "absolute_residual": 0.0,
+        "metric_branch": "relative",
+        "metric_value": 0.0,
+        "row": "gamma_Euler[4]",
+        "row_scale": 8.931090000000001,
+        "signed_residual": 0.0,
+        "term_norm": 0.00477440653499644,
+        "term_norm_over_branch_boundary": 4774406534.99644
+      },
+      {
+        "absolute_residual": 8.131516293641283e-20,
+        "metric_branch": "relative",
+        "metric_value": 8.204404180061244e-17,
+        "row": "gamma_Euler[5]",
+        "row_scale": 9.931090000000001,
+        "signed_residual": 8.131516293641283e-20,
+        "term_norm": 0.00099111600491391,
+        "term_norm_over_branch_boundary": 991116004.91391
+      },
+      {
+        "absolute_residual": 1.0164395367051604e-20,
+        "metric_branch": "relative",
+        "metric_value": 5.924002045628253e-17,
+        "row": "gamma_Euler[6]",
+        "row_scale": 10.931090000000001,
+        "signed_residual": 1.0164395367051604e-20,
+        "term_norm": 0.0001715798760493785,
+        "term_norm_over_branch_boundary": 171579876.0493785
+      },
+      {
+        "absolute_residual": 1.0587911840678754e-21,
+        "metric_branch": "relative",
+        "metric_value": 4.66368609867942e-17,
+        "row": "gamma_Euler[7]",
+        "row_scale": 11.931090000000001,
+        "signed_residual": 1.0587911840678754e-21,
+        "term_norm": 2.2702882691176086e-05,
+        "term_norm_over_branch_boundary": 22702882.691176087
+      },
+      {
+        "absolute_residual": 7.279189390466644e-23,
+        "metric_branch": "relative",
+        "metric_value": 3.0400600991660917e-17,
+        "row": "gamma_Euler[8]",
+        "row_scale": 12.931090000000001,
+        "signed_residual": 7.279189390466644e-23,
+        "term_norm": 2.39442285777948e-06,
+        "term_norm_over_branch_boundary": 2394422.85777948
+      },
+      {
+        "absolute_residual": 6.162975822039155e-33,
+        "metric_branch": "absolute",
+        "metric_value": 6.162975822039155e-33,
+        "row": "fs_continuity[0]",
+        "row_scale": 3.93109,
+        "signed_residual": -6.162975822039155e-33,
+        "term_norm": 9.558564062114164e-17,
+        "term_norm_over_branch_boundary": 9.558564062114165e-05
+      },
+      {
+        "absolute_residual": 1.9721522630525295e-31,
+        "metric_branch": "absolute",
+        "metric_value": 1.9721522630525295e-31,
+        "row": "fs_continuity[1]",
+        "row_scale": 4.93109,
+        "signed_residual": -1.9721522630525295e-31,
+        "term_norm": 3.890083650888133e-15,
+        "term_norm_over_branch_boundary": 0.0038900836508881332
+      },
+      {
+        "absolute_residual": 1.0450060461339886e-16,
+        "metric_branch": "relative",
+        "metric_value": 1.0466395200407343e-16,
+        "row": "fs_continuity[2]",
+        "row_scale": 5.93109,
+        "signed_residual": -1.0450060461339886e-16,
+        "term_norm": 0.9984393156617264,
+        "term_norm_over_branch_boundary": 998439315661.7264
+      },
+      {
+        "absolute_residual": 2.545081739871376e-17,
+        "metric_branch": "relative",
+        "metric_value": 7.760323851820906e-17,
+        "row": "fs_continuity[3]",
+        "row_scale": 6.93109,
+        "signed_residual": -2.545081739871376e-17,
+        "term_norm": 0.3279607640696838,
+        "term_norm_over_branch_boundary": 327960764069.6838
+      },
+      {
+        "absolute_residual": 0.0,
+        "metric_branch": "relative",
+        "metric_value": 0.0,
+        "row": "fs_continuity[4]",
+        "row_scale": 7.93109,
+        "signed_residual": 0.0,
+        "term_norm": 0.1096600068467789,
+        "term_norm_over_branch_boundary": 109660006846.7789
+      },
+      {
+        "absolute_residual": 3.469446951953614e-18,
+        "metric_branch": "relative",
+        "metric_value": 8.404686874917106e-17,
+        "row": "fs_continuity[5]",
+        "row_scale": 8.931090000000001,
+        "signed_residual": 3.469446951953614e-18,
+        "term_norm": 0.04127990731347541,
+        "term_norm_over_branch_boundary": 41279907313.47541
+      },
+      {
+        "absolute_residual": 4.336808689942018e-19,
+        "metric_branch": "relative",
+        "metric_value": 6.318595640540801e-17,
+        "row": "fs_continuity[6]",
+        "row_scale": 9.931090000000001,
+        "signed_residual": -4.336808689942018e-19,
+        "term_norm": 0.006863564210560617,
+        "term_norm_over_branch_boundary": 6863564210.5606165
+      },
+      {
+        "absolute_residual": 0.0,
+        "metric_branch": "relative",
+        "metric_value": 0.0,
+        "row": "fs_continuity[7]",
+        "row_scale": 10.931090000000001,
+        "signed_residual": 0.0,
+        "term_norm": 0.0006774578872136587,
+        "term_norm_over_branch_boundary": 677457887.2136587
+      },
+      {
+        "absolute_residual": 3.3881317890172014e-21,
+        "metric_branch": "relative",
+        "metric_value": 3.899131035189569e-17,
+        "row": "fs_continuity[8]",
+        "row_scale": 11.931090000000001,
+        "signed_residual": 3.3881317890172014e-21,
+        "term_norm": 8.689453517820739e-05,
+        "term_norm_over_branch_boundary": 86894535.17820738
+      },
+      {
+        "absolute_residual": 6.162975822039155e-32,
+        "metric_branch": "absolute",
+        "metric_value": 6.162975822039155e-32,
+        "row": "fs_shear[0]",
+        "row_scale": 7.86218,
+        "signed_residual": 6.162975822039155e-32,
+        "term_norm": 1.2394793294651268e-16,
+        "term_norm_over_branch_boundary": 0.00012394793294651267
+      },
+      {
+        "absolute_residual": 3.4512664603419266e-31,
+        "metric_branch": "absolute",
+        "metric_value": 3.4512664603419266e-31,
+        "row": "fs_shear[1]",
+        "row_scale": 9.86218,
+        "signed_residual": 3.4512664603419266e-31,
+        "term_norm": 2.074659392144384e-15,
+        "term_norm_over_branch_boundary": 0.002074659392144384
+      },
+      {
+        "absolute_residual": 5.5678029653174e-17,
+        "metric_branch": "relative",
+        "metric_value": 1.3941265327746233e-16,
+        "row": "fs_shear[2]",
+        "row_scale": 11.86218,
+        "signed_residual": 5.5678029653174e-17,
+        "term_norm": 0.3993757262646905,
+        "term_norm_over_branch_boundary": 399375726264.6905
+      },
+      {
+        "absolute_residual": 6.016990617141167e-18,
+        "metric_branch": "relative",
+        "metric_value": 4.586669562599492e-17,
+        "row": "fs_shear[3]",
+        "row_scale": 13.86218,
+        "signed_residual": 6.016990617141167e-18,
+        "term_norm": 0.13118430562787353,
+        "term_norm_over_branch_boundary": 131184305627.87354
+      },
+      {
+        "absolute_residual": 0.0,
+        "metric_branch": "relative",
+        "metric_value": 0.0,
+        "row": "fs_shear[4]",
+        "row_scale": 15.86218,
+        "signed_residual": 0.0,
+        "term_norm": 0.054925059798868546,
+        "term_norm_over_branch_boundary": 54925059798.868546
+      },
+      {
+        "absolute_residual": 1.734723475976807e-18,
+        "metric_branch": "relative",
+        "metric_value": 9.959232977180228e-17,
+        "row": "fs_shear[5]",
+        "row_scale": 17.862180000000002,
+        "signed_residual": -1.734723475976807e-18,
+        "term_norm": 0.017418243753827334,
+        "term_norm_over_branch_boundary": 17418243753.827335
+      },
+      {
+        "absolute_residual": 0.0,
+        "metric_branch": "relative",
+        "metric_value": 0.0,
+        "row": "fs_shear[6]",
+        "row_scale": 19.862180000000002,
+        "signed_residual": 0.0,
+        "term_norm": 0.0027454256842242464,
+        "term_norm_over_branch_boundary": 2745425684.2242465
+      },
+      {
+        "absolute_residual": 1.3552527156068805e-20,
+        "metric_branch": "relative",
+        "metric_value": 5.001243402674625e-17,
+        "row": "fs_shear[7]",
+        "row_scale": 21.862180000000002,
+        "signed_residual": -1.3552527156068805e-20,
+        "term_norm": 0.00027098315488546354,
+        "term_norm_over_branch_boundary": 270983154.88546354
+      },
+      {
+        "absolute_residual": 0.0,
+        "metric_branch": "relative",
+        "metric_value": 0.0,
+        "row": "fs_shear[8]",
+        "row_scale": 23.862180000000002,
+        "signed_residual": 0.0,
+        "term_norm": 3.845086285340019e-05,
+        "term_norm_over_branch_boundary": 38450862.85340019
+      },
+      {
+        "absolute_residual": 2.465190328815662e-32,
+        "metric_branch": "absolute",
+        "metric_value": 2.465190328815662e-32,
+        "row": "fs_Euler[0]",
+        "row_scale": 4.93109,
+        "signed_residual": 2.465190328815662e-32,
+        "term_norm": 2.345619218157086e-16,
+        "term_norm_over_branch_boundary": 0.00023456192181570858
+      },
+      {
+        "absolute_residual": 0.0,
+        "metric_branch": "absolute",
+        "metric_value": 0.0,
+        "row": "fs_Euler[1]",
+        "row_scale": 5.93109,
+        "signed_residual": 0.0,
+        "term_norm": 1.212702460658964e-15,
+        "term_norm_over_branch_boundary": 0.001212702460658964
+      },
+      {
+        "absolute_residual": 0.0,
+        "metric_branch": "relative",
+        "metric_value": 0.0,
+        "row": "fs_Euler[2]",
+        "row_scale": 6.93109,
+        "signed_residual": 0.0,
+        "term_norm": 0.16165625861823887,
+        "term_norm_over_branch_boundary": 161656258618.2389
+      },
+      {
+        "absolute_residual": 0.0,
+        "metric_branch": "relative",
+        "metric_value": 0.0,
+        "row": "fs_Euler[3]",
+        "row_scale": 7.93109,
+        "signed_residual": 0.0,
+        "term_norm": 0.04166131773937786,
+        "term_norm_over_branch_boundary": 41661317739.37786
+      },
+      {
+        "absolute_residual": 0.0,
+        "metric_branch": "relative",
+        "metric_value": 0.0,
+        "row": "fs_Euler[4]",
+        "row_scale": 8.931090000000001,
+        "signed_residual": 0.0,
+        "term_norm": 0.005759978358463343,
+        "term_norm_over_branch_boundary": 5759978358.463343
+      },
+      {
+        "absolute_residual": 5.421010862427522e-20,
+        "metric_branch": "relative",
+        "metric_value": 3.451639402311206e-17,
+        "row": "fs_Euler[5]",
+        "row_scale": 9.931090000000001,
+        "signed_residual": -5.421010862427522e-20,
+        "term_norm": 0.0015705611828389814,
+        "term_norm_over_branch_boundary": 1570561182.8389814
+      },
+      {
+        "absolute_residual": 6.776263578034403e-21,
+        "metric_branch": "relative",
+        "metric_value": 3.0372379397487156e-17,
+        "row": "fs_Euler[6]",
+        "row_scale": 10.931090000000001,
+        "signed_residual": 6.776263578034403e-21,
+        "term_norm": 0.0002231061152421609,
+        "term_norm_over_branch_boundary": 223106115.24216092
+      },
+      {
+        "absolute_residual": 8.470329472543003e-22,
+        "metric_branch": "relative",
+        "metric_value": 5.4728337850966683e-17,
+        "row": "fs_Euler[7]",
+        "row_scale": 11.931090000000001,
+        "signed_residual": 8.470329472543003e-22,
+        "term_norm": 1.5477044991954546e-05,
+        "term_norm_over_branch_boundary": 15477044.991954546
+      },
+      {
+        "absolute_residual": 1.0587911840678754e-22,
+        "metric_branch": "relative",
+        "metric_value": 2.5809678945122847e-17,
+        "row": "fs_Euler[8]",
+        "row_scale": 12.931090000000001,
+        "signed_residual": -1.0587911840678754e-22,
+        "term_norm": 4.102302807869491e-06,
+        "term_norm_over_branch_boundary": 4102302.8078694916
+      },
+      {
+        "absolute_residual": 6.958205518995883e-33,
+        "metric_branch": "absolute",
+        "metric_value": 6.958205518995883e-33,
+        "row": "baryon_continuity[0]",
+        "row_scale": 3.93109,
+        "signed_residual": 6.958205518995883e-33,
+        "term_norm": 7.168923046585624e-17,
+        "term_norm_over_branch_boundary": 7.168923046585624e-05
+      },
+      {
+        "absolute_residual": 9.860761315262648e-32,
+        "metric_branch": "absolute",
+        "metric_value": 9.860761315262648e-32,
+        "row": "baryon_continuity[1]",
+        "row_scale": 4.93109,
+        "signed_residual": -9.860761315262648e-32,
+        "term_norm": 2.9175627381661e-15,
+        "term_norm_over_branch_boundary": 0.0029175627381661
+      },
+      {
+        "absolute_residual": 6.966549742863865e-17,
+        "metric_branch": "relative",
+        "metric_value": 9.303252430848985e-17,
+        "row": "baryon_continuity[2]",
+        "row_scale": 5.93109,
+        "signed_residual": -6.966549742863865e-17,
+        "term_norm": 0.7488294867462948,
+        "term_norm_over_branch_boundary": 748829486746.2948
+      },
+      {
+        "absolute_residual": 1.016660436842982e-17,
+        "metric_branch": "relative",
+        "metric_value": 4.1332604312263166e-17,
+        "row": "baryon_continuity[3]",
+        "row_scale": 6.93109,
+        "signed_residual": -1.016660436842982e-17,
+        "term_norm": 0.24597057305226327,
+        "term_norm_over_branch_boundary": 245970573052.26328
+      },
+      {
+        "absolute_residual": 6.938893903907228e-18,
+        "metric_branch": "relative",
+        "metric_value": 1.2490009027032917e-16,
+        "row": "baryon_continuity[4]",
+        "row_scale": 7.93109,
+        "signed_residual": 6.938893903907228e-18,
+        "term_norm": 0.05555555555555597,
+        "term_norm_over_branch_boundary": 55555555555.55597
+      },
+      {
+        "absolute_residual": 0.0,
+        "metric_branch": "relative",
+        "metric_value": 0.0,
+        "row": "baryon_continuity[5]",
+        "row_scale": 8.931090000000001,
+        "signed_residual": 0.0,
+        "term_norm": 0.02286207379255132,
+        "term_norm_over_branch_boundary": 22862073792.55132
+      },
+      {
+        "absolute_residual": 0.0,
+        "metric_branch": "relative",
+        "metric_value": 0.0,
+        "row": "baryon_continuity[6]",
+        "row_scale": 9.931090000000001,
+        "signed_residual": 0.0,
+        "term_norm": 0.005016295744456427,
+        "term_norm_over_branch_boundary": 5016295744.456427
+      },
+      {
+        "absolute_residual": 5.421010862427522e-20,
+        "metric_branch": "relative",
+        "metric_value": 6.403017788288495e-17,
+        "row": "baryon_continuity[7]",
+        "row_scale": 10.931090000000001,
+        "signed_residual": -5.421010862427522e-20,
+        "term_norm": 0.0008466337345404346,
+        "term_norm_over_branch_boundary": 846633734.5404346
+      },
+      {
+        "absolute_residual": 0.0,
+        "metric_branch": "relative",
+        "metric_value": 0.0,
+        "row": "baryon_continuity[8]",
+        "row_scale": 11.931090000000001,
+        "signed_residual": 0.0,
+        "term_norm": 0.00011840498035665447,
+        "term_norm_over_branch_boundary": 118404980.35665448
+      },
+      {
+        "absolute_residual": 9.414722334831832e-33,
+        "metric_branch": "absolute",
+        "metric_value": 9.414722334831832e-33,
+        "row": "cdm_continuity[0]",
+        "row_scale": 3.93109,
+        "signed_residual": 9.414722334831832e-33,
+        "term_norm": 7.168923046585624e-17,
+        "term_norm_over_branch_boundary": 7.168923046585624e-05
+      },
+      {
+        "absolute_residual": 4.930380657631324e-32,
+        "metric_branch": "absolute",
+        "metric_value": 4.930380657631324e-32,
+        "row": "cdm_continuity[1]",
+        "row_scale": 4.93109,
+        "signed_residual": -4.930380657631324e-32,
+        "term_norm": 2.9175627381661e-15,
+        "term_norm_over_branch_boundary": 0.0029175627381661
+      },
+      {
+        "absolute_residual": 3.4643469836690236e-17,
+        "metric_branch": "relative",
+        "metric_value": 4.626349582896099e-17,
+        "row": "cdm_continuity[2]",
+        "row_scale": 5.93109,
+        "signed_residual": -3.4643469836690236e-17,
+        "term_norm": 0.7488294867462953,
+        "term_norm_over_branch_boundary": 748829486746.2954
+      },
+      {
+        "absolute_residual": 7.396344634983754e-18,
+        "metric_branch": "relative",
+        "metric_value": 3.007003863593149e-17,
+        "row": "cdm_continuity[3]",
+        "row_scale": 6.93109,
+        "signed_residual": -7.396344634983754e-18,
+        "term_norm": 0.2459705730522629,
+        "term_norm_over_branch_boundary": 245970573052.26288
+      },
+      {
+        "absolute_residual": 2.4898980162070937e-18,
+        "metric_branch": "relative",
+        "metric_value": 6.555665389904513e-17,
+        "row": "cdm_continuity[4]",
+        "row_scale": 7.93109,
+        "signed_residual": -2.4898980162070937e-18,
+        "term_norm": 0.03798085881627586,
+        "term_norm_over_branch_boundary": 37980858816.275856
+      },
+      {
+        "absolute_residual": 9.511853261323834e-20,
+        "metric_branch": "relative",
+        "metric_value": 3.170096572523044e-17,
+        "row": "cdm_continuity[5]",
+        "row_scale": 8.931090000000001,
+        "signed_residual": -9.511853261323834e-20,
+        "term_norm": 0.0030004932164427586,
+        "term_norm_over_branch_boundary": 3000493216.4427586
+      },
+      {
+        "absolute_residual": 9.23870271342234e-22,
+        "metric_branch": "relative",
+        "metric_value": 2.209491839073243e-17,
+        "row": "cdm_continuity[6]",
+        "row_scale": 9.931090000000001,
+        "signed_residual": -9.23870271342234e-22,
+        "term_norm": 4.1813699195637004e-05,
+        "term_norm_over_branch_boundary": 41813699.195637
+      },
+      {
+        "absolute_residual": 7.634314829541851e-21,
+        "metric_branch": "relative",
+        "metric_value": 1.2609960465168055e-16,
+        "row": "cdm_continuity[7]",
+        "row_scale": 10.931090000000001,
+        "signed_residual": -7.634314829541851e-21,
+        "term_norm": 6.054194103645119e-05,
+        "term_norm_over_branch_boundary": 60541941.03645119
+      },
+      {
+        "absolute_residual": 5.95419690460532e-22,
+        "metric_branch": "relative",
+        "metric_value": 4.2355250351823975e-17,
+        "row": "cdm_continuity[8]",
+        "row_scale": 11.931090000000003,
+        "signed_residual": -5.95419690460532e-22,
+        "term_norm": 1.405775400958977e-05,
+        "term_norm_over_branch_boundary": 14057754.00958977
+      },
+      {
+        "absolute_residual": 0.0,
+        "metric_branch": "absolute",
+        "metric_value": 0.0,
+        "row": "cdm_Euler[0]",
+        "row_scale": 5.93109,
+        "signed_residual": 0.0,
+        "term_norm": 1.316339918339583e-15,
+        "term_norm_over_branch_boundary": 0.001316339918339583
+      },
+      {
+        "absolute_residual": 0.0,
+        "metric_branch": "absolute",
+        "metric_value": 0.0,
+        "row": "cdm_Euler[1]",
+        "row_scale": 6.93109,
+        "signed_residual": 0.0,
+        "term_norm": 1.1037614501599531e-15,
+        "term_norm_over_branch_boundary": 0.0011037614501599531
+      },
+      {
+        "absolute_residual": 9.860761315262648e-32,
+        "metric_branch": "absolute",
+        "metric_value": 9.860761315262648e-32,
+        "row": "cdm_Euler[2]",
+        "row_scale": 7.93109,
+        "signed_residual": 9.860761315262648e-32,
+        "term_norm": 9.257550568023322e-16,
+        "term_norm_over_branch_boundary": 0.0009257550568023322
+      },
+      {
+        "absolute_residual": 0.0,
+        "metric_branch": "absolute",
+        "metric_value": 0.0,
+        "row": "cdm_Euler[3]",
+        "row_scale": 8.93109,
+        "signed_residual": 0.0,
+        "term_norm": 2.929289709008414e-16,
+        "term_norm_over_branch_boundary": 0.0002929289709008414
+      },
+      {
+        "absolute_residual": 0.0,
+        "metric_branch": "absolute",
+        "metric_value": 0.0,
+        "row": "cdm_Euler[4]",
+        "row_scale": 9.93109,
+        "signed_residual": 0.0,
+        "term_norm": 4.974013901642512e-16,
+        "term_norm_over_branch_boundary": 0.0004974013901642512
+      },
+      {
+        "absolute_residual": 7.395570986446986e-32,
+        "metric_branch": "absolute",
+        "metric_value": 7.395570986446986e-32,
+        "row": "cdm_Euler[5]",
+        "row_scale": 10.931090000000001,
+        "signed_residual": -7.395570986446986e-32,
+        "term_norm": 3.437532380087946e-16,
+        "term_norm_over_branch_boundary": 0.0003437532380087946
+      },
+      {
+        "absolute_residual": 0.0,
+        "metric_branch": "absolute",
+        "metric_value": 0.0,
+        "row": "cdm_Euler[6]",
+        "row_scale": 11.931090000000001,
+        "signed_residual": 0.0,
+        "term_norm": 2.7244411929668795e-16,
+        "term_norm_over_branch_boundary": 0.000272444119296688
+      },
+      {
+        "absolute_residual": 1.232595164407831e-32,
+        "metric_branch": "absolute",
+        "metric_value": 1.232595164407831e-32,
+        "row": "cdm_Euler[7]",
+        "row_scale": 12.931090000000001,
+        "signed_residual": 1.232595164407831e-32,
+        "term_norm": 8.494014858179839e-17,
+        "term_norm_over_branch_boundary": 8.494014858179839e-05
+      },
+      {
+        "absolute_residual": 0.0,
+        "metric_branch": "absolute",
+        "metric_value": 0.0,
+        "row": "cdm_Euler[8]",
+        "row_scale": 13.931090000000001,
+        "signed_residual": 0.0,
+        "term_norm": 5.850706812554371e-17,
+        "term_norm_over_branch_boundary": 5.850706812554371e-05
+      },
+      {
+        "absolute_residual": 0.0,
+        "metric_branch": "absolute",
+        "metric_value": 0.0,
+        "row": "tight_coupling[0]",
+        "row_scale": 1.0,
+        "signed_residual": 0.0,
+        "term_norm": 1.4105481326571835e-16,
+        "term_norm_over_branch_boundary": 0.00014105481326571835
+      },
+      {
+        "absolute_residual": 0.0,
+        "metric_branch": "absolute",
+        "metric_value": 0.0,
+        "row": "tight_coupling[1]",
+        "row_scale": 1.0,
+        "signed_residual": 0.0,
+        "term_norm": 5.583158223218384e-16,
+        "term_norm_over_branch_boundary": 0.0005583158223218383
+      },
+      {
+        "absolute_residual": 0.0,
+        "metric_branch": "relative",
+        "metric_value": 0.0,
+        "row": "tight_coupling[2]",
+        "row_scale": 1.0,
+        "signed_residual": 0.0,
+        "term_norm": 0.009682742577052388,
+        "term_norm_over_branch_boundary": 9682742577.052387
+      },
+      {
+        "absolute_residual": 0.0,
+        "metric_branch": "relative",
+        "metric_value": 0.0,
+        "row": "tight_coupling[3]",
+        "row_scale": 1.0,
+        "signed_residual": 0.0,
+        "term_norm": 0.002322554084007478,
+        "term_norm_over_branch_boundary": 2322554084.007478
+      },
+      {
+        "absolute_residual": 0.0,
+        "metric_branch": "relative",
+        "metric_value": 0.0,
+        "row": "tight_coupling[4]",
+        "row_scale": 1.0,
+        "signed_residual": 0.0,
+        "term_norm": 0.0004657302159308228,
+        "term_norm_over_branch_boundary": 465730215.9308228
+      },
+      {
+        "absolute_residual": 0.0,
+        "metric_branch": "relative",
+        "metric_value": 0.0,
+        "row": "tight_coupling[5]",
+        "row_scale": 1.0,
+        "signed_residual": 0.0,
+        "term_norm": 9.160220329718037e-05,
+        "term_norm_over_branch_boundary": 91602203.29718037
+      },
+      {
+        "absolute_residual": 0.0,
+        "metric_branch": "relative",
+        "metric_value": 0.0,
+        "row": "tight_coupling[6]",
+        "row_scale": 1.0,
+        "signed_residual": 0.0,
+        "term_norm": 1.4034496994570064e-05,
+        "term_norm_over_branch_boundary": 14034496.994570065
+      },
+      {
+        "absolute_residual": 0.0,
+        "metric_branch": "relative",
+        "metric_value": 0.0,
+        "row": "tight_coupling[7]",
+        "row_scale": 1.0,
+        "signed_residual": 0.0,
+        "term_norm": 1.5705191581743258e-06,
+        "term_norm_over_branch_boundary": 1570519.158174326
+      },
+      {
+        "absolute_residual": 0.0,
+        "metric_branch": "relative",
+        "metric_value": 0.0,
+        "row": "tight_coupling[8]",
+        "row_scale": 1.0,
+        "signed_residual": 0.0,
+        "term_norm": 1.1981445670931408e-07,
+        "term_norm_over_branch_boundary": 119814.45670931408
+      },
+      {
+        "absolute_residual": 3.8903784876622164e-32,
+        "metric_branch": "absolute",
+        "metric_value": 3.8903784876622164e-32,
+        "row": "fuel_continuity[0]",
+        "row_scale": 9.86218,
+        "signed_residual": 3.8903784876622164e-32,
+        "term_norm": 1.646701623800679e-18,
+        "term_norm_over_branch_boundary": 1.646701623800679e-06
+      },
+      {
+        "absolute_residual": 0.0,
+        "metric_branch": "absolute",
+        "metric_value": 0.0,
+        "row": "fuel_continuity[1]",
+        "row_scale": 10.86218,
+        "signed_residual": 0.0,
+        "term_norm": 8.170643910342371e-17,
+        "term_norm_over_branch_boundary": 8.170643910342371e-05
+      },
+      {
+        "absolute_residual": 1.7479170305799102e-18,
+        "metric_branch": "relative",
+        "metric_value": 9.686639034955111e-17,
+        "row": "fuel_continuity[2]",
+        "row_scale": 11.86218,
+        "signed_residual": -1.7479170305799102e-18,
+        "term_norm": 0.018044618203201274,
+        "term_norm_over_branch_boundary": 18044618203.201275
+      },
+      {
+        "absolute_residual": 2.977474415138697e-19,
+        "metric_branch": "relative",
+        "metric_value": 5.0855672378924024e-17,
+        "row": "fuel_continuity[3]",
+        "row_scale": 12.86218,
+        "signed_residual": 2.977474415138697e-19,
+        "term_norm": 0.005854753807900972,
+        "term_norm_over_branch_boundary": 5854753807.900971
+      },
+      {
+        "absolute_residual": 1.0842021724855044e-19,
+        "metric_branch": "relative",
+        "metric_value": 1.035525689908908e-16,
+        "row": "fuel_continuity[4]",
+        "row_scale": 13.86218,
+        "signed_residual": 1.0842021724855044e-19,
+        "term_norm": 0.001047006542716365,
+        "term_norm_over_branch_boundary": 1047006542.716365
+      },
+      {
+        "absolute_residual": 0.0,
+        "metric_branch": "relative",
+        "metric_value": 0.0,
+        "row": "fuel_continuity[5]",
+        "row_scale": 14.862180000000004,
+        "signed_residual": 0.0,
+        "term_norm": 0.000374249283100384,
+        "term_norm_over_branch_boundary": 374249283.100384
+      },
+      {
+        "absolute_residual": 0.0,
+        "metric_branch": "relative",
+        "metric_value": 0.0,
+        "row": "fuel_continuity[6]",
+        "row_scale": 15.862180000000002,
+        "signed_residual": 0.0,
+        "term_norm": 7.701790751659301e-05,
+        "term_norm_over_branch_boundary": 77017907.51659301
+      },
+      {
+        "absolute_residual": 8.470329472543003e-22,
+        "metric_branch": "relative",
+        "metric_value": 7.490161768094141e-17,
+        "row": "fuel_continuity[7]",
+        "row_scale": 16.862180000000002,
+        "signed_residual": -8.470329472543003e-22,
+        "term_norm": 1.1308606856295261e-05,
+        "term_norm_over_branch_boundary": 11308606.856295262
+      },
+      {
+        "absolute_residual": 5.293955920339377e-23,
+        "metric_branch": "relative",
+        "metric_value": 4.21742678427137e-17,
+        "row": "fuel_continuity[8]",
+        "row_scale": 17.862180000000002,
+        "signed_residual": -5.293955920339377e-23,
+        "term_norm": 1.2552573384516965e-06,
+        "term_norm_over_branch_boundary": 1255257.3384516966
+      },
+      {
+        "absolute_residual": 8.127424365314135e-32,
+        "metric_branch": "absolute",
+        "metric_value": 8.127424365314135e-32,
+        "row": "fuel_Euler[0]",
+        "row_scale": 43.535045711798,
+        "signed_residual": -8.127424365314135e-32,
+        "term_norm": 5.359829278546839e-18,
+        "term_norm_over_branch_boundary": 5.359829278546839e-06
+      },
+      {
+        "absolute_residual": 0.0,
+        "metric_branch": "absolute",
+        "metric_value": 0.0,
+        "row": "fuel_Euler[1]",
+        "row_scale": 43.535045711798,
+        "signed_residual": 0.0,
+        "term_norm": 4.688517224348285e-16,
+        "term_norm_over_branch_boundary": 0.0004688517224348285
+      },
+      {
+        "absolute_residual": 0.0,
+        "metric_branch": "relative",
+        "metric_value": 0.0,
+        "row": "fuel_Euler[2]",
+        "row_scale": 43.535045711798,
+        "signed_residual": 0.0,
+        "term_norm": 0.07640792618358644,
+        "term_norm_over_branch_boundary": 76407926183.58644
+      },
+      {
+        "absolute_residual": 0.0,
+        "metric_branch": "relative",
+        "metric_value": 0.0,
+        "row": "fuel_Euler[3]",
+        "row_scale": 43.535045711798,
+        "signed_residual": 0.0,
+        "term_norm": 0.022953314020768147,
+        "term_norm_over_branch_boundary": 22953314020.768147
+      },
+      {
+        "absolute_residual": 2.168404344971009e-19,
+        "metric_branch": "relative",
+        "metric_value": 8.012604658609323e-17,
+        "row": "fuel_Euler[4]",
+        "row_scale": 43.53504571179799,
+        "signed_residual": -2.168404344971009e-19,
+        "term_norm": 0.0027062415248967986,
+        "term_norm_over_branch_boundary": 2706241524.8967986
+      },
+      {
+        "absolute_residual": 7.453889935837843e-20,
+        "metric_branch": "relative",
+        "metric_value": 9.326354741433488e-17,
+        "row": "fuel_Euler[5]",
+        "row_scale": 43.535045711798,
+        "signed_residual": -7.453889935837843e-20,
+        "term_norm": 0.0007992286528329244,
+        "term_norm_over_branch_boundary": 799228652.8329244
+      },
+      {
+        "absolute_residual": 1.6940658945086007e-21,
+        "metric_branch": "relative",
+        "metric_value": 1.0148554185362658e-17,
+        "row": "fuel_Euler[6]",
+        "row_scale": 43.535045711798,
+        "signed_residual": 1.6940658945086007e-21,
+        "term_norm": 0.00016692682165031603,
+        "term_norm_over_branch_boundary": 166926821.65031603
+      },
+      {
+        "absolute_residual": 8.470329472543003e-22,
+        "metric_branch": "relative",
+        "metric_value": 4.6608295716224466e-17,
+        "row": "fuel_Euler[7]",
+        "row_scale": 43.535045711798,
+        "signed_residual": 8.470329472543003e-22,
+        "term_norm": 1.8173437458676397e-05,
+        "term_norm_over_branch_boundary": 18173437.458676398
+      },
+      {
+        "absolute_residual": 0.0,
+        "metric_branch": "relative",
+        "metric_value": 0.0,
+        "row": "fuel_Euler[8]",
+        "row_scale": 43.535045711798,
+        "signed_residual": 0.0,
+        "term_norm": 1.1240678157988942e-06,
+        "term_norm_over_branch_boundary": 1124067.8157988943
+      },
+      {
+        "absolute_residual": 4.930380657631324e-32,
+        "metric_branch": "absolute",
+        "metric_value": 4.930380657631324e-32,
+        "row": "Einstein_trace[0]",
+        "row_scale": 19.384558588100003,
+        "signed_residual": 4.930380657631324e-32,
+        "term_norm": 7.070120949157582e-16,
+        "term_norm_over_branch_boundary": 0.0007070120949157582
+      },
+      {
+        "absolute_residual": 0.0,
+        "metric_branch": "absolute",
+        "metric_value": 0.0,
+        "row": "Einstein_trace[1]",
+        "row_scale": 29.2467385881,
+        "signed_residual": 0.0,
+        "term_norm": 3.4631683688862947e-14,
+        "term_norm_over_branch_boundary": 0.03463168368886295
+      },
+      {
+        "absolute_residual": 0.0,
+        "metric_branch": "relative",
+        "metric_value": 0.0,
+        "row": "Einstein_trace[2]",
+        "row_scale": 41.108918588099996,
+        "signed_residual": 0.0,
+        "term_norm": 10.38040913458475,
+        "term_norm_over_branch_boundary": 10380409134584.75
+      },
+      {
+        "absolute_residual": 0.0,
+        "metric_branch": "relative",
+        "metric_value": 0.0,
+        "row": "Einstein_trace[3]",
+        "row_scale": 54.971098588100006,
+        "signed_residual": 0.0,
+        "term_norm": 3.901629504458141,
+        "term_norm_over_branch_boundary": 3901629504458.141
+      },
+      {
+        "absolute_residual": 5.551115123125783e-17,
+        "metric_branch": "relative",
+        "metric_value": 7.672211902547219e-17,
+        "row": "Einstein_trace[4]",
+        "row_scale": 70.8332785881,
+        "signed_residual": -5.551115123125783e-17,
+        "term_norm": 0.7235351673854029,
+        "term_norm_over_branch_boundary": 723535167385.403
+      },
+      {
+        "absolute_residual": 0.0,
+        "metric_branch": "relative",
+        "metric_value": 0.0,
+        "row": "Einstein_trace[5]",
+        "row_scale": 88.69545858810001,
+        "signed_residual": 0.0,
+        "term_norm": 0.08715667473216201,
+        "term_norm_over_branch_boundary": 87156674732.16202
+      },
+      {
+        "absolute_residual": 0.0,
+        "metric_branch": "relative",
+        "metric_value": 0.0,
+        "row": "Einstein_trace[6]",
+        "row_scale": 108.5576385881,
+        "signed_residual": 0.0,
+        "term_norm": 0.00767754767789947,
+        "term_norm_over_branch_boundary": 7677547677.89947
+      },
+      {
+        "absolute_residual": 1.0842021724855044e-19,
+        "metric_branch": "relative",
+        "metric_value": 5.284424583494595e-17,
+        "row": "Einstein_trace[7]",
+        "row_scale": 130.41981858810004,
+        "signed_residual": -1.0842021724855044e-19,
+        "term_norm": 0.002051693907926907,
+        "term_norm_over_branch_boundary": 2051693907.926907
+      },
+      {
+        "absolute_residual": 4.0657581468206416e-20,
+        "metric_branch": "relative",
+        "metric_value": 8.704667331549054e-17,
+        "row": "Einstein_trace[8]",
+        "row_scale": 154.2819985881,
+        "signed_residual": -4.0657581468206416e-20,
+        "term_norm": 0.00046707794703248156,
+        "term_norm_over_branch_boundary": 467077947.03248155
+      },
+      {
+        "absolute_residual": 1.67632942359465e-30,
+        "metric_branch": "absolute",
+        "metric_value": 1.67632942359465e-30,
+        "row": "Einstein_traceless[0]",
+        "row_scale": 116.30735152860001,
+        "signed_residual": -1.67632942359465e-30,
+        "term_norm": 2.346038853865402e-15,
+        "term_norm_over_branch_boundary": 0.002346038853865402
+      },
+      {
+        "absolute_residual": 4.733165431326071e-30,
+        "metric_branch": "absolute",
+        "metric_value": 4.733165431326071e-30,
+        "row": "Einstein_traceless[1]",
+        "row_scale": 175.4804315286,
+        "signed_residual": -4.733165431326071e-30,
+        "term_norm": 3.4628674187679575e-14,
+        "term_norm_over_branch_boundary": 0.03462867418767958
+      },
+      {
+        "absolute_residual": 4.440892098500626e-16,
+        "metric_branch": "relative",
+        "metric_value": 4.239603881603916e-17,
+        "row": "Einstein_traceless[2]",
+        "row_scale": 246.6535115286,
+        "signed_residual": 4.440892098500626e-16,
+        "term_norm": 10.474780716590342,
+        "term_norm_over_branch_boundary": 10474780716590.342
+      },
+      {
+        "absolute_residual": 0.0,
+        "metric_branch": "relative",
+        "metric_value": 0.0,
+        "row": "Einstein_traceless[3]",
+        "row_scale": 329.82659152860003,
+        "signed_residual": 0.0,
+        "term_norm": 3.99161544191573,
+        "term_norm_over_branch_boundary": 3991615441915.7305
+      },
+      {
+        "absolute_residual": 8.326672684688674e-17,
+        "metric_branch": "relative",
+        "metric_value": 1.111454515279479e-16,
+        "row": "Einstein_traceless[4]",
+        "row_scale": 424.99967152860006,
+        "signed_residual": -8.326672684688674e-17,
+        "term_norm": 0.7491690006401122,
+        "term_norm_over_branch_boundary": 749169000640.1122
+      },
+      {
+        "absolute_residual": 3.469446951953614e-18,
+        "metric_branch": "relative",
+        "metric_value": 4.027227060711737e-17,
+        "row": "Einstein_traceless[5]",
+        "row_scale": 532.1727515286002,
+        "signed_residual": -3.469446951953614e-18,
+        "term_norm": 0.08614977252711582,
+        "term_norm_over_branch_boundary": 86149772527.11583
+      },
+      {
+        "absolute_residual": 0.0,
+        "metric_branch": "relative",
+        "metric_value": 0.0,
+        "row": "Einstein_traceless[6]",
+        "row_scale": 651.3458315286001,
+        "signed_residual": 0.0,
+        "term_norm": 0.006624449542930546,
+        "term_norm_over_branch_boundary": 6624449542.930546
+      },
+      {
+        "absolute_residual": 1.3552527156068805e-19,
+        "metric_branch": "relative",
+        "metric_value": 6.360444277619153e-17,
+        "row": "Einstein_traceless[7]",
+        "row_scale": 782.5189115286001,
+        "signed_residual": -1.3552527156068805e-19,
+        "term_norm": 0.002130751652641126,
+        "term_norm_over_branch_boundary": 2130751652.6411262
+      },
+      {
+        "absolute_residual": 0.0,
+        "metric_branch": "relative",
+        "metric_value": 0.0,
+        "row": "Einstein_traceless[8]",
+        "row_scale": 925.6919915286003,
+        "signed_residual": 0.0,
+        "term_norm": 0.0004789488356619627,
+        "term_norm_over_branch_boundary": 478948835.6619627
+      }
+    ],
+    "worst_original_row_contributions": {
+      "original": {
+        "affine_contributions": [
+          {
+            "column": "h[0]",
+            "value": -0.0
+          },
+          {
+            "column": "h[1]",
+            "value": 0.0
+          },
+          {
+            "column": "h[2]",
+            "value": -0.0
+          },
+          {
+            "column": "h[3]",
+            "value": 0.0
+          },
+          {
+            "column": "h[4]",
+            "value": -0.0
+          },
+          {
+            "column": "h[5]",
+            "value": 0.0
+          },
+          {
+            "column": "h[6]",
+            "value": 0.0
+          },
+          {
+            "column": "h[7]",
+            "value": -0.0
+          },
+          {
+            "column": "h[8]",
+            "value": 0.0
+          },
+          {
+            "column": "eta[0]",
+            "value": 0.0
+          },
+          {
+            "column": "eta[1]",
+            "value": -0.0
+          },
+          {
+            "column": "eta[2]",
+            "value": 0.0
+          },
+          {
+            "column": "eta[3]",
+            "value": -0.0
+          },
+          {
+            "column": "eta[4]",
+            "value": 0.0
+          },
+          {
+            "column": "eta[5]",
+            "value": -0.0
+          },
+          {
+            "column": "eta[6]",
+            "value": -0.0
+          },
+          {
+            "column": "eta[7]",
+            "value": 0.0
+          },
+          {
+            "column": "eta[8]",
+            "value": -0.0
+          },
+          {
+            "column": "delta_gamma[0]",
+            "value": -0.0
+          },
+          {
+            "column": "delta_gamma[1]",
+            "value": -0.0
+          },
+          {
+            "column": "delta_gamma[2]",
+            "value": 0.0
+          },
+          {
+            "column": "delta_gamma[3]",
+            "value": -0.0
+          },
+          {
+            "column": "delta_gamma[4]",
+            "value": -0.0
+          },
+          {
+            "column": "delta_gamma[5]",
+            "value": 0.0
+          },
+          {
+            "column": "delta_gamma[6]",
+            "value": -0.0
+          },
+          {
+            "column": "delta_gamma[7]",
+            "value": 0.0
+          },
+          {
+            "column": "delta_gamma[8]",
+            "value": -0.0
+          },
+          {
+            "column": "delta_fs[0]",
+            "value": 0.0
+          },
+          {
+            "column": "delta_fs[1]",
+            "value": -0.0
+          },
+          {
+            "column": "delta_fs[2]",
+            "value": 0.0
+          },
+          {
+            "column": "delta_fs[3]",
+            "value": -0.0
+          },
+          {
+            "column": "delta_fs[4]",
+            "value": -0.0
+          },
+          {
+            "column": "delta_fs[5]",
+            "value": 0.0
+          },
+          {
+            "column": "delta_fs[6]",
+            "value": -0.0
+          },
+          {
+            "column": "delta_fs[7]",
+            "value": 0.0
+          },
+          {
+            "column": "delta_fs[8]",
+            "value": 0.0
+          },
+          {
+            "column": "delta_b[0]",
+            "value": 0.0
+          },
+          {
+            "column": "delta_b[1]",
+            "value": -0.0
+          },
+          {
+            "column": "delta_b[2]",
+            "value": 0.0
+          },
+          {
+            "column": "delta_b[3]",
+            "value": -0.0
+          },
+          {
+            "column": "delta_b[4]",
+            "value": -0.0
+          },
+          {
+            "column": "delta_b[5]",
+            "value": 0.0
+          },
+          {
+            "column": "delta_b[6]",
+            "value": -0.0
+          },
+          {
+            "column": "delta_b[7]",
+            "value": 0.0
+          },
+          {
+            "column": "delta_b[8]",
+            "value": -0.0
+          },
+          {
+            "column": "delta_c[0]",
+            "value": 0.0
+          },
+          {
+            "column": "delta_c[1]",
+            "value": -0.0
+          },
+          {
+            "column": "delta_c[2]",
+            "value": 0.0
+          },
+          {
+            "column": "delta_c[3]",
+            "value": -0.0
+          },
+          {
+            "column": "delta_c[4]",
+            "value": 0.0
+          },
+          {
+            "column": "delta_c[5]",
+            "value": -0.0
+          },
+          {
+            "column": "delta_c[6]",
+            "value": -0.0
+          },
+          {
+            "column": "delta_c[7]",
+            "value": 0.0
+          },
+          {
+            "column": "delta_c[8]",
+            "value": -0.0
+          },
+          {
+            "column": "U_gamma[0]",
+            "value": -0.0
+          },
+          {
+            "column": "U_gamma[1]",
+            "value": 0.0
+          },
+          {
+            "column": "U_gamma[2]",
+            "value": -0.0
+          },
+          {
+            "column": "U_gamma[3]",
+            "value": 0.0
+          },
+          {
+            "column": "U_gamma[4]",
+            "value": -0.0
+          },
+          {
+            "column": "U_gamma[5]",
+            "value": 0.0
+          },
+          {
+            "column": "U_gamma[6]",
+            "value": -0.0
+          },
+          {
+            "column": "U_gamma[7]",
+            "value": 0.0
+          },
+          {
+            "column": "U_gamma[8]",
+            "value": -0.0
+          },
+          {
+            "column": "U_fs[0]",
+            "value": -0.0
+          },
+          {
+            "column": "U_fs[1]",
+            "value": 0.0
+          },
+          {
+            "column": "U_fs[2]",
+            "value": -0.0
+          },
+          {
+            "column": "U_fs[3]",
+            "value": 0.0
+          },
+          {
+            "column": "U_fs[4]",
+            "value": -0.0
+          },
+          {
+            "column": "U_fs[5]",
+            "value": 0.0
+          },
+          {
+            "column": "U_fs[6]",
+            "value": -0.0
+          },
+          {
+            "column": "U_fs[7]",
+            "value": -0.0
+          },
+          {
+            "column": "U_fs[8]",
+            "value": 0.0
+          },
+          {
+            "column": "sigma_fs[0]",
+            "value": 0.0
+          },
+          {
+            "column": "sigma_fs[1]",
+            "value": -0.0
+          },
+          {
+            "column": "sigma_fs[2]",
+            "value": -0.0
+          },
+          {
+            "column": "sigma_fs[3]",
+            "value": 0.0
+          },
+          {
+            "column": "sigma_fs[4]",
+            "value": 0.0
+          },
+          {
+            "column": "sigma_fs[5]",
+            "value": -0.0
+          },
+          {
+            "column": "sigma_fs[6]",
+            "value": 0.0
+          },
+          {
+            "column": "sigma_fs[7]",
+            "value": -0.0
+          },
+          {
+            "column": "sigma_fs[8]",
+            "value": -0.0
+          },
+          {
+            "column": "U_b[0]",
+            "value": -0.0
+          },
+          {
+            "column": "U_b[1]",
+            "value": 0.0
+          },
+          {
+            "column": "U_b[2]",
+            "value": -0.0
+          },
+          {
+            "column": "U_b[3]",
+            "value": 0.0
+          },
+          {
+            "column": "U_b[4]",
+            "value": -0.0
+          },
+          {
+            "column": "U_b[5]",
+            "value": 0.0
+          },
+          {
+            "column": "U_b[6]",
+            "value": -0.0
+          },
+          {
+            "column": "U_b[7]",
+            "value": 0.0
+          },
+          {
+            "column": "U_b[8]",
+            "value": -0.0
+          },
+          {
+            "column": "U_c[0]",
+            "value": 4.421190280126628e-28
+          },
+          {
+            "column": "U_c[1]",
+            "value": -2.188097019490858e-27
+          },
+          {
+            "column": "U_c[2]",
+            "value": 1.412402094338991e-26
+          },
+          {
+            "column": "U_c[3]",
+            "value": -2.1234538822374145e-26
+          },
+          {
+            "column": "U_c[4]",
+            "value": 1.0970183064610732e-25
+          },
+          {
+            "column": "U_c[5]",
+            "value": 3.0666351622528e-24
+          },
+          {
+            "column": "U_c[6]",
+            "value": 1.527218984176827e-24
+          },
+          {
+            "column": "U_c[7]",
+            "value": 0.0
+          },
+          {
+            "column": "U_c[8]",
+            "value": 0.0
+          },
+          {
+            "column": "delta_f[0]",
+            "value": -0.0
+          },
+          {
+            "column": "delta_f[1]",
+            "value": -0.0
+          },
+          {
+            "column": "delta_f[2]",
+            "value": 0.0
+          },
+          {
+            "column": "delta_f[3]",
+            "value": -0.0
+          },
+          {
+            "column": "delta_f[4]",
+            "value": 0.0
+          },
+          {
+            "column": "delta_f[5]",
+            "value": 0.0
+          },
+          {
+            "column": "delta_f[6]",
+            "value": -0.0
+          },
+          {
+            "column": "delta_f[7]",
+            "value": 0.0
+          },
+          {
+            "column": "delta_f[8]",
+            "value": 3.738078527206484e-07
+          },
+          {
+            "column": "U_f[0]",
+            "value": 7.982548673089533e-23
+          },
+          {
+            "column": "U_f[1]",
+            "value": -6.853145815173831e-23
+          },
+          {
+            "column": "U_f[2]",
+            "value": -8.41180929487772e-09
+          },
+          {
+            "column": "U_f[3]",
+            "value": -1.2819889268728281e-08
+          },
+          {
+            "column": "U_f[4]",
+            "value": -4.9985470652446025e-08
+          },
+          {
+            "column": "U_f[5]",
+            "value": -9.71957649019832e-08
+          },
+          {
+            "column": "U_f[6]",
+            "value": -9.327353634076755e-08
+          },
+          {
+            "column": "U_f[7]",
+            "value": -4.2456713930820916e-08
+          },
+          {
+            "column": "U_f[8]",
+            "value": 1.8822605500357823e-07
+          }
+        ],
+        "constant": -2.578907235097024e-07,
+        "sum": -1.7509944494979702e-16,
+        "sum_absolute_terms": 1.1240678156235528e-06
+      },
+      "refined": {
+        "affine_contributions": [
+          {
+            "column": "h[0]",
+            "value": 0.0
+          },
+          {
+            "column": "h[1]",
+            "value": 0.0
+          },
+          {
+            "column": "h[2]",
+            "value": -0.0
+          },
+          {
+            "column": "h[3]",
+            "value": 0.0
+          },
+          {
+            "column": "h[4]",
+            "value": -0.0
+          },
+          {
+            "column": "h[5]",
+            "value": 0.0
+          },
+          {
+            "column": "h[6]",
+            "value": 0.0
+          },
+          {
+            "column": "h[7]",
+            "value": -0.0
+          },
+          {
+            "column": "h[8]",
+            "value": 0.0
+          },
+          {
+            "column": "eta[0]",
+            "value": -0.0
+          },
+          {
+            "column": "eta[1]",
+            "value": -0.0
+          },
+          {
+            "column": "eta[2]",
+            "value": 0.0
+          },
+          {
+            "column": "eta[3]",
+            "value": -0.0
+          },
+          {
+            "column": "eta[4]",
+            "value": 0.0
+          },
+          {
+            "column": "eta[5]",
+            "value": -0.0
+          },
+          {
+            "column": "eta[6]",
+            "value": -0.0
+          },
+          {
+            "column": "eta[7]",
+            "value": 0.0
+          },
+          {
+            "column": "eta[8]",
+            "value": -0.0
+          },
+          {
+            "column": "delta_gamma[0]",
+            "value": -0.0
+          },
+          {
+            "column": "delta_gamma[1]",
+            "value": -0.0
+          },
+          {
+            "column": "delta_gamma[2]",
+            "value": 0.0
+          },
+          {
+            "column": "delta_gamma[3]",
+            "value": -0.0
+          },
+          {
+            "column": "delta_gamma[4]",
+            "value": -0.0
+          },
+          {
+            "column": "delta_gamma[5]",
+            "value": 0.0
+          },
+          {
+            "column": "delta_gamma[6]",
+            "value": -0.0
+          },
+          {
+            "column": "delta_gamma[7]",
+            "value": 0.0
+          },
+          {
+            "column": "delta_gamma[8]",
+            "value": -0.0
+          },
+          {
+            "column": "delta_fs[0]",
+            "value": -0.0
+          },
+          {
+            "column": "delta_fs[1]",
+            "value": -0.0
+          },
+          {
+            "column": "delta_fs[2]",
+            "value": 0.0
+          },
+          {
+            "column": "delta_fs[3]",
+            "value": -0.0
+          },
+          {
+            "column": "delta_fs[4]",
+            "value": -0.0
+          },
+          {
+            "column": "delta_fs[5]",
+            "value": 0.0
+          },
+          {
+            "column": "delta_fs[6]",
+            "value": -0.0
+          },
+          {
+            "column": "delta_fs[7]",
+            "value": 0.0
+          },
+          {
+            "column": "delta_fs[8]",
+            "value": 0.0
+          },
+          {
+            "column": "delta_b[0]",
+            "value": -0.0
+          },
+          {
+            "column": "delta_b[1]",
+            "value": -0.0
+          },
+          {
+            "column": "delta_b[2]",
+            "value": 0.0
+          },
+          {
+            "column": "delta_b[3]",
+            "value": -0.0
+          },
+          {
+            "column": "delta_b[4]",
+            "value": -0.0
+          },
+          {
+            "column": "delta_b[5]",
+            "value": 0.0
+          },
+          {
+            "column": "delta_b[6]",
+            "value": -0.0
+          },
+          {
+            "column": "delta_b[7]",
+            "value": 0.0
+          },
+          {
+            "column": "delta_b[8]",
+            "value": -0.0
+          },
+          {
+            "column": "delta_c[0]",
+            "value": -0.0
+          },
+          {
+            "column": "delta_c[1]",
+            "value": -0.0
+          },
+          {
+            "column": "delta_c[2]",
+            "value": 0.0
+          },
+          {
+            "column": "delta_c[3]",
+            "value": -0.0
+          },
+          {
+            "column": "delta_c[4]",
+            "value": 0.0
+          },
+          {
+            "column": "delta_c[5]",
+            "value": -0.0
+          },
+          {
+            "column": "delta_c[6]",
+            "value": -0.0
+          },
+          {
+            "column": "delta_c[7]",
+            "value": 0.0
+          },
+          {
+            "column": "delta_c[8]",
+            "value": -0.0
+          },
+          {
+            "column": "U_gamma[0]",
+            "value": -0.0
+          },
+          {
+            "column": "U_gamma[1]",
+            "value": 0.0
+          },
+          {
+            "column": "U_gamma[2]",
+            "value": -0.0
+          },
+          {
+            "column": "U_gamma[3]",
+            "value": 0.0
+          },
+          {
+            "column": "U_gamma[4]",
+            "value": -0.0
+          },
+          {
+            "column": "U_gamma[5]",
+            "value": 0.0
+          },
+          {
+            "column": "U_gamma[6]",
+            "value": -0.0
+          },
+          {
+            "column": "U_gamma[7]",
+            "value": 0.0
+          },
+          {
+            "column": "U_gamma[8]",
+            "value": -0.0
+          },
+          {
+            "column": "U_fs[0]",
+            "value": -0.0
+          },
+          {
+            "column": "U_fs[1]",
+            "value": 0.0
+          },
+          {
+            "column": "U_fs[2]",
+            "value": -0.0
+          },
+          {
+            "column": "U_fs[3]",
+            "value": 0.0
+          },
+          {
+            "column": "U_fs[4]",
+            "value": -0.0
+          },
+          {
+            "column": "U_fs[5]",
+            "value": 0.0
+          },
+          {
+            "column": "U_fs[6]",
+            "value": -0.0
+          },
+          {
+            "column": "U_fs[7]",
+            "value": -0.0
+          },
+          {
+            "column": "U_fs[8]",
+            "value": 0.0
+          },
+          {
+            "column": "sigma_fs[0]",
+            "value": -0.0
+          },
+          {
+            "column": "sigma_fs[1]",
+            "value": -0.0
+          },
+          {
+            "column": "sigma_fs[2]",
+            "value": -0.0
+          },
+          {
+            "column": "sigma_fs[3]",
+            "value": 0.0
+          },
+          {
+            "column": "sigma_fs[4]",
+            "value": 0.0
+          },
+          {
+            "column": "sigma_fs[5]",
+            "value": -0.0
+          },
+          {
+            "column": "sigma_fs[6]",
+            "value": 0.0
+          },
+          {
+            "column": "sigma_fs[7]",
+            "value": -0.0
+          },
+          {
+            "column": "sigma_fs[8]",
+            "value": -0.0
+          },
+          {
+            "column": "U_b[0]",
+            "value": -0.0
+          },
+          {
+            "column": "U_b[1]",
+            "value": 0.0
+          },
+          {
+            "column": "U_b[2]",
+            "value": -0.0
+          },
+          {
+            "column": "U_b[3]",
+            "value": 0.0
+          },
+          {
+            "column": "U_b[4]",
+            "value": -0.0
+          },
+          {
+            "column": "U_b[5]",
+            "value": 0.0
+          },
+          {
+            "column": "U_b[6]",
+            "value": -0.0
+          },
+          {
+            "column": "U_b[7]",
+            "value": 0.0
+          },
+          {
+            "column": "U_b[8]",
+            "value": -0.0
+          },
+          {
+            "column": "U_c[0]",
+            "value": 5.107386841458028e-28
+          },
+          {
+            "column": "U_c[1]",
+            "value": -2.5108456466634287e-27
+          },
+          {
+            "column": "U_c[2]",
+            "value": 1.2803767731406834e-26
+          },
+          {
+            "column": "U_c[3]",
+            "value": -2.5723825796405271e-26
+          },
+          {
+            "column": "U_c[4]",
+            "value": 2.9717509884299424e-25
+          },
+          {
+            "column": "U_c[5]",
+            "value": 1.5481151010421142e-24
+          },
+          {
+            "column": "U_c[6]",
+            "value": 1.413069153033575e-23
+          },
+          {
+            "column": "U_c[7]",
+            "value": 0.0
+          },
+          {
+            "column": "U_c[8]",
+            "value": 0.0
+          },
+          {
+            "column": "delta_f[0]",
+            "value": -0.0
+          },
+          {
+            "column": "delta_f[1]",
+            "value": -0.0
+          },
+          {
+            "column": "delta_f[2]",
+            "value": 0.0
+          },
+          {
+            "column": "delta_f[3]",
+            "value": -0.0
+          },
+          {
+            "column": "delta_f[4]",
+            "value": 0.0
+          },
+          {
+            "column": "delta_f[5]",
+            "value": 0.0
+          },
+          {
+            "column": "delta_f[6]",
+            "value": -0.0
+          },
+          {
+            "column": "delta_f[7]",
+            "value": 0.0
+          },
+          {
+            "column": "delta_f[8]",
+            "value": 3.738078528460419e-07
+          },
+          {
+            "column": "U_f[0]",
+            "value": -1.0928642416384732e-25
+          },
+          {
+            "column": "U_f[1]",
+            "value": -2.3311848985212706e-23
+          },
+          {
+            "column": "U_f[2]",
+            "value": -8.411809294873894e-09
+          },
+          {
+            "column": "U_f[3]",
+            "value": -1.2819889268715284e-08
+          },
+          {
+            "column": "U_f[4]",
+            "value": -4.9985470652381836e-08
+          },
+          {
+            "column": "U_f[5]",
+            "value": -9.719576490188272e-08
+          },
+          {
+            "column": "U_f[6]",
+            "value": -9.327353634009816e-08
+          },
+          {
+            "column": "U_f[7]",
+            "value": -4.2456713931792674e-08
+          },
+          {
+            "column": "U_f[8]",
+            "value": 1.882260550534051e-07
+          }
+        ],
+        "constant": -2.578907235097024e-07,
+        "sum": 0.0,
+        "sum_absolute_terms": 1.1240678157988942e-06
+      },
+      "row": "fuel_Euler[8]"
+    }
+  },
+  "restoration": {
+    "after_shape_counts": {
+      "F0": 10,
+      "M3": 65
+    },
+    "before_shape_counts": {
+      "F0": 10,
+      "M3": 65
+    },
+    "hooks_and_shape_guards_restored": true
+  },
+  "run_id": "KMPC-030",
+  "runtime_limit_seconds": 4.8,
+  "runtime_seconds": 3.327999999994063,
+  "scope": "conditional Phi1 M3-TCA0 AD/k=0.05/nominal J8 one-refinement numerical audit only; no Phi2 CDM recoil, boundary closure, ODE, finite opacity, full hierarchy, CMB, S8, or S-M claim",
+  "score_effect": "NONE",
+  "source_hashes": {
+    "full_ra_b1_preflight.py": "62D6DEEFBDB81C0619FD58C668185FF9CA76926A90D00DCE9C092AD4797D6B5D",
+    "full_ra_b1_preflight_v2.py": "27C0D6ADA828CA2F59C0D128EB6339074D5940F294272CDABE8127CB84867C7C",
+    "full_ra_contract.py": "F3839DA931D24939FA9C5925FD29B1484E722D1A0F24117DC91EBE5F4436D464",
+    "full_ra_m3_seed.py": "070F217B45A385369ECAFAA3D409A1210BAE3C3AF8A600A9171225B258751BF2",
+    "mode_resolved_puiseux.py": "5A89CF82006CB5ECC1D8B4BE1FD56A463453EE3D6261968CB64DE8CCF2C8B7AE",
+    "mode_resolved_puiseux_v2_m1_anchored.py": "5DE2C280B0E9DAF528A9E3011368361B37AE53DE38827FB6F6CE4AB2019A4455"
+  },
+  "test": "KMPC-030 J8 residual provenance and one refinement",
+  "thresholds": {
+    "absolute_fallback": 1e-12,
+    "absolute_fallback_norm": 1e-12,
+    "coefficient_drift_relative": 1e-08,
+    "direct_affine_max_abs": 1e-12,
+    "driver": 1e-10,
+    "holdout": 1e-09,
+    "incident_reproduction_absolute": 1e-18,
+    "incident_reproduction_relative": 1e-12,
+    "low_coefficient": 1e-08,
+    "pass_singular_ratio": 1e-10,
+    "rcond": 1e-12,
+    "refined_Uc_lower_regular": 1e-12,
+    "refined_forbidden_layer": 1e-10,
+    "tail": 1e-06
+  }
+}

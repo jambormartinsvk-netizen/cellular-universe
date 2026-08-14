@@ -1,0 +1,35 @@
+{
+  "checks": {
+    "C00_contains_total_density_source": true,
+    "C0i_contains_Ub_with_nonzero_weight": true,
+    "C0i_contains_Uc_with_nonzero_weight": true,
+    "C0i_contains_Uf_with_enthalpy_weight": true,
+    "collision_time_scales_as_a_squared": true,
+    "early_tca_limits_are_zero": true,
+    "fully_ionized_opacity_times_a_squared_is_constant": true,
+    "radiation_era_Hconf_tau_c_scales_as_a": true,
+    "radiation_era_k_tau_c_scales_as_a_squared": true,
+    "source09_declares_exact_k_independent_Hconf": true,
+    "source88_declares_synchronous_00_constraint": true,
+    "source88_declares_synchronous_0i_constraint": true
+  },
+  "early_opacity": {
+    "h_conf": "H_r/a",
+    "hconf_tau_c": "H_r*a/(n_e0*sigma_T)",
+    "k_tau_c": "a**2*k/(n_e0*sigma_T)",
+    "opacity": "n_e0*sigma_T/a**2",
+    "opacity_times_a_squared": "n_e0*sigma_T",
+    "tau_c": "a**2/(n_e0*sigma_T)"
+  },
+  "momentum_source": "Ub*Xb + Uc*Xc + Uf*Xf*delta + 4*Ug*Xg/3 + 4*Un*Xn/3 + 4*Us*Xs/3",
+  "next_step": "P5.3g6: construct full photon+neutrino regular seed and check its actual Einstein residual at two starts",
+  "runtime_limit_seconds": 5.0,
+  "runtime_seconds": 0.18699999999807915,
+  "scope": "fully-ionized radiation-era power counting and independently assembled 00/0i source content; no recombination x_e(a), seed residual, ODE, P5.4, G8, or score",
+  "source_sha256": {
+    "09_P4_EXACT_A1_BACKGROUND_REDERIVATION_PLAN_AND_SOURCE_AUDIT_SK.md": "243666f5eac7a731a8c66468ea693538b1215ba852398e96374532f33961ac6e",
+    "88_script_A2_K4_3b_RG_BR1_synchronous_Einstein_and_transfer_ledger.py": "0f13da6ce761cfef99909b492e30cf5ed751f56a555594334729330ed4888364"
+  },
+  "test": "KMPC-019 P5.3g5 early fully-ionized opacity and independent synchronous source ledger",
+  "verdict": "FORMULA_PASS_P5_3G5_EARLY_OPACITY_AND_INDEPENDENT_LEDGER_SCOPE"
+}

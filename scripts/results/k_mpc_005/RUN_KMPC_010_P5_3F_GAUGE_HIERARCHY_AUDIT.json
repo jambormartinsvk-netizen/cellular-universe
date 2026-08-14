@@ -1,0 +1,18 @@
+{
+  "checks": {
+    "BR2_89_standard_initial_assigns_only_l0_l1": true,
+    "BR2_90_standard_initial_assigns_only_l0_l1": true,
+    "internal_source_80_has_exact_hierarchy_operator": true,
+    "internal_source_80_has_l2_and_higher_regular_orders": true,
+    "relative_velocity_invariant_under_common_shift": true,
+    "standard_source_84_exports_only_l0_l1_variables": true
+  },
+  "next_step": "derive or import auditable standard photon/neutrino l>=2 regular seed",
+  "physical_verdict": "P5.4_BLOCKED_STANDARD_L2_PLUS_HIERARCHY_SEED_MISSING",
+  "relative_velocity_residual": "0",
+  "runtime_limit_seconds": 5.0,
+  "runtime_seconds": 0.0319999999992433,
+  "scope": "symbolic gauge identity and source map only; no hierarchy derivation, ODE, score, or G8",
+  "test": "KMPC-010 P5.3f gauge-invariant relative velocity and hierarchy seed audit",
+  "verdict": "PASS_P5_3F_GAUGE_HIERARCHY_GAP_MAPPED"
+}

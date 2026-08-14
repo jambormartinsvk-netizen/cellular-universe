@@ -1,0 +1,77 @@
+{
+  "contract": "C1 energy-frame; C2 gamma; C3 exact background; C4 Uc/Ub; C5 k role",
+  "groups": {
+    "G8_screen": {
+      "expected_status": "SCREEN_ONLY_PHYSICALLY_LIMITED_MISSING_CDM_MOMENTUM",
+      "forbidden_absent": {
+        "oc * uc": true
+      },
+      "matches_preregistered_map": true,
+      "paths": [
+        "scripts/221_script_A2_K4_C7_7c_K7_G8_S0_S1_structural_audit.py",
+        "scripts/baseScripts/a2_k4_g8/structural.py"
+      ],
+      "required_present": {
+        "full_momentum": true,
+        "k7_momentum": true,
+        "u_b": true
+      }
+    },
+    "K4_86_test_field": {
+      "expected_status": "TEST_FIELD_PRESERVES_UC_NOT_FULL_CONSTRAINTS",
+      "forbidden_absent": {
+        "k_mpc = 0.05": true
+      },
+      "matches_preregistered_map": true,
+      "paths": [
+        "scripts/86_script_A2_K4_3b_RG_general_synchronous_K4_test_field_response.py"
+      ],
+      "required_present": {
+        "g = lam / e_v": true,
+        "s2 =": true,
+        "uc": true,
+        "ud": true
+      }
+    },
+    "K7_legacy": {
+      "expected_status": "HISTORICAL_PHYSICALLY_LIMITED_MISSING_UC_AND_K_BACKGROUND",
+      "forbidden_absent": {
+        "identifier:uc": true
+      },
+      "matches_preregistered_map": true,
+      "paths": [
+        "scripts/197_script_A2_K4_C7_7c_K7c_P1_clean_standalone_RK4.py",
+        "scripts/209_script_A2_K4_C7_7c_K7c_P4a_single_case_solver.py",
+        "scripts/213_script_A2_K4_C7_7c_K7d_integrated_G4_G6_G7_runner.py"
+      ],
+      "required_present": {
+        "k_mpc": true,
+        "k_mpc = 0.05": true,
+        "physical_rhs": true
+      }
+    },
+    "P5_preflight": {
+      "expected_status": "CURRENT_STATIC_PREFLIGHT_NOT_YET_CONSTRAINT_OR_ODE",
+      "forbidden_absent": {
+        "k_mpc = 0.05": true
+      },
+      "matches_preregistered_map": true,
+      "paths": [
+        "scripts/236_script_KMPC_003_P5_1_general_synchronous_static_ledger.py",
+        "scripts/baseScripts/p5_general_synchronous/coefficient_identities.py"
+      ],
+      "required_present": {
+        "beta_c": true,
+        "gamma": true,
+        "m_full": true,
+        "ub": true,
+        "uc": true
+      }
+    }
+  },
+  "runtime_limit_seconds": 5.0,
+  "runtime_seconds": 0.0,
+  "scope": "source text only; no imports, ODE, score, or historical rewrite",
+  "test": "LINEAGE-L1 static formulation-to-source contract audit",
+  "verdict": "PASS_L1_EXPECTED_LINEAGE_MAP"
+}

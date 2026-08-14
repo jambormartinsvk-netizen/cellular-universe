@@ -1,0 +1,25 @@
+# A2-K4 completion estimate — SHA-256 manifest
+
+Dátum: 2026-07-15
+
+| Artefakt | SHA-256 |
+|---|---|
+| `Audit/A2_K4_COMPLETION_DISTANCE_WORK_ESTIMATE_AND_ANTI_PROLIFERATION_AUDIT_2026-07-15.md` | `FAD91409A60E6547BF60E5C1EF405451CA70B2DE32A29B772E049DD2F45A2A0B` |
+| `Questions/A2_K4_BOUNDED_COMPLETION_PLAN_AND_NUMBERING_CAP_2026-07-15.md` | `3180C20691FAFCFB1579391C59DAF79CEDAF9C81EA7223BEA9D9DDFE52ECB2C5` |
+| `Questions/00_READ_FIRST_A2_K4_FINISH_LINE_AND_PROGRESS.md` | `464E12F81559E14D07C9DAC35FA9F3A9ABE9BD220E12B7E8B7C7535794ED50EF` |
+| `tracks/A1/A1K1/A2/A2K4/00_PROGRESS.md` | `0D80631413A7B3EB038A2B5F6B06A2C7853097F71BB8DC307E94E634F1A26196` |
+| `Audit/A2_K4_C7_W1_P3B_SCORECARD_LIMITATION_ADDENDUM_2026-07-15.md` | `F35F6D1B3B2F5782F06C301F736CCE292973D350191A4AEFDF87725CBBB06404` |
+| `Audit/A2_K4_C7_7C_K1_K7_LINEAGE_GATE_COVERAGE_AND_WEIGHT_AUDIT_2026-07-15.md` | `3A3A208F27A4D298337BEBE8C536140C619E81441AABB2542EB902E8FC0AAF4E` |
+
+Posledný súbor bol zmenený iba append-only pointerom na neskoršie P3b
+obmedzenie. Vyhľadávanie nenašlo starší SHA manifest tohto súboru; pôvodný
+obsah a historické čísla zostali zachované.
+
+Inventúrny stav pri vytvorení manifestu:
+
+- najvyšší existujúci script ID: `208`;
+- plánované, ešte neexistujúce: `209–212`;
+- celkový počet číslovaných Python súborov: `213`;
+- karanténa posledného checkera: `75`;
+- posledná metodická otázka: `Q94`;
+- pracovný progress WBS-1: `48/100`.

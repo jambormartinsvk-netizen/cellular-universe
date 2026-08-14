@@ -1,0 +1,101 @@
+{
+  "checks": {
+    "adiabatic_df_regular": true,
+    "adiabatic_fuel_continuity": true,
+    "adiabatic_fuel_euler": true,
+    "adiabatic_uc_euler": true,
+    "adiabatic_uc_gamma_zero": true,
+    "adiabatic_uc_higher_order_at_frozen_delta": true,
+    "adiabatic_uf_regular": true,
+    "baryon_density_isocurvature_df_regular": true,
+    "baryon_density_isocurvature_fuel_continuity": true,
+    "baryon_density_isocurvature_fuel_euler": true,
+    "baryon_density_isocurvature_uc_euler": true,
+    "baryon_density_isocurvature_uc_gamma_zero": true,
+    "baryon_density_isocurvature_uc_higher_order_at_frozen_delta": true,
+    "baryon_density_isocurvature_uf_regular": true,
+    "cdm_density_isocurvature_df_regular": true,
+    "cdm_density_isocurvature_fuel_continuity": true,
+    "cdm_density_isocurvature_fuel_euler": true,
+    "cdm_density_isocurvature_uc_euler": true,
+    "cdm_density_isocurvature_uc_gamma_zero": true,
+    "cdm_density_isocurvature_uc_higher_order_at_frozen_delta": true,
+    "cdm_density_isocurvature_uf_regular": true,
+    "neutrino_density_isocurvature_df_regular": true,
+    "neutrino_density_isocurvature_fuel_continuity": true,
+    "neutrino_density_isocurvature_fuel_euler": true,
+    "neutrino_density_isocurvature_uc_euler": true,
+    "neutrino_density_isocurvature_uc_gamma_zero": true,
+    "neutrino_density_isocurvature_uc_higher_order_at_frozen_delta": true,
+    "neutrino_density_isocurvature_uf_regular": true,
+    "neutrino_velocity_isocurvature_df_regular": true,
+    "neutrino_velocity_isocurvature_fuel_continuity": true,
+    "neutrino_velocity_isocurvature_fuel_euler": true,
+    "neutrino_velocity_isocurvature_uc_euler": true,
+    "neutrino_velocity_isocurvature_uc_gamma_zero": true,
+    "neutrino_velocity_isocurvature_uc_higher_order_at_frozen_delta": true,
+    "neutrino_velocity_isocurvature_uf_regular": true
+  },
+  "mode_results": {
+    "adiabatic": {
+      "Uc_power": "10 - 6*delta",
+      "Uf_over_H": "-1/(52 - 24*delta)",
+      "deltaf_over_Uf": "delta",
+      "n": 2,
+      "residuals": {
+        "fuel_continuity": "0",
+        "fuel_euler": "0",
+        "uc_euler": "0"
+      }
+    },
+    "baryon_density_isocurvature": {
+      "Uc_power": "9 - 6*delta",
+      "Uf_over_H": "-1/(36 - 18*delta)",
+      "deltaf_over_Uf": "0",
+      "n": 1,
+      "residuals": {
+        "fuel_continuity": "0",
+        "fuel_euler": "0",
+        "uc_euler": "0"
+      }
+    },
+    "cdm_density_isocurvature": {
+      "Uc_power": "9 - 6*delta",
+      "Uf_over_H": "-1/(36 - 18*delta)",
+      "deltaf_over_Uf": "0",
+      "n": 1,
+      "residuals": {
+        "fuel_continuity": "0",
+        "fuel_euler": "0",
+        "uc_euler": "0"
+      }
+    },
+    "neutrino_density_isocurvature": {
+      "Uc_power": "11 - 6*delta",
+      "Uf_over_H": "-1/(72 - 30*delta)",
+      "deltaf_over_Uf": "2*delta",
+      "n": 3,
+      "residuals": {
+        "fuel_continuity": "0",
+        "fuel_euler": "0",
+        "uc_euler": "0"
+      }
+    },
+    "neutrino_velocity_isocurvature": {
+      "Uc_power": "10 - 6*delta",
+      "Uf_over_H": "-1/(52 - 24*delta)",
+      "deltaf_over_Uf": "delta",
+      "n": 2,
+      "residuals": {
+        "fuel_continuity": "0",
+        "fuel_euler": "0",
+        "uc_euler": "0"
+      }
+    }
+  },
+  "runtime_limit_seconds": 5.0,
+  "runtime_seconds": 0.5619999999998981,
+  "scope": "leading standard-mode radiation series only; no amplitude matching, higher orders, gauge proof, ODE, score, or G8",
+  "test": "KMPC-008 P5.3d five-standard-mode leading seed ledger",
+  "verdict": "PASS_P5_3D_STANDARD_MODE_LEADING_SEEDS"
+}

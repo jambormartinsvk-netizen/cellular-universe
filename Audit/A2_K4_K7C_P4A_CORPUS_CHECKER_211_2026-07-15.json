@@ -1,0 +1,87 @@
+{
+  "checks": {
+    "all_special_checks_pass": true,
+    "all_target_checks_pass": true,
+    "corpus_count_excluding_checker_is_216": true,
+    "expected_syntax_failures_only": true,
+    "no_target_script_executed": true
+  },
+  "corpus_count_excluding_checker": 216,
+  "execution_verdict": "PASS_P4A_SCRIPT_CORPUS_INVENTORY",
+  "physics_executed": false,
+  "runtime_limit_seconds": 15.0,
+  "runtime_seconds": 3.312999999998283,
+  "scope_limit": "source/AST compilation only; no target import or execution",
+  "special_checks": {
+    "aggregate_has_no_solve_ivp": true,
+    "aggregate_has_no_subprocess": true,
+    "aggregate_uses_threshold_1e8": true,
+    "runner_has_internal_deadline": true,
+    "runner_has_rhs_cap_100000": true,
+    "runner_has_solve_ivp": true,
+    "runner_has_three_exact_case_ids": true,
+    "source_audit_declares_no_target_execution": true
+  },
+  "syntax_errors": [
+    "118_script_A2_K4_3b_RG_BR3B2f5_full_mixed_Puiseux_chain.py",
+    "119_script_A2_K4_3b_RG_BR3B2f5_full_mixed_Puiseux_chain.py"
+  ],
+  "target_checks": {
+    "205_script_A2_K4_C7_7c_K7c_P3b_zero_identity_RK4_audited.py:entrypoint": true,
+    "205_script_A2_K4_C7_7c_K7c_P3b_zero_identity_RK4_audited.py:hash_exact": true,
+    "205_script_A2_K4_C7_7c_K7c_P3b_zero_identity_RK4_audited.py:immutable_output": true,
+    "205_script_A2_K4_C7_7c_K7c_P3b_zero_identity_RK4_audited.py:no_fail_open_get_equality": true,
+    "205_script_A2_K4_C7_7c_K7c_P3b_zero_identity_RK4_audited.py:present": true,
+    "205_script_A2_K4_C7_7c_K7c_P3b_zero_identity_RK4_audited.py:runtime_argument": true,
+    "209_script_A2_K4_C7_7c_K7c_P4a_single_case_solver.py:entrypoint": true,
+    "209_script_A2_K4_C7_7c_K7c_P4a_single_case_solver.py:hash_exact": true,
+    "209_script_A2_K4_C7_7c_K7c_P4a_single_case_solver.py:immutable_output": true,
+    "209_script_A2_K4_C7_7c_K7c_P4a_single_case_solver.py:no_fail_open_get_equality": true,
+    "209_script_A2_K4_C7_7c_K7c_P4a_single_case_solver.py:present": true,
+    "209_script_A2_K4_C7_7c_K7c_P4a_single_case_solver.py:runtime_argument": true,
+    "210_script_A2_K4_C7_7c_K7c_P4a_source_delta_audit.py:entrypoint": true,
+    "210_script_A2_K4_C7_7c_K7c_P4a_source_delta_audit.py:hash_exact": true,
+    "210_script_A2_K4_C7_7c_K7c_P4a_source_delta_audit.py:immutable_output": true,
+    "210_script_A2_K4_C7_7c_K7c_P4a_source_delta_audit.py:no_fail_open_get_equality": true,
+    "210_script_A2_K4_C7_7c_K7c_P4a_source_delta_audit.py:present": true,
+    "210_script_A2_K4_C7_7c_K7c_P4a_source_delta_audit.py:runtime_argument": true,
+    "212_script_A2_K4_C7_7c_K7c_P4a_offline_aggregate.py:entrypoint": true,
+    "212_script_A2_K4_C7_7c_K7c_P4a_offline_aggregate.py:hash_exact": true,
+    "212_script_A2_K4_C7_7c_K7c_P4a_offline_aggregate.py:immutable_output": true,
+    "212_script_A2_K4_C7_7c_K7c_P4a_offline_aggregate.py:no_fail_open_get_equality": true,
+    "212_script_A2_K4_C7_7c_K7c_P4a_offline_aggregate.py:present": true,
+    "212_script_A2_K4_C7_7c_K7c_P4a_offline_aggregate.py:runtime_argument": true
+  },
+  "target_executed": false,
+  "target_records": {
+    "205_script_A2_K4_C7_7c_K7c_P3b_zero_identity_RK4_audited.py": {
+      "entrypoint": true,
+      "fail_open_get_equality_absent": true,
+      "immutable_output_mode_present": true,
+      "max_runtime_argument_present": true,
+      "sha256": "B7EC8BAD3BFB0D48EC91D6F1BB0A602FA1834A021BB94C92D6D1B398D5F3CDC2"
+    },
+    "209_script_A2_K4_C7_7c_K7c_P4a_single_case_solver.py": {
+      "entrypoint": true,
+      "fail_open_get_equality_absent": true,
+      "immutable_output_mode_present": true,
+      "max_runtime_argument_present": true,
+      "sha256": "67E5B3C1B7C942242E4FEB4458A4CC81A52F6417E25D50A6E2009023F321A612"
+    },
+    "210_script_A2_K4_C7_7c_K7c_P4a_source_delta_audit.py": {
+      "entrypoint": true,
+      "fail_open_get_equality_absent": true,
+      "immutable_output_mode_present": true,
+      "max_runtime_argument_present": true,
+      "sha256": "D86022C8D8D5C32223ECD9F62097AEE09A6685C8358F8A1D1B0D691C897F662D"
+    },
+    "212_script_A2_K4_C7_7c_K7c_P4a_offline_aggregate.py": {
+      "entrypoint": true,
+      "fail_open_get_equality_absent": true,
+      "immutable_output_mode_present": true,
+      "max_runtime_argument_present": true,
+      "sha256": "486ECEFB15A63401BDDD8D6DA045480FFD7A2A94E6F7CA67D0013A402CEE84AF"
+    }
+  },
+  "test": "bounded corpus status audit before K7c P4a"
+}

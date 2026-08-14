@@ -1,0 +1,85 @@
+Kozmologická **pipeline 09** (implementovaná v skripte `09_script_K3_cosmology_pipeline.py`) je numerickým srdcom kozmológie Bunkového vesmíru. Jej hlavnou úlohou je overiť, ako sa mikroskopické zákony delenia a trávenia buniek prejavujú na makroskopických kozmologických škálach, a prepočítať presné hodnoty pre $H_0$, $w_0, w_a$, a $S_8$.
+
+Celý prepočet prebieha v **piatich kľúčových krokoch** za použitia **dvojslučkovej (double-loop) architektúry**:
+
+---
+
+### KROK 1: Riešenie rovníc pozadia (Sústava V1)
+Pipeline namiesto štandardnej $\Lambda$CDM rieši sústavu transportných diferenciálnych rovníc pre hustoty energií v závislosti od logaritmu expanzného faktora $x = \ln a$ (od ranného vesmíru $x \approx -10$ až po dnešok $x = 0$):
+
+$$\frac{d\Omega_f}{dx} = -3\delta\Omega_f - \lambda \frac{H_0}{H}\Omega_f$$
+
+$$\frac{d\Omega_m}{dx} = -3\Omega_m + \lambda \frac{H_0}{H}\Omega_f$$
+
+$$\frac{d\Omega_r}{dx} = -4\Omega_r$$
+
+Kde:
+*   $\mathbf{\Omega_f}$ je hustota vákuového **paliva** (predchodca tmavej energie).
+*   $\mathbf{\Omega_m}$ je hustota **hmoty** (vrátane novovznikajúcej z netráveného odpadu).
+*   $\mathbf{\Omega_r}$ je hustota **žiarenia** (vrátane gravitónovej pary $\Delta N_{eff} = 0.0535$).
+*   $\mathbf{\delta \approx 0.02297}$ je odvodená **réžia delenia**. Člen $-3\delta\Omega_f$ vyjadruje, že palivo sa riedi o chlp rýchlejšie ako konštanta kvôli poplatku za delenie buniek (z čoho mikroskopicky vychádza stavová rovnica paliva $w = -1 + \delta$).
+*   $\mathbf{\lambda = 0.10 \text{ až } 0.15}$ je rýchlosť trávenia (jediný fitovaný parameter). Člen $\lambda \frac{H_0}{H}\Omega_f$ vyjadruje konštantné trávenie podľa *vnútorných hodín* buniek (preto faktor $1/H$). Tento úbytok paliva sa vďaka Bianchiho identitám (zachovanie energie) presne presúva do tvorby hmoty ($+ \lambda \frac{H_0}{H}\Omega_f$).
+*   Expanzná rýchlosť (Hubbleov parameter) v každom kroku je:
+    $$E^2(x) \equiv \left(\frac{H(x)}{H_0}\right)^2 = \Omega_f(x) + \Omega_m(x) + \Omega_r(x)$$
+
+---
+
+### KROK 2: Dvojslučková numerická integrácia a CMB kotva
+Kozmologické parametre nemožno len tak "dosadiť", pretože hmota v modeli priebežne vzniká z paliva (jej množstvo v minulosti bolo iné ako dnes). Pipeline preto používa **dvojslučkovú architektúru** na nájdenie samosúladného riešenia:
+
+1.  **Vnútorná slučka (Samosúladnosť $\Omega_{m,0}$):** Pri hľadaní integrálu pozadia sa pre dané $h$ hľadá taká počiatočná hodnota hmoty $\Omega_m(x_{start})$, aby po pretečení integrácie do dnešného dňa ($x=0$) vyšla presná hodnota dnešnej fyzikálnej hustoty hmoty $\Omega_{m,0}$.
+2.  **Vonkajšia slučka (Bisekcia na $h$):** Algoritmus bisekcie (pôlenia intervalov) upravuje bezrozmerný Hubbleov parameter $h$ (kde $H_0 = 100h$) tak dlho, kým poloha prvého akustického vrcholu na CMB ($\theta^*$) presne nesadne na nameranú hodnotu z Plancku:
+    $$\theta^* = \frac{r_s(z_*)}{D_M(z_*)} = \text{konštanta}$$
+    *   **Zvukový horizont $r_s$** sa počíta integráciou rýchlosti zvuku ranného vesmíru $c_s(a)$ od drag epochy po nekonečno:
+        $$r_s = \int_{z_*}^\infty \frac{c_s(z)}{H(z)} dz, \quad c_s = \frac{c}{\sqrt{3(1 + R_b(a))}}$$
+    *   **Uhlová vzdialenosť $D_M$** je integrál cesty svetla od dneška po CMB:
+        $$D_M = \int_0^{z_*} \frac{c}{H(z)} dz$$
+
+Keď vonkajšia slučka skonverguje, máme presnú hodnotu $H_0$ a vývoj $H(z)$.
+
+---
+
+### KROK 3: Výpočet „Účtovného tieňa“ (CPL fit $w_0, w_a$)
+Štandardní astrofyzici analyzujú vesmír s nesprávnym predpokladom, že hmota sa riedi striktne ako $a^{-3}$. Keďže v našom modeli hmota reálne pribúda (popol z trávenia), v ich účtovných knihách sa to javí ako "fantomová" tmavá energia s vyvíjajúcou sa stavovou rovnicou. Pipeline toto meranie simuluje:
+
+1.  Odpočíta od celkovej energie $E^2(x)$ štandardne sa riediacu hmotu a žiarenie, čím dostane **efektívnu hustotu tmavej energie**:
+    $$\rho_{DE,eff}(x) = E^2(x) - \Omega_{m,0} e^{-3x} - \Omega_{r,0} e^{-4x}$$
+2.  Z nej vypočíta efektívnu stavovú rovnicu $w_{eff}(x)$:
+    $$w_{eff}(x) = -1 - \frac{1}{3} \frac{d \ln \rho_{DE,eff}}{dx}$$
+3.  Túto krivku $w_{eff}(z)$ následne nafituje štandardnou CPL parametrizáciou $w(z) = w_0 + w_a(1-a)$ v rozsahu $0 < z < 1$ (kde meria DESI). Pre pracovný bod s parou to dáva:
+    $$\mathbf{w_0 \approx -0.92, \quad w_a \approx -0.61}$$
+
+---
+
+### KROK 4: Rast štruktúr a parameter $S_8$ (Sústava V3)
+Aby sme vedeli, ako rýchlo vo vesmíre rástli kopy galaxií, pipeline integruje lineárne poruchy hmoty $\delta_m(x)$ od $z = 1000$ (kde rástli lineárne $\delta_m \propto a$) až po dnešok pomocou sústavy:
+
+$$\delta_m' = -\Theta$$
+
+$$\Theta' = -\left(2 + \frac{E'}{E}\right)\Theta - \frac{3}{2}\frac{\Omega_m(x)}{E^2(x)}\delta_m$$
+
+Kde druhá derivácia (reprezentovaná rýchlosťou strihu $\Theta$) je brzdená expanziou (Hubbleovo trenie $\frac{E'}{E}$) a poháňaná gravitačným priťahovaním ($\frac{\Omega_m}{E^2}$).
+
+Získaný rastový faktor $D(z=0)$ sa normalizuje voči $\Lambda$CDM (keďže obe teórie zdieľajú rovnakú počiatočnú amplitúdu na CMB) a vypočíta sa parameter šošovkovania $S_8$:
+
+$$\sigma_8 = 0.811 \frac{D(0)}{D_{\Lambda CDM}(0)} \implies S_8 = \sigma_8 \sqrt{\frac{\Omega_{m,0}}{0.3}} \approx \mathbf{0.874 \text{ (pri } \lambda=0.15\mathbf{)}}$$
+
+---
+
+### KROK 5: Validačné hodnoty (Auditné body)
+Aby ste mali istotu, že pipeline na vašom počítači beží správne a nenastala chyba v numerickom solveri (napr. kvôli pasciam M1–M9), skript obsahuje tri overovacie body, ktoré **musia presne sedieť**:
+
+1.  **Validácia $\Lambda$CDM (ak v kóde vypnete model):**
+    *   $h = 0.6730$
+    *   $\Omega_m = 0.3157$
+    *   $r_s = 144.32 \text{ Mpc}$
+2.  **Validačný bod pre model BEZ pary (reprodukuje nezávislý audit):**
+    *   $H_0 = 65.6 \text{ km/s/Mpc}$
+    *   $\Omega_m = 0.359$
+    *   $w_0 = -0.91, \quad w_a = -0.60$
+    *   $S_8 = 0.888$
+3.  **Finálny beh s parou (pracovný bod v3.17):**
+    *   $H_0 = 66.4 \pm 0.4 \text{ km/s/Mpc}$ (prítomnosť pary/relic žiarenia $\Delta N_{eff}$ dvíha $H_0$ z 65.6 na 66.4).
+
+---
+🛠️ Chceli by ste, aby som vám ukázal konkrétny blok kódu v Pythone, ktorý rieši túto dvojslučkovú bisekciu pre CMB kotvu, alebo sa pozrieme na to, ako presne para ($\Delta N_{eff}$) mení dĺžku zvukového horizontu?

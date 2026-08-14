@@ -1,0 +1,28 @@
+{
+  "checks": {
+    "camb_declares_general_metric_shear": true,
+    "camb_declares_photon_l2_metric_source": true,
+    "camb_declares_synchronous_shear_map": true,
+    "legacy73_collision_block_is_present": true,
+    "legacy73_lower_photon_equation_omits_metric_source": false,
+    "seed84_declares_qg_theta_normalization": true,
+    "seed84_declares_synchronous_CDM_frame": true,
+    "synchronous_metric_source_identity_is_exact": true,
+    "synchronous_velocity_source_identity_is_exact": true
+  },
+  "metric_identity_residual": "0",
+  "next_step": "STOP: retain PF-053 scope restriction; do not compose a full seed",
+  "runtime_limit_seconds": 5.0,
+  "runtime_seconds": 0.046999999998661224,
+  "scope": "source provenance and exact algebra only; no full seed, physical residual, ODE, recombination, P5.4, G8, or score",
+  "source_sha256": {
+    "73_script_A2_K4_3b_hierarchy_and_regular_mode_taxonomy_audit.py": "efe2795778be9b0511a982330ce40117cf945063bb598ac229491bbcded5b070",
+    "84_script_A2_K4_3b_RG_CLASS_analytic_collective_seed_CAMB_crosscheck.py": "0f7e294b5385b2d7b29987bb952f9f46eba4981a206b94f4ef1aab334307538e",
+    "symbolic.py": "c648c3570b830208d8cf6a79a8c83100bdb69677c0725b46d3f91023a73791ab"
+  },
+  "synchronous_photon_l2_drive": "8*eta_dot/5 + 4*hdot/15 + 2*k*q_gamma/5",
+  "synchronous_sigma": "(6*eta_dot + hdot)/(2*k)",
+  "test": "KMPC-020 P5.3g6 synchronous photon l=2 gauge bridge",
+  "velocity_identity_residual": "0",
+  "verdict": "STOP_P5_3G6_SYNCHRONOUS_PHOTON_GAUGE_BRIDGE"
+}

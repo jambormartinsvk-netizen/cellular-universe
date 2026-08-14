@@ -1,0 +1,345 @@
+{
+  "M1": {
+    "pass": true,
+    "role": "READ_ONLY_RECEIPT"
+  },
+  "atom_id": "BI/k=0.15/nominal/checkpoint-receipt",
+  "authorship": {
+    "script_creator": "Codex (OpenAI)",
+    "theory_author": "Martin Jambor"
+  },
+  "background_guard": {
+    "a_surfaces": [
+      1e-08,
+      3e-08
+    ],
+    "by_a": {
+      "1e-08": {
+        "metrics": {
+          "D": {
+            "baseline_k0p05": 1.0000367688715064,
+            "observed": 1.0000367688715064,
+            "pass": true,
+            "relative_difference": 0.0
+          },
+          "H_Mpc_inverse": {
+            "baseline_k0p05": 21652354681.116848,
+            "observed": 21652354681.116848,
+            "pass": true,
+            "relative_difference": 0.0
+          },
+          "rho_ash_over_rho_r": {
+            "baseline_k0p05": 8.643429666636811e-44,
+            "observed": 8.643429666636808e-44,
+            "pass": true,
+            "relative_difference": 3.455858899278368e-16
+          },
+          "rho_f_over_rho_r": {
+            "baseline_k0p05": 2.779012141312746e-28,
+            "observed": 2.779012141312746e-28,
+            "pass": true,
+            "relative_difference": 0.0
+          }
+        },
+        "pass": true
+      },
+      "3e-08": {
+        "metrics": {
+          "D": {
+            "baseline_k0p05": 1.0001103066145194,
+            "observed": 1.0001103066145194,
+            "pass": true,
+            "relative_difference": 0.0
+          },
+          "H_Mpc_inverse": {
+            "baseline_k0p05": 2405905641.095253,
+            "observed": 2405905641.095253,
+            "pass": true,
+            "relative_difference": 0.0
+          },
+          "rho_ash_over_rho_r": {
+            "baseline_k0p05": 5.841467028749681e-41,
+            "observed": 5.841467028749681e-41,
+            "pass": true,
+            "relative_difference": 0.0
+          },
+          "rho_f_over_rho_r": {
+            "baseline_k0p05": 2.086877887939646e-26,
+            "observed": 2.086877887939646e-26,
+            "pass": true,
+            "relative_difference": 0.0
+          }
+        },
+        "pass": true
+      }
+    },
+    "pass": true,
+    "worst_label": "a=1e-08:rho_ash_over_rho_r",
+    "worst_relative": 3.455858899278368e-16
+  },
+  "candidate_interpretation_not_verdict": "REVIEW_C2_BI_K0p15_HP_M1_CHECKPOINT_RECEIPT_EXACT_RESUME_ALLOWED",
+  "checkpoint_receipt": {
+    "audit_false_checks": [
+      "M3_driver"
+    ],
+    "exact_driver_resume_allowed": true,
+    "expected_file_sha256": "683D867D19324B7B45F3724545FFB1D975DFBED883936298D790C12836E9D995",
+    "expected_serialized_state_sha256": "402B42E11C3582B4E3E46D047EA917A4C256E552F65C9DB070589150675EBF40",
+    "external_timeout_124_after_publish": true,
+    "file": "RUN_KMPC_108_P5_3G7_C2_BI_K0p15_HP_M1_SUPPORT_CHECKPOINT_JSON_SUCCESSOR.json",
+    "observed_file_sha256": "683D867D19324B7B45F3724545FFB1D975DFBED883936298D790C12836E9D995",
+    "observed_serialized_state_sha256": "402B42E11C3582B4E3E46D047EA917A4C256E552F65C9DB070589150675EBF40",
+    "raw_false_checks": [
+      "audit_support_complete",
+      "pre_exact_core_complete"
+    ]
+  },
+  "checks": {
+    "audit_f0_complete": true,
+    "audit_false_checks_exact": true,
+    "audit_m3_holdout_pass": true,
+    "audit_m3_only_driver_unclosed": true,
+    "audit_m3_rank_and_contract": true,
+    "checkpoint_candidate_uncLOSED": true,
+    "checkpoint_completed_no_verdict": true,
+    "checkpoint_file_sha_exact": true,
+    "checkpoint_roundtrips_pass": true,
+    "checkpoint_run_identity": true,
+    "checkpoint_schema_exact": true,
+    "checkpoint_source_hashes_exact": true,
+    "combined_state_order_exact": true,
+    "contract_guard": true,
+    "fuel_state_order_exact": true,
+    "m1_and_accepted_complete": true,
+    "m1_state_order_exact": true,
+    "mpf_conversion_count_exact": true,
+    "mpf_conversion_paths_exact": true,
+    "non_driver_support_gates_complete": true,
+    "physics_pass_suppressed": true,
+    "raw_false_checks_exact": true,
+    "serialized_state_sha_declared_exact": true,
+    "serialized_state_sha_recomputed_exact": true
+  },
+  "common_pass": true,
+  "contract_guard": {
+    "C1_baseline": {
+      "AD": [
+        0,
+        2
+      ],
+      "BI": [
+        0,
+        5
+      ],
+      "CDI": [
+        0,
+        5
+      ],
+      "NID": [
+        0,
+        5
+      ],
+      "NIV": [
+        -1,
+        4
+      ]
+    },
+    "checks": {
+      "C1_baseline_exact": true,
+      "M1_depth_covers_audit": true,
+      "affine_fixture_owner_exact": true,
+      "algebra_owner_exact": true,
+      "assembly_precision_exact": true,
+      "attribution_holdout_nonfit": true,
+      "attribution_math_unchanged": true,
+      "attribution_support_exact": true,
+      "attribution_target_exact": true,
+      "audit_is_plus2": true,
+      "audit_support_exact": true,
+      "deadline_contract_exact": true,
+      "driver_shape_exact": true,
+      "fixture_single_80dps_scope": true,
+      "frozen_holdout_unchanged": true,
+      "fuel_factor_binary64_product_then_bridge": true,
+      "hash_owner_exact": true,
+      "holdout_contract_exact": true,
+      "holdout_nonfit": true,
+      "holdout_not_fit": true,
+      "holdout_shape_exact": true,
+      "hp_m1_attribution_owner_expectation_explicit": true,
+      "hp_m1_background_generator_frozen": true,
+      "hp_m1_column_equilibration_only": true,
+      "hp_m1_f0_fractional_background_m3_frozen": true,
+      "hp_m1_holdout_nonfit": true,
+      "hp_m1_math_unchanged": true,
+      "hp_m1_mode_k_order_exact": true,
+      "hp_m1_one_new_solve": true,
+      "hp_m1_precision_exact": true,
+      "hp_m1_row_weights_unchanged": true,
+      "hp_m1_scale_fixture_80dps": true,
+      "hp_m1_scale_fixture_ratio_1e24": true,
+      "hp_m1_scale_solver_unchanged": true,
+      "hp_m1_shapes_exact": true,
+      "hp_m1_unweighted_residual_unchanged": true,
+      "hp_m1_v10_no_equation_or_scope_change": true,
+      "hp_m1_v10_routing_only_successor": true,
+      "hp_m1_v10_v9_solver_byte_unchanged": true,
+      "hp_m1_v10_v9_thresholds_byte_unchanged": true,
+      "hp_m1_v11_accepted_support_05": true,
+      "hp_m1_v11_audit_support_07": true,
+      "hp_m1_v11_frozen_physics_thresholds": true,
+      "hp_m1_v11_fuel_states_exact": true,
+      "hp_m1_v11_holdout_nonfit": true,
+      "hp_m1_v11_no_equation_support_anchor_change": true,
+      "hp_m1_v11_no_historical_attribution_gate": true,
+      "hp_m1_v11_thirteen_state_contract": true,
+      "hp_m1_v11_v9_cpqr_byte_unchanged": true,
+      "hp_m1_v12_identity_only_successor": true,
+      "hp_m1_v12_method_threshold_scope_unchanged": true,
+      "hp_m1_v12_v11_calculation_byte_unchanged": true,
+      "hp_m1_v13_checkpoint_has_no_exact_driver": true,
+      "hp_m1_v13_checkpoint_has_no_physics_pass": true,
+      "hp_m1_v13_decimal_m1_serialization": true,
+      "hp_m1_v13_float_hex_fuel_serialization": true,
+      "hp_m1_v13_resume_requires_immutable_sha": true,
+      "hp_m1_v13_runtime_limit_unchanged": true,
+      "hp_m1_v14_checkpoint_identity_only": true,
+      "hp_m1_v14_method_serialization_threshold_scope_unchanged": true,
+      "hp_m1_v14_v13_calculation_byte_unchanged": true,
+      "hp_m1_v15_json_representation_only": true,
+      "hp_m1_v15_mpf_decimal90_lossless_at_80dps": true,
+      "hp_m1_v15_reports_every_converted_path": true,
+      "hp_m1_v15_resume_register_byte_semantics_unchanged": true,
+      "hp_m1_v15_v13_calculation_byte_unchanged": true,
+      "hp_m1_v16_exact_checkpoint_file_sha": true,
+      "hp_m1_v16_exact_false_check_set": true,
+      "hp_m1_v16_no_physics_pass": true,
+      "hp_m1_v16_no_solver_or_equation_execution": true,
+      "hp_m1_v16_read_only_receipt": true,
+      "hp_m1_v1_v2_math_unchanged": true,
+      "hp_m1_v5_binary64_bridge_disclosed": true,
+      "hp_m1_v5_diagnostic_only": true,
+      "hp_m1_v5_equations_support_thresholds_unchanged": true,
+      "hp_m1_v5_independent_float64_rebuild": true,
+      "hp_m1_v5_no_physics_pass": true,
+      "hp_m1_v6_combined_state_count_exact": true,
+      "hp_m1_v6_fuel_states_explicit": true,
+      "hp_m1_v6_m1_state_count_exact": true,
+      "hp_m1_v6_only_register_handoff_changed": true,
+      "hp_m1_v6_v5_diagnostic_unchanged": true,
+      "hp_m1_v7_no_authoritative_hp_solve": true,
+      "hp_m1_v7_no_f0_m3_attribution": true,
+      "hp_m1_v7_no_physics_gate": true,
+      "hp_m1_v7_standalone_scope": true,
+      "hp_m1_v7_v5_provenance_unchanged": true,
+      "hp_m1_v9_equations_support_thresholds_unchanged": true,
+      "hp_m1_v9_native_80dps_matrix": true,
+      "hp_m1_v9_no_f0_m3_attribution": true,
+      "hp_m1_v9_no_physics_gate": true,
+      "hp_m1_v9_no_row_scaling": true,
+      "hp_m1_v9_rank_relative_threshold_1e_minus_60": true,
+      "hp_m1_v9_rank_revealing_column_pivoting": true,
+      "hp_m1_v9_two_pass_reorthogonalization": true,
+      "hp_m1_v9_unweighted_objective_unchanged": true,
+      "identity_supported": true,
+      "nested_owner_expectation_explicit": true,
+      "one_high_precision_solve": true,
+      "ordered_driver_exact": true,
+      "ordered_state_exact": true,
+      "owners_separated": true,
+      "physics_thresholds_unchanged": true,
+      "precision_dps_exact": true,
+      "serialization_algorithm_unchanged": true,
+      "serialization_bound_dynamic": true,
+      "serialization_bound_two_ulp": true,
+      "serialization_validation_unchanged": true,
+      "surfaces_exact": true,
+      "target_rank_exact": true,
+      "thresholds_exact": true,
+      "two_hp_solves_exact": true
+    },
+    "ladder_spec": {
+      "accepted": [
+        0,
+        5
+      ],
+      "audit": [
+        0,
+        7
+      ],
+      "m1_depth": 7
+    },
+    "pass": true
+  },
+  "core_pass": false,
+  "execution_status": "COMPLETED_READ_ONLY_CHECKPOINT_RECEIPT",
+  "identity": {
+    "k_Mpc_inverse": 0.15,
+    "mode": "BI",
+    "variant": "nominal"
+  },
+  "orchestrator_verdict": "NOT_ASSIGNED_BY_SCRIPT",
+  "pass_c2_atom_candidate": false,
+  "passed_execution_contract": true,
+  "physics_verdict_role": "READ_ONLY_CHECKPOINT_RECEIPT_NO_PHYSICS_VERDICT",
+  "prediction_table_effect": "NONE",
+  "release_trigger": "NONE",
+  "run_id": "KMPC-109",
+  "runtime_limit_seconds": 4.8,
+  "runtime_seconds": 0.07800000000133878,
+  "scope": {
+    "excluded": "all solves; equation execution; exact driver; C2 PASS; other atoms",
+    "included": "read-only SHA/schema/register/false-check receipt of KMPC-108"
+  },
+  "score_effect": "NONE_READ_ONLY_RECEIPT",
+  "source_hashes": {
+    "c2_bi_k0p15_coefficient_attribution.py": "4AB2E440219E81B4F8E360BEA76693BF10534FB177FC3D74AB022CCD5933E96F",
+    "c2_bi_k0p15_coefficient_attribution_v2_serialization_bound.py": "70EB60E8EBF01AE0DE2F84D2E08C309B59234B21CF87F79BB08F111D9B0F7242",
+    "c2_bi_k0p15_coefficient_attribution_v3_fixture.py": "62F049762892938867EE33C83F37DDE572431B31AF05837866E4F590D0A8B23E",
+    "c2_bi_k0p15_coefficient_attribution_v4_float_product.py": "C8372850F29B70ADA5640F51E9B2701EB83144AC295C2E1EFC3D7CABBE232C46",
+    "c2_bi_k0p15_coefficient_attribution_v5_nested_owner.py": "DDBF6EB49DA5FC46CBDB82694AEBD19A9C43EF0233973525D8BEE4035EC662D8",
+    "c2_bi_k0p15_high_precision_driver_assembly.py": "4C11A3EE3C08B084E53E5F313152A29C768E2F0F48D74588D0F5E37688B50B46",
+    "c2_bi_k0p15_high_precision_holdout.py": "5B7A4740428DEB891A4C5892FE8E4412E914EF10FAD58EF6D423549F93032DB4",
+    "c2_bi_k0p15_high_precision_holdout_assembly.py": "E0F423357AE291FDEDE6BACC51D45F5F0D4326CD81C3A8453538B7A71FDE3846",
+    "c2_bi_k0p15_high_precision_holdout_assembly_v2_hash_owner.py": "9DC7C357D15580AFA3276BA4E3294870B69FAD6117F3A25F46DB1FADE5EBE865",
+    "c2_bi_k0p15_high_precision_holdout_assembly_v3_fixture.py": "0FF2B72AFB5A480A891A71685DBA3394566C6945385F33913DAEA888AACA1C99",
+    "c2_bi_k0p15_high_precision_holdout_v2_deadline.py": "5F3850D68BD0CCD9FCCB7CCE7E31A7C68212417E6C13921B88604D14DD321F7B",
+    "c2_bi_k0p15_high_precision_m1_reassembly.py": "4509F89AB9987AF271DCC37F8D973672E647ABDBEBB8271D0B3B327A2F831065",
+    "c2_bi_k0p15_high_precision_m1_reassembly_v10_cpqr_routing_successor.py": "0E70793D89F32D70A0B1CDB021DE4D8C5785D06DB7245BE83ED2F2F720920801",
+    "c2_bi_k0p15_high_precision_m1_reassembly_v11_downstream_insertion.py": "28B5FD79225BD06D8CB762BA9960EFFB1AE82E9E84F05E0FCCBFC77429B4B573",
+    "c2_bi_k0p15_high_precision_m1_reassembly_v12_downstream_identity_successor.py": "479EEFD9BFDBF6E663BF6C6941444AB347C1CF9B54EBC522A3E82601D9C615F3",
+    "c2_bi_k0p15_high_precision_m1_reassembly_v13_support_checkpoint.py": "301E3121DA9E260308FB46E6011A9694BA79676EE57F653DCCD3D472C4C44A78",
+    "c2_bi_k0p15_high_precision_m1_reassembly_v14_checkpoint_identity_successor.py": "0ED499BFBBD6E6D7FC2640FE13BDAF67CE0C31C1B9AE593648BC2FEB3934733A",
+    "c2_bi_k0p15_high_precision_m1_reassembly_v15_checkpoint_json_successor.py": "0818D47F50A99C4EDE4FD5320F9A39E4FA0B6134A95FC1027D6FF7AB57A5362B",
+    "c2_bi_k0p15_high_precision_m1_reassembly_v16_checkpoint_receipt.py": "96B95FF8E43F782494ED4B50C2A03A0856810C03297ED760991F4AF393CB7484",
+    "c2_bi_k0p15_high_precision_m1_reassembly_v2_attribution_owner.py": "C9E8691F7A9BA5BD055DCAC086DC2CC0E421E3D01278B2C59608D601FB49FC7B",
+    "c2_bi_k0p15_high_precision_m1_reassembly_v3_column_equilibrated.py": "8C52A465C5417EC65A89AC0484AB201EC3CFB0101D5630EB97844F65E2E19192",
+    "c2_bi_k0p15_high_precision_m1_reassembly_v4_scale_fixture.py": "5C04E54C6AD89E936862A090AEC35F0A69F032B6350F4A59EA5A256BB3797240",
+    "c2_bi_k0p15_high_precision_m1_reassembly_v5_matrix_provenance.py": "8C15D74DC752C07986DA95EB350CEE3C11C7917F317125F020A05047B634AC52",
+    "c2_bi_k0p15_high_precision_m1_reassembly_v6_combined_register.py": "1332758076A50FC3EE8160786357E8BD04B7964307D7C3BB673F0167379D2B9A",
+    "c2_bi_k0p15_high_precision_m1_reassembly_v7_standalone_provenance.py": "B2CF9C98734303122F82CE85D4BE2D560EA853126EFC447E82C05EAAB77CE9E0",
+    "c2_bi_k0p15_high_precision_m1_reassembly_v8_publication_receipt.py": "28B4950759B494228AFF74A2078CD5D2A13C2D66051B02CD5C7845585702DB59",
+    "c2_bi_k0p15_high_precision_m1_reassembly_v9_native_cpqr.py": "8EBDA7232BEADF0640A2C8361B444A9A896EB215E159E552AC494EAE2C0CCD0A",
+    "c2_fourier_coverage.py": "757F97E14657CC7046177C2D33115CA87639B9C92E89BDABE2BFF3B4380DF3FC",
+    "c2_single_atom_adapter.py": "C018ACB17311A8CB522FB612AB0EDD1DD5B9C47E16DC5D915A5F6DAF4204BAF8",
+    "cdi_c1_coverage.py": "D57CA8CA5571A07440A987F4FB0DDA08A40DAF7EA8C95AF929FC5C936F2FCE0F",
+    "cdi_support_ladder.py": "A8257E2195E2AB61B5C4195B80EA44EE7669B5A52F9C8440BA5F5244190E3068",
+    "full_ra_b1_preflight.py": "62D6DEEFBDB81C0619FD58C668185FF9CA76926A90D00DCE9C092AD4797D6B5D",
+    "full_ra_b1_preflight_v2.py": "27C0D6ADA828CA2F59C0D128EB6339074D5940F294272CDABE8127CB84867C7C",
+    "full_ra_contract.py": "F3839DA931D24939FA9C5925FD29B1484E722D1A0F24117DC91EBE5F4436D464",
+    "full_ra_m3_seed.py": "070F217B45A385369ECAFAA3D409A1210BAE3C3AF8A600A9171225B258751BF2",
+    "m1_order7_numerical_refinement.py": "CE29222FCE45DAA99A7B8E1FFCC06E9471D648A2B61C14DA05F653DBA9E7A80C",
+    "mode_resolved_puiseux.py": "5A89CF82006CB5ECC1D8B4BE1FD56A463453EE3D6261968CB64DE8CCF2C8B7AE",
+    "mode_resolved_puiseux_v2_m1_anchored.py": "5DE2C280B0E9DAF528A9E3011368361B37AE53DE38827FB6F6CE4AB2019A4455",
+    "nid_c1_coverage.py": "EEEE74848B6F4413914F0CC60230CC824982C7E485A38C77C4495F807975A2CD",
+    "niv_c1_coverage.py": "B222554E8F6E664DAC674E394FED02A02ECBEE432ADEDC9A9682DFA6BB746E9D",
+    "niv_support_step2.py": "2B41B11E2C27B1FB5462AF0629C0478BBFF6A1343C317D7F6E6C045C0260F680",
+    "niv_support_step2_v2_finite_owner.py": "F920F51313B44450DABC5A526769C42CD9A3988CBEB011A7954A0F88A4A7006D",
+    "s1_collective_contract.py": "F535EE15137BBD6F9C0379821C9CC94DED8EC56037B6105B75BEF65A5884EE68",
+    "s_c0_coefficient_passport.py": "C370B610815AFAC345C990E3CFE516D616873F39598F468A5ADBF2C65A2A6B95",
+    "s_c0_coefficient_passport_v2_numpy_scalar.py": "06EE03C939FBCCFA6FA130421EEF98D0B8CC7571937EF02A7A46A57367534C11"
+  },
+  "tail_pass": true,
+  "test": "KMPC-109 read-only receipt of KMPC-108 support checkpoint",
+  "zenodo_trigger": "NONE"
+}

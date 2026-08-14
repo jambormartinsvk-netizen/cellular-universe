@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "description": "Observed process exits and immutable raw-output hashes for the preregistered segmented K7b P0 rerun",
+  "cases": {
+    "B-NID-D": {
+      "file": "A2_K4_K7B_P0_B_NID_DEEP_2026-07-15.json",
+      "observed_exit": 0,
+      "sha256": "7E5DB8EBB8A4FA2AE61FF629AC8198CAB03ADF94DC5775479A4B4DAAA7F2E493"
+    },
+    "B-NID-S": {
+      "file": "A2_K4_K7B_P0_B_NID_SHALLOW_2026-07-15.json",
+      "observed_exit": 0,
+      "sha256": "6413811F4BA36F72EA1BA3281C336F5941A8E3C8288983D694F32F8F24FF1713"
+    },
+    "C-NID-D": {
+      "file": "A2_K4_K7B_P0_C_NID_DEEP_2026-07-15.json",
+      "observed_exit": 0,
+      "sha256": "EFE4C33B28ABB1EC5CB825700665A0130FF9D48AC2E90A65B4DEC1EBE1481651"
+    },
+    "C-NID-S": {
+      "file": "A2_K4_K7B_P0_C_NID_SHALLOW_2026-07-15.json",
+      "observed_exit": 0,
+      "sha256": "D782CEC7219B56ABDDD83CC7B8B889F467E40CD7AAD3E9FD1237C0DEC730A48F"
+    },
+    "NIV-D": {
+      "file": "A2_K4_K7B_P0_NIV_DEEP_2026-07-15.json",
+      "observed_exit": 0,
+      "sha256": "901597D4A6641442C19AA0D843D3E77613A672888B5D9251F3D5E5E69A5E9753"
+    },
+    "NIV-S": {
+      "file": "A2_K4_K7B_P0_NIV_SHALLOW_2026-07-15.json",
+      "observed_exit": 0,
+      "sha256": "F5212B539708687CD37804178D7E2444601BF12B29CDE713CE675E8BAEBE32C9"
+    },
+    "F-R": {
+      "file": "A2_K4_K7B_P0_F_REDUCED_RANK_2026-07-15.json",
+      "observed_exit": 1,
+      "sha256": "A301967E6F1459BC0C3D50C78EDED321463AA9BDFF3FE03741A88947D9B1A5BD"
+    },
+    "F-F": {
+      "file": "A2_K4_K7B_P0_F_FREE_COUNT_2026-07-15.json",
+      "observed_exit": 1,
+      "sha256": "FD2047E3DD90028D76ECDCD393D6D00B38D2A6149E2FC99DB15A9A8859FF2FF5"
+    },
+    "F-B": {
+      "file": "A2_K4_K7B_P0_F_BOTH_RANK_KEYS_2026-07-15.json",
+      "observed_exit": 1,
+      "sha256": "FB5AE56000BF734582143223440C9779DE2EE45A904EC44E9E220C4855AE507A"
+    }
+  }
+}
+

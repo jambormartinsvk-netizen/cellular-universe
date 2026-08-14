@@ -1,0 +1,222 @@
+{
+  "checks": {
+    "all_exact_fraction_residuals_zero": true,
+    "all_hp_residuals_within_preregistered_limit": true,
+    "all_provenance_checks_pass": true,
+    "all_surfaces_finite": true,
+    "no_ODE_executed": true,
+    "surface_set_exact": true
+  },
+  "exact_fraction_audit": {
+    "all_exact_zero": true,
+    "derivation": [
+      "R=(3/4)*(Omega_b/Omega_gamma)",
+      "Omega_b=(4/3)*R*Omega_gamma",
+      "W_gamma=2*Omega_gamma+(3/2)*Omega_b=2*Omega_gamma*(1+R)",
+      "c_U=(3/2)*Omega_b-W_gamma*R/(1+R)=0",
+      "c_delta=W_gamma/[4*(1+R)]-Omega_gamma/2=0"
+    ],
+    "residuals": {
+      "Omega_b_over_Omega_gamma_minus_4R_over_3": {
+        "denominator": 1,
+        "is_exact_zero": true,
+        "numerator": 0
+      },
+      "W_gamma_R_coefficient_residual": {
+        "denominator": 1,
+        "is_exact_zero": true,
+        "numerator": 0
+      },
+      "W_gamma_constant_coefficient_residual": {
+        "denominator": 1,
+        "is_exact_zero": true,
+        "numerator": 0
+      },
+      "c_U_R_coefficient_residual": {
+        "denominator": 1,
+        "is_exact_zero": true,
+        "numerator": 0
+      },
+      "c_delta_coefficient_residual": {
+        "denominator": 1,
+        "is_exact_zero": true,
+        "numerator": 0
+      }
+    }
+  },
+  "execution_verdict": "PASS_P3A_EXACT_ZERO_IDENTITY",
+  "expected_x": [
+    -25.0,
+    -24.875,
+    -24.75,
+    -23.0
+  ],
+  "fine_depth": "66.5/100",
+  "hp_dps": 80,
+  "hp_normalized_limit": "1e-70",
+  "new_ODE_executed": false,
+  "next_step": "prepare separately preregistered P3a-B RK4 rerun",
+  "payload_sha256_without_self": "1FFF8959FE346D2034AA7EF2F4BFB7118C2CAA66280DA0E6E68884F4B9CB0E05",
+  "physical_verdict": "exact-zero coefficient identity verified; P3a-B may be prepared",
+  "physics_executed": true,
+  "provenance": {
+    "P2_raw": "D:\\Teoria\\Audit\\A2_K4_K7C_P2_MLEDGER_RAW_2026-07-15.json",
+    "P2_raw_sha256": "C268A63CE34888744E48A8BD784651C75B243B25705E74C301299DA69499FA5C",
+    "script_199": "D:\\Teoria\\scripts\\199_script_A2_K4_C7_7c_K7c_P2_Mprime_term_ledger.py",
+    "script_199_sha256": "911F7DDBDC6B41C019CD041FC024A2B8FAF9CF2A27A1F35686ECB6649BAD8DF9"
+  },
+  "provenance_checks": {
+    "P2_new_ODE_false": true,
+    "P2_raw_hash_exact": true,
+    "P2_test_exact": true,
+    "P2_verdict_exact": true,
+    "script_199_hash_exact": true
+  },
+  "runtime_limit_seconds": 5.0,
+  "runtime_seconds": 0.0,
+  "scope_limit": "registered background identities at four surfaces only; no ODE, no RK4 rerun, no CMB/S8 claim",
+  "score_effect": "NONE",
+  "surface_audits": [
+    {
+      "checks": {
+        "all_hp_normalized_residuals_le_1e_minus_70": true,
+        "background_finite": true
+      },
+      "float64": {
+        "Omega_b": 7.3734070803395985e-09,
+        "Omega_gamma": 0.5868900947211905,
+        "R": 9.422642092608193e-09,
+        "W_gamma": 1.1737802005024915,
+        "c_U_exact_identity_form": 0.0,
+        "c_U_original_form": 0.0,
+        "c_delta_exact_identity_form": 0.0,
+        "c_delta_original_form": 5.551115123125783e-17
+      },
+      "hp_80dps_normalized_residuals": {
+        "W_gamma": {
+          "decimal": "1.79628143986709625227971758255777986570807943640239023200069196719216994970627352e-81",
+          "float": 1.7962814398670963e-81
+        },
+        "c_U": {
+          "decimal": "1.420338333671133848898102523526862462579337291549241822192237517808255843575159984e-81",
+          "float": 1.4203383336711337e-81
+        },
+        "c_delta": {
+          "decimal": "1.796281456792813357742266864396196803847622431236586472377950161146665123571594227e-81",
+          "float": 1.7962814567928133e-81
+        },
+        "ratio": {
+          "decimal": "0.0",
+          "float": 0.0
+        }
+      },
+      "x": -25.0
+    },
+    {
+      "checks": {
+        "all_hp_normalized_residuals_le_1e_minus_70": true,
+        "background_finite": true
+      },
+      "float64": {
+        "Omega_b": 8.355164770110814e-09,
+        "Omega_gamma": 0.5868900907308391,
+        "R": 1.0677252311041335e-08,
+        "W_gamma": 1.1737801939944252,
+        "c_U_exact_identity_form": 0.0,
+        "c_U_original_form": 3.308722450212111e-24,
+        "c_delta_exact_identity_form": 0.0,
+        "c_delta_original_form": -5.551115123125783e-17
+      },
+      "hp_80dps_normalized_residuals": {
+        "W_gamma": {
+          "decimal": "0.0",
+          "float": 0.0
+        },
+        "c_U": {
+          "decimal": "2.506888377218581882970928990593447764391426187176094196222380476304461341116297169e-81",
+          "float": 2.506888377218582e-81
+        },
+        "c_delta": {
+          "decimal": "0.0",
+          "float": 0.0
+        },
+        "ratio": {
+          "decimal": "2.206901920736849660846529401444438830172496185649877436472793925150322168155260482e-81",
+          "float": 2.20690192073685e-81
+        }
+      },
+      "x": -24.875
+    },
+    {
+      "checks": {
+        "all_hp_normalized_residuals_le_1e_minus_70": true,
+        "background_finite": true
+      },
+      "float64": {
+        "Omega_b": 9.46764196142662e-09,
+        "Omega_gamma": 0.5868900862091787,
+        "R": 1.2098911939260685e-08,
+        "W_gamma": 1.1737801866198203,
+        "c_U_exact_identity_form": 0.0,
+        "c_U_original_form": 1.6543612251060553e-24,
+        "c_delta_exact_identity_form": 0.0,
+        "c_delta_original_form": 0.0
+      },
+      "hp_80dps_normalized_residuals": {
+        "W_gamma": {
+          "decimal": "0.0",
+          "float": 0.0
+        },
+        "c_U": {
+          "decimal": "1.10616062253271042731491880603566279005489592267404374292700374109426308117970852e-81",
+          "float": 1.1061606225327105e-81
+        },
+        "c_delta": {
+          "decimal": "0.0",
+          "float": 0.0
+        },
+        "ratio": {
+          "decimal": "1.947584109358264100373275790045174660450873067982685053130164589702741697301480128e-81",
+          "float": 1.947584109358264e-81
+        }
+      },
+      "x": -24.75
+    },
+    {
+      "checks": {
+        "all_hp_normalized_residuals_le_1e_minus_70": true,
+        "background_finite": true
+      },
+      "float64": {
+        "Omega_b": 5.448250078178528e-08,
+        "Omega_gamma": 0.5868899032464142,
+        "R": 6.962443102242723e-08,
+        "W_gamma": 1.1737798882165795,
+        "c_U_exact_identity_form": 0.0,
+        "c_U_original_form": 3.970466940254533e-23,
+        "c_delta_exact_identity_form": 0.0,
+        "c_delta_original_form": -5.551115123125783e-17
+      },
+      "hp_80dps_normalized_residuals": {
+        "W_gamma": {
+          "decimal": "0.0",
+          "float": 0.0
+        },
+        "c_U": {
+          "decimal": "0.0",
+          "float": 0.0
+        },
+        "c_delta": {
+          "decimal": "1.796282042835592567546216570529173022948634134903489569192931923558921337106829221e-81",
+          "float": 1.7962820428355925e-81
+        },
+        "ratio": {
+          "decimal": "0.0",
+          "float": 0.0
+        }
+      },
+      "x": -23.0
+    }
+  ],
+  "test": "SCI-A2K4-C7G5-K7C-P3A-ZERO-IDENTITY"
+}

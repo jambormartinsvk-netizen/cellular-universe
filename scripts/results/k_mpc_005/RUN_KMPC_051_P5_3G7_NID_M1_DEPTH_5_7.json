@@ -1,0 +1,439 @@
+{
+  "F0_common_0_5": {
+    "baseline_value": 5.035638969499107e-17,
+    "candidate_value": 1.2354436547662499e-16,
+    "coefficient_count": 12,
+    "exact_power_sets": true,
+    "exact_state_set": true,
+    "finite": true,
+    "frozen_limit": 1e-08,
+    "max_absolute_difference": 7.318797578163391e-17,
+    "max_relative_to_max_or_one": 7.318797578163391e-17,
+    "pass_frozen_limit": true,
+    "worst_coefficient": "U_f[1]"
+  },
+  "M1_common_minus1_5": {
+    "baseline_value": -1.791830437280692e-15,
+    "candidate_value": -4.3964398094287205e-15,
+    "coefficient_count": 77,
+    "exact_power_sets": true,
+    "exact_state_set": true,
+    "finite": true,
+    "frozen_limit": 1e-08,
+    "max_absolute_difference": 2.6046093721480285e-15,
+    "max_relative_to_max_or_one": 2.6046093721480285e-15,
+    "pass_frozen_limit": true,
+    "worst_coefficient": "h[1]"
+  },
+  "M1_depth5": {
+    "depth": 5,
+    "driver_global_state_scaled": 1.8292442213740924e-14,
+    "driver_max_absolute": 1.8292442213740934e-14,
+    "exponents": [
+      -1,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "finite": true,
+    "full_vector_unknowns_expected": 77,
+    "holdout_global_state_scaled": 2.7463637806078856e-15,
+    "holdout_max_absolute": 2.7463637806078868e-15,
+    "rank_count_anchor_pass": true,
+    "reduced_unknowns_expected": 76,
+    "solver_metadata": {
+      "condition_resolved": 1381.448283888701,
+      "driver_scaled_residual": 1.1407541578023479e-14,
+      "full_vector_unknowns": 77,
+      "hard_anchor_absolute_difference": 0.0,
+      "hard_anchor_method": "exact_column_elimination",
+      "hard_anchor_variable": "h[3]",
+      "holdout_scaled_residual": 2.7463637806078856e-15,
+      "m1_expected_h_coefficient": 0.0004045816759187545,
+      "m1_h_power": 3,
+      "m1_h_relative_difference": 0.0,
+      "m1_observed_h_coefficient": 0.0004045816759187545,
+      "rank": 76,
+      "unknowns": 76
+    },
+    "state_scale": 1.0000000000000004
+  },
+  "M1_depth7": {
+    "depth": 7,
+    "driver_global_state_scaled": 9.796417149710018e-15,
+    "driver_max_absolute": 9.796417149710024e-15,
+    "exponents": [
+      -1,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "finite": true,
+    "full_vector_unknowns_expected": 99,
+    "holdout_global_state_scaled": 5.7200717258259835e-15,
+    "holdout_max_absolute": 5.7200717258259874e-15,
+    "rank_count_anchor_pass": true,
+    "reduced_unknowns_expected": 98,
+    "solver_metadata": {
+      "condition_resolved": 2576.8035168776264,
+      "driver_scaled_residual": 4.3368086899420146e-15,
+      "full_vector_unknowns": 99,
+      "hard_anchor_absolute_difference": 0.0,
+      "hard_anchor_method": "exact_column_elimination",
+      "hard_anchor_variable": "h[3]",
+      "holdout_scaled_residual": 5.7200717258259835e-15,
+      "m1_expected_h_coefficient": 0.0004045816759187545,
+      "m1_h_power": 3,
+      "m1_h_relative_difference": 0.0,
+      "m1_observed_h_coefficient": 0.0004045816759187545,
+      "rank": 98,
+      "unknowns": 98
+    },
+    "state_scale": 1.0000000000000007
+  },
+  "M1_depth7_pass": true,
+  "M3_common_0_5": {
+    "baseline_value": 2.7495994428008953e-16,
+    "candidate_value": 6.263780586979173e-16,
+    "coefficient_count": 78,
+    "exact_power_sets": true,
+    "exact_state_set": true,
+    "finite": true,
+    "frozen_limit": 1e-08,
+    "max_absolute_difference": 3.514181144178278e-16,
+    "max_relative_to_max_or_one": 3.514181144178278e-16,
+    "pass_frozen_limit": true,
+    "worst_coefficient": "h[1]"
+  },
+  "authorship": {
+    "script_creator": "Codex (OpenAI)",
+    "theory_author": "Martin Jambor"
+  },
+  "baseline_hash_match_KMPC050": true,
+  "baseline_matrix": {
+    "capture_counts": {
+      "holdout": 1,
+      "passthrough": 1,
+      "target": 1
+    },
+    "driver_constant_sha256_float64_C": "C5E714FC0015A1019788ADBA745A88CB7228C40A66ED5CE4F695F11FDC942458",
+    "driver_matrix_sha256_float64_C": "BF82D1C14A2B71091B068C845DA3D1344D240E1D66D026C64AEE457329B3AD83",
+    "driver_shape": [
+      104,
+      104
+    ],
+    "equilibrated_rank_rcond": 104,
+    "holdout_constant_sha256_float64_C": "F119F3100DA199DFDED4CDEE30DB784CE7FCC78CC6BA065C2E601A16FFA2532E",
+    "holdout_matrix_sha256_float64_C": "144D074E21E2D9AE73C84E8F4097B4944FC40DA76422D50115FA0C6CAA23CF1B",
+    "holdout_shape": [
+      16,
+      104
+    ],
+    "owners_restored": true,
+    "pass": true,
+    "raw_rank_rcond": 104
+  },
+  "baseline_pass": true,
+  "candidate_interpretation_not_verdict": "REVIEW_NID_M1_DEPTH_MISMATCH_REJECTED_CONSTRAINT_AUDIT_REQUIRED",
+  "common_pass": true,
+  "depth7_core_pass": false,
+  "depth7_matrix": {
+    "capture_counts": {
+      "holdout": 1,
+      "passthrough": 1,
+      "target": 1
+    },
+    "driver_constant_sha256_float64_C": "9D9A0B7839B9C386A184B358BF9B781A46CBC3829C98A73DEC5852FE57EC3373",
+    "driver_matrix_sha256_float64_C": "D4D3195BBCE660D70DEEF1526C3BA85C51B842D4BA214DC87175A716B2B36914",
+    "driver_shape": [
+      104,
+      104
+    ],
+    "equilibrated_rank_rcond": 104,
+    "holdout_constant_sha256_float64_C": "6DFDD6064C161DA6979DF43AE2507D8ECD6687BC21D146DE6738B3BFD47369CE",
+    "holdout_matrix_sha256_float64_C": "2CF9B91A35742A8F8886EA7DF1EE8687C5949DDC532797731B2B202FB7270EE1",
+    "holdout_shape": [
+      16,
+      104
+    ],
+    "owners_restored": true,
+    "pass": true,
+    "raw_rank_rcond": 104
+  },
+  "depth7_original_M3_diagnostics": {
+    "Uc_lower_regular_max_abs": 0.0,
+    "absolute_fallback_row_count": 29,
+    "column_scale_span": 14.852851912359563,
+    "equilibrated_rank_rcond": 104,
+    "equilibrated_singular_ratio": 0.2759142903409578,
+    "expected_rank": 104,
+    "forbidden_Omega_f1_times_fuel1_max_abs": 0.0,
+    "forbidden_Phi1_Einstein_source_sensitivities": {
+      "density_from_delta_f1": 0.0,
+      "momentum_from_U_f1": 0.0,
+      "trace_from_U_f1": 0.0,
+      "trace_from_delta_f1": 0.0
+    },
+    "forbidden_earlier_layer_max_abs": 0.0,
+    "fuel1_driver_column_min_max_abs": 2.93109,
+    "holdout": {
+      "absolute_fallback_row_count": 2,
+      "max_absolute_fallback_residual": 5.673981399464661e-15,
+      "max_relative_residual": 3.59803599651413e-11,
+      "pass_holdout": true,
+      "relative_row_count": 14,
+      "rows": 16,
+      "worst_absolute_fallback_row": "Einstein_00[1]",
+      "worst_relative_row": "Einstein_0i[7]"
+    },
+    "max_absolute_fallback_residual": 3.1963534817799867e-15,
+    "max_relative_residual": 1.399416137423353e-10,
+    "pass_driver": false,
+    "pass_forbidden_layers": true,
+    "pass_forbidden_stress_guard": true,
+    "pass_production_contract": true,
+    "pass_rank": true,
+    "production_contract": {
+      "errors": [],
+      "implemented_driver": [
+        "gamma_continuity",
+        "gamma_Euler",
+        "fs_continuity",
+        "fs_shear",
+        "fs_Euler",
+        "baryon_continuity",
+        "cdm_continuity",
+        "cdm_Euler",
+        "tight_coupling",
+        "fuel_continuity",
+        "fuel_Euler",
+        "Einstein_trace",
+        "Einstein_traceless"
+      ],
+      "implemented_holdout": [
+        "Einstein_00",
+        "Einstein_0i"
+      ],
+      "implemented_state": [
+        "h",
+        "eta",
+        "delta_gamma",
+        "delta_fs",
+        "delta_b",
+        "delta_c",
+        "U_gamma",
+        "U_fs",
+        "sigma_fs",
+        "U_b",
+        "U_c",
+        "delta_f",
+        "U_f"
+      ],
+      "valid": true
+    },
+    "raw_rank_rcond": 104,
+    "raw_singular_ratio": 0.0012150985379871066,
+    "rcond": 1e-12,
+    "relative_row_count": 75,
+    "row_scale_span": 782.5189115286001,
+    "rows": 104,
+    "support": [
+      0,
+      7
+    ],
+    "unknowns": 104,
+    "worst_absolute_fallback_row": "Einstein_traceless[0]",
+    "worst_relative_row": "fuel_Euler[7]"
+  },
+  "depth7_solve_checks": {
+    "F0_driver": true,
+    "F0_exact_shape": true,
+    "F0_leading_postcheck": true,
+    "F0_rank": true,
+    "M3_Uc_lower_regular": true,
+    "M3_driver": false,
+    "M3_exact_shape": true,
+    "M3_forbidden_layers": true,
+    "M3_forbidden_stress": true,
+    "M3_independent_00_0i_holdout": true,
+    "M3_production_contract": true,
+    "M3_rank": true,
+    "all_coefficients_and_diagnostics_finite": true,
+    "shape_guard_during": true,
+    "shape_guard_restored": true
+  },
+  "execution_status": "TECHNICAL_COMPLETE_PENDING_ORCHESTRATOR_AUDIT",
+  "finite_pass": true,
+  "identity": {
+    "M1_depths": [
+      5,
+      7
+    ],
+    "M3_support": [
+      0,
+      7
+    ],
+    "k_Mpc_inverse": 0.05,
+    "mode": "NID",
+    "variant": "nominal"
+  },
+  "immutable_KMPC050": {
+    "file": "RUN_KMPC_050_P5_3G7_NID_ORDER7_M3_PROVENANCE_RANK_FILTER.json",
+    "sha256": "8D527E822959D861EB33994233D22BDF752C368025AC66F28C6F820DEF479F65"
+  },
+  "matrix_differences_depth7_minus_depth5": {
+    "driver_constant": {
+      "max_absolute": 8.686602742792853e-05,
+      "max_relative_to_max_or_one": 8.686602742792853e-05
+    },
+    "driver_matrix": {
+      "max_absolute": 1.4210854715202004e-14,
+      "max_relative_to_max_or_one": 1.816039779465779e-17
+    },
+    "holdout_constant": {
+      "max_absolute": 3.590282607408645e-05,
+      "max_relative_to_max_or_one": 3.590282607408645e-05
+    },
+    "holdout_matrix": {
+      "max_absolute": 8.881784197001252e-16,
+      "max_relative_to_max_or_one": 8.125250269644885e-17
+    }
+  },
+  "orchestrator_verdict": "NOT_ASSIGNED_BY_SCRIPT",
+  "prediction_table_effect": "NONE",
+  "release_trigger": "NONE",
+  "run_id": "KMPC-051",
+  "runtime_limit_seconds": 4.8,
+  "runtime_seconds": 3.2809999999881256,
+  "same_matrix_correction_depth5": {
+    "after_driver": {
+      "absolute_fallback_row_count": 29,
+      "max_absolute_fallback_residual": 1.2424559257230936e-29,
+      "max_relative_residual": 1.5755444949743657e-16,
+      "pass_driver": true,
+      "relative_row_count": 75,
+      "worst_absolute_fallback_row": "Einstein_traceless[1]",
+      "worst_relative_row": "gamma_continuity[5]"
+    },
+    "after_holdout": {
+      "absolute_fallback_row_count": 2,
+      "max_absolute_fallback_residual": 2.7109638355842788e-15,
+      "max_relative_residual": 0.22998654761907275,
+      "pass_holdout": false,
+      "relative_row_count": 14,
+      "rows": 16,
+      "worst_absolute_fallback_row": "Einstein_00[1]",
+      "worst_relative_row": "Einstein_00[7]"
+    },
+    "before_driver": {
+      "absolute_fallback_row_count": 29,
+      "max_absolute_fallback_residual": 2.4408707321664543e-15,
+      "max_relative_residual": 1.2630544957935692e-10,
+      "pass_driver": false,
+      "relative_row_count": 75,
+      "worst_absolute_fallback_row": "Einstein_traceless[0]",
+      "worst_relative_row": "fuel_continuity[7]"
+    },
+    "before_holdout": {
+      "absolute_fallback_row_count": 2,
+      "max_absolute_fallback_residual": 2.7698185238357107e-15,
+      "max_relative_residual": 0.2299865476185119,
+      "pass_holdout": false,
+      "relative_row_count": 14,
+      "rows": 16,
+      "worst_absolute_fallback_row": "Einstein_00[1]",
+      "worst_relative_row": "Einstein_00[7]"
+    },
+    "correction_Linf_relative_to_max_solution_or_one": 2.2866835133762004e-16,
+    "correction_max_abs": 2.2866835133762004e-16,
+    "method": "one same-matrix equilibrated least-squares correction; diagnostic only",
+    "normalized_backward_error_Linf": 9.273327484797342e-17,
+    "pass_numerical_boundary_pattern": false
+  },
+  "same_matrix_correction_depth7": {
+    "after_driver": {
+      "absolute_fallback_row_count": 29,
+      "max_absolute_fallback_residual": 1.67632942359465e-30,
+      "max_relative_residual": 1.6156593658164918e-16,
+      "pass_driver": true,
+      "relative_row_count": 75,
+      "worst_absolute_fallback_row": "Einstein_traceless[0]",
+      "worst_relative_row": "fuel_Euler[6]"
+    },
+    "after_holdout": {
+      "absolute_fallback_row_count": 2,
+      "max_absolute_fallback_residual": 5.69130898394387e-15,
+      "max_relative_residual": 2.6215517497518977e-11,
+      "pass_holdout": true,
+      "relative_row_count": 14,
+      "rows": 16,
+      "worst_absolute_fallback_row": "Einstein_00[1]",
+      "worst_relative_row": "Einstein_0i[7]"
+    },
+    "before_driver": {
+      "absolute_fallback_row_count": 29,
+      "max_absolute_fallback_residual": 3.1963534817799867e-15,
+      "max_relative_residual": 1.399416137423353e-10,
+      "pass_driver": false,
+      "relative_row_count": 75,
+      "worst_absolute_fallback_row": "Einstein_traceless[0]",
+      "worst_relative_row": "fuel_Euler[7]"
+    },
+    "before_holdout": {
+      "absolute_fallback_row_count": 2,
+      "max_absolute_fallback_residual": 5.673981399464661e-15,
+      "max_relative_residual": 3.59803599651413e-11,
+      "pass_holdout": true,
+      "relative_row_count": 14,
+      "rows": 16,
+      "worst_absolute_fallback_row": "Einstein_00[1]",
+      "worst_relative_row": "Einstein_0i[7]"
+    },
+    "correction_Linf_relative_to_max_solution_or_one": 3.3226781650132825e-16,
+    "correction_max_abs": 3.3226781650132825e-16,
+    "method": "one same-matrix equilibrated least-squares correction; diagnostic only",
+    "normalized_backward_error_Linf": 1.0347533417115965e-16,
+    "pass_numerical_boundary_pattern": true
+  },
+  "scope": {
+    "excluded": "equation/support/threshold changes, [0,9], NIV, other k/variants, S-M, ODE, G8/G9",
+    "included": "same NID [0,7] M3 system under hard-anchored M1 depth 5 and 7"
+  },
+  "score_effect": "NONE",
+  "source_hashes": {
+    "cdi_c1_coverage.py": "D57CA8CA5571A07440A987F4FB0DDA08A40DAF7EA8C95AF929FC5C936F2FCE0F",
+    "cdi_support_ladder.py": "A8257E2195E2AB61B5C4195B80EA44EE7669B5A52F9C8440BA5F5244190E3068",
+    "full_ra_b1_preflight.py": "62D6DEEFBDB81C0619FD58C668185FF9CA76926A90D00DCE9C092AD4797D6B5D",
+    "full_ra_b1_preflight_v2.py": "27C0D6ADA828CA2F59C0D128EB6339074D5940F294272CDABE8127CB84867C7C",
+    "full_ra_contract.py": "F3839DA931D24939FA9C5925FD29B1484E722D1A0F24117DC91EBE5F4436D464",
+    "full_ra_m3_seed.py": "070F217B45A385369ECAFAA3D409A1210BAE3C3AF8A600A9171225B258751BF2",
+    "mode_resolved_puiseux.py": "5A89CF82006CB5ECC1D8B4BE1FD56A463453EE3D6261968CB64DE8CCF2C8B7AE",
+    "mode_resolved_puiseux_v2_m1_anchored.py": "5DE2C280B0E9DAF528A9E3011368361B37AE53DE38827FB6F6CE4AB2019A4455",
+    "nid_c1_coverage.py": "EEEE74848B6F4413914F0CC60230CC824982C7E485A38C77C4495F807975A2CD",
+    "nid_m1_depth_5_7.py": "8B4572BBA51844471782D686F4199436186491E0F8274BD5CF1CB2EAC76B8B9C",
+    "nid_order7_m3_provenance.py": "DC7C178B8A73DC97B5FC6CCAB97FE88F3E95F59F0EDBF05985451DD6572319C3",
+    "nid_order7_m3_provenance_v2_rank_filter.py": "D583209F7B1CCB2648EFF3DD1D59F3F4382C9E1FDB66F7854404F3BE4B9AA025",
+    "nid_support_step2.py": "7AFA5AD9022FA3EB8BDFB5F77D573939D60B2312A0FA29493D6505695958EE5B",
+    "s1_collective_contract.py": "F535EE15137BBD6F9C0379821C9CC94DED8EC56037B6105B75BEF65A5884EE68",
+    "s_c0_coefficient_passport.py": "C370B610815AFAC345C990E3CFE516D616873F39598F468A5ADBF2C65A2A6B95",
+    "s_c0_coefficient_passport_v2_numpy_scalar.py": "06EE03C939FBCCFA6FA130421EEF98D0B8CC7571937EF02A7A46A57367534C11"
+  },
+  "test": "A2-K4 P5.3g7 KMPC-051 NID M1 depth 5-to-7 diagnostic",
+  "thresholds": {
+    "absolute_fallback": 1e-12,
+    "common_relative": 1e-08,
+    "correction_abs_max": 1e-12,
+    "correction_rel_max": 1e-12,
+    "driver_relative": 1e-10,
+    "holdout_relative": 1e-09
+  },
+  "zenodo_trigger": "NONE"
+}

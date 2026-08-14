@@ -1,0 +1,27 @@
+{
+  "checks": {
+    "ell_from_total_derivative": true,
+    "energy_frame_definition": true,
+    "k_absent_from_background_coefficients": true,
+    "k_present_only_in_s2": true,
+    "paired_background_transfer": true,
+    "radiation_gamma_limit": true,
+    "state_contains_Uc_and_Ub_momentum": true,
+    "xc_scaled_derivative": true,
+    "xf_scaled_derivative": true
+  },
+  "residuals": {
+    "ell_from_total_derivative": "0",
+    "energy_frame_definition": "0",
+    "paired_background_transfer": "0",
+    "radiation_gamma_limit": "0",
+    "xc_scaled_derivative": "0",
+    "xf_scaled_derivative": "0"
+  },
+  "runtime_limit_seconds": 5.0,
+  "runtime_seconds": 0.18800000000010186,
+  "scope": "symbolic identities only; no ODE, no score, no G8",
+  "state_basis": "includes U_c and U_b; M_full includes CDM/baryon momentum",
+  "test": "KMPC-003 P5.1 exact-A1 general-synchronous static ledger",
+  "verdict": "PASS_P5_1_STATIC_LEDGER"
+}

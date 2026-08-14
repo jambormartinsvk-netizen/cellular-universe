@@ -1,0 +1,24 @@
+{
+  "checks": {
+    "NIV_returned_qn_is_invariant_at_fixed_y": true,
+    "source_return_explicitly_converts_tn_to_qn": true,
+    "source_return_places_qn_at_index_5": true
+  },
+  "fixed_y": 0.0002,
+  "k_values": [
+    0.05,
+    0.1
+  ],
+  "next_step": "rerun the l=2 candidate derivation with qn, not tn",
+  "ratio": 1.0,
+  "returned_qn_values": [
+    0.999999989317269,
+    0.999999989317269
+  ],
+  "runtime_limit_seconds": 5.0,
+  "runtime_seconds": 0.9529999999995198,
+  "scope": "NIV returned-qn convention only; leading-radiation semantic check, no eta exact-invariance claim, no ODE, no score",
+  "source84_sha256": "0f7e294b5385b2d7b29987bb952f9f46eba4981a206b94f4ef1aab334307538e",
+  "test": "KMPC-016 P5.3g3a RERUN1 returned seed84 qn semantics",
+  "verdict": "PASS_SCOPE_P5_3G3A_RETURNED_QN_SEMANTICS"
+}

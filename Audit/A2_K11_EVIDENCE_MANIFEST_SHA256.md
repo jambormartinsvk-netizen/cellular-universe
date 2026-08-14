@@ -1,0 +1,48 @@
+# A2-K11 — manifest dôkazov a kontrolných súčtov
+
+**Dátum:** 2026-07-13  
+**Algoritmus:** SHA-256  
+**Kanonický stav:** `PREŽÍVA IBA FORMULAČNÚ BRÁNU — 15/100`
+
+| Súbor | Bajty | SHA-256 |
+|---|---:|---|
+| `scripts/45_script_A2_K11_S8_K1b_superhorizon_instability_test.py` | 10013 | `973905D79CBECBFD2DE55F13D3D3713D66C18B068BA74C7CAB566001A7312AEB` |
+| `scripts/51_script_A2_K11_script45_equation_and_sign_audit.py` | 9870 | `8AAA966AAAFC273CEA2CEDD816CFD12444314CDAC47A48D2800FAF9ABE3ACB5A` |
+| `scripts/52_script_A2_K11_script45_recoverable_runs.py` | 2759 | `B312C1A379F71DABBEE42AC34C2F7ADF10F6FD65088FCB357774205D0AA92BE3` |
+| `scripts/53_script_A2_K11_solver_floor_and_amplitude_scaling.py` | 5154 | `55951C028A1B54C2C68F1B9A20B53FE3D60D0806C5D8CE1517E1B9DC9802C8B2` |
+| `scripts/54_script_A2_K11_script45_constraint_and_scaling_audit.py` | 6199 | `C953BB7BC38C6F3FFC1F4D70C747AA8E7FC18B2B5F2FCF0331A8C454139330CF` |
+| `Audit/A2_K11_audit_opraveneho_scriptu_45_a_momentum_drag.md` | 8920 | `9B2C190988480986A68D043EE440D31F6A905C63145011A02EF1CD1EF7D3B193` |
+| `Audit/A2_K11_NUMERICAL_OUTPUT_45_51_52_53.md` | 4188 | `24AD3E9E78940192B0D6C28B4C8ECD1603E6E0D14731090827D71A4469BC48FA` |
+| `Audit/A2_KATALOG_STAV_SKORE_A_DOVOD_SMRTI_K1_AZ_K11.md` | 4829 | `3981B1C0061133D8EB96EA2951FD754E0E2659985F7EA19A2154C9B0B551DE21` |
+| `Audit/A2_K11_ADDENDUM_revizia_973905D_constraint_a_tolerancie.md` | 5607 | `330C66994A7D28E899DC64FE9B3031D2304C9410A4F689D469ECEA17933566FC` |
+| `Audit/A2_K11_NUMERICAL_OUTPUT_54.md` | 1686 | `DEB730D0BA8C40225EC15109895FDF0DDB9823D9CF48B5AB3BE151ABD3595EAD` |
+| `Questions/A2_K11_STAV_A_AKCNY_PLAN_PO_AUDITE_SKRIPTU_45.md` | 3774 | `3D9A1794092A8421A0DAD8816FBB52C70439621A5CBD325FB35816DC0E8DD035` |
+| `Questions/A3_STAV_A_AKCNY_PLAN_PO_K11_0.md` | 1587 | `3D5F7BB353A1CD42EFAB5D43CAF3F9A12D2370F07BD2973C0C5BCBE1C1094924` |
+| `Questions/00_READ_FIRST_A2_Q20_AFTER_K11_0.md` | 954 | `3DCB2BC9D511C68DB4CCB379507A484D81779D04E5D88B8C21A67F96BD77288B` |
+| `Questions/A2_K11_STAV_PO_REVIZII_973905D_A_DALSI_KROK.md` | 1243 | `06E9B9968B6BE324850F2E7D3E085702E8B1224160D3270BDBD9022CC1916AED` |
+| `Questions/00_READ_FIRST_A2_Q20_AFTER_K11_0_REV2.md` | 937 | `C88D3FF771759E29951EC89F657544D8B07FE9EE945AE0AD228FC3CD033A58F2` |
+| `theory/SK/05o_Methodology_Rules_and_Question_Register_A2_K11_SK.md` | 3109 | `FF14CD33F3CA87172A04DF05AFB4800686D0CAAFC0EF5F778A21CBD6E379FFE8` |
+| `theory/EN/05o_Methodology_Rules_and_Question_Register_A2_K11_EN.md` | 3060 | `617CE9D0DB122F8F6C31B28A73899E5FB46917EDB3A1D254E547AB436A665E50` |
+| `theory/SK/05p_Methodology_Rules_and_Question_Register_A2_K11_revision_SK.md` | 1497 | `700FDF0172C0594218BC8AE7611B229C3FDEC4380DFF10DBBA5D6A4CDFB97160` |
+| `theory/EN/05p_Methodology_Rules_and_Question_Register_A2_K11_revision_EN.md` | 1487 | `A34E4A53B7B9C4C91B19457C00647A48413E4A951D1947801F4906999FD97E61` |
+
+## Revízna stopa skriptu 45
+
+- staršia auditovaná revízia mala hash
+  `61558FAF0D08E35B9B6D6CAFE30FFD55FD2E3FB2399D2A69F92D534EFC590CB1`;
+- aktuálna revízia má hash
+  `973905D79CBECBFD2DE55F13D3D3713D66C18B068BA74C7CAB566001A7312AEB`;
+- staršia revízia nie je ticho vydávaná za novú: jej výstup a obmedzenia sú
+  zachované v MD, nová revízia má samostatný dodatok a skript 54;
+- samotný názov `45_script...py` nikdy nie je identitou výsledku bez hashu.
+
+## Auditná väzba
+
+- skripty 51–52 auditujú znamienka a opravenú fyzikálnu sústavu;
+- skript 53 zachováva zlyhanie staršej tolerančnej revízie;
+- skript 54 testuje presný aktuálny hash a uznáva jeho numerické zlepšenie,
+  ale bodovo zamieta constraintové tvrdenie;
+- oba neúspešné výsledky sa zachovávajú;
+- AR13–AR14 a Q42–Q43 sú obsahovo zrkadlené v SK a EN;
+- ak K11 neskôr zomrie ako M-015, tento balík sa nemaže ani neprepisuje.
+

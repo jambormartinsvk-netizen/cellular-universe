@@ -1,0 +1,54 @@
+{
+  "checks": {
+    "89_script_A2_K4_3b_RG_BR2_backreacted_superhorizon_evolution_beta_enthalpy_weight": true,
+    "89_script_A2_K4_3b_RG_BR2_backreacted_superhorizon_evolution_cdm_continuity": true,
+    "89_script_A2_K4_3b_RG_BR2_backreacted_superhorizon_evolution_cdm_euler": true,
+    "89_script_A2_K4_3b_RG_BR2_backreacted_superhorizon_evolution_energy_frame_Ud": true,
+    "89_script_A2_K4_3b_RG_BR2_backreacted_superhorizon_evolution_fuel_euler": true,
+    "89_script_A2_K4_3b_RG_BR2_backreacted_superhorizon_evolution_gamma_equals_lambda_over_E": true,
+    "89_script_A2_K4_3b_RG_BR2_backreacted_superhorizon_evolution_k_is_argument_not_fixed_background": true,
+    "89_script_A2_K4_3b_RG_BR2_backreacted_superhorizon_evolution_momentum_contains_cdm_fuel_baryon": true,
+    "90_script_A2_K4_3b_RG_BR2_conditioned_DAE_constraint_audit_beta_enthalpy_weight": true,
+    "90_script_A2_K4_3b_RG_BR2_conditioned_DAE_constraint_audit_cdm_continuity": true,
+    "90_script_A2_K4_3b_RG_BR2_conditioned_DAE_constraint_audit_cdm_euler": true,
+    "90_script_A2_K4_3b_RG_BR2_conditioned_DAE_constraint_audit_energy_frame_Ud": true,
+    "90_script_A2_K4_3b_RG_BR2_conditioned_DAE_constraint_audit_fuel_euler": true,
+    "90_script_A2_K4_3b_RG_BR2_conditioned_DAE_constraint_audit_gamma_equals_lambda_over_E": true,
+    "90_script_A2_K4_3b_RG_BR2_conditioned_DAE_constraint_audit_k_is_argument_not_fixed_background": true,
+    "90_script_A2_K4_3b_RG_BR2_conditioned_DAE_constraint_audit_momentum_contains_cdm_fuel_baryon": true
+  },
+  "runtime_limit_seconds": 5.0,
+  "runtime_seconds": 0.0,
+  "scope": "syntax/text contract only; no model import, ODE, score, or source rewrite",
+  "targets": {
+    "89_script_A2_K4_3b_RG_BR2_backreacted_superhorizon_evolution.py": {
+      "beta_enthalpy_weight": true,
+      "cdm_continuity": true,
+      "cdm_euler": true,
+      "energy_frame_Ud": true,
+      "fuel_euler": true,
+      "gamma_equals_lambda_over_E": true,
+      "k_is_argument_not_fixed_background": true,
+      "momentum_contains_cdm_fuel_baryon": true
+    },
+    "90_script_A2_K4_3b_RG_BR2_conditioned_DAE_constraint_audit.py": {
+      "beta_enthalpy_weight": true,
+      "cdm_continuity": true,
+      "cdm_euler": true,
+      "energy_frame_Ud": true,
+      "fuel_euler": true,
+      "gamma_equals_lambda_over_E": true,
+      "k_is_argument_not_fixed_background": true,
+      "momentum_contains_cdm_fuel_baryon": true
+    }
+  },
+  "test": "LINEAGE-L2-B2.1 BR2 exact source-equation contract audit",
+  "unclosed_scope": [
+    "fuel continuity full derivation",
+    "all Einstein constraints",
+    "lambda_to_zero",
+    "hierarchy convergence",
+    "numerical evolution"
+  ],
+  "verdict": "PASS_L2_B2_1_BR2_CORE_CONTRACT"
+}

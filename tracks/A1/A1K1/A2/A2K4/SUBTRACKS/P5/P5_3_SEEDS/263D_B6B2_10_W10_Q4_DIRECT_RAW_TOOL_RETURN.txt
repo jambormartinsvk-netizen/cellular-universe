@@ -1,0 +1,409 @@
+TASK_ID: A2K4-B6B2-10-H-RDIV-C01-RW1-V1-W10-RAW-V2-Q4-20260727-166D
+QUERY_ID: Q4
+EXACT_QUERY: covariant phase field fracture interface energy conservation reset primary paper
+PROVIDER_PAYLOAD: {"search_query":[{"q":"covariant phase field fracture interface energy conservation reset primary paper"}],"response_length":"long"}
+BEGIN_EXACT_TOOL_RETURN
+A pseudo-dynamic phase-field model for brittle fracture - ScienceDirect (https://doi.org/10.1016/j.jmps.2025.106493)
+citeturn18search0 [wordlim: 200] Crawled: today; The enforcement of global energy conservation in phase-field fracture simulations has been an open problem for the last 25 years. ... Their popularity notwithstanding, phase-field approaches suffer from a critical limitation when used to model brittle fracture: they generally fail to ensure the conservation of energy.
+
+## Journal of the Mechanics and Physics of Solids
+
+Date: February 2026
+
+Article: 106493
+
+Volume: Volume 208
+
+## Published by: Elsevier
+
+### Published by
+
+Show more
+
+Research article
+
+Open access
+
+Under a Creative Commons license
+
+Get rights and content
+
+# A pseudo-dynamic phase-field model for brittle fracture
+
+Author links open overlay panel Juan Michael Sargado, Joachim Mathiesen
+
+Show more
+
+View PDFDownload full issue
+
+Cite
+
+Add to Mendeley
+
+Share
+
+10.1016/j.jmps.2025.106493
+
+More actions
+
+  * Article
+  * Metrics
+
+## Abstract
+
+The enforcement of global energy conservation in phase-field fracture simulations has been an open problem for the last 25 years. Specifically, the occurrence of unstable fracture is accompanied by a loss in total potential energy, which suggests a violation of the energy conservation law. This phenomenon can occur even with purely quasi-static, displacement-driven loading conditions, where finite crack growth arises from an infinitesimal increase in load. 
+Their popularity notwithstanding, phase-field approaches suffer from a critical limitation when used to model brittle fracture: they generally fail to ensure the conservation of energy. The issue has been recognized since the early development of variational phase-field models, yet it remains unresolved. The significance of this problem becomes evident when we consider that most of the applications mentioned earlier are modeled as quasi-static processes. Energy conservation is not a concern when crack growth is stable, because the governing equations of quasi-static phase-field fracture models are derived under the assumption that total energy is conserved for small variations in both displacement and damage fields. However, finite crack growth over a single time step involves changes that may no longer be considered small, particularly since the damage field at a given point can evolve from zero to unity within a single loading step, even one of arbitrarily small size. Initially, it was thought that the failure to conserve energy was due to standard solvers being unable to escape local minima in the solution space. Efforts to address this issue have taken the form of backtracking schemes (Bourdin et al., 2008, Luege and Orlando, 2021, Mesgarnejad et al., 2015, Mielke et al., 2010), which heuristically adjust solutions post hoc to bring them closer to the global minimizer. However, backtracking can also lead to unphysical results, such as crack propagation that violates Griffith’s (1921) criterion.
+
+--------------------------------------------------------------------------------
+Fracture in mode I using a conserved phase-field model - PubMed (https://pubmed.ncbi.nlm.nih.gov/11909175/)
+citeturn18search1 [wordlim: 200] Published: 24.4 years ago; Crawled: last week; # Fracture in mode I using a conserved phase-field model ... It includes a phase-field that is proportional to the mass density and a displacement field that is governed by linear elastic theory. ... The added phase-field smooths the sharp interface, enabling us to use equations of motion for the material (grounded in basic physical principles) rather than for the interface (which often are deduced from complicated theories or empirical observations). ... In this paper, we look at stationary solutions of the model, mode I fracture, and also discuss numerical issues.
+
+. 2002 Mar;65(3 Pt 2A):036117.
+
+doi: 10.1103/PhysRevE.65.036117. Epub 2002 Feb 13.
+
+# Fracture in mode I using a conserved phase-field model
+
+L O Eastgate^{  1 }, J P Sethna, M Rauscher, T Cretegny, C-S Chen, C R Myers
+
+Affiliations Expand
+
+### Affiliation
+
+  * ^{1} Laboratory of Atomic and Solid State Physics, Cornell University, Ithaca, New York 14853, USA.
+
+  * PMID: 11909175
+  * DOI: 10.1103/PhysRevE.65.036117
+
+
+# Fracture in mode I using a conserved phase-field model
+
+L O Eastgate et al. Phys Rev E Stat Nonlin Soft Matter Phys. 2002 Mar.
+
+Show details
+
+### Authors
+
+L O Eastgate^{  1 }, J P Sethna, M Rauscher, T Cretegny, C-S Chen, C R Myers
+
+### Affiliation
+
+  * ^{1} Laboratory of Atomic and Solid State Physics, Cornell University, Ithaca, New York 14853, USA.
+
+  * PMID: 11909175
+
+## Abstract
+
+We present a continuum phase-field model of crack propagation. It includes a phase-field that is proportional to the mass density and a displacement field that is governed by linear elastic theory. Generic macroscopic crack growth laws emerge naturally from this model. In contrast to classical continuum fracture mechanics simulations, our model avoids numerical front tracking. The added phase-field smooths the sharp interface, enabling us to use equations of motion for the material (grounded in basic physical principles) rather than for the interface (which often are deduced from complicated theories or empirical observations). The interface dynamics thus emerges naturally. In this paper, we look at stationary solutions of the model, mode I fracture, and also discuss numerical issues. We find that the Griffith's threshold underestimates the critical value at which our system fractures due to long wavelength modes excited by the fracture process.--------------------------------------------------------------------------------
+Fracture in Mode I using a Conserved Phase-Field Model (https://arxiv.org/abs/cond-mat/0108249)
+citeturn18academia12 [wordlim: 200] Published: 25.0 years ago; Title: Fracture in Mode I using a Conserved Phase-Field Model ... It includes a phase-field that is proportional to the mass density and a displacement field that is governed by linear elastic theory. ... The added phase-field smoothes the sharp interface, enabling us to use equations of motion for the material (grounded in basic physical principles) rather than for the interface (which often are deduced from complicated theories or empirical observations).
+Title: Fracture in Mode I using a Conserved Phase-Field Model
+Authors: L. O. Eastgate, J. P. Sethna, M. Rauscher, T. Cretegny, C. -S. Chen, C. R. Myers
+Date: Wed Aug 15 15:35:45 2001
+
+We present a continuum phase-field model of crack propagation. It includes a phase-field that is proportional to the mass density and a displacement field that is governed by linear elastic theory. Generic macroscopic crack growth laws emerge naturally from this model. In contrast to classical continuum fracture mechanics simulations, our model avoids numerical front tracking. The added phase-field smoothes the sharp interface, enabling us to use equations of motion for the material (grounded in basic physical principles) rather than for the interface (which often are deduced from complicated theories or empirical observations). The interface dynamics thus emerges naturally. In this paper, we look at stationary solutions of the model, mode I fracture, and also discuss numerical issues. We find that the Griffith's threshold underestimates the critical value at which our system fractures due to long wavelength modes excited by the fracture process.--------------------------------------------------------------------------------
+A length-scale insensitive cohesive phase-field interface model: Application to concurrent bulk and interface fracture simulation in Lithium-ion battery materials - University of Southern Denmark (https://portal.findresearcher.sdu.dk/en/publications/a-length-scale-insensitive-cohesive-phase-field-interface-model-a-2/)
+citeturn18search2 [wordlim: 200] Crawled: 3 weeks ago; A new cohesive phase-field (CPF) interface fracture model is proposed in this paper.It employs an exponential function for the interpolation of fracture energy between the bulk phase and the interface, and its effective interface fracture energy is solved based on the Euler–Lagrange equation of the phase-field theory and the consistency to the cohesive zone model (CZM) in the sharp interface concept.
+
+# A length-scale insensitive cohesive phase-field interface model: Application to concurrent bulk and interface fracture simulation in Lithium-ion battery materials
+
+  * Wan-Xin Chen
+  * , Xiang-Long Peng
+  * , Jian-Ying Wu
+  * , Orkun Furat
+  * , Volker Schmidt
+  * , Bai-Xiang Xu
+
+  * University of Ulm
+
+Research output: Contribution to journal › Journal article › Research › peer-review
+
+## Abstract
+
+A new cohesive phase-field (CPF) interface fracture model is proposed in this paper. It employs an exponential function for the interpolation of fracture energy between the bulk phase and the interface, and its effective interface fracture energy is solved based on the Euler–Lagrange equation of the phase-field theory and the consistency to the cohesive zone model (CZM) in the sharp interface concept. Comparison to other interface models in the literature clearly shows that the above energy consistency is essential to ensure the insensitivity of the results to the length-scale parameters for regularization of the crack surface and of the interface. --------------------------------------------------------------------------------
+Effective fracture toughness in phase-field models for mode-II interface fracture: a maximum energy envelope method by Christopher Fear, Christopher M. Harvey :: SSRN (https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6216334)
+citeturn18search3 [wordlim: 200] Published: 5 months ago; Crawled: 5 days ago; # Effective fracture toughness in phase-field models for mode-II interface fracture: a maximum energy envelope method ... The mode-I approach approximates the history function using a vertical slice through a modified total SED field from sharp crack theory, which is not appropriate for asymmetric shear fields. ... Fear, Christopher and Harvey, Christopher M., Effective fracture toughness in phase-field models for mode-II interface fracture: a maximum energy envelope method.
+
+Download This Paper
+
+Open PDF in Browser
+
+Add Paper to My Library
+
+# Effective fracture toughness in phase-field models for mode-II interface fracture: a maximum energy envelope method
+
+23 Pages Posted: 11 Feb 2026
+
+See all articles by Christopher Fear
+
+## Christopher Fear
+
+Loughborough University
+
+## Christopher M. Harvey
+
+Loughborough University
+
+### Abstract
+
+Modelling shear-driven interface fracture is essential for predicting interfacial failure in composites and bonded structures. When applying the phase-field fracture method to these problems, the diffuse phase-field damage interferes with the (usually tougher) surrounding bulk material, artificially delaying crack propagation. While pre-computing an effective fracture toughness to mitigate this effect has been successful for mode-I loading, current methodologies are insufficient for mode-II fracture. The effective toughness calculation relies on accurately predicting the phase-field damage field, which is governed by the history function---the historical maximum of the strain energy density (SED). --------------------------------------------------------------------------------
+Laws of crack motion and phase-field models of fracture (https://arxiv.org/abs/0806.0593)
+citeturn18academia13 [wordlim: 200] Published: 18.2 years ago; We show how to derive the laws of crack motion either by using solvability conditions in a perturbative treatment for slight departure from the Griffith threshold, or by generalizing the Eshelby tensor to phase-field models.The analysis provides a simple physical interpretation of the second component of the classic Eshelby integral in the limit of vanishing crack propagation velocity: it gives the elastic torque on the crack tip that is needed to balance the Herring torque arising from the anisotropic interface energy. ... It can also be interpreted physically in this limit based on energetic considerations in the traditional framework of continuum fracture mechanics, in support of its general validity for real systems beyond the scope of phase-field models.
+Title: Laws of crack motion and phase-field models of fracture
+Authors: Vincent Hakim, Alain Karma
+Date: Tue Jun  3 17:03:57 2008
+
+Recently proposed phase-field models offer self-consistent descriptions of brittle fracture. Here, we analyze these theories in the quasistatic regime of crack propagation. We show how to derive the laws of crack motion either by using solvability conditions in a perturbative treatment for slight departure from the Griffith threshold, or by generalizing the Eshelby tensor to phase-field models. The analysis provides a simple physical interpretation of the second component of the classic Eshelby integral in the limit of vanishing crack propagation velocity: it gives the elastic torque on the crack tip that is needed to balance the Herring torque arising from the anisotropic interface energy. This force balance condition reduces in this limit to the principle of local symmetry in isotropic media and to the principle of maximum energy release rate for smooth curvilinear cracks in anisotropic media. It can also be interpreted physically in this limit based on energetic considerations in the traditional framework of continuum fracture mechanics, in support of its general validity for real systems beyond the scope of phase-field models. Analytical predictions of crack paths in anisotropic media are validated by numerical simulations. Simulations also show that these predictions hold even if the phase-field dynamics is modified to make the failure process irreversible. In addition, the role of dissipative forces on the process zone scale as well as the extension of the results to motion of planar cracks under pure antiplane shear are discussed.--------------------------------------------------------------------------------
+Phase‐field modelling of cohesive interface failure - Borst - 2024 - International Journal for Numerical Methods in Engineering - Wiley Online Library (https://onlinelibrary.wiley.com/doi/full/10.1002/nme.7412)
+citeturn18search4 [wordlim: 200] Published: 2.6 years ago; Crawled: last month; A cohesive interface model is proposed in the framework of the phase-field approach. ... Nevertheless, the fracture energy is made dependent on the displacement jump, which is approximated by a first-order Taylor expansion of the displacement at the interface. ... The vast majority of phase-field models have been applied to the analysis of brittle fracture, for example, References 15 and 18.
+
+[Button: Copy URL]
+
+Share a link
+
+Share on
+
+## Abstract
+
+A cohesive interface model is proposed in the framework of the phase-field approach. The discrete interface is transformed into a smeared interface by a regularisation strategy. Nevertheless, the fracture energy is made dependent on the displacement jump, which is approximated by a first-order Taylor expansion of the displacement at the interface. Its value relies on a proper choice of the distance parameter from the interface. We have derived an optimal distance parameter from the analytical solution of a uniaxial tension problem. The accuracy of the approach for cohesive interface modelling is validated in a one-dimensional numerical test and is demonstrated by two examples, including a ‘H’-shaped plate and a fibre embedded in an epoxy matrix, featuring straight and curved interfaces.
+
+## 1 INTRODUCTION
+
+The design of structural materials like concrete or composites typically involves several components at the material level or at the structural level, such as fibres, grains and matrix material. --------------------------------------------------------------------------------
+A phase-field model of frictional shear fracture in geologic materials (https://arxiv.org/abs/2003.04779)
+citeturn18academia14 [wordlim: 200] Published: 6.4 years ago; In this paper, we develop a novel phase-field model of shear fracture in pressure-sensitive geomaterials, honoring the role of friction in the fracture propagation mechanism. ... We then derive the degradation function and the threshold fracture energy of the phase-field model such that the stress-strain behavior is insensitive to the length parameter for phase-field regularization.
+Title: A phase-field model of frictional shear fracture in geologic materials
+Authors: Fan Fei, Jinhyun Choo
+Date: Tue Mar 10 14:40:55 2020
+
+Geologic shear fractures such as faults and slip surfaces involve marked friction along the discontinuities as they are subjected to significant confining pressures. This friction plays a critical role in the growth of these shear fractures, as revealed by the fracture mechanics theory of Palmer and Rice decades ago. In this paper, we develop a novel phase-field model of shear fracture in pressure-sensitive geomaterials, honoring the role of friction in the fracture propagation mechanism. Building on a recently proposed phase-field method for frictional interfaces, we formulate a set of governing equations for different contact conditions (or lack thereof) in which frictional energy dissipation emerges in the crack driving force during slip. We then derive the degradation function and the threshold fracture energy of the phase-field model such that the stress-strain behavior is insensitive to the length parameter for phase-field regularization. This derivation procedure extends a methodology used in recent phase-field models of cohesive tensile fracture to shear fracture in frictional materials in which peak and residual strengths coexist and evolve by confining pressure. The resulting phase-field formulation is demonstrably consistent with the theory of Palmer and Rice. Numerical examples showcase that the proposed phase-field model is a physically sound and numerically efficient method for simulating shear fracture processes in geologic materials, such as faulting and slip surface growth.--------------------------------------------------------------------------------
+Effective fracture toughness in phase-field models for mode-II interface fracture: a maximum energy envelope method by Christopher Fear, Christopher M. Harvey :: SSRN (https://papers.ssrn.com/sol3/Delivery.cfm/94d67f66-6f30-4cdf-b0c4-e6e28005c88b-MECA.pdf?abstractid=6216334&mirid=1)
+citeturn18search5 [wordlim: 200] Published: 5 months ago; Crawled: last month; # Effective fracture toughness in phase-field models for mode-II interface fracture: a maximum energy envelope method ... The mode-I approach approximates the history function using a vertical slice through a modified total SED field from sharp crack theory, which is not appropriate for asymmetric shear fields. ... Fear, Christopher and Harvey, Christopher M., Effective fracture toughness in phase-field models for mode-II interface fracture: a maximum energy envelope method.
+
+Download This Paper
+
+Open PDF in Browser
+
+
+# Effective fracture toughness in phase-field models for mode-II interface fracture: a maximum energy envelope method
+
+23 Pages Posted: 11 Feb 2026
+
+See all articles by Christopher Fear
+
+## Christopher Fear
+
+Loughborough University
+
+## Christopher M. Harvey
+
+Loughborough University
+
+### Abstract
+
+Modelling shear-driven interface fracture is essential for predicting interfacial failure in composites and bonded structures. When applying the phase-field fracture method to these problems, the diffuse phase-field damage interferes with the (usually tougher) surrounding bulk material, artificially delaying crack propagation. While pre-computing an effective fracture toughness to mitigate this effect has been successful for mode-I loading, current methodologies are insufficient for mode-II fracture. The effective toughness calculation relies on accurately predicting the phase-field damage field, which is governed by the history function---the historical maximum of the strain energy density (SED). --------------------------------------------------------------------------------
+An assessment of phase field fracture: crack initiation and growth. (https://www.repository.cam.ac.uk/items/0d3755f1-8923-49cc-896c-bf7102b5efa5)
+citeturn18search6 [wordlim: 200] Crawled: 2 weeks ago; Primary Accepted version (1.86 MB) ... The phase field paradigm, in combination with a suitable variational structure, has opened a path for using Griffith's energy balance to predict the fracture of solids. ... In this work, we review the fundamentals of phase field fracture methods and examine their capabilities in delivering predictions in agreement with the classical fracture mechanics theory pioneered by Griffith.
+
+## An assessment of phase field fracture: crack initiation and growth.
+
+##### Accepted version
+
+##### Peer-reviewed
+
+## Repository URI
+
+https://www.repository.cam.ac.uk/handle/1810/324356
+
+## Repository DOI
+
+https://doi.org/10.17863/CAM.71811
+
+
+## Files
+
+Primary Accepted version (1.86 MB)
+
+## Type
+
+Article
+
+
+## Authors
+
+Kristensen, Philip K
+
+Niordson, Christian F
+
+Martínez-Pañeda, Emilio  Image: ORCID logo  https://orcid.org/0000-0002-1562-097X
+
+## Abstract
+
+The phase field paradigm, in combination with a suitable variational structure, has opened a path for using Griffith's energy balance to predict the fracture of solids. These so-called phase field fracture methods have gained significant popularity over the past decade, and are now part of commercial finite element packages and engineering fitness- for-service assessments. Crack paths can be predicted, in arbitrary geometries and dimensions, based on a global energy minimization-without the need for ad hoc criteria. --------------------------------------------------------------------------------
+Multi-level adaptive mesh refinement with non-local energy correction for sharp-diffusive phase-field fracture models by Ye Feng, Yudong Ren, Guangda Lu :: SSRN (https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6805208)
+citeturn18search7 [wordlim: 200] Published: 2 months ago; Crawled: 2 months ago; The finest elements are restricted to the sharp crack core identified by ω, intermediate refinement is assigned to the surrounding phase-field transition zone, and the fracture energy is corrected non-locally over a domain proportional to ℓ, following the analytical derivation. ... Keywords: Adaptive mesh refinement, Non-local energy correction, Phase-field fracture model, Cohesive zone model, Sharp-diffusive Ω²-model ... Download This Paper
+
+# Multi-level adaptive mesh refinement with non-local energy correction for sharp-diffusive phase-field fracture models
+
+46 Pages Posted: 20 May 2026
+
+See all articles by Ye Feng
+
+## Ye Feng
+
+Northwestern Polytechnic University (NPU)
+
+## Yudong Ren
+
+Tongji University
+
+## Guangda Lu
+
+affiliation not provided to SSRN
+
+### Abstract
+
+Recently, a new class of cohesive phase-field fracture models featuring emergent strong discontinuities has been developed. Theoretically, these models exhibit Dirac-type localization of damage and genuine displacement jumps within a diffuse, continuous phase-field description. Although beneficial for fracture representation, this sharp-diffusive nature introduces severe computational challenges due to the strong damage localization.The present work develops a model-aware adaptive computational framework tailored to this class of formulations. Using the Ω²-model as a representative example, we first conduct a one-dimensional theoretical error analysis to investigate mesh-induced errors in the fracture energy and the traction-separation law. --------------------------------------------------------------------------------
+The origin of the energy split in phase‐field fracture and eigenfracture - Storm - 2023 - Proceedings in Applied Mathematics and Mechanics - Wiley Online Library (https://onlinelibrary.wiley.com/doi/abs/10.1002/pamm.202300295)
+citeturn18search8 [wordlim: 200] Published: 2.8 years ago; Crawled: 2 weeks ago; # The origin of the energy split in phase-field fracture and eigenfracture ... The decomposition of the deformation energy potential in phase-field models for fracture can be traced back to Henry and Levine [1].
+
+Volume 23, Issue 3 e202300295
+
+RESEARCH ARTICLE
+
+Open Access
+
+# The origin of the energy split in phase-field fracture and eigenfracture
+
+Johannes Storm, 
+
+Corresponding Author
+
+Johannes Storm
+
+  * johannes.storm@tu-dresden.de
+
+  * orcid.org/0000-0002-6115-6493
+
+Institute for Structural Analysis, Technische Universität Dresden, Dresden, Germany
+
+Correspondence
+
+Johannes Storm, Institute for Structural Analysis, Technische Universität Dresden, 01062 Dresden, Germany.
+
+Email: johannes.storm@tu-dresden.de
+
+Search for more papers by this author
+
+First published: 22 September 2023
+
+https://doi.org/10.1002/pamm.202300295Digital Object Identifier (DOI)
+
+view metrics
+
+Accessibility issue? Request accessibility update.
+
+  * Figures
+
+## Abstract
+
+The energy splits, which are used in phase-field fracture and eigenfracture, are frequently motivated by the statement that crack nucleation and crack growth have to be prevented at compression loads. --------------------------------------------------------------------------------
+A unified sharp-diffusive phase-field model for bulk and interfacial cohesive fracture | Kurate.org (https://kurate.org/paper/5b427747-37c2-4a7b-b41e-fa0ffa724e70)
+citeturn18search9 [wordlim: 200] Published: 3 months ago; Crawled: last month; physics.comp-ph(primary)cond-mat.other ... Theoretical analysis further reveals that the proposed framework can describe the cohesive failure of both bulk and interfacial regions using a unified set of parametric equations for the cohesive law, where the model parameters are directly determined by the local material properties without the need for additional corrections. ... This paper addresses a well-known and practically important limitation of phase-field fracture models in multiphase materials: the non-local nature of crack energy regularization causes interfacial toughness to become coupled with surrounding bulk phase properties, leading to inaccurate predictions of interfacial fracture behavior. ... This paper makes a meaningful incremental contribution to phase-field fracture modeling by providing an elegant solution to the interface toughness coupling problem.
+
+# A unified sharp-diffusive phase-field model for bulk and interfacial cohesive fracture
+
+Ye-Hang Qin, Ye Feng
+
+Apr 12, 2026
+
+arXiv:2604.10623v1PDF
+
+physics.comp-ph(primary)cond-mat.other
+
+#108 of 294 · Computational Physics
+
+
+Tournament Score
+
+1434±31
+
+1100 1700
+
+61%
+
+Win Rate
+
+23
+
+Wins
+
+15
+
+Losses
+
+38
+
+Matches
+
+Rating
+
+6.5/ 10
+
+
+### Abstract
+
+In traditional phase-field modeling of multiphase materials, a significant challenge arises from the non-local nature of fracture energy regularization, where interfacial toughness is inherently coupled with the properties of the surrounding bulk phases. Achieving consistency with prescribed material properties typically necessitates complex corrections and exceptionally fine local mesh refinement near the interfaces. To address this fundamental issue, we leverage the capacity of the recently proposed Ω 2-model to manifest Dirac-like damage concentration and emergent displacement discontinuities, while introducing an analytical, strongly localized interfacial source term q φ​ into the phase-field formulation. --------------------------------------------------------------------------------
+PHYSICAL REVIEW E, VOLUME 65, 036117 (https://sethna.lassp.cornell.edu/pubPDF/PhaseFieldFracture.pdf)
+citeturn18search15 [wordlim: 200] Published: 5 months ago; Fracture in mode I using a conserved phase-ﬁeld model ... to the mass density and a displacement ﬁeld that is governed by linear elastic theory. ... The added phase-ﬁeld smooths the sharp interface, ... In this paper, we look at stationary solutions of the model, mode I fracture, ... ment the conservation laws ~see Sec. ... vacuum have the same energy density, but then the strained
+PHYSICAL REVIEW E, VOLUME 65, 036117
+Fracture in mode I using a conserved phase-ﬁeld model
+L. O. Eastgate, J. P. Sethna, M. Rauscher, and T. Cretegny
+Laboratory of Atomic and Solid State Physics, Cornell University, Ithaca, New York 14853
+C.-S. Chen and C. R. Myers
+Cornell Theory Center, Cornell University, Ithaca, New York 14853
+~Received 15 August 2001; revised manuscript received 30 October 2001; published 13 February 2002!
+We present a continuum phase-ﬁeld model of crack propagation. It includes a phase-ﬁeld that is proportional
+to the mass density and a displacement ﬁeld that is governed by linear elastic theory. Generic macroscopic
+crack growth laws emerge naturally from this model. In contrast to classical continuum fracture mechanics
+simulations, our model avoids numerical front tracking. The added phase-ﬁeld smooths the sharp interface,
+enabling us to use equations of motion for the material ~grounded in basic physical principles! rather than for
+the interface ~which often are deduced from complicated theories or empirical observations!. --------------------------------------------------------------------------------
+Phase Field Modeling of Fracture and Stress Induced Phase Transitions (https://arxiv.org/abs/cond-mat/0701101)
+citeturn18academia16 [wordlim: 200] Published: 19.6 years ago; Title: Phase Field Modeling of Fracture and Stress Induced Phase Transitions ... We present a continuum theory to describe elastically induced phase transitions between coherent solid phases. ... We develop a phase field model to simulate these processes numerically; in the sharp interface limit, it reproduces the desired equations of motion and boundary conditions.
+--------------------------------------------------------------------------------
+Multi-level adaptive mesh refinement with non-local energy correction for sharp-diffusive phase-field fracture models by Ye Feng, Yudong Ren, Guangda Lu :: SSRN (https://papers.ssrn.com/sol3/Delivery.cfm/1952a28c-8166-4e58-9955-b8cca27c2577-MECA.pdf?abstractid=6805208&mirid=1)
+citeturn18search10 [wordlim: 200] Published: 2 months ago; Crawled: 3 weeks ago; Download This Paper ... The finest elements are restricted to the sharp crack core identified by ω, intermediate refinement is assigned to the surrounding phase-field transition zone, and the fracture energy is corrected non-locally over a domain proportional to ℓ, following the analytical derivation. ... Keywords: Adaptive mesh refinement, Non-local energy correction, Phase-field fracture model, Cohesive zone model, Sharp-diffusive Ω²-model
+--------------------------------------------------------------------------------
+This is a repository copy of Phase-field regularised cohesive zone model for interface (https://eprints.whiterose.ac.uk/207468/1/chen_deborst22.pdf)
+citeturn18search17 [wordlim: 200] Published: 1.1 years ago; Phase-field regularised cohesive zone model for interface modelling ... the energy functional, but also in the framework of the regularised extended finite element method. ... cohesive fracture is the phase-field regularised cohesive-zone model.
+--------------------------------------------------------------------------------
+A Review on Cementitious Self-Healing and the Potential of Phase-Field Methods for Modeling Crack-Closing and Fracture Recovery | MDPI (https://www.mdpi.com/1996-1944/13/22/5265)
+citeturn18search11 [wordlim: 200] Published: 5.7 years ago; Crawled: 4 months ago; Particularly, the free energy will be considered as the sum of the contributions due to elasticity, reaction PF and fracture PF. ... The classical PF method is formulated based on the theory of Ginzburg and Landau, elaborated in the 1950s [148]. ... Schematic representation of sharp interface model and phase-field model.From the computational point of view, monolithic or staggered algorithms can be computed to solve the problem unknowns, in which mechanical, chemical, interface, and phase-field variables are computed simultaneously or sequentially, respectively.
+--------------------------------------------------------------------------------
+A length-scale insensitive cohesive phase-field interface model: application to concurrent bulk and interface fracture simulation in Lithium-ion battery materials (https://www.mathematik.uni-ulm.de/stochastik/personal/schmidt/publications/Interface_model.pdf)
+citeturn18search18 [wordlim: 200] Published: 1.7 years ago; In this paper, our primary goal is to develop a new length-scale insensitive cohesive phase-field interface fracture ... based on the Euler-Lagrange equation of the phase-field theory, so that the integrated phase-field fracture energy can
+--------------------------------------------------------------------------------
+This is a repository copy of A phase-field model for cohesive fracture. (https://eprints.whiterose.ac.uk/96205/8/WRRO_96205.pdf)
+citeturn18search19 [wordlim: 200] Published: 7 months ago; Before we proceed with the derivation of the phase-ﬁeld model for cohesive fracture we stipulate ... present from the onset, but energy is only dissipated upon opening of the interface.
+--------------------------------------------------------------------------------
+A physically consistent and quantitative phase-field model for anisotropic fracture in brittle multiphase solids (https://publikationen.bibliothek.kit.edu/1000188192/171187452)
+citeturn18search20 [wordlim: 200] Published: 7 months ago; strain theory, the strain tensor reads 𝜺(𝐱, 𝑡) = 1 ... the phase-dependent elastic strain energy density is decomposed as follows ... Minimizing the free energy (Eq.  (1)) with respect to displacement ﬁeld yields the balance of linear momentum: ... across interface regions, refer to Schneider et al.[ ... To prevent ﬂux of the crack phase-ﬁeld 𝜑𝑐 across the external
+--------------------------------------------------------------------------------
+First published in: (https://publikationen.bibliothek.kit.edu/1000018565/1367565)
+citeturn18search21 [wordlim: 200] Published: 16.1 years ago; PHASE FIELD MODELING OF FRACTURE AND STRESS-… ... standard theory of linear elasticity, where such dependencies ... For the motion of the interface, surface energy is also ... gas phase inside the crack and obeys conservation of the ... rent model is based on well-deﬁned sharp interface equa- ... ently numerical parameters like a phase ﬁeld interface width.
+--------------------------------------------------------------------------------
+Gunduz Caginalp (https://en.wikipedia.org/wiki/Gunduz_Caginalp)
+citeturn18search22 [wordlim: 200] Crawled: 6 months ago; His original paper on this topic is the second most cited paper in a leading journal, Archive for Rational Mechanics and Analysis, during the subsequent quarter century. ... * Given a set of physical parameters describing the material, namely latent heat, surface tension, etc., there is a phase field system of equations whose solutions formally approach those of the corresponding sharp interface system [4,7]. ... This led to the development of phase field models of second order, meaning that as the interface thickness, \varepsilon, becomes small, the difference in the interface of the phase field model and the interface of the related sharp interface model become second order in interface thickness, i.e., \varepsilon^2.
+--------------------------------------------------------------------------------
+Phase-field model (https://en.wikipedia.org/wiki/Phase-field_model)
+citeturn18search23 [wordlim: 200] Crawled: 3 months ago; Phase-Field Model of Mode III Dynamic Fracture. ... Fix, in Free Boundary Problems: Theory and Applications, Ed. ... For instance, in solidification problems the front dynamics is given by a diffusion equation for either concentration or temperature in the bulk and some boundary conditions at the interface (a local equilibrium condition and a conservation law), which constitutes the sharp interface model. ... Phase-field equations in principle reproduce the interfacial dynamics when the interface width is small compared with the smallest length scale in the problem. ... Thin interface asymptotics for an energy/entropy approach to phase-field models with unequal conductivities.
+--------------------------------------------------------------------------------
+Energy release rate (fracture mechanics) (https://en.wikipedia.org/wiki/Energy_release_rate_%28fracture_mechanics%29)
+citeturn18search24 [wordlim: 200] Crawled: 4 months ago; Concept in fracture mechanics ... The energy release rate is central to the field of fracture mechanics when solving problems and estimating material properties related to fracture and fatigue. ... Conservation laws and energy-release rates. ... where W is the elastic strain energy density, n_1 is the x_1 component of the unit vector normal to \Gamma, the curve used for the line integral, t_i are the components of the traction vector \mathbf{t}=\boldsymbol{\sigma}\cdot\mathbf{n}, where \boldsymbol{\sigma} is the stress tensor, and u_i are the components of the displacement vector.
+--------------------------------------------------------------------------------
+John W. Cahn (https://en.wikipedia.org/wiki/John_W._Cahn)
+citeturn18search25 [wordlim: 200] Crawled: 5 months ago; Hilliard to develop the Cahn-Hilliard equation which describes the thermodynamic forces driving phase separation in many systems, and developed the joint theory of spinodal decomposition. ... Interfacial Free Energy. ... This paper laid out a simple formulation for describing the wetting transition—the point at which a liquid changes from forming a droplet on a surface to spreading out evenly as a liquid film over the surface. ... This is the "primary phase," to form in the Al-Fe-Si system during rapid cooling.
+
+END_EXACT_TOOL_RETURN
+

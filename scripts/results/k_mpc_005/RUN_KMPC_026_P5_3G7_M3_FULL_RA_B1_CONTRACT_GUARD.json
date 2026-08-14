@@ -1,0 +1,132 @@
+{
+  "authoritative_contract": {
+    "driver": [
+      "gamma_continuity",
+      "gamma_Euler",
+      "fs_continuity",
+      "fs_shear",
+      "fs_Euler",
+      "baryon_continuity",
+      "cdm_continuity",
+      "cdm_Euler",
+      "tight_coupling",
+      "fuel_continuity",
+      "fuel_Euler",
+      "Einstein_trace",
+      "Einstein_traceless"
+    ],
+    "holdout": [
+      "Einstein_00",
+      "Einstein_0i"
+    ],
+    "state": [
+      "h",
+      "eta",
+      "delta_gamma",
+      "delta_fs",
+      "delta_b",
+      "delta_c",
+      "U_gamma",
+      "U_fs",
+      "sigma_fs",
+      "U_b",
+      "U_c",
+      "delta_f",
+      "U_f"
+    ]
+  },
+  "checks": {
+    "all_exact_residuals_zero": true,
+    "all_negative_fixtures_rejected_by_validator": true,
+    "authoritative_driver_count_13": true,
+    "authoritative_state_count_13": true,
+    "frozen_algebra_hash_exact": true,
+    "frozen_core_algebra_regression": true,
+    "no_solve_or_ode": true,
+    "production_contract_exact": true,
+    "score_effect_zero": true
+  },
+  "execution_verdict": "PASS_R_A_B1_CONTRACT_GUARD_ONLY",
+  "expected_frozen_algebra_sha256": "62D6DEEFBDB81C0619FD58C668185FF9CA76926A90D00DCE9C092AD4797D6B5D",
+  "frozen_algebra_exact_residuals": {
+    "background_k_cancel": "0",
+    "bianchi_C00": "0",
+    "bianchi_C0i": "0",
+    "conditional_steam_split": "0",
+    "legacy_pressure_difference_fixture": "0",
+    "pressure": "0",
+    "total_energy": "0",
+    "total_momentum": "0"
+  },
+  "frozen_algebra_sha256": "62D6DEEFBDB81C0619FD58C668185FF9CA76926A90D00DCE9C092AD4797D6B5D",
+  "frozen_algebra_source": "D:\\Teoria\\scripts\\baseScripts\\p5_general_synchronous\\full_ra_b1_preflight.py",
+  "internal_limit_seconds": 5.0,
+  "matrix_solve_executed": false,
+  "negative_fixtures": {
+    "holdout_in_driver": {
+      "errors": [
+        "driver ordered tuple differs from authoritative contract",
+        "driver and holdout sets overlap"
+      ],
+      "rejected": true
+    },
+    "missing_U_f": {
+      "errors": [
+        "state ordered tuple differs from authoritative contract"
+      ],
+      "rejected": true
+    },
+    "missing_delta_f": {
+      "errors": [
+        "state ordered tuple differs from authoritative contract"
+      ],
+      "rejected": true
+    },
+    "missing_fuel_continuity": {
+      "errors": [
+        "driver ordered tuple differs from authoritative contract"
+      ],
+      "rejected": true
+    },
+    "reordered_driver": {
+      "errors": [
+        "driver ordered tuple differs from authoritative contract"
+      ],
+      "rejected": true
+    },
+    "reordered_holdout": {
+      "errors": [
+        "holdout ordered tuple differs from authoritative contract"
+      ],
+      "rejected": true
+    },
+    "reordered_state": {
+      "errors": [
+        "state ordered tuple differs from authoritative contract"
+      ],
+      "rejected": true
+    },
+    "same_count_fake_driver": {
+      "errors": [
+        "driver ordered tuple differs from authoritative contract"
+      ],
+      "rejected": true
+    },
+    "same_count_fake_state": {
+      "errors": [
+        "state ordered tuple differs from authoritative contract"
+      ],
+      "rejected": true
+    }
+  },
+  "physics_evolution_executed": false,
+  "production_validation": {
+    "errors": [],
+    "valid": true
+  },
+  "run_id": "KMPC-026",
+  "runtime_seconds": 0.1569999999992433,
+  "scope": "PF-064 repair; exact-set validator plus frozen algebra regression; no solve or ODE",
+  "score_effect": 0,
+  "test": "A2-K4 P5.3g7-M3-FULL/R-A B1 independent contract guard"
+}

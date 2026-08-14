@@ -1,0 +1,193 @@
+TASK_ID: A2K4-B6B2-10-H-RDIV-C01-RW1-V1-W10-RAW-V2-Q2-20260727-166B
+QUERY_ID: Q2
+EXACT_QUERY: covariant critical bubble surface tension energy barrier scalar field fluid primary paper
+PROVIDER_PAYLOAD: {"search_query":[{"q":"covariant critical bubble surface tension energy barrier scalar field fluid primary paper"}],"response_length":"long"}
+BEGIN_EXACT_TOOL_RETURN
+Surface tension of cavitation bubbles - PMC (https://pmc.ncbi.nlm.nih.gov/articles/PMC10104516/)
+citeturn16search0 [wordlim: 200] Published: 3.3 years ago; Crawled: last month; In order to obtain the surface tension at the scale of the critical bubble, we first compute the energy barrier at the cavitation threshold.
+## Surface Tension from Cavitation Threshold
+
+In order to obtain the surface tension at the scale of the critical bubble, we first compute the energy barrier at the cavitation threshold. According to CNT, the nucleation rate J({P}_{\mathrm{L}}) at a fixed liquid pressure {P}_{\mathrm{L}} is given by
+
+\begin{array}{c}\hfill J({P}_{\text{L}})={J}_{0}{exp}^{-{E}_{\text{B}}({P}_{\text{L}})/{k}_{\text{B}}T},\end{array}  | [3]
+
+with J_{0} being a prefactor which is controlled by the dynamics of the critical bubble (5, 23). For nitrogen, the pressure is decreased at a constant rate A=-d{P}_{\mathrm{L}}/dt. Assuming that the energy barrier can be linearized as {E}_{\mathrm{B}}={E}_{\mathrm{B}}^{\ast }+\alpha \phantom{\rule{0.166667em}{0ex}}({P}_{\mathrm{L}}-{P}_{\mathrm{L}}^{\ast }){k}_{\mathrm{B}}T in the vicinity of the cavitation threshold, the probability \mathrm{\Sigma }({P}_{\mathrm{L}}) that cavitation has not occurred at pressure {P}_{\mathrm{L}} in a pore of volume {V}_{\mathrm{P}} is (SI Appendix):
+
+\begin{array}{c}\hfill \mathrm{\Sigma }({P}_{\text{L}})=exp\left[-\frac{{V}_{\text{P}}}{A\alpha }J({P}_{\text{L}})\right].\end{array}  | [4]
+
+As shown in Materials and Methods, \mathrm{\Sigma }({P}_{\mathrm{L}}) =1/2 corresponds to the middle of the cavitation step, i.e., to {P}_{\mathrm{L}}={P}_{\mathrm{L}}^{\ast }. The energy barrier {E}_{\mathrm{B}}^{\ast } at the threshold is thus
+
+\begin{array}{c}\hfill {E}_{\text{B}}^{\ast }={k}_{\text{B}}Tln\left[{J}_{0}{V}_{\text{P}}/(A\alpha ln2)\right].\end{array}  | [5]
+
+For the volumetric measurements with helium, the flow rate is imposed instead of the pressure ramp and the above expression is modified as
+
+\begin{array}{c}\hfill {E}_{\text{B}}^{\ast }={k}_{\text{B}}Tln\left[{J}_{0}{V}_{\text{P}}/\tau \right],\end{array}  | [6]
+
+where the characteristic time scale of cavitation, τ, is the duration of the cavitation step (SI Appendix).
+
+In Eqs. 5 and 6, A (or τ) and {V}_{\mathrm{P}} are known. For Eq. 5, we approximate α by its CNT expression \left(\partial {E}_{\mathrm{B}}^{\mathrm{CNT}}/\partial {P}_{\mathrm{L}}{|}_{T}\right)/({k}_{\mathrm{B}}T). As we will show below, this is correct within 20% (Fig. 6). Since α enters Eq. 5 through a logarithmic factor, our approximation has a negligible impact on {E}_{\mathrm{B}}^{\ast }. The last parameter is the prefactor J_{0}; for our experimental conditions, as usual for a cryogenic liquid not too close to the critical point (3, 4) and for water(6) close to room temperature, the dynamics of the critical bubble is controlled by the viscous flow in the liquid. We use the corresponding expression {J}_{0}={n}_{\mathrm{L}}\frac{{\sigma }_{\infty }}{\eta }{\left(\frac{{\sigma }_{\infty }}{{k}_{\mathrm{B}}T}\right)}^{1/2}{(1-{P}_{\mathrm{L}}/{P}_{\mathrm{V}})}^{-1}, where {n}_{\mathrm{L}} is the number density of the liquid and η its viscosity (23) and (5) and SI Appendix.
+
+--------------------------------------------------------------------------------
+Gas evolution rates – A critical uncertainty in challenged gas-liquid separations - ScienceDirect (https://www.sciencedirect.com/science/article/abs/pii/S0920410516305708)
+citeturn16search1 [wordlim: 200] Published: 9.7 years ago; Crawled: 2 weeks ago; The system surface tension is thus critical to understanding the barriers hindering bubble nucleation, and therefore gas evolution. ... Type IV nucleation is defined as non-classical nucleation since it assumes that cavities exist where the radii of curvature are greater than the critical bubble radius, and thus there is no nucleation energy barrier to overcome.
+As supersaturation increases, the work required to form a critical radius bubble decreases. This work is considered an energy barrier for the system to overcome to nucleate bubbles and begin a gas evolution cycle. Consider also the effect of surface tension on the energy barrier. The work required to nucleate bubbles increases cubically with the surface tension assuming a constant supersaturation. The system surface tension is thus critical to understanding the barriers hindering bubble nucleation, and therefore gas evolution.
+
+Bubbles can nucleate in a variety of locations within the liquid phase, including the bulk, on particles in the bulk, on smooth solid surfaces, or in cavities and surface imperfections. Defining and classifying these nucleation types has been the subject of many studies, including the development of an accepted nomenclature. Bubble nucleation is often classified into four different types of nucleation – Types I-IV (Jones et al., 1999a). Type I and II nucleation, also known as classical nucleation, are defined as homogeneous and heterogeneous nucleation respectively. --------------------------------------------------------------------------------
+Gravitational waves from bubble collisions and fluid motion in strongly supercooled phase transitions | The European Physical Journal C | Springer Nature Link (https://link.springer.com/article/10.1140/epjc/s10052-023-11241-3)
+citeturn16search2 [wordlim: 200] Published: 3.5 years ago; Crawled: 3 weeks ago; that arises from energy conservation of the coupled system of fluid and the scalar field bubble.Here \(\Delta P(\dot{R})\) denotes the pressure difference across the bubble wall and \(\sigma \) is the surface tension of the wall.
+## 2 Energy budget
+
+We estimate how the energy released in the bubble expansion is shared between the scalar field gradients and the fluid motion in strongly supercooled phase transitions by studying the bubble expansion under the influence of pressure terms caused by the interactions of the wall with the ambient fluid. We perform the computation consistently in the thin-wall limit, which gives a good description of the system if the bubble reaches ultra-relativistic velocities. The following analysis improves earlier approximations used in the literature [58, 71, 73].
+
+In the thin-wall limit the energy carried by the bubble walls can be modeled using a simple analytical prescription. This assumes that the bubble walls are spherical shells with a certain surface energy density and the interactions of the walls with the ambient fluid are local. In this limit, neglecting the expansion of the Universe,^{Footnote 1} the evolution of the bubble radius R can be described by the equation of motion [74]
+
+$$\begin{aligned} {\ddot{R}} + \frac{2}{R} (1-\dot{R}^2) = \frac{\Delta P(\dot{R})}{\sigma } (1-\dot{R}^2)^{3/2} \end{aligned}$$
+
+(1)
+
+that arises from energy conservation of the coupled system of fluid and the scalar field bubble. Here \(\Delta P(\dot{R})\) denotes the pressure difference across the bubble wall and \(\sigma \) is the surface tension of the wall. The latter is defined through the scalar potential V as [38]
+
+$$\begin{aligned} \sigma \equiv \int _0^{\varphi _c} \textrm{d}\varphi \sqrt{2V(\varphi )} , \end{aligned}$$
+
+(2)
+
+where \(\varphi _c>0\) denotes the field value at which the potential energy is the same as in the false vacuum that lies at the origin, \(V(\varphi _c) = V(0)\).
+
+In terms of the Lorentz factor of the bubble wall, \(\gamma = 1/\sqrt{1-\dot{R}^2}\), the equation of motion (1) is given by
+
+$$\begin{aligned} \frac{\textrm{d}\gamma }{\textrm{d}R} + \frac{2\gamma }{R} = \frac{\Delta P(\gamma )}{\sigma } . \end{aligned}$$
+
+(3)
+
+The bubble nucleates at rest, \(\gamma =1\), \(\textrm{d}\gamma /\textrm{d}R = 0\), with an initial radius \(R_0\). --------------------------------------------------------------------------------
+Matter sourced bubble nucleation in the asymmetron scalar-tensor theory | Phys. Rev. D (https://journals.aps.org/prd/abstract/10.1103/z9gn-q74p)
+citeturn16search3 [wordlim: 200] Published: 4 months ago; Crawled: yesterday; We investigate how matter density distributions affect thin-wall bubble formation in the asymmetron mechanism, a scalar–tensor theory with a universal coupling to matter and explicit symmetry breaking, and analyze the stability of its metastable state.We show that the screening mechanism of the asymmetron inside dense objects induces a surface tension associated with the boundary of the screening object, leading to a richer class of bubble solutions than the standard Coleman-Callan bulk nucleation.
+D 113, 056022 – Published 25 March, 2026
+
+DOI: https://doi.org/10.1103/z9gn-q74p
+
+[Button: Export Citation]
+
+Show metrics
+
+## Abstract
+
+We investigate how matter density distributions affect thin-wall bubble formation in the asymmetron mechanism, a scalar–tensor theory with a universal coupling to matter and explicit symmetry breaking, and analyze the stability of its metastable state. We show that the screening mechanism of the asymmetron inside dense objects induces a surface tension associated with the boundary of the screening object, leading to a richer class of bubble solutions than the standard Coleman-Callan bulk nucleation. These boundary surface tensions are used to modify the Nambu-Goto action for instantons, allowing for the computation of the corresponding Euclidean action for bubbles nucleating on flat planes, as well as on concave and convex cylindrical surfaces. We find that the smallest Euclidean action occurs for bubbles nucleating along the edge of a concave spherical surface. Comparing this edge nucleation channel with the bulk one, we determine the maximum curvature radius for which concave edge nucleation is preferred. --------------------------------------------------------------------------------
+Generalized surface tension bounds in vacuum decay | Phys. Rev. D (https://journals.aps.org/prd/abstract/10.1103/PhysRevD.97.045017)
+citeturn16search4 [wordlim: 200] Published: 8.4 years ago; Crawled: 2 days ago; In their thin-wall approximation this happens whenever the surface tension in the bubble wall exceeds an upper bound proportional to the difference of the square roots of the true and false vacuum energy densities. ... We discuss the limit where the parameters of the theory attain critical values and the bound is saturated. ... The scalar field potential then is of the form expected in supergravity, but this is only guaranteed along the trajectory in field space traced out by the bounce. ...   * Quantum field theory
+
+# Generalized surface tension bounds in vacuum decay
+
+Ali Masoumi^{1,*}, Sonia Paban^{2,†}, and Erick J. Weinberg^{3,‡}
+
+  * ^{1}Institute of Cosmology, Department of Physics and Astronomy, Tufts University, Medford, Massachusetts 02155, USA
+  * ^{2}Department of Physics, The University of Texas at Austin, Austin, Texas 78712, USA
+  * ^{3}Physics Department, Columbia University, New York, New York 10027, USA
+
+  * ^{*}ali@cosmos.phy.tufts.edu
+  * ^{†}paban@physics.utexas.edu
+  * ^{‡}ejw@phys.columbia.edu
+
+PDF
+
+Phys. Rev. D 97, 045017 – Published 27 February, 2018
+
+DOI: https://doi.org/10.1103/PhysRevD.97.045017
+
+[Button: Export Citation]
+
+Show metrics
+
+## Abstract
+
+Coleman and De Luccia (CDL) showed that gravitational effects can prevent the decay by bubble nucleation of a Minkowski or AdS false vacuum. In their thin-wall approximation this happens whenever the surface tension in the bubble wall exceeds an upper bound proportional to the difference of the square roots of the true and false vacuum energy densities. --------------------------------------------------------------------------------
+Generalized surface tension bounds in vacuum decay (https://arxiv.org/abs/1711.06776)
+citeturn16academia12 [wordlim: 200] Published: 8.7 years ago; In their thin-wall approximation this happens whenever the surface tension in the bubble wall exceeds an upper bound proportional to the difference of the square roots of the true and false vacuum energy densities. ... We discuss the limit where the parameters of the theory attain critical values and the bound is saturated. ... The scalar field potential then is of the form expected in supergravity, but this is only guaranteed along the trajectory in field space traced out by the bounce.
+Title: Generalized surface tension bounds in vacuum decay
+Authors: Ali Masoumi, Sonia Paban, Erick J. Weinberg
+Date: Sat Nov 18 00:05:19 2017
+
+Coleman and De Luccia (CDL) showed that gravitational effects can prevent the decay by bubble nucleation of a Minkowski or AdS false vacuum. In their thin-wall approximation this happens whenever the surface tension in the bubble wall exceeds an upper bound proportional to the difference of the square roots of the true and false vacuum energy densities. Recently it was shown that there is another type of thin-wall regime that differs from that of CDL in that the radius of curvature grows substantially as one moves through the wall. Not only does the CDL derivation of the bound fail in this case, but also its very formulation becomes ambiguous because the surface tension is not well-defined. We propose a definition of the surface tension and show that it obeys a bound similar in form to that of the CDL case. We then show that both thin-wall bounds are special cases of a more general bound that is satisfied for all bounce solutions with Minkowski or AdS false vacua. We discuss the limit where the parameters of the theory attain critical values and the bound is saturated. The bounce solution then disappears and a static planar domain wall solution appears in its stead. The scalar field potential then is of the form expected in supergravity, but this is only guaranteed along the trajectory in field space traced out by the bounce.--------------------------------------------------------------------------------
+Resolving the Hubble Tension with New Early Dark Energy (https://arxiv.org/abs/2006.06686)
+citeturn16academia13 [wordlim: 200] Published: 6.1 years ago; Title: Resolving the Hubble Tension with New Early Dark Energy ... We discuss in depth the two-scalar field model of the NEDE phase transition including the process of bubble percolation, collision, and coalescence. ... In a second step, we construct an effective cosmological model, which describes the phase transition as an instantaneous process, and derive the covariant equations that match perturbations across the transition surface.
+Title: Resolving the Hubble Tension with New Early Dark Energy
+Authors: Florian Niedermann, Martin S. Sloth
+Date: Thu Jun 11 18:00:01 2020
+
+New Early Dark Energy (NEDE) is a component of vacuum energy at the electron volt scale, which decays in a first-order phase transition shortly before recombination [arXiv:1910.10739]. The NEDE component has the potential to resolve the tension between recent local measurements of the expansion rate of the Universe using supernovae (SN) data and the expansion rate inferred from the early Universe through measurements of the cosmic microwave background (CMB) when assuming $\Lambda$CDM. We discuss in depth the two-scalar field model of the NEDE phase transition including the process of bubble percolation, collision, and coalescence. We also estimate the gravitational wave signal produced during the collision phase and argue that it can be searched for using pulsar timing arrays. In a second step, we construct an effective cosmological model, which describes the phase transition as an instantaneous process, and derive the covariant equations that match perturbations across the transition surface. Fitting the cosmological model to CMB, baryonic acoustic oscillations and SN data, we report $H_0 = 69.6^{+1.0}_{-1.3} \, \textrm{km}\, \textrm{s}^{-1}\, \textrm{Mpc}^{-1}$ $(68 \%$ C.L.) without the local measurement of the Hubble parameter, bringing the tension down to $2.5\, \sigma$. Including the local input, we find $H_0 = 71.4 \pm 1.0 \, \textrm{km}\, \textrm{s}^{-1}\, \textrm{Mpc}^{-1}$ $(68 \%$ C.L.) and strong evidence for a non-vanishing NEDE component with a $\simeq 4\, \sigma$ significance.--------------------------------------------------------------------------------
+Gravitational waves from bubble collisions and fluid motion in strongly supercooled phase transitions (https://arxiv.org/abs/2208.11697)
+citeturn16academia14 [wordlim: 200] Published: 3.9 years ago; Title: Gravitational waves from bubble collisions and fluid motion in strongly supercooled phase transitions ... We derive analytically in the thin-wall approximation the efficiency factor that determines the share of the energy released in the transition between the scalar field and the fluid.
+Title: Gravitational waves from bubble collisions and fluid motion in strongly supercooled phase transitions
+Authors: Marek Lewicki, Ville Vaskonen
+Date: Wed Aug 24 17:59:31 2022
+
+We estimate the gravitational wave spectra generated in strongly supercooled phase transitions by bubble collisions and fluid motion. We derive analytically in the thin-wall approximation the efficiency factor that determines the share of the energy released in the transition between the scalar field and the fluid. We perform numerical simulations including the efficiency factor as a function of bubble radius separately for all points on the bubble surfaces to take into account their different collision times. We find that the efficiency factor does not significantly change the gravitational wave spectra and show that the result can be approximated by multiplying the spectrum obtained without the efficiency factor by its value at the radius $R_{\rm eff} \simeq 5/\beta$, where $\beta$ is the approximate inverse duration of the transition. We also provide updated fits for the gravitational wave spectra produced in strongly supercooled transitions from both bubble collisions and fluid motion depending on the behaviour of the sources after the collision.--------------------------------------------------------------------------------
+Heterogeneous bubble nucleation dynamics | Journal of Fluid Mechanics | Cambridge Core (https://www.cambridge.org/core/journals/journal-of-fluid-mechanics/article/heterogeneous-bubble-nucleation-dynamics/045D2CED9F9B57578ECEED99B8406360)
+citeturn16search5 [wordlim: 200] Published: 5.7 years ago; Crawled: last week; (a) Sketch of a vapour bubble on a flat solid surface, illustrating some geometrical parameters. (b) Energy landscapes of a vapour bubble as a function of the radius, at different contact angles Image$\phi$. ... which is intrinsic to the fluid and independent of surface wettability.The corresponding free energy barrier, i.e. the free energy difference between the critical and pure liquid states, is
+
+(2.3)Image\begin{equation} R^*=\frac{2\gamma_{LV}}{{\rm \Delta} p}, \end{equation}
+
+which is intrinsic to the fluid and independent of surface wettability. The corresponding free energy barrier, i.e. the free energy difference between the critical and pure liquid states, is
+
+(2.4)Image\begin{equation} {\rm \Delta} \varOmega^*= {\rm \Delta} \varOmega (R^*,\phi ) = {\rm \Delta} \varOmega_{hom} ^* \varPsi(\phi ) = \frac{16}{3} {\rm \pi}\frac{\gamma_{LV}^3}{{\rm \Delta} p ^2} \varPsi(\phi). \end{equation}
+
+At variance with the critical radius, which is the same under both homogeneous and heterogeneous conditions, irrespective of the contact angle, the energy barrier Image${\rm \Delta} \varOmega ^*$ is lowered by the contact-angle-dependent factor Image$\varPsi (\phi ) \leq 1$ with respect to nucleation in the bulk. The free energy profiles Image${\rm \Delta} \varOmega (R)$ are shown in figure 1(b) for two contact angles, hydrophilic and hydrophobic, respectively, and compared with the homogeneous case. --------------------------------------------------------------------------------
+(PDF) How fast can the wall move? A study of the electroweak phase transition dynamics (https://www.researchgate.net/publication/2029722_How_fast_can_the_wall_move_A_study_of_the_electroweak_phase_transition_dynamics)
+citeturn16search6 [wordlim: 200] Published: 31.2 years ago; Crawled: 2 months ago; surface free energies; to b ecome large enough not to re-contract a bubble must passover a free energy barrier. ... conﬁguration of the eﬀective action called the critical bubble. ... uating the expressions in their paper we ﬁnd, roughly, ln(I
+--------------------------------------------------------------------------------
+The Growth of Bubbles in Cosmological Phase Transitions (https://arxiv.org/abs/astro-ph/9309059)
+citeturn16academia15 [wordlim: 200] Published: 32.8 years ago; We study how bubbles grow after the initial nucleation event in generic first-order cosmological phase transitions characterised by the values of latent heat, interface tension and correlation length, and driven by a scalar order parameter $\phi$.Equations coupling $\phi$ and the fluid variables $v$ and $T$ and depending on a dissipative constant $\Gamma$ are derived and solved numerically in the 1+1 dimensional case starting from a slightly deformed critical bubble configuration.
+--------------------------------------------------------------------------------
+Extending classical nucleation theory to consider curvature and real-gas effects - PMC (https://pmc.ncbi.nlm.nih.gov/articles/PMC12744345/)
+citeturn16search7 [wordlim: 200] Published: 9 months ago; Crawled: last month; This interplay results in an energy barrier that rises initially, reaches a maximum {W}_{\mathit{cr}} at the critical nucleus radius {r}_{\mathit{cr}}, and then decreases, allowing spontaneous bubble growth. ... The plot also highlights the difference between the van der Waals model (solid lines) and the ideal gas model (dashed-dotted lines) in predicting the work necessary for bubble expansion. ... Retaining only the dominant surface-tension and pressure contributions gives
+--------------------------------------------------------------------------------
+Molecular mechanism for cavitation in water under tension - PMC (https://pmc.ncbi.nlm.nih.gov/articles/PMC5137690/)
+citeturn16search8 [wordlim: 200] Published: 9.7 years ago; Crawled: last month; Remarkably, the resulting surface free energy {f}_{\text{s}} is independent of pressure (a thermodynamic analysis of this behavior is provided in the subsequent section), except for very small bubbles. ... However, a fundamental assumption required to obtain Eq. 2 in the framework of the theory is that the radius r of the bubble is large compared with the length δ (70, 71), and thus, the applicability of the Tolman formalism is questionable. ... We then obtain the diffusivity and rate expression using the curvature-corrected estimates for the volume {v}^{\ast } of the critical bubble and the curvature ω of the free energy barrier.Because the surface tension \gamma \left(r\right) depends on the radius r explicitly, we cast the RP equation in terms of the bubble radius for simplicity.
+--------------------------------------------------------------------------------
+Bubble correlation in first-order... | Archive ouverte UNIGE (https://archive-ouverte.unige.ch/unige%3A178019)
+citeturn16search9 [wordlim: 200] Published: 4.6 years ago; Crawled: 4 months ago; # Bubble correlation in first-order phase transitions ... ## Making use of both the stochastic approach to the tunneling phenomenon and the threshold statistics, we offer a simple argument to show that critical bubbles may be correlated in first-order phase transitions and biased compared to the underlying scalar field spatial distribution. ...   * Field theory: scalar
+--------------------------------------------------------------------------------
+Bubble dynamics in a strong first-order quark-hadron transition (https://csnsdoc.ihep.ac.cn/article/doi/10.1088/1674-1137/abdea7)
+citeturn16search10 [wordlim: 200] Published: 5.3 years ago; Crawled: last month; Note that the free energy shift due to the appearance of a spherical bubble of stable vacuum is proportional to $ -R^3 $, where R is the bubble radius, and the surface tension of the interface between two phases is proportional to $ +R^2 $. ... In the theory of bubble nucleation, a scalar field $ \sigma $ is treated as the order parameter and a coarse-grained free energy functional of the system is defined as ... The critical bubble configuration is an extremum of the coarse-grained free energy functional $ F(\sigma) $ with respect to the scalar field $ \sigma $; thus, the equation of motion to be solved now becomes a nonlinear ordinary differential equation,
+--------------------------------------------------------------------------------
+A-B Transition in Superfluid $$^3$$ He and Cosmological Phase Transitions | Journal of Low Temperature Physics | Springer Nature Link (https://doi.org/10.1007%2Fs10909-024-03151-9)
+citeturn16search11 [wordlim: 200] Published: 2.1 years ago; Crawled: 6 days ago; The path in order parameter space that minimizes the energy cost of a domain wall (DW) separating the A and B phases, \(A_{\alpha i}^{\text {A}}\rightarrow A_{\alpha i}^{\text {DW}}(x)\rightarrow A_{\alpha i}^{\text {B}}\), for a bubble of radius R of \(^3\)He-B embedded in \(^3\)He-A plays a key role in the theory of nucleation of the B-phase in supercooled A phase.The surface energy of the A-B interface was measured at high pressure by Osheroff and Cross [59], and at low pressure and high magnetic field by Bartkowiak et al [60]. ... To estimate the energy and radius of the critical bubble in the thin-wall approximation (\(R\gg \xi\)) we express the total energy of a bubble of B-phase embedded in metastable A-phase as a sum of the gain in condensation energy proportional to \(-\Delta f_\text {AB}\), and the cost in surface energy, proportional to \(\sigma _\text {AB}\).
+--------------------------------------------------------------------------------
+SciPost Phys. Lect.Notes 24 (2021) (https://www.scipost.org/10.21468/SciPostPhysLectNotes.24/pdf)
+citeturn16search16 [wordlim: 200] Published: 5 months ago; difference between the energy of the ﬁeld conﬁguration of the critical bubble ¯φ and the energy ... the ﬁeld over the barrier in the spherical region of radius R. ... Here, σ denotes the surface tension given by ... It is given by L = Tc(ps −pb) with ps and pb the ﬂuid pressure
+--------------------------------------------------------------------------------
+PHYSICAL REVIEW D (https://diposit.ub.edu/server/api/core/bitstreams/1c0dc508-38e7-4155-96e3-a31d03e96977/content)
+citeturn16search17 [wordlim: 200] Published: last month; BUBBLE FLUCTUATIONS IN V,1 INFLATION ... For the scalar ﬁeld, the symmetry simply means that s0 only ... good Cauchy surface for the entire spacetime. ... barrier feature of the potential energy ~see Fig. ... where V is the ratio of the matter density rm to the critical ... The scalar ﬁeld s obeys the ﬁeld equation
+--------------------------------------------------------------------------------
+Using gravitational waves to see the first second of the (https://eprints.soton.ac.uk/501480/1/2401.04388v3.pdf)
+citeturn16search18 [wordlim: 200] Published: 7 months ago; The thin wall approximation is only accurate very close to the critical temperature, however, we can nonethe- ... The surface tension grows with the height and width of the barrier separating the two ... In the case of a scalar field theory, the surface tension will grow with the number of bosonic degrees ... A modest quantum effect arises from the fluctuations around the bubble
+--------------------------------------------------------------------------------
+PHYSICAL REVIEW C (https://www.rcnp.osaka-u.ac.jp/~toki/p2564_1%20surface.pdf)
+citeturn16search19 [wordlim: 200] Published: 6 months ago; pole condensate x¯(r) near the critical temperature Tc50.28 GeV ... The surface tension in the hadron bubble ... The free energy of a hadron bubble in the spherical geometry ... (113)-dimensional scalar ﬁeld theory, even if one resorts to
+--------------------------------------------------------------------------------
+CERN-TH/96-13 (https://cds.cern.ch/record/297990/files/arXiv%3Ahep-ph_9603208.pdf)
+citeturn16search20 [wordlim: 200] Published: 4 months ago; tension) at the critical point. ... detailed study of the bubble nucleation in the scalar mean ﬁeld theory deﬁned by potential ... on the scalar correlation length ξ at the phase transition, in addition to the surface tension ... there are two degenerate minima of this potential, separated by the energy barrier.
+--------------------------------------------------------------------------------
+Chinese Physics C    Vol. 45, No. 4 (2021) 043104 (https://scoap3-prod-backend.s3.cern.ch/media/files/67400/10.1088/1674-1137/abdea7.pdf)
+citeturn16search21 [wordlim: 200] Published: 8 months ago; choice of parameters, the critical chemical potential is set at ... dius, and the surface tension of the interface between two ... face  energy  cost  of  creating  the  bubble. ... In the theory of bubble nucleation, a scalar field ... ima that are separated by a barrier.
+--------------------------------------------------------------------------------
+False vacuum (https://en.wikipedia.org/wiki/False_vacuum)
+citeturn16search22 [wordlim: 200] Crawled: 2 months ago; The walls of the bubble (or domain walls) have a positive surface tension, as energy is expended as the fields roll over the potential barrier to the true vacuum. ... A bubble smaller than the critical size can overcome the potential barrier via quantum tunnelling of instanton s to lower energy states. ... Consequences of Vacuum Instability in Quantum Field Theory.
+--------------------------------------------------------------------------------
+Rayleigh–Plesset equation (https://en.wikipedia.org/wiki/Rayleigh%E2%80%93Plesset_equation)
+citeturn16search23 [wordlim: 200] Crawled: 2 months ago; \sigma is the surface tension of the bubble-liquid interface ... The kinetic energy of the inrushing fluid is 2 \pi \rho U^{2} R^{3} where R is the time-dependent radius of the void, and U the radial velocity of the fluid there. ... The Rayleigh–Plesset equation can be derived entirely from first principle s using the bubble radius as the dynamic parameter. ... Also, for the special case where surface tension and viscosity are neglected, high-order analytical approximations are also known. ... Journal of Physics A: Mathematical and Theoretical.
+--------------------------------------------------------------------------------
+Hadamard–Rybczynski equation (https://en.wikipedia.org/wiki/Hadamard%E2%80%93Rybczynski_equation)
+citeturn16search24 [wordlim: 200] Crawled: 5 months ago; In fluid dynamics, the Hadamard–Rybczynski equation gives the terminal velocity of slowly moving spherical bubble through an ambient fluid. ... The surface tension force and inertia force of the bubble are neglected.
+--------------------------------------------------------------------------------
+Surface tension (https://en.wikipedia.org/wiki/Surface_tension)
+citeturn16search25 [wordlim: 200] Crawled: 3 months ago; In the case of a two-fluid interface, there is no distinction between forming and stretching because the fluids and the surface completely replenish their nature when the surface is stretched. ... Further, the surface stress on a solid is a directional quantity (a stress tensor) while surface energy is scalar. ... The van der Waals capillarity energy is now widely used in the phase field models of multiphase flows. ... Course of Theoretical Physics Volume 5: Statistical Physics I. ... New computational method in the theory of spinodal decomposition. ... The pressure inside an ideal spherical bubble can be derived from thermodynamic free energy considerations. ... The general trend is that surface tension decreases with the increase of temperature, reaching a value of 0 at the critical temperature.
+--------------------------------------------------------------------------------
+Vasiliev equations (https://en.wikipedia.org/wiki/Vasiliev_equations)
+citeturn16search26 [wordlim: 200] Crawled: 3 months ago; The mutual consistency of the two parts of the equations is thanks to fact that the twisted covariant constancy of the B-field is equivalent to the usual covariant constancy of either B\star \varkappa or B\star \bar{\varkappa}. ... * The very first component C(x) is the scalar field.The one next to it, C_{\alpha\dot{\alpha}} is expressed by virtue of the C-equation as the derivative of the scalar.
+--------------------------------------------------------------------------------
+Dynamic fluid film equations (https://en.wikipedia.org/wiki/Dynamic_fluid_film_equations)
+citeturn16search27 [wordlim: 200] Crawled: 2 months ago; Let \nabla _{\alpha } be the covariant surface derivative, B_{\alpha \beta } be the covariant curvature tensor, B^{\alpha }_{\beta } be the mixed curvature tensor and B^{\alpha }_{\alpha } be its trace, that is mean curvature. ... where \sigma is the surface energy density results in Laplace's classical model for surface tension: ... If one disregards the tangential components of the velocity field, as frequently done in the study of thin fluid film, one arrives at the following simplified system with only two unknowns: the two dimensional density \rho and the normal velocity C:
+
+END_EXACT_TOOL_RETURN
+

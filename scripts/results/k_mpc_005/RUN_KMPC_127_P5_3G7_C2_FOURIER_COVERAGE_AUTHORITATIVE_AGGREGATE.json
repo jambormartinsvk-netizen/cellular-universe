@@ -1,0 +1,371 @@
+{
+  "C3_effect": "UNLOCK_ONLY_IF_ORCHESTRATOR_ACCEPTS_C2_AGGREGATE_PASS",
+  "K4_score_effect": "NONE_60_OF_100_UNCHANGED",
+  "aggregate_gate_pass": true,
+  "all_atoms_pass": true,
+  "atoms": {
+    "AD/k=0.005": {
+      "all_required_gates_pass": true,
+      "candidate_interpretation_not_verdict": "PASS_C2_AD_K0p005_SUPPORT_06_ADEQUATE_CANDIDATE_ONLY",
+      "execution_status": "TECHNICAL_COMPLETE_PENDING_ORCHESTRATOR_AUDIT",
+      "file": "RUN_KMPC_063_P5_3G7_C2_AD_K0p005_SUPPORT_06_08.json",
+      "gates": {
+        "background_pass": true,
+        "common_pass": true,
+        "core_pass": true,
+        "nested_background_pass": true,
+        "tail_pass": true
+      },
+      "identity": {
+        "k_Mpc_inverse": 0.005,
+        "mode": "AD",
+        "variant": "nominal"
+      },
+      "run_id": "KMPC-063",
+      "sha256": "CB0CEA5DD92BF85F0F0066FAD8DE77D5F8247B02B864FACF92FA374E0FBC85BD",
+      "technical_failure_rejected": true
+    },
+    "AD/k=0.15": {
+      "all_required_gates_pass": true,
+      "candidate_interpretation_not_verdict": "PASS_C2_AD_K0p15_SUPPORT_04_ADEQUATE_CANDIDATE_ONLY",
+      "execution_status": "TECHNICAL_COMPLETE_PENDING_ORCHESTRATOR_AUDIT",
+      "file": "RUN_KMPC_066_P5_3G7_C2_AD_K0p15_SUPPORT_04_06.json",
+      "gates": {
+        "background_pass": true,
+        "common_pass": true,
+        "core_pass": true,
+        "nested_background_pass": true,
+        "tail_pass": true
+      },
+      "identity": {
+        "k_Mpc_inverse": 0.15,
+        "mode": "AD",
+        "variant": "nominal"
+      },
+      "run_id": "KMPC-066",
+      "sha256": "81370874BCF25123565FBB117EDFEB4D51F12560CCC04BDC8CCDFC0DF8FDE816",
+      "technical_failure_rejected": true
+    },
+    "BI/k=0.005": {
+      "all_required_gates_pass": true,
+      "candidate_interpretation_not_verdict": "PASS_C2_BI_K0p005_SUPPORT_07_ADEQUATE_CANDIDATE_ONLY",
+      "execution_status": "TECHNICAL_COMPLETE_PENDING_ORCHESTRATOR_AUDIT",
+      "file": "RUN_KMPC_078_P5_3G7_C2_BI_K0p005_SUPPORT_07_09_CHECKPOINT_RESUME.json",
+      "gates": {
+        "background_pass": true,
+        "common_pass": true,
+        "core_pass": true,
+        "nested_background_pass": true,
+        "tail_pass": true
+      },
+      "identity": {
+        "k_Mpc_inverse": 0.005,
+        "mode": "BI",
+        "variant": "nominal"
+      },
+      "run_id": "KMPC-078",
+      "sha256": "F24894A043B531825DD36A424637D1E70244F89B66678AF945EA6C135918A359",
+      "technical_failure_rejected": true
+    },
+    "BI/k=0.15": {
+      "all_required_gates_pass": true,
+      "candidate_interpretation_not_verdict": "PASS_C2_BI_K0p15_SUPPORT_05_ADEQUATE_HP_M1_CANDIDATE_ONLY",
+      "execution_status": "TECHNICAL_COMPLETE_PENDING_ORCHESTRATOR_AUDIT",
+      "file": "RUN_KMPC_112_P5_3G7_C2_BI_K0p15_HP_M1_CHECKPOINT_EXACT_RESUME_JSON_PARITY_SUCCESSOR.json",
+      "gates": {
+        "background_pass": true,
+        "common_pass": true,
+        "core_pass": true,
+        "nested_background_pass": true,
+        "tail_pass": true
+      },
+      "identity": {
+        "k_Mpc_inverse": 0.15,
+        "mode": "BI",
+        "variant": "nominal"
+      },
+      "run_id": "KMPC-112",
+      "sha256": "FAF52256489BA7C105F9125C1ED9A68358C0187E5F7B8B1164E1BA036A6507A1",
+      "technical_failure_rejected": true
+    },
+    "CDI/k=0.005": {
+      "all_required_gates_pass": true,
+      "candidate_interpretation_not_verdict": "PASS_C2_CDI_K0p005_SUPPORT_07_ADEQUATE_CANDIDATE_ONLY",
+      "execution_status": "TECHNICAL_COMPLETE_PENDING_ORCHESTRATOR_AUDIT",
+      "file": "RUN_KMPC_073_P5_3G7_C2_CDI_K0p005_SUPPORT_07_09_PHASE_ORDER_SUCCESSOR.json",
+      "gates": {
+        "background_pass": true,
+        "common_pass": true,
+        "core_pass": true,
+        "nested_background_pass": true,
+        "tail_pass": true
+      },
+      "identity": {
+        "k_Mpc_inverse": 0.005,
+        "mode": "CDI",
+        "variant": "nominal"
+      },
+      "run_id": "KMPC-073",
+      "sha256": "B7B2B7231E20D90D7EA71F1934B795296B7B0C2772148988C0FCFB2CF96E8498",
+      "technical_failure_rejected": true
+    },
+    "CDI/k=0.15": {
+      "all_required_gates_pass": true,
+      "candidate_interpretation_not_verdict": "PASS_C2_CDI_K0p15_SUPPORT_05_ADEQUATE_CANDIDATE_ONLY",
+      "execution_status": "TECHNICAL_COMPLETE_PENDING_ORCHESTRATOR_AUDIT",
+      "file": "RUN_KMPC_075_P5_3G7_C2_CDI_K0p15_SAME_MATRIX_REFINEMENT.json",
+      "gates": {
+        "background_pass": true,
+        "common_pass": true,
+        "core_pass": true,
+        "nested_background_pass": true,
+        "tail_pass": true
+      },
+      "identity": {
+        "k_Mpc_inverse": 0.15,
+        "mode": "CDI",
+        "variant": "nominal"
+      },
+      "run_id": "KMPC-075",
+      "sha256": "19F5F0B38CFE62C6E2ECA277EE5F959D866967027C5AF721CF4B2E1A30B999B9",
+      "technical_failure_rejected": true
+    },
+    "NID/k=0.005": {
+      "all_required_gates_pass": true,
+      "candidate_interpretation_not_verdict": "PASS_C2_NID_K0p005_SUPPORT_07_ADEQUATE_CANDIDATE_ONLY",
+      "execution_status": "TECHNICAL_COMPLETE_PENDING_ORCHESTRATOR_AUDIT",
+      "file": "RUN_KMPC_115_P5_3G7_C2_NID_K0p005_SUPPORT_07_09_CHECKPOINT_RESUME.json",
+      "gates": {
+        "background_pass": true,
+        "common_pass": true,
+        "core_pass": true,
+        "nested_background_pass": true,
+        "tail_pass": true
+      },
+      "identity": {
+        "k_Mpc_inverse": 0.005,
+        "mode": "NID",
+        "variant": "nominal"
+      },
+      "run_id": "KMPC-115",
+      "sha256": "7D7B9BC1F2874A20E0CB8116D657F7C0419D03B284D0161CFFDF89112B4E0851",
+      "technical_failure_rejected": true
+    },
+    "NID/k=0.15": {
+      "all_required_gates_pass": true,
+      "candidate_interpretation_not_verdict": "PASS_C2_NID_K0p15_SUPPORT_05_ADEQUATE_CANDIDATE_ONLY",
+      "execution_status": "TECHNICAL_COMPLETE_PENDING_ORCHESTRATOR_AUDIT",
+      "file": "RUN_KMPC_117_P5_3G7_C2_NID_K0p15_SAME_MATRIX_REFINEMENT.json",
+      "gates": {
+        "background_pass": true,
+        "common_pass": true,
+        "core_pass": true,
+        "nested_background_pass": true,
+        "tail_pass": true
+      },
+      "identity": {
+        "k_Mpc_inverse": 0.15,
+        "mode": "NID",
+        "variant": "nominal"
+      },
+      "run_id": "KMPC-117",
+      "sha256": "F9BE1AC95575B0A71E73596384360ADC382C651EE4C8BA067DD4313C4BE6C7C4",
+      "technical_failure_rejected": true
+    },
+    "NIV/k=0.005": {
+      "all_required_gates_pass": true,
+      "candidate_interpretation_not_verdict": "PASS_C2_NIV_K0p005_SUPPORT_06_ADEQUATE_CANDIDATE_ONLY",
+      "execution_status": "TECHNICAL_COMPLETE_PENDING_ORCHESTRATOR_AUDIT",
+      "file": "RUN_KMPC_120_P5_3G7_C2_NIV_K0p005_SUPPORT_06_08_CHECKPOINT_RESUME.json",
+      "gates": {
+        "background_pass": true,
+        "common_pass": true,
+        "core_pass": true,
+        "nested_background_pass": true,
+        "tail_pass": true
+      },
+      "identity": {
+        "k_Mpc_inverse": 0.005,
+        "mode": "NIV",
+        "variant": "nominal"
+      },
+      "run_id": "KMPC-120",
+      "sha256": "D6350636F9BA27C541EF8CDC2585ED370E2F1E2EB35495E01198A8BAA47AB136",
+      "technical_failure_rejected": true
+    },
+    "NIV/k=0.15": {
+      "all_required_gates_pass": true,
+      "candidate_interpretation_not_verdict": "PASS_C2_NIV_K0p15_SUPPORT_06_ADEQUATE_CANDIDATE_ONLY",
+      "execution_status": "TECHNICAL_COMPLETE_PENDING_ORCHESTRATOR_AUDIT",
+      "file": "RUN_KMPC_126_P5_3G7_C2_NIV_K0p15_SUPPORT_06_08_MULTI_RANK_REFINEMENT.json",
+      "gates": {
+        "background_pass": true,
+        "common_pass": true,
+        "core_pass": true,
+        "nested_background_pass": true,
+        "tail_pass": true
+      },
+      "identity": {
+        "k_Mpc_inverse": 0.15,
+        "mode": "NIV",
+        "variant": "nominal"
+      },
+      "run_id": "KMPC-126",
+      "sha256": "1D46AFD1CDEB650A7787A5E6FE9E2304A5212FF1FE9AA47657BEAAAA557B8AA0",
+      "technical_failure_rejected": true
+    }
+  },
+  "authorship": {
+    "script_creator": "Codex (OpenAI)",
+    "theory_author": "Martin Jambor"
+  },
+  "background_cross_mode_k_spread": {
+    "1e-08": {
+      "metrics": {
+        "D": {
+          "maximum": 1.0000367688715064,
+          "minimum": 1.0000367688715064,
+          "pass": true,
+          "relative_spread": 0.0,
+          "threshold": 1e-12
+        },
+        "H_Mpc_inverse": {
+          "maximum": 21652354681.116848,
+          "minimum": 21652354681.116848,
+          "pass": true,
+          "relative_spread": 0.0,
+          "threshold": 1e-12
+        },
+        "rho_ash_over_rho_r": {
+          "maximum": 8.643429666636812e-44,
+          "minimum": 8.643429666636808e-44,
+          "pass": true,
+          "relative_spread": 4.607811865704491e-16,
+          "threshold": 1e-12
+        },
+        "rho_f_over_rho_r": {
+          "maximum": 2.779012141312746e-28,
+          "minimum": 2.779012141312746e-28,
+          "pass": true,
+          "relative_spread": 0.0,
+          "threshold": 1e-12
+        }
+      },
+      "pass": true
+    },
+    "3e-08": {
+      "metrics": {
+        "D": {
+          "maximum": 1.0001103066145194,
+          "minimum": 1.0001103066145194,
+          "pass": true,
+          "relative_spread": 0.0,
+          "threshold": 1e-12
+        },
+        "H_Mpc_inverse": {
+          "maximum": 2405905641.095253,
+          "minimum": 2405905641.095253,
+          "pass": true,
+          "relative_spread": 0.0,
+          "threshold": 1e-12
+        },
+        "rho_ash_over_rho_r": {
+          "maximum": 5.841467028749681e-41,
+          "minimum": 5.841467028749681e-41,
+          "pass": true,
+          "relative_spread": 0.0,
+          "threshold": 1e-12
+        },
+        "rho_f_over_rho_r": {
+          "maximum": 2.086877887939646e-26,
+          "minimum": 2.086877887939646e-26,
+          "pass": true,
+          "relative_spread": 0.0,
+          "threshold": 1e-12
+        }
+      },
+      "pass": true
+    }
+  },
+  "background_spread_pass": true,
+  "background_spread_threshold": 1e-12,
+  "candidate_interpretation_not_verdict": "PASS_C2_FOURIER_COVERAGE_10_OF_10_CANDIDATE_ONLY",
+  "contract_guard": {
+    "checks": {
+      "background_contract_exact": true,
+      "cartesian_order_exact": true,
+      "no_duplicate_filename": true,
+      "no_duplicate_identity": true,
+      "pass_candidates_only": true,
+      "sha256_shape_exact": true,
+      "ten_specs_exact": true
+    },
+    "pass": true
+  },
+  "execution_status": "TECHNICAL_COMPLETE_PENDING_ORCHESTRATOR_AUDIT",
+  "matrix": {
+    "exact_cartesian_register_pass": true,
+    "expected_atoms": 10,
+    "expected_register": [
+      "AD/k=0.005",
+      "AD/k=0.15",
+      "CDI/k=0.005",
+      "CDI/k=0.15",
+      "BI/k=0.005",
+      "BI/k=0.15",
+      "NID/k=0.005",
+      "NID/k=0.15",
+      "NIV/k=0.005",
+      "NIV/k=0.15"
+    ],
+    "k_Mpc_inverse": [
+      0.005,
+      0.15
+    ],
+    "modes": [
+      "AD",
+      "CDI",
+      "BI",
+      "NID",
+      "NIV"
+    ],
+    "observed_atoms": 10,
+    "observed_register": [
+      "AD/k=0.005",
+      "AD/k=0.15",
+      "CDI/k=0.005",
+      "CDI/k=0.15",
+      "BI/k=0.005",
+      "BI/k=0.15",
+      "NID/k=0.005",
+      "NID/k=0.15",
+      "NIV/k=0.005",
+      "NIV/k=0.15"
+    ],
+    "variant": "nominal"
+  },
+  "orchestrator_verdict": "NOT_ASSIGNED_BY_SCRIPT",
+  "prediction_table_effect": "NONE",
+  "read_only_no_physics_solve": true,
+  "release_trigger": "NONE",
+  "run_id": "KMPC-127",
+  "runtime_limit_seconds": 4.8,
+  "runtime_seconds": 0.01600000000325963,
+  "scope": {
+    "excluded": "new solve, coefficient correction, C3 gamma0/af0, S-M, full hierarchy, ODE/P5.4, G8/G9 and data",
+    "included": "read-only exact-hash C2 5-mode x 2-k atom register and cross-mode/cross-k background spread"
+  },
+  "score_effect": "NONE",
+  "source_hashes": {
+    "base": "69E0C35CDC871CEB5185C51D35A3F26D3B26FD4D6117DC443E6E16CB7EEE8EEC",
+    "runner": "EE25391AC56D561FF7B9E1FFD38F23906772CE763C1EF045EAB56A38F223F6FC"
+  },
+  "technical_failure_exclusion_pass": true,
+  "technical_failure_outputs_selected": 0,
+  "test": "A2-K4 P5.3g7 C2 authoritative atom coverage aggregate",
+  "worst_background_spread": {
+    "label": "a=1e-08:rho_ash_over_rho_r",
+    "relative_spread": 4.607811865704491e-16
+  },
+  "zenodo_trigger": "NONE"
+}

@@ -1,0 +1,589 @@
+# Aktuálny vykonávací plán v3.18
+
+**Aktualizované:** 2026-07-23  
+**Autorita:** hlavný orchestrátor  
+**Aktívna cesta:** `A1-K1 -> A2-K4 -> P5`  
+**Nahrádza pre aktuálnu navigáciu:** staršie globálne akčné plány; tie zostávajú historickými dôkazmi  
+**Pravidlo údržby:** tento súbor sa aktualizuje iba pri uzavretí brány, zmene aktívnej cesty, PT1/PT2 udalosti alebo release baseline
+
+## 0. Týždenná tokenová pauza — ukončená používateľom
+
+**Stav:** `RESUMED_BY_EXPLICIT_USER_AUTHORIZATION_2026-07-18`  
+**Pôvodný predpokladaný návrat:** 2026-07-24 — už neplatí  
+**Autorita zmeny:** používateľ výslovne povolil pokračovať vo výpočte.
+
+Povolený numerical boundary audit bol dokončený cez technických nástupcov
+KMPC-037→039 bez zmeny matice alebo prahov. KMPC-040 potom v samostatne
+predregistrovanom step 3 uzavrel CDI candidate support `[0,5]` voči `[0,7]`
+pre `k=.05 / nominal`; common `0…5` aj tail `6,7` prešli.
+
+KMPC-044 uzavrel BI order-7 numerical boundary. KMPC-045 potom zachoval
+technickú PF-074 bez fyzikálneho payloadu; KMPC-046 potvrdil BI `[0,5]`.
+KMPC-047 až 053 uzavreli NID `[0,5]` po M1 depth-7 a numerical-boundary
+audite. KMPC-054 až 056 samostatne uzavreli NIV: `[-1,2]` bol nedostatočný,
+ale pri M1 depth 6 je `[-1,4]` dostatočný voči `[-1,6]`. PF-076 ostáva
+zachovaný ako technická owner chyba bez fyzikálneho verdiktu.
+
+KMPC-057 až 060 uzavreli tri fail-closed smoke chyby PF-077 až PF-079 a
+presnú support-semantics diagnózu bez fyzikálneho atómu. KMPC-061 prešiel
+preflight. KMPC-063 uzavrel prvý C2 atóm `AD/k=.005/nominal`: candidate
+support `[0,6]` voči audit `[0,8]` prešiel. KMPC-065 potom otestoval
+AD/k=.15; KMPC-066 uzavrel candidate support `[0,4]` voči `[0,6]`, pričom
+najhorší tail na `.01` bol `9.14e-9/1.52e-8 < 1e-6`. C2 je `2/10 PASS`.
+KMPC-067 až 073 potom uzavreli CDI/k=.005 na accepted `[0,7]` voči
+`[0,9]`; checkpointové PF-081 až PF-084 nemenia fyziku a jediný výsledkový
+candidate je KMPC-073. KMPC-074 našiel na CDI/k=.15 jediný M3 driver
+boundary `3.84e-10 > 1e-10`; KMPC-075 ho na presne tej istej 104×104 matici
+uzavrel tromi residual corrections na `1.11e-16`. KMPC-078 potom uzavrel
+BI/k=.005 cez hashovaný checkpoint. KMPC-083 potom vyriešil tú istú
+float64-zostavenú BI/k=.15 driver maticu pri 80 dps: driver klesol na
+`9.82e-82`, ale nezávislý `Einstein_0i[7]` ostal `3.019756782e-9 > 1e-9`.
+KMPC-086 znovu zostavil celý 16×104 holdout pri 80 dps a dostal prakticky
+rovnakých `3.019756712e-9`. KMPC-087 následne zostavil aj 104×104 driver pri
+80 dps: driver prešiel na `8.72e-82`, ale nezávislý `Einstein_0i[7]` ostal
+`3.019756578e-9`. Solve, holdout assembly aj driver assembly roundoff sú tým
+vylúčené. KMPC-092 potom úplným 73-term ledgerom zrekonštruoval holdout do
+`2.30e-67` a nameral cancellation factor `8.91e8`. Dominantný otvorený blok
+je fractional background × M1 (`-7.04819e-9`), kým F0 je iba
+`-1.80023e-11`. KMPC-099/100 potom izolovali M1 maticu: natívna 80-dps
+assembly po binary64 projekcii aj frozen rebuild majú rank `98/98`, condition
+`634.52` a relatívny matrix rozdiel iba `6.09e-18`; RHS je identická. QR
+výnimka bola lokalizovaná na HP solver/algoritmickú hranicu, nie na projected
+rank alebo assembly. KMPC-102 potom na natívnej 80-dps matici explicitným
+CPQR potvrdil rank `98/98`, relatívnu faktorizáciu `1.00e-82`, normálový
+reziduál `7.85e-85` a uzavrel lokálne M1 driver/holdout riadky. HP-M1 solver
+boundary je diagnosticky uzavretá. KMPC-108/109 následne vytvorili a
+read-only overili lossless 13-state downstream checkpoint. KMPC-112 ho po
+technických PF-111/PF-112 obnovil bez opakovania CPQR: exact 80-dps driver
+prešiel na `8.61e-82`, nezávislý 16×104 holdout na `7.07e-15` a
+`Einstein_0i[7]=3.40e-15`, pričom `rows_added_to_driver_solve=0`. Interný
+audit dokument 179 uzavrel BI/k=.15 scoped PASS. KMPC-113 potom pri
+NID/k=.005 správne odmietol `[0,5]` pre tail `6,7`; KMPC-114/115 cez
+verdict-free checkpoint rozšírili accepted support na `[0,7]` a audit
+`[0,9]`. Najhorší tail na `.01` je `8.94e-9 < 1e-6`; interný audit 183
+udelil scoped PASS. C2 je `7/10 PASS`; ďalší atóm je `NID/k=.15/nominal`.
+KMPC-116 na tomto druhom NID k-bode izoloval jediný audit M3 driver
+`gamma_Euler[7]=4.18656e-10 > 1e-10`, pričom accepted, holdout, common,
+tail aj background prešli. KMPC-117 na presne tej istej 104×104 matici
+znížil driver tromi corrections na `1.35140e-16`; holdout ostal
+`1.43732e-11 < 1e-9`. Interný audit 186 uzavrel celý NID mód. C2 je
+`8/10 PASS`. KMPC-118 potom pri NIV/k=.005 prešiel všetky netail brány,
+ale odmietol nominal `[-1,4]` pre tail na `.01`. Versioned successor
+odstránil NID-only checkpoint guard bez zmeny numeriky; KMPC-119/120 cez
+verdict-free accepted `[-1,6]` checkpoint a audit `[-1,8]` znížili tail na
+`3.67e-9/7.70e-9 < 1e-6`. Interný audit 190 udelil scoped PASS. C2 je
+`9/10 PASS`. KMPC-121/122 potom pri NIV/k=.15 oddelili a uzavreli nominal
+M3 driver boundary, no tail vyžiadal `[-1,6]→[-1,8]`. KMPC-123 vytvoril
+incomplete checkpoint; KMPC-124 ho PF-114 fail-closed odmietol. PF-115 v
+KMPC-125 odhalil historický rank-104-only post-processing. Versioned
+KMPC-126 explicitne overil ranky 104/130 a prešiel všetkými bránami;
+driver je `1.72e-16/2.14e-16`, holdout `9.61e-11` a tail
+`2.81e-12/3.40e-12`. Interný audit 197 uzavrel NIV mód. KMPC-127 potom
+read-only overil exact register `10/10`, všetky hashe/identity/brány a
+background spread; maximum `4.61e-16 < 1e-12`. Interný audit 199 uzavrel
+C2 gate a odblokoval C3 bez zmeny skóre.
+
+KMPC-128 až 130 boli transparentná technická línia PF-117 až PF-119 bez
+zmeny fyziky. KMPC-131 rozdelil C3 nulový pár na štyri ohraničené support
+shardy. `AD/k=.005/gamma0+af0` prešiel; pri `AD/k=.05` zlyhal iba tail pri
+`[0,2]→[0,4]` (`2.81e-3` a `3.28e-3 > 1e-6`). Predregistrovaný KMPC-132
+pridal hlbší nominal checkpoint a šesť shardov na `[0,4]→[0,6]`; historický
+nominal bridge prešiel a najhorší tail klesol na `4.683e-8`. Následný
+`AD/.15` nulový pár prešiel s najhorším tailom `1.520e-8`. Interný audit 206
+uzavrel AD mód `9/9`. KMPC-131 potom priamo uzavrel CDI/.005 a CDI/.05.
+CDI/.15 malo iba audit M3 driver boundary `8.20e-10/3.84e-10 > 1e-10`;
+KMPC-133 tromi same-matrix corrections na nezmenenej rank-104 matici znížil
+residualy na `1.06e-16/1.11e-16`, pričom tail ostal `7.18e-9`. Interný audit
+208 uzavrel CDI mód `9/9`; globálne C3 je `27/45` logických atómov PASS.
+KMPC-131 následne vypočítal BI/.005 a BI/.05 ako úplné nulové páry PASS.
+BI/.15 ostal REVIEW na audit driver/holdout hranici. Technická línia
+KMPC-134 až 137 oddelila binary64 coefficient a decimal80 exact fázu,
+opravila JSON owner order a opakovane potvrdila všetky `4/4` coefficient
+shardy za `1.188–1.640 s`; interný audit 213 preto zmrazil runtime
+rozhodnutie. Používateľ následne výslovne zvolil lokálnu `45 s` exact vetvu.
+Po PF-124/PF-125 dokončil KMPC-139 oba 80-dps exact workery za
+`19.922/21.344 s`; driver residualy sú `1.02e-81/8.61e-82` a nezávislé
+holdouty `4.25e-15/7.07e-15`. KMPC-140 bez solvera obnovil parent merge a
+PF-126 odhalil false-negative rovnosť supersession množiny. Read-only
+KMPC-141 ju nahradil neprázdnou podmnožinovou bránou, zachoval identický
+vedecký snapshot a uzavrel BI/.15 pair. Interný audit 218 udelil BI módu
+`9/9 PASS`; globálne C3 je `33/45`. Lokálna exact výnimka nemení všeobecný
+K4-B2 limit. Externý audit EA-034 následne dosiahol T2 pre read-only
+KMPC-141 s byte-identickým rawom, T1 forenzne potvrdil KMPC-139 exact vetvu
+a vydal `AGREE_IN_SCOPE`; dva redakčné nálezy nemajú vecný dopad. Hlavný
+posudok externý výsledok prijal. K4 score sa nemení.
+KMPC-131 bol potom bez zmeny kódu znovu použitý pre NID/.005. Frozen
+support `[0,7]→[0,9]`, M1 depth 9 a KMPC-115 nominal autorita prešli;
+štyri workery skončili za `2.657–3.625 s` a pair za `5.281 s`. M3 driver
+maximum je `1.6133e-11 < 1e-10`, holdout `4.3054e-13 < 1e-9`, common
+`2.4165e-10 < 1e-8` a tail `1.5849e-16 < 1e-6`. Interný audit 220 uzavrel
+`NID/k=.005` ako `3/3 PASS`; globálne C3 je `35/45`. K4 score sa nemení.
+Pri NID/.05 odhalil KMPC-131 smoke PF-127 pred fyzikou: správny šesťpoľový
+KMPC-053 identity objekt odmietla legacy whole-object equality. KMPC-142
+pridal iba exact schema adapter a izoloval v oboch variantoch jediný REVIEW
+na audit rank-104 M3 driveri (`1.40e-10/1.93e-10 > 1e-10`). KMPC-143 potom
+na nezmenenej matici a RHS vykonal presne tri korekcie; residualy klesli na
+`1.55e-16/1.07e-16`, holdout ostal `2.62e-11 < 1e-9` a všetky ostatné
+brány prešli. Interný audit 225 uzavrel NID/.05 ako `3/3 PASS`; globálne C3
+je `37/45`. K4 score sa nemení.
+Pri NID/.15 prešiel KMPC-131 gamma0 priamo; af0 ostal iba na audit M3
+driveri `4.1866e-10 > 1e-10`. Cielený KMPC-144 znížil tento driver tromi
+same-matrix korekciami na `1.3514e-16`, ale PF-128 odhalil parent-only
+false-negative parity pre JSON key typy, runtime a nový true provenance
+check. Read-only KMPC-145 opravil iba dve odvodené parity checks pri
+`0` workeroch/solveroch/CPQR a identickom protected snapshote
+`EBD4021F...FD97D`. Interný audit 231 uzavrel NID mód `9/9`; globálne C3 je
+`39/45`. K4 score sa nemení.
+
+Externý audit EA-035 následne dosiahol T2 pre read-only KMPC-145, T1
+forenzne potvrdil numerickú líniu KMPC-131/142/143/144 a vydal
+`AGREE_IN_SCOPE`. Nezávisle rekonštruoval NID `9/9`, globálne `33+6=39/45`,
+oba missing-input guardy a identický protected snapshot. Jeden minoritný a
+jeden redakčný nález nemajú vecný dopad; hlavný posudok výsledok prijal.
+
+KMPC-131 potom bez zmeny runnera alebo vedeckého base dokončil
+`NIV/k=.005/gamma0+af0` so supportom `[-1,6]→[-1,8]`, M1 depth `8` a
+zachovaným leading `j=-1`. Parent skončil za `5.234 s`, workery za
+`2.547–3.500 s`; všetky frozen brány prešli a rekurzívny audit našiel nula
+false pass/valid/exact/parity polí. Interný audit 233 udelil
+`PASS_C3_NIV_K0P005_3_OF_3`; NIV je `5/9` a globálne C3 `41/45`. K4 score
+sa nemení.
+
+Ten istý frozen KMPC-131 potom uzavrel `NIV/k=.05/gamma0+af0` na
+`[-1,4]→[-1,6]`: všetky brány prešli, najhorší M3 driver bol
+`4.3073e-11` a tail `5.9964e-7`. Interný audit 235 udelil `3/3 PASS`; NIV
+je `7/9` a globálne C3 `43/45`. Pri poslednom bode `NIV/k=.15` nastal
+predregistrovaný prvý REVIEW: oba varianty majú plný rank a prechádzajúci
+holdout, common, tail aj background, ale accepted/audit M3 driver ostal nad
+`1e-10` (`1.10e-10/9.90e-8` a `1.48e-10/1.42e-7`). Interný audit 237 ho
+klasifikoval ako multi-rank numerical boundary bez fyzikálneho STOP. Oba
+nulové atómy ostávajú REVIEW, preto NIV ostáva `7/9`, C3 `43/45` a K4
+`60/100`. Refinement, successor ani aggregate neboli spustené.
+
+Náhradný externý agent následne auditoval EA-036 a vydal
+`AGREE_WITH_LIMITATION / T1`: T1 forenzne potvrdil numerical-boundary
+interpretáciu, ale odhalil dve chýbajúce hardcoded runtime závislosti a
+neúplnú path/runtime parity normalizáciu. Hlavný posudok nálezy prijal bez
+zmeny fyziky. Opravný single-copy EA-037 doplnil iba runtime closure a
+parity kontrakt; nový R6 preflight prešiel `249/249`. Fresh externý audit
+potom dosiahol `T2 / AGREE_IN_SCOPE`: official bez odchýlky skončil exit
+`0` za `8.7 s`, generated raw reprodukoval rovnaký REVIEW a po povolenej
+normalizácii zostalo `0` rozdielov. Oba nové missing-input guardy prešli
+fail-closed. Auditná pauza je uzavretá; NIV/C3/K4 ostávajú `7/9`, `43/45`,
+`60/100`.
+
+Predregistrovaný KMPC-146 následne aplikoval presne tri same-matrix
+corrections na oba NIV/.15 nulové varianty a ranky 104/130. Všetky štyri
+drivery klesli na `1.63e-16…2.14e-16` a všetky fyzikálne brány prešli.
+PF-129 falošne odmietla štyri F0 parity pre Python integer keys verzus JSON
+string keys; immutable JSON projekcie boli exact. Predregistrovaný
+read-only KMPC-147 to overil s `workers=solvers=physics=0` a identickým
+protected snapshotom. Interný audit 241 udelil NIV `9/9`; globálna logical
+coverage C3 je `45/45`. K4 ostáva `60/100`. Úsporný mixed-tier balík
+EA-038 bol zapečatený s `22` package súbormi, R6 preflightom `105/105` a
+bez duplikovania 25-súborovej EA-037 closure. Externý agent následne vydal
+`AGREE`: KMPC-146 T1 a KMPC-147 T2, corrected diff `0`, protected snapshot
+exact a oba negatívne guardy fail-closed, bez nálezu alebo odchýlky. Hlavný
+posudok audit prijal. Predregistrovaný KMPC-148 potom presne raz vytvoril
+read-only C3 aggregate: `20/20` frozen vstupov, exact register `45/45`,
+mode counts `9/9/9/9/9` a nulové workery, solvery, fyzika aj matice. Interný
+audit 243 prijal formálny aggregate bez zmeny K4. EA-039 ho následne
+reprodukoval na T2 bez odchýlky a hlavný posudok prijal `AGREE_IN_SCOPE`
+s procesnými obmedzeniami; vtedy nasledoval iba teoretický S-M/Q18/Q22
+kontrakt.
+
+## 1. Aktuálny stav
+
+| Oblasť | Autoritatívny stav | Čo z toho vyplýva |
+|---|---|---|
+| A2-K4 | **ŽIVÁ / ARCH_A COMPLETED / HISTORICAL 10 / ACTIVE TECH 0/10 / J4 SENTINEL SUPPORT PASS** | koľaj nemá fyzikálny STOP; hĺbka zostáva 60/100 |
+| fyzikálna hĺbka K4 | `60/100` | historických `66.5/100` z redukovanej K7 RHS sa neprenáša |
+| P5 | `3.5/6` oporných bodov | M1 anchor prešiel; úplný palivový coefficient/row kontrakt nie |
+| P5.3 | B1 PASS; C2 `10/10` a aggregate PASS; C3 autoritatívne `45/45` logical PASS aj aggregate PASS; S-M `D01 CLOSED V1-R1 / D02 CLOSED_FORM_ONLY V1-S1+V1-P1 / D03 PARTIAL_AUTHOR_INPUT` | B6-C0 má `PASS_B6_C0_TOPOLOGY`; B6a-PH1 má `PASS_B6A_PH1_CONDITIONAL_MANTLE`; B6b má `PASS_B6B_FAMILY_MAP`; B6b-1 `PASS_B6B1_ANALYTIC_ENVELOPE_CONTRACT`; B6b-2 `PASS_B6B2_PASSPORT_SCHEMA / REVIEW_B6B2_PHYSICAL_CONTENT_BLOCKED_D03_D11`. E3 S8 search envelope je `[0.777,0.831]` iba pod E2 flat-LambdaCDM mapovaním; DESI ostáva quasi-holdout bez práva rankovať. MF1–MF4 sú otvorené. Ďalší krok: neexekvovateľný autor-input subbalík D04+D08+D10; bez Pythonu |
+| P5.4 | NOT RUN | nesmie sa spustiť pred plným seedom |
+| G8/G9 | BLOCKED | plná hierarchia ani likelihood ešte nesmú bežať |
+| R7 mŕtvych A2 koľají | `CONFIRMED_SCOPE` pre K1,K2,K3,K5,K6 | nájdené chyby nespôsobili ich falošnú smrť; rozsudky sa nesmú rozširovať mimo mechanizmu |
+| živé zálohy K7/K8/K9/K11/K12 | `R8 BLOCKER MAPPED` | rodičia žijú, ale bez konkrétneho kernelu sa nesmú umelo tlačiť ku G5 |
+| existenčná brána záloh | `FS-GATE-01 K8/K9/K11/K12 CLOSED AT MOMENT SCOPE` | momentové prieniky sú zmapované; body sa nepridali, ale presné mŕtve podtriedy a zostávajúca mikrofyzika sú oddelené |
+| Git | pracovná vetva existuje, baseline commit chýba | `16` tracked rozdielov a `1 331` neignorovaných untracked súborov sa nesmú stageovať hromadne |
+| release | PT1 evidence vznikla, PT2 nevznikol | staré podmienené predpovede treba scope-obmedziť bez vymýšľania náhradných čísel |
+
+Fyzikálny verdikt sa týmto plánom nemení. R-A a R-B nižšie sú dve
+matematické implementácie toho istého K4 mechanizmu, nie nové fyzikálne
+koľaje.
+
+## 2. Bezprostredné poradie práce
+
+### C3 aggregate — externý checkpoint
+
+KMPC-148 má immutable raw SHA `C493B102...78238`; audit 243 prijal exact
+C3 aggregate `45/45` nad 15 pair rawmi a 5 mode autoritami. K4 ostáva
+`60/100`, P5 `3.5/6` a P5.4 je stále `NOT RUN`. Úsporný T2 balík EA-039 je
+zapečatený s R6 preflightom `212/212`. Externý audit reprodukoval official,
+exact register `45/45`, field diff `0` a oba missing-input guardy; odporúčanie
+`AGREE_IN_SCOPE` bolo prijaté s procesnými obmedzeniami pre count a prereg
+freeze. Teoretický prieskum S-M/Q18/Q22 skončil dokumentom 244 na
+`REVIEW_BLOCKED_BY_AUTHOR_PHYSICAL_INPUT / P1_STOP_CURRENT_CORPUS`;
+P5.4, G8 a G9 ostávajú zakázané.
+
+### S-M/Q18/Q22 — aktívna brána autorovho fyzikálneho vstupu
+
+Source-lineage kontrola nenašla v aktuálnom korpuse explicitný lokálny zdroj
+pary ani úplný collision kernel. Nie je to smrť A2-K4: je to P1 STOP súčasného
+korpusu pred formuláciou mikrofyziky. Historické vetvy A/B z dokumentu 244
+majú od 2026-07-22 kanonické označenie:
+
+1. `A1_K1_A2_K4_P5_3_SM_v1` — exit/reheating reservoir, bližší aktuálne
+   prežívajúcemu koridoru skorého ukončeného reliktu a neskorého takmer
+   čistého `F -> C`; autor ho zvolil, ale input contract je neúplný;
+2. `A1_K1_A2_K4_P5_3_SM_v2` — scar/event mechanizmus, paralelný nevybraný
+   kandidát vyžadujúci vlastnú stavovú dynamiku, eventovú mieru a produktovú
+   mapu; `v2` nie je nástupca v1.
+
+V oboch vetvách treba určiť stav/clock, `T^{mu nu}`, lokálny source alebo
+`C[f]`, kinematiku produktov, nulový limit, nové konštanty a počiatočné
+podmienky. Historické `Delta N_eff=0.0535` je iba superseded legacy
+sensitivity case, nie cieľ na ladenie kernelu. Python zostáva zakázaný aj po
+autorovom vstupe, až kým nevzniknú tri artefakty dokumentu 244 a ich T1 audit
+nebude autoritatívne prijatý. Dovtedy sa nesmú spustiť ani P5.4, G8, G9 alebo
+nový fit.
+
+### FS-A2 — ohraničený behaviorálny audit živých záloh
+
+Tento analytický program môže bežať popri K4-B1, pretože nemení aktívnu
+fyziku ani nespúšťa solver. Používa
+`tracks/A1/A1K1/A2/00_CONSTRAINT_FEASIBILITY_LEDGER.md`.
+
+1. pre každú koľaj zmraziť priestor dovolených vstupov a výstupov;
+2. doplniť nulové body, znamienka, monotónne trendy, energetické maxima a
+   regularitu známe bez mikrofyziky;
+3. hľadať priamy rozpor, PSD/dual certificate alebo endpointový no-go;
+4. pri neprázdnom behaviorálnom obale skonštruovať jeden najjednoduchší
+   fyzický svedok bez fitu na `S8/H0`;
+5. zlyhanie svedka zabije iba dcéru; rodič až po certifikáte prázdnosti
+   celého vopred definovaného priestoru.
+
+Poradie: K8-Fkin, K9 iba ak ten istý proces dá rozptyl, K11-R, K12-K3.1 a
+K7. Pozorovania smú behaviorálny obal vylúčiť; nesmú sa použiť na spätné
+nakreslenie ľubovoľnej funkcie.
+
+#### Výsledok FS-GATE-01 pre prvé štyri rodiče
+
+| Koľaj | Dokázane neprázdny rozsah | Certifikovane prázdny alebo zliaty rozsah | Ďalšia rozhodujúca brána |
+|---|---|---|---|
+| K8 | pozitívny okamžitý on-shell momentový kužeľ | warm source-only + exact pressureless A1 je prázdny; cold source-only sa zlieva s K1/M-009 | iba nový relaxačný proces; spoločný production/scattering patrí K9 |
+| K9 | cold Markovský momentový generátor môže mať produkciu aj lineárny drag s nulovým FLRW ohrevom | smooth 1->2 exact-cold finite-rate prah je prázdny; voľný druhý `kappa` nie je K9 | jedna akcia/kernel odvodzujúci production/transport pomer, fuel reakciu a noise |
+| K11 | regular constitutive drag existuje; CS1 early indicial limit je GR-like; CS2 source-AST contract prešiel `55/55`, register `25/33/41` | uniform regular exact-pole, passive Hurwitz cure a univerzálna exact finite-L CAMB-E closure sú prázdne | ARCH-A 5/10; ďalší je full thermal/TCA/DAE balík 6/10, potom povinná `lmax`/closure konvergencia |
+| K12 | cold neutral pair moment s korelovaným PSD noise existuje | opposite charge neruší pressure; symmetric internal force nemení COM/K1; smooth exact-cold 1->2 finite-rate prah je prázdny | coherent/cold finite-rate kernel, externý total momentum/field ledger a stabilný separation mód |
+
+Žiadny z týchto momentových výsledkov nie je G2/G3 PASS, preto hĺbka
+K8/K9/K11/K12 zostáva `10/100`. Sú však informačne rozhodujúce: už sa
+nesmie vracať k warm source-only K8, k voľnému K9 drag parametru, k starému
+K11 operátoru ani k predstave, že opačné náboje K12 bez tlaku priamo tlmia
+total mód.
+
+#### Najbližší FS-A2 krok
+
+`K11-CS1` je uzavretá ako `UNDETERMINED_REVIEW`: dark rovnice a constrainty
+sú známe, early indicial limit je GR-like, ale fyzický fixed-delta symbol je
+viacdruhová časovo závislá DAE. `K11-CS2` má route-local predregistráciu a
+S0 formula ledger prešiel, ale PF-062 zrušil v001 state-register PASS pre
+nadbytočné `E_0,E_1`; správny count je `4*lmax+9`. S0 base je zmrazená ako
+formula-regression/STOP-state dôkaz. Najbližší krok je nový versioned full
+base s exact-A1 backgroundom,
+regular basis, všetkými species/shear, constraint holdoutmi a jedným
+ohraničeným propagátorom. Očakávanie `ln` relatívneho transferu ostáva
+`10–13` pre absolútny K1-like rast, kým očakávaný samotný účinok K11-R
+`ln(A_full/A_drag_null)` je iba približne `-0.14`; tieto dve čísla sa
+nesmú zlúčiť. Full v002 je rovnaký fyzický suffix; ARCH-A použila `5/10`
+poradových miest a nevytvára v003, kým sa nemení fyzika. Ak desiaty balík
+vetvu neuzavrie, zastaví sa iba ARCH-A s presným dôvodom. Pred full DAE
+spustením musí mať exact-A1 `x_e/opacity/T_b`, TCA mapu a deklarovaný
+numerický horný rez s konvergenčným plánom; štandardná ΛCDM opacity alebo neoverený
+handoff by skončili iba `REVIEW_BLOCKED_IMPLEMENTATION`.
+
+Read-only source audit už pripol `external/CLASS` commit
+`e85808324f51fc694d12e3ed7439552a3c3f9540`: CLASS odovzdáva exact
+background `H(z)` priamo HyRec, takže architektúra je uskutočniteľná.
+Full v002 však nie je úzky adapter. Pred implementáciou treba coupled
+present-day-normalized fuel/ash background, custom K11 species/mode ledger,
+nezávislú steam hierarchy, exact CAMB-E/CLASS polarization mapu a
+netautologické holdouty. Stav ostáva `REVIEW_BLOCKED_IMPLEMENTATION`, bez
+Python behu a bez zmeny hĺbky.
+
+K9/K12 zostávajú za mikrofyzickou bránou. K7 sa znovu otvorí až po dodaní
+nového spektrálneho kernelu mimo už mŕtvych M-014 podtried; opakovanie
+starých bath ansatzov nemá informačnú hodnotu. K4 zostáva hlavnou cestou na
+`60/100`.
+
+### B0 — bezpečný Git control-plane baseline
+
+**Cieľ:** najprv zachovať auditnú stopu, aby následné presuny a opravy boli
+vratné a porovnateľné.
+
+Povinné výstupy:
+
+1. úplný WB-0 manifest tracked, untracked, ignored a veľkých súborov;
+2. secret scan bez vypisovania nájdených tajomstiev do logu;
+3. desaťriadková migračná mapa `theory/theory -> theory` s Git blobom a
+   SHA-256, bez vykonania presunu;
+4. explicitný staging manifest prvého commitu;
+5. WB-1 control-plane commit iba na
+   `work/v3.18-audit-2026-07-16` a push na túto pracovnú vetvu.
+
+Do WB-1 sa nesmú potichu dostať deletions koreňového `LICENSE`, `README.md`,
+EN README, starých `theory/theory` ciest, hlavné teoretické dokumenty,
+vedecké skripty ani externé PDF. Nepoužiť `git add .`.
+
+**STOP B0:** nejasná licencia, nájdené tajomstvo, nejednoznačná migračná
+parita alebo staging mimo manifestu.  
+**PASS B0:** auditovateľný malý commit a zhodný vzdialený pracovný branch;
+`main` aj `D:\Teoria-main` zostanú nedotknuté.
+
+### R0 — PT1 trigger ledger, časovo citlivý
+
+Po potvrdení PT1 dátumom 2026-07-16 treba zapísať pracovný Git záznam
+najneskôr do troch pracovných dní a cieľ úzkeho Zenodo DOC/ERRATUM vydania je
+2026-07-30. Zatiaľ sa nič nepublikuje a v3.17 sa neprepisuje.
+
+| Verejný riadok | Pracovný stav pre ledger | Náhrada |
+|---|---|---|
+| `N_eff = 3.09–3.10`, resp. `Delta N_eff=0.0535` | `SUPERSEDED IN SCOPE / CONDITIONAL ESTIMATE` | `NOT YET AVAILABLE` |
+| tepelné pozadie `0.90 K / 53 GHz` | `SUPERSEDED IN SCOPE / RECALCULATION OPEN` | `NOT YET AVAILABLE` |
+| `H0 = 66.4 km/s/Mpc` | `MATERIAL IMPACT AUDIT REQUIRED` | až po citlivosti `Delta N_eff: 0.0535 -> 0` |
+
+PT1 sa musí premietnuť do SK/EN CSV, PDF, README, Zenodo popisu a relevantnej
+časti hlavného dokumentu. PT2 nevznikne, kým náhradný výsledok neprejde
+odvodením, reprodukciou, nulovým/konvergenčným testom a nezávislým auditom.
+
+### K4-B1 — uzavreté ako contract preflight; bez fyzikálnych bodov
+
+Najprv sa použije rádovo konzistentná formulácia **R-A**. Pred ďalším kódom
+treba uzavrieť jeden analytický balík so štyrmi položkami:
+
+| Krok | Váha v pracovnom progress B1 | Povinný obsah |
+|---|---:|---|
+| B1.1 coefficient manifest | 15 % | pre každý objekt `Phi^0/Phi^1 × z^j`, zdrojová rovnica, stav kotva/neznáma/nula a vstup do `T_mu_nu` |
+| B1.2 species term map | 25 % | synchronné fuel a ash continuity/Euler priamo z rovnakého `Q_A^mu`, znamienka, gauge a velocity konvencie, rozmery a nulové limity |
+| B1.3 Bianchi/left-null identita | 35 % | presné zrušenie transferu v celkovej energii aj hybnosti; derivácie `00` a `0i` z nezávislých rovníc |
+| B1.4 architektonické uzavretie | 25 % | z ledgeru odvodený počet stavov/riadkov; `00` a `0i` zostanú holdouty; rozhodnutie, či je R-A regulárne uzavretá |
+
+Stav 2026-07-16: formula mapa a left-null sú v dokumente 32. Pokus 4
+odhalil PF-064 po raw `15/15`; pokus 5 ju opravil samostatným contract
+modulom a prešiel `9/9` plus deväť negatívnych fixtures. B1 je
+`PASS_CONTRACT_PREFLIGHT_ONLY`; fyzikálna hĺbka zostáva `60/100`.
+
+Tento jemný progress ukazuje vykonanú prácu, ale sám nezvyšuje fyzikálnu
+hĺbku `60/100`. Hĺbka sa zmení až po uzavretí celej fyzikálnej brány.
+
+Ohraničený audit všetkých A2 záloh potvrdil, že K4 je jediná živá koľaj,
+ktorá už prešla G5. Výsledok a presné blockery záloh sú v
+`Audit/A2_BOUNDED_BREADTH_TO_G5_50_RESULT_2026-07-16.md`.
+
+Povinné jadro obsahuje celočíselnú test-fluid vežu
+`delta_f^(0), U_f^(0)` a spätnú odozvu v prvom ráde `Phi z^p`. Premenné
+`delta_f^(1), U_f^(1)` sa nesmú mechanicky pridať do každej frakčnej vrstvy;
+ich potrebu musí ukázať rádová bilancia. `U_c` zostáva dynamické.
+
+**PASS B1:** presná Bianchi identita, úplná parita stavov a rovníc, regulárne
+limity `gamma -> 0`, `A_f -> 0` a background bez perturbatívneho `k`.  
+**REVIEW B1:** chýbajúca rovnica, rád, gauge mapa alebo neuniformná expanzia.  
+**Kandidát na STOP:** invariantný nenulový Bianchi zvyšok až po úplnom
+rádovom uzávere.
+
+Ak R-A dá invariantný rozpor alebo preukázanú neuniformnosť, povoľuje sa
+jediná nezávislá formulácia **R-B**: plný species systém v `A_f` a Frobeniov
+rad iba v `z`. Rovnaký invariantný rozpor v R-A aj R-B môže viesť k
+autoritatívnemu STOP K4. Rozdiel medzi nimi nesmie vytvoriť K4-K8, K4-K9 ani
+ďalší suffix; je to interná architektonická kontrola P5.3.
+
+### K4-B2 — jeden ohraničený úplný seedový runner
+
+Runner vznikne iba po PASS B1 a samostatnej Markdown predregistrácii. Nie je
+to `RERUN3`; číslo `262` zostáva rezervované pre P5.4.
+
+Musí v jednom balíku preveriť:
+
+- presnú paritu s coefficient/row manifestom;
+- päť módov `AD/CDI/BI/NID/NIV` a tri dynamické Fourierove módy;
+- dynamické `U_c` a jednoznačnú gauge mapu;
+- trace a traceless ako zmrazené určujúce Einsteinove rows, nezávislé `00`
+  a `0i` seedové holdouty a fail-closed coefficient-wise total-energy,
+  total-momentum/Bianchi krížový guard z B1;
+- M1 anchor s netautologickým callable/hash guardom;
+- `gamma -> 0`, `A_f -> 0`, backgroundovú k-nezávislosť a rozmerový test;
+- truncation `J` verzus `J+2` a plochy zvolené podľa skutočného `z << 1`.
+
+Prevádzka: vnútorný limit najviac 5 s; každý compile/help/smoke/run oddelene
+s vonkajším limitom najviac 10 s; immutable výsledok. Technické zlyhanie sa
+zapíše, opraví v rovnakom fyzickom suffixe a nespotrebuje fyzikálny pokus.
+Nový nasledovník fyzickej koľaje vznikne iba pri zmene rovníc, mechanizmu
+alebo rozsahu, nie pri oprave implementácie.
+
+### K4-B3 až B5 — cesta k rozhodnutiu A2
+
+1. **B3 / P5.4:** krátka species-first evolúcia — dynamické constrainty,
+   linearita, dva skutočné štarty, kroková konvergencia, nulový limit a
+   stabilita;
+2. **B4 / G8:** plná fotónová, neutrínová a parná hierarchia, recombination
+   a TCA prechod, časová aj `lmax` konvergencia;
+3. **B5 / G9:** CMB/S8 likelihood na už zmrazenej fyzike; dáta nesmú
+   zachraňovať porušenú konzerváciu alebo neúplnú hierarchiu.
+
+K4 môže prejsť lineárnou stanicou A2 až po B3 a B4. B5 následne rozhoduje
+jej observačnú životaschopnosť pred ďalšou stanicou.
+
+## 3. Rozhodovací strom pri stene K4
+
+```text
+R-A rádový/species/Bianchi ledger
+|-- uzavretý -> jeden úplný seedový runner -> P5.4 -> G8 -> G9
+`-- invariantný rozpor alebo neuniformnosť -> jediná kontrola R-B
+    |-- rozpor zmizne -> pokračovať R-B; R-A označiť ako neuniformnú
+    `-- rovnaký invariantný rozpor -> kandidát na STOP A2-K4
+        `-- krátky analytický A2-K8 no-go ledger
+            |-- samotný zdroj počtu uzavrie energiu aj hybnosť -> preveriť K8
+            `-- chýba momentum/pressure/noise moment -> otvoriť A2-K9
+```
+
+Pri A2-K9 má prvá nová koľaj používať jeden lokálny production/collision
+kernel: jeho nultý moment dá produkciu popola a pary, prvý prenos hybnosti a
+druhý tlak, disperziu alebo šum. Tým sa odstráni konkrétna možná príčina
+smrti K4; nejde o ďalšie premenovanie algebraického energy-frame.
+
+## 4. Dokumentačný poriadok bez brzdenia fyziky
+
+- Do fyzického presunu súborov sa nepúšťať pred WB-1 baseline.
+- Starých `114` dokumentov rodiny `05` a `11` kolíznych ID sa nemaže ani
+  neprepisuje. Najprv hash mapa, aliasy, supersession a SK/EN parita.
+- Nové pracovné pravidlá/otázky patria do relevantnej hĺbky `tracks`, nie do
+  `theory`.
+- Nefunkčný skript sa označí v karanténe a presunie do history až po
+  zachovaní dôvodu, vstupu a výsledku.
+- Upratovanie sa robí pri uzavretí brány alebo commitu, nie po každom malom
+  medzivýpočte.
+- Staré navigačné dokumenty zostanú historické, ale dostanú hore odkaz na
+  tento aktuálny plán.
+
+## 5. Čo sa teraz nesmie robiť
+
+- nespustiť legacy RERUN3, P5.4, G8 ani G9; ARCH-A balíky 4–10 sú uzavreté
+  a ďalší proces musí patriť S1/mode-coverage kontraktu 51;
+- nezvyšovať fyzikálnu hĺbku za textový alebo technický medzikrok;
+- nezaložiť ďalší K4 suffix len kvôli tolerancii, škálovaniu alebo názvu
+  runnera;
+- nestageovať celý pracovný strom a necommitovať na `main`;
+- nepresúvať historické `05`, `theory/theory`, mŕtve skripty ani externé
+  zdroje pred baseline a link auditom;
+- nepublikovať Zenodo a nevytvárať náhradné predikčné číslo bez PT2;
+- nevytvárať nové globálne AR/Q ID, kým sa neuzavrie kolízna mapa.
+
+## 6. Najbližšia konkrétna práca
+
+1. C3 kontrakt aj KMPC-148 aggregate sú uzavreté na `45/45 logical PASS`.
+   EA-039 T2 `AGREE_IN_SCOPE` je autoritatívne prijatý. Autor zvolil
+   `A1_K1_A2_K4_P5_3_SM_v1`; dokument 245 vedie stav
+   `INPUT_CONTRACT_INCOMPLETE`. Autor schválil `V1-R1`, čím uzavrel
+   `V1-D01`. Autor následne schválil stavovú triedu `V1-S1`; `V1-D02`
+   dostal reviewed mantinelový pas a autor schválil `V1-P1` s `V_min=0`.
+   `V1-D02` je uzavretý iba vo formálnom rozsahu; `m_e` a počiatočné dáta
+   patria D06. Jediný vybraný blok je teraz `V1-D03`; po B5 mal stav
+   `SOLE_ACTIVE_REVIEW_BLOCKED` a po B6-C0 má `PARTIAL_AUTHOR_INPUT`.
+   Constraint-first mapa
+   hmota–para–popol má lifecycle stav `PASS_MAPY` (reviewer `PASS_MAP`) a
+   analytický backward screen B0 má audit `PASS_SCREEN` iba v scope
+   `ANALYTIC_CONDITIONAL_SCREEN`; `y_e` je zatiaľ iba
+   `CLOCK_STATUS=DIAGNOSTIC_ONLY` a žiadna
+   rate funkcia nebola zvolená. B1 dal
+   `CONDITIONAL_FUNCTION_FAIL` pre spoločnú A13 mapu s 1280 e-foldmi a
+   `beta_s proportional y_e^2`; B2 audit `PASS_B2` ukázal, že diskrétna
+   eventová vetva musí oddeliť mieru `R_J` od energie udalosti `E_J`.
+   Externý EA-040 T1 audit bol prijatý `AGREE_WITH_LIMITATION`; jeho F-001
+   rozlíšenie deterministickej a distribuovanej energie je zapracované.
+   B3 má interný `PASS_B3` iba ako `FINITE_HYPOTHESIS_MAP`: `F1–F3` sú tri
+   deterministické granularizácie s rovnakým hypotetickým
+   `j_D=3 delta h y`, nie zvolené zákony. `F1/F2` majú scoped prompt-steam
+   fail, `F3` čaká kauzálnu energiu/noise a presný transferový roh `T` nie je
+   regulárnym podprípadom súčasného T1. B4 má `PASS_FORMULA_LINEAGE`: A2
+   `delta` je v aktuálnom korpuse efektívna tlaková/sieťová práca; cesta
+   `F1–F3` ako energia A2 réžie má iba scoped
+   `STOP_CURRENT_CORPUS_ONLY`, nie fyzikálny STOP eventov. B5 prešiel
+   `PASS_DEFINITION_INVENTORY`, ale Q4-P0 zostáva `0/8`: aktuálny korpus
+   neodvodzuje lokálnu udalosť, jej mieru, energiu, produktový podiel ani
+   úplné momenty. EA-041 tento stav prijal `AGREE_IN_SCOPE` na T1 bez
+   nálezov. Autor potom schválil B6-C0 topológiu
+   `LOCAL_CELLULAR_DIGESTION_FIRST_PASSAGE`: parent `e -> s+M` a následný
+   completion `M -> C` majú spoločnú first-passage architektúru, invariantný
+   event measure a jeden conservation ledger. Nezávislý interný re-audit dal
+   `PASS_B6_C0_TOPOLOGY`. D03 je preto `PARTIAL_AUTHOR_INPUT`, nie CLOSED;
+   C0 iba zužuje topológiu a ešte neznižuje funkčnú voľnosť. B6a odmietol
+   energetickú frakciu ako clock kontaminovaný expanziou a odvodil na
+   Type-I lokálne homogénnom kvadratickom mantineli fázový kandidát PH1:
+   `D_u theta_D=m_e-(Theta/2)sin(2theta_D)`, pointwise monotónny pri
+   `2m_e>Theta`. Po scope opravách dostal `PASS_B6A_PH1_CONDITIONAL_MANTLE`.
+   Autor následne spresnil constraint-first poradie: najprv sa má nájsť
+   množina reálnych možností, nie detailne vybrať jednu mikrofyziku. B6b
+   preto rozdelil priestor na MF1 division-locked, MF2 internal-clock, MF3
+   state-switched hybrid a MF4 parallel conservative channels. Nezávislý
+   fyzikálny audit po piatich vecných a jednej redakčnej oprave udelil
+   `PASS_B6B_FAMILY_MAP`. PH1 zostáva iba `MF2_CONDITIONAL_CANDIDATE` a
+   one-winding identita už nie je jedinou autorovou bránou. B6b-1 po
+   nezávislom delta re-audite uzavrel spoločné a rodinné background/
+   source-moment obálky stavom `PASS_B6B1_ANALYTIC_ENVELOPE_CONTRACT`;
+   nepreukázal životaschopnosť ani prázdnosť žiadnej rodiny. Autor spresnil,
+   že zmrazené pásmo S8 sa smie použiť v B6b-3a ako inverse feasibility/
+   kalibrácia, ale potom nie je nezávislým potvrdením. B6b-2 po nezávislom
+   fyzikálnom audite uzavrel `PASS_B6B2_PASSPORT_SCHEMA`: E3 outer search
+   envelope `[0.777,0.831]` pod E2 flat-LambdaCDM mapovaním, kovariantné
+   `P0–P8`, immutable search record a zákaz leakage/rankingu quasi-holdoutom.
+   Fyzikálny obsah ostáva `REVIEW_B6B2_PHYSICAL_CONTENT_BLOCKED_D03_D11`.
+   Najbližší krok je neexekvovateľný autor-input subbalík `D04+D08+D10`,
+   ktorý sám neuzavrie D03/D05–D09/D11 ani P0–P8. Nie numerický fit ani
+   Python; bez solverov alebo zmeny K4;
+2. v K11 predregistrovať full thermal/TCA/DAE historický balík číslo 6 na
+   už prejdenom source-AST contracte; active counter je `0/10` a fyzikálny
+   `lmax`/closure sweep je až ďalšia brána;
+3. po seed výsledku rozhodnúť: R-A pokračuje do P5.4, potrebuje jedinú R-B
+   kontrolu, alebo vznikol invariantný kandidát na STOP K4;
+4. WB/PT1 dokumentačné práce udržať, ale nesmú blokovať uvedené fyzikálne
+   rozhodnutie.
+
+Tento sled je zámerne konečný: do najbližšieho fyzikálneho rozhodnutia povoľuje
+najviac dva analytické fyzikálne varianty a potom jeden stabilný seedový
+runner. Jeho technické incidenty sa opravujú a evidujú bez spotrebovania
+fyzikálneho pokusu. `TECHNICAL_STOP` vznikne až po 10 po sebe idúcich
+technických zlyhaniach jednej implementačnej línie; každý úspešný vecný
+výpočet aktívny counter vynuluje, no úplná história sa zachová. Nový fyzický
+suffix vznikne iba pri zmene fyziky.
+
+## 7. Mapa samostatných úloh a agentov
+
+Projekt sa nebude deliť na samostatný chat pre každý suffix. Odporúčané
+hranice hlavných úloh sú:
+
+| Úloha | Rozsah | Kedy ju otvoriť |
+|---|---|---|
+| `ORCH-v3.18` | autoritatívne registre, verdikty, handoffy, Git/release | stále; toto je hlavný orchestrátor |
+| `A2-K4-P5.3-SEEDS` | CDI/BI/NID/NIV, `k×variant` seed coverage; S-M osobitne | teraz; S-C0 lower-moment passport uzavretý bez skóre |
+| `A2-K4-P5.4-EVOLUTION` | krátka species-first ODE/DAE evolúcia | až po uzavretí P5.3 |
+| `A2-K4-G8-BOLTZMANN` | finite opacity, recombination, plné hierarchie a convergence | až po P5.4 |
+| `A2-BACKUP-TRACKS` | ohraničené K7/K8/K9/K11/K12 blocker/no-go audity | iba keď sa aktívne obnoví konkrétna záloha |
+| `DOC-GIT-RELEASE` | manifesty, odkazy, SK/EN parita, release triggers | priebežne ako podporná read-only úloha |
+
+Každý handoff musí smerovať na jeden route-local work plan a obsahovať
+aktuálny stav, rovnice/vstupy, hashes, mantinely, otvorené blockery a
+`done-when`. Módy, `k`, nulové varianty, support páry a technické opravy
+zostávajú v tej istej úlohe, ak nemenia fyziku.
+
+Autor teórie, hlavný orchestrátor a šesť projektových agentových rolí sú
+oddelené v `tracks/00_PROJECT_OPERATING_SYSTEM.md`; záväzné bootstrap pravidlá
+sú v koreňovom `AGENTS.md`. Hlavný orchestrátor je jedinou autoritou pre
+PASS/REVIEW/STOP, ale nesmie predstierať nezávislý audit. Script author,
+script auditor, interný fyzikálny auditor, documentation steward, package
+curator a external auditor používajú samostatné task capsule, role-config
+hashe a separation-of-duties guardy. Naraz pracujú najviac traja
+špecialisti bez prekrývajúcich sa write scopes.
+
+Projektové konfigurácie a ich SHA sú v `.codex/agents/00_MANIFEST.md`.
+Writer roly majú úzky allowlist; auditné a steward roly sú read-only. Model
+ani kompresia kontextu nemenia rozsah autority alebo povolený next action.

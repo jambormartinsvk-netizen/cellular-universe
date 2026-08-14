@@ -1,0 +1,175 @@
+{
+  "checks": {
+    "all_negative_fixtures_rejected": true,
+    "background_k_cancel_exact": true,
+    "bianchi_C00_propagation_exact": true,
+    "bianchi_C0i_propagation_exact": true,
+    "coefficient_support_exact": true,
+    "conditional_steam_weighted_split_exact": true,
+    "driver_ordered_exact_13": true,
+    "holdouts_exact_and_driver_excluded": true,
+    "legacy_pressure_difference_exact": true,
+    "phi1_source_excludes_fuel1": true,
+    "pressure_formula_exact": true,
+    "source_hashes_exact": true,
+    "state_ordered_exact_13": true,
+    "total_energy_left_null_exact": true,
+    "total_momentum_left_null_exact": true
+  },
+  "coefficient_support": {
+    "AD": {
+      "background_m_max": 2,
+      "fuel_phi0": [
+        0,
+        1,
+        2
+      ],
+      "n": 2,
+      "phi1": [
+        0,
+        1,
+        2
+      ]
+    },
+    "BI": {
+      "background_m_max": 1,
+      "fuel_phi0": [
+        0,
+        1
+      ],
+      "n": 1,
+      "phi1": [
+        0,
+        1
+      ]
+    },
+    "CDI": {
+      "background_m_max": 1,
+      "fuel_phi0": [
+        0,
+        1
+      ],
+      "n": 1,
+      "phi1": [
+        0,
+        1
+      ]
+    },
+    "NID": {
+      "background_m_max": 3,
+      "fuel_phi0": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "n": 3,
+      "phi1": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "NIV": {
+      "background_m_max": 3,
+      "fuel_phi0": [
+        -1,
+        0,
+        1,
+        2
+      ],
+      "n": 2,
+      "phi1": [
+        -1,
+        0,
+        1,
+        2
+      ]
+    }
+  },
+  "conventions": {
+    "steam": "conditional S-C weighted split only",
+    "time": "x=ln(a)",
+    "transfer": "Q_f=-Gamma*rho_f*u_d; Q_c=-Q_f",
+    "velocity": "U_A=Hconf*theta_A/k^2"
+  },
+  "driver_manifest": [
+    "gamma_continuity",
+    "gamma_Euler",
+    "fs_continuity",
+    "fs_shear",
+    "fs_Euler",
+    "baryon_continuity",
+    "cdm_continuity",
+    "cdm_Euler",
+    "tight_coupling",
+    "fuel_continuity",
+    "fuel_Euler",
+    "Einstein_trace",
+    "Einstein_traceless"
+  ],
+  "exact_residuals": {
+    "background_k_cancel": "0",
+    "bianchi_C00": "0",
+    "bianchi_C0i": "0",
+    "conditional_steam_split": "0",
+    "legacy_pressure_difference_fixture": "0",
+    "pressure": "0",
+    "total_energy": "0",
+    "total_momentum": "0"
+  },
+  "execution_verdict": "PASS_R_A_B1_PREFLIGHT_ONLY",
+  "expected_source_hashes": {
+    "scripts/88_script_A2_K4_3b_RG_BR1_synchronous_Einstein_and_transfer_ledger.py": "0F13DA6CE761CFEF99909B492E30CF5ED751F56A555594334729330ED4888364",
+    "scripts/baseScripts/p5_general_synchronous/mode_resolved_puiseux_v2_m1_anchored.py": "5DE2C280B0E9DAF528A9E3011368361B37AE53DE38827FB6F6CE4AB2019A4455",
+    "tracks/A1/A1K1/A2/A2K4/SUBTRACKS/P5/P5_3_SEEDS/26_P5_3G7_M1_STANDARD_METRIC_SOURCE_MAP_SK.md": "7C927999F0D5BAECD0E45E52DFF760FA17DC0A48A3799242D147AEDE4228999B"
+  },
+  "holdout_manifest": [
+    "Einstein_00",
+    "Einstein_0i"
+  ],
+  "internal_limit_seconds": 5.0,
+  "matrix_solve_executed": false,
+  "negative_fixtures": {
+    "reject_extra_state": true,
+    "reject_holdout_in_driver": true,
+    "reject_legacy_pressure": true,
+    "reject_missing_U_f": true,
+    "reject_missing_delta_f": true,
+    "reject_missing_fuel_row": true,
+    "reject_phi1_fuel1_source": true,
+    "reject_reordered_state": true
+  },
+  "physics_evolution_executed": false,
+  "run_id": "KMPC-025",
+  "runtime_seconds": 0.125,
+  "scope": "exact coefficient/species/Bianchi/state-contract preflight; no matrix solve or ODE",
+  "score_effect": 0,
+  "source_hashes": {
+    "scripts/88_script_A2_K4_3b_RG_BR1_synchronous_Einstein_and_transfer_ledger.py": "0F13DA6CE761CFEF99909B492E30CF5ED751F56A555594334729330ED4888364",
+    "scripts/baseScripts/p5_general_synchronous/mode_resolved_puiseux_v2_m1_anchored.py": "5DE2C280B0E9DAF528A9E3011368361B37AE53DE38827FB6F6CE4AB2019A4455",
+    "tracks/A1/A1K1/A2/A2K4/SUBTRACKS/P5/P5_3_SEEDS/26_P5_3G7_M1_STANDARD_METRIC_SOURCE_MAP_SK.md": "7C927999F0D5BAECD0E45E52DFF760FA17DC0A48A3799242D147AEDE4228999B"
+  },
+  "state_manifest": [
+    "h",
+    "eta",
+    "delta_gamma",
+    "delta_fs",
+    "delta_b",
+    "delta_c",
+    "U_gamma",
+    "U_fs",
+    "sigma_fs",
+    "U_b",
+    "U_c",
+    "delta_f",
+    "U_f"
+  ],
+  "support_checks": {
+    "background_mmax_exact": true,
+    "lower_coefficients_explicit": true,
+    "mode_set_exact": true
+  },
+  "test": "A2-K4 P5.3g7-M3-FULL/R-A B1 exact preflight"
+}

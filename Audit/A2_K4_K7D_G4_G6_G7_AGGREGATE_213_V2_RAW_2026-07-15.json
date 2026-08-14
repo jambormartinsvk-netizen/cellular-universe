@@ -1,0 +1,104 @@
+{
+  "agreement": {
+    "NID": {
+      "checks": {
+        "endpoint_envelope_below_1e-2": true,
+        "endpoint_l2_below_3e-3": true,
+        "overlap_envelope_below_2e-2": true
+      },
+      "endpoint_envelope_scaled_max": 3.420711201710893e-10,
+      "endpoint_l2_relative": 1.5772530280415495e-16,
+      "overlap_envelope_scaled_max": 3.9210055977770414e-10,
+      "per_checkpoint_envelope_scaled_max": {
+        "-18.00": 3.420711201710893e-10,
+        "-18.25": 3.4207416999339983e-10,
+        "-18.50": 3.420780271216161e-10,
+        "-18.75": 3.42083117633855e-10,
+        "-19.00": 3.420904899065358e-10,
+        "-19.25": 3.4210201644085647e-10,
+        "-19.50": 3.421204667445769e-10,
+        "-19.75": 3.42150458299132e-10,
+        "-20.00": 3.4219955434149004e-10,
+        "-20.25": 3.4228023342426415e-10,
+        "-20.50": 3.4241304216602186e-10,
+        "-20.75": 3.426318450610271e-10,
+        "-21.00": 3.429924632918991e-10,
+        "-21.25": 3.43586923654759e-10,
+        "-21.50": 3.4456694642201867e-10,
+        "-21.75": 3.4618267094263056e-10,
+        "-22.00": 3.488465036859283e-10,
+        "-22.25": 3.532383849129775e-10,
+        "-22.50": 3.604793443758075e-10,
+        "-22.75": 3.724176458613778e-10,
+        "-23.00": 3.9210055977770414e-10
+      }
+    },
+    "NIV": {
+      "checks": {
+        "endpoint_envelope_below_1e-2": true,
+        "endpoint_l2_below_3e-3": true,
+        "overlap_envelope_below_2e-2": true
+      },
+      "endpoint_envelope_scaled_max": 3.025176353835592e-12,
+      "endpoint_l2_relative": 6.058912123873136e-16,
+      "overlap_envelope_scaled_max": 3.5169056419113386e-12,
+      "per_checkpoint_envelope_scaled_max": {
+        "-18.00": 3.025176353835592e-12,
+        "-18.25": 3.025176353835592e-12,
+        "-18.50": 3.025314279809171e-12,
+        "-18.75": 3.025176353835592e-12,
+        "-19.00": 3.0252223291601183e-12,
+        "-19.25": 3.0250958970176707e-12,
+        "-19.50": 3.0247280944214595e-12,
+        "-19.75": 3.0240212238068665e-12,
+        "-20.00": 3.0228948283559705e-12,
+        "-20.25": 3.021025644068195e-12,
+        "-20.50": 3.0179409871382532e-12,
+        "-20.75": 3.0128549668625228e-12,
+        "-21.00": 3.0044712945986935e-12,
+        "-21.25": 2.9906474483873913e-12,
+        "-21.50": 2.9678544628889945e-12,
+        "-21.75": 2.930273586093133e-12,
+        "-22.00": 2.86831303632938e-12,
+        "-22.25": 3.5169056419113386e-12,
+        "-22.50": 3.2751088387367634e-12,
+        "-22.75": 2.320045516910094e-12,
+        "-23.00": 1.8622183975408696e-12
+      }
+    }
+  },
+  "case_verdicts": {
+    "NID_DEEP": "PASS_K7D_SINGLE_CASE_G4_G6_LOCAL",
+    "NID_SHALLOW": "PASS_K7D_SINGLE_CASE_G4_G6_LOCAL",
+    "NIV_DEEP": "PASS_K7D_SINGLE_CASE_G4_G6_LOCAL",
+    "NIV_SHALLOW": "PASS_K7D_SINGLE_CASE_G4_G6_LOCAL"
+  },
+  "checks": {
+    "all_local_G4": true,
+    "all_species_projected_parity": true,
+    "all_structural": true,
+    "common_provenance": true,
+    "deep_shallow_G7": true,
+    "four_unique_registered_cases": true
+  },
+  "decision_rule": "a non-PASS physical metric is confirmation-required, never an immediate death verdict",
+  "execution_verdict": "PASS_K7D_C7_G4_G6_G7_INTEGRATED",
+  "gate_verdicts": {
+    "C7-G4": "PASS",
+    "C7-G6": "PASS",
+    "C7-G7": "PASS"
+  },
+  "hashes": {
+    "preregistration_sha256": "25A2DD5D20E20F387EADE89007CC72096175B8FAB99E7BA6CCD877ED1D409E6B",
+    "runner_213_sha256": "8726BAE5E3F8C06C74D2053BF9B7430F22B73FA867534C9B421A228AEC8FDC39"
+  },
+  "input_sha256": {
+    "NID_DEEP": "57A28A770C8F68DF1F32449101B210550B425350F7E4823BBCC68AF3CAA58D3E",
+    "NID_SHALLOW": "280B529EEC6F9032E7D87118B62AF7C943AE441E77B1710F0DDF18483B6AC594",
+    "NIV_DEEP": "70B415AC1BCFBC63FE4B90B6BCC6EE70FF890BE7B2B36CCA68F1A76DD50FF08B",
+    "NIV_SHALLOW": "7C0225151E7A0BF81B6C141896BB659A76A6BE5690273FB27240A11A0A71209E"
+  },
+  "runtime_seconds": 0.046999999998661224,
+  "scope_limit": "L5=0 closure; no G8 hierarchy, CMB, S8, H0, or likelihood claim",
+  "test": "SCI-A2K4-C7G467-K7D-INTEGRATED-AGGREGATE"
+}

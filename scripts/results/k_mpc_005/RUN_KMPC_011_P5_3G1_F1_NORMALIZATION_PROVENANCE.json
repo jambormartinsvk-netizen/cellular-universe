@@ -1,0 +1,17 @@
+{
+  "checks": {
+    "BR2_89_assigns_seed5_to_hierarchy_l1": true,
+    "BR2_89_has_l1_hierarchy_equation": true,
+    "BR2_90_assigns_seed5_to_hierarchy_l1": true,
+    "BR2_90_has_l1_hierarchy_equation": false,
+    "explicit_F1_equals_qnu_equivalence_present": false,
+    "seed84_declares_qnu_normalization": true,
+    "seed84_declares_qnu_output": true
+  },
+  "next_step": "record or import an authoritative same-convention F1=qnu definition before deriving l>=2",
+  "runtime_limit_seconds": 5.0,
+  "runtime_seconds": 0.01599999999962165,
+  "scope": "source/provenance only; no coefficient derivation, ODE, score, or G8",
+  "test": "KMPC-011 P5.3g1 F1/qnu normalization provenance audit",
+  "verdict": "REVIEW_BLOCKED_F1_NORMALIZATION_UNPROVEN"
+}

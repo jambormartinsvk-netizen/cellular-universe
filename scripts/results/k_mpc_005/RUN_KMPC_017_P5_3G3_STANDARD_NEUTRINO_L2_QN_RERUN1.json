@@ -1,0 +1,72 @@
+{
+  "NIV_F2_leading": "252000*fnu*q/(504000*fnu**2*q + 2520000*fnu*q + 2362500*q) + 945000*q/(504000*fnu**2*q + 2520000*fnu*q + 2362500*q)",
+  "NIV_sigma_leading": "1/(4*fnu + 5)",
+  "checks": {
+    "AD_F2_at_origin_zero": true,
+    "AD_F2_has_positive_leading_power": true,
+    "AD_F3_starts_later_than_F2": true,
+    "AD_truncated_l2_residual_zero": true,
+    "BI_F2_at_origin_zero": true,
+    "BI_F2_has_positive_leading_power": true,
+    "BI_F3_starts_later_than_F2": true,
+    "BI_truncated_l2_residual_zero": true,
+    "CDI_F2_at_origin_zero": true,
+    "CDI_F2_has_positive_leading_power": true,
+    "CDI_F3_starts_later_than_F2": true,
+    "CDI_truncated_l2_residual_zero": true,
+    "NID_F2_at_origin_zero": true,
+    "NID_F2_has_positive_leading_power": true,
+    "NID_F3_starts_later_than_F2": true,
+    "NID_truncated_l2_residual_zero": true,
+    "NIV_F2_at_origin_zero": true,
+    "NIV_F2_has_positive_leading_power": true,
+    "NIV_F2_leading_matches_two_over_4fnu_plus_5": true,
+    "NIV_F3_starts_later_than_F2": true,
+    "NIV_truncated_l2_residual_zero": true,
+    "source84_returned_qn_mapping_present": true
+  },
+  "modes": {
+    "AD": {
+      "F1_returned_qn": "y**3*(24*fnu**2*om*y - 160*fnu**2*q + 150*fnu*om*y - 2120*fnu*q + 825*om*y - 6900*q)/(540*q*(2*fnu + 15)*(4*fnu + 15))",
+      "F2_candidate": "-y**2*(72*fnu**2*om*y**5 - 11760*fnu**2*om*y**3 - 840*fnu**2*q*y**4 + 98000*fnu**2*q*y**2 + 450*fnu*om*y**5 - 16800*fnu*om*y**3 - 4410000*fnu*om*y - 11130*fnu*q*y**4 + 1487500*fnu*q*y**2 - 8820000*fnu*q + 2475*om*y**5 - 475125*om*y**3 + 5512500*om*y - 36225*q*y**4 + 5643750*q*y**2 - 66150000*q)/(3307500*q*(2*fnu + 15)*(4*fnu + 15))",
+      "F2_leading_power_in_y": 2,
+      "F3_leading_power_in_y": 3,
+      "l2_residual": "0"
+    },
+    "BI": {
+      "F1_returned_qn": "-fb*om*y**2/(9*q)",
+      "F2_candidate": "fb*om*y**3*(9*y**2 - 700)/(47250*q)",
+      "F2_leading_power_in_y": 3,
+      "F3_leading_power_in_y": 4,
+      "l2_residual": "0"
+    },
+    "CDI": {
+      "F1_returned_qn": "-fc*om*y**2/(9*q)",
+      "F2_candidate": "fc*om*y**3*(9*y**2 - 700)/(47250*q)",
+      "F2_leading_power_in_y": 3,
+      "F3_leading_power_in_y": 4,
+      "l2_residual": "0"
+    },
+    "NID": {
+      "F1_returned_qn": "y/3",
+      "F2_candidate": "-y**2*(36*fb*fnu**2*om*y**3 - 2800*fb*fnu**2*om*y + 135*fb*fnu*om*y**3 - 10500*fb*fnu*om*y + 2250*fg*q*y**2 - 105000*fg*q)/(105000*fg*q*(4*fnu + 15))",
+      "F2_leading_power_in_y": 2,
+      "F3_leading_power_in_y": 3,
+      "l2_residual": "0"
+    },
+    "NIV": {
+      "F1_returned_qn": "-(4*fnu*y**2 - 24*fnu + 9*y**2 - 30)/(6*(4*fnu + 5))",
+      "F2_candidate": "y*(144*fnu**2*q*y**4 - 11200*fnu**2*q*y**2 - 4050*fnu*om*y**3 + 189000*fnu*om*y + 864*fnu*q*y**4 - 78000*fnu*q*y**2 + 252000*fnu*q + 1215*q*y**4 - 135000*q*y**2 + 945000*q)/(31500*q*(4*fnu + 5)*(4*fnu + 15))",
+      "F2_leading_power_in_y": 1,
+      "F3_leading_power_in_y": 2,
+      "l2_residual": "0"
+    }
+  },
+  "next_step": "independent Einstein/constraint ledger plus photon l=2/TCA seed",
+  "runtime_limit_seconds": 5.0,
+  "runtime_seconds": 2.5,
+  "scope": "source-bound corrected candidate derivation; no independent Einstein residual, photon TCA, ODE, score, or G8",
+  "source84_sha256": "0f7e294b5385b2d7b29987bb952f9f46eba4981a206b94f4ef1aab334307538e",
+  "test": "KMPC-017 P5.3g3 RERUN1 standard neutrino l=2 from returned qn",
+  "verdict": "DERIVATION_PASS_P5_3G3_RERUN1_NEUTRINO_L2_QN"
+}

@@ -1,0 +1,40 @@
+{
+  "checks": {
+    "all_subprocess_calls_have_timeout": true,
+    "candidate_never_immediate_stop": true,
+    "case_matrix_exact": true,
+    "error_ledger_present_nonempty": true,
+    "exactly_one_solve_ivp_call": true,
+    "immutable_x_mode_present": true,
+    "internal_deadline_present": true,
+    "no_generated_source_patch": true,
+    "no_np_interp": true,
+    "preregistration_present_nonempty": true,
+    "projected_species_roundtrip_below_1e-14": true,
+    "rhs_and_safety_caps_present": true,
+    "source_209_hash_exact": true,
+    "species_projected_basis_parity_below_1e-10": true,
+    "state_names_exact": true,
+    "target_py_compile": true,
+    "thresholds_exact": true,
+    "zero_rhs_below_1e-15": true
+  },
+  "execution_verdict": "PASS_K7D_PREFLIGHT_SOURCE_AUDIT",
+  "hashes": {
+    "error_ledger_sha256": "EC89D30209CABF006E0A29ED3ABE5D0C68D9F4E05CAD90791C5190DA04E644EF",
+    "preregistration_sha256": "25A2DD5D20E20F387EADE89007CC72096175B8FAB99E7BA6CCD877ED1D409E6B",
+    "self_214_sha256": "133A57D20F60845B6D62FAE6EA2A2276E71C143A5DA525D9C27E88C233B2E865",
+    "source_209_sha256": "67E5B3C1B7C942242E4FEB4458A4CC81A52F6417E25D50A6E2009023F321A612",
+    "target_213_sha256": "8726BAE5E3F8C06C74D2053BF9B7430F22B73FA867534C9B421A228AEC8FDC39"
+  },
+  "metrics": {
+    "max_projected_species_roundtrip_scaled": 0.0,
+    "max_species_projected_basis_parity": 2.220446049250313e-16,
+    "max_zero_rhs": 0.0
+  },
+  "physics_executed": false,
+  "runtime_limit_seconds": 8.0,
+  "runtime_seconds": 0.625,
+  "smoke": false,
+  "test": "SCI-A2K4-C7G467-K7D-INTEGRATED-PREFLIGHT-SOURCE-AUDIT"
+}

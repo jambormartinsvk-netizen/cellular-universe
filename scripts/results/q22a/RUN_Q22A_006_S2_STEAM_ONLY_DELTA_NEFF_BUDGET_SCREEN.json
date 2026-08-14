@@ -1,0 +1,56 @@
+{
+  "test": "Q22a-S2 Delta_Neff-only direct-steam budget screen",
+  "status": "PASS_SCREEN",
+  "physical_verdict": "K2_STOP_WITHIN_FROZEN_A1; K3_DIRECT_STEAM_FRACTION_TIGHTLY_BOUNDED",
+  "scope": "direct freely-redshifting steam counted only in registered Delta_Neff=0.0535; not a full BBN/CMB likelihood",
+  "fR_definition": "fraction of q=lambda*X_f/E deposited directly into steam X_s; fR=1-b",
+  "today": {
+    "X_f": 0.6482044961998541,
+    "X_c": 0.30091653278136377,
+    "X_b": 0.050783467218636275,
+    "X_r_standard": 9.482279817176795e-05,
+    "X_steam_DeltaNeff": 6.810019741533718e-07,
+    "q": 0.09723067442997811,
+    "Xsteam_over_q": 7.003982828935368e-06
+  },
+  "K1_fR_0": {
+    "positive": true,
+    "reason": "reached_recombination",
+    "x_reached": -6.994758322611124,
+    "min_values": [
+      0.6482044961998541,
+      0.30091653278136377,
+      6.810019741533718e-07
+    ],
+    "final": [
+      1.2077115431074101,
+      355507088.57118005,
+      964468.6997721222
+    ]
+  },
+  "K2_fR_1": {
+    "positive": false,
+    "reason": "steam_non_positive",
+    "x_reached": -9.99994041660049e-05,
+    "min_values": [
+      0.6482044961998541,
+      0.30091653278136377,
+      -9.04351890264759e-06
+    ]
+  },
+  "fR_max_steam_positive_to_zstar": 3.170967102050781e-05,
+  "first_failed_fR_upper_bracket": 3.1948089599609375e-05,
+  "checks": {
+    "component_split_reconstructs_registered_radiation": true,
+    "fR_zero_reaches_recombination_positive": true,
+    "fR_one_fails_steam_positivity": true,
+    "bounded_fraction_found": true,
+    "conservation_identity_for_any_fR": true
+  },
+  "limits": {
+    "internal_seconds": 4.5,
+    "elapsed_seconds": 2.4069999999992433,
+    "step": 0.0001,
+    "bisection_iterations": 22
+  }
+}

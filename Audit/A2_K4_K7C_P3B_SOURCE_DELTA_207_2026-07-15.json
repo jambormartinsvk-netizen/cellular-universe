@@ -1,0 +1,95 @@
+{
+  "M_prime_added_terms": [],
+  "M_prime_base_term_count": 9,
+  "M_prime_candidate_term_count": 7,
+  "M_prime_missing_terms": [
+    {
+      "ast": "BinOp(left=BinOp(left=BinOp(left=BinOp(left=Constant(value=0.25), op=Mult(), right=Name(id='Wg', ctx=Load())), op=Mult(), right=Subscript(value=Name(id='b', ctx=Load()), slice=Constant(value='inv1r'), ctx=Load())), op=Sub(), right=BinOp(left=Constant(value=0.5), op=Mult(), right=Name(id='Og', ctx=Load()))), op=Mult(), right=Name(id='dg', ctx=Load()))",
+      "count": 1,
+      "sign": 1
+    },
+    {
+      "ast": "BinOp(left=BinOp(left=BinOp(left=Constant(value=1.5), op=Mult(), right=Name(id='Ob', ctx=Load())), op=Sub(), right=BinOp(left=Name(id='Wg', ctx=Load()), op=Mult(), right=Subscript(value=Name(id='b', ctx=Load()), slice=Constant(value='load_fraction'), ctx=Load()))), op=Mult(), right=Name(id='Ug', ctx=Load()))",
+      "count": 1,
+      "sign": 1
+    }
+  ],
+  "assignment_checks": {
+    "NAMES": true,
+    "SOURCE": true,
+    "checkpoints_x": true,
+    "child": true,
+    "deep_seed": true,
+    "delta": true,
+    "envelope": true,
+    "fb": true,
+    "fc": true,
+    "g2": true,
+    "h0": true,
+    "hubble0_mpc": true,
+    "k_mpc": true,
+    "mu": true,
+    "neff": true,
+    "ombh2": true,
+    "omega_m0": true,
+    "omega_r0": true,
+    "p": true,
+    "rg": true,
+    "rn": true,
+    "scale": true,
+    "shallow_seed": true,
+    "source_results": true,
+    "transfer_shape": true,
+    "w0": true,
+    "x_final": true,
+    "x_start": true,
+    "y0": true
+  },
+  "base_sha256": "088B4CD58F57A30BD061D30042BA3E2CB5021DF9BF320003ED8291D86FB6C022",
+  "candidate_sha256": "B7EC8BAD3BFB0D48EC91D6F1BB0A602FA1834A021BB94C92D6D1B398D5F3CDC2",
+  "checks": {
+    "M_prime_missing_exactly_two_registered_terms": true,
+    "M_prime_no_added_terms": true,
+    "M_prime_remaining_term_count_is_seven": true,
+    "all_registered_assignments_ast_equal": true,
+    "background_scaled_rhs_integrator_ast_equal": true,
+    "base_hash_exact": true,
+    "candidate_hash_exact": true,
+    "physical_rhs_arguments_equal": true,
+    "physical_rhs_pre_return_ast_equal": true,
+    "rhs_component_count_13": true,
+    "three_RK4_grid_calls_ast_equal": true,
+    "twelve_other_rhs_components_ast_equal": true
+  },
+  "execution_verdict": "PASS_P3B_SOURCE_DELTA_ONLY_TWO_ZERO_TERMS",
+  "function_checks": {
+    "background": true,
+    "integrate_fixed_rk4": true,
+    "scaled_rhs": true
+  },
+  "grid_call_checks": {
+    "grid100_steps": true,
+    "grid200_steps": true,
+    "grid400_steps": true
+  },
+  "physics_executed": false,
+  "runtime_limit_seconds": 5.0,
+  "runtime_seconds": 0.2970000000004802,
+  "scope_limit": "AST/source comparison only; neither source was imported or executed",
+  "target_executed": false,
+  "test": "P3B_SOURCE_DELTA_207",
+  "unchanged_component_checks": {
+    "0": true,
+    "1": true,
+    "10": true,
+    "11": true,
+    "12": true,
+    "2": true,
+    "3": true,
+    "4": true,
+    "5": true,
+    "6": true,
+    "8": true,
+    "9": true
+  }
+}

@@ -1,0 +1,542 @@
+# Protokol balíkov pre externého auditora
+
+**Stav:** `ACTIVE`  
+**Dátum:** 2026-07-29  
+**Revízia:** `R8` — reusable checkpointy, multi-auditor submissions a finding triage  
+**Účel:** odovzdávať externému auditorovi malé, samostatne auditovateľné balíky bez ručného kopírovania a bez zahltenia celým projektom.
+
+## 1. Jednoduchý model
+
+Jeden **ucelený vedecký míľnik** = najviac jeden balík. Balík sa vytvára iba
+na výslovnú žiadosť používateľa alebo hlavného orchestrátora a až po
+official rawu a internom vedeckom audite, ak scope tvrdí computed výsledok.
+Bežná DEV chyba, statický RC blocker, technický successor alebo samotný
+progress-review záznam nikdy nemá vlastný externý balík.
+
+```text
+External_Audits/
+  PACKAGES/   <- nemenné dôkazové balíky pre čítanie
+  RESPONSES/  <- Markdown odpovede externého auditora a následná diskusia
+  HISTORY/    <- register vytvorených balíkov; nič sa z neho nemaže
+  A1/         <- staršie route-local externé audity; zachované ako história
+```
+
+Auditor dostáva prednostne jeden balík na jeden koherentný scope. Každý
+balík je samostatný; auditor nemusí prechádzať strom
+`tracks/`, `scripts/` ani `Audit/` mimo balíka, pokiaľ si výslovne
+nevyžiada ďalší artefakt.
+
+## 2. Tvar jedného balíka
+
+```text
+PACKAGES/EA-YYYYMMDD-NNN-kratky-nazov/
+  00_SCOPE_AND_READ_ORDER.md
+  01_MANIFEST_SHA256.md
+  01_MANIFEST_SHA256.tsv
+  02_AUDITOR_INSTRUCTIONS.md
+  03_REPRODUCTION_AND_EXPECTATIONS.md
+  04_RUNTIME_DEPENDENCY_MAP.tsv
+  05_PACKAGE_HISTORY.md
+  06_CHECKPOINT_PROVENANCE.tsv
+  EVIDENCE/
+    001__nazov_suboru.md
+    002__nazov_vysledku.json
+  REPRO/
+    scripts/...
+```
+
+`EVIDENCE/` má iba jednu hĺbku. `REPRO/` zachováva presné runtime cesty.
+Súbory sa kopírujú, nie linkujú. Od R5 platí **single-copy capsule**:
+rovnaký fyzický súbor sa v jednom balíku nachádza iba raz. Ak je runtime
+súbor zároveň dôkazom, číta sa priamo z `REPRO/` a manifest mu pridelí obe
+logické roly; nesmie mať druhú kópiu v `EVIDENCE/`.
+
+`00_SCOPE_AND_READ_ORDER.md` vždy obsahuje tvrdenie, nonclaims, poradie
+čítania, predregistrované PASS/REVIEW/STOP kritérium a presnú otázku pre
+auditora. `01_MANIFEST_SHA256.md` je zdroj pravdy pre integritu balíka.
+
+## 3. Odpovede viacerých auditorov a viac-kolová diskusia
+
+Auditor nepíše do `PACKAGES/` ani nemení dôkazy. Jeho výstup sa zapisuje do:
+
+Nové R8 submissions používajú:
+
+```text
+RESPONSES/<PACKAGE_ID>/<AUDIT_SUBMISSION_ID>/
+  00_AUDITOR_AUDIT.md
+  01_PROJECT_ASSESSMENT.md
+  02_AUDITOR_FOLLOWUP.md
+  03_PROJECT_DECISION.md
+```
+
+Legacy priama cesta `RESPONSES/<PACKAGE_ID>/00_AUDITOR_AUDIT.md` zostáva
+immutable. Každé nové odovzdanie rovnakého sealed package má unikátny
+`AUDIT_SUBMISSION_ID`, auditor task identity a response path. Auditor nesmie
+prepísať inú response a pred vlastným odovzdaním štandardne nečíta sibling
+submission responses.
+
+Externý posudok je read-only odporúčanie. Iba hlavný orchestrátor môže po
+jeho vyhodnotení zapísať autoritatívny PASS/REVIEW/STOP do route-local
+stavu.
+
+## 4. Nemennosť a revízie
+
+1. Kým je balík explicitne `DRAFT_NOT_DELIVERED`, možno opraviť iba jeho
+   control/runtime closure. Zmena vedeckého dôkazu ruší draft; dôkaz sa
+   opravuje späť v DEV/RC/official workflow, nie refreezeom package.
+2. Od stavu `SEALED_READY_FOR_AUDIT` sa dôkazový balík nemení ani nedopĺňa
+   potichu. Ak je nutný ďalší súbor, nová verzia dôkazov alebo oprava hashu,
+   vznikne nový balík s novým `NNN` a odkazom na predchodcu.
+3. Odpoveď auditora sa nikdy neprepisuje; nasledujúca reakcia je nový súbor
+   v `RESPONSES/`.
+4. Stav vytvorených balíkov vedie
+   `HISTORY/00_PACKAGE_REGISTER.md`.
+
+### 4.1 P0 package-process repair
+
+Ak audit nájde iba `P0_PACKAGE_PROCESS_ONLY`, vedecký workflow sa neopakuje.
+Orchestrátor overí, že contract, RC, input, raw a interný audit majú zhodné
+source hashe. Kurátor vytvorí nový `PACKAGE_REPAIR_REVISION` s novým package
+ID/revíziou, `REPAIRS_PACKAGE_ID`, exact evidence parity a diffom obmedzeným
+na control/runtime closure. Revision prejde preflightom a dostane nový
+`AUDIT_SUBMISSION_ID`.
+
+Starý sealed package ani response sa nemenia. Ak sa zmenil jediný vedecký
+bajt, nejde o P0 a revision sa musí vrátiť do finding triage.
+
+## 5. Čo používateľ napíše pri žiadosti
+
+Stačí krátka veta, napríklad:
+
+```text
+Priprav externý balík pre KMPC-036: iba numerický floor a tri driver[7] riadky.
+```
+
+alebo:
+
+```text
+Priprav balík pre A2-K4/P5: audit Bianchi identity a prenosu vzorca do runnera.
+```
+
+Hlavný orchestrátor potom vyberie iba potrebné zdroje podľa
+`A1/A1K1/A2/A2K4/P5/00_EXTERNAL_AUDIT_HANDOFF_SK.md`, vytvorí manifest,
+skopíruje súbory a založí prázdnu šablónu odpovede. Nevykoná nový fyzikálny
+beh, pokiaľ to nie je výslovne súčasťou zadania.
+
+## 6. Povinné rozlíšenie výsledkov
+
+Balík aj odpoveď musia uviesť, či zistenie je:
+
+- `PRECHECK_EXCLUDED_SCOPE` — predbežne certifikované vylúčenie bez behu;
+- `COMPUTED_STOP_SCOPE` — fyzikálny STOP z úplného testu;
+- `OBSERVATIONAL_STOP_SCOPE` — STOP z úplnej likelihood reťaze;
+- `REFERENCE_MISMATCH_ONLY` — nezhoda s benchmarkom, nie sama STOP;
+- `TECHNICAL_STOP` — technický problém, nie smrť fyziky.
+
+Každý materiálny finding navyše dostane jednu impact triedu:
+
+- `P0_PACKAGE_PROCESS_ONLY`;
+- `T1_TECHNICAL_NO_CLAIM_REACH`;
+- `S1_LOCAL_CORRECTABLE_SAME_TRACK`;
+- `S2_TRACK_IDENTITY_AT_RISK`;
+- `S3_FATAL_IN_SCOPE`;
+- `S4_PARENT_THEORY_IMPACT`.
+
+Pri `S1–S4` auditor uvedie najskorší checkpoint, ktorý môže byť chybný,
+známe downstream claims a či je claim reach potvrdený alebo iba možný.
+Auditor sám neukončuje ani nezakladá koľaj.
+
+Tým sa externý auditor nedozvie iba „mŕtva/živá“, ale aj aký druh dôkazu
+daný stav naozaj nesie.
+
+## 7. Povinná dôkazová úroveň externého auditu
+
+Každý balík a odpoveď označia najvyššiu skutočne dosiahnutú úroveň:
+
+| Úroveň | Obsah | Čo smie auditor tvrdiť |
+|---|---|---|
+| `T0_CONTEXT` | iba súhrny, statusy a vysvetlenia | kontextová pripomienka, nie formula alebo computed verdict |
+| `T1_PRIMARY_FORMULA` | primárny zdroj vzorca/kódu, presná cesta, hash a riadky | formula-lineage záver a rozmerová kontrola |
+| `T2_REPRODUCIBLE_CALCULATION` | T1 + runner, všetky importy a runtime-opened vstupy, prereg, raw výsledok, tolerancie, verzie a reprodukčný príkaz; predpísaná oficiálna vetva dobehne bez obídenia guardov | nezávislá reprodukcia deklarovaného výpočtu |
+| `T3_INDEPENDENT_IMPLEMENTATION` | T2 + druhá implementácia, ktorá nekopíruje testovanú logiku | silná nezávislá numerická/algebraická kontrola |
+
+Auditor pri každom hlavnom tvrdení použije jeden z tagov:
+`OBSERVED_IN_PRIMARY`, `INDEPENDENTLY_RECOMPUTED`,
+`INFERRED_FROM_PROJECT_DOCS`, `CONTEXT_ONLY`.
+
+Tvrdenie `COMPUTED_STOP_SCOPE` sa nesmie udeliť iba zo sekundárneho
+Markdown súhrnu. Auditor musí mať aspoň T2 alebo explicitne napísať, že
+kontroluje iba mapu už existujúceho computed verdiktu.
+
+## 8. Povinný výpočtový kapsul
+
+Ak scope obsahuje vzorec, numerické číslo, konvergenciu alebo raw verdict,
+balík musí obsahovať najmenšiu reprodukovateľnú sadu:
+
+1. runner a všetky používané projektové importy;
+2. vstup/config a zdroj externých dát;
+3. preregistrované očakávanie, tolerancie a PASS/REVIEW/STOP vetvenie;
+4. raw výstup a ľudský audit;
+5. verzie prostredia a krátky reprodukčný príkaz;
+6. vnútorný a vonkajší timeout;
+7. aspoň jednu negatívnu alebo nulovú kontrolu, ak je relevantná.
+
+Za runtime vstup sa považuje aj JSON, config, tabuľka alebo iný súbor
+otvorený až počas `smoke` alebo `audit` vetvy. Import closure bez týchto
+súborov nie je úplný výpočtový kapsul.
+
+Neprikladajú sa nesúvisiace tisíce skriptov. Kapsul má byť minimálny, ale
+úplný pre tvrdenie v scope.
+
+## 9. Dodatočný kontext mimo balíka
+
+Ak auditor dostane neskôr prístup k ďalším dokumentom, addendum musí uviesť
+ich presné relatívne cesty a SHA-256. Bez toho má addendum stav
+`UNSEALED_CONTEXT_REVIEW` a nesmie samo zmeniť projektový verdikt.
+
+Manifest každého nového balíka musí pri každej fyzickej položke uviesť:
+
+- cestu jedinej kópie v `EVIDENCE/` alebo `REPRO/`;
+- pôvodnú relatívnu cestu;
+- SHA-256 zdroja aj kópie;
+- rolu `primary/derived/context/raw-result`;
+- dôvod zaradenia.
+
+Kontrola iba hashu kópie bez source mapy nestačí na formula-lineage audit.
+
+## 10. Povinný lifecycle balíka a submissionu
+
+Každý balík prechádza iba týmto sledom:
+
+```text
+DRAFT_NOT_DELIVERED
+  -> PREFLIGHT_PASSED
+    -> SEALED_READY_FOR_AUDIT
+      -> SUBMISSION_REGISTERED
+        -> SENT_TO_EXTERNAL_AUDITOR
+          -> AUDIT_RECEIVED
+            -> ASSESSED_BY_MAIN_ORCHESTRATOR
+```
+
+Stav `READY` sa nesmie zapísať iba preto, že existuje manifest. Pred
+zapečatením musí prejsť strojový preflight, runtime dependency closure a
+kontrola prázdnej response šablóny. Package register vedie balík; spoločný
+checkpoint/submission register vedie každé odovzdanie, odpoveď a assessment
+osobitne.
+
+## 11. Strojový manifest a package preflight
+
+Nový balík povinne obsahuje ľudský `01_MANIFEST_SHA256.md` a strojový
+`01_MANIFEST_SHA256.tsv`. TSV má stĺpce:
+
+```text
+copy_path  source_path  role  source_sha256  copy_sha256  reason
+```
+
+Ďalej obsahuje `04_RUNTIME_DEPENDENCY_MAP.tsv` so stĺpcami:
+
+```text
+runtime_path  role  sha256  required_by
+```
+
+Pred `SEALED_READY_FOR_AUDIT` sa musí spustiť read-only kontrola:
+
+```powershell
+pwsh -NoProfile -File External_Audits/TOOLS/Test-ExternalAuditPackage.ps1 -PackagePath <package>
+```
+
+R6 preflight vyžaduje PowerShell `7+`; legacy Windows PowerShell 5.1 nie je
+podporovaný a musí fail-fast skončiť pred kontrolou balíka.
+
+Preflight overí povinné control súbory, source/copy parity, všetky runtime
+vstupy, response template, absenciu temp súborov a nedoplnených hashov.
+Výsledok preflightu sa zapíše do `05_PACKAGE_HISTORY.md`; samotný tool nič
+nemení.
+
+Tento príkaz je **live-side pre-seal kontrola** kurátora, nezávislého
+package reviewera alebo hlavného orchestrátora. Package-only externému
+auditorovi sa nesmie prikázať spustenie tohto live path toolu, ak jeho
+sealed allowlist povoľuje iba package. Jeho `02/03` pokyny v takom prípade
+predpíšu package-local read-only kontrolu manifestovaných copy hashov,
+control hashov, counts, duplicít, temp súborov, runtime mapy a `REPRO`
+inventory a jasne ju odlíšia od live source/copy preflight receiptu.
+
+Alternatívne možno checker pribaliť ako jedinú manifestovanú self-contained
+control položku. Taký checker nesmie čítať live `source_path`, registre ani
+iné cesty mimo sealed balíka. Príkaz, ktorý nie je realizovateľný iba z
+`ALLOWED_READS`, je `PACKAGE_INSTRUCTION_CONFLICT` a blokuje seal.
+
+## 12. Dependency closure nie je iba import closure
+
+Príprava balíka musí staticky aj behaviorálne rozlíšiť:
+
+1. Python/project importy;
+2. runtime-opened JSON/config/data vstupy;
+3. referenčné raw výsledky používané iba na porovnanie;
+4. generated outputs;
+5. voliteľné diagnostické vstupy.
+
+Každý povinný runtime vstup musí byť v presnej runtime ceste pod `REPRO/`,
+v SHA manifeste aj runtime mape a v negatívnom teste chýbajúcej závislosti.
+Od R5 sa už neduplikuje do `EVIDENCE/`; dokument 00 odkáže auditora na
+jeho jedinú `REPRO/` kópiu. Output adresár smie obsahovať vstupný JSON iba
+vtedy, keď je v runtime mape explicitne označený
+`runtime-prerequisite`, nie generated result.
+
+Od R6 sa closure nesmie odvodiť iba z importov a očividných JSON loaderov.
+Preflight musí porovnať runtime mapu so **všetkými fyzickými súbormi** pod
+`REPRO/` a staticky prejsť aj lokálne `scripts/...` a `tracks/...` cesty
+uvedené v source hash mapách alebo otvorené nepriamo. Každá taká cesta musí
+mať jedinú exact-hash kópiu v `REPRO/`, manifestový riadok a runtime-map
+riadok. Historický preflight, ktorý iba overil deklarovanú mapu, nie je sám
+osebe dôkazom úplnosti mapy.
+
+## 13. Zmrazené prahy, platformové diagnostiky a odchýlky
+
+- Projektový rozhodovací prah sa po výsledku nezmäkčuje.
+- Same-machine immutable regresia a cross-platform reprodukcia sú dve
+  rozdielne kontroly.
+- Nový cross-platform prah môže vzniknúť iba v novom predregistrovanom
+  balíku, musí byť `DIAGNOSTIC_ONLY` a mať `verdict_effect=NONE`.
+- Ak oficiálna vetva zlyhá a auditor obíde guard alebo priamo zavolá solver,
+  výsledok je `DECLARED_DEVIATION`. Môže podporiť interpretáciu, ale sám
+  nedosahuje T2 deklarovaného runnera.
+- Exact arithmetic tej istej implementácie odstraňuje FP neistotu, nie
+  spoločnú formulačnú chybu. T3 vyžaduje druhý row/equation builder, ktorý
+  nekopíruje testovanú logiku.
+
+Pri fresh-copy field parity sa smú normalizovať iba vopred pomenované
+nevedecké polia: wall/runtime údaje a absolútny koreň cesty, ak zostane
+identický relatívny suffix aj SHA-256 zdroja. Každá taká výnimka musí byť
+uvedená v reprodukčných pokynoch a package history. Fyzikálne čísla,
+identity, gate hodnoty, prahy ani source hashe sa normalizovať nesmú.
+
+Zoznam normalizovaných polí musí byť úplný ešte pred auditom a musí zahŕňať
+aj vnorené runtime polia. Pri provenance ceste sa neodstraňuje celý údaj:
+normalizuje sa iba absolútny koreň a povinne sa overí relatívny suffix plus
+SHA-256 cieľového zdroja.
+
+## 14. Povinný kontrakt odpovede auditora
+
+Každá nová response šablóna vychádza z
+`External_Audits/TEMPLATES/00_AUDITOR_RESPONSE_TEMPLATE.md` a vyžaduje:
+
+1. auditor/model/verziu, dátum a časovú zónu;
+2. manifest PASS/FAIL a najvyšší skutočný tier;
+3. Python, knižnice, BLAS/LAPACK, OS a architektúru;
+4. presný príkaz, exit code, wall time a SHA-256 generated výstupu pre
+   manifest, smoke, official audit a každú odchýlku;
+5. tag dôkazu pri každom hlavnom tvrdení;
+6. oddelený dopad na package tier a na fyzikálny verdict;
+7. explicitné nonclaims a vyhlásenie autority.
+8. `CHECKPOINT_ID`, `AUDIT_SUBMISSION_ID`, parent checkpoint IDs a package
+   manifest SHA;
+9. impact class, claim reach, earliest possibly invalid checkpoint a
+   odporúčaný workflow return point pre každý material finding.
+
+Predikcia budúceho PASS/FAIL patrí medzi testovateľné hypotézy. Nesmie byť
+súčasťou prijatého výsledku ani meniť poradie už predregistrovaných brán.
+
+## 15. Kompaktnosť, ucelená časť a rozpočet súborov
+
+Balík sa nevytvára po support medzikroku. Za ucelenú časť sa považuje
+uzavretá vedecká brána alebo mód, autoritatívny fyzikálny `STOP`, významný
+vedecký blocker meniaci route alebo release-critical formula/computed
+výsledok. Viac blízkych atómov jedného módu sa zhromaždí do jedného balíka.
+Technický neúspech bez fyzikálneho raw nemá samostatný balík a neprikladá sa
+automaticky k ďalšiemu balíku; uvedie sa iba vtedy, ak je potrebný na
+forenznú interpretáciu vedeckého rawu.
+
+Pracovný rozpočet jedného uceleného vedeckého atómu je najviac:
+
+1. jedna predregistrácia;
+2. jeden RC base;
+3. jeden thin runner, ak je potrebný;
+4. jeden immutable raw výsledok;
+5. jeden spoločný výsledkový/interný auditný dokument.
+
+DEV kandidáti, fixtures, opravy a compact error rows sa do tohto počtu
+vedeckých artefaktov nepromujú. Centrálne plány, scorecardy a manifesty sa
+neaktualizujú po každom support medzičlánku;
+menia sa až pri skutočnej zmene autoritatívneho stavu, uzavretí módu,
+zmene aktívneho blockeru alebo `STOP`.
+
+Standalone T2 balík môže obsahovať viac **jedinečných** súborov kvôli úplnému
+runtime closure, ale od R5 nesmie obsahovať duplicitné fyzické kópie tej istej
+source/runtime položky. Počet package kópií sa vždy uvádza oddelene od počtu
+pracovných zdrojových zmien. Pred vytvorením balíka sa musí skontrolovať, či
+rovnaký auditný cieľ nemožno bezpečne spojiť s ďalšími už rozpracovanými
+atómami toho istého módu. EA-013 až EA-015 zostávajú immutable historickým
+príkladom príliš jemného delenia; nesmú sa spätne prepisovať ani mazať
+potichu.
+
+## 16. R8 single-copy budget a rýchly handoff
+
+Od EA-039 sa pred každou novou ucelenou časťou vedú štyri explicitné
+počítadlá a zoznam ciest, z ktorého sa čísla mechanicky odvodia:
+
+```text
+LIVE_SCIENTIFIC_ARTIFACTS = nové base/runner/prereg/raw/result artefakty
+LIVE_CENTRAL_REGISTERS_UPDATED = existujúce plány, DNR, event/package registre
+LIVE_FILES_CHANGED_TOTAL = súčet predchádzajúcich dvoch čísel
+AUDIT_PACKAGE_COPIES = fyzické kópie vytvorené iba pre externý audit
+```
+
+Počet súborov v Git/Codex UI sa nikdy nesmie prezentovať ako počet zmien
+rovníc. `00_SCOPE_AND_READ_ORDER.md`, package history a záverečná správa
+uvedú všetky štyri čísla osobitne. Počet sa nesmie odhadnúť z logických
+batchov; každý fyzicky vytvorený alebo upravený live súbor sa započíta
+presne raz. Package preflight zatiaľ tieto live cesty nepozná, preto ich
+pred sealom nezávisle skontroluje druhý agent alebo reviewer.
+
+### RC a preregistračný freeze
+
+Offline DEV compile/help/synthetic unit/selftest smie prebehnúť nad
+pracovným kandidátom bez dôkazového freeze, ale bez reálnych vedeckých
+vstupov, siete, official cieľa a fyzikálnej interpretácie.
+
+Pred RC auditom a prvým official procesom musí byť preregistrácia obsahovo
+konečná, musí obsahovať source/input hashe, rozhodovacie vetvy a output guard
+a jej SHA-256 sa zaznamená mimo nej. Od RC freeze sa preregistrácia ani RC
+source nemenia. Compile/help/smoke DEV história nepatrí do package; package
+obsahuje RC, official receipt/raw a vedecky relevantné kontroly.
+
+Ak historický atóm nemá pre-run receipt, audit uvedie
+`PREREG_CHRONOLOGY_PROCESS_ASSERTION_ONLY` a netvrdí kryptograficky úplnú
+časovú provenienciu.
+
+### Default hard budget
+
+- jeden bežný výpočtový atóm: najviac `5` nových live artefaktov;
+- aktualizácie živých centrálnych registrov: najviac `4` pri ucelenom
+  closure, nie po každom medziatómovom kroku;
+- štandardný externý balík: najviac `40` fyzických súborov vrátane
+  control súborov a response šablóny;
+- jedna source/runtime položka: presne jedna fyzická kópia v balíku.
+
+Prekročenie nie je automaticky zakázané, ale ešte pred kopírovaním vyžaduje
+v commentary oznámiť plánovaný počet, dôvod a najmenšiu alternatívu.
+`00_SCOPE_AND_READ_ORDER.md` potom obsahuje
+`BUDGET_EXCEPTION_JUSTIFICATION`. Bez tohto zápisu balík ostáva
+`DRAFT_NOT_DELIVERED`.
+
+### Rýchly postup
+
+1. pracovný DEV base/runner stabilizovať bez package a bez per-error auditov;
+2. po DEV PASS zmraziť prereg/RC, zaznamenať SHA a overiť neprítomnosť outputu;
+3. nezávislý static/math audit, jeden official run a interný science audit;
+4. až pri ucelenom míľniku aktualizovať centrálne registre jedným batchom;
+5. z explicitného zoznamu ciest spočítať live artefakty a registre;
+6. balík zostaviť z jedinečných fyzických RC/raw/audit súborov podľa runtime mapy;
+7. jeden negatívny guard a jedna nezávislá success vetva; ďalšie vetvy iba
+   ak dokazujú odlišný failure mechanizmus;
+8. po seal už nič nepridávať; nový vedecký kontext patrí do nového
+   DEV/RC/official atómu, auditná diskusia do response alebo nového package
+   ID podľa pravidiel nemennosti.
+
+## 17. Audítorský ruleset a oddelenie kurátora
+
+Pred zostavením nového balíka package charter povinne uvedie:
+
+```text
+PACKAGE_CURATOR_TASK_ID
+EXTERNAL_AUDITOR_TASK_ID
+SEPARATION_OF_DUTIES_CHECK
+AUDITOR_RULESET_PATHS_AND_SHA256
+AUDITOR_ROLE_CONFIG_SHA256
+```
+
+Kurátor a externý auditor toho istého balíka musia mať rozdielne task
+identity. Rovnosť alebo chýbajúca identita znamená
+`SEPARATION_OF_DUTIES_FAILURE / DRAFT_NOT_DELIVERED`.
+
+Balík obsahuje v control vrstve exact kópie audítorského rulesetu potrebného
+na izolovaný bootstrap — minimálne projektové `AGENTS.md`,
+`tracks/00_PROJECT_OPERATING_SYSTEM.md`, tento R8 protokol a použitý
+`external_auditor.toml`. Všetky kópie sú v package manifeste, read orderi a
+charterovom zozname SHA. Orchestrátor pred sealom overí live role-config hash
+voči `.codex/agents/00_MANIFEST.md`; kurátor overí source/copy paritu.
+
+Externý auditor po seal nečíta live projekt. Overuje iba package kópie a ich
+charterové hashe. Chýbajúci alebo nezhodný ruleset/config znamená
+`PACKAGE_CLOSURE_BLOCKER / CANNOT_AUDIT`; nesmie sa obísť načítaním live
+súboru. Kým R6 preflight nemá túto kontrolu implementovanú mechanicky,
+vykoná ju pred sealom druhý read-only reviewer, odovzdá checksumovaný
+výsledok kurátorovi alebo orchestrátorovi a ten ho verbatim zapíše do
+package history.
+
+Pre-seal reviewer navyše porovná každý povinný príkaz v
+`02_AUDITOR_INSTRUCTIONS.md` a `03_REPRODUCTION_AND_EXPECTATIONS.md` s
+audítorským `ALLOWED_READS`. Nesmie prejsť live tool command pod
+package-only allowlistom. V celej control vrstve tiež vyhľadá stale
+`DRAFT_NOT_DELIVERED`, `NOT_SEALED`, `AWAITING_*` a budúci čas o review/seal;
+po seale smú zostať iba v explicitne označenej historickej časti
+`05_PACKAGE_HISTORY.md`.
+
+EA-028 a EA-029 ostávajú immutable historickými R4 balíkmi. Ich duplicitné
+`EVIDENCE/REPRO` súbory sa spätne nemažú ani neprepájajú.
+
+## 18. Canonical checkpoint provenance
+
+Každý nový milestone package obsahuje
+`06_CHECKPOINT_PROVENANCE.tsv` so stĺpcami:
+
+```text
+checkpoint_id  parent_checkpoint_id  parent_package_id
+parent_manifest_sha256  relation  trusted_claim_scope
+```
+
+`00_SCOPE_AND_READ_ORDER.md` navyše uvedie:
+
+```text
+CHECKPOINT_ID
+ROUTE_AND_GATE
+ACCEPTED_STATE
+PARENT_CHECKPOINT_IDS
+SUPERSEDES_CHECKPOINT_ID
+CHECKPOINT_STATUS
+```
+
+Checkpoint sa objaví v
+`HISTORY/00_CHECKPOINT_AND_AUDIT_SUBMISSION_REGISTER.tsv`. Historický balík
+sa môže pri prvom opakovanom audite zaregistrovať ako `LEGACY_CHECKPOINT`
+bez zmeny svojich bajtov; jeho parent väzby musia byť označené
+`BACKFILLED_HASH_VERIFIED` alebo `UNKNOWN_BLOCKER`, nikdy vymyslené.
+
+Auditor smie auditovať checkpoint s parent claims ako explicitnými
+hash-bound assumptions. Ak chce preveriť celú lineage, vyžiada si parent
+packages podľa DAG. Potom možno pokračovať po descendants. Package preto
+nemusí kopírovať celú históriu teórie, ale musí jednoznačne ukázať, na čom
+stojí.
+
+Pri material findingu sa starý checkpoint nemaže:
+
+- dotknutý: `QUARANTINED_BY_FINDING`;
+- transitive descendants: `SUSPENDED_DEPENDENCY`;
+- opravený: nový checkpoint s `SUPERSEDES_CHECKPOINT_ID`.
+
+## 19. Nezávislé opakované audity a rozpory
+
+Rovnaký canonical package manifest možno odovzdať viacerým auditorom.
+Každý submission row obsahuje minimálne:
+
+```text
+AUDIT_SUBMISSION_ID
+CHECKPOINT_ID
+PACKAGE_ID
+PACKAGE_MANIFEST_SHA256
+AUDITOR_TASK_ID
+AUDIT_MODE
+RESPONSE_PATH
+RESPONSE_SHA256
+ASSESSMENT_STATUS
+```
+
+Nový auditor štandardne dostane sealed package bez predchádzajúcich responses.
+Ak ide o follow-up alebo discrepancy audit, sprístupnené responses musia byť
+explicitne hashované ako addenda a audit mode už nie je blind.
+
+Rozporné material posudky vytvoria `AUDIT_DISCREPANCY_REVIEW`. Orchestrátor
+porovná reprodukciu, evidence tags, scope a metódu; prostá väčšina auditorov
+nie je autoritatívny dôkaz. Podľa potreby môže ten istý canonical package
+poslať tretiemu nezávislému auditorovi bez nového vedeckého runu.

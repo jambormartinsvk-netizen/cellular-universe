@@ -1,0 +1,81 @@
+{
+  "checks": {
+    "reference_matter": true,
+    "reference_no_floor": true,
+    "reference_positive": true,
+    "reference_quadrature": true,
+    "reference_root_sign_change": true,
+    "reference_theta": true
+  },
+  "claim": "TECHNICAL_REFERENCE_STAGE_FOR_GRID_CELL_N8000",
+  "execution_verdict": "PASS_N8000_REFERENCE_STAGE_INTRINSIC",
+  "frozen_input_ledger": {
+    "Delta_N_eff_points": [
+      0.0,
+      0.02675,
+      0.0535
+    ],
+    "N_eff_standard": 3.046,
+    "background_grids": [
+      2000,
+      4000,
+      8000
+    ],
+    "c_km_s": 299792.458,
+    "delta": 0.02297,
+    "h_bracket": [
+      0.55,
+      0.8
+    ],
+    "h_ref": 0.673,
+    "lambda": 0.15,
+    "omega_b": 0.02237,
+    "omega_gamma": 2.469e-05,
+    "omega_m": 0.143,
+    "sigma8_LCDM": 0.811,
+    "stage_parameters": {
+      "Delta_N_eff": 0.0,
+      "delta": 0.0,
+      "grid_n": 8000,
+      "lambda": 0.0
+    },
+    "x_min": -7.8,
+    "z_star": 1089.9
+  },
+  "grid_n": 8000,
+  "nonclaims": [
+    "not a model Delta-N_eff point",
+    "not a convergence result or sampled range",
+    "does not close P5.4, G8 or G9"
+  ],
+  "reference_diagnostics": {
+    "H0_km_s_Mpc": 67.29899940080941,
+    "bisection_width": 4.656612873077393e-10,
+    "distance_Mpc": 13872.107678247308,
+    "distance_residual_Mpc": -1.655862433835864e-07,
+    "distance_target_Mpc": 13872.107678412895,
+    "inner_iterations": 2,
+    "matter_relative_residual": 3.1086244689504383e-15,
+    "minimum_component": 9.222298773090177e-05,
+    "outer_iterations": 29,
+    "quadrature_relative_error": 6.0624354820718086e-12,
+    "root_initial_residual_high": -471.62027596052576,
+    "root_initial_residual_low": 529.3657404381083,
+    "root_initial_sign_change": true,
+    "sound_horizon_Mpc": 144.31970272117772,
+    "theta_relative_residual": 1.1936673871559833e-11
+  },
+  "reference_growth_D": 0.7092330148907083,
+  "runtime_seconds": 10.672000000005937,
+  "schema": "v318_pt1_h0_s8_n8000_reference_stage_v4",
+  "scope": "legacy_execution_stage_not_scientific_cell_or_range",
+  "theta_reference": 0.010403588702368644,
+  "theta_reference_evidence": {
+    "dm_quadrature_relative_error": 3.251951883287481e-13,
+    "dm_reference_Mpc": 13872.107678412896,
+    "rs_quadrature_relative_error": 6.0624354820718086e-12,
+    "rs_reference_Mpc": 144.31970272117772
+  },
+  "v3_addendum_sha256": "DC6E8CC12172BD9AF4805870722AA9516A5A48F3824A05FD7A0D5956513E54F7",
+  "v4_addendum_sha256": "5E2A35D1E1A6EB64D200D4F18488A31849CB16079249DFB8407559A6D3925D42"
+}

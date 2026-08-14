@@ -1,0 +1,13 @@
+id,observable,prediction,uncertainty,LCDM_or_standard,decided_by,expected,kill_condition,derivation
+1,N_eff,3.10,3.09-3.10,3.045 (inflation dilutes graviton relic),CMB-S4 / Simons Observatory,~2029-2033,-,"thermal graviton relic of Planck-hot genesis without inflaton; DeltaN=(8/7)(10.75/g*)^(4/3), g*=106.75"
+2,n_s (scalar spectral index),0.9656,+/-0.0016,fitted parameter (~0.965),CMB-S4 (sigma~0.002),~2030s,|n_s-0.9656|>0.004,n_s-1=-(3/2)delta; delta=1/(<k>+g_B)=1/(15.54+28)=0.02297; holographic thermal phase in fuel quasi-de Sitter (eps=1.5*delta)
+3,tensor-to-scalar ratio r,<1e-10 (realistic ~1e-20),-,many inflation models hope r~1e-3 to 1e-2,LiteBIRD / CMB-S4,~2032+,DETECTION of primordial B-modes r>=1e-3 kills the model,tensors from Rayleigh-Jeans tail of thermal ripples: Delta_h^2~0.4*H*T; T_f~1e9-1e10 GeV
+4,H_0,66.4 km/s/Mpc,+/-0.4,67.4 (CMB) vs ~73 (local ladder),local-ladder systematics studies; CMB-S4,ongoing,local H0>=72 confirmed without systematics = serious trouble,theta* anchor + w=-1+delta fuel + DeltaN_eff=0.0535 steam
+5,S_8,0.86-0.87 (0.859 at lambda=0.10; 0.874 at lambda=0.15),+/-0.01,Planck LCDM 0.83; KiDS-Legacy 2025: 0.815 (+0.016/-0.021),Euclid / LSST,2026-2030,S8<=0.78 AND wa<=-0.6 confirmed simultaneously,growth pipeline with CMB anchor; matter creation raises S8 vs LCDM
+6,w_0,-0.92 to -0.94,-,-1,DESI final,2026-2027,-,accounting shadow of matter creation (fitter assumes a^-3 dilution); NEC intact
+7,w_a,-0.39 to -0.61 (lambda 0.10-0.15),-,0,DESI final,2026-2027,(with S8: see row 5),"same accounting shadow; sign and window derived, not fitted"
+8,dark matter direct detection,permanently NULL (gravitational-only ash),-,WIMP models predict signals,LZ / XENONnT / DARWIN,ongoing,confirmed non-gravitational DM interaction kills the model,"ash = fully digested waste, couples only via G domain; m_ash >~ keV"
+9,consistency relation,n_s - 1 = -(3/2)*delta with the SAME delta shaping w(z),-,no such link exists in LCDM+inflation,joint CMB x DESI x lensing fit,any time,joint fit rejects common delta,unique cross-observable lock: primordial tilt tied to dark-energy evolution
+10,time variation of delta,none (delta constant),-,n/a,future w(z) tomography,-,measured drift of delta,n_V=C is a global attractor of the dowry rule; capacity fixed
+11,Lorentz violation,none measurable (suppressed as (l_P/lambda)^2 ~ 1e-58),-,exact symmetry (postulate),"SME tests, GRB dispersion",satisfied,any confirmed LV detection,random network: linear term forbidden by parity; quadratic isotropic; one c by capacity identity (U-1)
+12,cosmic graviton background,"thermal, T=0.90 K, peak ~53 GHz",-,absent (diluted by inflation),far-future GW technology,-,-,same relic as row 1 seen directly; today undetectable (Dyson bound)

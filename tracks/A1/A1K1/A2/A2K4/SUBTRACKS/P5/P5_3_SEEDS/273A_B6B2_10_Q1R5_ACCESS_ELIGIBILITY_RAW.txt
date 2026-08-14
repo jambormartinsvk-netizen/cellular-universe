@@ -1,0 +1,561 @@
+BATCH_EVIDENCE_ID: Q1R5_ACCESS_ELIGIBILITY_ABS_PDF
+CALL_TYPE: BATCHED_OPEN
+EXACT_TARGETS: https://arxiv.org/abs/1405.4005 | https://arxiv.org/pdf/1405.4005
+INTERNAL_OPERATION_COUNT: 2
+CANDIDATE_LOCAL_OPERATION_BUDGET_AFTER: 2/2_TERMINAL_FOR_ACCESS_ATOM
+PROVIDER_PAYLOAD: {"open":[{"ref_id":"https://arxiv.org/abs/1405.4005"},{"ref_id":"https://arxiv.org/pdf/1405.4005"}],"response_length":"long"}
+DELIMITER_COLLISION: NO
+BEGIN_EXACT_BATCH_RETURN
+[1405.4005] Gravitional radiation from first-order phase transitions in the presence of a fluid (https://arxiv.org/abs/1405.4005)
+citeturn49view0 [wordlim: 200] Content type: text/html; Source: open({"ref_id":"https://arxiv.org/abs/1405.4005","lineno":null}); Total lines: 214
+L0: cite0†Skip to main content L1: 
+L2:  cite61†Image: Cornell University L3: 
+L4:  We gratefully acknowledge support from the Simons Foundation, cite1†member institutions†info.arxiv.org , and all contributors. cite2†Donate†info.arxiv.org L5: 
+L6: cite62†Image: arxiv logo > cite3†astro-ph > arXiv:1405.4005
+L7: 
+L8: cite4†Help†info.arxiv.org | cite5†Advanced Search L9: 
+L10:  All fields Title Author Abstract Comments Journal reference ACM classification MSC classification Report number arXiv identifier DOI ORCID arXiv author ID Help pages Full text
+L11: 
+L12: Search
+L13: cite63†Image: arXiv logo L14: 
+L15: cite6† †www.cornell.edu L16: 
+L17:  open search
+L18: 
+L19: GO
+L20: 
+L21: open navigation menu
+L22: ## quick links
+L23: 
+L24:   * cite7†Login L25:   * cite4†Help Pages†info.arxiv.org L26:   * cite8†About†info.arxiv.org L27: 
+L28: # Astrophysics > Cosmology and Nongalactic Astrophysics
+L29: 
+L30: arXiv:1405.4005 (astro-ph)
+L31: 
+L32: [Submitted on 15 May 2014 (cite9†v1 ), last revised 27 May 2014 (this version, v2)]
+L33: # Title:Gravitional radiation from first-order phase transitions in the presence of a fluid
+L34: 
+L35: Authors:cite10†John T. Giblin Jr , cite11†James B. Mertens L36: 
+L37: View a PDF of the paper titled Gravitional radiation from first-order phase transitions in the presence of a fluid, by John T. Giblin Jr and 1 other authors
+L38: 
+L39: cite12†View PDF L40: > Abstract:First-order phase transitions are a source of stochastic gravitational radiation. Precision calculations of the gravitational waves emitted during these processes, sourced by both the degrees of freedom undergoing the transition and anisotropic stress of the coupled, ambient constituents, have reached an age of maturity.
+L41: Here we present high-resolution numerical simulations of a scalar field coupled to a fluid and parameterize the final gravitational wave spectrum as a function of the ratio of the energies of the two sectors and the coupling between the two sectors for a set of models that represent different types of first-order phase transitions. In most cases, the field sector is the dominant source of gravitational radiation, but it is possible in certain scenarios for the fluid to have the most important contribution.
+L42: Comments: 11 pages, 9 figures
+L43: Subjects: Cosmology and Nongalactic Astrophysics (astro-ph.CO); General Relativity and Quantum Cosmology (gr-qc)
+L44: Cite as: cite13†arXiv:1405.4005 [astro-ph.CO]
+L45:   (or  cite14†arXiv:1405.4005v2 [astro-ph.CO] for this version)
+L46:   cite15†https://doi.org/10.48550/arXiv.1405.4005†doi.org L47: 
+L48: Focus to learn more
+L49: 
+L50:   arXiv-issued DOI via DataCite
+L51: 
+L52: Journal reference: Phys. Rev. D 90, 023532 (2014)
+L53: Related DOI:  cite16†https://doi.org/10.1103/PhysRevD.90.023532†doi.org L54: Focus to learn more
+L55: 
+L56:   DOI(s) linking to related resources
+L57: ## Submission history
+L58: 
+L59: From: James Mertens [cite17†view email ]
+L60: cite9†[v1] Thu, 15 May 2014 20:27:07 UTC (1,712 KB)
+L61: [v2] Tue, 27 May 2014 18:38:09 UTC (1,711 KB)
+L62: 
+L63: Full-text links:
+L64: ## Access Paper:
+L65: 
+L66:  View a PDF of the paper titled Gravitional radiation from first-order phase transitions in the presence of a fluid, by John T. Giblin Jr and 1 other authors
+L67: 
+L68:   * cite12†View PDF L69:   * cite18†TeX Source  L70: 
+L71: cite19†view license L72: 
+L73: Current browse context:
+L74: 
+L75: astro-ph.CO
+L76: 
+L77: cite20†< prev |   cite21†next > L78: 
+L79: cite22†new |  cite23†recent | cite24†2014-05 L80: 
+L81: Change to browse by:
+L82: 
+L83: cite25†astro-ph L84: cite26†gr-qc L85: ### References & Citations
+L86: 
+L87:   * cite27†INSPIRE HEP†inspirehep.net L88: 
+L89:   * cite28†NASA ADS†ui.adsabs.harvard.edu L90:   * cite29†Google Scholar†scholar.google.com L91:   * cite30†Semantic Scholar†api.semanticscholar.org L92: 
+L93: export BibTeX citation Loading...
+L94: 
+L95: ## BibTeX formatted citation
+L96: 
+L97: ×
+L98: 
+L99: loading...
+L100: 
+L101: Data provided by:
+L102: 
+L103: ### Bookmark
+L104: 
+L105: cite31† †www.bibsonomy.org cite32† †reddit.com L106: 
+L107: Bibliographic Tools
+L108: # Bibliographic and Citation Tools
+L109: 
+L110: Bibliographic Explorer Toggle
+L111: 
+L112: Bibliographic Explorer (cite33†What is the Explorer?†info.arxiv.org )
+L113: 
+L114: Connected Papers Toggle
+L115: 
+L116: Connected Papers (cite34†What is Connected Papers?†www.connectedpapers.com )
+L117: 
+L118: Litmaps Toggle
+L119: 
+L120: Litmaps (cite35†What is Litmaps?†www.litmaps.co )
+L121: 
+L122: scite.ai Toggle
+L123: 
+L124: scite Smart Citations (cite36†What are Smart Citations?†www.scite.ai )
+L125: 
+L126: Code, Data, Media
+L127: # Code, Data and Media Associated with this Article
+L128: 
+L129: alphaXiv Toggle
+L130: 
+L131: alphaXiv (cite37†What is alphaXiv?†alphaxiv.org )
+L132: 
+L133: Links to Code Toggle
+L134: 
+L135: CatalyzeX Code Finder for Papers (cite38†What is CatalyzeX?†www.catalyzex.com )
+L136: 
+L137: DagsHub Toggle
+L138: 
+L139: DagsHub (cite39†What is DagsHub?†dagshub.com )
+L140: 
+L141: GotitPub Toggle
+L142: 
+L143: Gotit.pub (cite40†What is GotitPub?†gotit.pub )
+L144: 
+L145: Huggingface Toggle
+L146: 
+L147: Hugging Face (cite41†What is Huggingface?†huggingface.co )
+L148: 
+L149: Links to Code Toggle
+L150: 
+L151: Papers with Code (cite42†What is Papers with Code?†paperswithcode.com )
+L152: ScienceCast Toggle
+L153: 
+L154: ScienceCast (cite43†What is ScienceCast?†sciencecast.org )
+L155: 
+L156: Demos
+L157: # Demos
+L158: 
+L159: Replicate Toggle
+L160: 
+L161: Replicate (cite44†What is Replicate?†replicate.com )
+L162: 
+L163: Spaces Toggle
+L164: 
+L165: Hugging Face Spaces (cite45†What is Spaces?†huggingface.co )
+L166: 
+L167: Spaces Toggle
+L168: 
+L169: TXYZ.AI (cite46†What is TXYZ.AI?†txyz.ai )
+L170: 
+L171: Related Papers
+L172: # Recommenders and Search Tools
+L173: 
+L174: Link to Influence Flower
+L175: 
+L176: Influence Flower (cite47†What are Influence Flowers?†influencemap.cmlab.dev )
+L177: 
+L178: Core recommender toggle
+L179: 
+L180: CORE Recommender (cite48†What is CORE?†core.ac.uk )
+L181: 
+L182: IArxiv recommender toggle
+L183: 
+L184: IArxiv Recommender (cite49†What is IArxiv?†iarxiv.org )
+L185: 
+L186:   * Author
+L187:   * Venue
+L188:   * Institution
+L189:   * Topic
+L190: 
+L191: About arXivLabs
+L192: # arXivLabs: experimental projects with community collaborators
+L193: 
+L194: arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website.
+L195: 
+L196: Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them.
+L197: Have an idea for a project that will add value for arXiv's community? cite50†Learn more about arXivLabs†info.arxiv.org .
+L198: 
+L199: cite51†Which authors of this paper are endorsers? | Disable MathJax (cite52†What is MathJax?†info.arxiv.org )
+L200: 
+L201:   * cite8†About†info.arxiv.org L202:   * cite4†Help†info.arxiv.org L203: 
+L204:   * contact arXiv Click here to contact arXiv cite53† Contact†info.arxiv.org L205:   * subscribe to arXiv mailings Click here to subscribe cite54† Subscribe†info.arxiv.org L206:   * cite55†Copyright†info.arxiv.org L207:   * cite56†Privacy Policy†info.arxiv.org L208: 
+L209:   * cite57†Web Accessibility Assistance†info.arxiv.org L210:   * cite58†arXiv Operational Status †status.arxiv.org L211: Get status notifications via cite59†email†subscribe.sorryapp.com or cite60†slack†subscribe.sorryapp.com L212: 
+L213:   *[Related DOI]: Digital Object Identifier
+--------------------------------------------------------------------------------
+ (https://arxiv.org/pdf/1405.4005)
+citeturn49view1 [wordlim: 200] Content type: application/pdf; Number of pages: 11; Source: open({"ref_id":"https://arxiv.org/pdf/1405.4005","lineno":null}); Total lines: 1203
+L0@P0: arXiv:1405.4005v2 [astro-ph.CO] 27 May 2014
+L1@P0: Gravitional radiation from first-order phase transitions in the presence of a fluid
+L2@P0: John T. Giblin, Jr1,2 and James B. Mertens2
+L3@P0: 1Department of Physics, Kenyon College, 201 N College Rd, Gambier, OH 43022 and
+L4@P0: 2CERCA/ISO, Department of Physics, Case Western Reserve University, 10900 Euclid Avenue, Cleveland, OH 44106
+L5@P0: First-order phase transitions are a source of stochastic gravitational radiation. Precision calculations of the gravitational waves emitted during these processes, sourced by both the degrees of
+L6@P0: freedom undergoing the transition and anisotropic stress of the coupled, ambient constituents, have
+L7@P0: reached an age of maturity. Here we present high-resolution numerical simulations of a scalar field
+L8@P0: coupled to a fluid and parameterize the final gravitational wave spectrum as a function of the ratio
+L9@P0: of the energies of the two sectors and the coupling between the two sectors for a set of models
+L10@P0: that represent different types of first-order phase transitions. In most cases, the field sector is the
+L11@P0: dominant source of gravitational radiation, but it is possible in certain scenarios for the fluid to have
+L12@P0: the most important contribution.
+L13@P0: I. INTRODUCTION
+L14@P0: As we prepare for the first direct detection of gravitational radiation, there is increasing interest in analytic and numerical models of gravitational wave sources.
+L15@P0: These sources generally fall into two categories: transient
+L16@P0: events that can be identified by waveforms, and stochastic backgrounds. Many cosmological processes fit into
+L17@P0: this latter category, including phase transitions, preheating, and cosmic string networks – just some examples
+L18@P0: of processes that produce potentially observable gravitational wave signatures.
+L19@P0: For a cosmological process that generated gravitational
+L20@P0: waves during the early radiation-dominated phase of the
+L21@P0: Universe, it is now well known that we can estimate the
+L22@P0: current-day peak frequency f0 of the gravitational waves
+L23@P0: by estimating the peak wavenumber k∗ of the sub-horizon
+L24@P0: modes at the time the waves were generated. Taking
+L25@P0: these modes to be a multiple of the Hubble scale at the
+L26@P0: time of the process, k∗ = ζH∗ where ζ ∼ 1 − 100, the
+L27@P0: transfer function [1]
+L28@P0: f0 =
+L29@P0: 6 × 1010k∗ p
+L30@P0: mplH∗
+L31@P0: Hz =
+L32@P0: ρ
+L33@P0: 1/4
+L34@P0: ∗
+L35@P0: mpl !
+L36@P0: ζ 1.7 × 1011 Hz (1)
+L37@P0: determines the ideal observational frequency with only
+L38@P0: an estimate of ζ and knowledge of the energy scale of the
+L39@P0: Universe at the time of the process, ρ∗.
+L40@P0: However, determining the present day amplitude and
+L41@P0: the precise shape of the spectrum is a complex process.
+L42@P0: In recent years, numerical techniques have promoted analytic calculations and semi-analytic estimates to precision predictions. Processes with a single scale, e.g. preheating [2–14], were the first signals to be numerically
+L43@P0: simulated on a 3-dimensional lattice (grid) [1, 5, 15–21].
+L44@P0: Later, processes with multiple scales pushed the limits of
+L45@P0: numerical simulations to higher resolution, and have employed increasingly sophisticated techniques to maximize
+L46@P0: the utility of computational resources.
+L47@P0: The Laser Interferometer Gravitational Wave Observatory (LIGO) and VIRGO observatories have a peak
+L48@P0: sensitivities around 100Hz [22], making them ideal for
+L49@P0: detecting processes from ρ
+L50@P0: 1/4
+L51@P0: ∗ ∼ 108 GeV for ζ = 100
+L52@P0: and ρ
+L53@P0: 1/4
+L54@P0: ∗ ∼ 1010 GeV for ζ = 0, which could be associated with models of particle physics beyond the standard model. On the other hand, the hope for a spacebased observatory, the Laser Interferometer Space Antenna (LISA) or its exciting alternative, eLISA [23], has
+L55@P0: a peak frequency of 10−3 − 10−2 Hz which would correspond to a range from ρ
+L56@P0: 1/4 ∼ 103 GeV (for f∗ = 10−3 and
+L57@P0: ζ = 100) to ρ
+L58@P0: 1/4 ∼ 106 GeV (for f∗ = 10−2 and ζ = 1).
+L59@P0: These frequencies could probe signals produced during an
+L60@P0: electroweak phase transition. The standard model electroweak phase transition is second-order [24, 25], however
+L61@P0: there is some hope that extensions to the standard model
+L62@P0: would make the electroweak phase transitions first-order
+L63@P0: [26, 30–42]–although the possibility seems less likely as
+L64@P0: we learn more about the parameters of the electroweak
+L65@P0: sector [27, 28].
+L66@P0: Here we work in a more general framework. The existence of phase transitions in standard model particle
+L67@P0: physics, as well as the knowledge that descriptions of
+L68@P0: particle physics beyond the standard model will likely
+L69@P0: include phase transitions, gives rise to the possibility of
+L70@P0: new phase transitions with descriptions that are firstorder. Since these transitions are most likely at scales beyond which accelerator experiments can probe, observing
+L71@P0: the ambient gravitational radiation emitted from these
+L72@P0: phase transitions is a viable candidate for direct detection of this physics. Our focus will be independent of an
+L73@P0: energy-scale, and relevant to a cosmological first-order
+L74@P0: phase transition in which an order parameter is coupled
+L75@P0: to an ambient, radiation-dominated Universe.
+L76@P0: We work with a model very similar to the the cosmicfluid-order-parameter-field model [43–45], in which a relativistic (perfect) fluid with velocity U
+L77@P0: µ and density ρ
+L78@P0: is coupled to a scalar field φ. The field is subject to
+L79@P0: a canonical kinetic term and a fourth order polynomial
+L80@P0: potential
+L81@P0: V (φ) = m2
+L82@P0: 2
+L83@P0: φ
+L84@P0: 2 + ηφ3 +
+L85@P0: λ
+L86@P0: 8
+L87@P0: φ
+L88@P0: 4
+L89@P0: (2)
+L90@P0: with two minima. To eliminate the need to set the overall
+L91@P0-1: scale of the phase transition, we work in a dimensionless2
+L92@P1: set of variables, [46, 47]
+L93@P1: α =
+L94@P1: λm2
+L95@P1: 4η
+L96@P1: 2
+L97@P1: , ψ =
+L98@P1: m2
+L99@P1: 2η
+L100@P1: φ, x¯ = mx, (3)
+L101@P1: along with a dimensionless derivative, ∂¯ = ∂/m. Using
+L102@P1: these, the potential can be parameterized as
+L103@P1: V¯ (ψ) = 1
+L104@P1: 2
+L105@P1: ψ
+L106@P1: 2 +
+L107@P1: 1
+L108@P1: 2
+L109@P1: ψ
+L110@P1: 3 +
+L111@P1: α
+L112@P1: 8
+L113@P1: ψ
+L114@P1: 4
+L115@P1: , (4)
+L116@P1: in which α is the only remaining parameter. There are
+L117@P1: two realizations of this potential that are of particular
+L118@P1: interest. The α → 1 limit is the “thin-wall” limit, where
+L119@P1: the difference in energy between the true and false vacuum is small, and nucleated bubbles have a radius much
+L120@P1: larger that the thickness of the bubble walls [48, 49]. This
+L121@P1: limit is analytically tractable, and so is commonly explored in literature related to false vacuum decay. Away
+L122@P1: from this limit, 0 < α < 1, the difference in energy between the two minima can be large, and the bubble wall
+L123@P1: thickness is no longer small compared to the bubble radius.
+L124@P1: Inspired by [43–45], we write the action for a relativistic fluid and field,
+L125@P1: S =
+L126@P1: 
+L127@P1: m2
+L128@P1: 4η
+L129@P1: 2
+L130@P1:  Z
+L131@P1: d
+L132@P1: 4x¯
+L133@P1: √
+L134@P1: −g¯
+L135@P1: 
+L136@P1: R¯
+L137@P1: 2¯κ
+L138@P1: + L¯
+L139@P1: fluid + L¯φ
+L140@P1: 
+L141@P1: , (5)
+L142@P1: with the fluid Lagrangian
+L143@P1: L¯
+L144@P1: fluid = ¯p =
+L145@P1: 4η
+L146@P1: 2
+L147@P1: m6
+L148@P1: p (6)
+L149@P1: and the field Lagrangian
+L150@P1: L¯
+L151@P1: φ = −
+L152@P1: 1
+L153@P1: 2
+L154@P1: ∂¯µψ∂¯
+L155@P1: µψ − V¯ (ψ). (7)
+L156@P1: The gravitational piece of the action can also be written
+L157@P1: in a dimensionless way,
+L158@P1: R¯ =
+L159@P1: R
+L160@P1: m2
+L161@P1: , (8)
+L162@P1: where
+L163@P1: κ¯ =
+L164@P1: m4
+L165@P1: 4η
+L166@P1: 2
+L167@P1: κ. (9)
+L168@P1: As in [50], we can start to construct equations of motion
+L169@P1: for the fluid using the stress-energy tensor for the fluid,
+L170@P1: T¯µν
+L171@P1: fluid = (¯ǫ + ¯p)U
+L172@P1: µUν + ¯pg¯µν
+L173@P1: . (10)
+L174@P1: In the absence of a coupling to other constituents, T¯µν
+L175@P1: fluid
+L176@P1: is conserved,
+L177@P1: D¯
+L178@P1: µT¯µν
+L179@P1: fluid = 0, (11)
+L180@P1: a statement from which one can extract equations of motion for the fluid. The field has an analogous set of equations, with
+L181@P1: T¯µν
+L182@P1: ψ = ∂¯µψ∂¯νψ − g¯
+L183@P1: µν 
+L184@P1: 1
+L185@P1: 2
+L186@P1: ∂¯
+L187@P1: αψ∂¯αψ + V¯ (ψ)
+L188@P1: 
+L189@P1: , (12)
+L190@P1: so that
+L191@P1: D¯
+L192@P1: µT¯µν
+L193@P1: φ = 0. (13)
+L194@P1: In this model, the two are coupled using a phenomenological diffusive term,
+L195@P1: j
+L196@P1: ν = ξUµ
+L197@P1: ∂¯
+L198@P1: µψ∂¯νψ, (14)
+L199@P1: which we add to Eq. 13 and subtract from Eq. 11 so that
+L200@P1: total stress-energy remains conserved [43, 44].
+L201@P1: Given an equation of state for the fluid, ¯p = wǫ¯, we
+L202@P1: can write the equations of motion for the field,
+L203@P1: ¯ψ =
+L204@P1: ∂V¯
+L205@P1: ∂ψ + ξUµ
+L206@P1: ∂¯
+L207@P1: µψ, (15)
+L208@P1: and for the fluid,
+L209@P1: ¯∂tU
+L210@P1: i =
+L211@P1: wUtU
+L212@P1: i
+L213@P1: (1 + (1 − w)UkUk)
+L214@P1: ×
+L215@P1: 
+L216@P1: ∂¯
+L217@P1: kU
+L218@P1: k −
+L219@P1: Uj
+L220@P1: (Ut)
+L221@P1: 2
+L222@P1: 
+L223@P1: U
+L224@P1: k
+L225@P1: ∂¯
+L226@P1: kU
+L227@P1: j +
+L228@P1: w
+L229@P1: 1 + w
+L230@P1: ∂¯jln (¯ǫ)
+L231@P1: !
+L232@P1: −
+L233@P1: 1
+L234@P1: Ut
+L235@P1: 
+L236@P1: U
+L237@P1: k ¯∂kUi +
+L238@P1: w
+L239@P1: 1 + w
+L240@P1: ¯∂
+L241@P1: i
+L242@P1: ln (¯ǫ)
+L243@P1: 
+L244@P1: + J
+L245@P1: i
+L246@P1: (16)
+L247@P1: and 1
+L248@P1: ¯∂t ln (¯ǫ) = −
+L249@P1: (1 + w)U
+L250@P1: t
+L251@P1: (1 + (1 − w)UkUk)
+L252@P1: ×
+L253@P1: 
+L254@P1: 1 − w
+L255@P1: 1 + w
+L256@P1: U
+L257@P1: i ¯∂i
+L258@P1: ln (¯ǫ) + ¯∂iU
+L259@P1: i −
+L260@P1: UjU
+L261@P1: k
+L262@P1: (Ut)
+L263@P1: 2
+L264@P1: ¯∂kU
+L265@P1: j
+L266@P1: !
+L267@P1: − (1 + w)
+L268@P1: U
+L269@P1: iJi
+L270@P1: (Ut)
+L271@P1: 2 −
+L272@P1: 1
+L273@P1: Ut
+L274@P1: U
+L275@P1: µ
+L276@P1: jµ
+L277@P1: e
+L278@P1: ln(¯ǫ)
+L279@P1: (17)
+L280@P1: where
+L281@P1: J
+L282@P1: i =
+L283@P1: 1
+L284@P1: e
+L285@P1: ln(¯ǫ)Ut
+L286@P1: 
+L287@P1: δ
+L288@P1: i
+L289@P1: j +
+L290@P1: w
+L291@P1: (1 + (1 − w)UkUk)
+L292@P1: U
+L293@P1: iUj
+L294@P1: 
+L295@P1: ×
+L296@P1: 
+L297@P1: j
+L298@P1: j
+L299@P1: 1 + w
+L300@P1: + U
+L301@P1: jUµ
+L302@P1: jµ
+L303@P1: 
+L304@P1: .
+L305@P1: (18)
+L306@P1: The phenomenological coupling j
+L307@P1: µ between the fluid and
+L308@P1: field allows the latent heat energy of the field to be converted into bulk motions of the fluid. Such a term term
+L309@P1: is diffusive in nature, so a stronger coupling constant ξ
+L310@P1: deposits more energy (and entropy) into the fluid and, at
+L311@P1: the same time, slows down the bubble walls [43, 47, 51]
+L312@P1: (See [47] for more details of this computational model.)
+L313@P1: We take w = 1/3 for the entirety of this work.
+L314@P1-2: 1 We correct a sign error that appears in Eq. 24 of [47].3
+L315@P2: We do want to point out that there is an instability
+L316@P2: in this model; since the phenomenological j
+L317@P2: µ enters into
+L318@P2: the equations of motion as a derivative coupling, it is
+L319@P2: possible for a phase transition with large field gradients
+L320@P2: and fluid velocities to enter a regime in which modes can
+L321@P2: grow exponentially. The time component of the coupling
+L322@P2: is always a “normal looking” friction term, ξU0∂0ψ, but
+L323@P2: the spatial term, ξUi∂iψ¯, can dominate the dynamics,
+L324@P2: and can do so with the “wrong” sign. In practice we see
+L325@P2: this occur for large values of ξ and large field gradients,
+L326@P2: but the simulations break down when they enter these
+L327@P2: regimes. In this work we will focus only on those regions
+L328@P2: of parameter space in which our model is stable.
+L329@P2: In recent years there has been great progress toward
+L330@P2: fully understanding first-order phase transitions in the
+L331@P2: presence of a fluid. Analytic work sets up the expectation
+L332@P2: that bubble wall velocities are affected by fluids [43–45],
+L333@P2: and analytic and numerical work sets some expectations
+L334@P2: for the wall velocity [52–55].
+L335@P2: This has culminated recently in a high-resolution numerical study [45], in which the authors calculate the
+L336@P2: gravitational radiation for a specific first-order phase
+L337@P2: transition and carefully study the relative contributions
+L338@P2: of the fluid and field source. In this work we extend
+L339@P2: this analysis to a wider range of scenarios; looking at
+L340@P2: transitions over a wide range of parameters. We also set
+L341@P2: expectations for the amplitude of the gravitational wave
+L342@P2: signal that can be used by the observational community.
+L343@P2: In Section II, we first review and apply a particular
+L344@P2: model of bubble nucleation in a first-order phase transition. We then review the formalism behind gravitational
+L345@P2: wave generation in Section III. Finally, in Section IV, we
+L346@P2: describe the numerical procedure we use for calculating
+L347@P2: the gravitational wave spectrum and present our results
+L348@P2: in Section V.
+L349@P2: A. Notation
+L350@P2: Since this work represents the convergence of independent lines of investigation, our choice of notation represents a best-attempt to reconcile the choices made by
+L351@P2: previous authors. In this work we use α to refer only
+L352@P2: to the dimensionless parameter that appears in Eq. 4
+L353@P2: [46, 47]; a parameter that is absent in most other models. Due to the parameterization of our potential, we use
+L354@P2: β to represent the ratio of the energy in the scalar field
+L355@P2: to the energy in the fluid, ρφ/ρfl, where we approximate
+L356@P2: the total energy density, ρ = (1 − β)ρfl ≈ ρfl. This is
+L357@P2: consistent with [47] but inconsistent with the definition
+L358@P2: used in [53, 56] and others, where this ratio is called α.
+L359@P2: It is also related to the convention in [43–45] where this
+L360@P2: ratio is called αT = 4β, with the factor of 4 translates
+L361@P2: between the initial energy in the field andthe latent heat
+L362@P2: of the potential. This should also not be confused with
+L363@P2: the parameter β
+L364@P2: −1
+
+END_EXACT_BATCH_RETURN
+

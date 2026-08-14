@@ -1,0 +1,81 @@
+{
+  "checks": {
+    "NIV_eta_is_invariant_at_fixed_y": false,
+    "NIV_seed5_is_invariant_at_fixed_y": true,
+    "source84_declares_seed5_as_qnu": true
+  },
+  "mode_samples": {
+    "initial_adiabatic": {
+      "eta_difference": 1.1213252548714081e-14,
+      "fixed_y": 0.0002,
+      "k_values": [
+        0.05,
+        0.1
+      ],
+      "seed5_ratio_k2_over_k1": 1.0000022845754308,
+      "seed5_values": [
+        -4.3874443405692966e-13,
+        -4.3874543640168415e-13
+      ]
+    },
+    "initial_iso_CDM": {
+      "eta_difference": 2.799937000000001e-06,
+      "fixed_y": 0.0002,
+      "k_values": [
+        0.05,
+        0.1
+      ],
+      "seed5_ratio_k2_over_k1": 0.5,
+      "seed5_values": [
+        -7.466666666666665e-10,
+        -3.7333333333333323e-10
+      ]
+    },
+    "initial_iso_baryon": {
+      "eta_difference": 5.333213333333333e-07,
+      "fixed_y": 0.0002,
+      "k_values": [
+        0.05,
+        0.1
+      ],
+      "seed5_ratio_k2_over_k1": 0.5,
+      "seed5_values": [
+        -1.422222222222222e-10,
+        -7.11111111111111e-11
+      ]
+    },
+    "initial_iso_neutrino": {
+      "eta_difference": 0.0,
+      "fixed_y": 0.0002,
+      "k_values": [
+        0.05,
+        0.1
+      ],
+      "seed5_ratio_k2_over_k1": 1.0,
+      "seed5_values": [
+        6.666666666666667e-05,
+        6.666666666666667e-05
+      ]
+    },
+    "initial_iso_neutrino_vel": {
+      "eta_difference": 3.48138896861085e-11,
+      "fixed_y": 0.0002,
+      "k_values": [
+        0.05,
+        0.1
+      ],
+      "seed5_ratio_k2_over_k1": 1.0,
+      "seed5_values": [
+        0.999999989317269,
+        0.999999989317269
+      ]
+    }
+  },
+  "next_step": "treat seed84 velocity semantics as unresolved; obtain canonical same-convention seed or explicit conversion",
+  "runtime_limit_seconds": 5.0,
+  "runtime_seconds": 0.9060000000008586,
+  "scope": "semantic/unit consistency of seed84 only; no ODE, no claim about CAMB itself, no score, no G8",
+  "source84_sha256": "0f7e294b5385b2d7b29987bb952f9f46eba4981a206b94f4ef1aab334307538e",
+  "test": "KMPC-015 P5.3g3a script 84 velocity semantic audit",
+  "verdict": "REVIEW_BLOCKED_SEED84_VELOCITY_SEMANTICS_CONTRADICTION"
+}

@@ -1,0 +1,39 @@
+{
+  "checks": {
+    "constraint_00_reconstruction": true,
+    "constraint_0i_reconstruction": true,
+    "constraint_trace_reconstruction": true,
+    "constraint_traceless_reconstruction": true,
+    "energy_product_ledger_is_independent_not_tautological": true,
+    "full_momentum_species_content": true,
+    "momentum_has_Uc_Uf_Ub_Ugamma_Unu_Usteam": true,
+    "momentum_product_ledger_is_independent_not_tautological": true,
+    "paired_transfer_cancels": true,
+    "photon_baryon_slip_remains_explicit": false,
+    "uc_transfer_vanishes_gamma_zero": true,
+    "uf_transfer_vanishes_gamma_zero": true
+  },
+  "independent_ledgers": {
+    "energy_product_ledger": "3*D + D_x + 3*P + hx*(3*Xb + 3*Xc + 3*Xf*delta + 4*Xg + 4*Xn + 4*Xs)/6 + s2*(3*Ub*Xb + 3*Uc*Xc + 3*Uf*Xf*delta + 4*Ug*Xg + 4*Un*Xn + 4*Us*Xs)/3",
+    "momentum_product_ledger": "M_x - P + S - (hc - 4)*(3*Ub*Xb + 3*Uc*Xc + 3*Uf*Xf*delta + 4*Ug*Xg + 4*Un*Xn + 4*Us*Xs)/3"
+  },
+  "residuals": {
+    "constraint_00_reconstruction": "0",
+    "constraint_0i_reconstruction": "0",
+    "constraint_trace_reconstruction": "0",
+    "constraint_traceless_reconstruction": "0",
+    "energy_product_ledger": "3*D + D_x + 3*P + hx*(3*Xb + 3*Xc + 3*Xf*delta + 4*Xg + 4*Xn + 4*Xs)/6 + s2*(3*Ub*Xb + 3*Uc*Xc + 3*Uf*Xf*delta + 4*Ug*Xg + 4*Un*Xn + 4*Us*Xs)/3",
+    "full_momentum_species_content": "0",
+    "momentum_product_ledger": "M_x - P + S - (hc - 4)*(3*Ub*Xb + 3*Uc*Xc + 3*Uf*Xf*delta + 4*Ug*Xg + 4*Un*Xn + 4*Us*Xs)/3",
+    "paired_transfer_cancels": "0",
+    "photon_baryon_slip_remains_explicit": "Slip + Ub - Ug",
+    "uc_transfer_vanishes_gamma_zero": "0",
+    "uf_transfer_vanishes_gamma_zero": "0"
+  },
+  "runtime_limit_seconds": 5.0,
+  "runtime_seconds": 0.3279999999995198,
+  "scope": "symbolic reconstruction/ledger only; no ODE, no numerical constraint conservation, no score, no G8",
+  "state_basis": "separate U_c, U_b, U_f, U_gamma, U_nu, U_steam and explicit photon-baryon slip",
+  "test": "KMPC-004 P5.2 full species-first structural constraint ledger",
+  "verdict": "STOP_P5_2_STRUCTURAL_CONSTRAINT_LEDGER"
+}

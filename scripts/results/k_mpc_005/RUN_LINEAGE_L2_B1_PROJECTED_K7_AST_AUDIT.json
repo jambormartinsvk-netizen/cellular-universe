@@ -1,0 +1,127 @@
+{
+  "checks": {
+    "all_16_targets_parsed": true,
+    "all_rhs_definers_lack_Uc_as_expected": true,
+    "at_least_one_rhs_definer": true,
+    "known_fixed_K_background_definers_present": true
+  },
+  "runtime_limit_seconds": 5.0,
+  "runtime_seconds": 0.09400000000096043,
+  "scope": "source AST/text only; no imports, ODE, score, or file rewrite",
+  "targets": {
+    "179_script_A2_K4_C7_7c_K7c3_NID_deep_short_projected_ODE.py": {
+      "classification": "DEFINES_LIMITED_RHS",
+      "defines_physical_rhs": true,
+      "has_Uc_identifier": false,
+      "has_fixed_K_MPC_background_assignment": true,
+      "mentions_physical_rhs": true
+    },
+    "181_script_A2_K4_C7_7c_K7c3a_exact_linear_operator_profile.py": {
+      "classification": "CHECKER_OF_LIMITED_RHS",
+      "defines_physical_rhs": false,
+      "has_Uc_identifier": false,
+      "has_fixed_K_MPC_background_assignment": false,
+      "mentions_physical_rhs": true
+    },
+    "182_script_A2_K4_C7_7c_K7c3a1_normalized_basis_operator_profile.py": {
+      "classification": "CHECKER_OF_LIMITED_RHS",
+      "defines_physical_rhs": false,
+      "has_Uc_identifier": false,
+      "has_fixed_K_MPC_background_assignment": false,
+      "mentions_physical_rhs": true
+    },
+    "183_script_A2_K4_C7_7c_K7c3b_fixed_RK4_step_convergence.py": {
+      "classification": "CHECKER_OF_LIMITED_RHS",
+      "defines_physical_rhs": false,
+      "has_Uc_identifier": false,
+      "has_fixed_K_MPC_background_assignment": false,
+      "mentions_physical_rhs": true
+    },
+    "197_script_A2_K4_C7_7c_K7c_P1_clean_standalone_RK4.py": {
+      "classification": "DEFINES_LIMITED_RHS",
+      "defines_physical_rhs": true,
+      "has_Uc_identifier": false,
+      "has_fixed_K_MPC_background_assignment": true,
+      "mentions_physical_rhs": true
+    },
+    "203_script_A2_K4_C7_7c_K7c_P3b_zero_identity_RK4.py": {
+      "classification": "DEFINES_LIMITED_RHS",
+      "defines_physical_rhs": true,
+      "has_Uc_identifier": false,
+      "has_fixed_K_MPC_background_assignment": true,
+      "mentions_physical_rhs": true
+    },
+    "204_script_A2_K4_C7_7c_K7c_P3b_zero_identity_RK4_complete.py": {
+      "classification": "DEFINES_LIMITED_RHS",
+      "defines_physical_rhs": true,
+      "has_Uc_identifier": false,
+      "has_fixed_K_MPC_background_assignment": true,
+      "mentions_physical_rhs": true
+    },
+    "205_script_A2_K4_C7_7c_K7c_P3b_zero_identity_RK4_audited.py": {
+      "classification": "DEFINES_LIMITED_RHS",
+      "defines_physical_rhs": true,
+      "has_Uc_identifier": false,
+      "has_fixed_K_MPC_background_assignment": true,
+      "mentions_physical_rhs": true
+    },
+    "206_script_A2_K4_C7_7c_K7c_P3b_source_delta_audit.py": {
+      "classification": "CHECKER_OF_LIMITED_RHS",
+      "defines_physical_rhs": false,
+      "has_Uc_identifier": false,
+      "has_fixed_K_MPC_background_assignment": false,
+      "mentions_physical_rhs": true
+    },
+    "207_script_A2_K4_C7_7c_K7c_P3b_source_delta_audit_tuple_fixed.py": {
+      "classification": "CHECKER_OF_LIMITED_RHS",
+      "defines_physical_rhs": false,
+      "has_Uc_identifier": false,
+      "has_fixed_K_MPC_background_assignment": false,
+      "mentions_physical_rhs": true
+    },
+    "209_script_A2_K4_C7_7c_K7c_P4a_single_case_solver.py": {
+      "classification": "DEFINES_LIMITED_RHS",
+      "defines_physical_rhs": true,
+      "has_Uc_identifier": false,
+      "has_fixed_K_MPC_background_assignment": true,
+      "mentions_physical_rhs": true
+    },
+    "210_script_A2_K4_C7_7c_K7c_P4a_source_delta_audit.py": {
+      "classification": "CHECKER_OF_LIMITED_RHS",
+      "defines_physical_rhs": false,
+      "has_Uc_identifier": false,
+      "has_fixed_K_MPC_background_assignment": false,
+      "mentions_physical_rhs": true
+    },
+    "213_script_A2_K4_C7_7c_K7d_integrated_G4_G6_G7_runner.py": {
+      "classification": "DEFINES_LIMITED_RHS",
+      "defines_physical_rhs": true,
+      "has_Uc_identifier": false,
+      "has_fixed_K_MPC_background_assignment": true,
+      "mentions_physical_rhs": true
+    },
+    "214_script_A2_K4_C7_7c_K7d_integrated_preflight_and_source_audit.py": {
+      "classification": "CHECKER_OF_LIMITED_RHS",
+      "defines_physical_rhs": false,
+      "has_Uc_identifier": false,
+      "has_fixed_K_MPC_background_assignment": false,
+      "mentions_physical_rhs": true
+    },
+    "215_script_A2_K4_C7_7c_K7d_V1_offline_diagnostic_correction.py": {
+      "classification": "CHECKER_OF_LIMITED_RHS",
+      "defines_physical_rhs": false,
+      "has_Uc_identifier": false,
+      "has_fixed_K_MPC_background_assignment": false,
+      "mentions_physical_rhs": true
+    },
+    "216_script_A2_K4_C7_7c_K7d_V2_HP_parity_shear_correction.py": {
+      "classification": "CHECKER_OF_LIMITED_RHS",
+      "defines_physical_rhs": false,
+      "has_Uc_identifier": false,
+      "has_fixed_K_MPC_background_assignment": false,
+      "mentions_physical_rhs": true
+    }
+  },
+  "test": "LINEAGE-L2-B1 projected K7 AST/state audit",
+  "verdict": "PASS_L2_B1_PROJECTED_K7_CLASSIFIED"
+}

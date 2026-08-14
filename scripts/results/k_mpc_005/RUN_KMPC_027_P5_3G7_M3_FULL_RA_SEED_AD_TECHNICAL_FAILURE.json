@@ -1,0 +1,9 @@
+{
+  "error_message": "KMPC-027 AD internal deadline exceeded",
+  "error_type": "TimeoutError",
+  "phase": "AD",
+  "physics_verdict": "NONE_TECHNICAL_FAILURE",
+  "run_id": "KMPC-027",
+  "test": "KMPC-027 attempt-6 technical failure evidence",
+  "traceback": "Traceback (most recent call last):\n  File \"D:\\Teoria\\scripts\\271_script_KMPC_027_P5_3g7_m3_full_ra_seed_attempt6.py\", line 211, in main\n    payload = base.run_mode_shard(args.mode, args.max_runtime_seconds)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Teoria\\scripts\\baseScripts\\p5_general_synchronous\\full_ra_m3_seed.py\", line 1209, in run_mode_shard\n    result = _single_variant(mode, k_mpc, variant, standard, deadline)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Teoria\\scripts\\baseScripts\\p5_general_synchronous\\full_ra_m3_seed.py\", line 1018, in _single_variant\n    fractional_extended, extended_meta = _solve_m3(\n                                         ^^^^^^^^^^\n  File \"D:\\Teoria\\scripts\\baseScripts\\p5_general_synchronous\\full_ra_m3_seed.py\", line 712, in _solve_m3\n    holdout_matrix, holdout_constant = _affine_system(\n                                       ^^^^^^^^^^^^^^^\n  File \"D:\\Teoria\\scripts\\baseScripts\\p5_general_synchronous\\full_ra_m3_seed.py\", line 152, in _affine_system\n    deadline()\n  File \"D:\\Teoria\\scripts\\baseScripts\\p5_general_synchronous\\full_ra_m3_seed.py\", line 1182, in deadline\n    raise TimeoutError(f\"KMPC-027 {mode} internal deadline exceeded\")\nTimeoutError: KMPC-027 AD internal deadline exceeded\n"
+}

@@ -1,0 +1,25 @@
+{
+  "checks": {
+    "BR2_defines_U_nu_from_F1": true,
+    "BR2_defines_q_as_k_over_H0": true,
+    "CAMB_audit_defines_U_from_qnu": true,
+    "algebraic_bridge_residual_is_zero_after_F1_equals_qnu": true,
+    "seed84_declares_qnu_equals_4theta_over_3k": true,
+    "unique_bridge_solution_is_F1_equals_qnu": true
+  },
+  "equations": {
+    "U_BR2": "3*E*F1*a/(4*q)",
+    "U_CAMB_after_units": "3*E*a*qnu/(4*q)",
+    "difference_after_F1_equals_qnu": "0",
+    "difference_before_identification": "3*E*a*(F1 - qnu)/(4*q)",
+    "solution_of_equal_U": [
+      "qnu"
+    ]
+  },
+  "next_step": "derive the regular l=2 and l>=3 standard seed coefficients from the BR2 hierarchy",
+  "runtime_limit_seconds": 5.0,
+  "runtime_seconds": 0.04700000000048021,
+  "scope": "normalization bridge only; no l>=2 coefficient derivation, ODE, score, or G8",
+  "test": "KMPC-013 P5.3g2 BR2 F1/qnu formula-provenance bridge",
+  "verdict": "PASS_P5_3G2_F1_QNU_NORMALIZATION_BRIDGE"
+}

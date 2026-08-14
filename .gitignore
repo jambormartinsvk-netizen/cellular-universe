@@ -1,0 +1,25 @@
+# Local dependency/runtime caches — never source evidence
+.deps/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Temporary workspace output
+tmp/
+temp/
+*.tmp
+
+# IDE/build output
+.vs/
+.vscode/
+**/bin/
+**/obj/
+*.user
+*.suo
+
+# External solver checkout is pinned separately before becoming a submodule
+external/CLASS/

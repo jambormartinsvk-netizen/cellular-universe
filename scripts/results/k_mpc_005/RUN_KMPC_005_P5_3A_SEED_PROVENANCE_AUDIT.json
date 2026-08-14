@@ -1,0 +1,47 @@
+{
+  "checks": {
+    "84_declares_gamma_zero_seed_scope": true,
+    "86_fixed_metric_scope_declared": true,
+    "86_test_field_starts_new_dark_variables_at_zero": true,
+    "89_does_not_assign_DF_for_standard_modes": true,
+    "89_does_not_assign_UC_for_standard_modes": true,
+    "89_does_not_assign_UF_for_standard_modes": true,
+    "89_imports_standard_class_seed": true,
+    "89_initializes_zero_vector": true,
+    "90_does_not_assign_DF_for_standard_modes": true,
+    "90_does_not_assign_UC_for_standard_modes": true,
+    "90_does_not_assign_UF_for_standard_modes": true,
+    "90_imports_standard_class_seed": true,
+    "90_initializes_zero_vector": true
+  },
+  "findings": {
+    "84": {
+      "declares_gamma_zero_seed_scope": true
+    },
+    "86": {
+      "fixed_metric_scope_declared": true,
+      "test_field_starts_new_dark_variables_at_zero": true
+    },
+    "89": {
+      "does_not_assign_DF_for_standard_modes": true,
+      "does_not_assign_UC_for_standard_modes": true,
+      "does_not_assign_UF_for_standard_modes": true,
+      "imports_standard_class_seed": true,
+      "initializes_zero_vector": true
+    },
+    "90": {
+      "does_not_assign_DF_for_standard_modes": true,
+      "does_not_assign_UC_for_standard_modes": true,
+      "does_not_assign_UF_for_standard_modes": true,
+      "imports_standard_class_seed": true,
+      "initializes_zero_vector": true
+    }
+  },
+  "next_step": "derive exact-A1 Puiseux/Frobenius coefficients before P5.4",
+  "physical_verdict": "P5.3_SEED_REGULARITY_UNCLOSED_STANDARD_GAMMA0_EXTENSION_IDENTIFIED",
+  "runtime_limit_seconds": 5.0,
+  "runtime_seconds": 0.031000000000858563,
+  "scope": "source provenance only; no ODE, no regularity proof, no score",
+  "test": "KMPC-005 P5.3a full-seed provenance audit",
+  "verdict": "PASS_P5_3A_PROVENANCE_GAP_MAPPED"
+}

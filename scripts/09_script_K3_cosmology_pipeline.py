@@ -116,7 +116,7 @@ def run(label, lam, delta, dNeff, lcdm_D=None, lcdm_h=None):
         s8=0.811*D/lcdm_D
         S8=s8*np.sqrt(Om_m0/0.3)
         out["sigma8"]=round(s8,4); out["S8"]=round(S8,4)
-        chi2=((w0+0.75)/0.06)**2+((wa+0.86)/0.25)**2+((S8-0.759)/0.024)**2
+        chi2=((w0+0.75)/0.06)**2+((wa+0.86)/0.25)**2+((S8-0.815)/0.019)**2   # KiDS-Legacy 2025 S8 anchor
         out["chi2_3front"]=round(chi2,1)
     print(json.dumps(out)); return h,Om_m0,D
 
@@ -126,9 +126,9 @@ h_l,Om_l,D_l=run("LCDM_validacia",0.0,0.0,0.0)
 w0l,wal,S8l=-1.0,0.0,None
 # growth ref done inside; compute its S8/chi2:
 s8_l=0.811; S8_l=0.811*np.sqrt(Om_l/0.3)
-chi2_l=((-1+0.75)/0.06)**2+((0+0.86)/0.25)**2+((S8_l-0.759)/0.024)**2
+chi2_l=((-1+0.75)/0.06)**2+((0+0.86)/0.25)**2+((S8_l-0.815)/0.019)**2   # KiDS-Legacy 2025 S8 anchor
 print(json.dumps({"label":"LCDM_score","S8":round(S8_l,4),"chi2_3front":round(chi2_l,1)}))
-# 2) model bez pary
-run("model_bez_pary",0.15,0.03,0.0,lcdm_D=D_l)
-# 3) model s parou
-run("model_s_parou",0.15,0.03,0.0535,lcdm_D=D_l)
+# 2) model bez pary (derived delta: 1/(15.54+28))
+run("model_bez_pary",0.15,0.02297,0.0,lcdm_D=D_l)
+# 3) model s parou (derived delta: 1/(15.54+28))
+run("model_s_parou",0.15,0.02297,0.0535,lcdm_D=D_l)

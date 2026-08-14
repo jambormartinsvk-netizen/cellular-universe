@@ -1,0 +1,28 @@
+{
+  "test": "Q22a-K3 minimal parallel-branching algebra audit",
+  "status": "PASS_ALGEBRA_REVIEW_BLOCKED",
+  "physical_verdict": "REVIEW_BLOCKED_UNDERIVED_BRANCH_RATIO_B",
+  "scope": "exact conservation and null-limit structure; no assertion that b is physically derived",
+  "equations": {
+    "Q_F": "-Gamma*rho_F",
+    "Q_C": "Gamma*b*rho_F",
+    "Q_R": "Gamma*rho_F*(1 - b)",
+    "Q_total": "0"
+  },
+  "branch_sensitivity": {
+    "dQF_db": "0",
+    "dQC_db": "Gamma*rho_F",
+    "dQR_db": "-Gamma*rho_F",
+    "dQtotal_db": "0"
+  },
+  "checks": {
+    "exact_total_source_conservation": true,
+    "b_equals_one_exactly_reduces_to_K1": true,
+    "b_equals_zero_exactly_reduces_to_K2": true,
+    "conservation_does_not_fix_b": true
+  },
+  "limits": {
+    "internal_seconds": 5.0,
+    "elapsed_seconds": 0.1720000000022992
+  }
+}

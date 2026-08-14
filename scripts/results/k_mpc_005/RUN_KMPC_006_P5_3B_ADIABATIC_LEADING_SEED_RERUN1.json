@@ -1,0 +1,34 @@
+{
+  "checks": {
+    "df_regular_as_a_to_zero": true,
+    "fuel_continuity_leading": true,
+    "fuel_density_to_velocity_relation": true,
+    "fuel_euler_leading": true,
+    "uc_energy_frame_forced_leading": true,
+    "uc_power_is_higher_than_adiabatic_metric_power_at_frozen_A1_delta": true,
+    "uc_vanishes_gamma_zero": true,
+    "uf_regular_as_a_to_zero": true
+  },
+  "leading_coefficients": {
+    "A": "-1/(52 - 24*delta)",
+    "df": "-H*a**2*delta/(52 - 24*delta)",
+    "uc": "-H*a**(10 - 6*delta)*delta*gamma2*r0**2/((12 - 6*delta)*(52 - 24*delta))",
+    "uc_coefficient": "-H*delta*gamma2*r0**2/((12 - 6*delta)*(52 - 24*delta))",
+    "uc_power": "10 - 6*delta",
+    "uf": "-H*a**2/(52 - 24*delta)"
+  },
+  "residuals": {
+    "df_regular_as_a_to_zero": "0",
+    "fuel_continuity_leading": "0",
+    "fuel_density_to_velocity_relation": "0",
+    "fuel_euler_leading": "0",
+    "uc_energy_frame_forced_leading": "0",
+    "uc_vanishes_gamma_zero": "0",
+    "uf_regular_as_a_to_zero": "0"
+  },
+  "runtime_limit_seconds": 5.0,
+  "runtime_seconds": 0.26600000000144064,
+  "scope": "leading adiabatic Puiseux terms only; no isocurvature, higher orders, gauge proof, ODE, score, or G8",
+  "test": "KMPC-006 P5.3b leading radiation-era adiabatic seed ledger",
+  "verdict": "PASS_P5_3B_ADIABATIC_LEADING_SEED"
+}

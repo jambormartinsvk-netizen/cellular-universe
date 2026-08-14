@@ -1,0 +1,47 @@
+{
+  "all_comparisons_pass": true,
+  "comparison_checks": {
+    "DOP853_MEDIUM_vs_DOP853_TIGHT_le_1e-8": true,
+    "DOP853_TIGHT_vs_P3b_RK4_grid400_le_1e-8": true,
+    "RADAU_TIGHT_vs_DOP853_TIGHT_le_1e-8": true,
+    "RADAU_TIGHT_vs_P3b_RK4_grid400_le_1e-8": true,
+    "reference_vectors_bitwise_identical": true
+  },
+  "comparisons": {
+    "DOP853_MEDIUM_vs_DOP853_TIGHT": 1.7526952111879268e-13,
+    "DOP853_TIGHT_vs_P3b_RK4_grid400": 1.1102230246251565e-14,
+    "RADAU_TIGHT_vs_DOP853_TIGHT": 2.327998904760875e-15,
+    "RADAU_TIGHT_vs_P3b_RK4_grid400": 1.1213252548714081e-14
+  },
+  "execution_verdict": "PASS_P4A_G5_METHOD_TOLERANCE_BREADTH",
+  "fine_depth_before": "66.5/100",
+  "input_cases_executed_physics": true,
+  "input_files": {
+    "DOP853_MEDIUM": "D:\\Teoria\\Audit\\A2_K4_K7C_P4A_DOP853_MEDIUM_RAW_2026-07-15.json",
+    "DOP853_TIGHT": "D:\\Teoria\\Audit\\A2_K4_K7C_P4A_DOP853_TIGHT_RAW_2026-07-15.json",
+    "RADAU_TIGHT": "D:\\Teoria\\Audit\\A2_K4_K7C_P4A_RADAU_TIGHT_RAW_2026-07-15.json"
+  },
+  "input_sha256": {
+    "DOP853_MEDIUM": "3783E132EF8E1ED01C0268D5D2DA6CB50A7234BBAA03D26E4C19479B25547FA1",
+    "DOP853_TIGHT": "DEBD9B55D8712D70EFD54CFADB62D6A7F95934F03DD55715507B46A5ED7EA025",
+    "RADAU_TIGHT": "2B4F3B2DCC0F06609E8CD305E5D1DFD6D04AEF0F13D9866C26400CFFEF4C2C1A"
+  },
+  "physical_verdict": "PASS: step, tolerance, and method convergence all closed",
+  "physics_executed_by_aggregate": false,
+  "runtime_limit_seconds": 5.0,
+  "runtime_seconds": 0.030999999999039574,
+  "scope_limit": "P4a NID/deep 0.25-e-fold G5 method/tolerance only; no G4/G6/G7, full hierarchy, CMB, S8, H0, or likelihood claim",
+  "score_effect": "C7-G5 full PASS; strict support 40->60/100",
+  "structural_checks": {
+    "all_base205_hashes_exact": true,
+    "all_case_execution_verdicts_pass": true,
+    "all_case_structural_pass": true,
+    "all_physics_executed": true,
+    "all_reference_hashes_exact": true,
+    "all_runner209_hashes_exact": true,
+    "all_state_names_exact_order": true
+  },
+  "structural_pass": true,
+  "test": "SCI-A2K4-C7G5-K7C-P4A-METHOD-TOLERANCE",
+  "threshold": 1e-08
+}

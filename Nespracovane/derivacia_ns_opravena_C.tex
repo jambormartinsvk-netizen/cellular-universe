@@ -1,0 +1,164 @@
+% ============================================================
+% OPRAVENÁ SEKCIA: Fyzikálne odvodenie n_s  (krok C, 11.7.2026)
+% Zmeny oproti návrhu v1:
+%   (1) doplnený exponenciálny potenciál -> w = -1+delta je RIEŠENIE, nie požiadavka
+%   (2) škálovanie fluktuácií opravené na A13 krok 3 (amplitúda ~ sqrt(T), T ~ H)
+%       -- pôvodné škálovanie (Phi ~ T, T ~ sqrt(H)) ŠKRTNUTÉ: dáva T_f ~ 1e14 GeV
+%          a r ~ 2e-5, čo preráža registrovaný strop r < 1e-10 (pozri 6.6)
+%   (3) doplnený druhý rád: n_s - 1 = -eps/(1-eps)
+%   (4) doplnená veta o zanedbateľnosti kvantového kanála
+%   (5) záver preformulovaný poctivo (akcia kryje pozadie, nie spektrum)
+% ============================================================
+
+\section{Fyzikálne odvodenie spektrálneho indexu $n_s$}
+
+V tejto sekcii ukážeme, že vzťah
+\[
+n_s - 1 = -\tfrac{3}{2}\,\delta
+\]
+plynie z (i) kovariantného efektívneho popisu éry paliva škálovacím
+riešením exponenciálneho potenciálu a (ii) termálnych holografických
+fluktuácií nasýtenej V-vrstvy, ktorých plošná kapacita je v modeli
+meraná (VCM: plošný zákon $p = 1.97$). Poctivo vyznačíme, ktorý krok
+je odvodený, ktorý meraný a ktorý ostáva predpokladom mechanizmu.
+
+\subsection{Efektívne pole paliva: exponenciálny potenciál}
+
+Zložku paliva opisujeme na kozmologických škálach skalárnym poľom
+\[
+S \;=\; \int d^4x\,\sqrt{-g}\left[\tfrac{1}{2}\,
+\partial_\mu\phi\,\partial^\mu\phi \;-\; U(\phi)\right],
+\qquad
+U(\phi) \;=\; U_0\,\exp\!\Big(-\sqrt{3\delta}\,\frac{\phi}{M_P}\Big).
+\]
+Exponenciálny potenciál $U \propto e^{-\lambda\phi/M_P}$ má v poľom
+dominovanom FRW pozadí známe \emph{presné škálovacie riešenie}
+(atraktor) so stavovou rovnicou
+\[
+w \;=\; -1 + \frac{\lambda^2}{3},
+\]
+takže voľba $\lambda = \sqrt{3\delta}\approx 0.262$ dáva
+\[
+w \;=\; -1+\delta
+\]
+ako \emph{riešenie pohybových rovníc}, nie ako požiadavku vloženú
+rukou. Kinetická a potenciálová energia na atraktore spĺňajú
+$\dot\phi^{\,2} = \delta\,U/(1-\delta/2) \approx \delta\,U$.
+
+\emph{Poznámka k interpretácii:} $\phi$ je efektívny stupeň voľnosti
+hrubozrnného popisu siete (ako zvukové pole v hydrodynamike), nie nové
+fundamentálne pole; parameter $\delta = 1/(\langle k\rangle + C)$
+vstupuje z mikrodynamiky (réžia delenia, merania Q2/Q9) a táto sekcia
+jeho hodnotu neodvodzuje.
+
+\subsection{Pozadie: $\epsilon = \tfrac{3}{2}\delta$ presne a bez behu}
+
+FRW identita $\dot H = -\tfrac{3}{2}H^2(1+w)$ dáva
+\[
+\epsilon \;\equiv\; -\frac{\dot H}{H^2} \;=\; \tfrac{3}{2}(1+w)
+\;=\; \tfrac{3}{2}\,\delta \;=\; \frac{\lambda^2}{2},
+\]
+pričom na exponenciálnom atraktore je $\epsilon$ \emph{konštantné}.
+Éra paliva je teda kvázi-de Sitter s presne konštantným sklonom ---
+dôsledok: beh spektrálneho indexu je nulový,
+$\alpha_s \equiv dn_s/d\ln k = 0$ na tomto ráde
+(Planck: $\alpha_s = -0.0045 \pm 0.0067$ --- konzistentné; dodatočná
+lacná povrchová stopa).
+
+\subsection{Fluktuácie: nasýtený kanál, amplitúda $\propto \sqrt{T}$}
+
+Prahrudky nevznikajú z kvantových fluktuácií vákua, ale z termálnych
+fluktuácií nasýtenej V-vrstvy. Mechanizmus (A13, krok 3): energia
+v nasýtenom Hagedornovskom režime tvorí spoje, nehreje, a fluktuácia
+energie regiónu polomeru $R$ je súčtom cez $N$ povrchových stupňov
+voľnosti,
+\[
+\delta E \;\propto\; \sqrt{T\,E_P}\;\sqrt{N},
+\qquad
+N \;=\; \gamma'\Big(\frac{R}{l_P}\Big)^{2}
+\quad\text{(plošný zákon, meraný: } p=1.97\text{)},
+\]
+takže potenciál hrudky
+\[
+\Phi \;\sim\; \frac{\delta E}{R\,E_P}
+\;\propto\; \sqrt{\gamma'}\,\sqrt{\frac{T}{T_P}}
+\]
+\emph{nezávisí od $R$} --- škálová invariancia z geometrie (krok 1
+zostáva v platnosti). Spektrum zakrivenia:
+\[
+\mathcal{P}_{\mathcal{R}} \;\propto\; \Phi^2 \;\propto\; \frac{T}{T_P}.
+\]
+
+\textbf{Predpoklad mechanizmu (vyznačený):} pri výstupe módov
+$k = aH$ sleduje teplota vrstvy expanznú škálu, $T \propto H$
+(logaritmické sklony sa rovnajú: $d\ln T = d\ln H$ pozdĺž výstupu).
+Toto je jediný krok sekcie, ktorý nie je odvodený ani meraný ---
+ostáva registrovaný ako dorazenie Q11e. Z neho
+\[
+\mathcal{P}_{\mathcal{R}} \;\propto\; H .
+\]
+
+\subsection{Sklon: $n_s - 1 = -\dfrac{\epsilon}{1-\epsilon} \approx -\tfrac{3}{2}\delta$}
+
+Módy zamŕzajú pri $k = aH$, teda
+$d\ln k/dt = H(1-\epsilon)$ a
+$d\ln\mathcal{P}_{\mathcal{R}}/dt = \dot H/H = -\epsilon H$, takže
+\emph{presne}
+\[
+n_s - 1 \;=\; \frac{d\ln\mathcal{P}_{\mathcal{R}}}{d\ln k}
+\;=\; -\frac{\epsilon}{1-\epsilon}
+\;=\; -\epsilon - \epsilon^2 - \dots
+\]
+Na prvý rád $n_s - 1 = -\epsilon = -\tfrac{3}{2}\delta = -0.0345$,
+t.j. $n_s = 0.9656$. Druhý rád posúva $n_s \to 0.9643$
+(posun $-0.0012$, porovnateľný s deklarovanou neistotou
+$\pm 0.0016$); registrovaná hodnota v3.17 používa prvý rád a toto
+skrátenie sa týmto explicitne dokumentuje ako súčasť teoretickej
+neistoty. [Rozhodnutie o prípadnom verzálnom zavedení druhého rádu:
+krok E, mimo tejto sekcie.]
+
+\subsection{Konzistencia: $T_f$, tenzory a kvantový kanál}
+
+\emph{Normalizácia amplitúdy.} Z
+$A_s = \gamma'\,(T_f/T_P)\cdot\mathcal{O}(1) = 2.1\times 10^{-9}$
+plynie $T_f \sim A_s\,T_P/\gamma' \approx (2\text{--}7)\times 10^{9}$~GeV
+pre $\gamma' \sim 4$--$13$ --- v zhode s registrovaným oknom
+zamrznutia. Táto teplota kŕmi tenzorový odhad (A14):
+$\Delta_h^2 \approx 0.4\,H\,T$ dáva
+$r \approx 8\times10^{-22}$--$4\times10^{-20}$, konzistentne
+s registrovaným $r < 10^{-10}$.
+
+\emph{Kvantový kanál.} Zavedené pole $\phi$ má povinne aj kvantové
+vákuové fluktuácie so spektrom
+$\mathcal{P}_q \sim H^2/(8\pi^2\epsilon M_P^2)$. Pri
+$T_f \sim 5\times10^{9}$~GeV je $H \sim T_f^2/M_P$ a
+$\mathcal{P}_q \sim 10^{-38}$ --- dvadsaťdeväť rádov pod $A_s$;
+termálny kanál dominuje legálne a bez ladenia.
+
+\subsection{Súd alternatívneho škálovania (škrt s dôvodom)}
+
+Alternatívne čítanie $\Phi \propto T/T_P$ spolu s $T \propto \sqrt{H}$
+dáva rovnaké $\mathcal{P}_{\mathcal{R}} \propto H$, a teda rovnaké
+$n_s$ --- na sklone je od prijatého čítania nerozlíšiteľné. Rozlíši
+ich však normalizácia: $A_s$ v ňom vynúti
+$T_f = \sqrt{A_s}\,T_P/\sqrt{\gamma} \approx 5.6\times10^{14}$~GeV
+(pri $\gamma = \mathcal{O}(1)$), z čoho A14 dáva
+$r \approx 2\times10^{-5}$ --- v rozpore s registrovaným stropom
+$r < 10^{-10}$ o päť rádov. Záchrana by vyžadovala
+$\gamma \sim 10^{10}$, teda nový nevysvetlený veľký parameter.
+\textbf{Čítanie sa škrtá vlastným $r$}; do registra mŕtvych čítaní
+s týmto dôvodom.
+
+\subsection{Zhrnutie a poctivé hranice}
+
+Vzťah $n_s - 1 = -\tfrac{3}{2}\delta$ je dôsledkom:
+(i) exponenciálneho škálovacieho riešenia pre pozadie
+($\epsilon = \tfrac{3}{2}\delta$ presne, $\alpha_s = 0$),
+(ii) meraného plošného zákona kapacity (škálová invariancia),
+(iii) nasýteného kanála $\delta E \propto \sqrt{T E_P N}$
+a predpokladu $T \propto H$ pri výstupe módov (dorazenie Q11e).
+Akcia poskytuje kovariantný efektívny popis \emph{pozadia}; spektrum
+naďalej stojí na termálno-holografickom mechanizme s meranou
+kapacitou. Hodnota $\delta = 1/(\langle k\rangle + C)$ do tejto
+sekcie vstupuje z mikrodynamiky a jej pôvod táto sekcia nerieši.
+\end{document-fragment}

@@ -1,0 +1,150 @@
+# Q1R7-V2 — technický výsledok O2/O3 akvizície
+
+## 1. Identita a autorstvo
+
+```text
+TASK_ID: A2K4-B6B2-10-H-RDIV-C01-RW1-Q1R7-V2-ACQUISITION-RESULT-20260728-307
+ROUTE: A1_K1_A2_K4/P5.3/B6b-2.10/H_RDIV-MF1-v1/C01-RW1/Q1R7
+THEORY_AUTHOR: Martin Jambor
+PROCESS_RUNNER_AND_RESULT_AUTHOR: Codex /root
+DATE: 2026-07-28
+```
+
+## 2. Immutable vstupy a procesná proveniencia
+
+```text
+PREREG285_SHA256: EA055CE0555A35914A933870FF84D8DCF176FD25904834787A8C21269CD3F0A2
+AUDITED_RUNNER_SHA256: 8A3F3FDFEF527650541785BD1EA7767D129AB6E87B4E1ED55C401FF48C4C152F
+AUTHORIZATION_EVENT_LEDGER_SHA256: 0A2946D574F89D9E9AAA442A4831541985D05420EE61FC99A9D13B100543C695
+JOURNAL285C_SHA256: 4A8002A37131BE5A5981BAD90798FB0D7945ACBB59732BF66567DC05EA24DE7F
+PROCESS_STDOUT_SHA256: E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855
+PROCESS_STDERR_SHA256: 592F283D52BE116687E35C70973484A5604DE81322715E14008B85E5FF586AE5
+PROCESS_EXIT_MARKER_SHA256: 6B86B273FF34FCE19D6B804EFF5A3F5747ADA4EAA22F1D49C01E52DDB7875B4B
+PROCESS_EXIT_CODE: 1
+PYTHON_PROCESSES: 0
+```
+
+Runner bol spustený presne raz v režime `Acquire` s exact prereg, runner a
+authorization-ledger hashom. Pred spustením boli 285A/285B/285C/286 aj V2
+temp cesty neprítomné. O1 sa neopakovalo.
+
+## 3. Pozorovaný priebeh
+
+### O2 — Crossref, cumulative ordinal 2
+
+```text
+STEP: O2_CROSSREF
+UTC_START: 2026-07-28T12:17:30.9615104Z
+UTC_END: 2026-07-28T12:17:31.5859395Z
+HTTP_STATUS: 200
+BODY_BYTES: 636
+BODY_SHA256: A88DBC4877FAB415228D3BA6B98B20A3BF5E73D954E3FDFBE3B2163D4C4B2D5A
+TRANSPORT_ERROR: NONE
+```
+
+Proces po O2 prešiel do O3, takže jeho in-memory exactly-one Crossref
+precondition prešla. O2 body ani odvodený author/DOI binding však pre
+neskorší abort neboli publikované do commit receiptu. Hash a dĺžka v journale
+sú transportná proveniencia, nie znovupoužiteľný complete-source dôkaz.
+
+### O3 — arXiv exact-title query, cumulative ordinal 3
+
+```text
+STEP: O3_ARXIV_EXACT_TITLE_QUERY
+UTC_START: 2026-07-28T12:17:31.6832899Z
+UTC_END: 2026-07-28T12:18:01.7181155Z
+HTTP_STATUS: -1_NO_RESPONSE_HEADERS
+BODY_BYTES: 0
+BODY_SHA256: MISSING
+ERROR: Exception calling GetResult: The operation was canceled.
+CLASSIFICATION: O3_RESPONSE_HEADERS_30S_TIMEOUT_OR_CANCELLATION
+```
+
+Časový rozdiel približne 30.035 s a frozen `RESPONSE_HEADERS_TIMEOUT=30 s`
+lokalizujú incident na O3 response-header cancellation. Nejde o odpoveď
+arXiv s obsahom ani o fyzikálnu informáciu.
+
+Runner následne fail-closed zapísal:
+
+```text
+REQUEST_TECHNICAL_FAILURE:3
+PROCESS_ABORTED_TECHNICAL
+```
+
+V2 temp bol odstránený. 285A, 285B a oba temp commit súbory nevznikli;
+285C ostal immutable forenzný journal.
+
+## 4. Autoritatívne účtovanie kandidáta na audit
+
+```text
+Q1R7_V1_TRANSACTION: IMMUTABLE_TECHNICAL_FAILURE
+Q1R7_V2_TRANSACTION: IMMUTABLE_TECHNICAL_FAILURE_PENDING_AUDIT
+HISTORICAL_PACKAGES_TOTAL: 2
+CONSECUTIVE_TECHNICAL_FAILURES: 2/10
+CUMULATIVE_SOURCE_OPERATIONS: 3/6
+O1: CONSUMED_IN_V1_HTTP403_ADAPTER_FAILURE
+O2: CONSUMED_IN_V2_HTTP200_BODY636
+O3: CONSUMED_IN_V2_RESPONSE_HEADER_TIMEOUT_NO_BODY
+O4: NOT_CONSUMED_BLOCKED
+O5: NOT_CONSUMED_BLOCKED
+O6: NOT_CONSUMED_BLOCKED
+TECHNICAL_STOP: NOT_REACHED
+SOURCE_ACQUISITION_AUTHORIZED: false_AFTER_EXACT_ONE_INVOCATION
+RERUN_V2_EXACT_TRANSACTION: FORBIDDEN
+Q1R8_AUTHORIZED: false
+```
+
+O4–O6 nie sú týmto V2 abortom route-global retired. Zostávajú nespotrebované,
+ale nijaký successor ani zmena source capu nie sú týmto výsledkom povolené.
+O2 in-memory metadata sa nesmú rekonštruovať z domnienky ani považovať za
+published binding.
+
+## 5. S0–S13
+
+```text
+S0: NOT_ASSESSABLE_EVIDENCE_INCOMPLETE
+S1: NOT_ASSESSABLE_EVIDENCE_INCOMPLETE
+S2: NOT_ASSESSABLE_EVIDENCE_INCOMPLETE
+S3: NOT_ASSESSABLE_EVIDENCE_INCOMPLETE
+S4: NOT_ASSESSABLE_EVIDENCE_INCOMPLETE
+S5: NOT_ASSESSABLE_EVIDENCE_INCOMPLETE
+S6: NOT_ASSESSABLE_EVIDENCE_INCOMPLETE
+S7: NOT_ASSESSABLE_EVIDENCE_INCOMPLETE
+S8: NOT_ASSESSABLE_EVIDENCE_INCOMPLETE
+S9: NOT_ASSESSABLE_EVIDENCE_INCOMPLETE
+S10: NOT_ASSESSABLE_EVIDENCE_INCOMPLETE
+S11: NOT_ASSESSABLE_EVIDENCE_INCOMPLETE
+S12: NOT_ASSESSABLE_EVIDENCE_INCOMPLETE
+S13: FAIL_PROCESS_INTEGRITY_NO_COMMIT_RECEIPT_AFTER_O3_TIMEOUT
+```
+
+## 6. Výsledok a nonclaims
+
+```text
+OUTCOME: TECHNICAL_FAILURE_NO_PHYSICAL_INFERENCE
+SOURCE_UNIVERSE_COMPLETE: NOT_ESTABLISHED
+COMPLETE_W10: NOT_ASSESSED
+Q1R7_CANDIDATE_PHYSICS: NOT_ASSESSED
+P4_WORK_ATOMS: 3_UNCHANGED
+PHYSICAL_WITNESS_ATTEMPTS: 0_UNCHANGED
+K4: 60/100_UNCHANGED
+P5: 3.5/6_UNCHANGED
+RUN_AUTHORIZED: false
+P5_4_STATUS: NOT_OPENED_NOT_AUTHORIZED
+```
+
+Tento výsledok:
+
+- nepotvrdzuje ani nevyvracia fyziku Q1R7;
+- netvrdí, že arXiv query nemá zhodu; O3 neposkytlo odpoveď;
+- nepovoľuje opakovanie O2/O3, zvýšenie capu alebo nový query;
+- nemení rovnice, prahy, skóre, hĺbku ani A3;
+- nepovoľuje Python, P5.4, G8, G9, S8/H0 fit ani Q1R8.
+
+## 7. Handoff
+
+Najbližší krok je nezávislý read-only audit tohto výsledku proti frozen
+document285, runneru a journalu285C. Až následný progress review smie
+odporučiť, či existuje zákonný a informačne zmysluplný Q1R7 successor pri
+zostávajúcom cumulative source budgete `3/6`; tento dokument taký successor
+nevyberá ani neautorizuje.

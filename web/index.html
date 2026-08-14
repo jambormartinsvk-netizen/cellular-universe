@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bunkový Vesmír — Interaktívny Vzdelávací Portál</title>
+    <meta name="description" content="Interaktívny popularizačný a pokročilý sprievodca teóriou Bunkového vesmíru. Zoznámte sa s rovnicami, predikciami a simuláciami metabolizmu siete časopriestoru.">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts: Inter & Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="app-header">
+        <div class="logo-container">
+            <span class="logo-icon">🌐</span>
+            <div class="logo-text">
+                <h1>BUNKOVÝ VESMÍR</h1>
+                <p class="subtitle">Teória bunkového časopriestoru • Verzia v3.18</p>
+            </div>
+        </div>
+        <nav class="main-nav" id="main-nav">
+            <button class="nav-btn active" data-tab="tab-philosophy" id="btn-philosophy">Filozofia</button>
+            <button class="nav-btn" data-tab="tab-equations" id="btn-equations">Matematické Jadro</button>
+            <button class="nav-btn" data-tab="tab-predictions" id="btn-predictions">Predikcie a ΛCDM</button>
+            <button class="nav-btn" data-tab="tab-simulations" id="btn-simulations">Simulácie</button>
+            <button class="nav-btn" data-tab="tab-questions" id="btn-questions">Výskumný Program</button>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <!-- TAB 1: FILOZOFIA A METAFORY -->
+        <section id="tab-philosophy" class="tab-pane active">
+            <div class="section-hero">
+                <h2>Vesmír ako rastúce tkanivo</h2>
+                <p>Ucelený úvod do základných princípov a metafor teórie, prepájajúci diskrétnu geometriu s našou pozorovanou realitou.</p>
+            </div>
+
+            <div class="grid-2col">
+                <div class="card glass-panel">
+                    <h3>Päť pilierov metabolizmu priestoru</h3>
+                    <p>Priestor nie je prázdno, ale dynamická bunková sieť. Každá bunka priestoru funguje ako biologická bunka s vlastným metabolizmom:</p>
+                    <ul class="concept-list">
+                        <li><strong>1. Bunka vákua:</strong> Základná jednotka na Planckovej škále ($10^{-35}$ m). Má povrch (pozorovateľný vesmír) a vnútro (kvantové prepojenie).</li>
+                        <li><strong>2. Palivo (Vákuová potrava):</strong> Hustota energie vákua, ktorú bunky neustále absorbujú.</li>
+                        <li><strong>3. Delenie (Mitóza bunky):</strong> Keď bunka strávi dosť paliva, rozdelí sa. Delenie buniek priestoru je to, čo vnímame ako expanziu vesmíru.</li>
+                        <li><strong>4. Daň z delenia (Réžia δ):</strong> Prestavba väzieb pri delení stojí energiu (daň $\delta \approx 2.3\,\%$).</li>
+                        <li><strong>5. Účtovný tieň (Tmavá energia):</strong> Keďže predpokladáme stuhnuté množstvo hmoty, premena paliva na hmotu sa javí ako odpudivá tmavá energia.</li>
+                    </ul>
+                    <div class="internal-links">
+                        <h4>Referencie v teórii:</h4>
+                        <a href="file:///d:/Teoria/theory/SK/01_Introduction_and_Philosophy_SK.md#L8-L38" class="file-link">01_Philosophy: Postavy príbehu (Kap. 1-2)</a>
+                        <a href="file:///d:/Teoria/theory/SK/01_Introduction_and_Philosophy_SK.md#L39-L48" class="file-link">01_Philosophy: Tri záhady (Kap. 3)</a>
+                    </div>
+                </div>
+
+                <div class="card img-card glass-panel">
+                    <img src="images/cellular_network_concept.png" alt="Vizualizácia bunkovej siete časopriestoru" class="concept-img">
+                    <p class="img-caption">Umelecká vizualizácia Planckovej bunkovej siete. Uzly predstavujú bunky a čiary ich povrchové väzby tvoriace náhodnú Delaunayovu penu.</p>
+                </div>
+            </div>
+
+            <div class="card glass-panel margin-top">
+                <h3>Filozofický základ (Princípy F1–F5)</h3>
+                <div class="grid-3col">
+                    <div class="subcard">
+                        <h4>F1 & F2 — Realita a vnútro</h4>
+                        <p>Realita vzniká na povrchu bunky interakciou. Vnútra buniek nie sú priamo pozorovateľné, ale sú reálne — prenášajú kvantový entanglement.</p>
+                    </div>
+                    <div class="subcard">
+                        <h4>F3 & F4 — Meranie a účel</h4>
+                        <p>Meranie je nezvratná jazva v sieti. Vesmír nemá vopred daný účel, komplexnosť a život sú vedľajším produktom defektov (odpadu) pri raste.</p>
+                    </div>
+                    <div class="subcard">
+                        <h4>F5 — Žiadny obed zadarmo</h4>
+                        <p>Základný termodynamický princíp. Každá prestavba siete stojí disipáciu ($\delta > 0$), čo generuje tmavú energiu, nízke $H_0$ a sklon $n_s$.</p>
+                    </div>
+                </div>
+                <div class="internal-links">
+                    <h4>Referencie v teórii:</h4>
+                    <a href="file:///d:/Teoria/theory/SK/01_Introduction_and_Philosophy_SK.md#L55-L68" class="file-link">01_Philosophy: Filozofické princípy (Kap. 5)</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB 2: MATEMATICKÉ JADRO -->
+        <section id="tab-equations" class="tab-pane">
+            <div class="section-hero">
+                <h2>Matematická stavba modelu</h2>
+                <p>Od diskrétnej topológie náhodných grafov až po hydrodynamické transportné rovnice expanzie.</p>
+            </div>
+
+            <div class="grid-2col">
+                <div class="card glass-panel">
+                    <h3>Diskrétna mikrofyzika (Geometria a Disperzia)</h3>
+                    
+                    <div class="equation-box">
+                        <span class="eq-title">Priemerný stupeň susedstva:</span>
+                        <code class="math-eq">&lt;k&gt; = 48&pi;² / 35 + 2 &asymp; 15.54</code>
+                        <p class="eq-desc">Odvedené zo stereológie 3D Poisson-Delaunayovej triangulácie. Definuje priemerný počet povrchových stien bunky.</p>
+                        <a href="file:///d:/Teoria/theory/SK/04_Main_Document_Theory_Equations_Values_v3.17_SK.md#L30-L33" class="file-link">Ref: 04_Main_Document: Sekcia A1</a>
+                    </div>
+
+                    <div class="equation-box">
+                        <span class="eq-title">Réžia delenia (Daň):</span>
+                        <code class="math-eq">&delta; = 1 / (&lt;k&gt; + C) = 0.02297</code>
+                        <p class="eq-desc">Koeficient disipácie energie. Prestavba väzieb (povrchové susedstvo $\langle k\rangle$ + vnútorné prepojenia $C=28$) zožerie $2.3\,\%$ energie.</p>
+                        <a href="file:///d:/Teoria/theory/SK/04_Main_Document_Theory_Equations_Values_v3.17_SK.md#L34-L44" class="file-link">Ref: 04_Main_Document: Sekcia A2, A3</a>
+                    </div>
+
+                    <div class="equation-box">
+                        <span class="eq-title">Disperzný vzťah vĺn:</span>
+                        <code class="math-eq">&omega;²(k) = (2/N) &Sigma; [ 1 - cos(k &bull; &delta;_i) ]</code>
+                        <p class="eq-desc">Variačný odhad frekvencie vĺn na grafe. Nepárne disperzné členy sú zakázané symetriou parity, čo chráni Lorentzovu symetriu.</p>
+                        <a href="file:///d:/Teoria/theory/SK/04_Main_Document_Theory_Equations_Values_v3.17_SK.md#L49-L59" class="file-link">Ref: 04_Main_Document: Sekcia A5, A6</a>
+                    </div>
+                </div>
+
+                <div class="card img-card glass-panel">
+                    <img src="images/cell_division_expansion.png" alt="Delenie buniek a energetická réžia" class="concept-img">
+                    <p class="img-caption">Schéma delenia (mitózy) bunky priestoru. Červeno/oranžové toky predstavujú disipačnú réžiu $\delta$, ktorá vyteká pri tvorbe nových susedských hrán.</p>
+                </div>
+            </div>
+
+            <div class="card glass-panel margin-top">
+                <h3>Makroskopická kozmológia (Rovnice pozadia V1 a V2)</h3>
+                <div class="grid-2col">
+                    <div class="subcard">
+                        <h4>Rovnice kontinuity V1</h4>
+                        <p>Popisujú premenu paliva vákua na hmotu pri expanzii:</p>
+                        <code class="math-block">d&Omega;_f/dx = -3&delta;&Omega;_f - &lambda;(H_0/H)&Omega;_f</code>
+                        <code class="math-block">d&Omega;_m/dx = -3&Omega;_m + &lambda;(H_0/H)&Omega;_f</code>
+                        <p class="margin-top-small">Člen $\lambda(H_0/H)$ vyjadruje, že bunky trávia palivo podľa svojho lokálneho (Planckovho) času nezávisle od expanzie vesmíru.</p>
+                        <a href="file:///d:/Teoria/theory/SK/04_Main_Document_Theory_Equations_Values_v3.17_SK.md#L60-L69" class="file-link">Ref: 04_Main_Document: Sekcia A7</a>
+                    </div>
+                    <div class="subcard">
+                        <h4>Tvar účtovného tieňa V2</h4>
+                        <p>Efektívny tlak a hustota zdanlivej tmavej energie v prepočte ΛCDM fitera:</p>
+                        <code class="math-block">&rho;_DE,eff(x) = E² - &Omega;_m0 &bull; e^-3x - &Omega;_r0 &bull; e^-4x</code>
+                        <code class="math-block">w_eff = -1 - (1/3) d ln &rho;_DE,eff / dx</code>
+                        <p class="margin-top-small">Keďže fitter predpokladá konštantné množstvo hmoty, prírastok hmoty z V1 sa javí ako tieň $w_{\text{eff}} < -1$ v minulosti.</p>
+                        <a href="file:///d:/Teoria/theory/SK/04_Main_Document_Theory_Equations_Values_v3.17_SK.md#L70-L74" class="file-link">Ref: 04_Main_Document: Sekcia A8</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB 3: PREDIKCIE A ΛCDM -->
+        <section id="tab-predictions" class="tab-pane">
+            <div class="section-hero">
+                <h2>Predikcie a konfrontácia s ΛCDM</h2>
+                <p>Prehľad všetkých 11 registrovaných predikcií a detailné vysvetlenie fyzikálnych rozchodov so štandardným modelom kozmológie.</p>
+            </div>
+
+            <div class="grid-2col">
+                <div class="card glass-panel">
+                    <h3>Interaktívny prehľad predikcií</h3>
+                    <div class="prediction-table-container">
+                        <table class="pred-table">
+                            <thead>
+                                <tr>
+                                    <th>Veličina</th>
+                                    <th>Bunkový model</th>
+                                    <th>ΛCDM / Štandard</th>
+                                    <th>Rozhodne</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>N_eff</strong></td>
+                                    <td class="pred-val">3.09 – 3.10</td>
+                                    <td>3.045</td>
+                                    <td>CMB-S4 (~2029)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>n_s</strong></td>
+                                    <td class="pred-val">0.9656 ± 0.0016</td>
+                                    <td>fitovaný (0.965)</td>
+                                    <td>CMB-S4 (σ=0.002)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>r</strong></td>
+                                    <td class="pred-val">&lt; 10⁻¹⁰</td>
+                                    <td>r ~ 10⁻³ až 10⁻²</td>
+                                    <td>LiteBIRD (~2032+)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>H_0</strong></td>
+                                    <td class="pred-val">66.4 km/s/Mpc</td>
+                                    <td>~67.4 vs ~73</td>
+                                    <td>systematika rebríka</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>S_8</strong></td>
+                                    <td class="pred-val">0.811 (0.875 bez trenia)</td>
+                                    <td>KiDS: 0.815±0.019</td>
+                                    <td>Euclid (2026-30)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>w_0, w_a</strong></td>
+                                    <td class="pred-val">[-0.93, -0.5]</td>
+                                    <td>[-1.0, 0.0]</td>
+                                    <td>DESI finále (26-27)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="internal-links">
+                        <h4>Zdroje predikcií:</h4>
+                        <a href="file:///d:/Teoria/theory/SK/02b_Predictions_Table_v3.17_SK.pdf" class="file-link">02b_Predictions_Table: PDF verzia</a>
+                        <a href="file:///d:/Teoria/theory/SK/04_Main_Document_Theory_Equations_Values_v3.17_SK.md#L112-L132" class="file-link">04_Main_Document: Porovnávacia tabuľka javov</a>
+                    </div>
+                </div>
+
+                <div class="card img-card glass-panel">
+                    <img src="images/dark_energy_accounting_shadow.png" alt="Účtovný tieň tmavej energie" class="concept-img">
+                    <p class="img-caption">Vývoj tmavej energie. Žiariaca tieňová zložka (purpurová) ukazuje rozdiel medzi skutočnou metabolickou expanziou a fiktívnym chovaním Λ v ΛCDM.</p>
+                </div>
+            </div>
+
+            <div class="card glass-panel margin-top">
+                <h3>Interaktívny simulátor a kalkulátor predikcií</h3>
+                <p class="instructions">Zmeňte vlastnosti siete a sledujte, ako sa okamžite zmenia odvodené hodnoty spektrálneho indexu $n_s$ a disipačného faktora $\delta$:</p>
+                
+                <div class="grid-3col calculator-section">
+                    <div class="control-group">
+                        <label for="input-k">Priemerný vonkajší stupeň susedstva $\langle k\rangle$:</label>
+                        <input type="number" id="input-k" min="12" max="18" step="0.01" value="15.535">
+                        <span class="input-val-display" id="display-k">15.535</span>
+                    </div>
+
+                    <div class="control-group">
+                        <label for="input-c">Vnútorná kapacita $C$ (počet bozónov):</label>
+                        <input type="range" id="input-c" min="10" max="60" step="1" value="28">
+                        <span class="input-val-display" id="display-c">28</span>
+                    </div>
+
+                    <div class="results-panel">
+                        <div class="result-row">
+                            <span>Vypočítaná daň $\delta$:</span>
+                            <strong id="calc-delta">0.02297</strong>
+                        </div>
+                        <div class="result-row">
+                            <span>Slow-roll parameter $\epsilon$:</span>
+                            <strong id="calc-epsilon">0.03446</strong>
+                        </div>
+                        <div class="result-row">
+                            <span>Spektrálny index $n_s$ (1. rád):</span>
+                            <strong id="calc-ns1" class="neon-text">0.9655</strong>
+                        </div>
+                        <div class="result-row">
+                            <span>Spektrálny index $n_s$ (2. rád):</span>
+                            <strong id="calc-ns2">0.9643</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB 4: SIMULÁCIE -->
+        <section id="tab-simulations" class="tab-pane">
+            <div class="section-hero">
+                <h2>Interaktívne simulácie siete</h2>
+                <p>Spustite simulácie priamo v prehliadači a sledujte správanie vĺn a konvergenciu prepojení.</p>
+            </div>
+
+            <div class="grid-2col">
+                <!-- SIMULÁCIA 1: ZAOSŤROVANIE SVETELNÉHO KUŽEĽA -->
+                <div class="card glass-panel">
+                    <h3>Simulácia 1: BFS šírenie na náhodnom grafe</h3>
+                    <p class="instructions">Vizualizácia emergentného ostrého kužeľa rýchlosti svetla. Sledujte, ako sa sublineárny rast šírky frontu ($\sigma(R) \propto R^\chi$) stará o zaostrenie lúča.</p>
+                    
+                    <div class="canvas-container">
+                        <canvas id="canvas-bfs" width="500" height="300"></canvas>
+                    </div>
+                    
+                    <div class="controls-row">
+                        <button class="action-btn" id="btn-start-bfs">Spustiť signál</button>
+                        <button class="action-btn" id="btn-reset-bfs">Reset siete</button>
+                        <div class="sim-stats">
+                            <span>Tiky: <strong id="stats-bfs-t">0</strong></span>
+                            <span>Exponent $\chi$: <strong>0.32</strong></span>
+                        </div>
+                    </div>
+                    <div class="internal-links">
+                        <h4>Zdrojový skript:</h4>
+                        <a href="file:///d:/Teoria/scripts/06_script_Q14_light_cone_front_sharpening.py" class="file-link">06_script_Q14_light_cone_front_sharpening.py</a>
+                    </div>
+                </div>
+
+                <!-- SIMULÁCIA 2: DOWRY RULE (PRAVIDLO VENA) -->
+                <div class="card glass-panel">
+                    <h3>Simulácia 2: Konvergencia V-spojení (Pravidlo vena)</h3>
+                    <p class="instructions">Vizualizácia konvergencie vnútorných prepojení k stabilnému atraktoru $n_V = C = 28$ na základe monogamického pravidla polovičného vena.</p>
+                    
+                    <div class="canvas-container">
+                        <canvas id="canvas-dowry" width="500" height="300"></canvas>
+                    </div>
+
+                    <div class="controls-row">
+                        <button class="action-btn" id="btn-step-dowry">Urobiť krok delenia</button>
+                        <button class="action-btn" id="btn-auto-dowry">Automatický beh</button>
+                        <div class="sim-stats">
+                            <span>Generácia: <strong id="stats-dowry-g">0</strong></span>
+                            <span>Priemerné $n_V$: <strong id="stats-dowry-nv">0.0</strong></span>
+                        </div>
+                    </div>
+                    <div class="internal-links">
+                        <h4>Zdrojový skript:</h4>
+                        <a href="file:///d:/Teoria/scripts/10_script_Q10_Vlinks_dowry_rule.py" class="file-link">10_script_Q10_Vlinks_dowry_rule.py</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card glass-panel img-card margin-top">
+                <div class="grid-2col">
+                    <div>
+                        <h3>Kvantové previazanie cez V-spojenia</h3>
+                        <p>Tento diagram reprezentuje myšlienkovú líniu ER=EPR. Dve vzdialené makroskopické oblasti na povrchu siete zdieľajú prepojenie cez skryté vnútra buniek (červije diery na Planckovej škále).</p>
+                        <p>Pravidlo vena zaručuje, že prepojenie je v stave saturácie a plne rešpektuje no-communication vety kvantovej mechaniky.</p>
+                        <div class="internal-links">
+                            <h4>Filozofická a matematická obrana:</h4>
+                            <a href="file:///d:/Teoria/theory/SK/01_Introduction_and_Philosophy_SK.md#L49-L54" class="file-link">01_Philosophy: Druhá sieť (Kap. 4)</a>
+                            <a href="file:///d:/Teoria/theory/SK/04_Main_Document_Theory_Equations_Values_v3.17_SK.md#L106-L109" class="file-link">04_Main_Document: Pravidlo polovičného vena (A15)</a>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="images/quantum_entanglement_vlinks.png" alt="Červie diery a prepojenia V-links" class="concept-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB 5: VÝSKUMNÝ PROGRAM -->
+        <section id="tab-questions" class="tab-pane">
+            <div class="section-hero">
+                <h2>Aktuálny stav a výskumný program</h2>
+                <p>Evidencia stien, otvorených otázok a plánov teoretického rozvoja pre verziu v3.18.</p>
+            </div>
+
+            <div class="card glass-panel">
+                <h3>Otvorené výskumné otázky a steny</h3>
+                <div class="grid-3col">
+                    <div class="subcard border-priority">
+                        <span class="priority-tag high">Priorita: 3</span>
+                        <h4>Q11e: Odvodenie T ∝ H</h4>
+                        <p>Kľúčová jednobodová výzva. Teórii chýba detailné odvodenie rovnosti teplôt na horizonte zamrznutia z mikrodynamiky vnútornej vrstvy.</p>
+                    </div>
+                    <div class="subcard">
+                        <span class="priority-tag medium">Priorita: 2</span>
+                        <h4>Q16b: Božónové sýtenie</h4>
+                        <p>Nájsť dynamický dôvod, prečo vnútornú kapacitu sýtia bozónové nosiče a ignoruje sa fermiónový náklad.</p>
+                    </div>
+                    <div class="subcard border-wall">
+                        <span class="priority-tag wall">Stena</span>
+                        <h4>W5: Mikrofyzika nukleácie</h4>
+                        <p>Chýba lagranžovský popis vzniku konkrétnych kvantových čísel hmoty a stability protónu z defektov sieci pri delení.</p>
+                    </div>
+                </div>
+                <div class="internal-links">
+                    <h4>Register otázok a pravidiel:</h4>
+                    <a href="file:///d:/Teoria/theory/SK/05_Methodology_Rules_and_Question_Register_SK.md#L32-L51" class="file-link">05_Methodology: Register otázok Q1-Q16</a>
+                    <a href="file:///d:/Teoria/Questions/otazky_a_navrh_krokov_v3.18.md" class="file-link">otazky_a_navrh_krokov_v3.18.md (Otázky v3.18)</a>
+                </div>
+            </div>
+
+            <div class="card glass-panel margin-top">
+                <h3>Súd nad 20 mŕtvymi vetvami (Cintorín teórie)</h3>
+                <p>V súlade s metodickými pravidlami projektu sa neúspešné hypotézy nezmazávajú, ale registrujú do cintorína s presným dôvodom popravy:</p>
+                <div class="grid-2col">
+                    <div class="subcard">
+                        <h4>Mŕtva cesta #11: Kocková mriežka</h4>
+                        <p>Modelovanie priestoru mriežkou bolo popravené. Disperzný vzťah vlnenia na mriežke vykazoval 21-krát horšiu smerovú anizotropiu než na náhodnom grafe.</p>
+                    </div>
+                    <div class="subcard">
+                        <h4>Mŕtva cesta #15: Neskorá tvorba tmavej hmoty pre H0</h4>
+                        <p>Pokus zachrániť Hubbleovo napätie neskorou tvorbou tmavej hmoty zlyhal na zlom znamienku expanznej brzdy.</p>
+                    </div>
+                </div>
+                <div class="internal-links">
+                    <h4>Register mŕtvych ciest a pascí:</h4>
+                    <a href="file:///d:/Teoria/theory/SK/05_Methodology_Rules_and_Question_Register_SK.md#L28-L31" class="file-link">05_Methodology: Register mŕtvych ciest #1-20</a>
+                    <a href="file:///d:/Teoria/theory/SK/05_Methodology_Rules_and_Question_Register_SK.md#L25-L27" class="file-link">05_Methodology: Metodické pasce M1-M9</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="app-footer">
+        <p>© 2026 Martin Jambor (Samostatný Výskum) • Adversariálny oponent: Antigravity AI (Google DeepMind)</p>
+        <p>Prezentované súbory sú licencované pod CC-BY 4.0. Výpočtová pipeline je licencovaná pod MIT.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

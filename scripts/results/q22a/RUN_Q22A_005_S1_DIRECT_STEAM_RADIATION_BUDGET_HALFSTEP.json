@@ -1,0 +1,61 @@
+{
+  "test": "Q22a-S1 direct-steam radiation-budget screen",
+  "status": "PASS_SCREEN",
+  "physical_verdict": "K2_STOP_WITHIN_FROZEN_A1; K3_DIRECT_STEAM_FRACTION_BOUNDED",
+  "scope": "direct freely-redshifting radiation only; frozen A1 present-day state; not a full BBN/CMB likelihood",
+  "fR_definition": "fraction of q=lambda*X_f/E deposited directly into X_r; fR=1-b",
+  "registered_inputs": {
+    "h": 0.6637,
+    "Omega_m0": 0.3517,
+    "lambda": 0.15,
+    "delta": 0.02297,
+    "Delta_Neff": 0.0535,
+    "z_star": 1089.9
+  },
+  "today": {
+    "X_f": 0.6482044961998541,
+    "X_c": 0.30091653278136377,
+    "X_r": 9.550380014592132e-05,
+    "q": 0.09723067442997811,
+    "Xr_over_q": 0.000982239408559277
+  },
+  "K1_fR_0": {
+    "positive": true,
+    "reason": "reached_recombination",
+    "x_reached": -6.994758322605208,
+    "min_values": [
+      0.6482044961998541,
+      0.30091653278136377,
+      9.550380014592132e-05
+    ],
+    "final": [
+      1.2159217058540268,
+      354728712.2515419,
+      135257208.41588345
+    ]
+  },
+  "K2_fR_1": {
+    "positive": false,
+    "reason": "radiation_non_positive",
+    "x_reached": -0.0009999654499790866,
+    "min_values": [
+      0.6482044961998541,
+      0.30091653278136377,
+      -1.5230315769095565e-06
+    ]
+  },
+  "fR_max_positive_to_zstar": 0.00438309833407402,
+  "first_failed_fR_upper_bracket": 0.004383102059364319,
+  "checks": {
+    "fR_zero_reaches_recombination_positive": true,
+    "fR_one_fails_radiation_positivity": true,
+    "conservation_identity_for_any_fR": true,
+    "bounded_fraction_found": true
+  },
+  "limits": {
+    "internal_seconds": 4.5,
+    "elapsed_seconds": 1.3130000000019209,
+    "step": 0.0005,
+    "bisection_iterations": 28
+  }
+}

@@ -1,0 +1,397 @@
+{
+  "_comment": "JEDINY strojovo citatelny autoritativny stav projektu. Vsetky Markdown registre su POHLADY na tento subor, nie zdroje pravdy. Kontroluje sa scriptom scripts/check_state.py.",
+  "schema_version": "1.0",
+  "updated": "2026-08-14",
+  "otazky": [
+    {
+      "id": "Q-A0-LORENTZ-RADIATIVE-STABILITY",
+      "budget": 30,
+      "errors_used": 0,
+      "status": "OPEN"
+    },
+    {
+      "id": "Q-A2-LOCAL-PRODUCTION-TRANSPORT-LAW",
+      "budget": 30,
+      "errors_used": 0,
+      "status": "FROZEN_PENDING_A0"
+    }
+  ],
+  "vetvy": [
+    {
+      "id": "V-lambda",
+      "parameter": "lambda",
+      "value": 0.15,
+      "provenance": "FROZEN_BY_CHOICE",
+      "note": "historicky data-selected (§5.1). NESMIE obmedzovat ine kolaje."
+    },
+    {
+      "id": "V-C",
+      "parameter": "C",
+      "value": 28,
+      "provenance": "FROZEN_BY_CHOICE",
+      "note": "zvolene pred odvodenim suvislosti s n_s; okno je 13 celych cisel na 1 sigma"
+    },
+    {
+      "id": "V-lcell",
+      "parameter": "l_cell/l_Pl",
+      "value": 1,
+      "provenance": "FROZEN_BY_CHOICE",
+      "note": "GRB pripusta az 4.6e8; A0-K5 vynucuje <= 2.5e7"
+    },
+    {
+      "id": "V-Af",
+      "parameter": "A_f",
+      "value": 7809.0,
+      "provenance": "DERIVED_CONDITIONAL",
+      "note": "podmienene; zaokruhlene na 4 platne cislice"
+    },
+    {
+      "id": "V-h",
+      "parameter": "h",
+      "value": 0.6637,
+      "provenance": "FROZEN_BY_CHOICE"
+    }
+  ],
+  "stanice": [
+    {
+      "id": "A0",
+      "layers": [
+        "L0",
+        "L1",
+        "L3"
+      ],
+      "death_condition": "substrat nepripusta radiacne stabilny relativisticky limit",
+      "status": "LIVE_ACTIVE"
+    },
+    {
+      "id": "A1",
+      "layers": [
+        "L0",
+        "L1"
+      ],
+      "death_condition": "neexistuje konzervativny background ledger paliva a popola",
+      "status": "LIVE_CONDITIONED"
+    },
+    {
+      "id": "A2",
+      "layers": [
+        "L1",
+        "L2"
+      ],
+      "death_condition": "neexistuje kovariantny stabilny poruchovy operator",
+      "status": "FROZEN_PENDING_A0"
+    },
+    {
+      "id": "A3",
+      "layers": [
+        "L4"
+      ],
+      "death_condition": "theta*, omega_m(rek), BBN a N_eff sa nedaju splnit sucasne",
+      "status": "NOT_OPEN"
+    },
+    {
+      "id": "A4",
+      "layers": [
+        "L5"
+      ],
+      "death_condition": "S8, H0 a w0wa sa nedaju splnit pri uz zmrazenom A3",
+      "status": "NOT_OPEN"
+    }
+  ],
+  "kolaje": [
+    {
+      "id": "A0-K5",
+      "stanica": "A0",
+      "predpoklad": "SM ako EFT konci pri M << skala siete",
+      "status": "UNDECIDED_FINITE",
+      "finite_cut": "jeden parameter M v (1e3, 1e19) GeV",
+      "decision_method": "numericky sken cutoffu + fit mocniny",
+      "cost_tier": "C1",
+      "contributes": "IBA_NEPORUSENIE",
+      "dry_runs": 0,
+      "otazka": "Q-A0-LORENTZ-RADIATIVE-STABILITY",
+      "waiting_for": null,
+      "hard_constraints": [
+        "A0-C1",
+        "A0-C2",
+        "A0-C3",
+        "A0-C4",
+        "A0-C5"
+      ]
+    },
+    {
+      "id": "A0-K3",
+      "stanica": "A0",
+      "predpoklad": "pod SM je skryty silne viazany sektor",
+      "status": "UNDECIDED_FINITE",
+      "finite_cut": "anomalna dimenzia Delta v (0, 2)",
+      "decision_method": "jednosmyckovy vypocet s bezrozmernou vazbou",
+      "cost_tier": "C3",
+      "contributes": "IBA_NEPORUSENIE",
+      "dry_runs": 0,
+      "otazka": "Q-A0-LORENTZ-RADIATIVE-STABILITY",
+      "waiting_for": null,
+      "hard_constraints": [
+        "A0-C1",
+        "A0-C2",
+        "A0-C3",
+        "A0-C4",
+        "A0-C5"
+      ]
+    },
+    {
+      "id": "A0-K1",
+      "stanica": "A0",
+      "predpoklad": "kapacita je skalovo zavisla (SUSY pri skale bunky)",
+      "status": "UNDECIDED_FINITE",
+      "finite_cut": "diskretna volba: C(skala) konstantne alebo bezove/fermionove",
+      "decision_method": "odvodenie, na ktorej skale sa kapacita cita",
+      "cost_tier": "C2",
+      "contributes": "PREPOJENIE",
+      "dry_runs": 0,
+      "otazka": "Q-A0-LORENTZ-RADIATIVE-STABILITY",
+      "waiting_for": null,
+      "hard_constraints": [
+        "A0-C1",
+        "A0-C2",
+        "A0-C3",
+        "A0-C4",
+        "A0-C5"
+      ]
+    },
+    {
+      "id": "A0-K6",
+      "stanica": "A0",
+      "predpoklad": "l_cell = l_Planck",
+      "status": "UNDECIDED_FINITE",
+      "finite_cut": "l_cell/l_Pl v (1, 4.6e8), jeden realny parameter",
+      "decision_method": "kombinacia s A0-K5: pozadovane M(l_cell) vs platnost SM",
+      "cost_tier": "C1",
+      "contributes": "IBA_NEPORUSENIE",
+      "dry_runs": 0,
+      "otazka": "Q-A0-LORENTZ-RADIATIVE-STABILITY",
+      "waiting_for": null,
+      "hard_constraints": [
+        "A0-C1",
+        "A0-C2"
+      ]
+    },
+    {
+      "id": "A0-K2",
+      "stanica": "A0",
+      "predpoklad": "neexistuje globalne teraz (diskretnost v priestorocase)",
+      "status": "SEPARATE_ROUTE",
+      "finite_cut": "binarna volba",
+      "decision_method": "Rideout-Sorkin CSG rekonstrukcia",
+      "cost_tier": "C4",
+      "contributes": "IBA_NEPORUSENIE",
+      "dry_runs": 0,
+      "otazka": "Q-A0-LORENTZ-RADIATIVE-STABILITY",
+      "waiting_for": null,
+      "hard_constraints": [],
+      "note": "rozpusta delta a w_f = -1+delta; je to iny program, nie oprava tohto"
+    },
+    {
+      "id": "A0-K4",
+      "stanica": "A0",
+      "predpoklad": "g/Lambda < 1.7e-9 bez mechanizmu",
+      "status": "MEASURE_ZERO",
+      "finite_cut": "jeden parameter g/Lambda",
+      "decision_method": "n/a",
+      "cost_tier": "C1",
+      "contributes": "IBA_NEPORUSENIE",
+      "dry_runs": 0,
+      "otazka": "Q-A0-LORENTZ-RADIATIVE-STABILITY",
+      "waiting_for": null,
+      "hard_constraints": [],
+      "tuning_orders": 9,
+      "single_parameter": false
+    },
+    {
+      "id": "A2-K4",
+      "stanica": "A2",
+      "predpoklad": "entalpicky vazeny spolocny energy-frame",
+      "status": "UNDECIDED_INFINITE",
+      "finite_cut": null,
+      "decision_method": null,
+      "cost_tier": "C3",
+      "contributes": "IBA_NEPORUSENIE",
+      "dry_runs": 3,
+      "otazka": "Q-A2-LOCAL-PRODUCTION-TRANSPORT-LAW",
+      "waiting_for": "lokalny produkcno-transportny operator",
+      "hard_constraints": [
+        "FS-C1"
+      ]
+    },
+    {
+      "id": "A2-K7",
+      "stanica": "A2",
+      "predpoklad": "disipativny/mediatorovy rodic",
+      "status": "UNDECIDED_INFINITE",
+      "finite_cut": null,
+      "decision_method": null,
+      "cost_tier": "C3",
+      "contributes": "IBA_NEPORUSENIE",
+      "dry_runs": 0,
+      "otazka": "Q-A2-LOCAL-PRODUCTION-TRANSPORT-LAW",
+      "waiting_for": "lokalny produkcno-transportny operator",
+      "hard_constraints": [
+        "FS-C1"
+      ]
+    },
+    {
+      "id": "A2-K8",
+      "stanica": "A2",
+      "predpoklad": "kineticka produkcia",
+      "status": "UNDECIDED_INFINITE",
+      "finite_cut": null,
+      "decision_method": null,
+      "cost_tier": "C3",
+      "contributes": "IBA_NEPORUSENIE",
+      "dry_runs": 0,
+      "otazka": "Q-A2-LOCAL-PRODUCTION-TRANSPORT-LAW",
+      "waiting_for": "lokalny produkcno-transportny operator",
+      "hard_constraints": [
+        "FS-C1"
+      ]
+    }
+  ],
+  "predikcie": [
+    {
+      "id": "P02",
+      "velicina": "n_s",
+      "value": 0.9655,
+      "status": "PREDICTION_DEGENERATE",
+      "internal_accepted": true,
+      "receipt": "verify_spectra_and_windows",
+      "note": "s volnym alfa sedi kazde C; dvojparametricka koincidencia"
+    },
+    {
+      "id": "P04",
+      "velicina": "H0",
+      "value": 66.4,
+      "status": "PRE_A3_DIAGNOSTIC",
+      "internal_accepted": false,
+      "receipt": null
+    },
+    {
+      "id": "P05",
+      "velicina": "S8",
+      "value": 0.8745,
+      "status": "PRE_A3_DIAGNOSTIC",
+      "internal_accepted": false,
+      "receipt": null
+    },
+    {
+      "id": "P10",
+      "velicina": "parnost lambda_hat(q)",
+      "value": null,
+      "status": "IDENTITY",
+      "internal_accepted": true,
+      "receipt": null
+    },
+    {
+      "id": "P11",
+      "velicina": "T_steam",
+      "value": 0.9051,
+      "status": "PRE_A3_DIAGNOSTIC",
+      "internal_accepted": false,
+      "receipt": "verify_spectra_and_windows",
+      "note": "EM-viazany vylucen FIRASom o 3-4 rady; gravitonovy nedetegovatelny"
+    }
+  ],
+  "release": {
+    "version": "3.18",
+    "git_tag_exists": false,
+    "readme_matches_release": false,
+    "audit_layer_named_correctly": false,
+    "max_significant_digits": 16
+  },
+  "mantinely": [
+    {
+      "id": "FS-C1",
+      "layer": "L5",
+      "text": "q(a)=Gamma rho_f, Gamma=lambda H0",
+      "derived_from": [
+        "V-lambda"
+      ],
+      "kind": "SOFT_TARGET",
+      "note": "R2 2026-08-14: presunute z tvrdeho obalu do makkych cielov"
+    },
+    {
+      "id": "FS-C2",
+      "layer": "L1",
+      "text": "sum_A Q_A^mu = 0",
+      "derived_from": [],
+      "kind": "HARD"
+    },
+    {
+      "id": "FS-C4",
+      "layer": "L0",
+      "text": "pozitivita rho_A >= 0, H^2 > 0",
+      "derived_from": [],
+      "kind": "HARD"
+    },
+    {
+      "id": "FS-C9",
+      "layer": "L2",
+      "text": "ziadny ghost, c_s^2>=0, kauzalita (tree-level)",
+      "derived_from": [],
+      "kind": "HARD"
+    },
+    {
+      "id": "FS-C11",
+      "layer": "L0",
+      "text": "ziadna sadzba z trafenia S8/H0",
+      "derived_from": [],
+      "kind": "HARD"
+    },
+    {
+      "id": "FS-C13",
+      "layer": "L0",
+      "text": "finitny rez pred otvorenim otazky existencie",
+      "derived_from": [],
+      "kind": "HARD"
+    },
+    {
+      "id": "A0-C1",
+      "layer": "L1",
+      "text": "null-kontrola W=k^2 cutoff->inf musi dat nulu",
+      "derived_from": [],
+      "kind": "HARD"
+    },
+    {
+      "id": "A0-C2",
+      "layer": "L1",
+      "text": "regulatorovy clen sa vykaze a odcita",
+      "derived_from": [],
+      "kind": "HARD"
+    },
+    {
+      "id": "A0-C3",
+      "layer": "L3",
+      "text": "bezrozmerna vazba povinna",
+      "derived_from": [],
+      "kind": "HARD"
+    },
+    {
+      "id": "A0-C4",
+      "layer": "L3",
+      "text": "ziadne ladenie po poliach ani vazbach",
+      "derived_from": [],
+      "kind": "HARD"
+    },
+    {
+      "id": "A0-C5",
+      "layer": "L0",
+      "text": "FS-C11 plati aj tu",
+      "derived_from": [],
+      "kind": "HARD"
+    }
+  ],
+  "prahy": {
+    "measure_zero_tuning_orders": 3,
+    "dry_runs_to_dormant": 3,
+    "max_significant_digits": 4
+  }
+}

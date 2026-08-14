@@ -1,0 +1,350 @@
+BATCH_EVIDENCE_ID: TERMINAL_Q1R3_L900_L1308_L1950
+CALL_TYPE: BATCHED_OPEN
+EXACT_TARGET: turn45view0
+INTERNAL_OPERATION_COUNT: 3
+CUMULATIVE_OPERATION_BUDGET_AFTER: 24/24_TERMINAL
+PROVIDER_PAYLOAD: {"open":[{"ref_id":"turn45view0","lineno":900},{"ref_id":"turn45view0","lineno":1308},{"ref_id":"turn45view0","lineno":1950}]}
+DELIMITER_COLLISION: NO
+BEGIN_EXACT_BATCH_RETURN
+ (https://arxiv.org/pdf/2301.12328)
+citeturn48view0 [wordlim: 200] Content type: application/pdf; Number of pages: 30; Source: open({"ref_id":"turn45view0","lineno":900}); Total lines: 2135
+L874@P11: wall velocity. Furthermore, recent studies [29–32] have shown that the hydrodynamics of both
+L875@P11: phases has a rather strong effect on the bubble wall velocity. Hence, it is more reasonable to
+L876@P11: combine the calculation of the hydrodynamics and the bubble wall velocity. Since the effective
+L877@P11: potential of the particle physics model is the free energy of the phase transition system, we
+L878@P11: can actually derive the EoS directly from the effective potential without constructing any
+L879@P11: additional EoS. Therefore, we propose a model-dependent analysis method for calculating
+L880@P11: the energy budget, and the basic idea of this method is shown in figure 3. In the following,
+L881@P11: we demonstrate the whole procedure:
+L882@P11: • Calculate the effective potential for a given specific particle physics model.
+L883@P11: • Derive the characteristic temperature with the standard method.
+L884@P11-12: – 11 –Particle Physics Model
+L885@P12: (Lagrangian 𝓛𝑴)
+L886@P12: Bubble/velocity/temperature
+L887@P12: profile across the bubble wall
+L888@P12: 𝝓 𝒛 , 𝒗 𝒛 , 𝑻(𝒛) obtained from
+L889@P12: 𝝏𝝁(𝑻𝒑𝒍
+L890@P12: 𝝁𝝂 + 𝑻𝝓𝝁𝝂) = 𝟎
+L891@P12: Boundary Condition
+L892@P12: 𝝓+,𝝓−,𝑻+, 𝑻−,𝒗+, 𝒗− −𝒗+= 𝒗𝒘 for detonation −𝒗−= 𝒗𝒘 for deflagration
+L893@P12: Fluid Equation
+L894@P12: 𝝏𝝁𝑻𝒑𝒍
+L895@P12: 𝝁𝝂 = 𝟎
+L896@P12: Fluid Profile
+L897@P12: 𝒘 𝝃 , 𝒗(𝝃)
+L898@P12: Energy Budget
+L899@P12: (Kinetic energy
+L900@P12: fraction)
+L901@P12: Effective Potential
+L902@P12: (Free Energy)
+L903@P12: 𝑽𝒆𝒇𝒇(𝚽,𝐓)
+L904@P12: Equation of State
+L905@P12: 𝒑+ =
+L906@P12: 𝟏
+L907@P12: 𝟑
+L908@P12: 𝒂+𝑻+
+L909@P12: 𝟒
+L910@P12: , 𝒆+ = 𝒂+𝑻+
+L911@P12: 𝟒
+L912@P12: ,
+L913@P12: 𝒑− =
+L914@P12: 𝟏
+L915@P12: 𝟑
+L916@P12: 𝒂+𝑻+
+L917@P12: 𝟒 − 𝑽𝒆𝒇𝒇,
+L918@P12: 𝒆− = 𝒂+𝑻+
+L919@P12: 𝟒 + 𝑽𝒆𝒇𝒇 − 𝑻−
+L920@P12: 𝝏𝑽𝒆𝒇𝒇
+L921@P12: 𝝏𝑻 ;
+L922@P12: Across the wall
+L923@P12: Away from the wall
+L924@P12: (Symmetric and broken phase)
+L925@P12: 𝐾 =
+L926@P12: 𝑗 + 1
+L927@P12: 𝑒+𝑣𝑤
+L928@P12: 𝑗+1 න 𝑤 𝜉 𝑣
+L929@P12: 2𝛾2𝜉𝑗𝑑𝜉
+L930@P12: Figure 3. Illustration for model-dependent analysis method.
+L931@P12: • Solve the local equations of motion across the bubble wall. Here, for simplicity, we
+L932@P12: adopt the planar approximation, the local EoM across the bubble wall can be further
+L933@P12: simplified as
+L934@P12: ∂
+L935@P12: 2
+L936@P12: zϕ −
+L937@P12: ∂Veff
+L938@P12: ∂ϕ − ηT˜ cγv∂zϕ = 0, (3.19)
+L939@P12: wγ2v = C1, (3.20)
+L940@P12: 1
+L941@P12: 2
+L942@P12: (∂zϕ)
+L943@P12: 2 + wγ2
+L944@P12: v
+L945@P12: 2 + p = C2, (3.21)
+L946@P12: where C1 and C2 are constants, and we introduce a dimensionless parameter η˜, where
+L947@P12: ηT˜ c = η, and Tc is the critical temperature.
+L948@P12: • Obtain the velocity v(z), the temperature T(z), and the scalar field ϕ(z) profile across
+L949@P12: the bubble wall, which give the boundary conditions of the fluid equations.
+L950@P12: • Derive the EoS for both phases. According to the effective potential, the EoS of symmetric phase can be written as
+L951@P12: p+ =
+L952@P12: 1
+L953@P12: 3
+L954@P12: a+T
+L955@P12: 4
+L956@P12: +, e+ = a+T
+L957@P12: 4
+L958@P12: +, (3.22)
+L959@P12: where we implicitly assume Φ+ = 02, while in the broken phase, the EoS is
+L960@P12: e− = a−T
+L961@P12: 4
+L962@P12: − + Veff(Φ−, T−) − T−
+L963@P12: ∂Veff
+L964@P12: ∂T ,
+L965@P12: p− =
+L966@P12: 1
+L967@P12: 3
+L968@P12: a−T
+L969@P12: 4
+L970@P12: − − Veff(Φ−, T−),
+L971@P12: (3.23)
+L972@P12: 2However, if we consider a multi-step phase transition, this is not necessarily true.
+L973@P12-13: – 12 –• Substitute the eq. (3.22) and eq. (3.23) into the fluid equations (2.25), (2.26), and
+L974@P13: (2.27), with the boundary conditions given by the profiles across the bubble wall, the
+L975@P13: fluid profiles for different hydrodynamical modes can be solved.
+L976@P13: • Using the fluid profiles of different hydrodynamical modes, the kinetic energy fraction
+L977@P13: can be eventually obtained with eq. (3.5).
+L978@P13: In the following two subsections, for different hydrodynamical modes, we describe how to
+L979@P13: calculate the local EoM across the bubble wall and derive the corresponding profiles in detail.
+L980@P13: 3.3.1 Deflagration
+L981@P13: Deflagration modes develop a shock front in the symmetric phase, which is a discontinuity.
+L982@P13: From the energy-momentum conservation across the shock front ∂µT
+L983@P13: µν
+L984@P13: pl = 0, we can obtain
+L985@P13: the following relations of relevant quantities in the shock front frame:
+L986@P13: v1v2 = c
+L987@P13: 2
+L988@P13: s,+,
+L989@P13: v1
+L990@P13: v2
+L991@P13: =
+L992@P13: T
+L993@P13: 4
+L994@P13: 2 + c
+L995@P13: 2
+--------------------------------------------------------------------------------
+ (https://arxiv.org/pdf/2301.12328)
+citeturn48view1 [wordlim: 200] Content type: application/pdf; Number of pages: 30; Source: open({"ref_id":"turn45view0","lineno":1308}); Total lines: 2135
+L1241@P15: 47–50], such as the standard model, the two-Higgs doublet model, the minimal supersymmetry
+L1242@P15: model, the singlet model, and the hidden phase transition model, etc. In this model, the lowest
+L1243@P15: temperature T0 where the symmetric minimum still exists is
+L1244@P15: T
+L1245@P15: 2
+L1246@P15: 0 =
+L1247@P15: λv2
+L1248@P15: c
+L1249@P15: . (4.2)
+L1250@P15: The critical temperature where the degenerate minimum exists is
+L1251@P15: T
+L1252@P15: 2
+L1253@P15: c =
+L1254@P15: T
+L1255@P15: 2
+L1256@P15: 0
+L1257@P15: 1 − 2E2/(λc)
+L1258@P15: . (4.3)
+L1259@P15: When the temperature is below the critical temperature, the global minimum is
+L1260@P15: ϕtrue =
+L1261@P15: 3ET +
+L1262@P15: p
+L1263@P15: 9E2T2 − 4λ(m2 + cT2)
+L1264@P15: 2λ
+L1265@P15: . (4.4)
+L1266@P15: Note that when temperature is slightly higher than the critical temperature, this point becomes a local minimum. According to eq. (4.1), we can further derive the corresponding EoS
+L1267@P15: of this model as
+L1268@P15: p =
+L1269@P15: 1
+L1270@P15: 3
+L1271@P15: aT4 −
+L1272@P15: m2 + cT2
+L1273@P15: 2
+L1274@P15: ϕ
+L1275@P15: 2 + ET ϕ3 −
+L1276@P15: λ
+L1277@P15: 4
+L1278@P15: ϕ
+L1279@P15: 4
+L1280@P15: ,
+L1281@P15: e = aT4 +
+L1282@P15: m2 − cT2
+L1283@P15: 2
+L1284@P15: ϕ
+L1285@P15: 2 +
+L1286@P15: λ
+L1287@P15: 4
+L1288@P15: ϕ
+L1289@P15: 4
+L1290@P15: ,
+L1291@P15: (4.5)
+L1292@P15: then the enthalpy can be obtained as
+L1293@P15: w =
+L1294@P15: 4
+L1295@P15: 3
+L1296@P15: aT4 − cT2ϕ
+L1297@P15: 2 + ET ϕ3
+L1298@P15: , (4.6)
+L1299@P15: and the temperature-dependent sound speed is
+L1300@P15: c
+L1301@P15: 2
+L1302@P15: s
+L1303@P15: (T) = 1
+L1304@P15: T
+L1305@P15: (−aT4/3 + Veff)
+L1306@P15: ′
+L1307@P15: (−aT4/3 + Veff)
+L1308@P15: ′′ , (4.7)
+L1309@P15: where prime represents the total derivative with respect to temperature T. We assume that
+L1310@P15: the bubble achieves steady-sate stage immediately after nucleation. Then the temperature
+L1311@P15: far in front of the bubble wall can be approximated as nucleation temperature3 Tn, and the
+L1312@P15: nucleation temperature can be calculated using the standard method. Here, we give the model
+L1313@P15: parameters and the corresponding phase transition parameters of the representative model
+L1314@P15: 3Refs. [41, 51–53] suggest the percolation temperature should be a better choice for the characteristic
+L1315@P15: temperature in the calculation of phase transition GW.
+L1316@P15-16: – 15 –c E λ a Tn [GeV] Tc [GeV] ϕn [GeV] T0 [GeV] αn αθ,n¯ c
+L1317@P16: 2
+L1318@P16: s,− Sn S0
+L1319@P16: BP1 1.5 0.05 0.1 35.119 64.508592 64.660540 71.719753 63.573731 0.0128 0.0129 0.1718 0.9977 0.9832
+L1320@P16: BP2 1.5 0.07 0.1 35.119 65.373815 65.758110 103.714539 63.573731 0.0254 0.0258 0.1793 0.9942 0.9668
+L1321@P16: BP3 1.5 0.125 0.1 35.119 69.283562 71.450705 204.047449 63.573731 0.0780 0.0816 0.2092 0.9697 0.8898
+L1322@P16: Table 1. The benchmark parameter sets and the corresponding phase transition parameters of the
+L1323@P16: representative model. Here Tn is the nucleation temperature, Tc is the critical temperature, T0 is the
+L1324@P16: lowest temperature where the symmetric metastable minimum ϕ = 0 still exits, and a = 106.75π
+L1325@P16: 2/30.
+L1326@P16: ϕ− [GeV] T− [GeV] v− ϕ+ [GeV] T+ [GeV] v+ η˜
+L1327@P16: BP1 67.120739 64.613934 -0.1 0 64.636932 -0.096591 0.198779
+L1328@P16: BP2 98.043840 65.581548 -0.1 0 65.634895 -0.093161 0.566406
+L1329@P16: BP3 199.965752 69.724364 -0.1 0 70.165663 -0.078261 2.542273
+L1330@P16: Table 2. The boundary conditions of deflagration modes. Note: The fluid velocity is given in the
+L1331@P16: wall frame, and v− = −vw.
+L1332@P16: ϕ− [GeV] T− [GeV] v− ϕ+ [GeV] T+ [GeV] v+ η˜
+L1333@P16: BP3 175.161138 71.650425 -0.871573 0 64.305635 -0.9 0.273980
+L1334@P16: Table 3. Boundary conditions of a detonation mode. Note: the fluid velocity is given in the wall
+L1335@P16: frame, and v+ = −vw.
+L1336@P16: in table 1, where we have defined S∗ ≡ T∗/Tc to quantify the amount of supercooling at the
+L1337@P16: characteristic temperature T∗. Hence, Sn and S0 represent the amount of supercooling at Tn
+L1338@P16: and T0, respectively. αn denotes the phase transition strength defined by the bag model at
+L1339@P16: Tn. To further compare our result with the results given by the µν model [25–27], in which
+L1340@P16: EoS are given the form
+L1341@P16: p+ =
+L1342@P16: 1
+L1343@P16: 3
+L1344@P16: a+T
+L1345@P16: µ − ϵ, e+ =
+L1346@P16: 1
+L1347@P16: 3
+L1348@P16: a+(µ − 1)T
+L1349@P16: µ + ϵ, (4.8)
+L1350@P16: p− =
+L1351@P16: 1
+L1352@P16: 3
+L1353@P16: a−T
+L1354@P16: ν
+L1355@P16: , e− =
+L1356@P16: 1
+L1357@P16: 3
+L1358@P16: a−(ν − 1)T
+L1359@P16: ν
+L1360@P16: , (4.9)
+L1361@P16: where µ = 1 + 1/c2
+L1362@P16: s,+, ν = 1 + 1/c2s,−, we also include the corresponding strength parameter
+L1363@P16: αθ, ¯ ∗, which are defined by
+L1364@P16: αθ, ¯ ∗ =
+L1365@P16: ∆¯θ
+L1366@P16: 3w+
+--------------------------------------------------------------------------------
+ (https://arxiv.org/pdf/2301.12328)
+citeturn48view2 [wordlim: 200] Content type: application/pdf; Number of pages: 30; Source: open({"ref_id":"turn45view0","lineno":1950}); Total lines: 2135
+L1911@P24: as future work. In addition, to reduce the theoretical uncertainties introduced by different
+L1912@P24: forms of the friction terms in eq. (2.11), we can actually substitute the Boltzmann equation into the calculation of profiles across the wall and the bubble wall velocity, as shown in
+L1913@P24: refs [31, 50, 54–62]. And the corresponding improvement of our model-dependent method is
+L1914@P24: in progress.
+L1915@P24: Effects of bubble geometry
+L1916@P24: To simplify the calculation, we often insert some specific symmetries for the bubbles [23, 39],
+L1917@P24: e.g., planar, cylindrical, and spherical symmetries. In this work, we assume that the local
+L1918@P24: EoM across the bubble wall has a planar symmetry. We then derive the planer fluid profiles
+L1919@P24: with boundary conditions given by the local EoM across the bubble wall. However, different
+L1920@P24: geometries should give different fluid profiles, and ref. [23] shows that the geometry can
+L1921@P24: give modifications to the kinetic energy fraction of the FOPT. Based on the bag model of
+L1922@P24: EoS, ref. [23] studies the effect of bubble geometry using the conventional model-independent
+L1923@P24-25: – 24 –0.2 0.4 0.6
+L1924@P25: ξ
+L1925@P25: 0.000
+L1926@P25: 0.005
+L1927@P25: 0.010
+L1928@P25: 0.015
+L1929@P25: 0.020
+L1930@P25: v˜
+L1931@P25: 0.2 0.4 0.6
+L1932@P25: ξ
+L1933@P25: 1.0000
+L1934@P25: 1.0025
+L1935@P25: 1.0050
+L1936@P25: 1.0075
+L1937@P25: 1.0100
+L1938@P25: 1.0125
+L1939@P25: T/Tn
+L1940@P25: 0.2 0.4 0.6
+L1941@P25: ξ
+L1942@P25: 1.00
+L1943@P25: 1.01
+L1944@P25: 1.02
+L1945@P25: 1.03
+L1946@P25: 1.04
+L1947@P25: 1.05
+L1948@P25: w/wn
+L1949@P25: 0.5 0.6 0.7 0.8 0.9
+L1950@P25: ξ
+L1951@P25: 0.00
+L1952@P25: 0.05
+L1953@P25: 0.10
+L1954@P25: 0.15
+L1955@P25: 0.20
+L1956@P25: v˜
+L1957@P25: 0.5 0.6 0.7 0.8 0.9
+L1958@P25: ξ
+L1959@P25: 1.00
+L1960@P25: 1.05
+L1961@P25: 1.10
+L1962@P25: T/T+
+L1963@P25: 0.5 0.6 0.7 0.8 0.9
+L1964@P25: ξ
+L1965@P25: 0.8
+L1966@P25: 1.0
+L1967@P25: 1.2
+L1968@P25: 1.4
+L1969@P25: 1.6
+L1970@P25: w/w+
+L1971@P25: Figure 8. The spherical deflagration (top panel) and detonation (bottom panel) fluid profiles of BP3.
+L1972@P25: The blue lines denote the results obtained from our model-dependent method, the orange and green
+L1973@P25: lines indicate the profiles derived by model-independent method with the bag EoS and the µν EoS.
+L1974@P25: The grey dashed line denotes the critical temperature.
+L1975@P25: method, and they find that the planar case always make the value of kinetic energy fraction
+L1976@P25: larger than the spherical case for the deflagration mode. However, for the detonation mode,
+L1977@P25: the differences between the planar case and the spherical case are negligibly small. Since the
+L1978@P25: thickness of the fluid shell is comparable to the bubble radius, the planar approximation of
+L1979@P25: the fluid shell may not be appropriate. As suggested in ref. [36–38], one may use the planer
+L1980@P25: bubble wall to give boundary conditions of the fluid profile, while keeping the sphericity of the
+L1981@P25: fluid profiles. Following this way, one can get spherical fluid profiles, as shown in figure 8. A
+L1982@P25: comparison of the fluid profiles derived by our model-dependent method and the conventional
+L1983@P25: model-independent method based on the bag model and the µν model is also given in this
+L1984@P25: figure. These results can serve as an approximation for the spherical fluid profile. However,
+L1985@P25: to get more precise results for the spherical bubble, the local spherical EoM across the bubble
+L1986@P25: wall at steady-state stage needs to be solved, and we leave that to our future study.
+L1987@P25: 6 Conclusion
+L1988@P25: In this work, we have proposed a model-dependent method to calculate the energy budget of
+L1989@P25: the cosmological FOPT. Taking a representative model as an example, we have illustrated the
+L1990@P25: calculation of the kinetic energy fraction with our method. By solving the local EoM across the
+L1991@P25: bubble wall, we can simultaneously derive the bubble wall velocity and the boundary conditions of the fluid equations. Comparing our results with the conventional model-independent
+L1992@P25: method, we have found there are significant differences in the detonation mode. For the deflagration mode, the differences in the results derived by both methods are less significant. The
+L1993@P25: origins of these discrepancies are attributed to different EoS and the contribution of the scalar
+
+END_EXACT_BATCH_RETURN
+

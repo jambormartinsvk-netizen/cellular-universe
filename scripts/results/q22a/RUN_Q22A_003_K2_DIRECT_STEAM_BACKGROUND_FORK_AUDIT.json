@@ -1,0 +1,31 @@
+{
+  "test": "Q22a-K2 direct-steam versus A1-K1 background-fork audit",
+  "status": "PASS_BACKGROUND_FORK_REQUIRED",
+  "physical_verdict": "NOT_COMPATIBLE_WITH_FROZEN_A1_K1_BACKGROUND; SEPARATE_A1_BRANCH_REQUIRED",
+  "scope": "structural source comparison only; no BBN, CMB, or viability claim",
+  "K1_sources_F_C_R": [
+    "-Gamma*rho_F",
+    "Gamma*rho_F",
+    "0"
+  ],
+  "K2_sources_F_C_R": [
+    "-Gamma*rho_F",
+    "0",
+    "Gamma*rho_F"
+  ],
+  "K2_minus_K1_F_C_R": [
+    "0",
+    "-Gamma*rho_F",
+    "Gamma*rho_F"
+  ],
+  "checks": {
+    "K2_exact_total_source_conservation": true,
+    "K1_exact_total_source_conservation": true,
+    "K2_differs_from_K1_for_nonzero_transfer": true,
+    "lambda_zero_common_null_limit": true
+  },
+  "limits": {
+    "internal_seconds": 5.0,
+    "elapsed_seconds": 0.14099999999962165
+  }
+}

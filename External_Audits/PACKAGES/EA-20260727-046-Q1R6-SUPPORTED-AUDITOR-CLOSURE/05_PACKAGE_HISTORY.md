@@ -1,0 +1,50 @@
+# História EA-046
+
+## 2026-07-27 — DRAFT_NOT_DELIVERED / NOT_SEALED
+
+- minimal successor po immutable EA-045 technical runtime stop; supported profile `gpt-5.6-sol / high`;
+- 9 evidence, 7 controls a response; dynamic state mimo T1 nonclaim scope;
+- curator čaká na live preflight, bez auditu alebo seal.
+
+## 2026-07-27 — PREFLIGHT_PASSED_AWAITING_INDEPENDENT_PRESEAL_REVIEW / NOT_SEALED
+
+- prvý preflight našiel chýbajúci povinný scope marker `Autorita`; oprava
+  bola iba package-control, scope hash bol rebound v oboch manifestoch;
+- corrected PowerShell 7 R6 preflight prešiel `68/68`, exit code `0`, wall
+  time `862 ms`; source/copy `9/9`, `REPRO=0`, runtime rows `0`, temp `0`;
+- ďalšia rola je nezávislý pre-seal reviewer; balík nie je sealed ani sent.
+
+## 2026-07-27 — independent pre-seal review receipt (verbatim)
+
+```text
+TASK_ID: A2K4-Q1R6-EA046-INDEPENDENT-PRESEAL-REVIEW-20260727-277
+ROLE: documentation_release_steward
+ROLE_CONFIG_SHA256: 035FEDFB8D248BEF556BC75FE51E935B56190C1B7FB4087F074929F67C187DE7
+ASSIGNED_AGENT_TASK_ID: /root/q1r6_ea045_preseal_review
+FILES_CHANGED: 0
+PYTHON_PROCESSES: 0
+NETWORK: 0
+RESULT: PASS
+SEPARATION_OF_DUTIES_CHECK: PASS_REVIEWER_DISTINCT_FROM_CURATOR_AND_EXTERNAL_AUDITOR
+SUPPORTED_EXTERNAL_AUDITOR_PROFILE: GPT_5_6_SOL_HIGH_CONFIG_26DEF062FB7D5034194CC6326D1E2D5128CB5E657328410DFA80781418A4A2F6_MANIFEST_E5A00F74442F327C8AB6892ABF73C2F84E0F22C5A3A456C2AE61E9AA18AFD119
+MANIFEST_STATUS: 10_ROWS_9_EVIDENCE_PLUS_1_PACKAGE_GENERATED_SCOPE_ALL_PARITY_PASS
+COUNTS: PACKAGE16_EVIDENCE9_CONTROLS7_RESPONSE1_REPRO0_RUNTIME0_TEMP0
+INDEPENDENT_R6_PREFLIGHT: 68_OF_68_PASS_EXIT_0
+ARCHIVE: 11_ENTRIES_INCLUDING_MAIN_TEX
+PACKAGE_ONLY_COMMANDS: REALIZABLE_NO_LIVE_PROJECT_PYTHON_NETWORK
+CLASSIFICATION_AUTHORITY: NONE_OF_FIVE_STATIC_REFERENCE_SCOPE_AND_BLANK_RESPONSE_CLASSIFICATION_PRESENT
+EA045_PARENT: IMMUTABLE_TECHNICAL_RUNTIME_STOP_ONLY
+DYNAMIC_PLANS_LEDGER_EXCLUSION: LAWFUL_NONCLAIM_FOR_MINIMAL_T1_SCOPE
+LIFECYCLE_AT_REVIEW: NOT_SEALED_NOT_SENT_NO_STALE_ACTIVE_MARKERS
+SCIENCE_SCORE_DEPTH_RUN_CHANGE: NONE_RUN_AUTHORIZED_FALSE
+RECOMMENDATION: CURATOR_MAY_SEAL_WITHOUT_CORRECTION
+RUN_AUTHORIZED: false
+```
+
+## 2026-07-27 — SEALED_READY_FOR_AUDIT / NOT_SENT
+
+- nezávislý PASS receipt je vyššie; curator a supported external auditor sú
+  rozdielne identity;
+- scope lifecycle a oba manifesty boli rebound; evidence, response a `02–04`
+  zostali immutable;
+- ďalší krok je iba package-only externý audit; curator už balík nemení.

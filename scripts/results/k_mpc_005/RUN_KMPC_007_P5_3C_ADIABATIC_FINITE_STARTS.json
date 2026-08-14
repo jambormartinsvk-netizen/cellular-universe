@@ -1,0 +1,46 @@
+{
+  "checks": {
+    "Uc_is_higher_order_at_both_starts": true,
+    "Uc_two_start_power_ratio": true,
+    "Uc_zero_when_gamma2_zero": true,
+    "Uf_two_start_power_ratio": true,
+    "all_finite": true,
+    "df_two_start_power_ratio": true
+  },
+  "inputs": {
+    "delta": 0.02297,
+    "k_Mpc_inverse": 0.05,
+    "lambda": 0.15,
+    "x_starts": [
+      -25.0,
+      -23.0
+    ]
+  },
+  "ratios": {
+    "Uc": 368282181.5557917,
+    "Uf": 54.598150033144236,
+    "expected_Uc": 368282181.55579185,
+    "expected_Uf": 54.598150033144236
+  },
+  "results": {
+    "-23.0": {
+      "U_c": -4.413405367240187e-93,
+      "U_f": -1.0931918483340785e-13,
+      "a": 1.026187963170189e-10,
+      "delta_f": -2.5110616756233783e-15,
+      "h_x": 5.624332131122247e-12
+    },
+    "-25.0": {
+      "U_c": -1.19837602476339e-101,
+      "U_f": -2.0022507130194846e-15,
+      "a": 1.3887943864964021e-11,
+      "delta_f": -4.5991698878057564e-17,
+      "h_x": 1.0301323630393982e-13
+    }
+  },
+  "runtime_limit_seconds": 5.0,
+  "runtime_seconds": 0.0,
+  "scope": "two finite surfaces, leading adiabatic series only; no ODE, normalization fit, score, or G8",
+  "test": "KMPC-007 P5.3c finite-start adiabatic leading-seed audit",
+  "verdict": "PASS_P5_3C_ADIABATIC_FINITE_STARTS"
+}

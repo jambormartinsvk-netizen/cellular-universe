@@ -1,0 +1,292 @@
+{
+  "D_activity_relative_error": 0.00010921373772368643,
+  "K7b3b_hard_constrained_standard_solver": {
+    "condition_resolved": 511.10987587599215,
+    "double_max_linear_residual": "3.34152385254009778086976018536e-15",
+    "dps": 80,
+    "fixed_count": 30,
+    "fixed_max_absolute_error": "0.0",
+    "free_count": 58,
+    "hard_conflict_count": 0,
+    "hp_max_linear_residual": "2.08882205e-16",
+    "hp_max_normal_residual": "8.23609214314884626902232347755e-84",
+    "hp_not_worse_than_double": true,
+    "matrix_shape": [
+      134,
+      88
+    ],
+    "method": "hard-constrained normal equations with mpmath LU",
+    "original_rank": 88,
+    "reduced_rank": 58
+  },
+  "background": {
+    "Omega_fs": "0.4131097194359944905491248",
+    "ell_safe": "0.0000003773175912242971909704646",
+    "source_z_relative_error": 4.8297845076290045e-17,
+    "z_80_digit": "0.000002369734941064893885546909"
+  },
+  "checks": {
+    "NID_D_activity_relative_below_0p1": true,
+    "U_fs_reconstruction_scaled_below_5e-12": true,
+    "all_13_projected_rhs_components_within_allowance": true,
+    "all_values_finite": true,
+    "delta_fs_reconstruction_scaled_below_5e-12": true,
+    "density_species_constraint_scaled_below_5e-12": true,
+    "hard_constraint_no_conflicts": true,
+    "hard_constraints_below_1e-60": true,
+    "hp_standard_registry_present": true,
+    "hp_standard_solver_not_worse_than_double": true,
+    "metric_00_identity_below_1e-60": true,
+    "metric_0i_identity_below_1e-60": true,
+    "momentum_species_constraint_scaled_below_5e-12": true,
+    "reduced_standard_rank_keys_present": true,
+    "reduced_standard_rank_values_plain_int": true,
+    "reduced_standard_system_full_rank": true,
+    "registered_fractional_names_exact": true,
+    "registered_fuel_names_exact": true,
+    "registered_standard_names_exact": true,
+    "source_child_exit_zero": true,
+    "source_export_pass": true,
+    "source_z_relative_below_5e-14": true,
+    "state_reconstruction_within_registered_tolerance": true
+  },
+  "execution_verdict": "PASS_C7_7C_K7B3B2A_FAIL_CLOSED_PHYSICAL_MU_GATE",
+  "fine_depth": "66.5/100",
+  "physical_verdict": "coefficient and initial-constraint gate only; no ODE evolution",
+  "profile_request": {
+    "mode": "NID",
+    "surface": "shallow",
+    "x": -23.0
+  },
+  "projected_rhs_audit": {
+    "D": {
+      "absolute_residual": "1.7641104088097564809e-24",
+      "allowance": "5.0000000000000008076e-12",
+      "pass": true,
+      "residual_over_allowance": 3.5282208176195123e-13,
+      "rhs": "1.6151061033924233235e-20",
+      "series_derivative": "1.6152825144333042992e-20"
+    },
+    "L3_fs": {
+      "absolute_residual": "2.2412755379087683603e-37",
+      "allowance": "5.0000000000000000001e-12",
+      "pass": true,
+      "residual_over_allowance": 4.4825510758175366e-26,
+      "rhs": "1.0821386897204740022e-24",
+      "series_derivative": "1.0821386897206981298e-24"
+    },
+    "L4_fs": {
+      "absolute_residual": "6.30273378653102111e-43",
+      "allowance": "5.0e-12",
+      "pass": true,
+      "residual_over_allowance": 1.2605467573062043e-31,
+      "rhs": "1.0128175053091792828e-36",
+      "series_derivative": "1.0128181355825579359e-36"
+    },
+    "M": {
+      "absolute_residual": "1.0530457027259593208e-24",
+      "allowance": "5.0000000046437169351e-12",
+      "pass": true,
+      "residual_over_allowance": 2.1060914034959e-13,
+      "rhs": "-9.2874338701616388655e-14",
+      "series_derivative": "-9.2874338702669434358e-14"
+    },
+    "U_f": {
+      "absolute_residual": "6.2722986588809350487e-26",
+      "allowance": "5.000000000000000034e-12",
+      "pass": true,
+      "residual_over_allowance": 1.254459731776187e-14,
+      "rhs": "-6.7962384751407258465e-22",
+      "series_derivative": "-6.795611245274837753e-22"
+    },
+    "U_gamma": {
+      "absolute_residual": "1.8566587787769765576e-23",
+      "allowance": "5.0002173662098936336e-12",
+      "pass": true,
+      "residual_over_allowance": 3.713156134618808e-12,
+      "rhs": "-4.3473241978726718979e-9",
+      "series_derivative": "-4.3473241978726533313e-9"
+    },
+    "delta_b": {
+      "absolute_residual": "8.1044288175816727577e-25",
+      "allowance": "5.0000000494103779046e-12",
+      "pass": true,
+      "residual_over_allowance": 1.620885747498619e-13,
+      "rhs": "9.8820755809129621211e-13",
+      "series_derivative": "9.8820755809210665499e-13"
+    },
+    "delta_c": {
+      "absolute_residual": "4.8022648970397294134e-24",
+      "allowance": "5.0000000000000004038e-12",
+      "pass": true,
+      "residual_over_allowance": 9.604529794079458e-13,
+      "rhs": "-8.0768427732768452581e-21",
+      "series_derivative": "-8.0720405083798055287e-21"
+    },
+    "delta_f": {
+      "absolute_residual": "1.4646432767401681688e-26",
+      "allowance": "5.0000000000000000016e-12",
+      "pass": true,
+      "residual_over_allowance": 2.9292865534803365e-15,
+      "rhs": "-3.1202935255575314981e-23",
+      "series_derivative": "-3.1217581688342716663e-23"
+    },
+    "delta_gamma": {
+      "absolute_residual": "3.1742605805308369611e-23",
+      "allowance": "5.0000000658805038743e-12",
+      "pass": true,
+      "residual_over_allowance": 6.34852107741292e-12,
+      "rhs": "1.3176100774550616161e-12",
+      "series_derivative": "1.3176100774868042219e-12"
+    },
+    "eta": {
+      "absolute_residual": "0.0",
+      "allowance": "5.0000000023218589364e-12",
+      "pass": true,
+      "residual_over_allowance": 0.0,
+      "rhs": "-4.6437178727828405873e-14",
+      "series_derivative": "-4.6437178727828405873e-14"
+    },
+    "h": {
+      "absolute_residual": "0.0",
+      "allowance": "5.0000000000000008077e-12",
+      "pass": true,
+      "residual_over_allowance": 0.0,
+      "rhs": "1.6153685546553690516e-20",
+      "series_derivative": "1.6153685546553690516e-20"
+    },
+    "sigma_fs": {
+      "absolute_residual": "6.4058014286312360741e-27",
+      "allowance": "5.0000000168613199644e-12",
+      "pass": true,
+      "residual_over_allowance": 1.2811602814058366e-15,
+      "rhs": "3.3722639928747143625e-13",
+      "series_derivative": "3.3722639928747784205e-13"
+    }
+  },
+  "projected_seeds": {
+    "D_metric": "5.384648773713382215905368e-21",
+    "D_species": "5.410744446895505300405193e-21",
+    "M_metric": "-4.643717872782840587313789e-14",
+    "M_species": "-4.643717871152324345171111e-14",
+    "U_fs_reconstruction_error": 1.9734663279875977e-23,
+    "delta_fs_reconstruction_error": 6.316886762613737e-23,
+    "density_cancellation_condition": "1.53439801479e+20",
+    "density_scaled_residual": 3.158443381309825e-23,
+    "metric_00_absolute_residual": "0.0",
+    "metric_0i_absolute_residual": "0.0",
+    "momentum_cancellation_condition": "8.89609941262e+12",
+    "momentum_scaled_residual": 3.946932283665055e-23
+  },
+  "rank_fault_injection": {
+    "removed": [],
+    "requested": "none"
+  },
+  "runtime_limits_seconds": {
+    "source": 5.0,
+    "total": 8.0
+  },
+  "runtime_seconds": 2.2339999999999236,
+  "source": {
+    "coefficient_precision_scope": "registered float64 coefficients evaluated and summed at 80 dps",
+    "execution_verdict": "PASS_C7_7C_K4_ANALYTIC_REFERENCE_STATE",
+    "return_code": 0,
+    "script": "174_script_A2_K4_C7_7c_K7b3b1_slice_and_physical_mu_export.py"
+  },
+  "source_stderr_tail": "",
+  "state_comparison": {
+    "L3_fs": {
+      "exported_float64": "2.705347036633102e-25",
+      "high_precision": "2.7053470366331011126e-25",
+      "pass": true,
+      "residual_over_allowance": 1.7747197753769278e-27
+    },
+    "L4_fs": {
+      "exported_float64": "1.6880302259709308e-37",
+      "high_precision": "1.6880302259709298931e-37",
+      "pass": true,
+      "residual_over_allowance": 1.813725474774024e-39
+    },
+    "U_f": {
+      "exported_float64": "-2.2656135789045013e-22",
+      "high_precision": "-2.265613578904500825e-22",
+      "pass": true,
+      "residual_over_allowance": 9.500451982722608e-25
+    },
+    "U_fs": {
+      "exported_float64": "0.2500000235822197",
+      "high_precision": "0.25000002358221970108",
+      "pass": true,
+      "residual_over_allowance": 8.332287382410381e-07
+    },
+    "U_gamma": {
+      "exported_float64": "-0.17597411684738254",
+      "high_precision": "-0.17597411684738253263",
+      "pass": true,
+      "residual_over_allowance": 7.92981674846548e-06
+    },
+    "delta_b": {
+      "exported_float64": "4.94103838467838e-13",
+      "high_precision": "4.9410383846783797993e-13",
+      "pass": true,
+      "residual_over_allowance": 4.0146290783427945e-16
+    },
+    "delta_c": {
+      "exported_float64": "-2.688070681968149e-21",
+      "high_precision": "-2.6880706819681479476e-21",
+      "pass": true,
+      "residual_over_allowance": 2.104813230082071e-23
+    },
+    "delta_f": {
+      "exported_float64": "-1.0406844404852659e-23",
+      "high_precision": "-1.0406844404852655616e-23",
+      "pass": true,
+      "residual_over_allowance": 6.768377282162795e-26
+    },
+    "delta_fs": {
+      "exported_float64": "0.9999999999990641",
+      "high_precision": "0.99999999999906405956",
+      "pass": true,
+      "residual_over_allowance": 8.008345561921744e-06
+    },
+    "delta_gamma": {
+      "exported_float64": "-0.7038964499993412",
+      "high_precision": "-0.70389644999934119488",
+      "pass": true,
+      "residual_over_allowance": 1.4338179659860933e-06
+    },
+    "eta": {
+      "exported_float64": "-2.3218592489531316e-14",
+      "high_precision": "-2.3218592489531308135e-14",
+      "pass": true,
+      "residual_over_allowance": 1.5730131252590614e-16
+    },
+    "eta_x": {
+      "exported_float64": "-4.643717872782843e-14",
+      "high_precision": "-4.6437178727828405873e-14",
+      "pass": true,
+      "residual_over_allowance": 4.825372422709914e-16
+    },
+    "h": {
+      "exported_float64": "5.385745894459667e-21",
+      "high_precision": "5.3857458944596656159e-21",
+      "pass": true,
+      "residual_over_allowance": 2.7681247594521264e-23
+    },
+    "h_x": {
+      "exported_float64": "1.6153685546553692e-20",
+      "high_precision": "1.6153685546553690516e-20",
+      "pass": true,
+      "residual_over_allowance": 2.9674216810658106e-23
+    },
+    "sigma_fs": {
+      "exported_float64": "1.6861321444184732e-13",
+      "high_precision": "1.6861321444184732173e-13",
+      "pass": true,
+      "residual_over_allowance": 3.457305247127938e-17
+    }
+  },
+  "test": "A2-K4 C7.7c-K7b.3b.2a PF-012-corrected fail-closed physical-mu gate",
+  "worst_rhs_residual_over_allowance": 6.34852107741292e-12,
+  "worst_state_residual_over_allowance": 8.008345561921744e-06
+}

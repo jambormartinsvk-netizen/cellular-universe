@@ -1,0 +1,31 @@
+{
+  "test": "Q22a-K1 effective A1 F-to-C ledger structural audit",
+  "status": "PASS",
+  "physical_verdict": "BASELINE_EFFECTIVE_LEDGER_PASS_NOT_MICRO_SEQUENCE_DECISION",
+  "scope": "exact source-term algebra and registered-code provenance; no ODE; no microphysical order claim",
+  "equations": {
+    "Q_F": "-Gamma*rho_F",
+    "Q_C": "Gamma*rho_F",
+    "Q_R": "0",
+    "Q_total": "0"
+  },
+  "checks": {
+    "exact_total_source_conservation": true,
+    "direct_radiation_source_exact_zero": true,
+    "lambda_zero_null_limit": true,
+    "registered_a1_source_signatures": true
+  },
+  "source_signatures": {
+    "script_11_fuel_loss": true,
+    "script_11_matter_gain": true,
+    "script_11_radiation_no_transfer": true,
+    "base_fuel_loss": true,
+    "base_matter_gain": true,
+    "base_radiation_no_transfer": true,
+    "both_define_transfer_lambda_xf_over_E": true
+  },
+  "limits": {
+    "internal_seconds": 5.0,
+    "elapsed_seconds": 0.031000000002677552
+  }
+}

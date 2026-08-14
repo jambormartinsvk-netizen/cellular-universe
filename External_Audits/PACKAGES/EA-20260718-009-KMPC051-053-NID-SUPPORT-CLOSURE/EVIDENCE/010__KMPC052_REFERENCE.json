@@ -1,0 +1,250 @@
+{
+  "V0_reference_parity": {
+    "driver": {
+      "failed_count": 1,
+      "failed_rows": [
+        "fuel_Euler[7]"
+      ],
+      "pass": false,
+      "row_count": 104,
+      "worst": {
+        "branch": "relative",
+        "label": "fuel_Euler[7]",
+        "metric": 1.399416137423353e-10,
+        "pass": false,
+        "residual": 1.9158477074617463e-16,
+        "term_norm": 1.3690335963891789e-06
+      }
+    },
+    "holdout": {
+      "failed_count": 0,
+      "failed_rows": [],
+      "pass": true,
+      "row_count": 16,
+      "worst": {
+        "branch": "relative",
+        "label": "Einstein_0i[7]",
+        "metric": 3.59803599651413e-11,
+        "pass": true,
+        "residual": -4.474366840576116e-16,
+        "term_norm": 1.2435581091770617e-05
+      }
+    },
+    "matrix_hash_match_KMPC051": true,
+    "pass": true
+  },
+  "V1_float64_invariants": {
+    "matrix_l2": 793.8800323128081,
+    "normal_equation_gradient_linf": 7.523498984729117e-12,
+    "normwise_backward_error": 1.219897231598492e-16,
+    "residual_l2": 1.4574677684753447e-14,
+    "residual_linf": 9.616412484023118e-15,
+    "rhs_l2": 0.8232077618628797,
+    "solution_l2": 0.1494576292484736
+  },
+  "V2_single_bounded_refinement": {
+    "common_0_5": {
+      "baseline_value": -3.3495268166850295e-16,
+      "candidate_value": -2.684865167174701e-18,
+      "coefficient_count": 78,
+      "exact_power_sets": true,
+      "exact_state_set": true,
+      "finite": true,
+      "frozen_limit": 1e-08,
+      "max_absolute_difference": 3.3226781650132825e-16,
+      "max_relative_to_max_or_one": 3.3226781650132825e-16,
+      "pass_frozen_limit": true,
+      "worst_coefficient": "U_f[0]"
+    },
+    "correction_count": 1,
+    "correction_max_abs": 3.3226781650132825e-16,
+    "correction_relative_to_max_solution_or_one": 3.3226781650132825e-16,
+    "driver": {
+      "failed_count": 0,
+      "failed_rows": [],
+      "pass": true,
+      "row_count": 104,
+      "worst": {
+        "branch": "relative",
+        "label": "fuel_Euler[6]",
+        "metric": 1.6156593658164918e-16,
+        "pass": true,
+        "residual": 1.6940658945086007e-21,
+        "term_norm": 1.0485291208970185e-05
+      }
+    },
+    "holdout": {
+      "failed_count": 0,
+      "failed_rows": [],
+      "pass": true,
+      "row_count": 16,
+      "worst": {
+        "branch": "relative",
+        "label": "Einstein_0i[7]",
+        "metric": 2.6215517497518977e-11,
+        "pass": true,
+        "residual": -3.2600519370628786e-16,
+        "term_norm": 1.2435581091891123e-05
+      }
+    },
+    "method": "one equilibrated same-matrix float64 residual correction",
+    "pass": true,
+    "rank": 104,
+    "singular_max": 1.8080359795042416,
+    "singular_min": 0.49886296419583054
+  },
+  "V3_single_80dps_same_matrix_QR": {
+    "common_0_5": {
+      "baseline_value": -3.3495268166850295e-16,
+      "candidate_value": -2.6848651671742363e-18,
+      "coefficient_count": 78,
+      "exact_power_sets": true,
+      "exact_state_set": true,
+      "finite": true,
+      "frozen_limit": 1e-08,
+      "max_absolute_difference": 3.322678165013287e-16,
+      "max_relative_to_max_or_one": 3.322678165013287e-16,
+      "pass_frozen_limit": true,
+      "worst_coefficient": "U_f[0]"
+    },
+    "context_owner_bridge_count": 1,
+    "difference_max_abs_from_V0": 3.322678165013287e-16,
+    "driver": {
+      "failed_count": 0,
+      "failed_rows": [],
+      "pass": true,
+      "row_count": 104,
+      "worst": {
+        "branch": "relative",
+        "label": "cdm_continuity[6]",
+        "metric": 1.2467268113755362e-16,
+        "metric_decimal": "1.24672681137553619744262984151e-16",
+        "pass": true,
+        "residual_decimal": "-3.15827060759761930019467995665e-20",
+        "term_norm_decimal": "0.000253324992996103342309671679899"
+      }
+    },
+    "float64_projection_driver": {
+      "failed_count": 0,
+      "failed_rows": [],
+      "pass": true,
+      "row_count": 104,
+      "worst": {
+        "branch": "relative",
+        "label": "cdm_continuity[5]",
+        "metric": 1.1523497855650708e-16,
+        "pass": true,
+        "residual": 1.3708694978309696e-19,
+        "term_norm": 0.0011896296723470509
+      }
+    },
+    "float64_projection_holdout": {
+      "failed_count": 0,
+      "failed_rows": [],
+      "pass": true,
+      "row_count": 16,
+      "worst": {
+        "branch": "relative",
+        "label": "Einstein_0i[7]",
+        "metric": 2.6215449383858583e-11,
+        "pass": true,
+        "residual": -3.260043466733406e-16,
+        "term_norm": 1.2435581091891125e-05
+      }
+    },
+    "float64_transfer": "exact float.as_integer_ratio",
+    "high_precision_solve_count": 1,
+    "holdout": {
+      "failed_count": 0,
+      "failed_rows": [],
+      "pass": true,
+      "row_count": 16,
+      "worst": {
+        "branch": "relative",
+        "label": "Einstein_0i[7]",
+        "metric": 2.6215445892807802e-11,
+        "metric_decimal": "2.62154458928078024985080818187e-11",
+        "pass": true,
+        "residual_decimal": "-3.26004303260095522758083867307e-16",
+        "term_norm_decimal": "0.0000124355810918911228253776191099"
+      }
+    },
+    "householder_overlay_count": 1,
+    "householder_owner_restored": true,
+    "pass": true,
+    "precision_dps": 80,
+    "qr_residual_decimal": "4.10777986423000637540919348557e-84"
+  },
+  "authorship": {
+    "script_creator": "Codex (OpenAI)",
+    "theory_author": "Martin Jambor"
+  },
+  "candidate_interpretation_not_verdict": "PASS_NID_DEPTH7_FLOAT64_SOLVER_FLOOR_CANDIDATE_ONLY",
+  "execution_status": "TECHNICAL_COMPLETE_PENDING_ORCHESTRATOR_AUDIT",
+  "finite_pass": true,
+  "identity": {
+    "M1_depth": 7,
+    "M3_support": [
+      0,
+      7
+    ],
+    "k_Mpc_inverse": 0.05,
+    "mode": "NID",
+    "variant": "nominal"
+  },
+  "immutable_KMPC051": {
+    "file": "RUN_KMPC_051_P5_3G7_NID_M1_DEPTH_5_7.json",
+    "sha256": "AF088030BA709F08D40D825B9477C9A84BA330705CDDFB1C12C52B0DD3FC1E5E"
+  },
+  "operation_counts": {
+    "context_owner_bridges": 1,
+    "float64_refinements": 1,
+    "high_precision_solves": 1,
+    "householder_overlays": 1,
+    "native_rebuilds": 0
+  },
+  "orchestrator_verdict": "NOT_ASSIGNED_BY_SCRIPT",
+  "prediction_table_effect": "NONE",
+  "release_trigger": "NONE",
+  "run_id": "KMPC-052",
+  "runtime_limit_seconds": 45.0,
+  "runtime_seconds": 7.030999999988126,
+  "scope": {
+    "excluded": "native rebuild, second correction/HP solve, equation/support/threshold changes, [0,9], NIV, other k/variants, S-M, ODE, G8/G9",
+    "included": "same depth-7 M1 plus NID [0,7] float64 matrix: V0, V1, one V2 correction, one V3 80-dps QR"
+  },
+  "score_effect": "NONE",
+  "source_hashes": {
+    "cdi_c1_coverage.py": "D57CA8CA5571A07440A987F4FB0DDA08A40DAF7EA8C95AF929FC5C936F2FCE0F",
+    "cdi_support_ladder.py": "A8257E2195E2AB61B5C4195B80EA44EE7669B5A52F9C8440BA5F5244190E3068",
+    "full_ra_b1_preflight.py": "62D6DEEFBDB81C0619FD58C668185FF9CA76926A90D00DCE9C092AD4797D6B5D",
+    "full_ra_b1_preflight_v2.py": "27C0D6ADA828CA2F59C0D128EB6339074D5940F294272CDABE8127CB84867C7C",
+    "full_ra_contract.py": "F3839DA931D24939FA9C5925FD29B1484E722D1A0F24117DC91EBE5F4436D464",
+    "full_ra_m3_seed.py": "070F217B45A385369ECAFAA3D409A1210BAE3C3AF8A600A9171225B258751BF2",
+    "m1_order7_numerical_refinement.py": "CE29222FCE45DAA99A7B8E1FFCC06E9471D648A2B61C14DA05F653DBA9E7A80C",
+    "m1_order7_numerical_refinement_v2_householder.py": "81D7EA664677158E98340E39F395DE2EE0DAB6EEFCFFA785089F51E62434193A",
+    "m1_order7_numerical_refinement_v3_context_owner.py": "1E35D147049F981F901B9A2B72C76EBE5705F5D19A04447E742AE978A9BC5278",
+    "mode_resolved_puiseux.py": "5A89CF82006CB5ECC1D8B4BE1FD56A463453EE3D6261968CB64DE8CCF2C8B7AE",
+    "mode_resolved_puiseux_v2_m1_anchored.py": "5DE2C280B0E9DAF528A9E3011368361B37AE53DE38827FB6F6CE4AB2019A4455",
+    "nid_c1_coverage.py": "EEEE74848B6F4413914F0CC60230CC824982C7E485A38C77C4495F807975A2CD",
+    "nid_depth7_numerical_boundary.py": "D5016BD007FD59D4BB715967366774478AFFD344C1B5CD95ACF6F5A9465DD7C8",
+    "nid_m1_depth_5_7.py": "8B4572BBA51844471782D686F4199436186491E0F8274BD5CF1CB2EAC76B8B9C",
+    "nid_order7_m3_provenance.py": "DC7C178B8A73DC97B5FC6CCAB97FE88F3E95F59F0EDBF05985451DD6572319C3",
+    "nid_order7_m3_provenance_v2_rank_filter.py": "D583209F7B1CCB2648EFF3DD1D59F3F4382C9E1FDB66F7854404F3BE4B9AA025",
+    "nid_support_step2.py": "7AFA5AD9022FA3EB8BDFB5F77D573939D60B2312A0FA29493D6505695958EE5B",
+    "s1_collective_contract.py": "F535EE15137BBD6F9C0379821C9CC94DED8EC56037B6105B75BEF65A5884EE68",
+    "s_c0_coefficient_passport.py": "C370B610815AFAC345C990E3CFE516D616873F39598F468A5ADBF2C65A2A6B95",
+    "s_c0_coefficient_passport_v2_numpy_scalar.py": "06EE03C939FBCCFA6FA130421EEF98D0B8CC7571937EF02A7A46A57367534C11"
+  },
+  "test": "A2-K4 P5.3g7 KMPC-052 NID depth-7 same-matrix numerical boundary",
+  "thresholds": {
+    "absolute_fallback": 1e-12,
+    "absolute_fallback_norm": 1e-12,
+    "common_relative": 1e-08,
+    "correction_absolute_max": 1e-14,
+    "driver_relative": 1e-10,
+    "holdout_relative": 1e-09,
+    "precision_dps": 80
+  },
+  "zenodo_trigger": "NONE"
+}

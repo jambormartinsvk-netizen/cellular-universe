@@ -1,0 +1,430 @@
+{
+  "M1_standard_metadata": {
+    "condition_resolved": 1381.448283888701,
+    "driver_scaled_residual": 1.1407541578023479e-14,
+    "expected_matrix_shape_before_anchor": [
+      99,
+      77
+    ],
+    "expected_unknowns_after_anchor": 76,
+    "full_vector_unknowns": 77,
+    "hard_anchor_absolute_difference": 0.0,
+    "hard_anchor_method": "exact_column_elimination",
+    "hard_anchor_variable": "h[3]",
+    "holdout_scaled_residual": 2.7463637806078856e-15,
+    "inverse_resolved_condition": 0.0007238779849109189,
+    "m1_expected_h_coefficient": 0.0004045816759187545,
+    "m1_h_power": 3,
+    "m1_h_relative_difference": 0.0,
+    "m1_observed_h_coefficient": 0.0004045816759187545,
+    "pass": true,
+    "rank": 76,
+    "unknowns": 76
+  },
+  "authorship": {
+    "script_creator": "Codex (OpenAI)",
+    "theory_author": "Martin Jambor"
+  },
+  "candidate_interpretation_not_verdict": "REVIEW_NID_ORDER7_NONNUMERICAL_CORE_UNCLOSED",
+  "combined_R_fs_guard": {
+    "R_nu_plus_R_steam_minus_R_fs": 0.0,
+    "absolute_differences": {
+      "U_b_0": 2.498001805406602e-16,
+      "U_fs_0": 2.7755575615628914e-16,
+      "U_gamma_0": 0.0,
+      "delta_fs_0": 4.440892098500626e-16,
+      "delta_gamma_0": 4.440892098500626e-16
+    },
+    "density_compensation_residual": 4.440892098500626e-16,
+    "expected_combined_R_fs": {
+      "U_b_0": -0.17597411249999997,
+      "U_fs_0": 0.25,
+      "U_gamma_0": -0.17597411249999997,
+      "delta_fs_0": 1.0,
+      "delta_gamma_0": -0.7038964499999999
+    },
+    "observed": {
+      "U_b_0": -0.17597411250000022,
+      "U_fs_0": 0.2500000000000003,
+      "U_gamma_0": -0.17597411249999997,
+      "delta_fs_0": 1.0000000000000004,
+      "delta_gamma_0": -0.7038964499999995
+    },
+    "pass": true,
+    "velocity_compensation_residual": 1.1102230246251565e-16,
+    "weights": {
+      "R_fs": 0.4131098753096175,
+      "R_gamma": 0.5868901246903825,
+      "R_nu": 0.4059792483281481,
+      "R_steam": 0.007130626981469443
+    }
+  },
+  "driver_order7_rows": {
+    "pass": false,
+    "row_count": 13,
+    "rows": {
+      "Einstein_trace[7]": {
+        "branch": "relative",
+        "metric": 1.0319579470189748e-12,
+        "pass": true,
+        "residual": 1.1244260730847166e-15,
+        "term_norm_scale": 0.0010896045486474088
+      },
+      "Einstein_traceless[7]": {
+        "branch": "relative",
+        "metric": 1.872743572019396e-12,
+        "pass": true,
+        "residual": -2.109559272059358e-15,
+        "term_norm_scale": 0.0011264538848661495
+      },
+      "baryon_continuity[7]": {
+        "branch": "relative",
+        "metric": 3.133280385549525e-13,
+        "pass": true,
+        "residual": 6.391371806802049e-17,
+        "term_norm_scale": 0.0002039833982390666
+      },
+      "cdm_Euler[7]": {
+        "branch": "absolute",
+        "metric": 4.331263088264672e-17,
+        "pass": true,
+        "residual": 4.331263088264672e-17,
+        "term_norm_scale": 4.3668949148440696e-17
+      },
+      "cdm_continuity[7]": {
+        "branch": "relative",
+        "metric": 2.6390000700291276e-12,
+        "pass": true,
+        "residual": 1.0695647812185896e-16,
+        "term_norm_scale": 4.0529168353026396e-05
+      },
+      "fs_Euler[7]": {
+        "branch": "relative",
+        "metric": 7.22437915616386e-13,
+        "pass": true,
+        "residual": -9.653634499857261e-18,
+        "term_norm_scale": 1.3362580079453268e-05
+      },
+      "fs_continuity[7]": {
+        "branch": "relative",
+        "metric": 3.7870776077843906e-13,
+        "pass": true,
+        "residual": 7.943136166171927e-17,
+        "term_norm_scale": 0.00020974315788629998
+      },
+      "fs_shear[7]": {
+        "branch": "relative",
+        "metric": 1.9412917594527946e-12,
+        "pass": true,
+        "residual": 1.860558690620906e-16,
+        "term_norm_scale": 9.58412707189029e-05
+      },
+      "fuel_Euler[7]": {
+        "branch": "relative",
+        "metric": 3.3108099101720186e-13,
+        "pass": true,
+        "residual": -2.9683210845342888e-19,
+        "term_norm_scale": 8.965543673813833e-07
+      },
+      "fuel_continuity[7]": {
+        "branch": "relative",
+        "metric": 1.2630544957935692e-10,
+        "pass": false,
+        "residual": 1.2109977107335529e-16,
+        "term_norm_scale": 9.587850047378128e-07
+      },
+      "gamma_Euler[7]": {
+        "branch": "relative",
+        "metric": 1.488090388802408e-11,
+        "pass": true,
+        "residual": 1.2417884171574307e-16,
+        "term_norm_scale": 8.3448453568523e-06
+      },
+      "gamma_continuity[7]": {
+        "branch": "relative",
+        "metric": 7.276106900383855e-13,
+        "pass": true,
+        "residual": -1.978940015329167e-16,
+        "term_norm_scale": 0.00027197786431982834
+      },
+      "tight_coupling[7]": {
+        "branch": "relative",
+        "metric": 1.2040201213698656e-11,
+        "pass": true,
+        "residual": -7.519958505723678e-18,
+        "term_norm_scale": 6.245708333485239e-07
+      }
+    }
+  },
+  "execution_status": "TECHNICAL_COMPLETE_PENDING_ORCHESTRATOR_AUDIT",
+  "finite_pass": true,
+  "holdout_order7_rows": {
+    "pass": false,
+    "row_count": 2,
+    "rows": {
+      "Einstein_00[7]": {
+        "branch": "relative",
+        "metric": 0.2299865476185119,
+        "pass": false,
+        "residual": 2.482605485484406e-05,
+        "term_norm_scale": 0.00010794568252758877
+      },
+      "Einstein_0i[7]": {
+        "branch": "relative",
+        "metric": 0.08433435412951372,
+        "pass": false,
+        "residual": -1.3002128277851444e-06,
+        "term_norm_scale": 1.541735679612113e-05
+      }
+    }
+  },
+  "identity": {
+    "k_Mpc_inverse": 0.05,
+    "mode": "NID",
+    "support": [
+      0,
+      7
+    ],
+    "variant": "nominal"
+  },
+  "immutable_prerequisites": {
+    "KMPC048": {
+      "file": "RUN_KMPC_048_P5_3G7_NID_SUPPORT_STEP_2_05_07.json",
+      "sha256": "B4F320F5D850DCF78FD9EC2A5BDDEBDA87D590DA2988CF505FA7D5B25B49BF32"
+    },
+    "KMPC049_failure": {
+      "file": "RUN_KMPC_049_P5_3G7_NID_ORDER7_M3_PROVENANCE_TECHNICAL_FAILURE.json",
+      "sha256": "EB5EA48145CB52C95826A3111ABBD2DF0C05AC531B8471DF704E2032FA0B6E35"
+    }
+  },
+  "immutable_support07_regression": {
+    "F0": {
+      "absolute_tolerance": 1e-14,
+      "coefficient_count": 16,
+      "exact_power_sets": true,
+      "exact_state_set": true,
+      "expected_value": 1.5018731255593837e-08,
+      "finite": true,
+      "observed_value": 1.5018731255593837e-08,
+      "pass": true,
+      "relative_tolerance": 1e-12,
+      "worst_absolute_difference": 0.0,
+      "worst_allowed_bound": 1e-14,
+      "worst_bound_ratio": 0.0,
+      "worst_coefficient": "delta_f[7]"
+    },
+    "M3": {
+      "absolute_tolerance": 1e-14,
+      "coefficient_count": 104,
+      "exact_power_sets": true,
+      "exact_state_set": true,
+      "expected_value": 2.7316597806350314e-07,
+      "finite": true,
+      "observed_value": 2.7316597806350314e-07,
+      "pass": true,
+      "relative_tolerance": 1e-12,
+      "worst_absolute_difference": 0.0,
+      "worst_allowed_bound": 1e-14,
+      "worst_bound_ratio": 0.0,
+      "worst_coefficient": "sigma_fs[7]"
+    }
+  },
+  "matrix_provenance_guard": {
+    "capture_counts": {
+      "holdout": 1,
+      "passthrough": 1,
+      "target": 1
+    },
+    "driver_constant_sha256_float64_C": "C5E714FC0015A1019788ADBA745A88CB7228C40A66ED5CE4F695F11FDC942458",
+    "driver_labels": 104,
+    "driver_matrix_sha256_float64_C": "BF82D1C14A2B71091B068C845DA3D1344D240E1D66D026C64AEE457329B3AD83",
+    "driver_shape": [
+      104,
+      104
+    ],
+    "equilibrated_rank_rcond": 104,
+    "equilibrated_singular_ratio": 0.2759142903409577,
+    "expected_rank": 104,
+    "holdout_constant_sha256_float64_C": "F119F3100DA199DFDED4CDEE30DB784CE7FCC78CC6BA065C2E601A16FFA2532E",
+    "holdout_labels": 16,
+    "holdout_matrix_sha256_float64_C": "144D074E21E2D9AE73C84E8F4097B4944FC40DA76422D50115FA0C6CAA23CF1B",
+    "holdout_shape": [
+      16,
+      104
+    ],
+    "owners_restored": true,
+    "pass": true,
+    "raw_rank_rcond": 104,
+    "raw_singular_ratio": 0.0012150985379871058
+  },
+  "orchestrator_verdict": "NOT_ASSIGNED_BY_SCRIPT",
+  "original_solve_diagnostics": {
+    "Uc_lower_regular_max_abs": 0.0,
+    "absolute_fallback_row_count": 29,
+    "column_scale_span": 14.852851912359563,
+    "equilibrated_rank_rcond": 104,
+    "equilibrated_singular_ratio": 0.2759142903409577,
+    "expected_rank": 104,
+    "forbidden_Omega_f1_times_fuel1_max_abs": 0.0,
+    "forbidden_Phi1_Einstein_source_sensitivities": {
+      "density_from_delta_f1": 0.0,
+      "momentum_from_U_f1": 0.0,
+      "trace_from_U_f1": 0.0,
+      "trace_from_delta_f1": 0.0
+    },
+    "forbidden_earlier_layer_max_abs": 0.0,
+    "fuel1_driver_column_min_max_abs": 2.93109,
+    "holdout": {
+      "absolute_fallback_row_count": 2,
+      "max_absolute_fallback_residual": 2.7698185238357107e-15,
+      "max_relative_residual": 0.2299865476185119,
+      "pass_holdout": false,
+      "relative_row_count": 14,
+      "rows": 16,
+      "worst_absolute_fallback_row": "Einstein_00[1]",
+      "worst_relative_row": "Einstein_00[7]"
+    },
+    "max_absolute_fallback_residual": 2.4408707321664543e-15,
+    "max_relative_residual": 1.2630544957935692e-10,
+    "pass_driver": false,
+    "pass_forbidden_layers": true,
+    "pass_forbidden_stress_guard": true,
+    "pass_production_contract": true,
+    "pass_rank": true,
+    "production_contract": {
+      "errors": [],
+      "implemented_driver": [
+        "gamma_continuity",
+        "gamma_Euler",
+        "fs_continuity",
+        "fs_shear",
+        "fs_Euler",
+        "baryon_continuity",
+        "cdm_continuity",
+        "cdm_Euler",
+        "tight_coupling",
+        "fuel_continuity",
+        "fuel_Euler",
+        "Einstein_trace",
+        "Einstein_traceless"
+      ],
+      "implemented_holdout": [
+        "Einstein_00",
+        "Einstein_0i"
+      ],
+      "implemented_state": [
+        "h",
+        "eta",
+        "delta_gamma",
+        "delta_fs",
+        "delta_b",
+        "delta_c",
+        "U_gamma",
+        "U_fs",
+        "sigma_fs",
+        "U_b",
+        "U_c",
+        "delta_f",
+        "U_f"
+      ],
+      "valid": true
+    },
+    "raw_rank_rcond": 104,
+    "raw_singular_ratio": 0.0012150985379871058,
+    "rcond": 1e-12,
+    "relative_row_count": 75,
+    "row_scale_span": 782.5189115286001,
+    "rows": 104,
+    "support": [
+      0,
+      7
+    ],
+    "unknowns": 104,
+    "worst_absolute_fallback_row": "Einstein_traceless[0]",
+    "worst_relative_row": "fuel_continuity[7]"
+  },
+  "prediction_table_effect": "NONE",
+  "provenance_pass": true,
+  "regression_pass": true,
+  "release_trigger": "NONE",
+  "run_id": "KMPC-050",
+  "runtime_limit_seconds": 4.8,
+  "runtime_seconds": 1.187999999994645,
+  "same_matrix_correction_diagnostic": {
+    "after_driver": {
+      "absolute_fallback_row_count": 29,
+      "max_absolute_fallback_residual": 1.2424559257230936e-29,
+      "max_relative_residual": 1.5755444949743657e-16,
+      "pass_driver": true,
+      "relative_row_count": 75,
+      "worst_absolute_fallback_row": "Einstein_traceless[1]",
+      "worst_relative_row": "gamma_continuity[5]"
+    },
+    "after_holdout": {
+      "absolute_fallback_row_count": 2,
+      "max_absolute_fallback_residual": 2.7109638355842788e-15,
+      "max_relative_residual": 0.22998654761907275,
+      "pass_holdout": false,
+      "relative_row_count": 14,
+      "rows": 16,
+      "worst_absolute_fallback_row": "Einstein_00[1]",
+      "worst_relative_row": "Einstein_00[7]"
+    },
+    "before_driver": {
+      "absolute_fallback_row_count": 29,
+      "max_absolute_fallback_residual": 2.4408707321664543e-15,
+      "max_relative_residual": 1.2630544957935692e-10,
+      "pass_driver": false,
+      "relative_row_count": 75,
+      "worst_absolute_fallback_row": "Einstein_traceless[0]",
+      "worst_relative_row": "fuel_continuity[7]"
+    },
+    "before_holdout": {
+      "absolute_fallback_row_count": 2,
+      "max_absolute_fallback_residual": 2.7698185238357107e-15,
+      "max_relative_residual": 0.2299865476185119,
+      "pass_holdout": false,
+      "relative_row_count": 14,
+      "rows": 16,
+      "worst_absolute_fallback_row": "Einstein_00[1]",
+      "worst_relative_row": "Einstein_00[7]"
+    },
+    "correction_Linf_relative_to_max_solution_or_one": 2.2866835133762004e-16,
+    "correction_max_abs": 2.2866835133762004e-16,
+    "method": "one same-matrix equilibrated least-squares correction; diagnostic only",
+    "normalized_backward_error_Linf": 9.273327484797342e-17,
+    "pass_numerical_boundary_pattern": false
+  },
+  "scope": {
+    "excluded": "new equations/support/thresholds, corrected state publication, [0,9], NIV, other k/variants, S-M, ODE, G8/G9",
+    "included": "same NID [0,7] M3 matrix capture with rank-filtered shared-solver routing"
+  },
+  "score_effect": "NONE",
+  "source_hashes": {
+    "cdi_c1_coverage.py": "D57CA8CA5571A07440A987F4FB0DDA08A40DAF7EA8C95AF929FC5C936F2FCE0F",
+    "cdi_support_ladder.py": "A8257E2195E2AB61B5C4195B80EA44EE7669B5A52F9C8440BA5F5244190E3068",
+    "full_ra_b1_preflight.py": "62D6DEEFBDB81C0619FD58C668185FF9CA76926A90D00DCE9C092AD4797D6B5D",
+    "full_ra_b1_preflight_v2.py": "27C0D6ADA828CA2F59C0D128EB6339074D5940F294272CDABE8127CB84867C7C",
+    "full_ra_contract.py": "F3839DA931D24939FA9C5925FD29B1484E722D1A0F24117DC91EBE5F4436D464",
+    "full_ra_m3_seed.py": "070F217B45A385369ECAFAA3D409A1210BAE3C3AF8A600A9171225B258751BF2",
+    "mode_resolved_puiseux.py": "5A89CF82006CB5ECC1D8B4BE1FD56A463453EE3D6261968CB64DE8CCF2C8B7AE",
+    "mode_resolved_puiseux_v2_m1_anchored.py": "5DE2C280B0E9DAF528A9E3011368361B37AE53DE38827FB6F6CE4AB2019A4455",
+    "nid_c1_coverage.py": "EEEE74848B6F4413914F0CC60230CC824982C7E485A38C77C4495F807975A2CD",
+    "nid_order7_m3_provenance.py": "DC7C178B8A73DC97B5FC6CCAB97FE88F3E95F59F0EDBF05985451DD6572319C3",
+    "nid_order7_m3_provenance_v2_rank_filter.py": "D583209F7B1CCB2648EFF3DD1D59F3F4382C9E1FDB66F7854404F3BE4B9AA025",
+    "nid_support_step2.py": "7AFA5AD9022FA3EB8BDFB5F77D573939D60B2312A0FA29493D6505695958EE5B",
+    "s1_collective_contract.py": "F535EE15137BBD6F9C0379821C9CC94DED8EC56037B6105B75BEF65A5884EE68",
+    "s_c0_coefficient_passport.py": "C370B610815AFAC345C990E3CFE516D616873F39598F468A5ADBF2C65A2A6B95",
+    "s_c0_coefficient_passport_v2_numpy_scalar.py": "06EE03C939FBCCFA6FA130421EEF98D0B8CC7571937EF02A7A46A57367534C11"
+  },
+  "test": "A2-K4 P5.3g7 KMPC-050 NID order-7 M3 provenance",
+  "thresholds": {
+    "absolute_fallback": 1e-12,
+    "absolute_fallback_norm": 1e-12,
+    "correction_abs_max": 1e-12,
+    "correction_rel_max": 1e-12,
+    "driver_relative": 1e-10,
+    "holdout_relative": 1e-09
+  },
+  "zenodo_trigger": "NONE"
+}

@@ -1,0 +1,46 @@
+{
+  "authorship": {
+    "script_creator": "Codex (OpenAI)",
+    "theory_author": "Martin Jambor"
+  },
+  "error_message": "one or more KMPC-134 support workers failed",
+  "error_type": "RuntimeError",
+  "execution_status": "TECHNICAL_FAILURE_NO_PHYSICS_VERDICT",
+  "identity": {
+    "k_Mpc_inverse": 0.15,
+    "mode": "BI",
+    "physical_receipt": "BI_K0p15_HP_M1_exact_resume_four_shards"
+  },
+  "orchestrator_verdict": "NOT_ASSIGNED_BY_SCRIPT",
+  "physics_verdict": "NONE_TECHNICAL_FAILURE",
+  "run_id": "KMPC-134",
+  "score_effect": "NONE",
+  "source_hashes": {
+    "base": "41332BA6814B7931F518467A95201B2581A564A7AB0AB5970F779FECEF49AB3D",
+    "runner": "6B12DEC80AD09D107F551FD1B1FC19D61A993FB1A91FB2A8872DA6EEEAC910D5"
+  },
+  "successful_worker_payloads": {},
+  "traceback": "Traceback (most recent call last):\n  File \"D:\\Teoria\\scripts\\378_script_KMPC_134_P5_3g7_C3_BI_k0p15_HP_M1_exact_resume.py\", line 281, in main\n    raise RuntimeError(\"one or more KMPC-134 support workers failed\")\nRuntimeError: one or more KMPC-134 support workers failed\n",
+  "worker_process_records": {
+    "af0/accepted": {
+      "parse_error": "",
+      "returncode": 2,
+      "stderr": "KMPC-134 pre-output technical failure: TimeoutError: KMPC-128 pair internal deadline exceeded\n"
+    },
+    "af0/audit": {
+      "parse_error": "",
+      "returncode": 2,
+      "stderr": "KMPC-134 pre-output technical failure: TimeoutError: KMPC-128 pair internal deadline exceeded\n"
+    },
+    "gamma0/accepted": {
+      "parse_error": "",
+      "returncode": 2,
+      "stderr": "KMPC-134 pre-output technical failure: TimeoutError: KMPC-128 pair internal deadline exceeded\n"
+    },
+    "gamma0/audit": {
+      "parse_error": "",
+      "returncode": 2,
+      "stderr": "KMPC-134 pre-output technical failure: TimeoutError: KMPC-128 pair internal deadline exceeded\n"
+    }
+  }
+}

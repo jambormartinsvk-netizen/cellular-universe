@@ -1,0 +1,883 @@
+{
+  "checks": {
+    "all_quarantine_files_exist": true,
+    "corpus_count_excluding_auditor_is_212": true,
+    "expected_syntax_failures_only": true,
+    "incomplete_186_detected": true,
+    "no_target_script_executed": true
+  },
+  "corpus_count_excluding_auditor": 212,
+  "execution_verdict": "PASS_SCRIPT_CORPUS_INVENTORY",
+  "missing_quarantine_files": [],
+  "no_execution_entry_candidates": [
+    "186_script_A2_K4_C7_7c_K7c3d_M_rhs_term_ledger.py"
+  ],
+  "pattern_findings": [
+    {
+      "file": "142_script_A2_K4_3b_RG_C7_7c_K2_normalized_component_evolution.py",
+      "findings": [
+        "long_run_without_internal_runtime_argument"
+      ]
+    },
+    {
+      "file": "150_script_A2_K4_C7_7c_segment_profiler.py",
+      "findings": [
+        "long_run_without_internal_runtime_argument"
+      ]
+    },
+    {
+      "file": "154_script_A2_K4_C7_7c_K6_vector_atol_segment_evolution.py",
+      "findings": [
+        "long_run_without_internal_runtime_argument"
+      ]
+    },
+    {
+      "file": "170_script_A2_K4_C7_7c_K7b3b_hard_constrained_standard_export.py",
+      "findings": [
+        "unsupported_mpmath_list_slice"
+      ]
+    },
+    {
+      "file": "171_script_A2_K4_C7_7c_K7b3b_hard_constrained_slice_corrected_export.py",
+      "findings": [
+        "unsupported_mpmath_list_slice"
+      ]
+    },
+    {
+      "file": "172_script_A2_K4_C7_7c_K7b3b_hard_constrained_constraint_gate.py",
+      "findings": [
+        "fail_open_get_equality"
+      ]
+    },
+    {
+      "file": "174_script_A2_K4_C7_7c_K7b3b1_slice_and_physical_mu_export.py",
+      "findings": [
+        "unsupported_mpmath_list_slice"
+      ]
+    },
+    {
+      "file": "179_script_A2_K4_C7_7c_K7c3_NID_deep_short_projected_ODE.py",
+      "findings": [
+        "json_key_order_assumption"
+      ]
+    },
+    {
+      "file": "180_script_A2_K4_C7_7c_K7c3_NID_deep_JSON_order_corrected_ODE.py",
+      "findings": [
+        "json_key_order_assumption"
+      ]
+    },
+    {
+      "file": "181_script_A2_K4_C7_7c_K7c3a_exact_linear_operator_profile.py",
+      "findings": [
+        "json_key_order_assumption",
+        "long_run_without_internal_runtime_argument"
+      ]
+    },
+    {
+      "file": "183_script_A2_K4_C7_7c_K7c3b_fixed_RK4_step_convergence.py",
+      "findings": [
+        "json_key_order_assumption",
+        "generated_unreachable_legacy_solver_risk",
+        "long_run_without_internal_runtime_argument"
+      ]
+    },
+    {
+      "file": "186_script_A2_K4_C7_7c_K7c3d_M_rhs_term_ledger.py",
+      "findings": [
+        "incomplete_continuation_marker"
+      ]
+    },
+    {
+      "file": "187_script_A2_K4_K7b_K7c_claim_audit.py",
+      "findings": [
+        "fail_open_get_equality",
+        "json_key_order_assumption",
+        "generated_unreachable_legacy_solver_risk"
+      ]
+    },
+    {
+      "file": "188_script_python_corpus_status_and_known_error_audit.py",
+      "findings": [
+        "unsupported_mpmath_list_slice",
+        "json_key_order_assumption",
+        "incomplete_continuation_marker",
+        "generated_unreachable_legacy_solver_risk"
+      ]
+    },
+    {
+      "file": "189_script_A2_K4_C7_7c_K7b3b2_fail_closed_physical_mu_gate.py",
+      "findings": [
+        "fail_open_get_equality"
+      ]
+    },
+    {
+      "file": "198_script_python_corpus_status_audit_after_K7c_P1_clean_RK4.py",
+      "findings": [
+        "unsupported_mpmath_list_slice",
+        "json_key_order_assumption",
+        "incomplete_continuation_marker",
+        "generated_unreachable_legacy_solver_risk"
+      ]
+    },
+    {
+      "file": "200_script_python_corpus_status_audit_after_K7c_P2_script199.py",
+      "findings": [
+        "unsupported_mpmath_list_slice",
+        "json_key_order_assumption",
+        "incomplete_continuation_marker",
+        "generated_unreachable_legacy_solver_risk"
+      ]
+    },
+    {
+      "file": "202_script_python_corpus_status_audit_after_K7c_P3a_script201.py",
+      "findings": [
+        "unsupported_mpmath_list_slice",
+        "json_key_order_assumption",
+        "incomplete_continuation_marker",
+        "generated_unreachable_legacy_solver_risk"
+      ]
+    },
+    {
+      "file": "45_script_A2_K11_S8_K1b_superhorizon_instability_test.py",
+      "findings": [
+        "long_run_without_internal_runtime_argument"
+      ]
+    },
+    {
+      "file": "46_script_A2_K11_S8_K1b_rigorous_amplitude_scaling_test.py",
+      "findings": [
+        "long_run_without_internal_runtime_argument"
+      ]
+    },
+    {
+      "file": "47_script_A2_K11_S8_K1b_fully_consistent_einstein_test.py",
+      "findings": [
+        "long_run_without_internal_runtime_argument"
+      ]
+    },
+    {
+      "file": "51_script_A2_K11_script45_equation_and_sign_audit.py",
+      "findings": [
+        "long_run_without_internal_runtime_argument"
+      ]
+    },
+    {
+      "file": "53_script_A2_K11_solver_floor_and_amplitude_scaling.py",
+      "findings": [
+        "long_run_without_internal_runtime_argument"
+      ]
+    },
+    {
+      "file": "54_script_A2_K11_script45_constraint_and_scaling_audit.py",
+      "findings": [
+        "long_run_without_internal_runtime_argument"
+      ]
+    },
+    {
+      "file": "66_script_A2_K4_1_complete_regular_mode_basis.py",
+      "findings": [
+        "long_run_without_internal_runtime_argument"
+      ]
+    }
+  ],
+  "quarantine": [
+    {
+      "file": "28_script_A2_K4_full_superhorizon_relative_mode.py",
+      "reason": "numpy.bool_ JSON failure after integration",
+      "sha256": "e27587aed5dced17eae8603e55ee835c27e64b76ec871cb246e1e7f313891227",
+      "status": "DO_NOT_RUN_TECHNICAL",
+      "successor": "29_script_A2_K4_full_superhorizon_relative_mode_serialized.py",
+      "syntax": "PASS"
+    },
+    {
+      "file": "29_script_A2_K4_full_superhorizon_relative_mode_serialized.py",
+      "reason": "serialization fixed, but convergence and pointwise constraint gates failed",
+      "sha256": "c5aae2d8628e77e8c6c44932a0e8cd2690f6ace6b22691bd36f4e3e907f1ebba",
+      "status": "RUNNABLE_REVIEW_ONLY",
+      "successor": "later K4.1/K4.2 chain",
+      "syntax": "PASS"
+    },
+    {
+      "file": "43_script_A2_K5_1_delta_zero_singular_limit.py",
+      "reason": "AttributeError from a non-exported helper",
+      "sha256": "8af163fbd4c005fc1acd0c66e2e17e41ba41f962dffcfa1f99d735b68d5f5b83",
+      "status": "DO_NOT_RUN_TECHNICAL",
+      "successor": "44_script_A2_K5_1_delta_zero_singular_limit_fixed.py",
+      "syntax": "PASS"
+    },
+    {
+      "file": "45_script_A2_K11_S8_K1b_superhorizon_instability_test.py",
+      "known_pattern_findings": [
+        "long_run_without_internal_runtime_argument"
+      ],
+      "reason": "printed PASS rejected: wrong/incomplete equations and failed Einstein constraint",
+      "sha256": "973905d79cbecbfd2de55f13d3d3713d66c18b068ba74c7cab566001a7312aeb",
+      "status": "DO_NOT_USE_PHYSICS",
+      "successor": "new covariant K11 operator required",
+      "syntax": "PASS"
+    },
+    {
+      "file": "46_script_A2_K11_S8_K1b_rigorous_amplitude_scaling_test.py",
+      "known_pattern_findings": [
+        "long_run_without_internal_runtime_argument"
+      ],
+      "reason": "inherits the non-authoritative K11 equation system",
+      "sha256": "e24c8d18a177bc112ecf7fe289cbe3b45d66adfcabe313889c8ee2c5a28f559b",
+      "status": "DO_NOT_USE_PHYSICS",
+      "successor": "new covariant K11 operator required",
+      "syntax": "PASS"
+    },
+    {
+      "file": "47_script_A2_K11_S8_K1b_fully_consistent_einstein_test.py",
+      "known_pattern_findings": [
+        "long_run_without_internal_runtime_argument"
+      ],
+      "reason": "later audit rejects its physical/constraint interpretation",
+      "sha256": "3cffd6e9977bd8a4619362bbd0bddcc2436bbef468ec47b00dadd8f6f0e056bc",
+      "status": "DO_NOT_USE_PHYSICS",
+      "successor": "68_script_A2_K11_script47_physics_and_constraint_audit.py",
+      "syntax": "PASS"
+    },
+    {
+      "file": "51_script_A2_K11_script45_equation_and_sign_audit.py",
+      "known_pattern_findings": [
+        "long_run_without_internal_runtime_argument"
+      ],
+      "reason": "historical long/overflowing anti-damping branch; partial results preserved",
+      "sha256": "8aaa966aaafc273cea2cedd816cfd12444314cdac47a48d2800faf9abe3acb5a",
+      "status": "DO_NOT_RUN_TECHNICAL",
+      "successor": "52_script_A2_K11_script45_recoverable_runs.py",
+      "syntax": "PASS"
+    },
+    {
+      "file": "52_script_A2_K11_script45_recoverable_runs.py",
+      "reason": "recoverable branches only; no converged or constraint-valid physical PASS",
+      "sha256": "b312c1a379f71dabbee42ac34c2f7adf10f6fd65088fcb357774205d0aa92be3",
+      "status": "RUNNABLE_REVIEW_ONLY",
+      "successor": "54_script_A2_K11_script45_constraint_and_scaling_audit.py",
+      "syntax": "PASS"
+    },
+    {
+      "file": "53_script_A2_K11_solver_floor_and_amplitude_scaling.py",
+      "known_pattern_findings": [
+        "long_run_without_internal_runtime_argument"
+      ],
+      "reason": "documented numerical-resolution failure",
+      "sha256": "55951c028a1b54c2c68f1b9a20b53fe3d60d0806c5d8ce1517e1b9dc9802c8b2",
+      "status": "RUNNABLE_REVIEW_ONLY",
+      "successor": "54_script_A2_K11_script45_constraint_and_scaling_audit.py",
+      "syntax": "PASS"
+    },
+    {
+      "file": "54_script_A2_K11_script45_constraint_and_scaling_audit.py",
+      "known_pattern_findings": [
+        "long_run_without_internal_runtime_argument"
+      ],
+      "reason": "audit diagnostic; current K11 requires a new operator before evolution",
+      "sha256": "c953bb7bc38c6f3ffc1f4d70c747aa8e7fc18b2b5f2fcf0331a8c454139330cf",
+      "status": "RUNNABLE_REVIEW_ONLY",
+      "successor": "none",
+      "syntax": "PASS"
+    },
+    {
+      "file": "61_script_A2_K7_K3_1_K2_2_K1b_spin2_coupling_scale_gate_PRE_ERRATUM_OVERBROAD.py",
+      "reason": "pre-erratum overbroad spin-2 conclusion",
+      "sha256": "444b658d895374410e1f4ecd10f547130c5fb944388e91a2ce4fda9046bbdcac",
+      "status": "DO_NOT_USE_PHYSICS",
+      "successor": "61_script_A2_K7_K3_1_K2_2_K1b_spin2_coupling_scale_gate.py",
+      "syntax": "PASS"
+    },
+    {
+      "file": "75_script_A2_K4_3b_exact_CAMB_hierarchy_coefficient_crosscheck.py",
+      "reason": "J2/G2 alias mapping was not converted",
+      "sha256": "1ad8b2b59efd649d089e6adbd38f850eae09b77cd8c70a5e996ab8509a56c228",
+      "status": "SUPERSEDED",
+      "successor": "76_script_A2_K4_3b_exact_CAMB_hierarchy_coefficients_alias_fixed.py",
+      "syntax": "PASS"
+    },
+    {
+      "file": "78_script_A2_K4_3b_RG_collective_CAMB_regular_seed_active_start_fixed.py",
+      "reason": "symbolic pi_r path requires unavailable Fortran compiler",
+      "sha256": "8c6151c186faaa606ffeaf2991b010bfe368a54e9d904cc1e6256c13a40f493d",
+      "status": "ENVIRONMENT_BLOCKED",
+      "successor": "79_script_A2_K4_3b_RG_collective_CAMB_regular_seed_precompiled_only.py",
+      "syntax": "PASS"
+    },
+    {
+      "file": "89_script_A2_K4_3b_RG_BR2_backreacted_superhorizon_evolution.py",
+      "reason": "raw eta second derivative is ill-conditioned in deep radiation era",
+      "sha256": "bcc9da578ceff40476c71c95e8a3028187b6fb4c873ecf9910d07a34c44ed046",
+      "status": "RUNNABLE_REVIEW_ONLY",
+      "successor": "90/92/94 conditioned chain",
+      "syntax": "PASS"
+    },
+    {
+      "file": "90_script_A2_K4_3b_RG_BR2_conditioned_DAE_constraint_audit.py",
+      "reason": "species variables remained cancellation-prone",
+      "sha256": "dca036ca320e2f6905516394be1d1bc0173ac9f365b28b0626ebcf75c3266221",
+      "status": "RUNNABLE_REVIEW_ONLY",
+      "successor": "92/94 conditioned chain",
+      "syntax": "PASS"
+    },
+    {
+      "file": "91_script_A2_K4_3b_RG_BR2_Omega_conditioned_DAE.py",
+      "reason": "numpy.bool_ JSON serialization failure",
+      "sha256": "a1384faeecb83bfb13ce52a26bd66b80331214ddce2b13fccb206435506c989f",
+      "status": "DO_NOT_RUN_TECHNICAL",
+      "successor": "92_script_A2_K4_3b_RG_BR2_Omega_conditioned_DAE_json_fixed_alias.py",
+      "syntax": "PASS"
+    },
+    {
+      "file": "92_script_A2_K4_3b_RG_BR2_Omega_conditioned_DAE_json_fixed_alias.py",
+      "reason": "density passed but two velocity modes remained above fixed tolerance",
+      "sha256": "c65d4dfdeae6658bf9292e400670907de9914c055a4b650f5d0209e5a98b802b",
+      "status": "RUNNABLE_REVIEW_ONLY",
+      "successor": "94_script_A2_K4_3b_RG_BR2_velocity_roundoff_condition_gate_json_alias.py",
+      "syntax": "PASS"
+    },
+    {
+      "file": "93_script_A2_K4_3b_RG_BR2_velocity_roundoff_condition_gate.py",
+      "reason": "numpy.bool_ JSON serialization failure",
+      "sha256": "ce7aa1c82bcdf42b5af89cba9149372f8e66d3cf41a6da3a98a7155b7d591f6e",
+      "status": "DO_NOT_RUN_TECHNICAL",
+      "successor": "94_script_A2_K4_3b_RG_BR2_velocity_roundoff_condition_gate_json_alias.py",
+      "syntax": "PASS"
+    },
+    {
+      "file": "101_script_A2_K4_3b_RG_BR3B2d_NID_NIV_power_ordering.py",
+      "reason": "SymPy BooleanTrue JSON serialization failure",
+      "sha256": "95e3e51ff928fceda566948840f8c92e2a6611a141bb9c5e276c1b88ecb93e27",
+      "status": "DO_NOT_RUN_TECHNICAL",
+      "successor": "102_script_A2_K4_3b_RG_BR3B2d_NID_NIV_power_ordering_fixed.py",
+      "syntax": "PASS"
+    },
+    {
+      "file": "105_script_A2_K4_3b_RG_BR3B2e2_NIV_shear_CAMB_constraint_crosscheck.py",
+      "reason": "symbolic CAMB output requires unavailable Fortran compiler",
+      "sha256": "350d0c1ed7da26a7048c9086852e583c94025154941db20454dc87d3634ebb73",
+      "status": "ENVIRONMENT_BLOCKED",
+      "successor": "106_script_A2_K4_3b_RG_BR3B2e2_NIV_shear_CAMB_precompiled_crosscheck.py",
+      "syntax": "PASS"
+    },
+    {
+      "file": "107_script_A2_K4_3b_RG_BR3B2e2_NID_NIV_shear_sector_solution.py",
+      "reason": "exact linsolve repeatedly exceeded the bounded runtime",
+      "sha256": "e56697d4e3f4d4caae7d9b3450ed03cafb759be709cdc43349a936f914991219",
+      "status": "SUPERSEDED",
+      "successor": "108_script_A2_K4_3b_RG_BR3B2e2_NID_NIV_shear_sector_solution_bounded.py",
+      "syntax": "PASS"
+    },
+    {
+      "file": "110_script_A2_K4_3b_RG_BR3B2f_CAMB_mode_coefficients_in_a.py",
+      "reason": "NID/NIV regression unstable for high coefficients",
+      "sha256": "97e4f522077f418cac3053269cb5c24a1058eef80b171d88f73fc78bce259ff3",
+      "status": "RUNNABLE_REVIEW_ONLY",
+      "successor": "115/116/124 chain",
+      "syntax": "PASS"
+    },
+    {
+      "file": "111_script_A2_K4_3b_RG_BR3B2f2_NID_NIV_baryon_fraction_difference.py",
+      "reason": "time-window dependence remained",
+      "sha256": "c8a91e41fdf5c05c44fc69a459c1755c1e311580bafb4fccf736d1dbcfcaf19d",
+      "status": "RUNNABLE_REVIEW_ONLY",
+      "successor": "115/116/124 chain",
+      "syntax": "PASS"
+    },
+    {
+      "file": "112_script_A2_K4_3b_RG_BR3B2f3_exact_Frobenius_standard_NID_NIV.py",
+      "reason": "symbolic series exceeded external timeout",
+      "sha256": "8b32ae418e8baa7fe6f232097d1b00c58fad7a0e0385088d900c39ddf33cf46f",
+      "status": "SUPERSEDED",
+      "successor": "115_script_A2_K4_3b_RG_BR3B2f3_Frobenius_null_direction_audit_fixed.py",
+      "syntax": "PASS"
+    },
+    {
+      "file": "113_script_A2_K4_3b_RG_BR3B2f3_Frobenius_bounded_coefficients.py",
+      "reason": "leading coefficients passed but full-rank/k-independence gates were not valid",
+      "sha256": "53541b338834bf58b8ad9090f51f9e24bd45363c92d04a1f27c27a2ba415b5f9",
+      "status": "RUNNABLE_REVIEW_ONLY",
+      "successor": "115/116 chain",
+      "syntax": "PASS"
+    },
+    {
+      "file": "114_script_A2_K4_3b_RG_BR3B2f3_Frobenius_null_direction_audit.py",
+      "reason": "unexecuted duplicate after patch-helper failure",
+      "sha256": "c94a01fe69048c91e80d10cec9364524ebf7e89007f6b9f19fdb2fe7bb8dffcd",
+      "status": "DO_NOT_RUN_TECHNICAL",
+      "successor": "115_script_A2_K4_3b_RG_BR3B2f3_Frobenius_null_direction_audit_fixed.py",
+      "syntax": "PASS"
+    },
+    {
+      "file": "118_script_A2_K4_3b_RG_BR3B2f5_full_mixed_Puiseux_chain.py",
+      "reason": "preserved SyntaxError: missing parenthesis in solve_fuel",
+      "sha256": "e5ea459aef997b593fc1fc192d5d3c300bd97cee5efa198c60432122f097950f",
+      "status": "DO_NOT_RUN_TECHNICAL",
+      "successor": "124_script_A2_K4_3b_RG_BR3B2f5_full_mixed_Puiseux_chain_audited.py",
+      "syntax": "FAIL",
+      "syntax_error": "closing parenthesis ')' does not match opening parenthesis '[' on line 232 at line 233:85"
+    },
+    {
+      "file": "119_script_A2_K4_3b_RG_BR3B2f5_full_mixed_Puiseux_chain.py",
+      "reason": "preserved SyntaxError: outer list still unclosed",
+      "sha256": "f4e82c3d717600f02748646ac89f85d3838f26872efdeb4377323d8fa195dc8c",
+      "status": "DO_NOT_RUN_TECHNICAL",
+      "successor": "124_script_A2_K4_3b_RG_BR3B2f5_full_mixed_Puiseux_chain_audited.py",
+      "syntax": "FAIL",
+      "syntax_error": "closing parenthesis ')' does not match opening parenthesis '[' on line 236 at line 237:85"
+    },
+    {
+      "file": "120_script_A2_K4_3b_RG_BR3B2f5_full_mixed_Puiseux_chain.py",
+      "reason": "numpy.bool_ JSON serialization failure after equations",
+      "sha256": "f466f39dfb435cc20c7ce3f04eb2c622889d979385db12376737d6fd109efe70",
+      "status": "DO_NOT_RUN_TECHNICAL",
+      "successor": "121/124 corrected chain",
+      "syntax": "PASS"
+    },
+    {
+      "file": "121_script_A2_K4_3b_RG_BR3B2f5_full_mixed_Puiseux_chain.py",
+      "reason": "legacy shear oracle was wrong; result localized but not authoritative",
+      "sha256": "b088d27114e2628afd7a322c20947e81226d23c1cccf119b5dc21cc289c75f84",
+      "status": "RUNNABLE_REVIEW_ONLY",
+      "successor": "124_script_A2_K4_3b_RG_BR3B2f5_full_mixed_Puiseux_chain_audited.py",
+      "syntax": "PASS"
+    },
+    {
+      "file": "126_script_A2_K4_3b_RG_BR3B2g_l3_ash_full_ledger.py",
+      "reason": "homogeneous L3/L4 modes contaminated early coefficients",
+      "sha256": "5ce670e19f068567ed5066b9d851943a9ee8cffbeb98dabd608d4f5993682a72",
+      "status": "RUNNABLE_REVIEW_ONLY",
+      "successor": "127_script_A2_K4_3b_RG_BR3B2g_l3_ash_regular_hierarchy.py",
+      "syntax": "PASS"
+    },
+    {
+      "file": "131_script_A2_K4_3b_RG_BR3C_a_order5_order6_state_audit.py",
+      "reason": "division of round-off zero slots made F3/F4 unstable",
+      "sha256": "702afdd878902f8c63d53de13be91a59b015c692656b55c7ebfbd7c47583b03c",
+      "status": "RUNNABLE_REVIEW_ONLY",
+      "successor": "132/134 chain",
+      "syntax": "PASS"
+    },
+    {
+      "file": "133_script_A2_K4_3b_RG_BR3C_a_projected_order_audit.py",
+      "reason": "source-verdict marker had two matches",
+      "sha256": "55058ff1c292e9b00f18356fdbbdae9964074d9cd52d3fdc732a2e00f120af72",
+      "status": "DO_NOT_RUN_TECHNICAL",
+      "successor": "134_script_A2_K4_3b_RG_BR3C_a_projected_order_audit_fixed.py",
+      "syntax": "PASS"
+    },
+    {
+      "file": "140_script_A2_K4_3b_RG_BR3C_c_species_mode_activity_audit.py",
+      "reason": "key handling corrected by explicit fixed-keys successor",
+      "sha256": "7248217b056d1a764fba4753a1b8f5d2b565904713ec3d45a8b0065239e06c52",
+      "status": "SUPERSEDED",
+      "successor": "141_script_A2_K4_3b_RG_BR3C_c_species_mode_activity_audit_fixed_keys.py",
+      "syntax": "PASS"
+    },
+    {
+      "file": "142_script_A2_K4_3b_RG_C7_7c_K2_normalized_component_evolution.py",
+      "known_pattern_findings": [
+        "long_run_without_internal_runtime_argument"
+      ],
+      "reason": "normalized DOP853 numerical subtrack timed out",
+      "sha256": "0ddf286acf4d45a5ac5c85d367db6f0c7f8a7b843a3564a68eff11b7dcbe181b",
+      "status": "SUPERSEDED",
+      "successor": "K7 projected-basis chain",
+      "syntax": "PASS"
+    },
+    {
+      "file": "143_script_A2_K4_3b_RG_C7_7c_K2_normalized_activity_audit.py",
+      "reason": "audit wrapper of timed-out K2 subtrack",
+      "sha256": "b7f1badef501a299ea87a3f448e14136209939339befe3695b33a39820cb0e92",
+      "status": "SUPERSEDED",
+      "successor": "K7 projected-basis chain",
+      "syntax": "PASS"
+    },
+    {
+      "file": "144_script_A2_K4_3b_RG_C7_7c_K3_normalized_Radau_evolution.py",
+      "reason": "Radau subtrack timed out/failed on scaling",
+      "sha256": "9e4299437e448cebf9c502f744da4400321a014fdb5ea78aa5529e7ef77dea64",
+      "status": "SUPERSEDED",
+      "successor": "K7 projected-basis chain",
+      "syntax": "PASS"
+    },
+    {
+      "file": "145_script_A2_K4_3b_RG_C7_7c_K3_normalized_Radau_activity_audit.py",
+      "reason": "audit wrapper of dead K3 numerical subtrack",
+      "sha256": "2ff3e7ace29e02856cc11220eb9f01f313bb003984d4b3cdbd73229f9f035252",
+      "status": "SUPERSEDED",
+      "successor": "K7 projected-basis chain",
+      "syntax": "PASS"
+    },
+    {
+      "file": "147_script_A2_K4_3b_RG_C7_7c_K4_analytic_envelope_evolution.py",
+      "reason": "analytic-envelope evolution hit internal deadline",
+      "sha256": "e02325fcdfc8645fdc13a5d0a5cc7e213a1158bd42ac5936f3680f8bb8b778dd",
+      "status": "SUPERSEDED",
+      "successor": "K7 projected-basis chain",
+      "syntax": "PASS"
+    },
+    {
+      "file": "148_script_A2_K4_3b_RG_C7_7c_K4_analytic_envelope_activity_audit.py",
+      "reason": "activity gate unclosed because child timed out",
+      "sha256": "bafad4e610715a46976ac912dceb64b45128ef069a2f7f383c27de571d47bf80",
+      "status": "SUPERSEDED",
+      "successor": "K7 projected-basis chain",
+      "syntax": "PASS"
+    },
+    {
+      "file": "150_script_A2_K4_C7_7c_segment_profiler.py",
+      "known_pattern_findings": [
+        "long_run_without_internal_runtime_argument"
+      ],
+      "reason": "historical profiler only; no physical or score verdict",
+      "sha256": "bb8d68a970a67c802abcc776e8538fa3817088deb48593e9ee3d2d839bab12e6",
+      "status": "RUNNABLE_REVIEW_ONLY",
+      "successor": "later K7 diagnostics",
+      "syntax": "PASS"
+    },
+    {
+      "file": "151_script_A2_K4_C7_7c_initial_scaled_jacobian_profile.py",
+      "reason": "envelope-coordinate Jacobian diagnostic can be scale-dominated",
+      "sha256": "22ee98940e86603fccee5ebf62ddefabf7cc233124d4854e9bb985d0670b4bb9",
+      "status": "RUNNABLE_REVIEW_ONLY",
+      "successor": "157/158 and K7a chain",
+      "syntax": "PASS"
+    },
+    {
+      "file": "152_script_A2_K4_C7_7c_matrix_balance_diagnostic.py",
+      "reason": "SVD/condition diagnostics depend on envelope scaling",
+      "sha256": "460785d2ba37c56c84bee9bf0ea981ee0c4aa111f3a71e37505524965542ab1d",
+      "status": "RUNNABLE_REVIEW_ONLY",
+      "successor": "157/158 and K7a chain",
+      "syntax": "PASS"
+    },
+    {
+      "file": "153_script_A2_K4_C7_7c_K5_balanced_segment_evolution.py",
+      "reason": "balanced numerical subtrack timed out and changed error metric",
+      "sha256": "5003389d4c5fc318f39fe6cd00cb1b98d7a4e849b148158ed562d753a429abd8",
+      "status": "SUPERSEDED",
+      "successor": "K7 projected-basis chain",
+      "syntax": "PASS"
+    },
+    {
+      "file": "154_script_A2_K4_C7_7c_K6_vector_atol_segment_evolution.py",
+      "known_pattern_findings": [
+        "long_run_without_internal_runtime_argument"
+      ],
+      "reason": "vector-atol subtrack demanded precision below float64 arithmetic floor",
+      "sha256": "3d61335a8accc11d7571254cb5379192eef7b9e82ac08d7b467d8c9eef15b323",
+      "status": "SUPERSEDED",
+      "successor": "K7 projected-basis chain",
+      "syntax": "PASS"
+    },
+    {
+      "file": "159_script_A2_K4_C7_7c_K7a_projected_jacobian_audit.py",
+      "reason": "double finite-difference T-prime cancellation",
+      "sha256": "4051da86fb855e071d94f6e1a274828123dcf2d3dce66d974aaeb2ddfbd7146e",
+      "status": "RUNNABLE_REVIEW_ONLY",
+      "successor": "161/162/164 safe chain",
+      "syntax": "PASS"
+    },
+    {
+      "file": "160_script_A2_K4_C7_7c_K7a_J2_high_precision_Tprime_audit.py",
+      "reason": "central-difference cancellation remained at high precision",
+      "sha256": "a8f6c0b7686fd9c4681fc4a2dcc55426174032c4beef32d3c082d1e711e90a08",
+      "status": "RUNNABLE_REVIEW_ONLY",
+      "successor": "161_script_A2_K4_C7_7c_K7a_J3_cancellation_safe_Tprime_audit.py",
+      "syntax": "PASS"
+    },
+    {
+      "file": "163_script_A2_K4_C7_7c_K7a_J4_composite_projected_jacobian_gate.py",
+      "reason": "composite parser used the wrong nested JSON path",
+      "sha256": "1b4fb79ca2d5bb77d1aeadf986cd9c12178317d886778b36716a48dcbcd9b329",
+      "status": "DO_NOT_RUN_TECHNICAL",
+      "successor": "164_script_A2_K4_C7_7c_K7a_J4b_composite_parser_corrected_gate.py",
+      "syntax": "PASS"
+    },
+    {
+      "file": "168_script_A2_K4_C7_7c_K7b3a_high_precision_standard_coefficient_export.py",
+      "reason": "soft least-squares moved exact physical anchors",
+      "sha256": "9049e4714c4f85487503c4e45fe2af01c967b45ea7378bf15f99810d71e62035",
+      "status": "DO_NOT_USE_PHYSICS",
+      "successor": "174/175 hard-constrained chain",
+      "syntax": "PASS"
+    },
+    {
+      "file": "169_script_A2_K4_C7_7c_K7b3a_high_precision_standard_constraint_gate.py",
+      "reason": "gate of dead soft-constraint formulation",
+      "sha256": "fc7ba6362f9b9cddd4edc094ebf49ff417e2b2b47061b4c30192d0e93c39fa96",
+      "status": "DO_NOT_USE_PHYSICS",
+      "successor": "174/175 hard-constrained chain",
+      "syntax": "PASS"
+    },
+    {
+      "file": "170_script_A2_K4_C7_7c_K7b3b_hard_constrained_standard_export.py",
+      "known_pattern_findings": [
+        "unsupported_mpmath_list_slice"
+      ],
+      "reason": "unsupported mpmath matrix[:, list] slice",
+      "sha256": "1a7666a0cddd46dece2b3faa901295af2a0be42a87cff2d3c7c122402b60c3c7",
+      "status": "DO_NOT_RUN_TECHNICAL",
+      "successor": "174_script_A2_K4_C7_7c_K7b3b1_slice_and_physical_mu_export.py",
+      "syntax": "PASS"
+    },
+    {
+      "file": "171_script_A2_K4_C7_7c_K7b3b_hard_constrained_slice_corrected_export.py",
+      "known_pattern_findings": [
+        "unsupported_mpmath_list_slice"
+      ],
+      "reason": "later mu=0 solve overwrote the physical HP registry",
+      "sha256": "06e284b618a4c63c27ac8804de6705799f221c0a860f0db93636ca58f1551ced",
+      "status": "SUPERSEDED",
+      "successor": "174_script_A2_K4_C7_7c_K7b3b1_slice_and_physical_mu_export.py",
+      "syntax": "PASS"
+    },
+    {
+      "file": "172_script_A2_K4_C7_7c_K7b3b_hard_constrained_constraint_gate.py",
+      "known_pattern_findings": [
+        "fail_open_get_equality"
+      ],
+      "reason": "compared physical-mu float state with mu=0 HP registry and contains fail-open rank check",
+      "sha256": "3ba3118dbd96fa45f50bc0f367434140a0552d20173493247e545e96dc2ddeb7",
+      "status": "DO_NOT_USE_PHYSICS",
+      "successor": "new fail-closed successor of 175/176",
+      "syntax": "PASS"
+    },
+    {
+      "file": "173_script_A2_K4_C7_7c_K7b3b1_physical_mu_registry_export.py",
+      "reason": "patch searched the capture marker in the wrong transformation layer",
+      "sha256": "2e55ea23f2e8766a8bdfb18848e5155a1bbe10b32efaea33dee7abf72e63dc69",
+      "status": "DO_NOT_RUN_TECHNICAL",
+      "successor": "174_script_A2_K4_C7_7c_K7b3b1_slice_and_physical_mu_export.py",
+      "syntax": "PASS"
+    },
+    {
+      "file": "179_script_A2_K4_C7_7c_K7c3_NID_deep_short_projected_ODE.py",
+      "known_pattern_findings": [
+        "json_key_order_assumption"
+      ],
+      "reason": "assumed JSON dict order equals registered state order",
+      "sha256": "8f45dc698817992e4fb2b859a7cafa49d225b4f7f5fd54b07f88ca99059bd441",
+      "status": "DO_NOT_RUN_TECHNICAL",
+      "successor": "180_script_A2_K4_C7_7c_K7c3_NID_deep_JSON_order_corrected_ODE.py",
+      "syntax": "PASS"
+    },
+    {
+      "file": "180_script_A2_K4_C7_7c_K7c3_NID_deep_JSON_order_corrected_ODE.py",
+      "known_pattern_findings": [
+        "json_key_order_assumption"
+      ],
+      "reason": "adaptive ODE hit the 200000 RHS cap",
+      "sha256": "c9e77983049388370464e9e08f2605c39a48e4e24042e5a0bb05eecae049208c",
+      "status": "SUPERSEDED",
+      "successor": "184/185 fixed-RK4 review chain",
+      "syntax": "PASS"
+    },
+    {
+      "file": "181_script_A2_K4_C7_7c_K7c3a_exact_linear_operator_profile.py",
+      "known_pattern_findings": [
+        "json_key_order_assumption",
+        "long_run_without_internal_runtime_argument"
+      ],
+      "reason": "unit physical basis triggered normalized safety cap",
+      "sha256": "359aae29416998383f25e0e190ce34014b53a7275782e8150b803dc9f9723832",
+      "status": "DO_NOT_RUN_TECHNICAL",
+      "successor": "182_script_A2_K4_C7_7c_K7c3a1_normalized_basis_operator_profile.py",
+      "syntax": "PASS"
+    },
+    {
+      "file": "182_script_A2_K4_C7_7c_K7c3a1_normalized_basis_operator_profile.py",
+      "reason": "zero-integration diagnostic; reconstruction gate remained REVIEW",
+      "sha256": "c534f8a687f7dadd062a3dabc5e407ef8d6b3f14107033f029ebc929ced550ef",
+      "status": "RUNNABLE_REVIEW_ONLY",
+      "successor": "clean standalone K7c successor",
+      "syntax": "PASS"
+    },
+    {
+      "file": "183_script_A2_K4_C7_7c_K7c3b_fixed_RK4_step_convergence.py",
+      "known_pattern_findings": [
+        "json_key_order_assumption",
+        "generated_unreachable_legacy_solver_risk",
+        "long_run_without_internal_runtime_argument"
+      ],
+      "reason": "NumPy bool JSON failure; also leaves unreachable legacy solver",
+      "sha256": "90f177dcd8ac612524ab9dd3dba4516ec7a3805f4de46682bebe5f9d566ea7c8",
+      "status": "DO_NOT_RUN_TECHNICAL",
+      "successor": "184_script_A2_K4_C7_7c_K7c3b_fixed_RK4_JSON_bool_corrected.py",
+      "syntax": "PASS"
+    },
+    {
+      "file": "184_script_A2_K4_C7_7c_K7c3b_fixed_RK4_JSON_bool_corrected.py",
+      "reason": "endpoint difference 1.443e-6 exceeded preregistered 1e-6",
+      "sha256": "9eece141c889dfbfa42d7bf9cc5de331964460c525211bc88b0b779adb1add22",
+      "status": "RUNNABLE_REVIEW_ONLY",
+      "successor": "clean standalone K7c successor",
+      "syntax": "PASS"
+    },
+    {
+      "file": "185_script_A2_K4_C7_7c_K7c3c_second_fixed_RK4_refinement.py",
+      "reason": "non-asymptotic M refinement ratio 0.367",
+      "sha256": "ce75b6db373f70701c7b35650ceb663c430197f2ed237a7346e7ebb666982686",
+      "status": "RUNNABLE_REVIEW_ONLY",
+      "successor": "new M-prime term ledger",
+      "syntax": "PASS"
+    },
+    {
+      "file": "186_script_A2_K4_C7_7c_K7c3d_M_rhs_term_ledger.py",
+      "known_pattern_findings": [
+        "incomplete_continuation_marker"
+      ],
+      "reason": "incomplete file ending at __K7C3D_CONTINUE__",
+      "sha256": "9923ed61c47b696088d517dcd5697b260cbf89568b6c284facd2044ce68a36ff",
+      "status": "DO_NOT_RUN_TECHNICAL",
+      "successor": "new numbered M-prime ledger",
+      "syntax": "PASS"
+    },
+    {
+      "file": "188_script_python_corpus_status_and_known_error_audit.py",
+      "known_pattern_findings": [
+        "unsupported_mpmath_list_slice",
+        "json_key_order_assumption",
+        "incomplete_continuation_marker",
+        "generated_unreachable_legacy_solver_risk"
+      ],
+      "reason": "immutable 192-target snapshot",
+      "sha256": "5acce3680b082a4fb07ca47ddb9f950668ae5f1758d53128c4d16c9280e889d6",
+      "status": "SUPERSEDED",
+      "successor": "198_script_python_corpus_status_audit_after_K7c_P1_clean_RK4.py",
+      "syntax": "PASS"
+    },
+    {
+      "file": "189_script_A2_K4_C7_7c_K7b3b2_fail_closed_physical_mu_gate.py",
+      "known_pattern_findings": [
+        "fail_open_get_equality"
+      ],
+      "reason": "PF-012: parser marker patched one wrapper layer too early",
+      "sha256": "01ff76baac0dba1552ff1e8f2d7731751f938ad69bc72bcbf92e6242ff49b2ba",
+      "status": "DO_NOT_RUN_TECHNICAL",
+      "successor": "192_script_A2_K4_C7_7c_K7b3b2a_fail_closed_physical_mu_gate.py",
+      "syntax": "PASS"
+    },
+    {
+      "file": "190_script_A2_K4_C7_7c_K7b_P0_fail_closed_regression_gate.py",
+      "reason": "depends on technically dead script 189",
+      "sha256": "0549fb845f1a5b81b88fad18c6b362f4442aad1d59d07f1ff067b0b911d699fc",
+      "status": "DO_NOT_RUN_TECHNICAL",
+      "successor": "195_script_A2_K4_C7_7c_K7b_P0_segmented_offline_aggregate.py",
+      "syntax": "PASS"
+    },
+    {
+      "file": "191_script_python_corpus_status_audit_after_K7b_P0.py",
+      "reason": "intermediate 195-target snapshot",
+      "sha256": "8d12ad8ae3031406e640139c65a8d6382d0be1906ff72c145d9852480578c712",
+      "status": "SUPERSEDED",
+      "successor": "198_script_python_corpus_status_audit_after_K7c_P1_clean_RK4.py",
+      "syntax": "PASS"
+    },
+    {
+      "file": "193_script_A2_K4_C7_7c_K7b_P0a_PF012_corrected_regression_gate.py",
+      "reason": "monolithic aggregate hit its preregistered internal timeout",
+      "sha256": "df0815eb6292f39300c97767252808672462e34fb2121cfa046f4ec56073a465",
+      "status": "SUPERSEDED",
+      "successor": "195_script_A2_K4_C7_7c_K7b_P0_segmented_offline_aggregate.py",
+      "syntax": "PASS"
+    },
+    {
+      "file": "194_script_python_corpus_status_audit_after_PF012.py",
+      "reason": "intermediate 198-target snapshot",
+      "sha256": "5881f1734dce594bbd6033c89c94957857d558e07f8f40d59a46109e75990c1a",
+      "status": "SUPERSEDED",
+      "successor": "198_script_python_corpus_status_audit_after_K7c_P1_clean_RK4.py",
+      "syntax": "PASS"
+    },
+    {
+      "file": "196_script_python_corpus_status_audit_after_K7b_P0_segmented.py",
+      "reason": "immutable 200-target snapshot before clean P1 RK4",
+      "sha256": "013507cd100e7818149077c0b9a785bd901ea8196eaeb47ca6b81c0535efc014",
+      "status": "SUPERSEDED",
+      "successor": "198_script_python_corpus_status_audit_after_K7c_P1_clean_RK4.py",
+      "syntax": "PASS"
+    },
+    {
+      "file": "198_script_python_corpus_status_audit_after_K7c_P1_clean_RK4.py",
+      "known_pattern_findings": [
+        "unsupported_mpmath_list_slice",
+        "json_key_order_assumption",
+        "incomplete_continuation_marker",
+        "generated_unreachable_legacy_solver_risk"
+      ],
+      "reason": "immutable corpus snapshot before scientific P2 script 199",
+      "sha256": "b68d6e78d171fa976e8ff18b1210ac2947b005df6e1de0b6b648137aeac79273",
+      "status": "SUPERSEDED",
+      "successor": "200_script_python_corpus_status_audit_after_K7c_P2_script199.py",
+      "syntax": "PASS"
+    },
+    {
+      "file": "200_script_python_corpus_status_audit_after_K7c_P2_script199.py",
+      "known_pattern_findings": [
+        "unsupported_mpmath_list_slice",
+        "json_key_order_assumption",
+        "incomplete_continuation_marker",
+        "generated_unreachable_legacy_solver_risk"
+      ],
+      "reason": "immutable corpus snapshot before P3a script 201",
+      "sha256": "77829d7737334289a0e4a984956714d200f1dae303c0c248c817395f2a595412",
+      "status": "SUPERSEDED",
+      "successor": "202_script_python_corpus_status_audit_after_K7c_P3a_script201.py",
+      "syntax": "PASS"
+    },
+    {
+      "file": "202_script_python_corpus_status_audit_after_K7c_P3a_script201.py",
+      "known_pattern_findings": [
+        "unsupported_mpmath_list_slice",
+        "json_key_order_assumption",
+        "incomplete_continuation_marker",
+        "generated_unreachable_legacy_solver_risk"
+      ],
+      "reason": "immutable corpus snapshot before P3a-B preparation",
+      "sha256": "fed38f60446770efca1941316e7571ce0b654290110c47cdacbb0ca4d2bf03b2",
+      "status": "SUPERSEDED",
+      "successor": "208_script_python_corpus_status_audit_before_K7c_P3b_script205.py",
+      "syntax": "PASS"
+    },
+    {
+      "file": "203_script_A2_K4_C7_7c_K7c_P3b_zero_identity_RK4.py",
+      "reason": "interrupted P3a-B scaffold; audit/export incomplete",
+      "sha256": "8c20d388b512f70ca1187d61362e576a56fa4a415bacf5f51fa264b3d96bd346",
+      "status": "DO_NOT_RUN_TECHNICAL",
+      "successor": "205_script_A2_K4_C7_7c_K7c_P3b_zero_identity_RK4_audited.py",
+      "syntax": "PASS"
+    },
+    {
+      "file": "204_script_A2_K4_C7_7c_K7c_P3b_zero_identity_RK4_complete.py",
+      "reason": "PF-030 output argument registered after parse_args",
+      "sha256": "20c16ff35a2abdaaa4798d8f013d9d2c2d14693598a80e2d0b7d8c9920c7fc4e",
+      "status": "DO_NOT_RUN_TECHNICAL",
+      "successor": "205_script_A2_K4_C7_7c_K7c_P3b_zero_identity_RK4_audited.py",
+      "syntax": "PASS"
+    },
+    {
+      "file": "206_script_A2_K4_C7_7c_K7c_P3b_source_delta_audit.py",
+      "reason": "PF-031 tuple assignment unsupported",
+      "sha256": "c3313b419761ef9036f5d336af362543bf52d5d84c82a9ee239c640ffe28fd36",
+      "status": "DO_NOT_RUN_TECHNICAL",
+      "successor": "207_script_A2_K4_C7_7c_K7c_P3b_source_delta_audit_tuple_fixed.py",
+      "syntax": "PASS"
+    }
+  ],
+  "quarantine_count": 75,
+  "runtime_limit_seconds": 15.0,
+  "runtime_seconds": 0.5460000000002765,
+  "scope_limit": "source/AST audit only; no target import, execution, or physical verdict",
+  "syntax_errors": [
+    "118_script_A2_K4_3b_RG_BR3B2f5_full_mixed_Puiseux_chain.py",
+    "119_script_A2_K4_3b_RG_BR3B2f5_full_mixed_Puiseux_chain.py"
+  ],
+  "target_result": {
+    "file": "205_script_A2_K4_C7_7c_K7c_P3b_zero_identity_RK4_audited.py",
+    "routine_run": "requires normal preregistration",
+    "status": "NOT_IN_QUARANTINE"
+  },
+  "test": "bounded corpus status audit before K7c P3a-B script 205 evolution"
+}

@@ -1,0 +1,32 @@
+TASK_ID: A2K4-B6B2-10-H-RDIV-C01-RW1-Q1R1-EXACT-SOURCE-ACCESS-20260728-322
+FROZEN_PREREG287_SHA256: EFB73C7203251362AD95E0E97D43252CD5ACBFE1D532F77F5E37FA05E09DFFF9
+AUTHORIZATION_EVENT_LEDGER_SHA256: 63C8CE869E3DE0FF892DD46182DBB2C41F5A07E92BB7FC4782ADC3343E802B14
+SOURCE_ACCESS_OPERATIONS_BEFORE: 0/2
+O1_STATUS: CONSUMED
+O1_URL: https://arxiv.org/html/2307.12080v2
+O1_FULL_TEXT_COMPLETE_FOR_ABSENCE: FAIL
+O1_GATE_DETAILS_JSON: {"pass":false,"checks":{"exact_title":false,"arxiv_identity":true,"author_identity":false,"substantive_length":false,"searchable_model_body":false,"searchable_equations":false,"boundary_treatment":false,"energy_conservation":false,"references":false,"declared_appendices":false,"not_word_limited":false,"not_truncated":true,"not_error":false,"not_binary_placeholder":true},"char_count":213}
+O2_STATUS: CONSUMED
+O2_URL: https://arxiv.org/pdf/2307.12080v2
+O2_FULL_TEXT_COMPLETE_FOR_ABSENCE: FAIL
+O2_GATE_DETAILS_JSON: {"pass":false,"checks":{"exact_title":false,"arxiv_identity":true,"author_identity":false,"substantive_length":false,"searchable_model_body":false,"searchable_equations":false,"boundary_treatment":false,"energy_conservation":false,"references":false,"declared_appendices":false,"not_word_limited":false,"not_truncated":true,"not_error":false,"not_binary_placeholder":true},"char_count":211}
+SEARCH_QUERY_CALLS: 0
+CLICK_FIND_PAGINATION_CALLS: 0
+PYTHON_PROCESSES: 0
+
+OPERATION_ID: O1
+BEGIN_EXACT_TOOL_RETURN
+Internal Error ()
+citeturn52view0 [wordlim: 200] Source: open({"ref_id":"https://arxiv.org/html/2307.12080v2","lineno":null}); Total lines: 1
+L0: Failed to fetch https://arxiv.org/html/2307.12080v2: Cache miss
+
+END_EXACT_TOOL_RETURN
+
+OPERATION_ID: O2
+BEGIN_EXACT_TOOL_RETURN
+Internal Error ()
+citeturn53view0 [wordlim: 200] Source: open({"ref_id":"https://arxiv.org/pdf/2307.12080v2","lineno":null}); Total lines: 1
+L0: Failed to fetch https://arxiv.org/pdf/2307.12080v2: Cache miss
+
+END_EXACT_TOOL_RETURN
+

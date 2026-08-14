@@ -1,0 +1,318 @@
+TASK_ID: A2K4-B6B2-10-H-RDIV-C01-RW1-V1-W10-RAW-V2-Q3-20260727-166C
+QUERY_ID: Q3
+EXACT_QUERY: relativistic irreversible phase field energy balance internal variable primary paper
+PROVIDER_PAYLOAD: {"search_query":[{"q":"relativistic irreversible phase field energy balance internal variable primary paper"}],"response_length":"long"}
+BEGIN_EXACT_TOOL_RETURN
+(PDF) Analysis on Irreversible Processes using the Phase-Field Variational Approach with the Entropy or Energy Functional (https://www.researchgate.net/publication/269040722_Analysis_on_Irreversible_Processes_using_the_Phase-Field_Variational_Approach_with_the_Entropy_or_Energy_Functional)
+citeturn17search0 [wordlim: 200] Published: 11.6 years ago; Crawled: 2 weeks ago; # Analysis on Irreversible Processes using the Phase-Field Variational Approach with the Entropy or Energy Functional ... Each simple irreversible process is described by the evolution of a field variable and there is an entropy or energy density function associated with it. ... 1 Department of Astronautics Science and Mechanics, Harbin Institute of Technology, Harbin, ... “the increase in internal energy of a closed system is equal to the heat supplied to the system ... paper, PFVA with either the entropy or energy functional is used to analyse complex irreversible
+
+# Analysis on Irreversible Processes using the Phase-Field Variational Approach with the Entropy or Energy Functional
+
+  * December 2014
+
+  * Source
+  * arXiv
+
+Authors:
+
+Peng Zhou
+
+  * Harbin Institute of Technology
+
+Image
+
+Download full-text PDFRead full-text
+
+## Abstract
+
+The variational approach usually used in phase field models (PFVA) is applied here to analyse complex irreversible processes such as thermoelectric (TE) effects and thermally driven mass transport (TDMT). Complex irreversible processes arise from the coupling effects between simple irreversible processes. Each simple irreversible process is described by the evolution of a field variable and there is an entropy or energy density function associated with it. During complex irreversible processes with multiple fields present, this entropy or energy density function is assumed to be dependent on all independent field variables. Using the total entropy functionals, the TE effects and TDMT are analysed and important kinetic coefficients such as the Seebeck coefficient and the heat of transport are determined with straightforward physical contents. 
+Peng Zhou 1
+
+1 Department of Astronautics Science and Mechanics, Harbin Institute of Technology, Harbin,
+
+Heilongjiang, 150001, P.R. China
+
+Email: zhoup@hit.edu.cn
+
+Abstract
+
+The variational approach usually used in phase ﬁeld models (PFVA) is applied here to anal-
+
+yse complex irreversible processes such as thermoelectric (TE) eﬀects and thermally driven mass
+
+transport (TDMT). Complex irreversible processes arise from the coupling eﬀects between sim-
+
+ple irreversible processes. Each simple irreversible process is described by the evolution of a ﬁeld
+
+variable and there is an entropy or energy density function associated with it. During complex
+
+irreversible processes with multiple ﬁelds present, this entropy or energy density function is as-
+
+sumed to be dependent on all independent ﬁeld variables. Using the total entropy functionals,
+
+the TE eﬀects and TDMT are analysed and important kinetic coeﬃcients such as the Seebeck
+
+coeﬃcient and the heat of transport are determined with straightforward physical contents. --------------------------------------------------------------------------------
+Non-isothermal phase-field models and evolution equation | Archives of Mechanics (https://am.ippt.pan.pl/index.php/am/article/view/v58p257)
+citeturn17search1 [wordlim: 200] Crawled: 4 months ago; The paper has a threefold purpose. ... Secondly, to show that a further approach is possible which involves the phase field as an internal variable. ... It follows that differences arise because different fields enter the models and different forms are considered for the balance of energy and the second law of thermodynamics.
+
+# Non-isothermal phase-field models and evolution equation
+
+## Downloads
+
+  * ## Authors
+
+  * A. Morro DIBE, University of Genova, Italy
+
+## Abstract
+
+Phase transitions between two phases are modelled as space regions where a phase field, or order parameter, changes smoothly. The literature shows a seeming contradiction in that some papers lead to the use of the reduced chemical potential through the temperature, others do not. The paper has a threefold purpose. First, to revise the arguments of known approaches and possibly generalize the associated schemes. Secondly, to show that a further approach is possible which involves the phase field as an internal variable. Thirdly, to contrast the various schemes and the corresponding results. It follows that differences arise because different fields enter the models and different forms are considered for the balance of energy and the second law of thermodynamics.
+--------------------------------------------------------------------------------
+Analysis on Irreversible Processes using the Phase-Field Variational Approach with the Entropy or Energy Functional (https://arxiv.org/abs/1412.0575)
+citeturn17academia12 [wordlim: 200] Published: 11.7 years ago; Title: Analysis on Irreversible Processes using the Phase-Field Variational Approach with the Entropy or Energy Functional
+Title: Analysis on Irreversible Processes using the Phase-Field Variational Approach with the Entropy or Energy Functional
+Authors: Peng Zhou
+Date: Mon Dec  1 18:33:04 2014
+
+The variational approach usually used in phase field models (PFVA) is applied here to analyse complex irreversible processes such as thermoelectric (TE) effects and thermally driven mass transport (TDMT). Complex irreversible processes arise from the coupling effects between simple irreversible processes. Each simple irreversible process is assiciated with an entropy or energy density function. During complex irreversible processes with multiple fields present, this entropy or energy density function is assumed to be dependent on all independent field variables. Using the total entropy functionals, the TE effects and TDMT are analysed and important kinetic coefficients such as the Seebeck coefficient and the heat of transport are determined with straightforward physical contents. Using the total energy functionals, the linear irreversible processes are analysed with the Onsager approach and the nonlinear irreversible processes with PFVA. It is found both the Onsager's relations and the fluxes defined using PFVA guarantee the satisfaction of the first law of thermodynamics during the process of conversion of energies. To analyze the diffusion process under the influence of elasticity, PFVA is also modified to incorporate the reversible evolution of elastic fields. It is shown energies are conserved via both the irreversible diffusion process and the reversible evolution of the elastic fields. Finally, PFVA is generalized to study nonequilibrium thermodynamics using an extra kinetic contribution to the entropy density function. The analyses can be extended to a nonequilibrium thermodynamic system with multiple physical fields present. Thus, it is believed PFVA has the potential of not only significantly advancing our understanding of the thermodynamics of irreversible processes, but also making thermodynamics as a discipline and the study of it truly dynamic.--------------------------------------------------------------------------------
+Thermodynamics of Stress and Electric Field Induced Phase Transition in Relaxor Ferroelectric Crystals - Tieqi Liu, Christopher S. Lynch, Elizabeth A. Mclaughlin, 2007 (https://journals.sagepub.com/doi/abs/10.1177/1045389X06066531)
+citeturn17search2 [wordlim: 200] Crawled: 2 months ago; # Thermodynamics of Stress and Electric Field Induced Phase Transition in Relaxor Ferroelectric Crystals ... The approach is to perform path integrals to determine external work done by electrical and mechanical loads at constant temperature and to remove the effect of heat generated by irreversible strain and electric displacement increments.This yields relative internal energy density levels of phases.
+
+First published April 2007
+
+Request permissions
+
+# Thermodynamics of Stress and Electric Field Induced Phase Transition in Relaxor Ferroelectric Crystals
+
+Tieqi Liu, Christopher S. Lynch, and Elizabeth A. MclaughlinView all authors and affiliations
+
+Volume 18, Issue 4
+
+https://doi.org/10.1177/1045389X06066531
+
+
+## Abstract
+
+A thermodynamics based analysis of measured material behavior in (110) orientated (PMN-32%PT) and (PZN-4.5%PT) crystals under combined stress, electric field and temperature loading leads to a determination of the relative energy levels of phases. The approach is to perform path integrals to determine external work done by electrical and mechanical loads at constant temperature and to remove the effect of heat generated by irreversible strain and electric displacement increments. This yields relative internal energy density levels of phases. It also yields Gibbs energy density, a measure of the driving force for the phase transformation. --------------------------------------------------------------------------------
+Arch. Mech., 58, 3, pp. 257–271, Warszawa 2006 (https://am.ippt.pan.pl/index.php/am/article/download/v58p257/pdf/66)
+citeturn17search13 [wordlim: 200] Published: 3 months ago; Non-isothermal phase-field models and evolution equation ... An internal-variable approach ... The balance equations for mass, momentum and energy
+Non-isothermal phase-field models and evolution equation
+263
+3. An internal-variable approach
+The phase transition is described by letting the body occur in two phases but
+regarding the two phases as a single body to which an additional variable, the
+phase ﬁeld ϕ, is ascribed. The balance equations for mass, momentum and energy
+are then taken in the classical form (2.1), (2.2), (2.3) of continuum mechanics.
+Possible nonlocal eﬀects associated with the phase ﬁeld are incorporated by
+letting an entropy extra-ﬂux k occur in the second law. As the statement of the
+second law, we say that the inequality
+(3.1)
+ρ ˙η ≥−∇·
+³q
+θ + k
+´
++ r
+θ
+holds at each position x ∈Ωand time t ∈R for all pertinent ﬁelds, of x and t,
+compatible with the balance equations. The extra-ﬂux k is regarded as unknown
+and has to be determined so that the second law is satisﬁed. It is subject to the
+boundary condition
+k · n|∂Ω= 0
+so that the second law for the whole body takes the standard form (2.11). In
+terms of ψ = e −θη we can write the inequality (3.1) in the form
+(3.2)
+−ρ( ˙ψ + η ˙θ) + T · L −1
+θq · ∇θ + θ∇· k ≥0.
+The constitutive properties are speciﬁed by saying that T, q, ψ, η, k are functions
+of a collection Γ of independent variables,
+Γ = (ρ, θ, ϕ, ∇θ, ∇ϕ).
+Moreover, and this is the peculiar constitutive assumption, the evolution of ϕ is
+governed by
+(3.3)
+˙ϕ = f(Γ).
+In this sense, the two phases are regarded as a material with an internal variable
+[13].
+Proposition 1. The functions f, T, q, ψ, η, k, of Γ, are compatible with the
+second law of thermodynamics, in the form (3.2), if and only if
+(3.4)
+ψ∇θ = 0,
+η = −ψθ,
+T = −ρ2ψρ1 −ρ∇ϕ ⊗ψ∇ϕ,
+(3.5)
+−ρψϕf −1
+θq · ∇θ + θ∇· k −ρψ∇ϕ · ∇f ≥0.--------------------------------------------------------------------------------
+Internal energy in dissipative relativistic fluids (https://msp.org/jomms/2008/3-6/jomms-v3-n6-p13-s.pdf)
+citeturn17search14 [wordlim: 200] Published: 18.0 years ago; This separation is based on the construction of the internal energy balance ... However, there is no internal energy in this sense in relativistic irreversible thermodynamics. ... In this paper we investigate the possibility of local equilibrium in relativistic hydrodynamics by
+JOURNAL OF MECHANICS OF MATERIALS AND STRUCTURES
+Vol. 3, No. 6, 2008
+INTERNAL ENERGY IN DISSIPATIVE RELATIVISTIC FLUIDS
+PÉTER VÁN
+Liu procedure is applied to special relativistic ﬂuids. It is shown that a reasonable relativistic theory
+is an extended one, where the basic state space contains the momentum density. This property follows
+from the structure of the energy-momentum balance and the Second Law of thermodynamics. Moreover,
+we derive that the entropy depends on both the energy density and the momentum density in a speciﬁc
+way, indicating that the local rest frame energy density cannot be interpreted as the internal energy, and
+that the local rest frame momentum density should be considered, too. The corresponding constitutive
+relations for the stress and the energy ﬂux are derived.
+1. Introduction
+Nonrelativistic nonequilibrium thermodynamics separates the dissipative and nondissipative parts of the
+evolving physical quantities. This separation is based on the construction of the internal energy balance
+--------------------------------------------------------------------------------
+Analysis of staggered evolutions for nonlinear energies in phase field fracture - University of Vienna (https://ucrisportal.univie.ac.at/en/publications/analysis-of-staggered-evolutions-for-nonlinear-energies-in-phase-/)
+citeturn17search3 [wordlim: 200] Crawled: 3 months ago; We analyze the time-discrete evolutions generated by a staggered minimization scheme, where fracture irreversibility is modeled by a monotonicity constraint on the phase field variable. ... By a careful study of the energy balance we deduce that time-continuous evolutions may still exhibit an alternate behavior in discontinuity times.
+
+# Analysis of staggered evolutions for nonlinear energies in phase field fracture
+
+  * Stefano Almi
+  * , Matteo Negri (Corresponding author)
+
+  * Department of Mathematics
+
+Publications: Contribution to journal › Article › Peer Reviewed
+
+## Abstract
+
+We consider a class of separately convex phase field energies employed in fracture mechanics, featuring non-interpenetration and a general softening behavior. We analyze the time-discrete evolutions generated by a staggered minimization scheme, where fracture irreversibility is modeled by a monotonicity constraint on the phase field variable. After recasting the staggered scheme by means of gradient flows, we characterize the time-continuous limits of the discrete solutions in terms of balanced viscosity evolutions, parametrized by their arc-length with respect to the L-2-norm (for the phase field) and the H-1-norm (for the displacement field). By a careful study of the energy balance we deduce that time-continuous evolutions may still exhibit an alternate behavior in discontinuity times.
+--------------------------------------------------------------------------------
+Internal energy in dissipative relativistic fluids (https://arxiv.org/abs/0712.1437)
+citeturn17academia15 [wordlim: 200] Published: 18.6 years ago; Title: Internal energy in dissipative relativistic fluids ... This property follows from the structure of the energy-momentum balance and the Second Law of thermodynamics.
+Title: Internal energy in dissipative relativistic fluids
+Authors: P. Ván
+Date: Mon Dec 10 11:20:06 2007
+
+Liu procedure is applied to a first order weakly nonlocal special relativistic fluid. It is shown, that a reasonable relativistic theory is and extended one, where the basic state space contains the momentum density. This property follows from the structure of the energy-momentum balance and the Second Law of thermodynamics. Moreover, the entropy depends on the energy density and the momentum density on a given specific way, indicating that the local rest frame energy density cannot be interpreted as the internal energy, the local rest frame momentum density should be considered, too. The corresponding constitutive relations for the stress and the energy flux are derived.--------------------------------------------------------------------------------
+Relativistic Non-Equilibrium Thermodynamics Revisited (https://www.degruyterbrill.com/document/doi/10.1515/JNETDY.2006.002/html)
+citeturn17search4 [wordlim: 200] Published: 20.3 years ago; Crawled: 4 months ago; Relativistic irreversible thermodynamics is reformulated following the conventional approach proposed by Meixner in the non-relativistic case. ... The resulting equations for the entropy production and the local internal energy have the same structure as the non-relativistic ones.
+
+# Relativistic Non-Equilibrium Thermodynamics Revisited
+
+  * [Button: L.S García-Colín ] Image: EMAIL logo and [Button: Alfredo Sandoval-Villalbazo ]
+
+Published/Copyright: April 4, 2006
+
+Published by
+
+Image: De Gruyter
+
+Become an author with De Gruyter Brill
+
+Submit Manuscript Author Information
+
+From the journal Volume 31 Issue 1
+
+García-Colín, L.S and Sandoval-Villalbazo, Alfredo. "Relativistic Non-Equilibrium Thermodynamics Revisited" , vol. 31, no. 1, 2006, pp. 11-22. https://doi.org/10.1515/JNETDY.2006.002
+
+García-Colín, L. & Sandoval-Villalbazo, A. (2006). Relativistic Non-Equilibrium Thermodynamics Revisited. , 31(1), 11-22. https://doi.org/10.1515/JNETDY.2006.002
+
+García-Colín, L. and Sandoval-Villalbazo, A. (2006) Relativistic Non-Equilibrium Thermodynamics Revisited. Vol. 31 (Issue 1), pp. 11-22. https://doi.org/10.1515/JNETDY.2006.002
+
+García-Colín, L.S and Sandoval-Villalbazo, Alfredo. "Relativistic Non-Equilibrium Thermodynamics Revisited" 31, no. 1 (2006): 11-22. https://doi.org/10.1515/JNETDY.2006.002
+
+García-Colín L, Sandoval-Villalbazo A. Relativistic Non-Equilibrium Thermodynamics Revisited. 2006;31(1): 11-22. https://doi.org/10.1515/JNETDY.2006.002
+
+Copy
+
+Copied to clipboard
+
+
+## [Button: Article ]
+
+## Abstract
+
+Relativistic irreversible thermodynamics is reformulated following the conventional approach proposed by Meixner in the non-relativistic case. Clear separation between mechanical and non-mechanical energy fluxes is made. The resulting equations for the entropy production and the local internal energy have the same structure as the non-relativistic ones. Assuming linear constitutive laws, it is shown that consistency is obtained both with the laws of thermodynamics and causality.
+
+Received: 2005-04-27
+
+Accepted: 2005-07-05
+
+Published Online: 2006-04-04
+
+Published in Print: 2006-01-01
+
+© Walter de Gruyter--------------------------------------------------------------------------------
+Deep Learning‐Based Phase‐Field Modelling of Brittle Fracture in Anisotropic Media - Plungė - 2026 - International Journal for Numerical Methods in Engineering - Wiley Online Library (https://onlinelibrary.wiley.com/doi/full/10.1002/nme.70381)
+citeturn17search5 [wordlim: 200] Published: 2 weeks ago; Crawled: 2 weeks ago; By invoking the principle of stationary potential energy, the first variation of the total energy functional with respect to the displacement field $$$ \mathbf{u} $$$ and the phase field variable $$$ c $$$ leads to the following governing balance equations;
+### 2.4 Strong Form
+
+The strong form of the coupled displacement-phase field problem is obtained from the variational formulation introduced in Equation (1). By invoking the principle of stationary potential energy, the first variation of the total energy functional with respect to the displacement field $$$ \mathbf{u} $$$ and the phase field variable $$$ c $$$ leads to the following governing balance equations;
+
+\left\{\begin{array}{cccccc}\hfill & \nabla ·\mathit{\sigma }+\mathbf{f}=\mathbf{0}\hfill & \hfill & \text{on}\phantom{\rule{0.3em}{0ex}}\mathrm{\Omega }\text{,}\hfill & \hfill & \text{Equilibrium}\hfill \\ \hfill & {}^{(t-1)}c-c\ge 0\hfill & \hfill & \text{on}\phantom{\rule{0.3em}{0ex}}\mathrm{\Omega }\text{,}\hfill & \hfill & \text{Irreversibility}\hfill \\ \hfill & \left(\frac{4{l}_{0}(1-{k}_{\mathrm{f}}){\psi }^{\text{el}}}{{\stackrel{‾}{𝒢}}_{c}}+1\right)c-4{l}_{0}^{2}\mathrm{\Delta }c+4{l}_{0}^{4}\sum _{ijkl}{\gamma }_{ijkl}\frac{{\partial }^{4}c}{\partial {x}_{i}\phantom{\rule{0.3em}{0ex}}\partial {x}_{j}\phantom{\rule{0.3em}{0ex}}\partial {x}_{k}\phantom{\rule{0.3em}{0ex}}\partial {x}_{l}}-1\ge 0\hfill & \hfill & \text{on}\phantom{\rule{0.3em}{0ex}}\mathrm{\Omega }\text{,}\hfill & \hfill & \text{Damage criterion}\hfill \\ \hfill & \left({}^{(t-1)}c-c\right)\left[\left(\frac{4{l}_{0}(1-{k}_{f}){\psi }^{\text{el}}}{{\stackrel{‾}{𝒢}}_{c}}+1\right)c-4{l}_{0}^{2}\mathrm{\Delta }c+4{l}_{0}^{4}\sum _{ijkl}{\gamma }_{ijkl}\frac{{\partial }^{4}c}{\partial {x}_{i}\phantom{\rule{0.3em}{0ex}}\partial {x}_{j}\phantom{\rule{0.3em}{0ex}}\partial {x}_{k}\phantom{\rule{0.3em}{0ex}}\partial {x}_{l}}-1\right]=0\hfill & \hfill & \text{on}\phantom{\rule{0.3em}{0ex}}\mathrm{\Omega }\text{,}\hfill & \hfill & \text{Loading-unloading}\hfill \end{array}\right. --------------------------------------------------------------------------------
+Thermodynamics of Irreversible Processes: Fundamental Constraints, Representations, and Formulation of Boundary Conditions | MDPI (https://www.mdpi.com/2624-8174/6/2/50)
+citeturn17search6 [wordlim: 200] Published: 2.2 years ago; Crawled: 4 months ago; # Thermodynamics of Irreversible Processes: Fundamental Constraints, Representations, and Formulation of Boundary Conditions ... Physics 2024, 6(2), 801-827;https://doi.org/10.3390/physics6020050 ... The fulfillment of this condition in hyperbolic models leads to the parametrization of the concentration fields with respect to internal variables associated with the microscopic dynamics.
+
+27 May 2024
+
+# Thermodynamics of Irreversible Processes: Fundamental Constraints, Representations, and Formulation of Boundary Conditions
+
+Giuseppe Procopio,
+
+Chiara Pezzotti,
+
+Davide Cocco and
+
+Massimiliano Giona^{*}
+
+Dipartimento di Ingegneria Chimica Materiali Ambiente, Sapienza Università di Roma, Via Eudossiana 18, 00184 Rome, Italy
+
+^{*}
+
+Author to whom correspondence should be addressed.
+
+Physics2024, 6(2), 801-827;https://doi.org/10.3390/physics6020050
+
+This article belongs to the Special Issue Trends in Contemporary Thermodynamics
+
+Version Notes
+
+Order Reprints
+
+## Abstract
+
+Starting from the analysis of the lack of positivity of the Cattaneo heat equation, this work addresses the thermodynamic relevance of the positivity constraint in irreversible thermodynamics, that is at least as significant as the entropic constraints. The fulfillment of this condition in hyperbolic models leads to the parametrization of the concentration fields with respect to internal variables associated with the microscopic dynamics. --------------------------------------------------------------------------------
+A Phase-Field Approach to Continuum Damage Mechanics | MDPI (https://www.mdpi.com/1996-1944/15/21/7671)
+citeturn17search7 [wordlim: 200] Published: 3.7 years ago; Crawled: 4 months ago; The body is modeled as a material with an internal variable (or phase field), the scalar \phi . ... In the local form, the continuity equation, the balance of linear momentum, and the balance of energy are written as
+--------------------------------------------------------------------------------
+The multiphase-field method based on internal state variables | Continuum Mechanics and Thermodynamics | Springer Nature Link (https://link.springer.com/article/10.1007/s00161-026-01470-8)
+citeturn17search8 [wordlim: 200] Published: 2 months ago; Crawled: 3 weeks ago; ### A continuum thermodynamic approach to the phase-field method: the order parameter as internal state variable ... ### Refinement of the Basic Equations of Phase Field Theory under Nonisothermal Conditions ... The balance of mass, linear and angular momentum along with the balance of internal energy are given by
+--------------------------------------------------------------------------------
+Principle of Virtual Power for thermomechanics of fluids and solids with dissipation - ScienceDirect (https://www.sciencedirect.com/science/article/pii/S0020722511001194)
+citeturn17search9 [wordlim: 200] Crawled: 7 months ago; A fundamental variational principle, called the Principle of Virtual Power, is proposed in this paper to govern the irreversible thermomechanical processes for a material body.The principle and the corresponding variational equation of virtual velocity are formulated by integrating the classical field theories of continuum mechanics and thermodynamics. ... By assuming different types of system functions for internal power consisting of internal energy and newly introduced working dissipation, we are able to derive the constitutive equations for gas, liquid, or solid and the Fourier equation of heat conduction from the balance of virtual internal power.
+--------------------------------------------------------------------------------
+A thermodynamic approach to non-isothermal phase-field evolution in continuum physics - ScienceDirect (https://www.sciencedirect.com/science/article/abs/pii/S0167278906000066)
+citeturn17search10 [wordlim: 200] Published: 20.5 years ago; Crawled: 2 weeks ago; The phase field is regarded as an internal variable and the kinetic or evolution equation is viewed as a constitutive equation. ... We look at the evolution equation in the form (2.5), let the pressure be constant and hence take the free energy in the form $F=-$ ... This paper provides a description of non-isothermal phase transitions through a phase-field model. ... Accordingly, the thermodynamic framework consists of the standard balance law of continuum physics (no
+--------------------------------------------------------------------------------
+Relativistic non-equilibrium thermodynamics revisited (https://arxiv.org/abs/gr-qc/0503047)
+citeturn17academia16 [wordlim: 200] Published: 21.4 years ago; Relativistic irreversible thermodynamics is reformulated following the conventional approach proposed by Meixner in the non-relativistic case. ... The resulting equations for the entropy production and the local internal energy have the same structure as the non-relativistic ones.
+--------------------------------------------------------------------------------
+Irreversible thermodynamic basis of phase field models: Philosophical Magazine: Vol 91 , No 1 - Get Access (https://www.tandfonline.com/doi/full/10.1080/14786435.2010.491805)
+citeturn17search11 [wordlim: 200] Published: 16.1 years ago; Crawled: 4 months ago; Philosophical Magazine Volume 91, 2011 - Issue 1: Phase Field Simulations: Materials Science meets Biology and Medicine ... We develop the irreversible thermodynamic basis of the phase field model, which is a mesoscopic diffuse interface model that eliminates interface tracking during phase transformations. ... Coupled partial differential equations that govern the time evolution of the phase field and accompanying fields (such as temperature and composition) are formulated on the basis of local positive entropy production subject to suitable constraints on energy and chemical species.
+--------------------------------------------------------------------------------
+A phase-field model of solidification with convection (https://upload.wikimedia.org/wikipedia/commons/e/ee/A_phase-field_model_of_solidification_with_convection_%28IA_phasefieldmodelo6237ande%29.pdf)
+citeturn17search17 [wordlim: 200] Published: 9.1 years ago; formalism of irreversible thermodynamics [54], as originally applied to the phase-field equations ... microforce balance laws, as developed by Gurtin et ... below, the function T allows for a general anisotropic surface energy of the solid-liquid interface. ... The total mass, A4, linear momentum, V, and internal energy, E, associated with the material
+--------------------------------------------------------------------------------
+A phase-field model with convection: numerical simulations (https://nvlpubs.nist.gov/nistpubs/Legacy/IR/nistir6442.pdf)
+citeturn17search18 [wordlim: 200] Published: 9.1 years ago; formalism of irreversible thermodynamics [37,46^8] as described below. ... is a nonclassical term associated with spatial gradients of the phasefield. ... chemical potential (or Gibbs free energy per unit mass).The physical balance laws for mass, linear momentum, and internal energy are
+--------------------------------------------------------------------------------
+Irreversible thermodynamic description of dark matter and radiation creation during inflationary reheating (https://arxiv.org/abs/1708.08004)
+citeturn17academia19 [wordlim: 200] Published: 8.9 years ago; The general equations governing the irreversible matter creation during reheating are obtained by combining the thermodynamics description of the matter creation and the gravitational field equations. ... Typically, the values of the energy densities of relativistic matter and dark matter reach their maximum when the Universe is reheated up to the reheating temperature, which is determined for each case, as a function of the scalar field decay width, the scalar field particle mass, and of the cosmological parameters.An interesting result is that particle production leads to the acceleration of the Universe during the reheating phase, with the deceleration parameter showing a complex dynamics.
+--------------------------------------------------------------------------------
+First law of thermodynamics (https://en.wikipedia.org/wiki/First_law_of_thermodynamics)
+citeturn17search20 [wordlim: 200] Crawled: 8 months ago; If, in a process of change of state of a closed system, the energy transfer is not under a practically zero temperature gradient, practically frictionless, and with nearly balanced forces, then the process is irreversible. ... This means that the internal energy U is a function of state and that the internal energy change \Delta U between two states is a function only of the two states. ... Potential energy can be exchanged with the surroundings of the system when the surroundings impose a force field, such as gravitational or electromagnetic, on the system. ... The distinction between internal and kinetic energy is hard to make in the presence of turbulent motion within the system, as friction gradually dissipates macroscopic kinetic energy of localised bulk flow into molecular random motion of molecules that is classified as internal energy.
+--------------------------------------------------------------------------------
+Non-equilibrium thermodynamics (https://en.wikipedia.org/wiki/Non-equilibrium_thermodynamics)
+citeturn17search21 [wordlim: 200] Crawled: 4 months ago; This approach assumes spatial and temporal continuity and even differentiability of locally defined intensive variables such as temperature and internal energy density. ... Foundations of Physics.†physics.uwyo.edu】 ... The theory can be generalised, to consider any deviation from the equilibrium state as an internal variable, so that we consider the set of internal variables  \xi_j in equation (1) to consist of the quantities defining not only degrees of completeness of all chemical reactions occurring in the system, but also the structure of the system, gradients of temperature, difference of concentrations of substances and so on. ... Introduction to Thermodynamics of Irreversible Processes. 3rd edition, Wiley Interscience, New York.
+--------------------------------------------------------------------------------
+Stefan problem (https://en.wikipedia.org/wiki/Stefan_problem)
+citeturn17search22 [wordlim: 200] Crawled: 3 months ago; The jump in density at phase change induces a fluid motion: the resultant kinetic energy does not figure in the standard energy balance.
+--------------------------------------------------------------------------------
+Phase-field model (https://en.wikipedia.org/wiki/Phase-field_model)
+citeturn17search23 [wordlim: 200] Crawled: 3 months ago; Reviews of Modern Physics. ... A model for a phase field can be constructed by physical arguments if one has an explicit expression for the free energy of the system. ... where \varphi is the phase field, u(\varphi)=e/e_0 + h(\varphi)/2, e is the local enthalpy per unit volume, h is a certain polynomial function of \varphi, and e_0={L^2}/{T_M c_p} (where L is the latent heat, T_M is the melting temperature, and c_{p} is the specific heat). ... Minimizing perceived continuity losses over the duration of a simulation requires limits on the Mobility parameter, resulting in a delicate balance between interfacial smearing due to convection, interfacial reconstruction due to free energy minimization (i.e. mobility-based diffusion), and phase interpenetration, also dependent on the mobility.
+--------------------------------------------------------------------------------
+Extremal principles in non-equilibrium thermodynamics (https://en.wikipedia.org/wiki/Extremal_principles_in_non-equilibrium_thermodynamics)
+citeturn17search24 [wordlim: 200] Crawled: 10 months ago; The search for extremum principles for non-equilibrium thermodynamics follows their successful use in other branches of physics. ... According to Glansdorff and Prigogine (1971, page 16), irreversible processes usually are not governed by global extremal principles because description of their evolution requires differential equations which are not self-adjoint, but local extremal principles can be used for local solutions. ... When radiant heat or light is absorbed, otherwise than in vegetation, or in a chemical reaction, there is a dissipation of mechanical energy, and perfect restoration is impossible." ... Analyzing the Rayleigh-Bénard convection cell phenomenon, Chandrasekhar (1961) wrote "Instability occurs at the minimum temperature gradient at which a balance can be maintained between the kinetic energy dissipated by viscosity and the internal energy released by the buoyancy force." ... Onsager (1931, I) wrote: "Thus the vector field J of the heat flow is described by the condition that the rate of increase of entropy, less the dissipation function, be a maximum."
+--------------------------------------------------------------------------------
+Quantum Elastic Geometry (https://es.wikipedia.org/wiki/Quantum_Elastic_Geometry)
+citeturn17search25 [wordlim: 200] Crawled: 6 months ago; This parameter is identified with the fine-structure constant \alpha, which is interpreted as the intrinsic damping ratio of the vacuum/substrate and as the coefficient controlling irreversible energy transfer between orthogonal modes. ... The resulting picture treats the quantum vacuum as an elastic medium with finite “viscosity”, such that coherent excitations can irreversibly transfer energy into hidden microscopic degrees of freedom. ... ### Validation: universal field structure and fundamental sources ... which matches one branch of the vacuum constitutive equation above, providing an internal consistency check on the normalization of sources.
+
+END_EXACT_TOOL_RETURN
+

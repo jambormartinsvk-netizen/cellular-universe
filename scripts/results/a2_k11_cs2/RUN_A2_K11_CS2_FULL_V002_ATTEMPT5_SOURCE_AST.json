@@ -1,0 +1,102 @@
+{
+  "check_count": 55,
+  "checks": {
+    "CAMB_E_upper_coefficient_L4": true,
+    "CAMB_E_upper_coefficient_L6": true,
+    "CAMB_E_upper_coefficient_L8": true,
+    "E_ell2_source_ast": true,
+    "E_initial_eq_ast": true,
+    "E_return_substitution_ast": true,
+    "G_ell2_source_ast": true,
+    "G_initial_eq_ast": true,
+    "G_return_substitution_ast": true,
+    "J_ell2_source_ast": true,
+    "J_initial_eq_ast": true,
+    "J_return_substitution_ast": true,
+    "closures_declared_non_exact": true,
+    "closures_require_lmax_convergence": true,
+    "contract_L4": true,
+    "contract_L6": true,
+    "contract_L8": true,
+    "hardcoded_count_L4": true,
+    "hardcoded_count_L6": true,
+    "hardcoded_count_L8": true,
+    "hierarchy_range_and_families_ast": true,
+    "no_E0_E1_L4": true,
+    "no_E0_E1_L6": true,
+    "no_E0_E1_L8": true,
+    "pinned_camb_symbolic_hash": true,
+    "reject_duplicate_L4": true,
+    "reject_duplicate_L6": true,
+    "reject_duplicate_L8": true,
+    "reject_extra_E0_L4": true,
+    "reject_extra_E0_L6": true,
+    "reject_extra_E0_L8": true,
+    "reject_extra_E1_L4": true,
+    "reject_extra_E1_L6": true,
+    "reject_extra_E1_L8": true,
+    "reject_missing_E2_L4": true,
+    "reject_missing_E2_L6": true,
+    "reject_missing_E2_L8": true,
+    "reject_missing_steam_L_L4": true,
+    "reject_missing_steam_L_L6": true,
+    "reject_missing_steam_L_L8": true,
+    "reject_reordered_L4": true,
+    "reject_reordered_L6": true,
+    "reject_reordered_L8": true,
+    "reject_rhs_extra_L4": true,
+    "reject_rhs_extra_L6": true,
+    "reject_rhs_extra_L8": true,
+    "reject_rhs_reordered_L4": true,
+    "reject_rhs_reordered_L6": true,
+    "reject_rhs_reordered_L8": true,
+    "reject_same_count_fake_L4": true,
+    "reject_same_count_fake_L6": true,
+    "reject_same_count_fake_L8": true,
+    "zero_tail_coefficient_L4": true,
+    "zero_tail_coefficient_L6": true,
+    "zero_tail_coefficient_L8": true
+  },
+  "closure_registry": {
+    "E_gamma": {
+      "is_exact_physics": false,
+      "requires_lmax_convergence": true,
+      "scheme": "ZERO_TAIL_NUMERICAL"
+    },
+    "F_gamma": {
+      "is_exact_physics": false,
+      "requires_lmax_convergence": true,
+      "scheme": "BESSEL_ASYMPTOTIC_NUMERICAL"
+    },
+    "F_nu": {
+      "is_exact_physics": false,
+      "requires_lmax_convergence": true,
+      "scheme": "BESSEL_ASYMPTOTIC_NUMERICAL"
+    },
+    "F_steam": {
+      "is_exact_physics": false,
+      "requires_lmax_convergence": true,
+      "scheme": "BESSEL_ASYMPTOTIC_NUMERICAL"
+    }
+  },
+  "failed_checks": [],
+  "package_init_sha256": "C3C739B916745581B8AEA8C698DFA82FFA441A8E9FF7F57FDAEDE32DAEF39391",
+  "required_next_gate": "full DAE plus lmax and closure-family convergence",
+  "runner_sha256": "B84B3E85710B1B14CCE12EFCA3A8467BBAD645E54460F821C3C6D60888162D34",
+  "runtime_seconds": 0.03200000000288128,
+  "scope": "pinned CAMB source AST + exact ordered state contract + registered numerical truncation; no ODE",
+  "score_effect": "NONE",
+  "source_sha256": {
+    "camb_symbolic": "F380B56A15F678F6D8DBA8981BBE5A4E57377050945ADE91C6CD4B9262C7A608",
+    "contract": "30610E17EA247B035962439EBF40467F33ACDBAB26298E3CBD47EC57DA48B42E",
+    "preflight": "58385E957E379AA1BFFB6F97453F58DD33682CAB05FFF097C9D8D7DC616B5203"
+  },
+  "state_counts": {
+    "4": 25,
+    "6": 33,
+    "8": 41
+  },
+  "technical_attempt": 5,
+  "test": "K11-CS2 full v002 pinned-source AST structural preflight",
+  "verdict": "PASS_ARCH_A_SOURCE_AST_EXACT_SET_AND_REGISTERED_TRUNCATION_ONLY"
+}

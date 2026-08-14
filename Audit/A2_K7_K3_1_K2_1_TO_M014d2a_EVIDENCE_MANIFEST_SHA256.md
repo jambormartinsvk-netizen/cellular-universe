@@ -1,0 +1,83 @@
+# A2-K7 — dôkazový manifest od K2.1 po M-014d2a
+
+**Dátum:** 2026-07-13  
+**Algoritmus:** SHA-256  
+**Kanonický stav:** K7 `30/100`; K1b1 `MŔTVA M-014d2a` na `41/100`;
+K1b2 aktívna
+
+## Reprodukčné príkazy a očakávané exity
+
+```text
+python scripts/59_script_A2_K7_K3_1_K2_dimensional_background_closure.py
+  expected exit: 0
+  verdict: SURVIVES_DIMENSIONAL_BACKGROUND_EXISTENCE_ONLY
+
+python scripts/60_script_A2_K7_K3_1_K2_2_K1a_registered_steam_gravity_rate.py
+  expected exit: 1
+  verdict: DEAD_M014d1_REGISTERED_GRAVITON_STEAM_TOO_WEAK
+
+python scripts/61_script_A2_K7_K3_1_K2_2_K1b_spin2_coupling_scale_gate.py
+  expected exit: 1
+  verdict: DEAD_M014d2a_ENHANCED_LEADING_SOFT_SPIN2_COUPLING
+```
+
+Nenulové exity skriptov 60 a 61 sú predregistrované kill výstupy, nie
+runtime chyby.
+
+## Skripty
+
+```text
+48ee121c36448cb30080fe78ca75788f3960d48dea3d71bc73dba16400828b76  scripts/59_script_A2_K7_K3_1_K2_dimensional_background_closure.py
+cb036469c3893a5c3c1b50b0dc5f544ec767a66289bf8f18fbeb1236f24474c9  scripts/60_script_A2_K7_K3_1_K2_2_K1a_registered_steam_gravity_rate.py
+e392841ff394636c298654bb47a89aaa2dc605cb3eef254344ac001e0e1450c3  scripts/61_script_A2_K7_K3_1_K2_2_K1b_spin2_coupling_scale_gate.py
+444b658d895374410e1f4ecd10f547130c5fb944388e91a2ce4fda9046bbdcac  scripts/61_script_A2_K7_K3_1_K2_2_K1b_spin2_coupling_scale_gate_PRE_ERRATUM_OVERBROAD.py
+```
+
+Pôvodný skript 61 je úmyselne zachovaný. Jeho čísla ostávajú reprodukovateľné,
+ale jeho pôvodný logický rozsah bol príliš široký; kanonické obmedzenie je
+v errate a opravenom skripte.
+
+## Audity a numerické výstupy
+
+```text
+5d3eaa309531437d5f7564630334cdc943861c949bb3049427c8b2ab55934067  Audit/A2_K7_K3_1_K2_1_dimensional_background_audit.md
+bed0206ea6b63551392fea1f94726567973516f01450f596d5d9f94b40a66ffa  Audit/A2_K7_K3_1_K2_1_NUMERICAL_OUTPUT_59.md
+c7a7cf82a6ed4838289d3889e82aa4e94d9d12f111d3a3ee29139cd5abb16d2a  Audit/A2_K7_K3_1_K2_2_K1a_registered_steam_gravity_only_audit.md
+ec0dd18480c18bd10b27003021491c6ef27006d45ae7f3b5e88b0bc4b3ecb56f  Audit/A2_K7_K3_1_K2_2_K1a_NUMERICAL_OUTPUT_60.md
+a5db4a17582171ed10d1a5bc9950213c3a9e7772e3cc82a7c7ac941aa7dec8ad  Audit/A2_K7_K3_1_K2_2_K1b1_SCOPE_ERRATUM_SCRIPT61.md
+39a6724962ffc7d7fb8156d8693e04ded59f3cdaac34694d1805039e5f035f33  Audit/A2_K7_K3_1_K2_2_K1b1_leading_soft_spin2_coupling_audit.md
+ee95640c94aaccb49d4d378f748f438ca2628ee101eb7346d5e84fdbb0c92828  Audit/A2_K7_K3_1_K2_2_K1b1_NUMERICAL_OUTPUT_61.md
+5caa2e7442779e217fee4f141e2268ba3ac7608a4bf3b0521382d1a5ed31de95  Audit/A2_K7_PODKOLAJE_KANONICKY_STAV_A_MAX_HLBKA.md
+```
+
+## Problémové dokumenty, stav a plán
+
+```text
+929db510fb9e404628c9cb357f9fe28abbad740c02035310ae8041dea5cd6dc6  Questions/A2_K7_K3_1_K2_2_problem_bath_noise_and_subtracks.md
+8191bd8c734a6f80b258f3ad5b9eb161c5763bdbb397182b919bc2946fb827f8  Questions/A2_K7_K3_1_K2_2_K1_bath_realisation_subtracks_after_M014d1.md
+fe8c26d0efbee68832569a7a02ef0d408b8f120615b6c7cd9ecdd4b46aaf71a1  Questions/A2_K7_K3_1_K2_2_K1b_problem_spin2_operator_subtracks.md
+08f168df5683ee8ed56deaa22a82f3d75d856e3ec84c0e2d9f5e419d4a0161c4  Questions/A2_K7_STAV_A_AKCNY_PLAN_PO_M014d1.md
+5b25fd41b9abae3421c1565d4f6a04b6b5d15466ad7c188847c8a03ace4cee79  Questions/A2_K7_STAV_A_AKCNY_PLAN_PO_M014d1_PRE_ERRATUM.md
+852671d7383ccca969a078dc19a1dcb53192f564c734bbd30e2382fc3c6ed937  Questions/A2_K7_STAV_A_AKCNY_PLAN_PO_M014d2a.md
+3992bea55ba218e4d573e923c206567a6f2d2cd81ef8a837cf7933e5cd3b85b0  Questions/A3_STAV_A_AKCNY_PLAN_PO_K7_M014d2a.md
+bb2551c554ea3696bcba4f944c88895ca3b428080a97bc6069f9df2519be3aeb  Questions/00_READ_FIRST_A2_Q20_AFTER_K7_M014d2a.md
+7c831ccf08ccf9861e733f4308f28e8181717da2be0cde4a389c262f0805c14d  Questions/00_READ_FIRST_A2_Q20_CURRENT_STATE.md
+```
+
+## Register 05 — SK/EN zrkadlá
+
+```text
+bf3596b2a563c94ec1b744851f99c3e1cf69c29d397504f6dc6f48ec465f7f6c  theory/SK/05t_Methodology_Rules_and_Question_Register_A2_K7_K3_1_K2_1_SK.md
+2c11655762ff238981990379402df6253b886562d977671b5adf4359680dfc56  theory/EN/05t_Methodology_Rules_and_Question_Register_A2_K7_K3_1_K2_1_EN.md
+c4dbd928bc4df5d9e1c9fc2e679329527c426e66b8343e8b030777071c49307e  theory/SK/05u_Methodology_Rules_and_Question_Register_A2_K7_M014d1_SK.md
+e52335ae1c152fc395015cd6f6fc75d7314e9178406e822c1a18bd681e7e272f  theory/EN/05u_Methodology_Rules_and_Question_Register_A2_K7_M014d1_EN.md
+ce8300a72d2951d35e630daa27ff4598e4a06a4ee3449da0f244b55a03c2bfe8  theory/SK/05v_Methodology_Rules_and_Question_Register_A2_K7_M014d2a_SK.md
+c37ab2f392401b15568cfd4a70fa99286957aefbbe902aa3a78a452fe21fe262  theory/EN/05v_Methodology_Rules_and_Question_Register_A2_K7_M014d2a_EN.md
+```
+
+## Poznámka o aktualizácii kanonickej tabuľky
+
+Hash kanonickej tabuľky v tomto manifeste zodpovedá úplnej hierarchickej
+verzii po M-014d2a. Staršie verzie zostali zachované pod názvami
+`BEFORE_*`; nie sú aktuálnym stavom.
+
