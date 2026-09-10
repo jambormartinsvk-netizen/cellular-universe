@@ -1,0 +1,12 @@
+# Local environments and new audit outputs are never accepted evidence.
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.audit-runs/
+dist/
+.env
+.env.*
+*.pem
+*.key

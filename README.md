@@ -1,5 +1,10 @@
 # Quantum Cellular Theory of Space: A Testable Cosmological Model of a Dividing Causal Network
 
+**Reproduction and independent review:** [start here](REPRODUCING.md),
+[case and hash catalog](audit_catalog.json), [submit a scoped audit](CONTRIBUTING.md).
+This preparation branch adds access tools around the preserved v3.18 evidence;
+it does not announce a new scientific version or new verification.
+
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21915608.svg)](https://doi.org/10.5281/zenodo.21915608)
 
 **Also known as:** The Cellular Universe<br>

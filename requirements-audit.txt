@@ -1,0 +1,6 @@
+# Only EA047 numerical reproduction; these are the recorded package versions.
+# Recorded interpreter: CPython 3.11.3. Audit/export helpers and EA029/EA039
+# need only the standard library. EA004 needs SymPy; its historical exact
+# version is unavailable, so install separately and report the actual version.
+numpy==2.4.4
+scipy==1.17.1

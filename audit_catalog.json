@@ -1,0 +1,1209 @@
+{
+  "schema_version": 1,
+  "baseline": {
+    "git_commit": "f08fb69af4e120870a7fcca666d7792419cc9724",
+    "tag": "v3.18",
+    "zenodo_record": "https://zenodo.org/records/21915608",
+    "purpose": "Navigation and byte verification of preserved public evidence, not scientific revalidation."
+  },
+  "cases": [
+    {
+      "id": "EA004",
+      "title": "Background universality, A_f normalization and comparison",
+      "package_path": "External_Audits/PACKAGES/EA-20260717-004-KMPC-BACKGROUND-PRIMARY-REPRO",
+      "guide_path": "External_Audits/PACKAGES/EA-20260717-004-KMPC-BACKGROUND-PRIMARY-REPRO/03_REPRODUCTION_AND_EXPECTATIONS.md",
+      "prepare_source": "External_Audits/PACKAGES/EA-20260717-004-KMPC-BACKGROUND-PRIMARY-REPRO/REPRO",
+      "commands": [
+        "python scripts/224_script_A2_K4_G8_FULL_background_universality_audit.py --smoke --max-runtime-seconds 10",
+        "python scripts/224_script_A2_K4_G8_FULL_background_universality_audit.py --max-runtime-seconds 10 --output scripts/results/k_mpc_005/RUN_FULL_002_REPRO.json",
+        "python scripts/234_script_KMPC_001_A1_frozen_background_Af_audit.py --x-min -18 --deadline-seconds 5 --output scripts/results/k_mpc_005/RUN_KMPC_001_AF_REPRO.json",
+        "python scripts/235_script_KMPC_002_full_A1_vs_truncated_K7_background.py --af-json scripts/results/k_mpc_005/RUN_KMPC_001_AF_REPRO.json --x-min -18 --deadline-seconds 5 --output scripts/results/k_mpc_005/RUN_KMPC_002_P3_REPRO.json"
+      ],
+      "limitations": "Conditional historical models only. Official runner 224 intentionally returns exit 1 with the specified JSON. Run 234 before 235. Original exact SymPy version is unavailable. Paths printed here are relative to copied REPRO root; impose the outer timeout from the guide.",
+      "files": [
+        {
+          "path": "External_Audits/PACKAGES/EA-20260717-004-KMPC-BACKGROUND-PRIMARY-REPRO/00_SCOPE_AND_READ_ORDER.md",
+          "sha256": "671022691240859590cd0b08cffb3b9841b5e56576df68216211398cec9cfd8a",
+          "bytes": 2299
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260717-004-KMPC-BACKGROUND-PRIMARY-REPRO/01_MANIFEST_SHA256.md",
+          "sha256": "7943e7c14366effe92d9c2f3a478ecbc8c2711fed0ced5fc452462a833aa6f6b",
+          "bytes": 5707
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260717-004-KMPC-BACKGROUND-PRIMARY-REPRO/02_AUDITOR_INSTRUCTIONS.md",
+          "sha256": "9ebbca0e75c84e9a363978b0efe0e70ccebf173fd153f50496ef665a4c5a4d09",
+          "bytes": 661
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260717-004-KMPC-BACKGROUND-PRIMARY-REPRO/03_REPRODUCTION_AND_EXPECTATIONS.md",
+          "sha256": "219fbe32b439b9730f60417e29261fa85563af2d32998b367880f6ee8c2437ed",
+          "bytes": 2626
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260717-004-KMPC-BACKGROUND-PRIMARY-REPRO/04_PACKAGE_HISTORY.md",
+          "sha256": "f6603783c46f3f32874f0ebc5892612d50be8062adcd1dbab17cf742b7f8ebb9",
+          "bytes": 306
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260717-004-KMPC-BACKGROUND-PRIMARY-REPRO/EVIDENCE/001__ORIGINAL_EXTERNAL_AUDIT.md",
+          "sha256": "c5c4179689ddcdfb34daac898b8b1aca56d1b2d82327465f0486a5b01a820ec9",
+          "bytes": 12447
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260717-004-KMPC-BACKGROUND-PRIMARY-REPRO/EVIDENCE/002__MAIN_ASSESSMENT.md",
+          "sha256": "0064dd4a631c30cec61c87a672c2560399e3b6680fb5799dfea041409cb13424",
+          "bytes": 9874
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260717-004-KMPC-BACKGROUND-PRIMARY-REPRO/EVIDENCE/003__PRIMARY_HISTORICAL_RUNNER_213.py",
+          "sha256": "8726bae5e3f8c06c74d2053bf9b7430f22b73fa867534c9b421a228aec8fdc39",
+          "bytes": 31806
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260717-004-KMPC-BACKGROUND-PRIMARY-REPRO/EVIDENCE/004__PRIMARY_PREDECESSOR_128.py",
+          "sha256": "998a7d42102701e870a3b13f10bd3aef21457e2e109bee85cedd665f23c265d6",
+          "bytes": 5591
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260717-004-KMPC-BACKGROUND-PRIMARY-REPRO/EVIDENCE/005__RUNNER_224_UNIVERSALITY.py",
+          "sha256": "2b98bd06a60db0d1026618e854cc39a35ffb16b88235a57b4c0cf9f20519bce9",
+          "bytes": 1779
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260717-004-KMPC-BACKGROUND-PRIMARY-REPRO/EVIDENCE/006__BASE_BACKGROUND_UNIVERSALITY.py",
+          "sha256": "eb3b1f3a5fb39982723e9dd2b9dd12f9a9106977da31a1557a8fb25bf34adbc3",
+          "bytes": 1998
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260717-004-KMPC-BACKGROUND-PRIMARY-REPRO/EVIDENCE/007__RUN_FULL_002_EXPECTATION.md",
+          "sha256": "6d5668ff28f5072acaeafd0d7ba98e97ef7a1bd70b225d0b9100981c99d167a6",
+          "bytes": 965
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260717-004-KMPC-BACKGROUND-PRIMARY-REPRO/EVIDENCE/008__RUN_FULL_002_RAW.json",
+          "sha256": "1564dde5aa4c4c37daedfd5b2ce639c1aa905b71f9be7b9ee6c04c941988c0fc",
+          "bytes": 1261
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260717-004-KMPC-BACKGROUND-PRIMARY-REPRO/EVIDENCE/009__RUN_FULL_002_AUDIT.md",
+          "sha256": "2596ea8ba882e7acd97e1fc6cc29b275bf2644a0f9bde2378f9eb33fa88dca01",
+          "bytes": 1673
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260717-004-KMPC-BACKGROUND-PRIMARY-REPRO/EVIDENCE/010__FUEL_TERM_PROVENANCE.md",
+          "sha256": "213df36c5f0b230d0d9d5ef6c8713d70253dd7c989fdfdc97bfefbc4c3cf3d28",
+          "bytes": 4623
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260717-004-KMPC-BACKGROUND-PRIMARY-REPRO/EVIDENCE/011__RUNNER_234_AF.py",
+          "sha256": "232fb2bab939d8fdfcd5a97c1cceddf6f2e7981985faf164892de03bad22464a",
+          "bytes": 2527
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260717-004-KMPC-BACKGROUND-PRIMARY-REPRO/EVIDENCE/012__BASE_AF_FROM_A1.py",
+          "sha256": "72b750ee5eca77122389841021a80433dd6c417778bf23c768ff51417a80c8e1",
+          "bytes": 5618
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260717-004-KMPC-BACKGROUND-PRIMARY-REPRO/EVIDENCE/013__KMPC001_AF_RAW.json",
+          "sha256": "fade4f37ce84958c35bfc23073cfa6ab92f18aae188b5cca6c77a280d2cd05fd",
+          "bytes": 2314
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260717-004-KMPC-BACKGROUND-PRIMARY-REPRO/EVIDENCE/014__KMPC001_AF_AUDIT.md",
+          "sha256": "24780282ebb24262e963c885adbf757002392c9b4e5b0e62c555cb00bbb4cfc6",
+          "bytes": 2214
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260717-004-KMPC-BACKGROUND-PRIMARY-REPRO/EVIDENCE/015__RUNNER_235_P3.py",
+          "sha256": "c603b845e56bd9c9a40165b0673ec8782fef1da5076051dbc3e985270435cbe9",
+          "bytes": 4116
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260717-004-KMPC-BACKGROUND-PRIMARY-REPRO/EVIDENCE/016__KMPC002_P3_RAW.json",
+          "sha256": "9d37af3178ef388641707ee4825d9222c5bba6d4c91ddce42685aec72642063e",
+          "bytes": 4221
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260717-004-KMPC-BACKGROUND-PRIMARY-REPRO/EVIDENCE/017__KMPC002_P3_AUDIT.md",
+          "sha256": "2f47341d09fdc24ae69ffef61643be01cb087f813d72e8aa4d74be6a49c9dd73",
+          "bytes": 3130
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260717-004-KMPC-BACKGROUND-PRIMARY-REPRO/REPRO/scripts/224_script_A2_K4_G8_FULL_background_universality_audit.py",
+          "sha256": "2b98bd06a60db0d1026618e854cc39a35ffb16b88235a57b4c0cf9f20519bce9",
+          "bytes": 1779
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260717-004-KMPC-BACKGROUND-PRIMARY-REPRO/REPRO/scripts/234_script_KMPC_001_A1_frozen_background_Af_audit.py",
+          "sha256": "232fb2bab939d8fdfcd5a97c1cceddf6f2e7981985faf164892de03bad22464a",
+          "bytes": 2527
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260717-004-KMPC-BACKGROUND-PRIMARY-REPRO/REPRO/scripts/235_script_KMPC_002_full_A1_vs_truncated_K7_background.py",
+          "sha256": "c603b845e56bd9c9a40165b0673ec8782fef1da5076051dbc3e985270435cbe9",
+          "bytes": 4116
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260717-004-KMPC-BACKGROUND-PRIMARY-REPRO/REPRO/scripts/baseScripts/a2_k4_g8/background_universality.py",
+          "sha256": "eb3b1f3a5fb39982723e9dd2b9dd12f9a9106977da31a1557a8fb25bf34adbc3",
+          "bytes": 1998
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260717-004-KMPC-BACKGROUND-PRIMARY-REPRO/REPRO/scripts/baseScripts/k_mpc_005/af_from_a1_background.py",
+          "sha256": "72b750ee5eca77122389841021a80433dd6c417778bf23c768ff51417a80c8e1",
+          "bytes": 5618
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260717-004-KMPC-BACKGROUND-PRIMARY-REPRO/REPRO/scripts/results/k_mpc_005/00_OUTPUT_DIRECTORY.md",
+          "sha256": "cfb88973c50de2cc557747b014ff22373959b4eeb34e9025990d532fa0aa59dd",
+          "bytes": 146
+        }
+      ],
+      "related_packages": [],
+      "control_guides": [],
+      "runtime": {
+        "recorded_python": "3.11",
+        "sympy_version": "NOT_RECORDED",
+        "outer_process_timeout_seconds": 10
+      }
+    },
+    {
+      "id": "EA029",
+      "title": "C2 authoritative logical aggregate",
+      "package_path": "External_Audits/PACKAGES/EA-20260719-029-KMPC127-C2-AUTHORITATIVE-AGGREGATE",
+      "guide_path": "External_Audits/PACKAGES/EA-20260719-029-KMPC127-C2-AUTHORITATIVE-AGGREGATE/03_REPRODUCTION_AND_EXPECTATIONS.md",
+      "prepare_source": "External_Audits/PACKAGES/EA-20260719-029-KMPC127-C2-AUTHORITATIVE-AGGREGATE/REPRO",
+      "commands": [
+        "python scripts/371_script_KMPC_127_P5_3g7_C2_authoritative_atom_aggregate.py --help",
+        "python scripts/371_script_KMPC_127_P5_3g7_C2_authoritative_atom_aggregate.py --smoke --max-runtime-seconds 4.8",
+        "python scripts/371_script_KMPC_127_P5_3g7_C2_authoritative_atom_aggregate.py --aggregate --result-dir scripts/results/k_mpc_005 --output scripts/results/k_mpc_005/RUN_KMPC_127_P5_3G7_C2_FOURIER_COVERAGE_AUTHORITATIVE_AGGREGATE.json --max-runtime-seconds 4.8"
+      ],
+      "limitations": "Coverage of 10 logical inputs is not a compatible physical witness. The input-removal negative control belongs in another fresh copy. No new scientific reproduction during infrastructure setup.",
+      "files": [
+        {
+          "path": "External_Audits/PACKAGES/EA-20260719-029-KMPC127-C2-AUTHORITATIVE-AGGREGATE/00_SCOPE_AND_READ_ORDER.md",
+          "sha256": "8f2be76b660fe48c87848cace78913c2105de0ba06c8475b7d45c9c158ffc1ab",
+          "bytes": 2171
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260719-029-KMPC127-C2-AUTHORITATIVE-AGGREGATE/01_MANIFEST_SHA256.md",
+          "sha256": "305000f6adbe5bf5b00745c3b1683b4f2be3e06458380ada57c96661e4694092",
+          "bytes": 6362
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260719-029-KMPC127-C2-AUTHORITATIVE-AGGREGATE/01_MANIFEST_SHA256.tsv",
+          "sha256": "9dc0dc5e5ed18b18711033fc381b985fd413179a1b179c9faa7723d2448edd8b",
+          "bytes": 7549
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260719-029-KMPC127-C2-AUTHORITATIVE-AGGREGATE/02_AUDITOR_INSTRUCTIONS.md",
+          "sha256": "0c61850298779a16689a46afb054eac57246d4804df886ed810a6a7c574f19b8",
+          "bytes": 770
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260719-029-KMPC127-C2-AUTHORITATIVE-AGGREGATE/03_REPRODUCTION_AND_EXPECTATIONS.md",
+          "sha256": "e34efb337533855f8bb86d3cdc89e4a180f125562dbc35421b24933cf9ce3fb2",
+          "bytes": 2515
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260719-029-KMPC127-C2-AUTHORITATIVE-AGGREGATE/04_RUNTIME_DEPENDENCY_MAP.tsv",
+          "sha256": "6f75850cfe8707efe1eabbff628b49b2b68b9671e9b59853165d3cd6a0ceb94c",
+          "bytes": 2841
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260719-029-KMPC127-C2-AUTHORITATIVE-AGGREGATE/05_PACKAGE_HISTORY.md",
+          "sha256": "a6cdcdb009aa7fad12ccb2f1f15932741886d25255e18face3c99051e60860e4",
+          "bytes": 772
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260719-029-KMPC127-C2-AUTHORITATIVE-AGGREGATE/EVIDENCE/001__AUDITOR_PACKAGE_PROTOCOL_R4.md",
+          "sha256": "b065f73942d5d8cf22009d6e90da0a558ad9d2d292a6bb8b50ab7f1421e987f0",
+          "bytes": 11827
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260719-029-KMPC127-C2-AUTHORITATIVE-AGGREGATE/EVIDENCE/002__C2_FROZEN_DECISION_CONTRACT.md",
+          "sha256": "def104318c02265c2bc244a571cc7f25adf059acd16b6ab76b4c8a5d3b38c2df",
+          "bytes": 5371
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260719-029-KMPC127-C2-AUTHORITATIVE-AGGREGATE/EVIDENCE/003__KMPC127_PREREG.md",
+          "sha256": "73f8be89e79d6e36b2974cd232b53bfba0d939d86fe4a66acd91601aa09ba067",
+          "bytes": 6325
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260719-029-KMPC127-C2-AUTHORITATIVE-AGGREGATE/EVIDENCE/004__KMPC127_RAW.json",
+          "sha256": "ca33e4167953f2112aff13e186e7d8e47a135fe947b837d63cce5f7f5b0d247f",
+          "bytes": 12227
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260719-029-KMPC127-C2-AUTHORITATIVE-AGGREGATE/EVIDENCE/005__KMPC127_INTERNAL_AUDIT.md",
+          "sha256": "9325b33cefe9a7b62655a4fd306c6d826749dd7ce552812f00e2e1cdb3fe2001",
+          "bytes": 3628
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260719-029-KMPC127-C2-AUTHORITATIVE-AGGREGATE/EVIDENCE/006__CURRENT_PLAN.md",
+          "sha256": "c91d571b311dab3c022dbdba11db79194fd62a3dc031be97648fbc368a58987e",
+          "bytes": 23956
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260719-029-KMPC127-C2-AUTHORITATIVE-AGGREGATE/EVIDENCE/007__P5_WORK_PLAN.md",
+          "sha256": "dccdde61fc3553c5c5a90a4d8dba27e7c87b1080a761c940584a52d4f6b41972",
+          "bytes": 11598
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260719-029-KMPC127-C2-AUTHORITATIVE-AGGREGATE/EVIDENCE/008__RUNNER_MANIFEST.md",
+          "sha256": "ed9833082e4937f02e876c5f0b0eade2ea7f5461b38ec65f585f93c05e58057d",
+          "bytes": 24283
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260719-029-KMPC127-C2-AUTHORITATIVE-AGGREGATE/EVIDENCE/009__RESULT_MANIFEST.md",
+          "sha256": "b2a5c71c40be51452bacc9fdf8377a0a9847acc6453689fa3e9be5f2471a6b56",
+          "bytes": 19926
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260719-029-KMPC127-C2-AUTHORITATIVE-AGGREGATE/EVIDENCE/010__RUNNER_DNR_REGISTRY.md",
+          "sha256": "501081a26660882820f1b89bcf697b1d0a6494544bcf9814bb5630fcf907da26",
+          "bytes": 55952
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260719-029-KMPC127-C2-AUTHORITATIVE-AGGREGATE/EVIDENCE/011__PYTHON_ERROR_LEDGER.md",
+          "sha256": "81970f87b71ee9e76cbc90aadb62d1ae71d585570147ec07ad588da652ddd933",
+          "bytes": 93542
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260719-029-KMPC127-C2-AUTHORITATIVE-AGGREGATE/EVIDENCE/012__371_KMPC127.py",
+          "sha256": "ee25391ac56d561ff7b9e1ffd38f23906772ce763c1ef045eab56a38f223f6fc",
+          "bytes": 4075
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260719-029-KMPC127-C2-AUTHORITATIVE-AGGREGATE/EVIDENCE/013__C2_AUTHORITATIVE_AGGREGATE.py",
+          "sha256": "69e0c35cdc871ceb5185c51d35a3f26d3b26fd4d6117dc443e6e16cb7eee8eec",
+          "bytes": 16130
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260719-029-KMPC127-C2-AUTHORITATIVE-AGGREGATE/EVIDENCE/014__RUN_KMPC_063_P5_3G7_C2_AD_K0p005_SUPPORT_06_08.json",
+          "sha256": "cb0cea5dd92bf85f0f0066fad8de77d5f8247b02b864facf92fa374e0fbc85bd",
+          "bytes": 65106
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260719-029-KMPC127-C2-AUTHORITATIVE-AGGREGATE/EVIDENCE/015__RUN_KMPC_066_P5_3G7_C2_AD_K0p15_SUPPORT_04_06.json",
+          "sha256": "81370874bcf25123565fbb117edfeb4d51f12560ccc04bdc8ccdfc0df8fde816",
+          "bytes": 59826
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260719-029-KMPC127-C2-AUTHORITATIVE-AGGREGATE/EVIDENCE/016__RUN_KMPC_073_P5_3G7_C2_CDI_K0p005_SUPPORT_07_09_PHASE_ORDER_SUCCESSOR.json",
+          "sha256": "b7b2b7231e20d90d7ea71f1934b795296b7b0c2772148988c0fcfb2cf96e8498",
+          "bytes": 68924
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260719-029-KMPC127-C2-AUTHORITATIVE-AGGREGATE/EVIDENCE/017__RUN_KMPC_075_P5_3G7_C2_CDI_K0p15_SAME_MATRIX_REFINEMENT.json",
+          "sha256": "19f5f0b38cfe62c6e2eca277ee5f959d866967027c5af721cf4b2e1a30b999b9",
+          "bytes": 66951
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260719-029-KMPC127-C2-AUTHORITATIVE-AGGREGATE/EVIDENCE/018__RUN_KMPC_078_P5_3G7_C2_BI_K0p005_SUPPORT_07_09_CHECKPOINT_RESUME.json",
+          "sha256": "f24894a043b531825dd36a424637d1e70244f89b66678af945ea6c135918a359",
+          "bytes": 69167
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260719-029-KMPC127-C2-AUTHORITATIVE-AGGREGATE/EVIDENCE/019__RUN_KMPC_112_P5_3G7_C2_BI_K0p15_HP_M1_CHECKPOINT_EXACT_RESUME_JSON_PARITY_SUCCESSOR.json",
+          "sha256": "faf52256489ba7c105f9125c1ed9a68358c0187e5f7b8b1164e1ba036a6507a1",
+          "bytes": 38702
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260719-029-KMPC127-C2-AUTHORITATIVE-AGGREGATE/EVIDENCE/020__RUN_KMPC_115_P5_3G7_C2_NID_K0p005_SUPPORT_07_09_CHECKPOINT_RESUME.json",
+          "sha256": "7d7b9bc1f2874a20e0cb8116d657f7c0419d03b284d0161cffdf89112b4e0851",
+          "bytes": 70059
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260719-029-KMPC127-C2-AUTHORITATIVE-AGGREGATE/EVIDENCE/021__RUN_KMPC_117_P5_3G7_C2_NID_K0p15_SAME_MATRIX_REFINEMENT.json",
+          "sha256": "f9be1ac95575b0a71e73596384360adc382c651ee4c8ba067dd4313c4be6c7c4",
+          "bytes": 67851
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260719-029-KMPC127-C2-AUTHORITATIVE-AGGREGATE/EVIDENCE/022__RUN_KMPC_120_P5_3G7_C2_NIV_K0p005_SUPPORT_06_08_CHECKPOINT_RESUME.json",
+          "sha256": "d6350636f9ba27c541ef8cdc2585ed370e2f1e2eb35495e01198a8baa47ab136",
+          "bytes": 70873
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260719-029-KMPC127-C2-AUTHORITATIVE-AGGREGATE/EVIDENCE/023__RUN_KMPC_126_P5_3G7_C2_NIV_K0p15_SUPPORT_06_08_MULTI_RANK_REFINEMENT.json",
+          "sha256": "1d46afd1cdeb650a7787a5e6fe9e2304a5212ff1fe9aa47657beaaaa557b8aa0",
+          "bytes": 78567
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260719-029-KMPC127-C2-AUTHORITATIVE-AGGREGATE/REPRO/scripts/371_script_KMPC_127_P5_3g7_C2_authoritative_atom_aggregate.py",
+          "sha256": "ee25391ac56d561ff7b9e1ffd38f23906772ce763c1ef045eab56a38f223f6fc",
+          "bytes": 4075
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260719-029-KMPC127-C2-AUTHORITATIVE-AGGREGATE/REPRO/scripts/baseScripts/p5_general_synchronous/c2_authoritative_atom_aggregate.py",
+          "sha256": "69e0c35cdc871ceb5185c51d35a3f26d3b26fd4d6117dc443e6e16cb7eee8eec",
+          "bytes": 16130
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260719-029-KMPC127-C2-AUTHORITATIVE-AGGREGATE/REPRO/scripts/results/k_mpc_005/RUN_KMPC_063_P5_3G7_C2_AD_K0p005_SUPPORT_06_08.json",
+          "sha256": "cb0cea5dd92bf85f0f0066fad8de77d5f8247b02b864facf92fa374e0fbc85bd",
+          "bytes": 65106
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260719-029-KMPC127-C2-AUTHORITATIVE-AGGREGATE/REPRO/scripts/results/k_mpc_005/RUN_KMPC_066_P5_3G7_C2_AD_K0p15_SUPPORT_04_06.json",
+          "sha256": "81370874bcf25123565fbb117edfeb4d51f12560ccc04bdc8ccdfc0df8fde816",
+          "bytes": 59826
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260719-029-KMPC127-C2-AUTHORITATIVE-AGGREGATE/REPRO/scripts/results/k_mpc_005/RUN_KMPC_073_P5_3G7_C2_CDI_K0p005_SUPPORT_07_09_PHASE_ORDER_SUCCESSOR.json",
+          "sha256": "b7b2b7231e20d90d7ea71f1934b795296b7b0c2772148988c0fcfb2cf96e8498",
+          "bytes": 68924
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260719-029-KMPC127-C2-AUTHORITATIVE-AGGREGATE/REPRO/scripts/results/k_mpc_005/RUN_KMPC_075_P5_3G7_C2_CDI_K0p15_SAME_MATRIX_REFINEMENT.json",
+          "sha256": "19f5f0b38cfe62c6e2eca277ee5f959d866967027c5af721cf4b2e1a30b999b9",
+          "bytes": 66951
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260719-029-KMPC127-C2-AUTHORITATIVE-AGGREGATE/REPRO/scripts/results/k_mpc_005/RUN_KMPC_078_P5_3G7_C2_BI_K0p005_SUPPORT_07_09_CHECKPOINT_RESUME.json",
+          "sha256": "f24894a043b531825dd36a424637d1e70244f89b66678af945ea6c135918a359",
+          "bytes": 69167
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260719-029-KMPC127-C2-AUTHORITATIVE-AGGREGATE/REPRO/scripts/results/k_mpc_005/RUN_KMPC_112_P5_3G7_C2_BI_K0p15_HP_M1_CHECKPOINT_EXACT_RESUME_JSON_PARITY_SUCCESSOR.json",
+          "sha256": "faf52256489ba7c105f9125c1ed9a68358c0187e5f7b8b1164e1ba036a6507a1",
+          "bytes": 38702
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260719-029-KMPC127-C2-AUTHORITATIVE-AGGREGATE/REPRO/scripts/results/k_mpc_005/RUN_KMPC_115_P5_3G7_C2_NID_K0p005_SUPPORT_07_09_CHECKPOINT_RESUME.json",
+          "sha256": "7d7b9bc1f2874a20e0cb8116d657f7c0419d03b284d0161cffdf89112b4e0851",
+          "bytes": 70059
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260719-029-KMPC127-C2-AUTHORITATIVE-AGGREGATE/REPRO/scripts/results/k_mpc_005/RUN_KMPC_117_P5_3G7_C2_NID_K0p15_SAME_MATRIX_REFINEMENT.json",
+          "sha256": "f9be1ac95575b0a71e73596384360adc382c651ee4c8ba067dd4313c4be6c7c4",
+          "bytes": 67851
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260719-029-KMPC127-C2-AUTHORITATIVE-AGGREGATE/REPRO/scripts/results/k_mpc_005/RUN_KMPC_120_P5_3G7_C2_NIV_K0p005_SUPPORT_06_08_CHECKPOINT_RESUME.json",
+          "sha256": "d6350636f9ba27c541ef8cdc2585ed370e2f1e2eb35495e01198a8baa47ab136",
+          "bytes": 70873
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260719-029-KMPC127-C2-AUTHORITATIVE-AGGREGATE/REPRO/scripts/results/k_mpc_005/RUN_KMPC_126_P5_3G7_C2_NIV_K0p15_SUPPORT_06_08_MULTI_RANK_REFINEMENT.json",
+          "sha256": "1d46afd1cdeb650a7787a5e6fe9e2304a5212ff1fe9aa47657beaaaa557b8aa0",
+          "bytes": 78567
+        }
+      ],
+      "related_packages": [],
+      "control_guides": [],
+      "runtime": {
+        "python": "3.11 or later; standard library only according to packaged imports",
+        "outer_process_timeout_seconds": 10
+      }
+    },
+    {
+      "id": "EA039",
+      "title": "C3 authoritative logical aggregate",
+      "package_path": "External_Audits/PACKAGES/EA-20260722-039-KMPC148-C3-AUTHORITATIVE-AGGREGATE",
+      "guide_path": "External_Audits/PACKAGES/EA-20260722-039-KMPC148-C3-AUTHORITATIVE-AGGREGATE/03_REPRODUCTION_AND_EXPECTATIONS.md",
+      "prepare_source": "External_Audits/PACKAGES/EA-20260722-039-KMPC148-C3-AUTHORITATIVE-AGGREGATE/REPRO",
+      "commands": [
+        "python scripts/392_script_KMPC_148_P5_3g7_C3_authoritative_logical_aggregate.py --help",
+        "python scripts/392_script_KMPC_148_P5_3g7_C3_authoritative_logical_aggregate.py --smoke",
+        "python scripts/392_script_KMPC_148_P5_3g7_C3_authoritative_logical_aggregate.py --aggregate"
+      ],
+      "limitations": "Coverage of 45 logical obligations is not a proof of physical existence. Use exact guide comparison and a new output. No new scientific reproduction during infrastructure setup.",
+      "files": [
+        {
+          "path": "External_Audits/PACKAGES/EA-20260722-039-KMPC148-C3-AUTHORITATIVE-AGGREGATE/00_SCOPE_AND_READ_ORDER.md",
+          "sha256": "8bed85713146fb5ed2d6cfbe7f41ee52f225c0d552dca11f989a8e5622f0e057",
+          "bytes": 3200
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260722-039-KMPC148-C3-AUTHORITATIVE-AGGREGATE/01_MANIFEST_SHA256.md",
+          "sha256": "6aa793fd2e739905be9e0577d31dbc0cd95997ace47fcea1f6006277b79a7cab",
+          "bytes": 805
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260722-039-KMPC148-C3-AUTHORITATIVE-AGGREGATE/01_MANIFEST_SHA256.tsv",
+          "sha256": "724489858a4d1deb1c285f782ca0c054bb74d97d8ba0d76d518b402b1f37f99d",
+          "bytes": 9672
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260722-039-KMPC148-C3-AUTHORITATIVE-AGGREGATE/02_AUDITOR_INSTRUCTIONS.md",
+          "sha256": "4e8522672aa5240b7f350e4c18b9e93b08730573a11262193440329f732758dd",
+          "bytes": 2058
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260722-039-KMPC148-C3-AUTHORITATIVE-AGGREGATE/03_REPRODUCTION_AND_EXPECTATIONS.md",
+          "sha256": "686c547e8a0d198a0aaa003a986abedfd76bb17b3b4810daf92cd1ecc7ffae3b",
+          "bytes": 2858
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260722-039-KMPC148-C3-AUTHORITATIVE-AGGREGATE/04_RUNTIME_DEPENDENCY_MAP.tsv",
+          "sha256": "53633a7e7a47ca5f8e5b7321d3ecc05295fe4f08fd7d8039b975fb831e8e26e5",
+          "bytes": 4794
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260722-039-KMPC148-C3-AUTHORITATIVE-AGGREGATE/05_PACKAGE_HISTORY.md",
+          "sha256": "ba5c7bc89c51872e7eaaec176945d0e89113a0a8cd480a806ffe2d3b00089467",
+          "bytes": 1272
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260722-039-KMPC148-C3-AUTHORITATIVE-AGGREGATE/EVIDENCE/001__KMPC148_PREREGISTRATION.md",
+          "sha256": "26ecb5963e87951ae29b101219d661aab6e9393099ba13a8a2327059454a3283",
+          "bytes": 8635
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260722-039-KMPC148-C3-AUTHORITATIVE-AGGREGATE/EVIDENCE/002__KMPC148_INTERNAL_AUDIT.md",
+          "sha256": "39296fa5a02fa8f103a25af6d29d04960cfca57bcaf1620f6fb6005e7251353e",
+          "bytes": 3888
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260722-039-KMPC148-C3-AUTHORITATIVE-AGGREGATE/EVIDENCE/003__KMPC148_PASS_REFERENCE.json",
+          "sha256": "c493b102859ce6181f42babdfe69a12c9d3b5900040f796d2decae0403678238",
+          "bytes": 49173
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260722-039-KMPC148-C3-AUTHORITATIVE-AGGREGATE/REPRO/scripts/392_script_KMPC_148_P5_3g7_C3_authoritative_logical_aggregate.py",
+          "sha256": "191e0627220e75df18a4fa416a2c61ecf38bd6da006182bda71bdfd486ed7e21",
+          "bytes": 5740
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260722-039-KMPC148-C3-AUTHORITATIVE-AGGREGATE/REPRO/scripts/baseScripts/p5_general_synchronous/c3_authoritative_logical_aggregate.py",
+          "sha256": "ee688eaefc370163f6ae555e169ac61a78d03efeecc635101da06d4ecac17505",
+          "bytes": 23721
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260722-039-KMPC148-C3-AUTHORITATIVE-AGGREGATE/REPRO/scripts/results/k_mpc_005/RUN_KMPC_131_P5_3G7_C3_AD_K0p005_ZERO_VARIANT_PAIR.json",
+          "sha256": "d3fb5710390b3395212067b8bc968e48aeba04af9a0d38a4313195a39c6b3daa",
+          "bytes": 133842
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260722-039-KMPC148-C3-AUTHORITATIVE-AGGREGATE/REPRO/scripts/results/k_mpc_005/RUN_KMPC_131_P5_3G7_C3_AD_K0p15_ZERO_VARIANT_PAIR.json",
+          "sha256": "ffeb802badf663f812023914c1b8c34aa150070a763bbf123e41a55e7bfe4c47",
+          "bytes": 121616
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260722-039-KMPC148-C3-AUTHORITATIVE-AGGREGATE/REPRO/scripts/results/k_mpc_005/RUN_KMPC_131_P5_3G7_C3_BI_K0p005_ZERO_VARIANT_PAIR.json",
+          "sha256": "28337f4d16137de29b197a556a88e96b0f326510ccfcb961ad5598d804886356",
+          "bytes": 140009
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260722-039-KMPC148-C3-AUTHORITATIVE-AGGREGATE/REPRO/scripts/results/k_mpc_005/RUN_KMPC_131_P5_3G7_C3_BI_K0p05_ZERO_VARIANT_PAIR.json",
+          "sha256": "81e27a42b8b0fb3fb405330279d131c725808ca17d38b97216b3bee25e828937",
+          "bytes": 128264
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260722-039-KMPC148-C3-AUTHORITATIVE-AGGREGATE/REPRO/scripts/results/k_mpc_005/RUN_KMPC_131_P5_3G7_C3_CDI_K0p005_ZERO_VARIANT_PAIR.json",
+          "sha256": "9e1bcc3d291858de55e15a31246d33026cdd4b9774753304b8fc0bba62bb3ba4",
+          "bytes": 139761
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260722-039-KMPC148-C3-AUTHORITATIVE-AGGREGATE/REPRO/scripts/results/k_mpc_005/RUN_KMPC_131_P5_3G7_C3_CDI_K0p05_ZERO_VARIANT_PAIR.json",
+          "sha256": "dc38cd6c5e9ef15b0fb86878bf4125a431bbb04c537887874d1a38786f6f5a3f",
+          "bytes": 128221
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260722-039-KMPC148-C3-AUTHORITATIVE-AGGREGATE/REPRO/scripts/results/k_mpc_005/RUN_KMPC_131_P5_3G7_C3_NID_K0p005_ZERO_VARIANT_PAIR.json",
+          "sha256": "2cbad040faa3d031cf699a7dfbc31f08e0c14c4e81b63bcbfbc1f3f67c0fd524",
+          "bytes": 142095
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260722-039-KMPC148-C3-AUTHORITATIVE-AGGREGATE/REPRO/scripts/results/k_mpc_005/RUN_KMPC_131_P5_3G7_C3_NIV_K0p005_ZERO_VARIANT_PAIR.json",
+          "sha256": "9088e7d8470e3f4cd118025eca266646883a76ed87bed69b3fa1dccebb0fd156",
+          "bytes": 142661
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260722-039-KMPC148-C3-AUTHORITATIVE-AGGREGATE/REPRO/scripts/results/k_mpc_005/RUN_KMPC_131_P5_3G7_C3_NIV_K0p05_ZERO_VARIANT_PAIR.json",
+          "sha256": "9e8e7d0f22d471e3c806ddbf5b2b4e587b209a537d55f1a8efe259ac4f9defdd",
+          "bytes": 130626
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260722-039-KMPC148-C3-AUTHORITATIVE-AGGREGATE/REPRO/scripts/results/k_mpc_005/RUN_KMPC_132_P5_3G7_C3_AD_K0p05_ZERO_VARIANT_PAIR_SUPPORT_04_06.json",
+          "sha256": "dcf6d7d957365fcda127b1f0f5e27068625a3fb83dfdd1e367e1a052158d8d82",
+          "bytes": 176772
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260722-039-KMPC148-C3-AUTHORITATIVE-AGGREGATE/REPRO/scripts/results/k_mpc_005/RUN_KMPC_133_P5_3G7_C3_CDI_K0p15_ZERO_VARIANT_PAIR_SAME_MATRIX_REFINEMENT.json",
+          "sha256": "42be1cac74bc0bb879f7065b8b0ff36c0d1b8e382bc74537248ddaf02711717e",
+          "bytes": 138779
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260722-039-KMPC148-C3-AUTHORITATIVE-AGGREGATE/REPRO/scripts/results/k_mpc_005/RUN_KMPC_141_P5_3G7_C3_BI_K0p15_ZERO_VARIANT_PAIR_LOCAL_45S_HP_M1_EXACT_RESUME_SUPERSESSION_SCOPE_CORRECTED.json",
+          "sha256": "6f44b553bd01bb0516389643511c2858d0ebea61380c4a8abfe4e572909231a2",
+          "bytes": 179470
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260722-039-KMPC148-C3-AUTHORITATIVE-AGGREGATE/REPRO/scripts/results/k_mpc_005/RUN_KMPC_143_P5_3G7_C3_NID_K0p05_ZERO_VARIANT_PAIR_SAME_MATRIX_REFINEMENT.json",
+          "sha256": "2f461df24c4e7490a40411fcbdc2b98eef4adc19acafcafdca9007501b7d447f",
+          "bytes": 141016
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260722-039-KMPC148-C3-AUTHORITATIVE-AGGREGATE/REPRO/scripts/results/k_mpc_005/RUN_KMPC_145_P5_3G7_C3_NID_K0p15_PARITY_SCOPE_CORRECTION.json",
+          "sha256": "226bf91f7df12953d0df53c2cec676190067fa8d782211c68507fa8ead874d6a",
+          "bytes": 137664
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260722-039-KMPC148-C3-AUTHORITATIVE-AGGREGATE/REPRO/scripts/results/k_mpc_005/RUN_KMPC_147_P5_3G7_C3_NIV_K0p15_READ_ONLY_F0_PARITY_CORRECTION.json",
+          "sha256": "2780a8d6527c892e1ef665b59d514dd94a95495d536c56dfe3332a113956b16e",
+          "bytes": 168113
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260722-039-KMPC148-C3-AUTHORITATIVE-AGGREGATE/REPRO/tracks/A1/A1K1/A2/A2K4/SUBTRACKS/P5/P5_3_SEEDS/206_KMPC_132_AND_C3_AD_MODE_CLOSURE_INTERNAL_AUDIT_SK.md",
+          "sha256": "e430a1114a5e4c06af2319faff4428c11fc6f37fdab34719fc22c8d2fc4d5f9e",
+          "bytes": 4946
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260722-039-KMPC148-C3-AUTHORITATIVE-AGGREGATE/REPRO/tracks/A1/A1K1/A2/A2K4/SUBTRACKS/P5/P5_3_SEEDS/208_KMPC_131_133_C3_CDI_MODE_CLOSURE_INTERNAL_AUDIT_SK.md",
+          "sha256": "aaf33790fde59ba22f48021096dea1fa9606f1115f2f61ba4933d0e35bce222a",
+          "bytes": 4373
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260722-039-KMPC148-C3-AUTHORITATIVE-AGGREGATE/REPRO/tracks/A1/A1K1/A2/A2K4/SUBTRACKS/P5/P5_3_SEEDS/218_KMPC_138_141_C3_BI_MODE_CLOSURE_INTERNAL_AUDIT_SK.md",
+          "sha256": "a6ea261e29733033090318cee321c2c235f61584ab742ced13a3c12ff4d913f7",
+          "bytes": 6613
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260722-039-KMPC148-C3-AUTHORITATIVE-AGGREGATE/REPRO/tracks/A1/A1K1/A2/A2K4/SUBTRACKS/P5/P5_3_SEEDS/231_KMPC_131_145_C3_NID_MODE_CLOSURE_INTERNAL_AUDIT_SK.md",
+          "sha256": "aeaf523fffbaec208c20063325b58e2f9be6fee1faa69128262074ff37581445",
+          "bytes": 3989
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260722-039-KMPC148-C3-AUTHORITATIVE-AGGREGATE/REPRO/tracks/A1/A1K1/A2/A2K4/SUBTRACKS/P5/P5_3_SEEDS/241_KMPC_131_146_147_C3_NIV_MODE_CLOSURE_INTERNAL_AUDIT_SK.md",
+          "sha256": "e979e0554153e9143f0eab20252811c229238f538d45eb6a921e0cd4f322417d",
+          "bytes": 3280
+        }
+      ],
+      "related_packages": [],
+      "control_guides": [],
+      "runtime": {
+        "python": "3.11 or later; standard library only according to packaged imports",
+        "outer_process_timeout_seconds": 10
+      }
+    },
+    {
+      "id": "EA047",
+      "title": "Three-point legacy sensitivity with R1/R2 control corrections",
+      "package_path": "External_Audits/PACKAGES/EA-20260801-047-V318-PT1-H0-S8-C2C3-THREE-POINT-LEGACY-SENSITIVITY",
+      "guide_path": "External_Audits/PACKAGES/EA-20260801-047-V318-PT1-H0-S8-C2C3-THREE-POINT-LEGACY-SENSITIVITY/03_REPRODUCTION_AND_EXPECTATIONS.md",
+      "prepare_source": "External_Audits/PACKAGES/EA-20260801-047-V318-PT1-H0-S8-C2C3-THREE-POINT-LEGACY-SENSITIVITY/REPRO",
+      "commands": [
+        "python scripts/393_script_V318_PT1_H0_S8_three_point_legacy_sensitivity_dev.py --help",
+        "python scripts/393_script_V318_PT1_H0_S8_three_point_legacy_sensitivity_dev.py --self-test --max-runtime-seconds 45"
+      ],
+      "limitations": "Conditional legacy diagnostics, not likelihood or confirmation. Printed commands cover only initial help/self-test; follow primary guide for all official stages and R2 for parity, using fresh-chain hashes. R1/R2 are control revisions, not independent scientific confirmations.",
+      "files": [
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-V318-PT1-H0-S8-C2C3-THREE-POINT-LEGACY-SENSITIVITY/00_SCOPE_AND_READ_ORDER.md",
+          "sha256": "9d70f4720820c8d5cf0ca24d7fda388370e5d4bd03e07b1af2aab326265221b9",
+          "bytes": 4745
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-V318-PT1-H0-S8-C2C3-THREE-POINT-LEGACY-SENSITIVITY/01_MANIFEST_SHA256.md",
+          "sha256": "685f49df8ea545c8f68e492abb4fcba3d1e04a7746ab3e08bdf20d982a279645",
+          "bytes": 3379
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-V318-PT1-H0-S8-C2C3-THREE-POINT-LEGACY-SENSITIVITY/01_MANIFEST_SHA256.tsv",
+          "sha256": "646d81ce21b6cf5ccc3e3125b3dfc10dff3e54ece947272c3892997dd459f6b7",
+          "bytes": 10625
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-V318-PT1-H0-S8-C2C3-THREE-POINT-LEGACY-SENSITIVITY/02_AUDITOR_INSTRUCTIONS.md",
+          "sha256": "df62427c972a85c784c935cdf96a90de2330bd3b3fa1ce0839d127f8cd4483a0",
+          "bytes": 1533
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-V318-PT1-H0-S8-C2C3-THREE-POINT-LEGACY-SENSITIVITY/03_REPRODUCTION_AND_EXPECTATIONS.md",
+          "sha256": "84e23755bdaf348e138d7375f1d45be9db642d74c221e1cd9aaa98512a734024",
+          "bytes": 5103
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-V318-PT1-H0-S8-C2C3-THREE-POINT-LEGACY-SENSITIVITY/04_RUNTIME_DEPENDENCY_MAP.tsv",
+          "sha256": "02a3a4561bf9d3eb5b72234aab582f8990eeffd9a0c2a9ee6beff7a6fd78b3fe",
+          "bytes": 477
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-V318-PT1-H0-S8-C2C3-THREE-POINT-LEGACY-SENSITIVITY/05_PACKAGE_HISTORY.md",
+          "sha256": "1a77130b5edfdde5219a92834c90c39d7edcfea3e2bd113f2e4ea8600e6f7129",
+          "bytes": 6186
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-V318-PT1-H0-S8-C2C3-THREE-POINT-LEGACY-SENSITIVITY/06_CHECKPOINT_PROVENANCE.tsv",
+          "sha256": "5226e9504dd1b98b0317f92f51324bdc27288b8d029b6c88f8564aa8f02a57be",
+          "bytes": 331
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-V318-PT1-H0-S8-C2C3-THREE-POINT-LEGACY-SENSITIVITY/EVIDENCE/001__AGENTS.md",
+          "sha256": "472f31c5cae790efa16a815be3183b7a2c1438e4961b2be4a16aeae0ff57ba72",
+          "bytes": 12758
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-V318-PT1-H0-S8-C2C3-THREE-POINT-LEGACY-SENSITIVITY/EVIDENCE/002__PROJECT_OPERATING_SYSTEM.md",
+          "sha256": "45cddf6cbd458cc8c18147c438557143e1eb962bb159058070a8caa7e866921e",
+          "bytes": 16076
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-V318-PT1-H0-S8-C2C3-THREE-POINT-LEGACY-SENSITIVITY/EVIDENCE/003__AUDITOR_PACKAGE_PROTOCOL_R8.md",
+          "sha256": "f0f8db2f7a63666709ccc77e92b80c95f895752e3a16ddf62aa77b0d1d96279c",
+          "bytes": 23742
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-V318-PT1-H0-S8-C2C3-THREE-POINT-LEGACY-SENSITIVITY/EVIDENCE/004__EXTERNAL_AUDITOR_ROLE.toml",
+          "sha256": "98e55f94679f49d4dce08e3281ae2a38f899b896e25726f9a3c2a85a9fc997e3",
+          "bytes": 3328
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-V318-PT1-H0-S8-C2C3-THREE-POINT-LEGACY-SENSITIVITY/EVIDENCE/005__V1_CONTRACT.md",
+          "sha256": "865033e55783efc48e8c67a8df71ace4798ed0e2df01172f118894b706d07780",
+          "bytes": 9590
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-V318-PT1-H0-S8-C2C3-THREE-POINT-LEGACY-SENSITIVITY/EVIDENCE/006__V2_SHARDED_ADDENDUM.md",
+          "sha256": "c2aab58c565530dea8cfc6fb7719b9b662706341a399fbab0cc5736fd1d9c768",
+          "bytes": 5521
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-V318-PT1-H0-S8-C2C3-THREE-POINT-LEGACY-SENSITIVITY/EVIDENCE/007__V3_GRID_CELL_ADDENDUM.md",
+          "sha256": "dc6e8cc12172bd9af4805870722aa9516a5a48f3824a05fd7a0d5956513e54f7",
+          "bytes": 6086
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-V318-PT1-H0-S8-C2C3-THREE-POINT-LEGACY-SENSITIVITY/EVIDENCE/008__V4_STAGED_ADDENDUM.md",
+          "sha256": "5e2a35d1e1a6eb64d200d4f18488a31849cb16079249dfb8407559a6d3925d42",
+          "bytes": 6561
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-V318-PT1-H0-S8-C2C3-THREE-POINT-LEGACY-SENSITIVITY/EVIDENCE/009__V5_SEGMENTED_ADDENDUM.md",
+          "sha256": "6706912598c536099a1e230d20650d8a792943af87fb36c283df4f1449ccb3a1",
+          "bytes": 7373
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-V318-PT1-H0-S8-C2C3-THREE-POINT-LEGACY-SENSITIVITY/EVIDENCE/010__N8000_REFERENCE_STAGE.json",
+          "sha256": "0bfc88d8ffc5196b137570b149cbbc7ed3b93dc3ef81d14d9e7f4f130e050234",
+          "bytes": 2499
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-V318-PT1-H0-S8-C2C3-THREE-POINT-LEGACY-SENSITIVITY/EVIDENCE/011__CELL_NULL_N2000.json",
+          "sha256": "4af3e71312669d0b5c6a11727744ae2d1a5cfa825412ce9f40228fb3951bc7de",
+          "bytes": 3072
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-V318-PT1-H0-S8-C2C3-THREE-POINT-LEGACY-SENSITIVITY/EVIDENCE/012__CELL_NULL_N4000.json",
+          "sha256": "b923be76d1ad9dab3e0fbe27a89c09e70f4b6d111653f7a577374c011118c3c2",
+          "bytes": 3072
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-V318-PT1-H0-S8-C2C3-THREE-POINT-LEGACY-SENSITIVITY/EVIDENCE/013__CELL_NULL_N8000.json",
+          "sha256": "0d0d9352fc0144835dfdbc03181d4d3f9945bbbd0fc07b7ce03184f281833850",
+          "bytes": 3138
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-V318-PT1-H0-S8-C2C3-THREE-POINT-LEGACY-SENSITIVITY/EVIDENCE/014__CELL_HALF_N2000.json",
+          "sha256": "31823491ab09a451b1a3b5936db30beff668bc0f2e67db412d7fd8f6cc4eae4c",
+          "bytes": 3094
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-V318-PT1-H0-S8-C2C3-THREE-POINT-LEGACY-SENSITIVITY/EVIDENCE/015__CELL_HALF_N4000.json",
+          "sha256": "20d9da52d84cd17b366e8cab95190e60a0e0d762b6c5bac69e49cecd8ebf5c15",
+          "bytes": 3108
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-V318-PT1-H0-S8-C2C3-THREE-POINT-LEGACY-SENSITIVITY/EVIDENCE/016__CELL_HALF_N8000.json",
+          "sha256": "67b1218ba8b061de75665ead0129e89c68c277f01316065d6e38e444307ad66a",
+          "bytes": 3173
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-V318-PT1-H0-S8-C2C3-THREE-POINT-LEGACY-SENSITIVITY/EVIDENCE/017__CELL_FULL_N2000.json",
+          "sha256": "5a86db61d291d18f716f9fb705505445fd2ab1b59590dfc686a5ed271867f05c",
+          "bytes": 3097
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-V318-PT1-H0-S8-C2C3-THREE-POINT-LEGACY-SENSITIVITY/EVIDENCE/018__CELL_FULL_N4000.json",
+          "sha256": "2fc1ae5d9f96969728946613cdce971d2f9a9b7a5a8a62a73a6043b7438568ab",
+          "bytes": 3098
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-V318-PT1-H0-S8-C2C3-THREE-POINT-LEGACY-SENSITIVITY/EVIDENCE/019__CELL_FULL_N8000.json",
+          "sha256": "de86bbd810b282565e5bcfcaa436067e4168ce87600e8afa350361d0045df06d",
+          "bytes": 3237
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-V318-PT1-H0-S8-C2C3-THREE-POINT-LEGACY-SENSITIVITY/EVIDENCE/020__NULL_N8000_BISECT_A.json",
+          "sha256": "9aa2d2124986ce693a067d53ba3b0a9ef8ec4d22fc64885a00abc4a009621ac9",
+          "bytes": 2406
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-V318-PT1-H0-S8-C2C3-THREE-POINT-LEGACY-SENSITIVITY/EVIDENCE/021__NULL_N8000_BISECT_B.json",
+          "sha256": "bdbc7532f6a73f6bc1aebaaa43019f10fbbd9a3270f4ca4f831add8f2ea8a389",
+          "bytes": 2487
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-V318-PT1-H0-S8-C2C3-THREE-POINT-LEGACY-SENSITIVITY/EVIDENCE/022__NULL_N8000_MODEL_STAGE_C.json",
+          "sha256": "4165f10dbfe8ec374a0212d99dabdb01940ee5fe617308ed7d1af5605bf17c18",
+          "bytes": 3334
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-V318-PT1-H0-S8-C2C3-THREE-POINT-LEGACY-SENSITIVITY/EVIDENCE/023__HALF_N8000_BISECT_A.json",
+          "sha256": "ca03a34397bba0a138ba0f4be00146b2c7d792d9513c6ff46f7bf3c51749f7e9",
+          "bytes": 2397
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-V318-PT1-H0-S8-C2C3-THREE-POINT-LEGACY-SENSITIVITY/EVIDENCE/024__HALF_N8000_BISECT_B.json",
+          "sha256": "90e913ad4bc1b88883b5b85ef34ccf4e2256501a8a7a193503ae7ad61eca24ca",
+          "bytes": 2495
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-V318-PT1-H0-S8-C2C3-THREE-POINT-LEGACY-SENSITIVITY/EVIDENCE/025__HALF_N8000_MODEL_STAGE_C.json",
+          "sha256": "9aacb259dbaf265b2b3f44065d3d5c41b7756255b4a86e631512c5cc2badb1e0",
+          "bytes": 3372
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-V318-PT1-H0-S8-C2C3-THREE-POINT-LEGACY-SENSITIVITY/EVIDENCE/026__FULL_N8000_BISECT_A.json",
+          "sha256": "847f91cca53e13820018785e6196308e95f513f706608a0ebcf3cc7f21483e19",
+          "bytes": 2409
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-V318-PT1-H0-S8-C2C3-THREE-POINT-LEGACY-SENSITIVITY/EVIDENCE/027__FULL_N8000_BISECT_B.json",
+          "sha256": "90958741ed222cbc61ff32981d61cb9a17d9b4fca30d27ada4b13c8836ff4c45",
+          "bytes": 2491
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-V318-PT1-H0-S8-C2C3-THREE-POINT-LEGACY-SENSITIVITY/EVIDENCE/028__FULL_N8000_MODEL_STAGE_C.json",
+          "sha256": "db0c63aeb62d1d750a2ced10db7da5a7a885a43915ea11c3c9abd08a681371ef",
+          "bytes": 3361
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-V318-PT1-H0-S8-C2C3-THREE-POINT-LEGACY-SENSITIVITY/EVIDENCE/029__RESULT_AND_INTERNAL_AUDIT.md",
+          "sha256": "e2df985fa198f4dbc3ad05c5ea2a0e8607161e3bde26a4c3754c3cc383e229de",
+          "bytes": 5361
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-V318-PT1-H0-S8-C2C3-THREE-POINT-LEGACY-SENSITIVITY/REPRO/scripts/393_script_V318_PT1_H0_S8_three_point_legacy_sensitivity_dev.py",
+          "sha256": "89c12064ba72adb70c443dd14b0a64b5139314d8ab996a9fb2c63e7f6f4b6ff3",
+          "bytes": 9202
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-V318-PT1-H0-S8-C2C3-THREE-POINT-LEGACY-SENSITIVITY/REPRO/scripts/baseScripts/release_v318_h0_s8_legacy_sensitivity_dev.py",
+          "sha256": "74ae3b0bc31fa1ae4bb9fdb3339c84869da38131440795bd0c7b2b82677f30d9",
+          "bytes": 89947
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-R1-V318-PT1-H0-S8-C2C3-PARITY-CONTROL-REPAIR/00_SCOPE_AND_READ_ORDER.md",
+          "sha256": "724c013c9728e208c7ea4e3245dfeafd29e75025e9f3800abdcad0eaa258c764",
+          "bytes": 4243
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-R1-V318-PT1-H0-S8-C2C3-PARITY-CONTROL-REPAIR/01_MANIFEST_SHA256.md",
+          "sha256": "634b009b3b3cbc3a899a4952c676c5cd0103e02ee5f9e3b24d831f8fed974a38",
+          "bytes": 3690
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-R1-V318-PT1-H0-S8-C2C3-PARITY-CONTROL-REPAIR/01_MANIFEST_SHA256.tsv",
+          "sha256": "6b29e098810e68f511910593e7ea9c08a65abc68b750e0eab5a2cc2b650706c5",
+          "bytes": 11098
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-R1-V318-PT1-H0-S8-C2C3-PARITY-CONTROL-REPAIR/02_AUDITOR_INSTRUCTIONS.md",
+          "sha256": "5f8a475fdf88b14886ebb43142f8e2f9233719800012bfb08bfdd9763090a744",
+          "bytes": 1846
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-R1-V318-PT1-H0-S8-C2C3-PARITY-CONTROL-REPAIR/03_REPRODUCTION_AND_EXPECTATIONS.md",
+          "sha256": "8c22f96334c6640a5433ec829a8eea5707882454d18628d555f953ba286a1fd1",
+          "bytes": 2491
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-R1-V318-PT1-H0-S8-C2C3-PARITY-CONTROL-REPAIR/04_RUNTIME_DEPENDENCY_MAP.tsv",
+          "sha256": "02a3a4561bf9d3eb5b72234aab582f8990eeffd9a0c2a9ee6beff7a6fd78b3fe",
+          "bytes": 477
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-R1-V318-PT1-H0-S8-C2C3-PARITY-CONTROL-REPAIR/05_PACKAGE_HISTORY.md",
+          "sha256": "f141f2d20f78cfdad4cd883684d24604ef4f44b17c4531beaba2468775166cc1",
+          "bytes": 5879
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-R1-V318-PT1-H0-S8-C2C3-PARITY-CONTROL-REPAIR/06_CHECKPOINT_PROVENANCE.tsv",
+          "sha256": "5226e9504dd1b98b0317f92f51324bdc27288b8d029b6c88f8564aa8f02a57be",
+          "bytes": 331
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-R1-V318-PT1-H0-S8-C2C3-PARITY-CONTROL-REPAIR/EVIDENCE/001__AGENTS.md",
+          "sha256": "472f31c5cae790efa16a815be3183b7a2c1438e4961b2be4a16aeae0ff57ba72",
+          "bytes": 12758
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-R1-V318-PT1-H0-S8-C2C3-PARITY-CONTROL-REPAIR/EVIDENCE/002__PROJECT_OPERATING_SYSTEM.md",
+          "sha256": "45cddf6cbd458cc8c18147c438557143e1eb962bb159058070a8caa7e866921e",
+          "bytes": 16076
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-R1-V318-PT1-H0-S8-C2C3-PARITY-CONTROL-REPAIR/EVIDENCE/003__AUDITOR_PACKAGE_PROTOCOL_R8.md",
+          "sha256": "f0f8db2f7a63666709ccc77e92b80c95f895752e3a16ddf62aa77b0d1d96279c",
+          "bytes": 23742
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-R1-V318-PT1-H0-S8-C2C3-PARITY-CONTROL-REPAIR/EVIDENCE/004__EXTERNAL_AUDITOR_ROLE.toml",
+          "sha256": "98e55f94679f49d4dce08e3281ae2a38f899b896e25726f9a3c2a85a9fc997e3",
+          "bytes": 3328
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-R1-V318-PT1-H0-S8-C2C3-PARITY-CONTROL-REPAIR/EVIDENCE/005__V1_CONTRACT.md",
+          "sha256": "865033e55783efc48e8c67a8df71ace4798ed0e2df01172f118894b706d07780",
+          "bytes": 9590
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-R1-V318-PT1-H0-S8-C2C3-PARITY-CONTROL-REPAIR/EVIDENCE/006__V2_SHARDED_ADDENDUM.md",
+          "sha256": "c2aab58c565530dea8cfc6fb7719b9b662706341a399fbab0cc5736fd1d9c768",
+          "bytes": 5521
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-R1-V318-PT1-H0-S8-C2C3-PARITY-CONTROL-REPAIR/EVIDENCE/007__V3_GRID_CELL_ADDENDUM.md",
+          "sha256": "dc6e8cc12172bd9af4805870722aa9516a5a48f3824a05fd7a0d5956513e54f7",
+          "bytes": 6086
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-R1-V318-PT1-H0-S8-C2C3-PARITY-CONTROL-REPAIR/EVIDENCE/008__V4_STAGED_ADDENDUM.md",
+          "sha256": "5e2a35d1e1a6eb64d200d4f18488a31849cb16079249dfb8407559a6d3925d42",
+          "bytes": 6561
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-R1-V318-PT1-H0-S8-C2C3-PARITY-CONTROL-REPAIR/EVIDENCE/009__V5_SEGMENTED_ADDENDUM.md",
+          "sha256": "6706912598c536099a1e230d20650d8a792943af87fb36c283df4f1449ccb3a1",
+          "bytes": 7373
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-R1-V318-PT1-H0-S8-C2C3-PARITY-CONTROL-REPAIR/EVIDENCE/010__N8000_REFERENCE_STAGE.json",
+          "sha256": "0bfc88d8ffc5196b137570b149cbbc7ed3b93dc3ef81d14d9e7f4f130e050234",
+          "bytes": 2499
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-R1-V318-PT1-H0-S8-C2C3-PARITY-CONTROL-REPAIR/EVIDENCE/011__CELL_NULL_N2000.json",
+          "sha256": "4af3e71312669d0b5c6a11727744ae2d1a5cfa825412ce9f40228fb3951bc7de",
+          "bytes": 3072
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-R1-V318-PT1-H0-S8-C2C3-PARITY-CONTROL-REPAIR/EVIDENCE/012__CELL_NULL_N4000.json",
+          "sha256": "b923be76d1ad9dab3e0fbe27a89c09e70f4b6d111653f7a577374c011118c3c2",
+          "bytes": 3072
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-R1-V318-PT1-H0-S8-C2C3-PARITY-CONTROL-REPAIR/EVIDENCE/013__CELL_NULL_N8000.json",
+          "sha256": "0d0d9352fc0144835dfdbc03181d4d3f9945bbbd0fc07b7ce03184f281833850",
+          "bytes": 3138
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-R1-V318-PT1-H0-S8-C2C3-PARITY-CONTROL-REPAIR/EVIDENCE/014__CELL_HALF_N2000.json",
+          "sha256": "31823491ab09a451b1a3b5936db30beff668bc0f2e67db412d7fd8f6cc4eae4c",
+          "bytes": 3094
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-R1-V318-PT1-H0-S8-C2C3-PARITY-CONTROL-REPAIR/EVIDENCE/015__CELL_HALF_N4000.json",
+          "sha256": "20d9da52d84cd17b366e8cab95190e60a0e0d762b6c5bac69e49cecd8ebf5c15",
+          "bytes": 3108
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-R1-V318-PT1-H0-S8-C2C3-PARITY-CONTROL-REPAIR/EVIDENCE/016__CELL_HALF_N8000.json",
+          "sha256": "67b1218ba8b061de75665ead0129e89c68c277f01316065d6e38e444307ad66a",
+          "bytes": 3173
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-R1-V318-PT1-H0-S8-C2C3-PARITY-CONTROL-REPAIR/EVIDENCE/017__CELL_FULL_N2000.json",
+          "sha256": "5a86db61d291d18f716f9fb705505445fd2ab1b59590dfc686a5ed271867f05c",
+          "bytes": 3097
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-R1-V318-PT1-H0-S8-C2C3-PARITY-CONTROL-REPAIR/EVIDENCE/018__CELL_FULL_N4000.json",
+          "sha256": "2fc1ae5d9f96969728946613cdce971d2f9a9b7a5a8a62a73a6043b7438568ab",
+          "bytes": 3098
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-R1-V318-PT1-H0-S8-C2C3-PARITY-CONTROL-REPAIR/EVIDENCE/019__CELL_FULL_N8000.json",
+          "sha256": "de86bbd810b282565e5bcfcaa436067e4168ce87600e8afa350361d0045df06d",
+          "bytes": 3237
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-R1-V318-PT1-H0-S8-C2C3-PARITY-CONTROL-REPAIR/EVIDENCE/020__NULL_N8000_BISECT_A.json",
+          "sha256": "9aa2d2124986ce693a067d53ba3b0a9ef8ec4d22fc64885a00abc4a009621ac9",
+          "bytes": 2406
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-R1-V318-PT1-H0-S8-C2C3-PARITY-CONTROL-REPAIR/EVIDENCE/021__NULL_N8000_BISECT_B.json",
+          "sha256": "bdbc7532f6a73f6bc1aebaaa43019f10fbbd9a3270f4ca4f831add8f2ea8a389",
+          "bytes": 2487
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-R1-V318-PT1-H0-S8-C2C3-PARITY-CONTROL-REPAIR/EVIDENCE/022__NULL_N8000_MODEL_STAGE_C.json",
+          "sha256": "4165f10dbfe8ec374a0212d99dabdb01940ee5fe617308ed7d1af5605bf17c18",
+          "bytes": 3334
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-R1-V318-PT1-H0-S8-C2C3-PARITY-CONTROL-REPAIR/EVIDENCE/023__HALF_N8000_BISECT_A.json",
+          "sha256": "ca03a34397bba0a138ba0f4be00146b2c7d792d9513c6ff46f7bf3c51749f7e9",
+          "bytes": 2397
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-R1-V318-PT1-H0-S8-C2C3-PARITY-CONTROL-REPAIR/EVIDENCE/024__HALF_N8000_BISECT_B.json",
+          "sha256": "90e913ad4bc1b88883b5b85ef34ccf4e2256501a8a7a193503ae7ad61eca24ca",
+          "bytes": 2495
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-R1-V318-PT1-H0-S8-C2C3-PARITY-CONTROL-REPAIR/EVIDENCE/025__HALF_N8000_MODEL_STAGE_C.json",
+          "sha256": "9aacb259dbaf265b2b3f44065d3d5c41b7756255b4a86e631512c5cc2badb1e0",
+          "bytes": 3372
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-R1-V318-PT1-H0-S8-C2C3-PARITY-CONTROL-REPAIR/EVIDENCE/026__FULL_N8000_BISECT_A.json",
+          "sha256": "847f91cca53e13820018785e6196308e95f513f706608a0ebcf3cc7f21483e19",
+          "bytes": 2409
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-R1-V318-PT1-H0-S8-C2C3-PARITY-CONTROL-REPAIR/EVIDENCE/027__FULL_N8000_BISECT_B.json",
+          "sha256": "90958741ed222cbc61ff32981d61cb9a17d9b4fca30d27ada4b13c8836ff4c45",
+          "bytes": 2491
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-R1-V318-PT1-H0-S8-C2C3-PARITY-CONTROL-REPAIR/EVIDENCE/028__FULL_N8000_MODEL_STAGE_C.json",
+          "sha256": "db0c63aeb62d1d750a2ced10db7da5a7a885a43915ea11c3c9abd08a681371ef",
+          "bytes": 3361
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-R1-V318-PT1-H0-S8-C2C3-PARITY-CONTROL-REPAIR/EVIDENCE/029__RESULT_AND_INTERNAL_AUDIT.md",
+          "sha256": "e2df985fa198f4dbc3ad05c5ea2a0e8607161e3bde26a4c3754c3cc383e229de",
+          "bytes": 5361
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-R1-V318-PT1-H0-S8-C2C3-PARITY-CONTROL-REPAIR/EVIDENCE/030__EA047_EXTERNAL_RESPONSE.md",
+          "sha256": "2e6316559d687f545286dd4442489bd177d94d61006b61c0eef10b5e8cc92e6d",
+          "bytes": 10142
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-R1-V318-PT1-H0-S8-C2C3-PARITY-CONTROL-REPAIR/REPRO/scripts/393_script_V318_PT1_H0_S8_three_point_legacy_sensitivity_dev.py",
+          "sha256": "89c12064ba72adb70c443dd14b0a64b5139314d8ab996a9fb2c63e7f6f4b6ff3",
+          "bytes": 9202
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-R1-V318-PT1-H0-S8-C2C3-PARITY-CONTROL-REPAIR/REPRO/scripts/baseScripts/release_v318_h0_s8_legacy_sensitivity_dev.py",
+          "sha256": "74ae3b0bc31fa1ae4bb9fdb3339c84869da38131440795bd0c7b2b82677f30d9",
+          "bytes": 89947
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-R2-V318-PT1-H0-S8-C2C3-PARITY-CONTROL-CLOSURE/00_SCOPE_AND_READ_ORDER.md",
+          "sha256": "750eb17b9d71224ad4c2902ab6d9d1a2958cbc182561021c8fca87c6f03a98cc",
+          "bytes": 4803
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-R2-V318-PT1-H0-S8-C2C3-PARITY-CONTROL-CLOSURE/01_MANIFEST_SHA256.md",
+          "sha256": "014ead3f977deb850257b508bf07cee60892b4ea2e152306b99c34ec7e7d2b96",
+          "bytes": 3800
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-R2-V318-PT1-H0-S8-C2C3-PARITY-CONTROL-CLOSURE/01_MANIFEST_SHA256.tsv",
+          "sha256": "b6ee1eabeafa52210465de4e08c445b282421cdea10ab550f858c0862661a6bf",
+          "bytes": 11081
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-R2-V318-PT1-H0-S8-C2C3-PARITY-CONTROL-CLOSURE/02_AUDITOR_INSTRUCTIONS.md",
+          "sha256": "827bc18efaa6d01f990fca9905119a0adba6ab3cd7079cc84df817219c56deeb",
+          "bytes": 1997
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-R2-V318-PT1-H0-S8-C2C3-PARITY-CONTROL-CLOSURE/03_REPRODUCTION_AND_EXPECTATIONS.md",
+          "sha256": "3391d5a865de6502f522e68edf30867a6e49563248390e68cbf86eb33d0cbf35",
+          "bytes": 2645
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-R2-V318-PT1-H0-S8-C2C3-PARITY-CONTROL-CLOSURE/04_RUNTIME_DEPENDENCY_MAP.tsv",
+          "sha256": "02a3a4561bf9d3eb5b72234aab582f8990eeffd9a0c2a9ee6beff7a6fd78b3fe",
+          "bytes": 477
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-R2-V318-PT1-H0-S8-C2C3-PARITY-CONTROL-CLOSURE/05_PACKAGE_HISTORY.md",
+          "sha256": "81391ef0eb2a6b5fa98a387b1a1adbecaba858631a3eb1b0ac81febb50d40c9a",
+          "bytes": 2529
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-R2-V318-PT1-H0-S8-C2C3-PARITY-CONTROL-CLOSURE/06_CHECKPOINT_PROVENANCE.tsv",
+          "sha256": "5226e9504dd1b98b0317f92f51324bdc27288b8d029b6c88f8564aa8f02a57be",
+          "bytes": 331
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-R2-V318-PT1-H0-S8-C2C3-PARITY-CONTROL-CLOSURE/EVIDENCE/001__AGENTS.md",
+          "sha256": "472f31c5cae790efa16a815be3183b7a2c1438e4961b2be4a16aeae0ff57ba72",
+          "bytes": 12758
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-R2-V318-PT1-H0-S8-C2C3-PARITY-CONTROL-CLOSURE/EVIDENCE/002__PROJECT_OPERATING_SYSTEM.md",
+          "sha256": "45cddf6cbd458cc8c18147c438557143e1eb962bb159058070a8caa7e866921e",
+          "bytes": 16076
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-R2-V318-PT1-H0-S8-C2C3-PARITY-CONTROL-CLOSURE/EVIDENCE/003__AUDITOR_PACKAGE_PROTOCOL_R8.md",
+          "sha256": "f0f8db2f7a63666709ccc77e92b80c95f895752e3a16ddf62aa77b0d1d96279c",
+          "bytes": 23742
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-R2-V318-PT1-H0-S8-C2C3-PARITY-CONTROL-CLOSURE/EVIDENCE/004__EXTERNAL_AUDITOR_ROLE.toml",
+          "sha256": "98e55f94679f49d4dce08e3281ae2a38f899b896e25726f9a3c2a85a9fc997e3",
+          "bytes": 3328
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-R2-V318-PT1-H0-S8-C2C3-PARITY-CONTROL-CLOSURE/EVIDENCE/005__V1_CONTRACT.md",
+          "sha256": "865033e55783efc48e8c67a8df71ace4798ed0e2df01172f118894b706d07780",
+          "bytes": 9590
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-R2-V318-PT1-H0-S8-C2C3-PARITY-CONTROL-CLOSURE/EVIDENCE/006__V2_SHARDED_ADDENDUM.md",
+          "sha256": "c2aab58c565530dea8cfc6fb7719b9b662706341a399fbab0cc5736fd1d9c768",
+          "bytes": 5521
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-R2-V318-PT1-H0-S8-C2C3-PARITY-CONTROL-CLOSURE/EVIDENCE/007__V3_GRID_CELL_ADDENDUM.md",
+          "sha256": "dc6e8cc12172bd9af4805870722aa9516a5a48f3824a05fd7a0d5956513e54f7",
+          "bytes": 6086
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-R2-V318-PT1-H0-S8-C2C3-PARITY-CONTROL-CLOSURE/EVIDENCE/008__V4_STAGED_ADDENDUM.md",
+          "sha256": "5e2a35d1e1a6eb64d200d4f18488a31849cb16079249dfb8407559a6d3925d42",
+          "bytes": 6561
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-R2-V318-PT1-H0-S8-C2C3-PARITY-CONTROL-CLOSURE/EVIDENCE/009__V5_SEGMENTED_ADDENDUM.md",
+          "sha256": "6706912598c536099a1e230d20650d8a792943af87fb36c283df4f1449ccb3a1",
+          "bytes": 7373
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-R2-V318-PT1-H0-S8-C2C3-PARITY-CONTROL-CLOSURE/EVIDENCE/010__N8000_REFERENCE_STAGE.json",
+          "sha256": "0bfc88d8ffc5196b137570b149cbbc7ed3b93dc3ef81d14d9e7f4f130e050234",
+          "bytes": 2499
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-R2-V318-PT1-H0-S8-C2C3-PARITY-CONTROL-CLOSURE/EVIDENCE/011__CELL_NULL_N2000.json",
+          "sha256": "4af3e71312669d0b5c6a11727744ae2d1a5cfa825412ce9f40228fb3951bc7de",
+          "bytes": 3072
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-R2-V318-PT1-H0-S8-C2C3-PARITY-CONTROL-CLOSURE/EVIDENCE/012__CELL_NULL_N4000.json",
+          "sha256": "b923be76d1ad9dab3e0fbe27a89c09e70f4b6d111653f7a577374c011118c3c2",
+          "bytes": 3072
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-R2-V318-PT1-H0-S8-C2C3-PARITY-CONTROL-CLOSURE/EVIDENCE/013__CELL_NULL_N8000.json",
+          "sha256": "0d0d9352fc0144835dfdbc03181d4d3f9945bbbd0fc07b7ce03184f281833850",
+          "bytes": 3138
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-R2-V318-PT1-H0-S8-C2C3-PARITY-CONTROL-CLOSURE/EVIDENCE/014__CELL_HALF_N2000.json",
+          "sha256": "31823491ab09a451b1a3b5936db30beff668bc0f2e67db412d7fd8f6cc4eae4c",
+          "bytes": 3094
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-R2-V318-PT1-H0-S8-C2C3-PARITY-CONTROL-CLOSURE/EVIDENCE/015__CELL_HALF_N4000.json",
+          "sha256": "20d9da52d84cd17b366e8cab95190e60a0e0d762b6c5bac69e49cecd8ebf5c15",
+          "bytes": 3108
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-R2-V318-PT1-H0-S8-C2C3-PARITY-CONTROL-CLOSURE/EVIDENCE/016__CELL_HALF_N8000.json",
+          "sha256": "67b1218ba8b061de75665ead0129e89c68c277f01316065d6e38e444307ad66a",
+          "bytes": 3173
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-R2-V318-PT1-H0-S8-C2C3-PARITY-CONTROL-CLOSURE/EVIDENCE/017__CELL_FULL_N2000.json",
+          "sha256": "5a86db61d291d18f716f9fb705505445fd2ab1b59590dfc686a5ed271867f05c",
+          "bytes": 3097
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-R2-V318-PT1-H0-S8-C2C3-PARITY-CONTROL-CLOSURE/EVIDENCE/018__CELL_FULL_N4000.json",
+          "sha256": "2fc1ae5d9f96969728946613cdce971d2f9a9b7a5a8a62a73a6043b7438568ab",
+          "bytes": 3098
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-R2-V318-PT1-H0-S8-C2C3-PARITY-CONTROL-CLOSURE/EVIDENCE/019__CELL_FULL_N8000.json",
+          "sha256": "de86bbd810b282565e5bcfcaa436067e4168ce87600e8afa350361d0045df06d",
+          "bytes": 3237
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-R2-V318-PT1-H0-S8-C2C3-PARITY-CONTROL-CLOSURE/EVIDENCE/020__NULL_N8000_BISECT_A.json",
+          "sha256": "9aa2d2124986ce693a067d53ba3b0a9ef8ec4d22fc64885a00abc4a009621ac9",
+          "bytes": 2406
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-R2-V318-PT1-H0-S8-C2C3-PARITY-CONTROL-CLOSURE/EVIDENCE/021__NULL_N8000_BISECT_B.json",
+          "sha256": "bdbc7532f6a73f6bc1aebaaa43019f10fbbd9a3270f4ca4f831add8f2ea8a389",
+          "bytes": 2487
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-R2-V318-PT1-H0-S8-C2C3-PARITY-CONTROL-CLOSURE/EVIDENCE/022__NULL_N8000_MODEL_STAGE_C.json",
+          "sha256": "4165f10dbfe8ec374a0212d99dabdb01940ee5fe617308ed7d1af5605bf17c18",
+          "bytes": 3334
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-R2-V318-PT1-H0-S8-C2C3-PARITY-CONTROL-CLOSURE/EVIDENCE/023__HALF_N8000_BISECT_A.json",
+          "sha256": "ca03a34397bba0a138ba0f4be00146b2c7d792d9513c6ff46f7bf3c51749f7e9",
+          "bytes": 2397
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-R2-V318-PT1-H0-S8-C2C3-PARITY-CONTROL-CLOSURE/EVIDENCE/024__HALF_N8000_BISECT_B.json",
+          "sha256": "90e913ad4bc1b88883b5b85ef34ccf4e2256501a8a7a193503ae7ad61eca24ca",
+          "bytes": 2495
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-R2-V318-PT1-H0-S8-C2C3-PARITY-CONTROL-CLOSURE/EVIDENCE/025__HALF_N8000_MODEL_STAGE_C.json",
+          "sha256": "9aacb259dbaf265b2b3f44065d3d5c41b7756255b4a86e631512c5cc2badb1e0",
+          "bytes": 3372
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-R2-V318-PT1-H0-S8-C2C3-PARITY-CONTROL-CLOSURE/EVIDENCE/026__FULL_N8000_BISECT_A.json",
+          "sha256": "847f91cca53e13820018785e6196308e95f513f706608a0ebcf3cc7f21483e19",
+          "bytes": 2409
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-R2-V318-PT1-H0-S8-C2C3-PARITY-CONTROL-CLOSURE/EVIDENCE/027__FULL_N8000_BISECT_B.json",
+          "sha256": "90958741ed222cbc61ff32981d61cb9a17d9b4fca30d27ada4b13c8836ff4c45",
+          "bytes": 2491
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-R2-V318-PT1-H0-S8-C2C3-PARITY-CONTROL-CLOSURE/EVIDENCE/028__FULL_N8000_MODEL_STAGE_C.json",
+          "sha256": "db0c63aeb62d1d750a2ced10db7da5a7a885a43915ea11c3c9abd08a681371ef",
+          "bytes": 3361
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-R2-V318-PT1-H0-S8-C2C3-PARITY-CONTROL-CLOSURE/EVIDENCE/029__RESULT_AND_INTERNAL_AUDIT.md",
+          "sha256": "e2df985fa198f4dbc3ad05c5ea2a0e8607161e3bde26a4c3754c3cc383e229de",
+          "bytes": 5361
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-R2-V318-PT1-H0-S8-C2C3-PARITY-CONTROL-CLOSURE/EVIDENCE/030__EA047_EXTERNAL_RESPONSE.md",
+          "sha256": "fb55da8d5fe55d85c7d7776ea27b391235a95f03658a847cfed0a94862e9e8d1",
+          "bytes": 2606
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-R2-V318-PT1-H0-S8-C2C3-PARITY-CONTROL-CLOSURE/REPRO/scripts/393_script_V318_PT1_H0_S8_three_point_legacy_sensitivity_dev.py",
+          "sha256": "89c12064ba72adb70c443dd14b0a64b5139314d8ab996a9fb2c63e7f6f4b6ff3",
+          "bytes": 9202
+        },
+        {
+          "path": "External_Audits/PACKAGES/EA-20260801-047-R2-V318-PT1-H0-S8-C2C3-PARITY-CONTROL-CLOSURE/REPRO/scripts/baseScripts/release_v318_h0_s8_legacy_sensitivity_dev.py",
+          "sha256": "74ae3b0bc31fa1ae4bb9fdb3339c84869da38131440795bd0c7b2b82677f30d9",
+          "bytes": 89947
+        }
+      ],
+      "related_packages": [
+        "External_Audits/PACKAGES/EA-20260801-047-R1-V318-PT1-H0-S8-C2C3-PARITY-CONTROL-REPAIR",
+        "External_Audits/PACKAGES/EA-20260801-047-R2-V318-PT1-H0-S8-C2C3-PARITY-CONTROL-CLOSURE"
+      ],
+      "control_guides": [
+        "External_Audits/PACKAGES/EA-20260801-047-R1-V318-PT1-H0-S8-C2C3-PARITY-CONTROL-REPAIR/03_REPRODUCTION_AND_EXPECTATIONS.md",
+        "External_Audits/PACKAGES/EA-20260801-047-R2-V318-PT1-H0-S8-C2C3-PARITY-CONTROL-CLOSURE/03_REPRODUCTION_AND_EXPECTATIONS.md"
+      ],
+      "runtime": {
+        "recorded_python": "3.11.3",
+        "numpy": "2.4.4",
+        "scipy": "1.17.1",
+        "outer_process_timeout_seconds": 60
+      }
+    }
+  ]
+}
