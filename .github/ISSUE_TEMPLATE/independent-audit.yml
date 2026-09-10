@@ -1,0 +1,42 @@
+name: Independent audit
+description: Report a scoped reproduction, limitation, counterexample or agreement
+title: "[Audit] "
+body:
+  - type: input
+    id: evidence
+    attributes:
+      label: Commit, case and evidence hashes
+      description: Identify the exact version, case, claim and source hashes.
+    validations:
+      required: true
+  - type: dropdown
+    id: reviewer_kind
+    attributes:
+      label: Review type
+      options:
+        - Human review
+        - Human review with disclosed model assistance
+        - Model-only review
+    validations:
+      required: true
+  - type: textarea
+    id: method
+    attributes:
+      label: Method and reproducibility
+      description: Include environment, commands, fresh outputs, hashes and comparison rules. Name any model used.
+    validations:
+      required: true
+  - type: textarea
+    id: conclusion
+    attributes:
+      label: Conclusion and exact scope
+      description: Agree, agree with limitations, disagree, or cannot determine. Give the reasoning and affected claims.
+    validations:
+      required: true
+  - type: textarea
+    id: frame
+    attributes:
+      label: FRAME_CHALLENGE
+      description: Does the tested object address the claimed physics? Identify assumptions, missing sectors and any unjustified inference.
+    validations:
+      required: true
